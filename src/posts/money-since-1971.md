@@ -1,6 +1,7 @@
 ---
 title: "How Money Changed Since 1971—and Why It Matters for Your Wealth Strategy"
 date: 2026-01-28
+image: "/images/money-since-1971.jpg"
 excerpt: "1971 wasn't just a historical detail—it was a regime change that rewired the modern economy. Understanding this shift gives you a sharper filter for building wealth in an era of AI disruption."
 layout: post.njk
 ---

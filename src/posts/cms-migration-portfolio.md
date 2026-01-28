@@ -1,6 +1,7 @@
 ---
 title: "CMS Migration as a Portfolio of Bets (Not a Big-Bang Project)"
 date: 2026-01-28
+image: "/images/cms-migration-portfolio.jpg"
 excerpt: "Most CMS migrations fail because they're framed as one massive project. A better model: treat it as a portfolio of bets, shipping highest-value journeys first."
 layout: post.njk
 ---
