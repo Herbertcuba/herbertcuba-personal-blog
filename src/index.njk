@@ -4,22 +4,27 @@ title: Home
 ---
 
 <section class="hero">
-  <h1>{{ site.heroTitle }}</h1>
-  <p class="lead">{{ site.heroLead }}</p>
+  <div class="hero-content">
+    <div class="tagline">{{ site.tagline }}</div>
+    <h1>{{ site.heroTitle }}</h1>
+    <p class="lead">{{ site.heroLead }}</p>
+  </div>
 </section>
 
 <section class="posts">
-  <h2>Latest</h2>
+  <h2>Latest Thoughts</h2>
   <ul class="post-list">
     {% for post in collections.posts %}
       <li class="post-item">
         <a class="post-link" href="{{ post.url }}">
-          <span class="post-title">{{ post.data.title }}</span>
-          <span class="post-date">{{ post.date | isoDate }}</span>
+          <div class="post-header">
+            <h3 class="post-title">{{ post.data.title }}</h3>
+            <span class="post-date">{{ post.date | isoDate }}</span>
+          </div>
+          {% if post.data.excerpt %}
+            <p class="post-excerpt">{{ post.data.excerpt }}</p>
+          {% endif %}
         </a>
-        {% if post.data.excerpt %}
-          <div class="post-excerpt">{{ post.data.excerpt }}</div>
-        {% endif %}
       </li>
     {% endfor %}
   </ul>
