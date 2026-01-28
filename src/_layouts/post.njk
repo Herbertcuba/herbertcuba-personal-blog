@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    {% if date %}
+      <p class="meta">{{ date | isoDate }}</p>
+    {% endif %}
+    {% if excerpt %}
+      <p class="lead">{{ excerpt }}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

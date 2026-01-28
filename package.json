@@ -1,0 +1,16 @@
+{
+  "name": "herbert-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "sync:obsidian": "node scripts/sync-obsidian.mjs",
+    "new": "node scripts/new-post.mjs"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.6"
+  }
+}

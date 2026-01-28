@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="hero">
+  <h1>{{ site.heroTitle }}</h1>
+  <p class="lead">{{ site.heroLead }}</p>
+</section>
+
+<section class="posts">
+  <h2>Latest</h2>
+  <ul class="post-list">
+    {% for post in collections.posts %}
+      <li class="post-item">
+        <a class="post-link" href="{{ post.url }}">
+          <span class="post-title">{{ post.data.title }}</span>
+          <span class="post-date">{{ post.date | isoDate }}</span>
+        </a>
+        {% if post.data.excerpt %}
+          <div class="post-excerpt">{{ post.data.excerpt }}</div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
