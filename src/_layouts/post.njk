@@ -3,21 +3,24 @@ layout: base.njk
 ---
 
 <article class="post">
-  {% if image %}
-    <img src="{{ image }}" alt="{{ title }}" class="post-hero-image" />
-  {% endif %}
-
-  <header class="post-header">
-    <h1>{{ title }}</h1>
-    <div class="meta">
-      {% if date %}
+  <div class="container container--narrow">
+    <header class="post-header">
+      <div class="meta">
         <time datetime="{{ date }}">{{ date | isoDate }}</time>
+        <span>// TRANSMISSION</span>
+      </div>
+      <h1>{{ title }}</h1>
+      {% if excerpt %}
+        <p class="lead">{{ excerpt }}</p>
       {% endif %}
-    </div>
-    {% if excerpt %}
-      <p class="lead">{{ excerpt }}</p>
+    </header>
+  </div>
+
+  <div class="container">
+    {% if image %}
+      <img src="{{ image }}" alt="" class="post-hero-image" />
     {% endif %}
-  </header>
+  </div>
 
   <div class="prose">
     {{ content | safe }}

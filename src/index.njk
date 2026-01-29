@@ -1,58 +1,100 @@
 ---
 layout: base.njk
-title: Home
+title: Building the Future
 ---
 
 <section class="hero">
-  <div class="hero-content">
-    <div class="tagline">{{ site.tagline }}</div>
-    <h1>{{ site.heroTitle }}</h1>
-    <p class="lead">{{ site.heroLead }}</p>
+  <div class="container">
+    <div class="hero-content">
+      <div class="tagline">Technology leader · AI Strategist</div>
+      <h1>Building the <span class="highlight">Future</span></h1>
+      <p class="lead">Where AI strategy meets human insight. Thoughts on technology leadership, digital transformation, and the art of turning complexity into clarity.</p>
+    </div>
   </div>
 </section>
 
-{# Featured (latest) post, Webflow/editorial vibe #}
-{% set featured = collections.posts[0] %}
-{% if featured %}
-<section class="featured">
-  <div class="featured-grid">
-    <div class="featured-copy">
-      <div class="eyebrow">Latest</div>
-      <h2 class="featured-title"><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
-      <div class="featured-meta">{{ featured.date | isoDate }}</div>
-      {% if featured.data.excerpt %}
-        <p class="featured-excerpt">{{ featured.data.excerpt }}</p>
+<section class="bento">
+  <div class="container">
+    <div class="bento-grid">
+      {% set featuredPosts = collections.posts.slice(0, 4) %}
+      
+      {# Post 1: Big Hero #}
+      {% if featuredPosts[0] %}
+      <a href="{{ featuredPosts[0].url }}" class="bento-cell bento-cell--hero animate-stagger" style="animation-delay: 0.1s">
+        <div class="bento-cell__image">
+          <img src="{{ featuredPosts[0].data.image }}" alt="" loading="lazy">
+        </div>
+        <div class="bento-cell__overlay"></div>
+        <div class="bento-cell__content">
+          <span class="bento-cell__eyebrow">Featured Insight</span>
+          <h2 class="bento-cell__title">{{ featuredPosts[0].data.title }}</h2>
+          <span class="bento-cell__meta">{{ featuredPosts[0].date | isoDate }}</span>
+        </div>
+      </a>
       {% endif %}
-      <a class="featured-cta" href="{{ featured.url }}">Read article →</a>
-    </div>
-    <div class="featured-media">
-      {% if featured.data.image %}
-        <img src="{{ featured.data.image }}" alt="{{ featured.data.title }}" />
+
+      {# Post 2: Tall #}
+      {% if featuredPosts[1] %}
+      <a href="{{ featuredPosts[1].url }}" class="bento-cell bento-cell--tall animate-stagger" style="animation-delay: 0.2s">
+        <div class="bento-cell__image">
+          <img src="{{ featuredPosts[1].data.image }}" alt="" loading="lazy">
+        </div>
+        <div class="bento-cell__overlay"></div>
+        <div class="bento-cell__content">
+          <h2 class="bento-cell__title">{{ featuredPosts[1].data.title }}</h2>
+          <span class="bento-cell__meta">{{ featuredPosts[1].date | isoDate }}</span>
+        </div>
+      </a>
+      {% endif %}
+
+      {# Post 3: Wide #}
+      {% if featuredPosts[2] %}
+      <a href="{{ featuredPosts[2].url }}" class="bento-cell bento-cell--wide animate-stagger" style="animation-delay: 0.3s">
+        <div class="bento-cell__image">
+          <img src="{{ featuredPosts[2].data.image }}" alt="" loading="lazy">
+        </div>
+        <div class="bento-cell__overlay"></div>
+        <div class="bento-cell__content">
+          <h2 class="bento-cell__title">{{ featuredPosts[2].data.title }}</h2>
+          <span class="bento-cell__meta">{{ featuredPosts[2].date | isoDate }}</span>
+        </div>
+      </a>
+      {% endif %}
+
+      {# Post 4: Square #}
+      {% if featuredPosts[3] %}
+      <a href="{{ featuredPosts[3].url }}" class="bento-cell bento-cell--square animate-stagger" style="animation-delay: 0.4s">
+        <div class="bento-cell__image">
+          <img src="{{ featuredPosts[3].data.image }}" alt="" loading="lazy">
+        </div>
+        <div class="bento-cell__overlay"></div>
+        <div class="bento-cell__content">
+          <h2 class="bento-cell__title">{{ featuredPosts[3].data.title }}</h2>
+          <span class="bento-cell__meta">{{ featuredPosts[3].date | isoDate }}</span>
+        </div>
+      </a>
       {% endif %}
     </div>
+  </div>
+</section>
+
+{% if collections.posts.length > 4 %}
+<section class="posts">
+  <div class="container">
+    <div class="posts__header">
+      <h2 class="posts__title">Archive // All Posts</h2>
+    </div>
+    <ul class="post-list">
+      {% for post in collections.posts.slice(4, 30) %}
+        <li class="post-item">
+          <a class="post-link" href="{{ post.url }}">
+            <span class="post-number">{{ loop.index + 4 }}</span>
+            <span class="post-title">{{ post.data.title }}</span>
+            <span class="post-date">{{ post.date | isoDate }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 {% endif %}
-
-<section class="posts">
-  <h2>Latest Thoughts</h2>
-  <ul class="post-list">
-    {% for post in collections.posts.slice(0, 30) %}
-      <li class="post-item">
-        <a class="post-link" href="{{ post.url }}">
-          {% if post.data.image %}
-            <div class="post-image-container">
-              <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="post-thumbnail" />
-            </div>
-          {% endif %}
-          <div class="post-content">
-            <div class="post-header-sm">
-              <span class="post-date">{{ post.date | isoDate }}</span>
-              <h3 class="post-title">{{ post.data.title }}</h3>
-            </div>
-          </div>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>

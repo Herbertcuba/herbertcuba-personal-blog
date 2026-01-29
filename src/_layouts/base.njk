@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+  <title>{% if title %}{{ title }} // {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
-  <header class="site-header">
+<body class="scanlines">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header" id="site-header">
     <div class="container">
-      <a class="brand" href="/">{{ site.title }}</a>
+      <a class="brand" href="/" aria-label="{{ site.title }} home">{{ site.title }}</a>
       <nav class="nav">
-        <a href="/">Home</a>
+        <a href="/">Insights</a>
+        <a href="/about">About</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="main-content">
     {{ content | safe }}
   </main>
 
@@ -26,9 +29,21 @@
     <div class="container">
       <div class="footer-row">
         <span class="muted">© {{ "" | currentYear }} {{ site.title }}</span>
-        <span class="muted">Built with plain Markdown.</span>
+        <span class="muted">STATUS: TRANSMITTING</span>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
