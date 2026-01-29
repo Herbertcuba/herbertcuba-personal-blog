@@ -105,6 +105,9 @@ a:hover {
 .container--narrow {
   max-width: var(--content-width);
 }
+.container--full {
+  max-width: 100%;
+}
 
 /* ─────────────────────────────────────────────────────────────────────────────
    HEADER — Minimal, floating
@@ -618,6 +621,9 @@ a:hover {
   background: var(--void);
   font-style: italic;
   color: var(--bone);
+}
+.prose blockquote p:last-child{
+  margin-bottom:0;
 }
 
 .prose code {
