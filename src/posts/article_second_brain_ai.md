@@ -8,13 +8,13 @@ layout: post.njk
 
 "Human brains were never designed for storage but for thinking."
 
-When I first heard Nate B. Jones say this in his video about building a second brain, something clicked. Not because it was a new idea—I've been running my own second brain in Obsidian for years—but because the timing suddenly makes sense. We're entering an era where this isn't just good advice for productivity nerds. It's becoming essential infrastructure.
+When I first heard Nate B. Jones say this in his video about building a second brain, something clicked. Not because it was a new idea—I've been running my own second brain in Notion for years—but because the timing suddenly makes sense. We're entering an era where this isn't just good advice for productivity nerds. It's becoming essential infrastructure.
 
 Let me explain.
 
-## My Obsidian Journey (And What I Got Wrong)
+## My Note-taking Journey (And What I Got Wrong)
 
-I started using Obsidian around 2020, during that period when the world slowed down and we all had time to think about how we think. At first, I treated it like a fancy note-taking app. I dumped everything in there: meeting notes, article highlights, project ideas, random thoughts at 2 AM about why CMS architectures are fundamentally broken.
+I started using Notion around 2020, during that period when the world slowed down and we all had time to think about how we think. At first, I treated it like a fancy note-taking app. I dumped everything in there: meeting notes, article highlights, project ideas, random thoughts at 2 AM about why CMS architectures are fundamentally broken.
 
 The result? Chaos. Beautiful, interlinked chaos.
 
@@ -24,9 +24,9 @@ Sound familiar?
 
 The breakthrough came when I stopped thinking of my second brain as a filing cabinet and started thinking of it as a conversation partner. Not a place to store information—my actual brain could never retrieve it anyway—but a place to think *with*. A surface for ideas to collide and connect.
 
-The key insight: notes aren't valuable because they preserve knowledge. They're valuable because writing them forces you to process knowledge. The act of translating a fuzzy thought into text is where the real learning happens. The note itself is almost a byproduct.
+Here's what I learned: notes aren't valuable because they preserve knowledge. They're valuable because writing them forces you to process knowledge. The act of translating a fuzzy thought into text is where the real learning happens. The note itself is almost a byproduct.
 
-Once I embraced this, my whole relationship with Obsidian changed. I stopped worrying about the perfect structure. I started writing messier, more honest notes. And paradoxically, they became more useful.
+Once I embraced this, my whole relationship with note-taking changed. I stopped worrying about the perfect structure. I started writing messier, more honest notes. And paradoxically, they became more useful.
 
 ## Then Came the AI Agents
 
@@ -40,19 +40,17 @@ Think about it. When I work with an AI on a project, the difference between a us
 
 That's not a prompt. That's a second brain.
 
-This is why I believe 2026 marks a turning point. The tools are finally mature enough—both the personal knowledge systems and the AI agents—that the combination becomes transformative. Your second brain isn't just *for you* anymore. It's *for your AI*.
+My take? 2026 marks a turning point. The tools are finally mature enough—both the personal knowledge systems and the AI agents—that the combination becomes transformative. Your second brain isn't just *for you* anymore. It's *for your AI*.
 
 ## The Enterprise Parallel: CMS as Organizational Memory
 
-Working as Tech Director at Umain and partner at Eidra, I see the same pattern playing out at the organizational level. A content management system isn't just a website publishing tool. It's an organization's collective second brain—or at least it should be.
+Working as Tech Director consultant at Umain and partner at Eidra, I see the same pattern playing out at the organizational level. A content management system isn't just a website publishing tool. It's an organization's collective second brain—or at least it should be.
 
-Most companies treat their CMS like I first treated Obsidian: as a filing cabinet. Content goes in, content comes out, and nobody thinks much about the connections, the context, the institutional knowledge embedded in how things are structured.
+Most companies treat their CMS like I first treated note-taking: as a filing cabinet. Content goes in, content comes out, and nobody thinks much about the connections, the context, the institutional knowledge embedded in how things are structured.
 
 But here's what's fascinating: as we help companies integrate AI into their digital platforms, the organizations that have well-structured, thoughtfully connected content are miles ahead. Their AI features work better because there's actual context to work with. The CMS becomes more than a repository—it becomes an operational knowledge layer that AI can leverage.
 
-This is exactly what we're navigating in our current work on the Unit4 migration. The question isn't just "how do we move content from A to B?" It's "how do we preserve and enhance the contextual relationships that make this content actually useful—especially as AI becomes more central to how it's accessed and used?"
-
-The organizations that get this right will have a compounding advantage. Those that don't will wonder why their AI implementations feel shallow.
+In my experience, the organizations that get this right will have a compounding advantage. Those that don't will wonder why their AI implementations feel shallow.
 
 ## What I'd Do Differently
 
