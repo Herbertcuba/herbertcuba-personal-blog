@@ -1,6 +1,7 @@
 /** @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig */
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy({ "src/images": "/images" });
 
   eleventyConfig.addFilter("isoDate", (dateObj) => {
     const d = new Date(dateObj);
