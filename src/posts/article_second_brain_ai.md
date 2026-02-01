@@ -6,8 +6,6 @@ layout: post.njk
 image: "/images/001-refined-neo-brutalism-dark-theme-acid-gr.png"
 ---
 
-![AI Second Brain](/images/001-refined-neo-brutalism-dark-theme-acid-gr.png)
-
 "Human brains were never designed for storage but for thinking."
 
 When I first heard Nate B. Jones say this in his video about building a second brain, something clicked. Not because it was a new idea—I've been running my own second brain in Notion for years—but because the timing suddenly makes sense. We're entering an era where this isn't just good advice for productivity nerds. It's becoming essential infrastructure.
