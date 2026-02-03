@@ -1,7 +1,7 @@
 ---
 title: "When Software Becomes Disposable, Trust Becomes Luxury"
 date: 2026-01-28
-image: "/images/when-software-becomes-disposable.jpg"
+featuredImage: "/images/when-software-becomes-disposable.jpg"
 excerpt: "In a world where code generation collapses toward $0, attention stays expensive—and trust becomes the only durable value."
 layout: post.njk
 ---

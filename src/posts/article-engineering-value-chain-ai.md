@@ -8,7 +8,7 @@ tags:
   - engineering
   - value-chain
   - strategy
-featuredImage: /images/posts/article-engineering-value-chain-ai.png
+featuredImage: "/images/posts/article-engineering-value-chain-ai.png"
 ---
 
 ![Hero](/images/posts/article-engineering-value-chain-ai.png)
