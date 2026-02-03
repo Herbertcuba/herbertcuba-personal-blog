@@ -48,7 +48,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
 
 <style>
   .about-container {
-    padding-top: 50px;
+    padding-top: 100px;
     max-width: 720px;
     margin: 0 auto;
   }
