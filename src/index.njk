@@ -28,9 +28,9 @@ title: Home
       {% set featured = collections.posts[0] %}
       <article class="bento-cell bento-cell--hero">
         <a href="{{ featured.url }}" aria-label="Read: {{ featured.data.title }}">
-          {% if featured.data.image %}
+          {% if featured.data.featuredImage %}
           <div class="bento-cell__image">
-            <img src="{{ featured.data.image }}" alt="" loading="eager" />
+            <img src="{{ featured.data.featuredImage }}" alt="" loading="eager" />
           </div>
           <div class="bento-cell__overlay"></div>
           {% endif %}
@@ -46,9 +46,9 @@ title: Home
       {% if collections.posts[1] %}
       <article class="bento-cell bento-cell--tall">
         <a href="{{ collections.posts[1].url }}" aria-label="Read: {{ collections.posts[1].data.title }}">
-          {% if collections.posts[1].data.image %}
+          {% if collections.posts[1].data.featuredImage %}
           <div class="bento-cell__image">
-            <img src="{{ collections.posts[1].data.image }}" alt="" loading="lazy" />
+            <img src="{{ collections.posts[1].data.featuredImage }}" alt="" loading="lazy" />
           </div>
           <div class="bento-cell__overlay"></div>
           {% endif %}
@@ -63,9 +63,9 @@ title: Home
       {% if collections.posts[2] %}
       <article class="bento-cell bento-cell--wide">
         <a href="{{ collections.posts[2].url }}" aria-label="Read: {{ collections.posts[2].data.title }}">
-          {% if collections.posts[2].data.image %}
+          {% if collections.posts[2].data.featuredImage %}
           <div class="bento-cell__image">
-            <img src="{{ collections.posts[2].data.image }}" alt="" loading="lazy" />
+            <img src="{{ collections.posts[2].data.featuredImage }}" alt="" loading="lazy" />
           </div>
           <div class="bento-cell__overlay"></div>
           {% endif %}
@@ -80,9 +80,9 @@ title: Home
       {% if collections.posts[3] %}
       <article class="bento-cell bento-cell--wide">
         <a href="{{ collections.posts[3].url }}" aria-label="Read: {{ collections.posts[3].data.title }}">
-          {% if collections.posts[3].data.image %}
+          {% if collections.posts[3].data.featuredImage %}
           <div class="bento-cell__image">
-            <img src="{{ collections.posts[3].data.image }}" alt="" loading="lazy" />
+            <img src="{{ collections.posts[3].data.featuredImage }}" alt="" loading="lazy" />
           </div>
           <div class="bento-cell__overlay"></div>
           {% endif %}
@@ -98,9 +98,9 @@ title: Home
       {% for post in collections.posts.slice(4, 7) %}
       <article class="bento-cell bento-cell--square">
         <a href="{{ post.url }}" aria-label="Read: {{ post.data.title }}">
-          {% if post.data.image %}
+          {% if post.data.featuredImage %}
           <div class="bento-cell__image">
-            <img src="{{ post.data.image }}" alt="" loading="lazy" />
+            <img src="{{ post.data.featuredImage }}" alt="" loading="lazy" />
           </div>
           <div class="bento-cell__overlay"></div>
           {% endif %}
