@@ -9,6 +9,9 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
 ---
 
 <div class="about-hero">
+  <div class="about-profile">
+    <img src="/images/profile.jpg" alt="Herbert Cuba Garcia" class="about-portrait" />
+  </div>
   <h1 class="about-title">About Herbert</h1>
   <p class="about-lead">I've always believed that the best technology doesn't just work—it tells a story.</p>
 </div>
@@ -88,5 +91,17 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   .about-close {
     color: var(--bone) !important;
     font-weight: 500;
+  }
+  
+  .about-profile {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--acid);
   }
 </style>
