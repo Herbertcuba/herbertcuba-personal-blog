@@ -8,10 +8,10 @@ tags:
   - engineering
   - value-chain
   - strategy
-featuredImage: /assets/images/posts/article-engineering-value-chain-ai.png
+featuredImage: /images/posts/article-engineering-value-chain-ai.png
 ---
 
-![Hero](/assets/images/posts/article-engineering-value-chain-ai.png)
+![Hero](/images/posts/article-engineering-value-chain-ai.png)
 
 Code is becoming a commodity. AI can generate functions, modules, even entire services in seconds. So what makes an engineer valuable in 2026 and beyond?
 
