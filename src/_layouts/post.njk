@@ -17,8 +17,9 @@ layout: base.njk
   </div>
 
   <div class="container container--full">
-    {% if featuredImage %}
-      <img src="{{ featuredImage }}" alt="" class="post-hero-image" />
+    {% set heroImage = featuredImage or image %}
+    {% if heroImage %}
+      <img src="{{ heroImage }}" alt="" class="post-hero-image" />
     {% endif %}
   </div>
 
