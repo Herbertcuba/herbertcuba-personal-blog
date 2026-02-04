@@ -25,4 +25,14 @@ layout: base.njk
   <div class="prose">
     {{ content | safe }}
   </div>
+
+  {% if tags %}
+  <div class="container container--narrow">
+    <div class="post-tags">
+      {% for tag in tags %}
+        <span class="post-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </article>

@@ -38,6 +38,13 @@ title: Home
             <span class="bento-cell__eyebrow">Latest</span>
             <h2 class="bento-cell__title">{{ featured.data.title }}</h2>
             <span class="bento-cell__meta">{{ featured.date | isoDate }}</span>
+            {% if featured.data.tags %}
+            <div class="bento-cell__tags">
+              {% for tag in featured.data.tags.slice(0, 3) %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </a>
       </article>
@@ -55,6 +62,13 @@ title: Home
           <div class="bento-cell__content">
             <span class="bento-cell__eyebrow">{{ collections.posts[1].date | isoDate }}</span>
             <h3 class="bento-cell__title">{{ collections.posts[1].data.title }}</h3>
+            {% if collections.posts[1].data.tags %}
+            <div class="bento-cell__tags">
+              {% for tag in collections.posts[1].data.tags.slice(0, 2) %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </a>
       </article>
@@ -72,6 +86,13 @@ title: Home
           <div class="bento-cell__content">
             <span class="bento-cell__eyebrow">{{ collections.posts[2].date | isoDate }}</span>
             <h3 class="bento-cell__title">{{ collections.posts[2].data.title }}</h3>
+            {% if collections.posts[2].data.tags %}
+            <div class="bento-cell__tags">
+              {% for tag in collections.posts[2].data.tags.slice(0, 2) %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </a>
       </article>
@@ -89,6 +110,13 @@ title: Home
           <div class="bento-cell__content">
             <span class="bento-cell__eyebrow">{{ collections.posts[3].date | isoDate }}</span>
             <h3 class="bento-cell__title">{{ collections.posts[3].data.title }}</h3>
+            {% if collections.posts[3].data.tags %}
+            <div class="bento-cell__tags">
+              {% for tag in collections.posts[3].data.tags.slice(0, 2) %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </a>
       </article>
@@ -107,6 +135,13 @@ title: Home
           <div class="bento-cell__content">
             <span class="bento-cell__eyebrow">{{ post.date | isoDate }}</span>
             <h3 class="bento-cell__title">{{ post.data.title }}</h3>
+            {% if post.data.tags %}
+            <div class="bento-cell__tags">
+              {% for tag in post.data.tags.slice(0, 2) %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
         </a>
       </article>

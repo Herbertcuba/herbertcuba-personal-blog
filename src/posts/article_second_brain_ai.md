@@ -3,6 +3,11 @@ title: "Why 2026 Is the Year of the AI-Ready Second Brain"
 date: 2026-02-01
 excerpt: "\"Human brains were never designed for storage but for thinking.\""
 layout: post.njk
+tags:
+  - ai
+  - second-brain
+  - productivity
+  - knowledge-management
 featuredImage: "/images/001-refined-neo-brutalism-dark-theme-acid-gr.png"
 ---
 
