@@ -2,7 +2,7 @@
 title: "Engineering Excellence in the Age of AI: Moving Up the Value Chain"
 date: 2026-02-04
 excerpt: "Code is becoming commoditized. The future belongs to engineers who can think strategically about systems, not just write syntax."
-layout: post.njk
+layout: ../_layouts/post.njk
 tags:
   - ai
   - engineering
