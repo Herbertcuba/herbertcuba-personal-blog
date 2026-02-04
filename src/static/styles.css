@@ -795,8 +795,11 @@ button:focus-visible {
   color: var(--acid);
   padding: 0.5rem 1rem;
   border: 1px solid var(--acid-dim);
-  background: transparent;
+  background: rgba(0,0,0,0.8);
   transition: all 0.2s ease;
+}
+.bento-cell .post-tag:before {
+    content: "#";
 }
 
 .post-tag:hover {
