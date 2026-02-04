@@ -11,8 +11,6 @@ tags:
 featuredImage: "/images/posts/article-engineering-value-chain-ai.png"
 ---
 
-![Hero](/images/posts/article-engineering-value-chain-ai.png)
-
 Code is becoming a commodity. AI can generate functions, modules, even entire services in seconds. So what makes an engineer valuable in 2026 and beyond?
 
 The answer isn't deeper technical knowledge—it's moving up the value chain.
