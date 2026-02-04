@@ -346,7 +346,7 @@ a:hover {
 .bento-cell__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--abyss) 0%, transparent 60%);
+  background: linear-gradient(to bottom, var(--abyss) 0%, transparent 100%);
   z-index: 2;
 }
 
