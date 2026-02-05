@@ -1,3 +1,10 @@
+---
+title: "The Swedish AI Divide: High-Earners Are Leading the Adoption"
+date: 2026-02-06
+excerpt: "High-income earners are dominating AI adoption. This isn't just a technology adoption statistic. It's a social and professional marker that matters."
+layout: post.njk
+---
+
 # The Swedish AI Divide: High-Earners Are Leading the Adoption
 
 Dagens Industri's latest report on AI usage in Sweden caught my attention for a reason that goes beyond the data points.
