@@ -1,7 +1,7 @@
 ---
 title: "AI Workplace Velocity: Why the Productivity Gap Is Becoming 10x"
 date: 2026-02-06
-excerpt: "The most important AI story in knowledge work isn't "automation." It's **velocity**."
+excerpt: "The most important AI story in knowledge work isn't automation. It's velocity."
 layout: post.njk
 featuredImage: "/images/ai-workplace-velocity.png"
 tags: ["AI", "Productivity", "Velocity", "Leadership"]
