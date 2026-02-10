@@ -34,7 +34,7 @@
   
   /* Layout */
   --max-width: 1400px;
-  --content-width: 720px;
+  --content-width: 900px;
   --grid-gap: 1.5rem;
   --section-spacing: clamp(4rem, 10vh, 8rem);
   
