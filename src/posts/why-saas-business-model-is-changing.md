@@ -66,7 +66,7 @@ If you can't answer that question, good luck raising your Series B.
 
 ## My Practical Take (From the Trenches)
 
-At Umain, we're in the middle of this. We build products for clients across industries, and I'm seeing the same pattern everywhere: the companies winning right now aren't fighting the agent layer — they're designing for it.
+Currently, we're in the middle of this. We build products for clients across industries, and I'm seeing the same pattern everywhere: the companies winning right now aren't fighting the agent layer — they're designing for it.
 
 Here's what I'm telling my teams:
 
