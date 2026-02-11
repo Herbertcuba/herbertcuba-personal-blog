@@ -4,9 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if title %}{{ title }} // {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ description or site.description }}" />
+  <meta name="description" content="{{ excerpt or description or site.description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
+  
+  {# ═══════════════════════════════════════════════════════════════════════════
+     OpenGraph Meta Tags — Social sharing previews
+     ═══════════════════════════════════════════════════════════════════════════ #}
+  {% set ogTitle = title or site.title %}
+  {% set ogDescription = excerpt or description or site.description %}
+  {% set ogImage = featuredImage or image or '/images/og-default.png' %}
+  {% set ogUrl = site.url + page.url %}
+  {% set ogType = 'article' if layout == '../_layouts/post.njk' else 'website' %}
+  
+  <meta property="og:title" content="{{ ogTitle }}" />
+  <meta property="og:description" content="{{ ogDescription }}" />
+  <meta property="og:image" content="{{ site.url }}{{ ogImage }}" />
+  <meta property="og:url" content="{{ ogUrl }}" />
+  <meta property="og:type" content="{{ ogType }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ ogTitle }}" />
+  <meta name="twitter:description" content="{{ ogDescription }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage }}" />
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR3S8G8NB6"></script>
@@ -24,7 +45,7 @@
     <div class="container">
       <a class="brand" href="/" aria-label="{{ site.title }} home">{{ site.title }}</a>
       <nav class="nav">
-        <a href="/">Insights</a>
+        <a href="/#insights" class="nav-insights">Insights</a>
         <a href="/about">About</a>
       </nav>
     </div>
@@ -53,6 +74,26 @@
         header.classList.remove('scrolled');
       }
     });
+
+    // Insights navigation: smooth scroll on homepage, redirect otherwise
+    document.querySelector('.nav-insights')?.addEventListener('click', (e) => {
+      const insights = document.getElementById('insights');
+      if (insights) {
+        e.preventDefault();
+        insights.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, '', '/#insights');
+      }
+      // If not on homepage, let the link navigate naturally to /#insights
+    });
+
+    // Handle direct navigation to /#insights (e.g., from another page)
+    if (window.location.hash === '#insights') {
+      window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          document.getElementById('insights')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      });
+    }
   </script>
 </body>
 </html>

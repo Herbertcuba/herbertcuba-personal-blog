@@ -8,3 +8,14 @@
 # Optional: reduce noise
 [context.production]
   command = "npm ci && npm run build"
+
+# Redirects
+[[redirects]]
+  from = "/posts"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/posts/"
+  to = "/"
+  status = 301
