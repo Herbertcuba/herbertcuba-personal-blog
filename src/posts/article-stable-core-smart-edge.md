@@ -1,10 +1,15 @@
 ---
 title: "Stable Core, Smart Edge: Why Your CMS Is the Foundation for AI, Not Its Victim"
 date: 2026-02-13
-excerpt: "There's a conversation happening in every boardroom and Slack channel right now. It goes something like this: \"Should we replace our CMS with AI?\" And I think that's the wrong question entirely."
+excerpt: "There's a conversation happening in every boardroom and Slack channel right now. It goes something like this: 'Should we replace our CMS with AI?' And I think that's the wrong question entirely."
 layout: post.njk
+tags:
+  - ai
+  - cms
+  - content-strategy
+  - architecture
+featuredImage: "/images/saas-business-model-transformation.png"
 ---
-
 
 There's a conversation happening in every boardroom and Slack channel right now. It goes something like this: "Should we replace our CMS with AI?" And I think that's the wrong question entirely.
 

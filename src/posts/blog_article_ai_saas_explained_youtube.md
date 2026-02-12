@@ -1,12 +1,18 @@
 ---
 title: "Why SaaS Isn't Dead, But Its Business Model Is"
-date: 2026-02-13
-excerpt: "![SaaS Business Model Transformation](saas-business-model-transformation.png)"
+date: 2026-02-11
+excerpt: "AI agents are creating a new abstraction layer that commoditizes SaaS software, shifting from per-seat to usage-based pricing models. The winners aren't fighting the agent layer — they're designing for it."
 layout: post.njk
+tags:
+  - ai
+  - saas
+  - business-models
+  - software
+  - agents
+featuredImage: "/images/saas-business-model-transformation.png"
 ---
 
-
-![SaaS Business Model Transformation](saas-business-model-transformation.png)
+![SaaS Business Model Transformation](/images/saas-business-model-transformation.png)
 
 I've been building software since 2005. That's twenty-one years of watching paradigm shifts come and go — some real, some hype, most somewhere in between. Web 2.0. Mobile-first. Cloud-native. Microservices. Each wave reshaped how we build and ship software. But what's happening right now with AI and SaaS? This one feels different.
 
@@ -32,7 +38,7 @@ When users stop interacting directly with software, brand loyalty evaporates. Fe
 
 I think the SaaS panic isn't really about AI replacing software. It's about AI *commoditizing* it.
 
-![SaaS Evolution](SaaS-evolution.PNG)
+![SaaS Evolution](/images/SaaS-evolution.PNG)
 
 Here's a pattern I've seen play out before: the moment something becomes a standardized interface that agents can work with, competition shifts from product experience to price and API reliability. We saw this with cloud infrastructure. AWS didn't kill servers — it made them invisible. You stopped caring about the hardware because you never touched it.
 
