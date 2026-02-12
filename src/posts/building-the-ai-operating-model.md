@@ -1,10 +1,4 @@
 ---
-title: ""
-date: 2026-02-13
-excerpt: "---"
-layout: post.njk
----
-
 title: "Building the AI Operating Model: A Tech Director's Playbook"
 date: 2026-02-12
 excerpt: "AI transformation needs to work differently. The Middle-Out approach: build governed AI workflows that deliver validated change, letting success create demand from the middle instead of waiting for top-down mandates."
@@ -15,7 +9,7 @@ tags:
   - tech-leadership
   - transformation
   - governance
-featuredImage: "/images/ai-operating-model.png"
+featuredImage: "/images/saas-business-model-transformation.png"
 ---
 
 Every week, I see another announcement about some company "going all-in on AI," usually accompanied by a press release about a Chief AI Officer appointment, a multi-million dollar platform deal, and a vague promise to "transform every aspect of the business." And every time, I think the same thing: this is going to be a very expensive lesson in organizational inertia.
