@@ -12,8 +12,6 @@ tags:
 featuredImage: "/images/saas-business-model-transformation.png"
 ---
 
-![SaaS Business Model Transformation](/images/saas-business-model-transformation.png)
-
 I've been building software since 2005. That's twenty-one years of watching paradigm shifts come and go — some real, some hype, most somewhere in between. Web 2.0. Mobile-first. Cloud-native. Microservices. Each wave reshaped how we build and ship software. But what's happening right now with AI and SaaS? This one feels different.
 
 Not apocalyptic different. But structurally different.
