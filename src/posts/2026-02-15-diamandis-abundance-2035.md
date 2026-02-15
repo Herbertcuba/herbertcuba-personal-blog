@@ -60,7 +60,3 @@ Every platform migration, every AI deployment strategy, every organizational cho
 I want to vote for abundance. But I also know that abundance requires intention. It requires people willing to look past the immediate quarterly targets and ask what we're actually building toward.
 
 **The next 18 months will define the next century. The question is whether we'll be architects of that definition, or passengers who wake up surprised by where we've arrived.**
-
----
-
-*Herbert Cuba Garcia is Tech Director at Umain, where he leads digital transformation and CMS strategy for enterprise clients. He writes about AI, content architecture, and the future of digital experiences.*
