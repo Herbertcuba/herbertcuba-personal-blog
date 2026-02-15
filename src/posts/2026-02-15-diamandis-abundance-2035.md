@@ -3,6 +3,7 @@ title: "The Next 18 Months Will Define the Next Century — And Most of Us Aren'
 date: 2026-02-15
 excerpt: "*Reflections on Peter Diamandis's \"Solve Everything\" manifesto*"
 featuredImage: "/images/posts/diamandis-abundance-2035.webp"
+tags: ["Abundance", "AI"]
 layout: post.njk
 ---
 
