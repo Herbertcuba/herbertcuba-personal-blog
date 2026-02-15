@@ -11,7 +11,7 @@ The Next 18 Months Will Define the Next Century — And Most of Us Aren't Ready
 
 I've been thinking a lot about Peter Diamandis lately.
 His recent manifesto "AI's Mission: Solve Everything" isn't just another optimistic tech essay. It's a wake-up call that resonates deeply with what I'm seeing on the ground in enterprise technology — and it terrifies and excites me in equal measure.
-Read it here: https://metatrends.substack.com/p/how-we-get-to-abundance-by-2035-and
+Read it here: [Peter Diamandis's manifesto](https://metatrends.substack.com/p/how-we-get-to-abundance-by-2035-and)
 
 The main insight in his essay is this: **we have roughly 18 months to set the trajectory for the next century.** That's not hyperbole. That's the window before intelligence becomes so abundant that the patterns we establish now will lock in, just like the QWERTY keyboard locked in an inefficient typing layout 150 years ago because that's what people learned first.
 
