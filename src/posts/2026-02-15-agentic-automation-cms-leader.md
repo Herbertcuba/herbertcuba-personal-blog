@@ -8,7 +8,7 @@ featuredImage: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=12
 
 The content management landscape is about to experience its biggest shift since the move from monolithic to headless architecture. I think we're standing at the threshold of what I call the "agentic automation era" — and frankly, most of the industry isn't prepared for what's coming.
 
-In my experience working with enterprise CMS implementations over the past decade, I've witnessed three major architectural evolutions: the migration from monolithic systems to headless architectures, then the rise of hybrid solutions that tried to bridge both worlds. Now, we're entering the fourth wave: agentic automation integration.
+In my experience working with enterprise CMS implementations over the past decade, I've witnessed two major architectural evolutions: the migration from monolithic systems to headless architectures, then the rise of hybrid solutions that tried to bridge both worlds. Now, we're entering the third wave: agentic automation integration.
 
 But here's what concerns me — there's a massive gap in the market.
 
