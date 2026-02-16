@@ -72,5 +72,3 @@ I expect we'll see a clear market leader emerge within the next 18-24 months. Th
 The question isn't whether agentic automation will reshape content management. The question is whether your organization will be ready when it does.
 
 ---
-
-*Herbert Cuba Garcia is Tech Director at Umain and Partner at Eidra, where he leads digital transformation initiatives for enterprise clients. His expertise spans CMS architecture, AI automation, and the intersection of human creativity and artificial intelligence.*
