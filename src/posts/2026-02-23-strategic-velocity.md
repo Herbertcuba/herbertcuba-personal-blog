@@ -3,7 +3,7 @@ title: "The Coming Era of Strategic Velocity"
 date: 2026-02-23
 excerpt: "When iteration becomes abundant, the constraint moves. And when the constraint moves, the entire system must adjust."
 layout: post.njk
-featuredImage: /images/posts/2026-02-23-strategic-velocity-v3.jpg
+featuredImage: /images/posts/2026-02-23-strategic-velocity-v4.jpg
 tags: ["ai-transformation", "velocity", "organizational-transformation"]
 ---
 
