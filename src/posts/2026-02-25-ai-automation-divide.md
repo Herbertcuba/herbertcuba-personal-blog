@@ -2,6 +2,7 @@
 title: "The AI Automation Divide: Everybody Falls First"
 date: 2026-02-27
 excerpt: "*I was twenty years old when The Matrix came out. I remember sitting in the theater, watching Neo jump off that building and — for one brief moment — fall. Then wise words hit: \"Everybody falls their first time.\"*"
+featuredImage: "/images/posts/ai-automation-divide.webp"
 layout: post.njk
 ---
 
