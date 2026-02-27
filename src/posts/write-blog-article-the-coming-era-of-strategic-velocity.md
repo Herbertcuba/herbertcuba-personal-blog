@@ -2,6 +2,7 @@
 title: "The Coming Era of Strategic Velocity"
 date: 2026-02-27
 excerpt: "Something is shifting."
+featuredImage: "/images/posts/2026-02-23-strategic-velocity-v4.jpg"
 layout: post.njk
 ---
 
