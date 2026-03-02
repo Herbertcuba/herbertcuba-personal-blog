@@ -2,9 +2,13 @@
 title: "The Paradox Nobody Sees Coming: Why AI Will Make Engineers More Valuable, Not Less"
 date: 2026-03-02
 excerpt: "**The biggest scare in tech right now? \"AI will replace developers.\"**"
+featuredImage: "/images/posts/jevons-paradox-engineers-ai-era.webp"
 layout: post.njk
+tags:
+  - AI
+  - Engineering
+  - Future of Work
 ---
-
 
 **The biggest scare in tech right now? "AI will replace developers."**
 
