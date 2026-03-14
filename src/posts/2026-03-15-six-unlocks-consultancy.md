@@ -1,6 +1,6 @@
 ---
 title: "Your Consultancy's Business Model Just Changed — Here Are Six Reasons That's Great News"
-date: 2026-03-14
+date: 2026-03-15
 excerpt: "Revenue equals headcount times billable hours. That equation is under pressure, and every consultancy leader feels it. But AI doesn't shrink the market for expertise — it explodes it. Six structural shifts that reframe the opportunity for consultancies willing to think bigger."
 featuredImage: "/images/posts/six-unlocks-consultancy.webp"
 layout: post.njk
