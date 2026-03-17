@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if title %}{{ title }} // {% endif %}{{ site.title }}</title>
+  <title>{% if title and title != "Home" %}{{ title }} // {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ excerpt or description or site.description }}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
@@ -15,7 +15,7 @@
   {% set ogDescription = excerpt or description or site.description %}
   {% set ogImage = featuredImage or image or '/images/og-default.png' %}
   {% set ogUrl = site.url + page.url %}
-  {% set ogType = 'article' if layout == '../_layouts/post.njk' else 'website' %}
+  {% set ogType = 'article' if isArticle else 'website' %}
   
   <meta property="og:title" content="{{ ogTitle }}" />
   <meta property="og:description" content="{{ ogDescription }}" />
