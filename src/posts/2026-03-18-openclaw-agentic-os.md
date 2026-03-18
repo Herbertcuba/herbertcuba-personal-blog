@@ -1,7 +1,7 @@
 ---
 title: "We're Building Operating Systems Again — This Time for Agents"
 date: 2026-03-18
-excerpt: "The last time we built operating systems, we were connecting peripherals, file systems, and applications into coherent computing experiences. Now we're doing it again — for AI agents. I run 10 of them daily. The patterns are identical. The stakes are higher."
+excerpt: "The last time we built operating systems, we were connecting peripherals, file systems, and applications into coherent computing experiences. Now we're doing it again — for AI agents. I've been running multiple autonomous agents daily. The patterns are identical. The stakes are higher."
 featuredImage: "/images/posts/openclaw-agentic-os.webp"
 layout: post.njk
 tags: ["ai", "openclaw", "infrastructure", "strategy", "agents"]
@@ -11,13 +11,13 @@ Every few decades, we build a new operating system. Not because we want to — b
 
 DOS gave way to Windows when graphical interfaces demanded it. Unix evolved into Linux when servers needed it. Kubernetes emerged when containers demanded orchestration at scale.
 
-Now it's happening again. At GTC 2025, Jensen Huang compared OpenClaw to Windows — the layer that enabled personal computers. His argument: OpenClaw enables personal agents. I've been running 10 AI agents daily across two organizations, and I think he's underselling it. We're not just building another tool. We're building operating systems again — and the patterns from every previous era are repeating in ways that are both familiar and unsettling.
+Now it's happening again. At GTC 2025, Jensen Huang compared OpenClaw to Windows — the layer that enabled personal computers. His argument: OpenClaw enables personal agents. I've been running multiple autonomous agents daily across two organizations, and I think he's underselling it. We're not just building another tool. We're building operating systems again — and the patterns from every previous era are repeating in ways that are both familiar and unsettling.
 
 ## The OS Analogy Is Not a Metaphor
 
 When Jensen compared OpenClaw to Windows, he was making a structural argument: Windows gave us a standard way to connect applications, peripherals, file systems, and user interfaces into a coherent computing experience. OpenClaw does the same for AI agents — connecting LLMs, tools, file systems, scheduling, sub-agents, and I/O into something that actually works as a system.
 
-I run 10 agents organized in two teams — one for a side project (CEO, PM, frontend dev, QA, integrations, editorial, marketing) and one for financial research and strategy. They have reporting lines, communication protocols, and escalation chains. They schedule work, send each other messages, review code, and manage tasks through a shared board. They have heartbeats — periodic check-ins where they scan for work and decide whether to act or stay quiet.
+I run multiple agents organized in two teams — one for a web project (PM, frontend, QA, integrations, editorial, marketing) and one for research and strategy. They have reporting lines, communication protocols, and escalation chains. They schedule work, send each other messages, review code, and manage tasks through a shared board. They have heartbeats — periodic check-ins where they scan for work and decide whether to act or stay quiet.
 
 That's an operating system. Not metaphorically. Literally.
 
