@@ -1,6 +1,6 @@
 ---
 title: "The Sycophancy Trap: Why AI Is Making Smart People Delusional"
-date: 2026-03-16
+date: 2026-03-19
 excerpt: "AI models are trained to tell you you're brilliant. The smarter you are, the more dangerous that becomes. A dark pattern is emerging — and it matters who you trust in the AI era."
 featuredImage: "/images/posts/ai-sycophancy-trap.webp"
 layout: post.njk
