@@ -67,7 +67,6 @@ The AI space is filling up with people who've been marinating in sycophantic fee
 
 My advice: look for calibration. The consultant who says "I built this with AI and here's where it's still rough" is more trustworthy than the one who presents AI-assisted work as a breakthrough. The expert who can articulate the *limitations* of their AI workflow is probably more competent than the one who only talks about how powerful it is.
 
-In my [Three Levels of AI Acceleration](/posts/three-levels-of-ai-acceleration/) framework, Level 3 — where autonomous AI agents handle complex workflows — requires something fundamental: honesty. An AI agent that flatters you instead of flagging problems will make increasingly costly mistakes that you'll catch too late. If we're building toward autonomous systems, sycophancy isn't just annoying — it's architecturally dangerous.
 
 ## The Uncomfortable Middle Ground
 
