@@ -2,7 +2,7 @@
 title: "The Three Levels of AI Acceleration"
 date: 2026-03-21
 excerpt: "Saying 'we use AI' in 2026 is as blunt as saying 'we use data' — it means nothing without precision. There are three distinct levels of AI acceleration, and confusing them leads to bad decisions."
-featuredImage: "/images/posts/three-levels-ai-acceleration.webp"
+featuredImage: /images/posts/three-levels-ai-acceleration.webp
 layout: post.njk
 tags: ["ai", "strategy", "leadership", "agents"]
 ---
