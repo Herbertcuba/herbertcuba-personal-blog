@@ -212,7 +212,7 @@ title: Home
       <input class="book-modal__input" type="email" name="email" placeholder="Your email" required />
       <button class="book-modal__submit" type="submit">Send me the book</button>
     </form>
-    <p class="book-modal__success" id="bookModalSuccess">Check your email for the download link ✓</p>
+    <p class="book-modal__success" id="bookModalSuccess">Thank you! <a href="/downloads/three-crucibles.pdf" style="color:var(--acid);text-decoration:underline;" target="_blank">Download your free copy here →</a></p>
   </div>
 </div>
 
@@ -252,8 +252,23 @@ title: Home
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    form.style.display = 'none';
-    success.style.display = 'block';
+    var name = form.querySelector('input[name=name]').value;
+    var email = form.querySelector('input[name=email]').value;
+    var submitBtn = form.querySelector('button[type=submit]');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    fetch('https://script.google.com/macros/s/AKfycbxidCqlyulwLHpoOFW_bm48IGyLv0PwDL007s9S-7cAQp29m9bf-O3L5i4Q-mHerHft/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: name, email: email})
+    }).then(function() {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }).catch(function() {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    });
   });
 })();
 </script>
