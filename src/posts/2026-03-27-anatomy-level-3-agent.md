@@ -62,7 +62,7 @@ I see six distinct types of harnesses in the current ecosystem:
 
 Now here's the math that makes harness choice critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow 10 times a day and you're looking at roughly 6 failures. Skills alone, meaning markdown prompts and system instructions, can't fix this. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
 
-My take: most people start with general purpose harnesses because they're the easiest. That's fine for exploration. But the moment you want agents that run autonomously, you need to make a deliberate harness choice. It's the foundation that every other domain builds on.
+Most people start with general purpose harnesses because they're the easiest. That's fine for exploration. But the moment you want agents that run autonomously, you need to make a deliberate harness choice. It's the foundation that every other domain builds on.
 
 ## Intent Architecture
 
@@ -156,7 +156,7 @@ The jump from Level 2 to Level 3 is not linear. It's not about adding a few more
 
 And here's the part I keep coming back to: **Harness Architecture is what determines whether you reach Level 3 or get stuck at Level 2.** You can have good context, decent tools, and solid planning, but if your harness assumes a human is always present, you have a ceiling. The harness is the unlock. It's the difference between "agent that helps me work" and "agent that works."
 
-My take: most organizations will stay at Level 2 for a while, because Level 3 requires infrastructure thinking, not just model thinking. You can't prompt-engineer your way to autonomy. You have to build the runtime and everything around it.
+I think most organizations will stay at Level 2 for a while, because Level 3 requires infrastructure thinking, not just model thinking. You can't prompt-engineer your way to autonomy. You have to build the runtime and everything around it.
 
 ## Honest Closing
 
