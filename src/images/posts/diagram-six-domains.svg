@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="600" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">THE SIX CAPABILITY DOMAINS</text>
+  <text x="600" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">15 capabilities that separate Level 3 agents from everything else</text>
+  <line x1="200" y1="82" x2="1000" y2="82" stroke="#333" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  
+  <!-- 1. Harness Architecture (highlighted as most important) -->
+  <rect x="30" y="100" width="370" height="240" fill="#111" stroke="#e11d48" stroke-width="2"/>
+  <rect x="30" y="100" width="370" height="5" fill="#e11d48"/>
+  <text x="50" y="132" font-family="system-ui, sans-serif" font-size="12" fill="#e11d48" font-weight="700">01 — MOST CRITICAL</text>
+  <text x="50" y="160" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Harness Architecture</text>
+  <text x="50" y="182" font-family="system-ui, sans-serif" font-size="12" fill="#999">The runtime that makes everything possible.</text>
+  <text x="50" y="202" font-family="system-ui, sans-serif" font-size="12" fill="#999">First decision — sets all constraints.</text>
+  <line x1="50" y1="215" x2="380" y2="215" stroke="#222" stroke-width="1"/>
+  <text x="50" y="235" font-family="system-ui, sans-serif" font-size="10" fill="#e11d48">TYPES:</text>
+  <text x="50" y="253" font-family="system-ui, sans-serif" font-size="10" fill="#777">General Purpose · Specialized · Autonomous</text>
+  <text x="50" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#777">Hierarchical · DAG · Hybrid</text>
+  <line x1="50" y1="282" x2="380" y2="282" stroke="#222" stroke-width="1"/>
+  <text x="50" y="300" font-family="system-ui, sans-serif" font-size="10" fill="#555">Claude Code · OpenClaw · LangGraph · CrewAI</text>
+  <text x="50" y="317" font-family="system-ui, sans-serif" font-size="10" fill="#555">Stripe Minions · Custom state machines</text>
+
+  <!-- 2. Intent Architecture -->
+  <rect x="415" y="100" width="370" height="240" fill="#111" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="415" y="100" width="370" height="5" fill="#3b82f6"/>
+  <text x="435" y="132" font-family="system-ui, sans-serif" font-size="12" fill="#3b82f6" font-weight="600">02</text>
+  <text x="435" y="160" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Intent Architecture</text>
+  <text x="435" y="182" font-family="system-ui, sans-serif" font-size="12" fill="#999">Context, identity, memory, and state.</text>
+  <text x="435" y="202" font-family="system-ui, sans-serif" font-size="12" fill="#999">What the agent knows and remembers.</text>
+  <line x1="435" y1="215" x2="765" y2="215" stroke="#222" stroke-width="1"/>
+  <text x="435" y="235" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">CAPABILITIES:</text>
+  <text x="435" y="255" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Context Management</text>
+  <text x="435" y="275" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ State Management</text>
+  <text x="435" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Memory (short + long-term)</text>
+  <text x="435" y="317" font-family="system-ui, sans-serif" font-size="10" fill="#555">System prompts · SOUL.md · Daily logs · Compaction</text>
+
+  <!-- 3. Workflow Design -->
+  <rect x="800" y="100" width="370" height="240" fill="#111" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="800" y="100" width="370" height="5" fill="#3b82f6"/>
+  <text x="820" y="132" font-family="system-ui, sans-serif" font-size="12" fill="#3b82f6" font-weight="600">03</text>
+  <text x="820" y="160" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Workflow Design</text>
+  <text x="820" y="182" font-family="system-ui, sans-serif" font-size="12" fill="#999">Orchestration, delegation, and routing.</text>
+  <text x="820" y="202" font-family="system-ui, sans-serif" font-size="12" fill="#999">How work flows between agents.</text>
+  <line x1="820" y1="215" x2="1150" y2="215" stroke="#222" stroke-width="1"/>
+  <text x="820" y="235" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">CAPABILITIES:</text>
+  <text x="820" y="255" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Planning</text>
+  <text x="820" y="275" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Delegation</text>
+  <text x="820" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Skills</text>
+  <text x="820" y="315" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Multi-agent routing</text>
+
+  <!-- Row 2 -->
+
+  <!-- 4. Platform Operations -->
+  <rect x="30" y="360" width="370" height="240" fill="#111" stroke="#14b8a6" stroke-width="2"/>
+  <rect x="30" y="360" width="370" height="5" fill="#14b8a6"/>
+  <text x="50" y="392" font-family="system-ui, sans-serif" font-size="12" fill="#14b8a6" font-weight="600">04</text>
+  <text x="50" y="420" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Platform Operations</text>
+  <text x="50" y="442" font-family="system-ui, sans-serif" font-size="12" fill="#999">Infrastructure, tools, and execution.</text>
+  <text x="50" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#999">Where agents run and what they can do.</text>
+  <line x1="50" y1="475" x2="380" y2="475" stroke="#222" stroke-width="1"/>
+  <text x="50" y="495" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">CAPABILITIES:</text>
+  <text x="50" y="515" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Infrastructure</text>
+  <text x="50" y="535" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ File System</text>
+  <text x="50" y="555" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Tool Calling</text>
+  <text x="50" y="575" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Code Execution</text>
+
+  <!-- 5. Quality Engineering -->
+  <rect x="415" y="360" width="370" height="240" fill="#111" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="415" y="360" width="370" height="5" fill="#f59e0b"/>
+  <text x="435" y="392" font-family="system-ui, sans-serif" font-size="12" fill="#f59e0b" font-weight="600">05</text>
+  <text x="435" y="420" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Quality Engineering</text>
+  <text x="435" y="442" font-family="system-ui, sans-serif" font-size="12" fill="#999">Validation and human judgment.</text>
+  <text x="435" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#999">How you know the output is good enough.</text>
+  <line x1="435" y1="475" x2="765" y2="475" stroke="#222" stroke-width="1"/>
+  <text x="435" y="495" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">CAPABILITIES:</text>
+  <text x="435" y="515" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Validation (automated loops)</text>
+  <text x="435" y="535" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Human-in-the-Loop</text>
+  <line x1="435" y1="555" x2="765" y2="555" stroke="#222" stroke-width="1"/>
+  <text x="435" y="577" font-family="system-ui, sans-serif" font-size="10" fill="#555">Quality gates · Review loops · Escalation</text>
+
+  <!-- 6. Trust Architecture -->
+  <rect x="800" y="360" width="370" height="240" fill="#111" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="800" y="360" width="370" height="5" fill="#f59e0b"/>
+  <text x="820" y="392" font-family="system-ui, sans-serif" font-size="12" fill="#f59e0b" font-weight="600">06</text>
+  <text x="820" y="420" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Trust Architecture</text>
+  <text x="820" y="442" font-family="system-ui, sans-serif" font-size="12" fill="#999">Security, permissions, and compliance.</text>
+  <text x="820" y="462" font-family="system-ui, sans-serif" font-size="12" fill="#999">The boundaries that make autonomy safe.</text>
+  <line x1="820" y1="475" x2="1150" y2="475" stroke="#222" stroke-width="1"/>
+  <text x="820" y="495" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">CAPABILITIES:</text>
+  <text x="820" y="515" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Security (policy engines, sandboxing)</text>
+  <text x="820" y="535" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Permissions (least privilege)</text>
+  <text x="820" y="555" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Audit trails</text>
+  <text x="820" y="575" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Compliance per org/client</text>
+
+  <!-- Bottom bar -->
+  <rect x="30" y="625" width="1140" height="40" fill="#111" stroke="#333" stroke-width="1"/>
+  <text x="600" y="650" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Domains, not roles. One person can own several. All six must be covered to reach Level 3.</text>
+
+  <!-- Footer -->
+  <text x="1170" y="690" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#333">APT FRAMEWORK</text>
+</svg>

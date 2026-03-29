@@ -34,6 +34,8 @@ The clustering changed that. Each of the 15 capabilities falls naturally under o
 
 These are capability domains, not job titles. A single person can own multiple domains. A team of three might cover all six. The point is that each domain represents a distinct area of competence, and if any one of them is missing, the system breaks down.
 
+![The Six Capability Domains](/images/posts/diagram-six-domains.svg)
+
 Why domains instead of a flat list? Because a flat list of fifteen capabilities sounds like an engineering checklist. Six domains with clear ownership sounds like an organizational design question. Which is exactly what it is. Instead of asking "do we have all fifteen capabilities?" you ask: "who is covering each domain? And are they covering it well?"
 
 ## Harness Architecture
