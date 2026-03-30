@@ -164,6 +164,6 @@ These 15 capabilities are what I see when I look under the hood of an agent syst
 
 The question I keep coming back to is not whether AI agents will reach Level 3. They will. The question is whether the people building them will have thought through all six domains: the harness, the intent layer, the workflows, the platform, the quality chain, and the trust boundaries.
 
-If you find the domain mapping useful and want to go deeper into how humans and agents operate as a team in practice, I'm working on the APT Framework, which covers how to organize people around these domains and build the operating model for agent-native teams. This article gives you the anatomy. That one will give you the operating manual.
+If you find the domain mapping useful and want to go deeper into how humans and agents operate as a team in practice, I'm working on the ADAPT Framework, which covers how to organize people around these domains and build the operating model for agent-native teams. This article gives you the anatomy. That one will give you the operating manual.
 
 Fifteen capabilities. Six domains. All connected. That's the anatomy. The hard part, as always, is the assembly.
