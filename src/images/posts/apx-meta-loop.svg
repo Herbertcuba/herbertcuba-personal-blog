@@ -73,5 +73,5 @@
   <!-- Bottom text -->
   <text x="400" y="735" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Without calibration: a pipeline. With calibration: an evolving system.</text>
   
-  <text x="770" y="780" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#333">APX FRAMEWORK</text>
+  <text x="770" y="780" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#333">APEX FRAMEWORK</text>
 </svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <rect width="1200" height="600" fill="#0a0a0a"/>
+  
+  <text x="600" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">DOMAIN OWNERSHIP — ROLE MAPPING</text>
+  <text x="600" y="57" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Your existing experts find their new place, not get replaced</text>
+  <line x1="200" y1="70" x2="1000" y2="70" stroke="#333" stroke-width="1"/>
+
+  <!-- ROLES (left side) -->
+  <text x="30" y="100" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#999">HUMAN ROLES</text>
+  
+  <rect x="30" y="115" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">CTO / Tech Director</text>
+  
+  <rect x="30" y="160" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Tech Lead</text>
+  
+  <rect x="30" y="205" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Product Manager</text>
+  
+  <rect x="30" y="250" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Design Lead</text>
+  
+  <rect x="30" y="295" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="317" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">AI Engineer</text>
+  
+  <rect x="30" y="340" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="362" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">DevOps / Infra</text>
+  
+  <rect x="30" y="385" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="407" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">QA Lead</text>
+  
+  <rect x="30" y="430" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="452" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Security / Legal</text>
+  
+  <rect x="30" y="475" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="497" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Scrum Master</text>
+
+  <!-- DOMAINS (right side) -->
+  <!-- Platform -->
+  <text x="430" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3b82f6">PLATFORM</text>
+  
+  <rect x="430" y="115" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Harness Selection</text>
+  
+  <rect x="430" y="160" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Infrastructure Ops</text>
+  
+  <rect x="430" y="205" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Security &amp; Compliance</text>
+
+  <!-- Outer Loop -->
+  <text x="700" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#14b8a6">OUTER LOOP</text>
+  
+  <rect x="700" y="115" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">Business Context</text>
+  
+  <rect x="700" y="160" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">Spec Engineering</text>
+  
+  <rect x="700" y="205" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">QA Strategic</text>
+
+  <!-- Inner Loop -->
+  <text x="970" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f59e0b">INNER LOOP</text>
+  
+  <rect x="970" y="115" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">Agent Design</text>
+  
+  <rect x="970" y="160" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">Orchestration Design</text>
+  
+  <rect x="970" y="205" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">QA Operational</text>
+
+  <!-- Connection lines (roles → domains) -->
+  <!-- CTO → Harness, QA Strategic -->
+  <line x1="230" y1="132" x2="430" y2="132" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="132" x2="700" y2="222" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Tech Lead → Harness, Spec Eng, Agent Design, Orchestration, QA Op -->
+  <line x1="230" y1="177" x2="430" y2="132" stroke="#3b82f6" stroke-width="1" opacity="0.4"/>
+  <line x1="230" y1="177" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="177" x2="970" y2="132" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <line x1="230" y1="177" x2="970" y2="177" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  
+  <!-- PM → Business Context, Spec Eng, QA Strategic -->
+  <line x1="230" y1="222" x2="700" y2="132" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="222" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="222" x2="700" y2="222" stroke="#14b8a6" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Design Lead → Spec Engineering -->
+  <line x1="230" y1="267" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  
+  <!-- AI Engineer → Infra Ops, Agent Design -->
+  <line x1="230" y1="312" x2="430" y2="177" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="312" x2="970" y2="132" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+  
+  <!-- DevOps → Infra Ops -->
+  <line x1="230" y1="357" x2="430" y2="177" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  
+  <!-- QA Lead → QA Strategic, QA Operational -->
+  <line x1="230" y1="402" x2="700" y2="222" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="402" x2="970" y2="222" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Security → Security & Compliance -->
+  <line x1="230" y1="447" x2="430" y2="222" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Scrum Master → Orchestration Design -->
+  <line x1="230" y1="492" x2="970" y2="177" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+
+  <!-- Footer -->
+  <text x="600" y="555" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">One person can own multiple domains. Every domain needs a human owner.</text>
+  <text x="1170" y="585" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
+</svg>
