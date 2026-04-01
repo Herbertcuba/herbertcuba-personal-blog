@@ -1,5 +1,4 @@
 {
   "layout": "post.njk",
-  "tags": ["drafts"],
-  "eleventyExcludeFromCollections": false
+  "eleventyExcludeFromCollections": true
 }
