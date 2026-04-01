@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <rect width="1200" height="850" fill="#0a0a0a"/>
+  
+  <text x="600" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">APX FRAMEWORK — THREE LAYERS, NINE DOMAINS</text>
+  <line x1="200" y1="50" x2="1000" y2="50" stroke="#333" stroke-width="1"/>
+
+  <!-- PLATFORM -->
+  <rect x="20" y="70" width="1160" height="230" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="40" y="95" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#3b82f6">PLATFORM</text>
+  
+  <rect x="40" y="110" width="360" height="170" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="40" y="110" width="360" height="4" fill="#3b82f6"/>
+  <text x="60" y="140" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Harness Selection</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="11" fill="#999">What runtime, and how does it fit</text>
+  <text x="60" y="175" font-family="system-ui, sans-serif" font-size="11" fill="#999">into the organization</text>
+  <line x1="60" y1="188" x2="380" y2="188" stroke="#222" stroke-width="1"/>
+  <text x="60" y="208" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">CAPABILITIES:</text>
+  <text x="60" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#666">Architecture (runtime)</text>
+  <text x="60" y="244" font-family="system-ui, sans-serif" font-size="9" fill="#555">LLM model strategy, fallback chains</text>
+  <text x="60" y="262" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ CTO, Tech Director, Solutions Architect</text>
+
+  <rect x="420" y="110" width="360" height="170" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="420" y="110" width="360" height="4" fill="#3b82f6"/>
+  <text x="440" y="140" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Infrastructure Ops</text>
+  <text x="440" y="160" font-family="system-ui, sans-serif" font-size="11" fill="#999">Where are we running this, how do we</text>
+  <text x="440" y="175" font-family="system-ui, sans-serif" font-size="11" fill="#999">maintain it and keep it stable</text>
+  <line x1="440" y1="188" x2="760" y2="188" stroke="#222" stroke-width="1"/>
+  <text x="440" y="208" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">CAPABILITIES:</text>
+  <text x="440" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#666">Infrastructure, File System, Code Execution</text>
+  <text x="440" y="244" font-family="system-ui, sans-serif" font-size="9" fill="#555">CI/CD, monitoring, deployment</text>
+  <text x="440" y="262" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ DevOps, Infra Engineer, AI Engineer</text>
+
+  <rect x="800" y="110" width="360" height="170" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="800" y="110" width="360" height="4" fill="#3b82f6"/>
+  <text x="820" y="140" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Security &amp; Compliance</text>
+  <text x="820" y="160" font-family="system-ui, sans-serif" font-size="11" fill="#999">What can we do, what do we audit,</text>
+  <text x="820" y="175" font-family="system-ui, sans-serif" font-size="11" fill="#999">what compliance is on us</text>
+  <line x1="820" y1="188" x2="1140" y2="188" stroke="#222" stroke-width="1"/>
+  <text x="820" y="208" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">CAPABILITIES:</text>
+  <text x="820" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#666">Security</text>
+  <text x="820" y="244" font-family="system-ui, sans-serif" font-size="9" fill="#555">Permissions, audit trails, data access</text>
+  <text x="820" y="262" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Security Engineer, Compliance, Legal</text>
+
+  <!-- OUTER LOOP (Spec) -->
+  <rect x="20" y="320" width="1160" height="230" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="40" y="345" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#14b8a6">OUTER LOOP (SPEC)</text>
+  
+  <rect x="40" y="360" width="360" height="170" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="40" y="360" width="360" height="4" fill="#14b8a6"/>
+  <text x="60" y="390" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Business Context</text>
+  <text x="60" y="410" font-family="system-ui, sans-serif" font-size="11" fill="#999">Why are we building this, for whom,</text>
+  <text x="60" y="425" font-family="system-ui, sans-serif" font-size="11" fill="#999">and what is the goal</text>
+  <line x1="60" y1="438" x2="380" y2="438" stroke="#222" stroke-width="1"/>
+  <text x="60" y="458" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">CAPABILITIES:</text>
+  <text x="60" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#666">Context Management</text>
+  <text x="60" y="494" font-family="system-ui, sans-serif" font-size="9" fill="#555">Business case, brand, personas, vision</text>
+  <text x="60" y="512" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ PM, Business Analyst, Design Lead</text>
+
+  <rect x="420" y="360" width="360" height="170" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="420" y="360" width="360" height="4" fill="#14b8a6"/>
+  <text x="440" y="390" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Spec Engineering</text>
+  <text x="440" y="410" font-family="system-ui, sans-serif" font-size="11" fill="#999">What do we need to know and more</text>
+  <text x="440" y="425" font-family="system-ui, sans-serif" font-size="11" fill="#999">details on what we want</text>
+  <line x1="440" y1="438" x2="760" y2="438" stroke="#222" stroke-width="1"/>
+  <text x="440" y="458" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">CAPABILITIES:</text>
+  <text x="440" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#666">Specs, PRD, acceptance criteria</text>
+  <text x="440" y="494" font-family="system-ui, sans-serif" font-size="9" fill="#555">Not agent-capabilities — human intent</text>
+  <text x="440" y="512" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Tech Lead, PM, Content Strategist</text>
+
+  <rect x="800" y="360" width="360" height="170" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="800" y="360" width="360" height="4" fill="#14b8a6"/>
+  <text x="820" y="390" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">QA Strategic</text>
+  <text x="820" y="410" font-family="system-ui, sans-serif" font-size="11" fill="#999">Definition of quality gates, HITL, reviews.</text>
+  <text x="820" y="425" font-family="system-ui, sans-serif" font-size="11" fill="#999">Measurement plan and success expectations</text>
+  <line x1="820" y1="438" x2="1140" y2="438" stroke="#222" stroke-width="1"/>
+  <text x="820" y="458" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">CAPABILITIES:</text>
+  <text x="820" y="476" font-family="system-ui, sans-serif" font-size="10" fill="#666">Validation (strategic), HITL</text>
+  <text x="820" y="494" font-family="system-ui, sans-serif" font-size="9" fill="#555">Metrics plan, calibration specs, acceptance</text>
+  <text x="820" y="512" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Tech Director, PM, QA Lead</text>
+
+  <!-- INNER LOOP (Config) -->
+  <rect x="20" y="570" width="1160" height="230" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="40" y="595" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f59e0b">INNER LOOP (CONFIG)</text>
+  
+  <rect x="40" y="610" width="360" height="170" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="40" y="610" width="360" height="4" fill="#f59e0b"/>
+  <text x="60" y="640" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Agent Design</text>
+  <text x="60" y="660" font-family="system-ui, sans-serif" font-size="11" fill="#999">Define &amp; maintain agentic workforce</text>
+  <text x="60" y="675" font-family="system-ui, sans-serif" font-size="11" fill="#999">and LLM models</text>
+  <line x1="60" y1="688" x2="380" y2="688" stroke="#222" stroke-width="1"/>
+  <text x="60" y="708" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">CAPABILITIES:</text>
+  <text x="60" y="726" font-family="system-ui, sans-serif" font-size="10" fill="#666">Tool Calling, State Management, Memory</text>
+  <text x="60" y="744" font-family="system-ui, sans-serif" font-size="9" fill="#555">Agent identities, skills, behavior config</text>
+  <text x="60" y="762" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ AI Engineer, Tech Lead</text>
+
+  <rect x="420" y="610" width="360" height="170" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="420" y="610" width="360" height="4" fill="#f59e0b"/>
+  <text x="440" y="640" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Orchestration Design</text>
+  <text x="440" y="660" font-family="system-ui, sans-serif" font-size="11" fill="#999">Define and maintain agentic workflows,</text>
+  <text x="440" y="675" font-family="system-ui, sans-serif" font-size="11" fill="#999">loops and reviews</text>
+  <line x1="440" y1="688" x2="760" y2="688" stroke="#222" stroke-width="1"/>
+  <text x="440" y="708" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">CAPABILITIES:</text>
+  <text x="440" y="726" font-family="system-ui, sans-serif" font-size="10" fill="#666">Planning, Delegation, Routing, Skills</text>
+  <text x="440" y="744" font-family="system-ui, sans-serif" font-size="9" fill="#555">Workflow maps, handoffs, done-criteria</text>
+  <text x="440" y="762" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Process Designer, Tech Lead, Scrum Master</text>
+
+  <rect x="800" y="610" width="360" height="170" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="800" y="610" width="360" height="4" fill="#f59e0b"/>
+  <text x="820" y="640" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">QA Operational</text>
+  <text x="820" y="660" font-family="system-ui, sans-serif" font-size="11" fill="#999">Verify, review and HITL plan</text>
+  <text x="820" y="675" font-family="system-ui, sans-serif" font-size="11" fill="#999">within agent execution loops</text>
+  <line x1="820" y1="688" x2="1140" y2="688" stroke="#222" stroke-width="1"/>
+  <text x="820" y="708" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">CAPABILITIES:</text>
+  <text x="820" y="726" font-family="system-ui, sans-serif" font-size="10" fill="#666">Validation (operational)</text>
+  <text x="820" y="744" font-family="system-ui, sans-serif" font-size="9" fill="#555">Agent-to-agent review, quality gates</text>
+  <text x="820" y="762" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ QA Lead, Tech Lead</text>
+
+  <text x="1160" y="830" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#333">APX FRAMEWORK</text>
+</svg>
