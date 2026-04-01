@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#0a0a0a"/>
+  
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">THE APX CYCLE</text>
+  <text x="400" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Three phases. One evolving system.</text>
+  <line x1="200" y1="75" x2="600" y2="75" stroke="#333" stroke-width="1"/>
+
+  <!-- Phase 1: Human-First -->
+  <rect x="100" y="100" width="600" height="170" fill="#111" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="100" y="100" width="600" height="6" fill="#3b82f6"/>
+  <text x="130" y="135" font-family="system-ui, sans-serif" font-size="12" fill="#3b82f6" font-weight="700">PHASE 1</text>
+  <text x="130" y="165" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Human-First</text>
+  <text x="130" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#999">Setup &amp; Configuration</text>
+  
+  <text x="430" y="135" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Choose harness architecture</text>
+  <text x="430" y="155" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Build intent architecture</text>
+  <text x="430" y="175" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Design workflows &amp; routing</text>
+  <text x="430" y="195" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Configure platform &amp; tools</text>
+  <text x="430" y="215" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Define quality criteria</text>
+  <text x="430" y="235" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Set trust boundaries</text>
+  
+  <text x="130" y="255" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">HUMANS DESIGN THE SYSTEM</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="270" x2="400" y2="310" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="394,308 400,320 406,308" fill="#14b8a6"/>
+
+  <!-- Phase 2: Agentic-First -->
+  <rect x="100" y="320" width="600" height="170" fill="#111" stroke="#14b8a6" stroke-width="2"/>
+  <rect x="100" y="320" width="600" height="6" fill="#14b8a6"/>
+  <text x="130" y="355" font-family="system-ui, sans-serif" font-size="12" fill="#14b8a6" font-weight="700">PHASE 2</text>
+  <text x="130" y="385" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Agentic-First</text>
+  <text x="130" y="410" font-family="system-ui, sans-serif" font-size="13" fill="#999">Execution &amp; Iteration</text>
+  
+  <text x="430" y="355" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ APX Execution Loop × N</text>
+  <text x="430" y="375" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Agent-to-agent review</text>
+  <text x="430" y="395" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Spec → Execute → Review → Iterate</text>
+  <text x="430" y="415" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Minimal human intervention</text>
+  
+  <!-- Mini loop -->
+  <path d="M 480 440 C 480 460, 620 460, 620 440" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="618,442 624,438 620,450" fill="#14b8a6"/>
+  <text x="550" y="475" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#14b8a6">iterate until spec met</text>
+
+  <text x="130" y="475" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">AGENTS EXECUTE &amp; ITERATE</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="490" x2="400" y2="530" stroke="#14b8a6" stroke-width="2"/>
+  <polygon points="394,528 400,540 406,528" fill="#f59e0b"/>
+
+  <!-- Phase 3: Human-Last -->
+  <rect x="100" y="540" width="600" height="150" fill="#111" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="100" y="540" width="600" height="6" fill="#f59e0b"/>
+  <text x="130" y="575" font-family="system-ui, sans-serif" font-size="12" fill="#f59e0b" font-weight="700">PHASE 3</text>
+  <text x="130" y="605" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Human-Last</text>
+  <text x="130" y="630" font-family="system-ui, sans-serif" font-size="13" fill="#999">Verification &amp; Delivery</text>
+  
+  <text x="430" y="575" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Domain-mapped quality gates</text>
+  <text x="430" y="595" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Final delivery verification</text>
+  <text x="430" y="615" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Data collection for reflection</text>
+  <text x="430" y="635" font-family="system-ui, sans-serif" font-size="11" fill="#777">▸ Feedback to Phase 1</text>
+  
+  <text x="130" y="675" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">HUMANS VERIFY &amp; CLOSE</text>
+
+  <!-- Calibrate feedback loop -->
+  <path d="M 700 615 L 750 615 L 750 190 L 700 190" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="10,5"/>
+  <polygon points="702,184 694,190 702,196" fill="#e11d48"/>
+  
+  <!-- Calibrate label -->
+  <rect x="730" y="380" width="30" height="100" fill="#0a0a0a"/>
+  <text x="760" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#e11d48" transform="rotate(90, 760, 420)">CALIBRATE</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="735" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Without calibration: a pipeline. With calibration: an evolving system.</text>
+  
+  <text x="770" y="780" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" fill="#333">APX FRAMEWORK</text>
+</svg>
