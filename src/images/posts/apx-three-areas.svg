@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <rect width="1200" height="520" fill="#0a0a0a"/>
+  
+  <text x="600" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">THREE AREAS, NINE DOMAINS</text>
+  <text x="600" y="57" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">All nine domains live in Strategic — this is where humans design the system</text>
+  <line x1="200" y1="70" x2="1000" y2="70" stroke="#333" stroke-width="1"/>
+
+  <!-- Platform Area -->
+  <rect x="20" y="85" width="380" height="380" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="40" y="108" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#3b82f6">PLATFORM AREA</text>
+  
+  <rect x="35" y="120" width="350" height="100" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="55" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Harness Selection</text>
+  <text x="55" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Runtime, LLM strategy, fallbacks</text>
+  <text x="55" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ CTO, Tech Director</text>
+
+  <rect x="35" y="230" width="350" height="100" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="55" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Infrastructure Ops</text>
+  <text x="55" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">Deploy, CI/CD, monitoring, stability</text>
+  <text x="55" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ DevOps, Infra Engineer</text>
+
+  <rect x="35" y="340" width="350" height="100" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="55" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Security &amp; Compliance</text>
+  <text x="55" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Permissions, audit, data access</text>
+  <text x="55" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Security Engineer, Legal</text>
+
+  <!-- Spec Area -->
+  <rect x="410" y="85" width="380" height="380" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="430" y="108" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#14b8a6">SPEC AREA</text>
+  
+  <rect x="425" y="120" width="350" height="100" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="445" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Business Context</text>
+  <text x="445" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Business case, brand, personas, vision</text>
+  <text x="445" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ PM, Business Analyst</text>
+
+  <rect x="425" y="230" width="350" height="100" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="445" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Spec Engineering</text>
+  <text x="445" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">PRD, specs, acceptance criteria</text>
+  <text x="445" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Tech Lead, PM, Design Lead</text>
+
+  <rect x="425" y="340" width="350" height="100" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="445" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">QA Strategic</text>
+  <text x="445" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Measurement plan, HITL, quality definition</text>
+  <text x="445" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Tech Director, QA Lead</text>
+
+  <!-- Config Area -->
+  <rect x="800" y="85" width="380" height="380" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="820" y="108" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">CONFIG AREA</text>
+  
+  <rect x="815" y="120" width="350" height="100" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="835" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Agent Design</text>
+  <text x="835" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Identities, behavior, skills, memory</text>
+  <text x="835" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ AI Engineer, Tech Lead</text>
+
+  <rect x="815" y="230" width="350" height="100" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="835" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Orchestration Design</text>
+  <text x="835" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">Routing, delegation, handoffs, workflows</text>
+  <text x="835" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Process Designer, Tech Lead</text>
+
+  <rect x="815" y="340" width="350" height="100" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="835" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">QA Operational</text>
+  <text x="835" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Agent review criteria, quality gates</text>
+  <text x="835" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ QA Lead, Tech Lead</text>
+
+  <text x="600" y="498" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">All nine domains are configured during Strategic. Agents execute within this configuration during Execution.</text>
+  <text x="1170" y="515" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
+</svg>
