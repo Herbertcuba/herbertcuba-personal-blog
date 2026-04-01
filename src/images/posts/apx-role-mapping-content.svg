@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" width="1200" height="550">
+  <rect width="1200" height="550" fill="#0a0a0a"/>
+  
+  <text x="600" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">DOMAIN OWNERSHIP — CONTENT PRODUCTION</text>
+  <text x="600" y="57" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Same framework, different role mapping</text>
+  <line x1="200" y1="70" x2="1000" y2="70" stroke="#333" stroke-width="1"/>
+
+  <!-- ROLES (left side) -->
+  <text x="30" y="100" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#999">HUMAN ROLES</text>
+  
+  <rect x="30" y="115" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Content Manager Lead</text>
+  
+  <rect x="30" y="160" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Copywriter / Editor</text>
+  
+  <rect x="30" y="205" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Content Strategist</text>
+  
+  <rect x="30" y="250" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">AI Engineer</text>
+  
+  <rect x="30" y="295" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="317" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">SEO Specialist</text>
+  
+  <rect x="30" y="340" width="200" height="35" fill="#111" stroke="#666" stroke-width="1" rx="2"/>
+  <text x="130" y="362" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#e0e0e0">Brand Manager</text>
+
+  <!-- DOMAINS (right side) -->
+  <!-- Platform -->
+  <text x="430" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3b82f6">PLATFORM</text>
+  
+  <rect x="430" y="115" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Harness Selection</text>
+  
+  <rect x="430" y="160" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Infrastructure Ops</text>
+  
+  <rect x="430" y="205" width="220" height="35" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="540" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Security &amp; Compliance</text>
+
+  <!-- Spec Area -->
+  <text x="700" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#14b8a6">SPEC AREA</text>
+  
+  <rect x="700" y="115" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">Business Context</text>
+  
+  <rect x="700" y="160" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">Spec Engineering</text>
+  
+  <rect x="700" y="205" width="220" height="35" fill="#111" stroke="#14b8a6" stroke-width="1.5" rx="2"/>
+  <text x="810" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6">QA Strategic</text>
+
+  <!-- Config Area -->
+  <text x="970" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f59e0b">CONFIG AREA</text>
+  
+  <rect x="970" y="115" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="137" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">Agent Design</text>
+  
+  <rect x="970" y="160" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">Orchestration Design</text>
+  
+  <rect x="970" y="205" width="200" height="35" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="1070" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">QA Operational</text>
+
+  <!-- Connection lines -->
+  <!-- Content Manager Lead → Business Context, QA Strategic, Orchestration -->
+  <line x1="230" y1="132" x2="700" y2="132" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="132" x2="700" y2="222" stroke="#14b8a6" stroke-width="1" opacity="0.5"/>
+  <line x1="230" y1="132" x2="970" y2="177" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Copywriter/Editor → Spec Engineering, QA Strategic, QA Operational -->
+  <line x1="230" y1="177" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="177" x2="700" y2="222" stroke="#14b8a6" stroke-width="1" opacity="0.4"/>
+  <line x1="230" y1="177" x2="970" y2="222" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Content Strategist → Business Context, Spec Engineering -->
+  <line x1="230" y1="222" x2="700" y2="132" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="222" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  
+  <!-- AI Engineer → Harness, Infra, Agent Design -->
+  <line x1="230" y1="267" x2="430" y2="132" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="267" x2="430" y2="177" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+  <line x1="230" y1="267" x2="970" y2="132" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+  
+  <!-- SEO Specialist → Spec Engineering, QA Operational -->
+  <line x1="230" y1="312" x2="700" y2="177" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="312" x2="970" y2="222" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Brand Manager → Business Context, Security -->
+  <line x1="230" y1="357" x2="700" y2="132" stroke="#14b8a6" stroke-width="1" opacity="0.6"/>
+  <line x1="230" y1="357" x2="430" y2="222" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+
+  <!-- Footer -->
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">Same nine domains. Different roles. The framework adapts to your team.</text>
+  
+  <!-- Comparison note -->
+  <rect x="30" y="460" width="1140" height="55" fill="#111" stroke="#333" stroke-width="1"/>
+  <text x="50" y="483" font-family="system-ui, sans-serif" font-size="11" fill="#999">Key difference from product development: Design Lead is replaced by Content Manager Lead. Copywriters and editors</text>
+  <text x="50" y="500" font-family="system-ui, sans-serif" font-size="11" fill="#999">shape both specs (editorial guidelines) and quality gates (brand voice, fact-checking). Their expertise becomes the verification lens.</text>
+
+  <text x="1170" y="540" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
+</svg>
