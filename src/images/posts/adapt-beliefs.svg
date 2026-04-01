@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <rect width="1000" height="500" fill="#0a0a0a"/>
+  <text x="500" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">THE SEVEN BELIEFS</text>
+  <line x1="200" y1="50" x2="800" y2="50" stroke="#333" stroke-width="1"/>
+
+  <rect x="30" y="70" width="450" height="55" fill="#111" stroke="#3b82f6" stroke-width="1"/>
+  <text x="50" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6" font-weight="600">01</text>
+  <text x="80" y="92" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">Agents are team members, not tools</text>
+  <text x="80" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#777">Roles, responsibilities, memory, protocols</text>
+
+  <rect x="520" y="70" width="450" height="55" fill="#111" stroke="#3b82f6" stroke-width="1"/>
+  <text x="540" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6" font-weight="600">02</text>
+  <text x="570" y="92" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">Humans specify and verify</text>
+  <text x="570" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#777">Agents execute and iterate. Bookends.</text>
+
+  <rect x="30" y="140" width="450" height="55" fill="#111" stroke="#14b8a6" stroke-width="1"/>
+  <text x="50" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6" font-weight="600">03</text>
+  <text x="80" y="162" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">The system must evolve</text>
+  <text x="80" y="182" font-family="system-ui, sans-serif" font-size="10" fill="#777">Static configs degrade. Calibrate regularly.</text>
+
+  <rect x="520" y="140" width="450" height="55" fill="#111" stroke="#14b8a6" stroke-width="1"/>
+  <text x="540" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#14b8a6" font-weight="600">04</text>
+  <text x="570" y="162" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">Trust through architecture, not faith</text>
+  <text x="570" y="182" font-family="system-ui, sans-serif" font-size="10" fill="#777">Permissions, guardrails, quality gates</text>
+
+  <rect x="30" y="210" width="450" height="55" fill="#111" stroke="#f59e0b" stroke-width="1"/>
+  <text x="50" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b" font-weight="600">05</text>
+  <text x="80" y="232" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">Output quality = input quality</text>
+  <text x="80" y="252" font-family="system-ui, sans-serif" font-size="10" fill="#777">Invest in specs and documentation</text>
+
+  <rect x="520" y="210" width="450" height="55" fill="#111" stroke="#f59e0b" stroke-width="1"/>
+  <text x="540" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b" font-weight="600">06</text>
+  <text x="570" y="232" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">Don't outsource the strategic thinking</text>
+  <text x="570" y="252" font-family="system-ui, sans-serif" font-size="10" fill="#777">Outsource execution, keep strategy human</text>
+
+  <rect x="275" y="280" width="450" height="55" fill="#111" stroke="#e11d48" stroke-width="1"/>
+  <text x="295" y="302" font-family="system-ui, sans-serif" font-size="11" fill="#e11d48" font-weight="600">07</text>
+  <text x="325" y="302" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e0e0e0">The harness determines the ceiling</text>
+  <text x="325" y="322" font-family="system-ui, sans-serif" font-size="10" fill="#777">Runtime choice sets all constraints</text>
+
+  <text x="500" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">These beliefs are not aspirational. They come from running the system daily.</text>
+  <text x="970" y="480" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">ADAPT FRAMEWORK</text>
+</svg>

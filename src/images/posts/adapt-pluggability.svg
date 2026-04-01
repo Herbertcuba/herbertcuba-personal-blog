@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400">
+  <rect width="1000" height="400" fill="#0a0a0a"/>
+  <text x="500" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">FRAMEWORK PLUGGABILITY</text>
+  <text x="500" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">ADAPT wraps around your existing methodology</text>
+  <line x1="200" y1="68" x2="800" y2="68" stroke="#333" stroke-width="1"/>
+
+  <!-- Outer loop: ADAPT -->
+  <rect x="30" y="85" width="940" height="250" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
+  <text x="50" y="108" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#3b82f6">ADAPT OUTER LOOP</text>
+
+  <!-- Human-First -->
+  <rect x="50" y="120" width="160" height="70" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="130" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#3b82f6">Human-First</text>
+  <text x="130" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">Design &amp; Configure</text>
+
+  <line x1="210" y1="155" x2="250" y2="155" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="248,151 256,155 248,159" fill="#14b8a6"/>
+
+  <!-- Inner loop box: Your Methodology -->
+  <rect x="260" y="105" width="420" height="210" fill="#111" stroke="#14b8a6" stroke-width="2" rx="2"/>
+  <text x="470" y="128" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#14b8a6">AGENTIC-FIRST (YOUR INNER LOOP)</text>
+
+  <!-- Three examples -->
+  <rect x="280" y="145" width="120" height="50" fill="#1a1a1a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="340" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#14b8a6">Scrum</text>
+  <text x="340" y="184" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#555">Sprint cycles</text>
+
+  <rect x="415" y="145" width="120" height="50" fill="#1a1a1a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="475" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#14b8a6">Kanban</text>
+  <text x="475" y="184" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#555">Continuous flow</text>
+
+  <rect x="550" y="145" width="120" height="50" fill="#1a1a1a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="610" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#14b8a6">SAFe</text>
+  <text x="610" y="184" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#555">PI Planning</text>
+
+  <!-- ADAPT Loop inside -->
+  <text x="470" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Spec → Execute → Review → Iterate → Verify</text>
+
+  <!-- Agent loop indicator -->
+  <path d="M 350 240 C 350 260, 590 260, 590 240" fill="none" stroke="#14b8a6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="470" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#14b8a6">Agent-to-agent iterations</text>
+
+  <text x="470" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#555">Any methodology works here</text>
+
+  <line x1="680" y1="155" x2="720" y2="155" stroke="#14b8a6" stroke-width="1.5"/>
+  <polygon points="718,151 726,155 718,159" fill="#f59e0b"/>
+
+  <!-- Human-Last -->
+  <rect x="730" y="120" width="160" height="70" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="810" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f59e0b">Human-Last</text>
+  <text x="810" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">Verify &amp; Calibrate</text>
+
+  <!-- Calibrate loop -->
+  <path d="M 810 190 L 810 320 L 130 320 L 130 190" fill="none" stroke="#e11d48" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polygon points="126,192 130,184 134,192" fill="#e11d48"/>
+  <text x="470" y="345" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e11d48">CALIBRATE → EVOLVE → REPEAT</text>
+
+  <text x="970" y="390" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">ADAPT FRAMEWORK</text>
+</svg>

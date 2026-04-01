@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="1000" height="350">
+  <rect width="1000" height="350" fill="#0a0a0a"/>
+  <text x="500" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">CALIBRATION CADENCE</text>
+  <line x1="200" y1="50" x2="800" y2="50" stroke="#333" stroke-width="1"/>
+
+  <!-- Work Cycle -->
+  <rect x="40" y="90" width="180" height="100" fill="#111" stroke="#14b8a6" stroke-width="2"/>
+  <rect x="40" y="90" width="180" height="4" fill="#14b8a6"/>
+  <text x="130" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Work Cycle</text>
+  <text x="130" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">ADAPT Loop runs</text>
+  <text x="130" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">N iterations</text>
+
+  <line x1="220" y1="140" x2="270" y2="140" stroke="#14b8a6" stroke-width="2"/>
+  <polygon points="268,136 276,140 268,144" fill="#3b82f6"/>
+
+  <!-- Verification -->
+  <rect x="280" y="90" width="180" height="100" fill="#111" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="280" y="90" width="180" height="4" fill="#3b82f6"/>
+  <text x="370" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Verification</text>
+  <text x="370" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Human verifies output</text>
+  <text x="370" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">against intent</text>
+
+  <line x1="460" y1="140" x2="510" y2="140" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="508,136 516,140 508,144" fill="#f59e0b"/>
+
+  <!-- Reflection -->
+  <rect x="520" y="90" width="180" height="100" fill="#111" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="520" y="90" width="180" height="4" fill="#f59e0b"/>
+  <text x="610" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Reflection</text>
+  <text x="610" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Humans + agents brainstorm</text>
+  <text x="610" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">improvements. Data-driven.</text>
+
+  <line x1="700" y1="140" x2="750" y2="140" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="748,136 756,140 748,144" fill="#e11d48"/>
+
+  <!-- Calibration -->
+  <rect x="760" y="90" width="200" height="100" fill="#111" stroke="#e11d48" stroke-width="2"/>
+  <rect x="760" y="90" width="200" height="4" fill="#e11d48"/>
+  <text x="860" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Calibration</text>
+  <text x="860" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Implement changes to</text>
+  <text x="860" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">strategic layer</text>
+
+  <!-- Loop back arrow -->
+  <path d="M 860 190 L 860 250 L 130 250 L 130 190" fill="none" stroke="#e11d48" stroke-width="2" stroke-dasharray="8,4"/>
+  <polygon points="126,192 130,184 134,192" fill="#e11d48"/>
+  <text x="500" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e11d48">SYSTEM EVOLVES → NEXT CYCLE</text>
+
+  <text x="500" y="310" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#555">Without calibration: a pipeline. With calibration: an evolving system.</text>
+  <text x="970" y="335" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">ADAPT FRAMEWORK</text>
+</svg>
