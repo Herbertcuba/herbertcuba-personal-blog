@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450">
-  <rect width="1000" height="450" fill="#0a0a0a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1200" height="450">
+  <rect width="1200" height="450" fill="#0a0a0a"/>
   <text x="500" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">SEVEN ANTI-PATTERNS</text>
   <text x="500" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">Common failure modes and their fixes</text>
   <line x1="200" y1="68" x2="800" y2="68" stroke="#333" stroke-width="1"/>
