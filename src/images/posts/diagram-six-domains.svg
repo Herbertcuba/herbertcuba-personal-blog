@@ -24,7 +24,7 @@
   <line x1="435" y1="190" x2="765" y2="190" stroke="#222" stroke-width="1"/>
   <text x="435" y="210" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">ARTIFACTS:</text>
   <text x="435" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#666">Business case, brand guidelines, design system,</text>
-  <text x="435" y="246" font-family="system-ui, sans-serif" font-size="11" fill="#666">PRD, specs, personas, agent identity files, memory</text>
+  <text x="435" y="246" font-family="system-ui, sans-serif" font-size="11" fill="#666">PRD, specs, personas, memory logs</text>
 
   <rect x="800" y="95" width="370" height="170" fill="#111" stroke="#14b8a6" stroke-width="2"/>
   <rect x="800" y="95" width="370" height="5" fill="#14b8a6"/>
@@ -33,8 +33,8 @@
   <text x="820" y="178" font-family="system-ui, sans-serif" font-size="12" fill="#999">Orchestration, delegation, and routing</text>
   <line x1="820" y1="190" x2="1150" y2="190" stroke="#222" stroke-width="1"/>
   <text x="820" y="210" font-family="system-ui, sans-serif" font-size="10" fill="#14b8a6">ARTIFACTS:</text>
-  <text x="820" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#666">Agent Roster, Workflow Map,</text>
-  <text x="820" y="246" font-family="system-ui, sans-serif" font-size="11" fill="#666">routing rules, escalation paths, done-criteria</text>
+  <text x="820" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#666">Agent Roster, Agent Identity Files,</text>
+  <text x="820" y="246" font-family="system-ui, sans-serif" font-size="11" fill="#666">Workflow Map, routing rules, done-criteria</text>
 
   <!-- Row 2 -->
   <rect x="30" y="290" width="370" height="170" fill="#111" stroke="#14b8a6" stroke-width="2"/>
