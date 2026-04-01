@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <rect width="1000" height="700" fill="#0a0a0a"/>
+  
+  <text x="500" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#ffffff">APEX METRICS — WHERE THEY LIVE</text>
+  <line x1="200" y1="50" x2="800" y2="50" stroke="#333" stroke-width="1"/>
+
+  <!-- OUTER LOOP (larger circle, open with gate) -->
+  <!-- Arc from ~30° to ~330° (open at top-right) -->
+  <path d="M 630 180 A 250 250 0 1 0 680 300" fill="none" stroke="#3b82f6" stroke-width="3"/>
+  <!-- Arrow at end of arc -->
+  <polygon points="682,295 690,310 674,308" fill="#3b82f6"/>
+  
+  <!-- Outer Loop label -->
+  <text x="200" y="130" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#3b82f6">OUTER LOOP</text>
+  <text x="200" y="150" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">(Strategic → Execution → Reflection)</text>
+
+  <!-- Outer loop gate (between arrow and start) -->
+  <rect x="635" y="180" width="100" height="50" fill="#111" stroke="#e11d48" stroke-width="2" rx="2"/>
+  <text x="685" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#e11d48">VERIFICATION</text>
+  <text x="685" y="218" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#e11d48">GATE</text>
+
+  <!-- Outer loop metrics -->
+  <rect x="70" y="230" width="200" height="55" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="170" y="253" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">First-Pass Acceptance</text>
+  <text x="170" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">% accepted without loop-back</text>
+
+  <rect x="70" y="300" width="200" height="55" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="170" y="323" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Cycle Velocity</text>
+  <text x="170" y="342" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">Spec to verified delivery time</text>
+
+  <rect x="70" y="370" width="200" height="55" fill="#111" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+  <text x="170" y="393" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Calibration Impact</text>
+  <text x="170" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">Metric change cycle-over-cycle</text>
+
+  <!-- INNER LOOP (smaller circle, open with gate) -->
+  <!-- Arc from ~30° to ~330° (open at right) -->
+  <path d="M 570 310 A 120 120 0 1 0 590 370" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <!-- Arrow at end of arc -->
+  <polygon points="592,365 598,378 584,374" fill="#f59e0b"/>
+
+  <!-- Inner Loop label -->
+  <text x="420" y="290" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">INNER LOOP</text>
+  <text x="420" y="308" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">(Execution Loop)</text>
+
+  <!-- Inner loop gate -->
+  <rect x="560" y="320" width="80" height="40" fill="#111" stroke="#e11d48" stroke-width="2" rx="2"/>
+  <text x="600" y="338" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#e11d48">QUALITY</text>
+  <text x="600" y="352" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#e11d48">GATE</text>
+
+  <!-- Inner loop metrics -->
+  <rect x="380" y="420" width="200" height="55" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="480" y="443" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Iteration Depth</text>
+  <text x="480" y="462" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">Avg agent-to-agent iterations</text>
+
+  <rect x="380" y="490" width="200" height="55" fill="#111" stroke="#f59e0b" stroke-width="1.5" rx="2"/>
+  <text x="480" y="513" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Human Touch Rate</text>
+  <text x="480" y="532" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#777">% needing mid-loop intervention</text>
+
+  <!-- CALIBRATION step (dashed line between loops) -->
+  <line x1="500" y1="560" x2="500" y2="600" stroke="#e11d48" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="500" y1="600" x2="200" y2="600" stroke="#e11d48" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="200" y1="600" x2="200" y2="470" stroke="#e11d48" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="196,472 200,464 204,472" fill="#e11d48"/>
+
+  <!-- Calibration label -->
+  <rect x="290" y="585" width="150" height="30" fill="#0a0a0a" stroke="#e11d48" stroke-width="1.5" rx="2"/>
+  <text x="365" y="605" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#e11d48">CALIBRATION</text>
+
+  <!-- Legend -->
+  <rect x="700" y="450" width="12" height="12" fill="#3b82f6"/>
+  <text x="720" y="461" font-family="system-ui, sans-serif" font-size="10" fill="#777">Outer Loop (Strategic)</text>
+  <rect x="700" y="475" width="12" height="12" fill="#f59e0b"/>
+  <text x="720" y="486" font-family="system-ui, sans-serif" font-size="10" fill="#777">Inner Loop (Execution)</text>
+  <rect x="700" y="500" width="12" height="12" fill="#e11d48"/>
+  <text x="720" y="511" font-family="system-ui, sans-serif" font-size="10" fill="#777">Gates &amp; Calibration</text>
+
+  <text x="970" y="685" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
+</svg>
