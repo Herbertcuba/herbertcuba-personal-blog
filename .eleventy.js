@@ -1,7 +1,18 @@
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+
 /** @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig */
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
   eleventyConfig.addPassthroughCopy({ "src/images": "/images" });
+
+  // Markdown with heading anchors
+  const md = markdownIt({ html: true, linkify: true })
+    .use(markdownItAnchor, {
+      permalink: false,
+      slugify: (s) => s.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim()
+    });
+  eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("isoDate", (dateObj) => {
     const d = new Date(dateObj);
