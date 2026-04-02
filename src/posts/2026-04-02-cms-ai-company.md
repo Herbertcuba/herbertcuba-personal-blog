@@ -21,6 +21,8 @@ Sanity went a different direction. Their agent framework is built around governa
 
 Cosmic JS took the "while you sleep" angle. Their agent system publishes content autonomously based on schedules, triggers, and content rules. Queue up a campaign framework, define the parameters, and agents will generate variations, A/B test them, and publish winners without a human touching the publish button. Content operations that used to require a team of five working in shifts now run continuously with a single person reviewing dashboards in the morning.
 
+Hygraph is building its workflow engine around agent orchestration. Content flows that used to require manual triggers and human handoffs now run as agent-driven pipelines — content gets created, routed through review stages, enriched with metadata, and published across channels with agents handling each step. The workflow engine becomes the orchestration layer, and the CMS becomes the system of record that agents read from and write to.
+
 Then there's Brightspot, coming at this from the enterprise media side. Their AI capabilities are woven into editorial workflows for large-scale publishers — organizations that produce hundreds of pieces per day. Automated tagging, content classification, related content linking, headline optimization. All running as background processes while editorial teams focus on the journalism itself.
 
 Four vendors. Four different approaches. One shared conclusion: the CMS is no longer a tool that humans use to manage content. It's becoming infrastructure that AI agents use to operate content, with humans in supervisory roles.
