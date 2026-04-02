@@ -210,6 +210,9 @@ title: Home
     <form class="book-modal__form" id="bookModalForm">
       <input class="book-modal__input" type="text" name="name" placeholder="Your name" required />
       <input class="book-modal__input" type="email" name="email" placeholder="Your email" required />
+      <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </div>
       <button class="book-modal__submit" type="submit">Send me the book</button>
     </form>
     <p class="book-modal__success" id="bookModalSuccess">Thank you! <a href="/downloads/three-crucibles.pdf" style="color:var(--acid);text-decoration:underline;" target="_blank">Download your free copy here →</a></p>
@@ -252,6 +255,8 @@ title: Home
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    var honeypot = form.querySelector('input[name=website]').value;
+    if (honeypot) { form.style.display = 'none'; success.style.display = 'block'; return; }
     var name = form.querySelector('input[name=name]').value;
     var email = form.querySelector('input[name=email]').value;
     var submitBtn = form.querySelector('button[type=submit]');
