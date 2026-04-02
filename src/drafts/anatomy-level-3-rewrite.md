@@ -126,7 +126,6 @@ Agent-to-agent review criteria, quality gates within agentic workflows, automate
 
 This is the companion to QA Strategic (domain 6). Where Strategic defines what quality means, Operational implements it in every agentic workflow. Agents that check their own work and each other's. Did the code compile? Did the tests pass? Does the content match the brand voice? Does the implementation actually meet the spec?
 
-One agent generates, another evaluates, and they loop until the output meets the bar. Most issues get caught and fixed before a human ever sees the result. The human-in-the-loop layer then handles the judgment calls — the things that pass every automated check but need human sense-making. Cultural sensitivity. Brand consistency. Edge cases that only domain experience would catch.
 
 The calibration question is always: how much autonomy at what level of risk? A draft internal document might not need human review. A public article does. A staging deployment might run autonomously. A production deployment probably shouldn't.
 
