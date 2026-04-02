@@ -52,7 +52,7 @@ Six types exist in the current ecosystem:
 
 Now here's the math that makes this decision critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow ten times a day and you're looking at roughly six failures daily. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
 
-My take: model strategy is part of this domain too. Which models for which tasks. Cost versus capability trade-offs. Fallback chains. The harness and the model strategy together form the foundation that constrains everything above.
+Model strategy is part of this domain too. Which models for which tasks. Cost versus capability trade-offs. Fallback chains. The harness and the model strategy together form the foundation that constrains everything above.
 
 ### 2. Infrastructure Ops
 
