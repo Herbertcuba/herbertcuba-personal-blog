@@ -66,8 +66,6 @@ The alternative is harder to sell internally but dramatically more effective: be
 
 Then design your agents into that new process. Give them clear roles, clear boundaries, and clear interfaces with both humans and other agents. Build verification loops where humans validate output at the points that matter most. Make the system measurable so you can see what's working and what needs calibration.
 
-This is essentially what the [APEX Framework](/drafts/83c585a6/) is designed to do: structure the relationship between human expertise and agent execution so that the system improves over every cycle. Strategic phase first, where humans design the process and define quality. Execution phase second, where agents operate within those boundaries. Reflection phase third, where data from execution feeds back into process improvement.
-
 KPMG's data validates something that should be obvious but apparently needs $200/hour consultants to make credible: the system design matters more than the components. The 11% who lead aren't leading because they have better agents. They're leading because they did the organizational work that everyone else skipped.
 
 The question isn't whether your organization will deploy AI agents. Every organization will. The question is whether you'll redesign your processes to deserve them.
