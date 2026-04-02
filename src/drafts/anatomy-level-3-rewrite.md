@@ -122,9 +122,9 @@ When Orchestration Design is missing, you get agents talking past each other, du
 
 ### 9. QA Operational
 
-Agent-to-agent review criteria, quality gates within iteration cycles, automated checks per iteration.
+Agent-to-agent review criteria, quality gates within agentic workflows, automated checks per task.
 
-This is the companion to QA Strategic (domain 6). Where Strategic defines what quality means, Operational implements it in every cycle. Agents that check their own work and each other's. Did the code compile? Did the tests pass? Does the content match the brand voice? Does the implementation actually meet the spec?
+This is the companion to QA Strategic (domain 6). Where Strategic defines what quality means, Operational implements it in every agentic workflow. Agents that check their own work and each other's. Did the code compile? Did the tests pass? Does the content match the brand voice? Does the implementation actually meet the spec?
 
 One agent generates, another evaluates, and they loop until the output meets the bar. Most issues get caught and fixed before a human ever sees the result. The human-in-the-loop layer then handles the judgment calls — the things that pass every automated check but need human sense-making. Cultural sensitivity. Brand consistency. Edge cases that only domain experience would catch.
 
