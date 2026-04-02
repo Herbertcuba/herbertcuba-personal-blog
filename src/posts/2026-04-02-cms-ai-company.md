@@ -25,7 +25,7 @@ Hygraph is building its workflow engine around agent orchestration. Content flow
 
 Then there's Brightspot, coming at this from the enterprise media side. Their AI capabilities are woven into editorial workflows for large-scale publishers — organizations that produce hundreds of pieces per day. Automated tagging, content classification, related content linking, headline optimization. All running as background processes while editorial teams focus on the journalism itself.
 
-Four vendors. Four different approaches. One shared conclusion: the CMS is no longer a tool that humans use to manage content. It's becoming infrastructure that AI agents use to operate content, with humans in supervisory roles.
+Five vendors. Five different approaches. One shared conclusion: the CMS is no longer a tool that humans use to manage content. It's becoming infrastructure that AI agents use to operate content, with humans in supervisory roles.
 
 ## Agent-Readiness as a Selection Criterion
 
