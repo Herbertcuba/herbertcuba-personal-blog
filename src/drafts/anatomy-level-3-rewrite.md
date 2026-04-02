@@ -96,7 +96,7 @@ This is where quality gets defined at the strategic level. What does "good" look
 
 QA Strategic sits in Specification because it's about *what* quality means — the standards, the metrics, the measurement approach. It's the domain that answers "are we building the right thing, and how would we know?"
 
-Here's something worth calling out: quality appears in both the Specification and Configuration areas. That's intentional. Strategic quality (this domain) defines the standards and measurement plans. Operational quality (domain 9, in Configuration) implements the checks within each iteration cycle. Think of it like the difference between a company's quality policy and the actual inspection process on the factory floor. Both are essential. They serve different purposes and require different expertise.
+Here's something worth calling out: quality appears in both the Specification and Configuration areas. That's intentional. Strategic quality (this domain) defines the standards and measurement plans. Operational quality (domain 9, in Configuration) implements the checks within each agentic workflow. Think of it like the difference between a company's quality policy and the actual inspection process on the factory floor. Both are essential. They serve different purposes and require different expertise.
 
 ## Configuration Area: How Things Behave
 
