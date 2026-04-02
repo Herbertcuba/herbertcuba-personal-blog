@@ -38,17 +38,17 @@ The harness — the runtime that sits between the language model and everything 
 
 Six types exist in the current ecosystem:
 
-**General purpose** harnesses are the most common. Flexible, good for a wide range of tasks, easy to get started with. The trade-off: they're designed for interactive use. A human is there, steering. Great for Level 2, but they put a ceiling on autonomy.
+**General purpose** harnesses are the most common. Claude Code, Codex CLI, Cursor, Windsurf — flexible, good for a wide range of tasks, easy to get started with. The trade-off: they're designed for interactive use. A human is there, steering. Great for Level 2, but they put a ceiling on autonomy.
 
-**Specialized** harnesses are built for specific workflows with deterministic rails. A contract review system that moves through extraction, analysis, risk flagging, summary. A code agent that writes, tests, iterates, verifies. Less flexible, dramatically more reliable for the workflows they handle.
+**Specialized** harnesses are built for specific workflows with deterministic rails. Devin for end-to-end software engineering, Harvey for legal analysis, contract review systems that move through extraction, analysis, risk flagging, summary. Less flexible, dramatically more reliable for the workflows they handle.
 
-**Autonomous** harnesses are event-driven. They run on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No human in the loop for every action. This is what makes Level 3 possible.
+**Autonomous** harnesses are event-driven. OpenClaw, LangGraph Cloud, CrewAI — they run on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No human in the loop for every action. This is what makes Level 3 possible.
 
-**Hierarchical** harnesses coordinate swarms of agents with a central orchestrator. One coordinator breaks down goals and assigns work to specialists.
+**Hierarchical** harnesses coordinate swarms of agents with a central orchestrator. AutoGen, ChatDev, MetaGPT — one coordinator breaks down goals and assigns work to specialists.
 
-**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. Good when the shape of the process is known upfront but the details need flexibility.
+**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. Prefect, Dagster, Flyte — good when the shape of the process is known upfront but the details need flexibility.
 
-**Hybrid** harnesses combine multiple types. In my experience, a mature Level 3 setup usually ends up here — an autonomous harness handles lifecycle management while specialized sub-processes handle specific domains like content publishing or code review.
+**Hybrid** harnesses combine multiple types. In my experience, a mature Level 3 setup usually ends up here — an autonomous harness like OpenClaw handles lifecycle management while general purpose sub-agents like Claude Code or Codex handle specific domains like content publishing or code review.
 
 Now here's the math that makes this decision critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow ten times a day and you're looking at roughly six failures daily. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
 
