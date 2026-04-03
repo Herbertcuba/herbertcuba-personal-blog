@@ -7,7 +7,7 @@
   <rect x="40" y="90" width="180" height="100" fill="#111" stroke="#14b8a6" stroke-width="2"/>
   <rect x="40" y="90" width="180" height="4" fill="#14b8a6"/>
   <text x="130" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Work Cycle</text>
-  <text x="130" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">ADAPT Loop runs</text>
+  <text x="130" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">APEX Cycle runs</text>
   <text x="130" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">N iterations</text>
 
   <line x1="220" y1="140" x2="270" y2="140" stroke="#14b8a6" stroke-width="2"/>
@@ -16,8 +16,8 @@
   <!-- Verification -->
   <rect x="280" y="90" width="180" height="100" fill="#111" stroke="#3b82f6" stroke-width="2"/>
   <rect x="280" y="90" width="180" height="4" fill="#3b82f6"/>
-  <text x="370" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Verification</text>
-  <text x="370" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Human verifies output</text>
+  <text x="370" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Evaluation</text>
+  <text x="370" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">Human evaluates output</text>
   <text x="370" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#777">against intent</text>
 
   <line x1="460" y1="140" x2="510" y2="140" stroke="#3b82f6" stroke-width="2"/>
@@ -46,5 +46,5 @@
   <text x="500" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e11d48">SYSTEM EVOLVES → NEXT CYCLE</text>
 
   <text x="500" y="310" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#555">Without calibration: a pipeline. With calibration: an evolving system.</text>
-  <text x="970" y="335" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">ADAPT FRAMEWORK</text>
+  <text x="970" y="335" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
 </svg>
