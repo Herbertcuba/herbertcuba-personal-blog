@@ -1,6 +1,6 @@
 ---
 title: "Nine Domains of Autonomous AI: What Level 3 Actually Requires"
-date: 2026-04-03
+date: 2026-03-27
 excerpt: "Getting to Level 3 autonomous AI isn't about better prompts or smarter models. It requires nine distinct domains of practice — clustered under three areas — working together. Here's what each one covers, why it matters, and what breaks when it's missing."
 featuredImage: "/images/posts/anatomy-level-3-agent.webp"
 layout: post.njk
