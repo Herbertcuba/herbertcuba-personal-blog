@@ -26,6 +26,8 @@ When I mapped out everything required to run an autonomous agent system, the dom
 
 Each area maps to a distinct surface of expertise. Platform is engineering. Specification is product and business thinking. Configuration is agent design and operations. One person can stretch across multiple areas, but each area represents a real competence, and when one is weak, the whole system feels it.
 
+![Three Areas, Nine Domains](/images/posts/nine-domains-three-areas.svg)
+
 Here's the insight I want to unpack: you should match domain ownership to expertise. A product person should own Business Context. An infrastructure engineer should own Infrastructure Ops. An agent designer should own Orchestration. When a domain gets owned by the wrong expertise, it either gets neglected or solved in the wrong way. This mapping is how you turn the nine domains from a checklist into an actual team structure.
 
 Let me walk through all nine.
