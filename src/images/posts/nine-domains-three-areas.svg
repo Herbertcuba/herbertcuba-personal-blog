@@ -14,19 +14,19 @@
   <text x="55" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">1. Harness Selection</text>
   <text x="55" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Runtime type, model strategy, fallback chains</text>
   <text x="55" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#777">Constrains everything above it</text>
-  <text x="55" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ CTO, Tech Director</text>
+
 
   <rect x="35" y="230" width="350" height="100" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="55" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">2. Infrastructure Ops</text>
   <text x="55" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">Compute, CI/CD, monitoring, deployment</text>
   <text x="55" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#777">Keeping the lights on</text>
-  <text x="55" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ DevOps, Infra Engineer</text>
+
 
   <rect x="35" y="340" width="350" height="100" fill="#111" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="55" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3. Security &amp; Compliance</text>
   <text x="55" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Permissions, audit trails, data boundaries</text>
   <text x="55" y="405" font-family="system-ui, sans-serif" font-size="10" fill="#777">Least privilege per agent</text>
-  <text x="55" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Security Engineer</text>
+
 
   <!-- Spec Area -->
   <rect x="410" y="85" width="380" height="380" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
@@ -37,19 +37,19 @@
   <text x="445" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">4. Business Context</text>
   <text x="445" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Brand, personas, competitive landscape</text>
   <text x="445" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#777">Context engineering &amp; phased build</text>
-  <text x="445" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Product Manager</text>
+
 
   <rect x="425" y="230" width="350" height="100" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
   <text x="445" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">5. Spec Engineering</text>
   <text x="445" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">PRD, user stories, acceptance criteria</text>
   <text x="445" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#777">Owns human intent</text>
-  <text x="445" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Tech Lead, PM, Design Lead</text>
+
 
   <rect x="425" y="340" width="350" height="100" fill="#111" stroke="#14b8a6" stroke-width="1.5"/>
   <text x="445" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">6. QA Strategic</text>
   <text x="445" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Quality definition, measurement plans</text>
   <text x="445" y="405" font-family="system-ui, sans-serif" font-size="10" fill="#777">What "done" means — system level</text>
-  <text x="445" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ QA Lead, Tech Director</text>
+
 
   <!-- Config Area -->
   <rect x="800" y="85" width="380" height="380" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4" rx="4"/>
@@ -60,19 +60,19 @@
   <text x="835" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">7. Agent Design</text>
   <text x="835" y="168" font-family="system-ui, sans-serif" font-size="10" fill="#777">Identities, behavior, skills, memory</text>
   <text x="835" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#777">State management &amp; context windows</text>
-  <text x="835" y="205" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ AI Engineer, Tech Lead</text>
+
 
   <rect x="815" y="230" width="350" height="100" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="835" y="257" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">8. Orchestration Design</text>
   <text x="835" y="278" font-family="system-ui, sans-serif" font-size="10" fill="#777">Routing, delegation, handoff protocols</text>
   <text x="835" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#777">The nervous system</text>
-  <text x="835" y="315" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ Process Designer, Tech Lead</text>
+
 
   <rect x="815" y="340" width="350" height="100" fill="#111" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="835" y="367" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">9. QA Operational</text>
   <text x="835" y="388" font-family="system-ui, sans-serif" font-size="10" fill="#777">Agent-to-agent review, quality gates</text>
   <text x="835" y="405" font-family="system-ui, sans-serif" font-size="10" fill="#777">Checks within each agentic workflow</text>
-  <text x="835" y="425" font-family="system-ui, sans-serif" font-size="9" fill="#444">→ QA Lead, Tech Lead</text>
 
-  <text x="600" y="485" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">Each domain maps to specific expertise. Match ownership to competence, not to org chart convenience.</text>
+
+  <text x="600" y="485" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">Each area represents a distinct surface of expertise. When one is weak, the whole system feels it.</text>
 </svg>
