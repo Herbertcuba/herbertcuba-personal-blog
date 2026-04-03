@@ -84,23 +84,25 @@ When Business Context is missing, you get agents that produce technically correc
 
 This is also where context engineering becomes critical. Context engineering is the discipline of designing, structuring, and maintaining the information layer that agents consume. A system prompt is not context engineering. Context engineering is building a structured, phased documentation architecture that gives agents the full picture — not just instructions, but understanding.
 
-I've found that the most effective approach is a phased build, where each layer of context builds on the previous one:
+I've found that the most effective approach is a phased build, where each layer of context builds on the previous one. The foundation layer lives here in Business Context: brand understanding, business case, competitive landscape, high-level requirements framed as business outcomes. This is the ground floor. Without it, agents have no sense of why the product exists or who it serves at a strategic level.
 
-**Phase 1 — Foundation & Strategy.** Brand understanding, business case, competitive landscape, high-level requirements framed as business outcomes. This is the ground floor. Without it, agents have no sense of why the product exists or who it serves at a strategic level.
+The artifacts are concrete: a brand understanding document, a business context brief, a competitive snapshot, high-level requirements framed as outcomes rather than features. These aren't one-time exercises — they're living documents that evolve as you learn from execution.
 
-**Phase 2 — Users & Experience.** User personas with goals, pain points, and context of use. Journey maps covering the full lifecycle. Product-specific brand guidelines, accessibility standards, and information architecture. This layer gives agents the empathy and user understanding they need to produce work that actually resonates.
+The deeper layers of context — users, experience design, and detailed specifications — belong in Spec Engineering (domain 5). Business Context sets the strategic foundation. Spec Engineering builds on it.
 
-**Phase 3 — Specifications & Scope.** The PRD as single source of truth. User stories with acceptance criteria. MVP scope. Content guidelines and editorial standards. This is the bridge between strategic thinking and executable work — and it's where Spec Engineering (domain 5) takes over.
-
-Each phase produces concrete artifacts that agents can reference. A brand understanding document. Persona profiles. Journey maps. The PRD. Content guidelines. These aren't one-time exercises — they're living documents that evolve as you learn from execution. The phased approach matters because it prevents the common mistake of jumping straight to specs without the strategic and user foundation underneath. Agents that have all three layers produce dramatically better first drafts than agents that only get a brief and some bullet points.
-
-Cross-functional input early is essential. Engineering should see personas. Design should see the business case. Agents should have access to all of it. The earlier context flows across disciplines, the fewer surprises later.
+Cross-functional input early is essential. Engineering should see the business case. Design should see the competitive landscape. Agents should have access to all of it. The earlier context flows across disciplines, the fewer surprises later.
 
 ### 5. Spec Engineering
 
 Product requirements, user stories, acceptance criteria, content guidelines. The translation from strategy to executable specs.
 
-This is the bridge between business intent and agent behavior. A product owner might say "we need a blog post about our new feature." Spec Engineering turns that into: target audience, key messages, tone, word count range, SEO requirements, internal linking strategy, review criteria. The more precise the spec, the less iteration required.
+This is where the phased context build continues from Business Context. Two additional layers sit here:
+
+**Users & Experience.** User personas with goals, pain points, and context of use. Journey maps covering the full lifecycle. Product-specific brand guidelines, accessibility standards, and information architecture. This layer gives agents the empathy and user understanding they need to produce work that actually resonates.
+
+**Specifications & Scope.** The PRD as single source of truth. User stories with acceptance criteria. MVP scope. Content guidelines and editorial standards. This is the handoff document between product thinking and execution.
+
+Together with the foundation from Business Context, these three phases form a complete context architecture. Agents that have all three layers produce dramatically better first drafts than agents that only get a brief and some bullet points. The phased approach prevents the common mistake of jumping straight to specs without the strategic and user foundation underneath.
 
 I think of this as the domain that determines first-draft quality. When specs are detailed and well-structured, agents produce output that needs minor polish. When specs are vague, you get multiple rounds of revision that eat up the time autonomy was supposed to save.
 
