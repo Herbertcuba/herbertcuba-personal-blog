@@ -1,166 +1,172 @@
 ---
-title: "The Anatomy of a Level 3 Agent: 15 Capabilities Across Three Areas"
-date: 2026-03-27
-excerpt: "Everyone's building AI agents. Almost nobody is building autonomous ones. Here are the 15 capabilities that make a Level 3 agent work, clustered under three areas — Platform, Specification, and Config — that map directly to how teams need to organize around them."
+title: "Nine Domains of Autonomous AI: What Level 3 Actually Requires"
+date: 2026-04-03
+excerpt: "Getting to Level 3 autonomous AI isn't about better prompts or smarter models. It requires nine distinct domains of practice — clustered under three areas — working together. Here's what each one covers, why it matters, and what breaks when it's missing."
 featuredImage: "/images/posts/anatomy-level-3-agent.webp"
 layout: post.njk
-tags: ["ai", "agents", "infrastructure", "strategy", "methodology", "apex"]
+
+tags: ["ai", "agents", "infrastructure", "strategy", "methodology"]
 ---
 
-Running autonomous AI agents in production for months changes how you think about the whole stack. Not demos. Not prototypes. Actual agents that manage tasks, write code, check calendars, draft content, delegate work to each other, and operate across an entire digital life without anyone watching.
+I've been running autonomous AI agents in production for months now. Not demos. Not weekend prototypes. Actual agents that manage tasks, write code, publish content, delegate work to each other, and operate across my entire digital life without someone watching over them.
 
-The single biggest realization? The gap between a chatbot and an autonomous agent is not intelligence. It's infrastructure.
+The single biggest lesson? The gap between a chatbot and an autonomous system has very little to do with intelligence. It's almost entirely about everything *around* the intelligence.
 
-In [The Three Levels of AI Acceleration](/posts/2026-03-21-three-levels-ai-acceleration/), the progression goes from Chat (Level 1) to Agentic (Level 2) to Autonomous (Level 3). That article was about recognizing which level you're operating at. This one is about what it actually takes to reach Level 3. You don't need to have read that piece to follow along, but if you want the full picture of the three levels, it's there.
+In [The Three Levels of AI Acceleration](/posts/2026-03-21-three-levels-ai-acceleration/), I laid out a progression: Level 1 (Chat), Level 2 (Agentic), Level 3 (Autonomous). That article was about recognizing which level you're operating at. This one is about what it actually takes to reach Level 3 — and it turns out the answer isn't a handful of clever tricks. It's nine distinct domains of practice that all need to work together.
 
-Most of what the industry calls "agents" today are Level 2 at best. They can use a tool or two, maybe run some code, but they still need someone holding the steering wheel. Level 3 is different. Level 3 is when the agent operates independently, makes judgment calls, delegates to other agents, and maintains continuity across sessions.
+## Three Areas, Nine Domains
 
-To get there, you need 15 distinct capabilities working together. Not one or two clever tricks. Fifteen interlocking systems. And when those capabilities get mapped out, they don't land in a flat list. They cluster naturally under three areas that reflect how teams actually need to organize around them: **Platform**, **Specification**, and **Config**.
+When I mapped out everything required to run an autonomous agent system, the domains didn't land in a flat list. They clustered naturally under three areas that reflect genuinely different types of work:
 
-An earlier version of this mapping used six domains. That worked for understanding the capabilities, but it fragmented the ownership question. Three areas are sharper. They map to distinct competencies, distinct team responsibilities, and distinct decision surfaces. Platform is where things run. Specification is what things know. Config is how things behave.
+**Platform** — where things run. The runtime, the infrastructure, the security boundaries.
 
-This article breaks down those 15 capabilities and the three areas they belong to.
+**Specification** — what things know. The business context, the product specs, the strategic definition of quality.
 
-## The Three Areas
+**Configuration** — how things behave. The agent identities, the orchestration patterns, the operational quality gates.
 
-The simplest way to think about it: Platform answers "where and how does the agent run?" Specification answers "what does the agent know about the world?" Config answers "what does the agent do and how does it decide?"
+Each area maps to a distinct surface of expertise. Platform is engineering. Specification is product and business thinking. Configuration is agent design and operations. One person can stretch across multiple areas, but each area represents a real competence, and when one is weak, the whole system feels it.
 
-Every autonomous agent system needs all three. Miss Platform and you have an agent with no runtime. Miss Specification and you have an agent with amnesia. Miss Config and you have an agent that can't coordinate, plan, or check its own work.
+![Three Areas, Nine Domains](/images/posts/nine-domains-three-areas.svg)
 
-![The Six Capability Domains](/images/posts/diagram-six-domains.svg)
+Let me walk through all nine.
 
-The three areas also map cleanly to team ownership. Platform is infrastructure and security engineering. Specification is product and business context. Config is agent design, orchestration, and quality. One person can cover multiple areas. A team of three might cover all of them. The point is that each area represents a distinct surface of competence, and when one is weak, the whole system feels it.
+## Platform Area: Where Things Run
 
-## Platform Area
+### 1. Harness Selection
 
-Platform covers five capabilities: **Architecture** (the runtime harness), **Infrastructure**, **File System**, **Code Execution**, and **Security**. These span three domains of practice: Harness Selection, Infrastructure Ops, and Security & Compliance.
+The harness — the runtime that sits between the language model and everything else — is the single most consequential decision you'll make. It determines what kind of memory is possible, what delegation patterns are available, how tools get called, and what security boundaries exist. Pick the wrong harness and you'll spend months working around limitations that were baked in on day one.
 
-This is the foundation. Everything else is theoretical until Platform exists.
+Six types exist in the current ecosystem:
 
-### Architecture: The Harness Decision
+**General purpose** harnesses are the most common. Claude Code, Codex CLI, Cursor, Windsurf — flexible, good for a wide range of tasks, easy to get started with. The trade-off: they're designed for interactive use. A human is there, steering. Great for Level 2, but they put a ceiling on autonomy.
 
-The harness (or runtime) is the layer that sits between the LLM and everything else: tools, memory, scheduling, I/O channels. It turns a language model from a thing that generates text into a thing that operates. Without a harness, you have a brain in a jar. With one, you have an agent that can wake up on a schedule, react to incoming messages, call tools, write to its own memory, and report status through whatever channel it's connected to.
+**Specialized** harnesses are built for specific workflows with deterministic rails. Devin for end-to-end software engineering, Harvey for legal analysis, contract review systems that move through extraction, analysis, risk flagging, summary. Less flexible, dramatically more reliable for the workflows they handle.
 
-This decision comes first because the harness sets constraints for every other capability. It determines what kind of memory is possible, what delegation patterns are available, how tools get called, what security boundaries exist. Pick the wrong harness and you'll spend months working around limitations that were baked in on day one.
+**Autonomous** harnesses are event-driven. OpenClaw, LangGraph Cloud, CrewAI — they run on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No human in the loop for every action. This is what makes Level 3 possible.
 
-Six distinct types of harnesses exist in the current ecosystem:
+**Hierarchical** harnesses coordinate swarms of agents with a central orchestrator. AutoGen, ChatDev, MetaGPT — one coordinator breaks down goals and assigns work to specialists.
 
-**General Purpose** harnesses are the most common. Flexible, good for coding and general tasks, the easiest to get started with. Open them, give them a task, they do it. The trade-off: they're designed for interactive use. A human is there, steering. That works great for Level 2, but it puts a ceiling on autonomy.
+**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. Prefect, Dagster, Flyte — good when the shape of the process is known upfront but the details need flexibility.
 
-**Specialized** harnesses are built for specific workflows with deterministic rails. A contract review system that moves through phases: extraction, analysis, risk flagging, summary. A code agent that runs code, tests it, iterates, and verifies against defined criteria. These are state machines with stage gates. Less flexible than general purpose harnesses, but dramatically more reliable for the workflows they handle. When compliance, financial accuracy, or legal precision matter, flexibility is a risk. Deterministic rails are the feature.
+**Hybrid** harnesses combine multiple types. In my experience, a mature Level 3 setup usually ends up here — an autonomous harness like OpenClaw handles lifecycle management while general purpose sub-agents like Claude Code or Codex handle specific domains like content publishing or code review.
 
-**Autonomous** harnesses are event-driven systems that run without human presence. They operate on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No one is sitting there watching. This is the harness type that makes Level 3 possible, because it removes the assumption that a human is in the loop for every action.
+Now here's the math that makes this decision critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow ten times a day and you're looking at roughly six failures daily. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
 
-**Hierarchical/Multi-Agent** harnesses coordinate swarms of agents with a central orchestrator. One coordinator agent breaks down goals and assigns work to specialist agents. The value is in coordination patterns: the coordinator handles task decomposition and result aggregation while specialists focus on what they're good at. The challenge is complexity. More agents means more communication overhead and more failure modes.
+Model strategy is part of this domain too. Which models for which tasks. Cost versus capability trade-offs. Fallback chains. The harness and the model strategy together form the foundation that constrains everything above.
 
-**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. Nodes are tasks, edges are dependencies, and the system handles execution order, parallelism, and state passing between steps. This works well when the shape of the process is known upfront but the details need flexibility.
+### 2. Infrastructure Ops
 
-**Hybrid** harnesses combine multiple types. A mature Level 3 setup often ends up here: an autonomous harness handles scheduling and lifecycle management, while specialized sub-processes handle specific domains like content publishing or code review. No single harness type covers every use case.
+Compute, CI/CD, tool integrations, monitoring, agent deployment, stability. Keeping the lights on.
 
-Now here's the math that makes harness choice critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow 10 times a day and you're looking at roughly 6 failures. Skills alone, meaning markdown prompts and system instructions, can't fix this. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
+Agent workloads are fundamentally different from web app workloads. They're long-running, stateful, and unpredictable. They need persistent connections, access to tools and file systems, and reliable uptime. I've seen brilliant agent architectures fall apart because nobody thought seriously about where the agents actually live, how they get deployed, or what happens when one crashes at 3 AM.
 
-### Infrastructure, File System, Code Execution
+Monitoring matters more than you'd think. When an agent runs autonomously, you need to know when it's stuck, when it's burning tokens on a loop, when it's producing degraded output. Traditional application monitoring doesn't cover these patterns. You need observability designed for agentic workloads.
 
-**Infrastructure** is compute, deployment, CI/CD, and scaling. Agents need to run somewhere, and agent workloads are not like web app workloads. They're long-running, stateful, and unpredictable. They need persistent connections, access to tools and file systems, and reliable uptime. Brilliant agent architectures fall apart when nobody thinks about where the agents actually live.
+### 3. Security & Compliance
 
-**File system** access is deceptively simple but essential. The agent needs a persistent workspace. A desk. It reads configuration files, writes daily memory logs, organizes outputs, manages project structures. Without file system access, there's no continuity and no way to build on previous work.
+The more autonomous agents become, the heavier security gets. Agents try to be helpful — that's their nature. Give a coding agent access to a production database and ask it to fix a data issue, and it will. It won't stop to consider whether it *should* have production access.
 
-**Code execution** is the difference between an agent that suggests code and one that runs it. Shell commands, scripts, builds, deployments. When a coding agent gets a task, it doesn't hand over a snippet and say "try this." It creates files, runs tests, checks output, iterates. This is a massive leap, and most chat-based AI never crosses it.
+This domain covers permissions, audit trails, data access boundaries, guardrails, and least privilege per agent. An editorial agent can read brand documents and publish drafts, but it cannot access customer data. A financial research agent can scan market data, but it cannot execute trades. A coding agent can deploy to staging but not to production without human approval.
 
-### Security
+As agent fleets grow, this scales from "configure some permissions" to a full discipline: permission boundaries per agent, data access controls per project, audit trails per action, compliance requirements per jurisdiction, and regular reviews of what each agent can actually reach.
 
-Security grows heavier the more autonomous agents become. Agents try to be helpful. Give a coding agent access to a production database and ask it to fix a data issue, and it will fix it. It won't stop to consider whether it *should* have production access. It won't think about audit trails or compliance.
+## Specification Area: What Things Know
 
-Security defines that access. Policy engines that control what the agent can and can't do. Sandboxed execution environments. Audit trails for everything. Permission models that require explicit approval for dangerous operations.
+### 4. Business Context
 
-An editorial agent can read brand documents and publish drafts, but it cannot access customer data or send external communications. A financial research agent can scan public market data and internal portfolio records, but it cannot execute trades. A coding agent can write code and run tests in staging, but it cannot deploy to production without human approval. These boundaries are the principle of least privilege applied to agentic systems. In an autonomous context, it's the difference between a useful team and a liability.
+Brand understanding, personas, competitive landscape, business case. The "why" and "for whom."
 
-As agent fleets grow, security scales from "configure some permissions" to a full discipline: permission boundaries per agent, data access controls per project, audit trails per action, compliance requirements per jurisdiction, and regular reviews of what each agent can actually reach.
+This is where product owners and business stakeholders have the most direct influence on agent output. The quality of what agents produce is directly proportional to the quality of the business context they receive. Not just a brief system prompt — actual documentation. Who is the audience? What does the brand sound like? What are the constraints? What's explicitly out of scope?
 
-## Specification Area
+When Business Context is missing, you get agents that produce technically correct but tonally wrong output. Content that doesn't sound like the brand. Features that solve the wrong problem. Responses that are helpful in a vacuum but miss the actual business need.
 
-Specification covers three capabilities: **Context Management**, **State Management**, and **Memory**. These span three domains of practice: Business Context, Spec Engineering, and QA Strategic.
+This is also where context engineering becomes critical. Context engineering is the discipline of designing, structuring, and maintaining the information layer that agents consume. A system prompt is not context engineering. Context engineering is building a structured, phased documentation architecture that gives agents the full picture — not just instructions, but understanding.
 
-If Platform is where things run, Specification is what things know. It determines whether the agent understands who it is, what it's working on, and what the business actually needs.
+I've found that the most effective approach is a phased build, where each layer of context builds on the previous one. The foundation layer lives here in Business Context: brand understanding, business case, competitive landscape, high-level requirements framed as business outcomes. This is the ground floor. Without it, agents have no sense of why the product exists or who it serves at a strategic level.
 
-### Context Management
+The artifacts are concrete: a brand understanding document, a business context brief, a competitive snapshot, high-level requirements framed as outcomes rather than features. These aren't one-time exercises — they're living documents that evolve as you learn from execution.
 
-Context management gives the agent its identity and operating manual. System prompts, workspace files, injected documentation, project specs, brand guidelines. Files like `SOUL.md` (personality and values), `AGENTS.md` (operating procedures), and `USER.md` (everything about the user the agent needs to know) are examples of structural context.
+The deeper layers of context — users, experience design, and detailed specifications — belong in Spec Engineering (domain 5). Business Context sets the strategic foundation. Spec Engineering builds on it.
 
-Context is not prompting. A prompt is transactional: "write a blog post about X." Context architecture is structural: the agent always has access to the full picture. The project, the audience, the tone, the constraints, the things that are explicitly out of scope. The richer the context, the fewer corrections needed downstream.
+Cross-functional input early is essential. Engineering should see the business case. Design should see the competitive landscape. Agents should have access to all of it. The earlier context flows across disciplines, the fewer surprises later.
 
-This is also where business documentation lives. Product requirements, user stories, design decisions, editorial manuals, competitive analysis. In a team setting, Specification is where product owners and business stakeholders have the most direct influence. The quality of what agents produce is directly proportional to the quality of the specifications they receive.
+### 5. Spec Engineering
 
-### State Management
+Product requirements, user stories, acceptance criteria, content guidelines. The translation from strategy to executable specs.
 
-State management is the trickier problem. It covers what the agent knows *right now*: session scope, context window limits, compaction strategies. When an agent has been running for hours and the context window fills up, how does it decide what to keep and what to compress? This is an engineering problem most teams haven't started thinking about, and it's critical for agents that run autonomously over long periods.
+This is where the phased context build continues from Business Context. Two additional layers sit here:
 
-A context window is not infinite. Managing it well is the difference between an agent that stays sharp at hour six and one that starts forgetting the brief. State management has aspects in both Specification and Config: the *what* of state (project context, current task, business rules) belongs here in Specification, while the *mechanics* of state (how compaction works, how sessions persist) belongs in the Config or Platform layer depending on implementation.
+**Users & Experience.** User personas with goals, pain points, and context of use. Journey maps covering the full lifecycle. Product-specific brand guidelines, accessibility standards, and information architecture. This layer gives agents the empathy and user understanding they need to produce work that actually resonates.
 
-### Memory
+**Specifications & Scope.** The PRD as single source of truth. User stories with acceptance criteria. MVP scope. Content guidelines and editorial standards. This is the handoff document between product thinking and execution.
 
-Memory is the single most underrated capability in the entire stack. Without persistent memory, every session starts from zero. The agent doesn't know what happened yesterday. It doesn't remember preferences, projects, team structures, communication styles. It's like working with someone who has amnesia every morning.
+Together with the foundation from Business Context, these three phases form a complete context architecture. Agents that have all three layers produce dramatically better first drafts than agents that only get a brief and some bullet points. The phased approach prevents the common mistake of jumping straight to specs without the strategic and user foundation underneath.
 
-A well-designed memory system maintains daily logs: raw notes about what happened, what decisions were made, what's pending. On top of that, curated long-term memory distills the important stuff. Lessons learned, recurring patterns, key context that should persist for weeks or months. The agent periodically reviews its own daily logs and updates long-term memory. Exactly like a human reviewing their journal and deciding what's worth keeping.
+I think of this as the domain that determines first-draft quality. When specs are detailed and well-structured, agents produce output that needs minor polish. When specs are vague, you get multiple rounds of revision that eat up the time autonomy was supposed to save.
 
-This is what makes the agent feel like a colleague rather than a tool. It remembers. It builds on previous conversations. It knows that last Tuesday the team decided to restructure the navigation, and it doesn't ask about it again. Memory turns a stateless function call into a working relationship.
+Spec Engineering owns human intent. It does not own agent capabilities. A spec document describes what should be produced and the criteria for success. How agents are configured to produce it belongs in the Configuration area. When Spec Engineering starts including agent instructions, you've blurred a boundary that causes problems downstream.
 
-Like state management, memory has a dual nature. Project memory and business context documentation belongs in Specification. Agent operational memory, like remembering which approaches failed or which tools work best for certain tasks, belongs in Config. The distinction matters for team ownership: product people curate business context, agent engineers curate operational memory.
+### 6. QA Strategic
 
-## Config Area
+Measurement plans, human evaluation criteria, definition of "done." System-level quality ownership.
 
-Config covers seven capabilities: **Planning**, **Delegation**, **Skills**, **Tool Calling**, **Multi-agent Routing**, **Validation**, and **Human-in-the-Loop**. These span three domains of practice: Agent Design, Orchestration Design, and QA Operational.
+This is where quality gets defined at the strategic level. What does "good" look like for this system? How do we measure whether the agents are actually producing value? What are the criteria for human evaluation, and how often does it happen?
 
-Config is where agents go from "interesting concept" to "system that coordinates work and checks its own output." If Platform is the body and Specification is the knowledge, Config is the behavior.
+QA Strategic sits in Specification because it's about *what* quality means — the standards, the metrics, the measurement approach. It's the domain that answers "are we building the right thing, and how would we know?"
 
-### Planning and Delegation
+Here's something worth calling out: quality appears in both the Specification and Configuration areas. That's intentional. Strategic quality (this domain) defines the standards and measurement plans. Operational quality (domain 9, in Configuration) implements the checks within each agentic workflow. Think of it like the difference between a company's quality policy and the actual inspection process on the factory floor. Both are essential. They serve different purposes and require different expertise.
 
-**Planning** is the ability to break complex goals into steps. Not following a script. Actually decomposing a problem. "Build a new feature for the website" becomes: read the spec, check existing code, create a branch, implement, test, open a PR. A Level 2 agent might execute steps you give it. A Level 3 agent figures out the steps itself, adjusts when something fails, and knows when to escalate.
+## Configuration Area: How Things Behave
 
-**Delegation** is what turns a single agent into a team. A main agent spawns sub-agents, assigns them specific tasks, monitors their progress, and integrates their results. A PM agent dispatches work to a frontend developer agent. A QA agent reviews the output. An editorial agent handles content. One well-designed delegation chain replaces hours of manual coordination.
+### 7. Agent Design
 
-### Skills and Tool Calling
+Agent identities, behavior configuration, skills, instructions, state management, memory architecture.
 
-**Skills** are the plug-in architecture that makes agents extensible without rebuilding from scratch. Need image generation? There's a skill for that. Need to manage reminders? Skill. Need to publish a blog post? Skill. Each skill is a packaged capability with its own instructions, and the agent loads them on demand. This is how capability scales without scaling complexity.
+Each agent needs a clear identity: who it is, what it's responsible for, how it communicates. A PM agent behaves differently from a QA agent. A coding agent has different skills loaded than an editorial agent. The design includes what the agent knows about itself, its role boundaries, and its behavioral defaults.
 
-**Tool calling** gives the agent the ability to interact with the world. APIs, CLI tools, MCP servers, external services. Agents can search the web, read emails, check the weather, interact with version control, manage content in a CMS. Each tool is a capability surface. The more tools, the more the agent can do. But tool calling alone is just potential energy. It needs planning and delegation to become useful.
+Memory architecture is part of this domain. Daily logs capture raw notes about what happened. Long-term memory distills the important stuff — lessons learned, recurring patterns, key context. The agent periodically reviews its own daily logs and curates what's worth keeping. Exactly like a human reviewing their journal.
 
-### Multi-agent Routing
+State management lives here too: how the agent handles context window limits, compaction strategies, session persistence. When an agent has been running for hours, how does it decide what to keep and what to compress? This is an engineering problem most teams haven't started thinking about, and it's critical for agents that run autonomously over long periods.
 
-Routing is the nervous system. When a message or task comes in, the system decides which agent handles it, through which channel, with what priority. A mature setup might run ten agents with an explicit org chart, routing rules, and retry logic for when an agent doesn't respond. Think of it like network routing: tasks need to reach the right agent via the right interface. Get the routing wrong and agents talk past each other or duplicate work. Get it right and the whole system feels like a single, coherent team.
+### 8. Orchestration Design
 
-### Validation and Human-in-the-Loop
+Routing rules, delegation chains, handoff protocols, workflow maps between agents.
 
-**Validation** is quality assurance between agents. Agents that check their own work and each other's. Did the code compile? Did the tests pass? Does the content match the brand voice? Does the implementation actually meet the spec? One agent generates, another evaluates, and they loop until the output meets the bar. Most issues get caught and fixed before a human ever sees the output.
+This is the nervous system. When a task comes in, the system decides which agent handles it, through which channel, with what priority. A mature setup might run ten agents with an explicit org chart, routing rules, and retry logic for when an agent doesn't respond.
 
-**Human-in-the-Loop** is the judgment layer. The final call before anything ships, publishes, or deploys. This is different from validation. Agent-to-agent review loops handle "does this meet the spec?" HITL handles "should this actually go out into the world?"
+Delegation patterns matter enormously. A main agent spawns sub-agents, assigns them specific tasks, monitors progress, integrates results. A PM agent dispatches work to a frontend developer agent. A QA agent reviews the output. One well-designed delegation chain replaces hours of manual coordination.
 
-The distinction matters because agents are good at checking against explicit criteria but unreliable at catching things that weren't in the criteria. Cultural sensitivity. Brand consistency. That edge case that only someone with domain experience would notice. The subtle wrongness that passes every automated check but feels off to someone who knows the work.
+When Orchestration Design is missing, you get agents talking past each other, duplicating work, or silently dropping tasks. When it's well-designed, the whole system feels like a single coherent team.
 
-The calibration question is always: how much autonomy at what level of risk? A draft internal document might not need human review. A public article does. A staging deployment might run autonomously. A production deployment probably shouldn't. HITL is where you decide what the system ships on its own and where human judgment is required.
+### 9. QA Operational
+
+Agent-to-agent review criteria, quality gates within agentic workflows, automated checks per task.
+
+This is the companion to QA Strategic (domain 6). Where Strategic defines what quality means, Operational implements it in every agentic workflow. Agents that check their own work and each other's. Did the code compile? Did the tests pass? Does the content match the brand voice? Does the implementation actually meet the spec?
+
+
+The calibration question is always: how much autonomy at what level of risk? A draft internal document might not need human review. A public article does. A staging deployment might run autonomously. A production deployment probably shouldn't.
 
 ## The Level 3 Threshold
 
-Here's what emerges when you look at the three areas through the lens of the three levels:
+When you look at the nine domains through the lens of the three levels, a pattern emerges:
 
-**Level 1 (Chat):** Barely any Specification to speak of. The model gets a system prompt, maybe some injected context. No state management, no memory, no tools, no delegation. It's a conversation. A good one, sometimes, but a conversation.
+**Level 1 (Chat):** Almost nothing from any area. A system prompt, maybe some injected context. No infrastructure thinking, no memory, no orchestration. It's a conversation.
 
-**Level 2 (Agentic):** Specification is working. Parts of Platform are active: file system access, tool calling, some code execution. Maybe basic planning from Config. Five to seven capabilities total. The agent can do real work, but someone is supervising every step. The human is still the orchestrator.
+**Level 2 (Agentic):** Parts of Platform are active — some tool access, maybe code execution. Basic agent design from Configuration. A few domains partially covered. The agent can do real work, but someone is supervising every step. The human is still the orchestrator.
 
-**Level 3 (Autonomous):** All three areas are populated and working together. Platform provides the runtime, infrastructure, and security boundaries. Specification provides identity, context, and continuity. Config handles planning, delegation, routing, and quality gates. The capabilities reinforce each other. Memory feeds into planning. Delegation relies on routing. Security enables trust. HITL calibrates autonomy. Infrastructure keeps everything alive.
+**Level 3 (Autonomous):** All three areas are populated and working together. Platform provides the runtime, infrastructure, and security. Specification provides identity, context, and quality standards. Configuration handles agent behavior, orchestration, and operational quality. The domains reinforce each other. Memory feeds into planning. Delegation relies on routing. Security enables trust. Quality gates calibrate autonomy.
 
-The jump from Level 2 to Level 3 is not linear. It's not about adding a few more tools. It's about the interplay between areas. And the critical insight remains: **the harness decision in Platform is what determines whether you reach Level 3 or get stuck at Level 2.** Rich context, decent tools, and solid planning are all necessary, but if the harness assumes a human is always present, there's a ceiling. The harness is the unlock. It's the difference between "agent that helps work" and "agent that works."
+The jump from Level 2 to Level 3 is not linear. It's not about adding a few more tools. It's about the interplay between domains across all three areas. And the harness decision in Platform is what determines whether you can reach Level 3 or get stuck at Level 2. Rich context, decent tools, and solid agent design are all necessary — but if the harness assumes a human is always present, there's a ceiling.
 
-Most organizations will stay at Level 2 for a while, because Level 3 requires infrastructure thinking, not just model thinking. You can't prompt-engineer your way to autonomy. You have to build the runtime and everything around it.
+Most organizations will stay at Level 2 for a while, and that's fine. Level 2 is genuinely valuable. But if Level 3 is the goal, it requires infrastructure thinking, not just model thinking. You can't prompt-engineer your way to autonomy. You have to build the nine domains and the connections between them.
 
 ## Where This Goes
 
-These 15 capabilities across three areas are the anatomy. They describe what a Level 3 agent system is made of and how the pieces relate. The clustering under Platform, Specification, and Config is not an academic exercise. It's how coverage gets assessed, gaps get identified, and investment gets directed.
+Nine domains. Three areas. All connected. The domains are the map. They tell you what needs to exist, where the gaps are, and where to invest next.
 
-But anatomy is not the same as an operating model. Knowing the 15 capabilities tells you *what* needs to exist. It doesn't tell you how to organize a team around them, how to phase adoption, or how to run the daily work of maintaining and improving an autonomous system.
+The practical next step, whether you're an individual builder or leading a team, is to assess your current coverage honestly. Which domains are strong? Which ones are you ignoring? Which ones are owned by the wrong expertise?
 
-That's where the APEX Framework comes in. These 15 capabilities across three areas are the anatomy. APEX is the operating model for organizing teams around them. It covers how humans and agents work together in practice: role definitions, workflow patterns, quality loops, and the governance structures that make autonomous systems trustworthy.
+In my experience, most people building agent systems have strong instincts about Agent Design and some flavor of Infrastructure — the fun parts. The domains that get neglected are usually Security & Compliance, QA Strategic, and Spec Engineering. Those aren't glamorous. They're also the ones that determine whether your autonomous system is trustworthy enough to actually let run.
 
-This article gives you the anatomy. APEX gives you the operating manual.
-
-Fifteen capabilities. Three areas. All connected. The hard part, as always, is the assembly.
+The hard part, as always, is the assembly.
