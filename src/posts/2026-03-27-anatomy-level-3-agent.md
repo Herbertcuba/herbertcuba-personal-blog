@@ -42,11 +42,11 @@ Six types exist in the current ecosystem:
 
 **Specialized** harnesses are built for specific workflows with deterministic rails. Devin for end-to-end software engineering, Harvey for legal analysis, contract review systems that move through extraction, analysis, risk flagging, summary. Less flexible, dramatically more reliable for the workflows they handle.
 
-**Autonomous** harnesses are event-driven. OpenClaw, LangGraph Cloud, CrewAI — they run on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No human in the loop for every action. This is what makes Level 3 possible.
+**Autonomous** harnesses are event-driven. OpenClaw, CrewAI — they run on cron schedules, heartbeats, and webhooks. The agent wakes up, checks what needs attention, does work, goes back to sleep. No human in the loop for every action. This is what makes Level 3 possible.
 
 **Hierarchical** harnesses coordinate swarms of agents with a central orchestrator. AutoGen, ChatDev, MetaGPT — one coordinator breaks down goals and assigns work to specialists.
 
-**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. Prefect, Dagster, Flyte — good when the shape of the process is known upfront but the details need flexibility.
+**DAG-based** harnesses plot workflows as directed acyclic graphs with branching, conditional splits, and parallel execution. LangGraph, Prefect, Dagster, Flyte — good when the shape of the process is known upfront but the details need flexibility.
 
 **Hybrid** harnesses combine multiple types. In my experience, a mature Level 3 setup usually ends up here — an autonomous harness like OpenClaw handles lifecycle management while general purpose sub-agents like Claude Code or Codex handle specific domains like content publishing or code review.
 
