@@ -32,9 +32,11 @@ Let me walk through all nine.
 
 ## Platform Area: Where Things Run
 
-### 1. Harness Selection
+### 1. Infrastructure
 
-The harness — the runtime that sits between the language model and everything else — is the single most consequential decision you'll make. It determines what kind of memory is possible, what delegation patterns are available, how tools get called, and what security boundaries exist. Pick the wrong harness and you'll spend months working around limitations that were baked in on day one.
+Infrastructure owns the runtime, the compute, and everything that keeps the system alive. This is where you make the most consequential decision in the entire stack: choosing your harness.
+
+The harness — the runtime that sits between the language model and everything else — determines what orchestration patterns are possible, what deployment models you can rely on, and what security boundaries you can enforce. Pick the wrong harness and you'll spend months working around limitations that were baked in on day one.
 
 Six types exist in the current ecosystem:
 
@@ -50,17 +52,17 @@ Six types exist in the current ecosystem:
 
 **Hybrid** harnesses combine multiple types. In my experience, a mature Level 3 setup usually ends up here — an autonomous harness like OpenClaw handles lifecycle management while general purpose sub-agents like Claude Code or Codex handle specific domains like content publishing or code review.
 
-Now here's the math that makes this decision critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow ten times a day and you're looking at roughly six failures daily. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
+Now here's the math that makes the harness decision critical. Andrej Karpathy talks about the "march of nines" in reliability. If each step in a 10-step workflow has 90% reliability, your end-to-end success rate is about 35%. Run that workflow ten times a day and you're looking at roughly six failures daily. You can't prompt your way to 99.9% reliability on a complex multi-step process. Specialized harnesses with deterministic rails, validation checkpoints, and retry logic can get you there. The harness is what bends the reliability curve.
 
-Model strategy is part of this domain too. Which models for which tasks. Cost versus capability trade-offs. Fallback chains. The harness and the model strategy together form the foundation that constrains everything above.
+Beyond the harness, Infrastructure covers model strategy (which models for which tasks, cost versus capability trade-offs, fallback chains), compute and deployment, CI/CD pipelines, tool integrations, and monitoring. Agent workloads are fundamentally different from web app workloads — they're long-running, stateful, and unpredictable. Monitoring matters more than you'd think: when an agent runs autonomously, you need to know when it's stuck, when it's burning tokens on a loop, when it's producing degraded output.
 
-### 2. Infrastructure Ops
+### 2. Operational Tooling
 
-Compute, CI/CD, tool integrations, monitoring, agent deployment, stability. Keeping the lights on.
+Dashboards, metrics pipelines, context-generation tools, agent activity monitors. Everything that helps humans see and steer the system.
 
-Agent workloads are fundamentally different from web app workloads. They're long-running, stateful, and unpredictable. They need persistent connections, access to tools and file systems, and reliable uptime. I've seen brilliant agent architectures fall apart because nobody thought seriously about where the agents actually live, how they get deployed, or what happens when one crashes at 3 AM.
+This domain tends to get overlooked, but it serves every phase of working with autonomous agents. Context generators help humans produce better specifications faster. Real-time dashboards show what agents are doing, where they're stuck, and how much they're costing. Metrics visualizations make performance data actionable rather than abstract.
 
-Monitoring matters more than you'd think. When an agent runs autonomously, you need to know when it's stuck, when it's burning tokens on a loop, when it's producing degraded output. Traditional application monitoring doesn't cover these patterns. You need observability designed for agentic workloads.
+Without Operational Tooling, you're flying blind. You can define all the quality standards you want, but if there's no way to surface how agents are actually performing against them, improvement doesn't happen. This domain maps naturally to a developer or DevOps engineer who builds and maintains the tooling that everyone else relies on.
 
 ### 3. Security & Compliance
 
