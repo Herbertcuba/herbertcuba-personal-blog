@@ -1,7 +1,7 @@
 ---
-title: "APEX in Practice: Two Teams, One Framework"
+title: "APEX in Practice: Three Teams, One Framework"
 date: 2026-04-04
-excerpt: "APEX is not a monolith — it's instantiated per use case. This article walks through two complete APEX cycles, one for a product development team and one for a content production team, showing exactly how the same framework adapts to fundamentally different work."
+excerpt: "APEX is not a monolith — it's instantiated per use case. This article walks through three complete APEX cycles — a product development team, a content production team, and a data/research team — showing exactly how the same framework adapts to fundamentally different work and fundamentally different harness choices."
 featuredImage: "/images/posts/apex-in-practice.webp"
 layout: post.njk
 permalink: /drafts/apex-in-practice/
@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
 
 I keep getting asked the same question after people read Part 1: "This makes sense in theory, but what does it actually look like when a team runs it?" Fair question. A framework that only exists as abstract structure is a framework that never gets used.
 
-So here are two complete APEX cycles. A product development team building a SaaS feature. A content production team running an editorial operation. Same framework, different configurations, different cadences, different artifacts. By the end you should be able to look at your own team and start mapping domains to people.
+So here are three complete APEX cycles. A product development team building a SaaS feature. A content production team running an editorial operation. A data/research team running a daily market analysis pipeline for a quantitative fund. Same framework, three different configurations, three different cadences, three different artifacts, and — importantly — three different harness choices. By the end you should be able to look at your own team and start mapping domains to people.
 
 ---
 
@@ -203,47 +203,131 @@ Next cycle, social content acceptance should improve because the specs are sharp
 
 ---
 
-## Chapter 4: One Organization, Two Instances
+## Chapter 4: Data & Research Team
 
-Here's where it gets interesting. Both of these teams exist in the same organization. Some of the same people participate in both APEX instances — but with different domain ownership in each.
+This walkthrough changes the harness. Product and content both ran on flexible setups — OpenClaw coordinating autonomous agents, review loops, room to iterate. Fitting choice when the shape of the output isn't fully known until you produce it. A financial research team running a daily market analysis pipeline is a different animal. The shape is known. The steps are fixed. The auditability requirements are non-negotiable. That's a LangGraph problem.
 
-The AI Engineer owns Infrastructure and Agent Design in both fleets. In the product fleet, they configure an Architect, Frontend Developer, Integrator, and QA Engineer with architectural context. In the content fleet, they configure writing agents with brand voice context. Same domains, completely different artifacts. The skill — understanding how agents consume context, where drift happens, how identity files should be structured — transfers between fleets. The content doesn't.
+Let me walk through a complete APEX cycle for a research team running daily analysis for a quantitative fund.
 
-The Developer owns Operational Tooling in both fleets. They might build a shared dashboard platform or separate dashboards per fleet. The tooling expertise transfers. The metrics being tracked are different: iteration depth per feature vs iteration depth per content type. Cycle time means different things in weekly product cycles vs daily content cycles.
+### The People
 
-The Product Manager owns Business Context in the product fleet and gets consulted on Spec Engineering in the content fleet (because they understand the product well enough to inform content about it). Different hat, different depth of involvement.
+Six experts:
 
-The Security Engineer owns Security & Compliance in both. The permission boundaries are different — staging access for code agents, no-external-publish for content agents — but the discipline of documenting and enforcing least privilege is the same.
+- **Head of Research** — owns Business Context and Spec Engineering. They know what signals matter, what the fund is looking for, and how the daily report needs to read.
+- **Data Engineer** — owns Infrastructure and co-owns Agent Design. The harness decision sits here, along with the pipeline topology.
+- **Quant Analyst** — owns QA Strategic. What counts as a real signal, what's noise, what the false positive threshold is.
+- **Compliance Officer** — owns Security & Compliance. Approved data sources, audit trail requirements, regulatory constraints. This domain carries more weight in a research fleet than it did in either of the previous fleets.
+- **Developer** — owns Operational Tooling. Dashboards for signal quality, coverage, compliance pass rate.
+- **Risk Manager** — contributes to QA Strategic alongside the Quant Analyst.
 
-![One Organization, Two APEX Instances](/images/posts/apex-org-two-fleets.svg)
+### Strategic Phase
 
-### Different Cadences, Different Rhythms
+**Infrastructure.** The Data Engineer picks LangGraph. This is the first real divergence from the previous two fleets, and it's worth dwelling on. LangGraph is a DAG-based harness — you declare the nodes, you declare the edges, the graph runs forward. There are no loops, no agents deciding where work goes next. The topology is fixed at design time.
 
-The product fleet runs weekly cycles. Sprint-length iterations, with Reflection at the end of each sprint. The content fleet runs daily cycles — briefs in the morning, verified content by end of day, with a weekly Reflection that looks at the daily metrics in aggregate.
+For product work I wouldn't choose that. Features surface unknowns during implementation, and you want the system to be able to route work back for another pass or bring in a different specialist mid-flow. For content work I wouldn't choose it either — editorial iteration is the whole point of the Review → Writer feedback cycle from Chapter 3. For a daily analysis pipeline, the fixed shape is exactly what you want. Every run does the same thing. Every run produces the same artifact type. Every run needs to be auditable end to end. LangGraph's determinism becomes a feature.
 
-These cadences are independent. The product team's Reflection doesn't wait for the content team's, and vice versa. Different work has different rhythms, and forcing them into the same cadence is an anti-pattern. Each fleet calibrates based on its own data, its own metrics, its own patterns.
+Model strategy: Opus for the Correlator, which has to synthesize across multiple analysis streams and make nuanced judgments about what's actually a signal. Sonnet for the individual analysts doing well-defined analytical work. Haiku for data extraction — pulling structured fields out of filings and news items where speed and cost matter more than reasoning depth.
 
-The metrics look different too. The product fleet tracks iteration depth per feature type, first-pass acceptance on code changes, and cycle time from spec to merged PR. The content fleet tracks first-pass acceptance by content type, iteration depth per platform, and time from brief to verified article. Both fleets track Human Touch Rate and Calibration Impact — those are universal. But the numbers mean different things. A 70% first-pass acceptance rate on blog posts might be excellent. A 70% first-pass acceptance rate on critical infrastructure code changes might signal a problem in the spec quality.
+**Business Context.** The Head of Research populates the workspace with the fund's research thesis, the market coverage scope, investment universe definitions, and competitive positioning of the fund. These documents define what the system is looking for before any individual daily run begins. Agents that don't know the fund's thesis will flag generic patterns as signals. Agents that know the thesis will flag patterns that matter to *this* fund specifically.
 
-### Cross-Fleet Learning
+**Spec Engineering.** The Head of Research writes the daily analysis spec: what to watch, what triggers alerts, what goes into the daily report, what format the report takes. This is the equivalent of the product fleet's PRD or the content fleet's brief — the concrete instruction each daily run executes against.
 
-Quarterly, the organization might run a cross-fleet review: what patterns are emerging across fleets? Are there infrastructure improvements that benefit everyone? Has the AI Engineer discovered agent design patterns in one fleet that transfer to the other?
+**QA Strategic.** The Quant Analyst, with the Risk Manager contributing, defines the quality criteria. What makes a signal real? What's the false positive threshold the fund is willing to accept? What coverage does the daily report need to hit to be complete? These aren't aesthetic judgments like brand voice or architectural judgments like code review — they're statistical thresholds. The QA Strategic artifact for a research fleet looks like a risk framework, not a style guide.
 
-In my experience, the most valuable cross-fleet insights tend to be structural, not content-specific. An AI Engineer who discovers that agents produce better output when identity files reference specific architectural documents in the product fleet will bring that same principle to the content fleet — reference specific brand docs in the writer agent's identity, not just generic instructions. The pattern transfers even though the content is completely different.
+**Agent Design.** The Data Engineer and Head of Research configure six agents as DAG nodes:
 
-This cross-fleet review is useful but it's not part of the regular APEX cycle. It sits above it. The regular cycle is fleet-specific — that's what keeps the cadence tight and the calibration relevant. I want to be clear about this because I've seen organizations try to create a "meta-APEX" layer that coordinates across all fleets. That's overhead that doesn't earn its keep. Each fleet runs independently. Cross-pollination happens through people who participate in multiple fleets, and through quarterly reviews that surface transferable patterns. Keep it simple.
+- **Market Scanner** — fetches price data, news, and sentiment from the approved source allowlist. Haiku-tier. Structured extraction, not reasoning.
+- **Fundamental Analyst** — reads overnight earnings reports, balance sheets, and financial statements. Sonnet. Domain-specific analytical work.
+- **Technical Analyst** — runs chart patterns, indicators, and volatility analysis. Sonnet.
+- **Correlator** — synthesizes the three upstream analysts' outputs and flags cross-stream patterns. This is the node that benefits most from raw reasoning horsepower. Opus.
+- **Report Writer** — formats the Correlator's output into the house report format. Sonnet.
+- **Compliance Checker** — verifies no forbidden data sources were touched during the run, confirms all external calls are logged, and generates the audit trace. Sonnet with strict instructions.
 
-### Context Architecture
+**Orchestration.** In the product and content fleets, orchestration was a routing layer sitting above the agents — something the Tech Lead or AI Engineer designed separately. In this fleet, the DAG *is* the orchestration. Market Scanner, Fundamental Analyst, and Technical Analyst run in parallel, kicked off by a single time-based trigger. All three converge on the Correlator. The Correlator feeds the Report Writer. The Report Writer feeds the Compliance Checker. The Compliance Checker surfaces the result to human review. One directed graph, forward-only edges.
 
-In practice, the organization uses Notion as its master source for documentation. An automated export pipeline generates fleet-specific markdown workspaces — the product fleet workspace contains product vision docs, PRDs, and architecture patterns. The content fleet workspace contains brand voice docs, editorial guidelines, and audience personas. Each workspace is the complete context for that fleet's agents. Clean boundaries, no cross-contamination.
+There is no iteration between agents. The Correlator doesn't ask the Fundamental Analyst to re-examine a filing. The Report Writer doesn't send drafts back to the Correlator for revision. If a node produces degraded output, the degradation flows forward and the downstream node either compensates or flags it in its own output. If a node fails outright, the whole run fails and gets investigated as an incident. That's exactly the behavior a compliance-heavy pipeline needs. Retries and recoveries inside the graph would make the audit trail ambiguous.
 
-This separation matters more than it might seem. When a content agent has access to product architecture docs, it doesn't use them maliciously — it uses them *confusingly*. Context pollution leads to drift. An agent that sees engineering specs alongside editorial briefs will sometimes blend the styles, referencing technical details in audience-facing content or adopting a formal spec-writing tone when it should be writing in brand voice. Fleet-specific workspaces eliminate this class of problem entirely.
+**Operational Tooling.** The Developer builds a signal quality dashboard: hit rate of flagged signals (did the flagged patterns actually move?), false positive rate, coverage completeness (did every segment of the investment universe get scanned?), cycle time per run, and compliance pass rate. These are the metrics the Reflection phase will use.
 
-The master source stays unified for the humans. The Content Strategist can look up product roadmap context in Notion when writing a brief about an upcoming feature. The PM can reference brand guidelines when writing a feature spec that affects the user interface. But agents see only their fleet workspace. Humans bridge the fleets. Agents stay in their lane.
+**Security & Compliance.** Strict allowlist of data sources — if it's not on the list, no agent can call it, and the Compliance Checker fails the run if anything tries. Audit trails are built into every node because that's how DAG harnesses already work: each node's input, output, and execution time is captured by default. The Compliance Officer turns this into a feature by requiring that every run produces a full audit artifact. Agents cannot touch raw customer portfolio data — that's a hard boundary. All external API calls are logged.
+
+![Data & Research — DAG Pipeline](/images/posts/apex-data-research-dag.svg)
+
+### Execution Phase
+
+A cron trigger fires at market open. No human initiates the run — the whole point is that the pipeline runs deterministically on schedule.
+
+Three parallel streams kick off immediately. The Market Scanner pulls real-time price data, news headlines, and sentiment scores from the approved sources. The Fundamental Analyst pulls overnight filings — 10-Qs, 10-Ks, earnings releases — and extracts the material claims and numbers. The Technical Analyst runs chart pattern detection, momentum indicators, and volatility analysis across the universe.
+
+The three streams finish at different times, but the DAG waits for all of them before the Correlator activates. When they've all reported in, the Correlator reads the three outputs and looks for cross-stream patterns. A fundamental signal combined with a matching technical pattern combined with a news catalyst is what the fund cares about. Any one of them in isolation is noise. The Correlator produces a ranked list of insights with confidence scores.
+
+The Report Writer takes the ranked list and formats the daily brief in the house style — structured sections, consistent phrasing, specific fields for trading desk consumption. The Compliance Checker reads the full execution trace, verifies that every data access was on the allowlist, confirms that no forbidden sources were touched, and writes an audit log artifact that gets archived alongside the report.
+
+Then the Head of Research reads the brief. Not to check structure — the Compliance Checker already did that. To check whether the signals actually make sense to a human with market judgment. Are the correlations real or spurious? Does the narrative hold? Would you put this in front of the trading desk? These questions are irreducibly human. Once the Head of Research signs off, the report goes out.
+
+The cycle looks nothing like the product cycle or the content cycle. Work moves forward or it stops. That's the correct behavior for this use case. Auditability and determinism beat recoverability when you're producing compliance-sensitive output on a fixed schedule.
+
+### Reflection Phase
+
+Reflection on a daily pipeline happens weekly. You can't learn from a single day — you need a week of runs to see patterns.
+
+The Developer pulls up the signal quality dashboard. The week's data: 70% of flagged signals led to actual market moves, 30% were false positives. Coverage completeness hit 98% — two sectors had partial coverage because data source rate limits throttled the Market Scanner during the heaviest part of the run.
+
+The agents report observations through execution logs. The Fundamental Analyst consistently shows lower confidence scores on energy sector filings. When the Head of Research digs into specific runs, the pattern becomes clear: the energy sector uses terminology that isn't in the fund's Business Context documents — unit conventions, midstream vs upstream distinctions, specific hedging language — and the Fundamental Analyst has been inferring meaning from context rather than drawing on explicit reference material. Inference produces lower confidence and weaker signals.
+
+The team reflects. The Head of Research realizes the Business Context needs an energy sector vocabulary guide. The Quant Analyst tightens the false positive threshold specifically for energy signals — until the vocabulary gap is closed, the fund should require stronger confirmation on that sector before flagging anything.
+
+Calibration actions:
+- **Head of Research** adds an energy sector vocabulary guide to Business Context
+- **Data Engineer** updates the Fundamental Analyst's identity file to reference the new vocabulary doc
+- **Quant Analyst** tightens QA Strategic thresholds for energy sector signals
+- **Developer** adds a per-sector confidence breakdown to the dashboard so this pattern is visible in real time going forward
+
+Next week's runs will show whether the calibration worked. That's the loop. It looks different from the product team's loop and different from the content team's loop, but the underlying structure is identical: data-driven Reflection feeding back into Strategic improvements.
 
 ---
 
-## Chapter 5: Start Thinking in APEX
+## Chapter 5: One Organization, Three Instances
+
+Here's where it gets interesting. All three of these teams exist in the same organization. Some of the same people participate in multiple APEX instances — but with different domain ownership in each.
+
+The AI Engineer owns Infrastructure and Agent Design in the product and content fleets, and co-owns Agent Design alongside the Data Engineer in the research fleet. In the product fleet, they configure coding agents — an Architect, Frontend Developer, Integrator, QA Engineer — loaded with architectural context. In the content fleet, they configure writing agents loaded with brand voice context. In the research fleet, they help configure analysis agents loaded with the fund's thesis and sector knowledge. Same underlying skill — understanding how agents consume context, where drift happens, how identity files should be structured — applied to three completely different agent populations.
+
+The Developer owns Operational Tooling across all three fleets. They might build a shared dashboard platform or separate dashboards per fleet, but the tooling discipline transfers. The metrics being tracked are completely different: iteration depth per feature in product, first-pass acceptance by content type in content, signal hit rate and compliance pass rate in research. Cycle time means three different things in the three fleets. But the muscle of instrumenting, visualizing, and feeding data back into Reflection is the same muscle in every fleet.
+
+QA Strategic is the domain that shifts most dramatically between fleets. In the product fleet, it's code quality — test coverage, architectural conformance, security checks. In the content fleet, it's brand voice, factual accuracy, editorial judgment. In the research fleet, it's statistical — signal thresholds, false positive tolerance, coverage completeness. Three fleets, three completely different definitions of "good." A QA Lead who only understood code quality wouldn't be useful in the content fleet, and neither would know what to do with a research fleet's risk framework. That's why QA Strategic is owned by different people in each fleet — the Tech Lead-adjacent QA Lead in product, the Content Manager in content, the Quant Analyst in research.
+
+The Product Manager owns Business Context in the product fleet and gets consulted on Spec Engineering in the content fleet. The Head of Research owns both Business Context and Spec Engineering in the research fleet but has no role in the other two. The Security Engineer owns Security & Compliance in the product fleet, the Brand Manager contributes to it in the content fleet, and the Compliance Officer owns it outright in the research fleet — where regulatory exposure makes it the heaviest domain of all.
+
+![One Organization, Three APEX Instances](/images/posts/apex-org-three-fleets.svg)
+
+### Different Cadences, Different Rhythms
+
+Each fleet runs on its own clock. The product fleet runs weekly cycles — sprint-length iterations with Reflection at the end of each sprint. The content fleet runs daily cycles — briefs in the morning, verified content by end of day, with a weekly Reflection that aggregates the daily metrics. The research fleet runs daily execution and weekly Reflection — every trading day fires a fresh DAG run, but the team only learns from the aggregate pattern across a week of runs.
+
+These cadences are independent. The product team's Reflection doesn't wait for the content team's, which doesn't wait for the research team's. Different work has different rhythms, and forcing them into the same cadence is an anti-pattern. Each fleet calibrates based on its own data, its own metrics, its own patterns.
+
+The numbers mean different things in each fleet. A 70% first-pass acceptance rate on blog posts is excellent. A 70% first-pass acceptance rate on critical infrastructure code might signal a problem in spec quality. A 70% signal hit rate in the research fleet is extraordinary performance for a quantitative fund. Raw metrics don't transfer. The underlying discipline of measuring and calibrating does.
+
+### Cross-Fleet Learning
+
+Quarterly, the organization runs a cross-fleet review: what patterns are emerging across fleets? Are there infrastructure improvements that benefit everyone? Has the AI Engineer discovered agent design patterns in one fleet that transfer to the others?
+
+In my experience, the most valuable cross-fleet insights are structural, not content-specific. An AI Engineer who discovers that agents produce better output when identity files reference specific architectural documents in the product fleet will bring that same principle to the content fleet — reference specific brand docs in the writer agent's identity, not just generic instructions. And to the research fleet — reference specific sector vocabulary guides in the Fundamental Analyst's identity, not just generic finance knowledge. The pattern transfers even though the content is completely different.
+
+The cross-fleet review sits above the regular APEX cycle. The regular cycle is fleet-specific — that's what keeps the cadence tight and the calibration relevant. I've seen organizations try to create a "meta-APEX" layer that coordinates across all fleets. That's overhead that doesn't earn its keep. Each fleet runs independently. Cross-pollination happens through people who participate in multiple fleets, and through quarterly reviews that surface transferable patterns. Keep it simple.
+
+### Context Architecture
+
+In practice, the organization uses Notion as its master source for documentation. An automated export pipeline generates fleet-specific markdown workspaces. The product fleet workspace contains product vision docs, PRDs, and architecture patterns. The content fleet workspace contains brand voice docs, editorial guidelines, and audience personas. The research fleet workspace contains the fund's research thesis, sector vocabulary guides, and the daily analysis spec. Each workspace is the complete context for that fleet's agents. Clean boundaries, no cross-contamination.
+
+This separation matters more than it might seem. When a content agent has access to product architecture docs, it doesn't use them maliciously — it uses them *confusingly*. Context pollution leads to drift. An agent that sees engineering specs alongside editorial briefs will sometimes blend the styles, referencing technical details in audience-facing content or adopting a formal spec-writing tone when it should be writing in brand voice. A research agent that accidentally ingested marketing copy would start hedging its signals with promotional language. Fleet-specific workspaces eliminate this class of problem entirely.
+
+The master source stays unified for the humans. The Content Strategist can look up product roadmap context in Notion when writing a brief about an upcoming feature. The PM can reference brand guidelines when writing a feature spec that affects the user interface. The Head of Research can check competitive positioning docs from the marketing workspace when adjusting the fund's thesis. But agents see only their fleet workspace. Humans bridge the fleets. Agents stay in their lane.
+
+---
+
+## Chapter 6: Start Thinking in APEX
 
 APEX scales by instantiation, not by making one instance bigger.
 

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" font-family="system-ui, sans-serif">
+  <rect width="1280" height="640" fill="#0a0a0a"/>
+
+  <!-- Title -->
+  <text x="640" y="36" fill="#ffffff" font-size="18" font-weight="bold" text-anchor="middle">One Organization, Three APEX Instances</text>
+  <text x="640" y="56" fill="#64748b" font-size="11" text-anchor="middle">Same framework · three fleets · three harnesses · three cadences</text>
+
+  <!-- FLEET 1: Product -->
+  <rect x="30" y="80" width="390" height="400" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="225" y="108" fill="#3b82f6" font-size="14" font-weight="bold" text-anchor="middle">PRODUCT DEVELOPMENT</text>
+  <text x="225" y="126" fill="#64748b" font-size="10" text-anchor="middle">OpenClaw + Claude Code · Weekly cadence</text>
+
+  <rect x="50" y="145" width="350" height="52" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="225" y="164" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">STRATEGIC</text>
+  <text x="225" y="181" fill="#94a3b8" font-size="9" text-anchor="middle">Vision · PRDs · Architect + Dev agents · Test criteria</text>
+
+  <rect x="50" y="205" width="350" height="52" rx="5" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="225" y="224" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">EXECUTION</text>
+  <text x="225" y="241" fill="#94a3b8" font-size="9" text-anchor="middle">Spec → Plan → Code → Review → Tech Lead verifies</text>
+
+  <rect x="50" y="265" width="350" height="52" rx="5" fill="#1e293b" stroke="#e11d48" stroke-width="1"/>
+  <text x="225" y="284" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">REFLECTION</text>
+  <text x="225" y="301" fill="#94a3b8" font-size="9" text-anchor="middle">Iteration depth · First-pass acceptance · Cycle time</text>
+
+  <rect x="50" y="330" width="350" height="50" rx="5" fill="#0a0a0a" stroke="#475569" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="225" y="348" fill="#cbd5e1" font-size="10" font-weight="bold" text-anchor="middle">QA STRATEGIC = CODE QUALITY</text>
+  <text x="225" y="364" fill="#64748b" font-size="9" text-anchor="middle">Tests · architecture · security · review criteria</text>
+
+  <rect x="50" y="395" width="350" height="72" rx="5" fill="#1e293b"/>
+  <text x="225" y="414" fill="#f59e0b" font-size="10" font-weight="bold" text-anchor="middle">PRODUCT-ONLY</text>
+  <text x="225" y="432" fill="#94a3b8" font-size="9" text-anchor="middle">CTO / Tech Director · Tech Lead</text>
+  <text x="225" y="446" fill="#94a3b8" font-size="9" text-anchor="middle">Product Manager · QA Lead</text>
+  <text x="225" y="460" fill="#94a3b8" font-size="9" text-anchor="middle">Security Engineer</text>
+
+  <!-- FLEET 2: Content -->
+  <rect x="445" y="80" width="390" height="400" rx="10" fill="#0f172a" stroke="#14b8a6" stroke-width="2"/>
+  <text x="640" y="108" fill="#14b8a6" font-size="14" font-weight="bold" text-anchor="middle">CONTENT PRODUCTION</text>
+  <text x="640" y="126" fill="#64748b" font-size="10" text-anchor="middle">OpenClaw autonomous · Daily cadence</text>
+
+  <rect x="465" y="145" width="350" height="52" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="640" y="164" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">STRATEGIC</text>
+  <text x="640" y="181" fill="#94a3b8" font-size="9" text-anchor="middle">Brand voice · Editorial calendar · Briefs · Writer config</text>
+
+  <rect x="465" y="205" width="350" height="52" rx="5" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="640" y="224" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">EXECUTION</text>
+  <text x="640" y="241" fill="#94a3b8" font-size="9" text-anchor="middle">Brief → Research → Write → Review → Editor verifies</text>
+
+  <rect x="465" y="265" width="350" height="52" rx="5" fill="#1e293b" stroke="#e11d48" stroke-width="1"/>
+  <text x="640" y="284" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">REFLECTION</text>
+  <text x="640" y="301" fill="#94a3b8" font-size="9" text-anchor="middle">Acceptance by type · Brief quality · Platform fit</text>
+
+  <rect x="465" y="330" width="350" height="50" rx="5" fill="#0a0a0a" stroke="#475569" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="640" y="348" fill="#cbd5e1" font-size="10" font-weight="bold" text-anchor="middle">QA STRATEGIC = BRAND VOICE</text>
+  <text x="640" y="364" fill="#64748b" font-size="9" text-anchor="middle">Voice · facts · originality · audience fit</text>
+
+  <rect x="465" y="395" width="350" height="72" rx="5" fill="#1e293b"/>
+  <text x="640" y="414" fill="#f59e0b" font-size="10" font-weight="bold" text-anchor="middle">CONTENT-ONLY</text>
+  <text x="640" y="432" fill="#94a3b8" font-size="9" text-anchor="middle">Content Manager · Content Strategist</text>
+  <text x="640" y="446" fill="#94a3b8" font-size="9" text-anchor="middle">Copywriter / Editor · Brand Manager</text>
+
+  <!-- FLEET 3: Research -->
+  <rect x="860" y="80" width="390" height="400" rx="10" fill="#0f172a" stroke="#e11d48" stroke-width="2"/>
+  <text x="1055" y="108" fill="#e11d48" font-size="14" font-weight="bold" text-anchor="middle">DATA &amp; RESEARCH</text>
+  <text x="1055" y="126" fill="#64748b" font-size="10" text-anchor="middle">LangGraph DAG · Daily run · Weekly reflection</text>
+
+  <rect x="880" y="145" width="350" height="52" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="1055" y="164" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">STRATEGIC</text>
+  <text x="1055" y="181" fill="#94a3b8" font-size="9" text-anchor="middle">Thesis · analysis spec · DAG topology · risk thresholds</text>
+
+  <rect x="880" y="205" width="350" height="52" rx="5" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="1055" y="224" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">EXECUTION</text>
+  <text x="1055" y="241" fill="#94a3b8" font-size="9" text-anchor="middle">Trigger → 3× parallel → Correlator → Report → Audit</text>
+
+  <rect x="880" y="265" width="350" height="52" rx="5" fill="#1e293b" stroke="#e11d48" stroke-width="1"/>
+  <text x="1055" y="284" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">REFLECTION</text>
+  <text x="1055" y="301" fill="#94a3b8" font-size="9" text-anchor="middle">Signal hit rate · false positives · coverage · compliance</text>
+
+  <rect x="880" y="330" width="350" height="50" rx="5" fill="#0a0a0a" stroke="#475569" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="1055" y="348" fill="#cbd5e1" font-size="10" font-weight="bold" text-anchor="middle">QA STRATEGIC = SIGNAL QUALITY</text>
+  <text x="1055" y="364" fill="#64748b" font-size="9" text-anchor="middle">Thresholds · coverage · false positive tolerance</text>
+
+  <rect x="880" y="395" width="350" height="72" rx="5" fill="#1e293b"/>
+  <text x="1055" y="414" fill="#f59e0b" font-size="10" font-weight="bold" text-anchor="middle">RESEARCH-ONLY</text>
+  <text x="1055" y="432" fill="#94a3b8" font-size="9" text-anchor="middle">Head of Research · Data Engineer</text>
+  <text x="1055" y="446" fill="#94a3b8" font-size="9" text-anchor="middle">Quant Analyst · Risk Manager</text>
+  <text x="1055" y="460" fill="#94a3b8" font-size="9" text-anchor="middle">Compliance Officer</text>
+
+  <!-- Shared humans pool (center bottom) -->
+  <rect x="290" y="505" width="700" height="115" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="640" y="530" fill="#f59e0b" font-size="14" font-weight="bold" text-anchor="middle">SHARED ACROSS ALL THREE FLEETS</text>
+  <text x="640" y="554" fill="#94a3b8" font-size="11" text-anchor="middle">AI Engineer — configures coding agents, writing agents, analysis agents</text>
+  <text x="640" y="574" fill="#94a3b8" font-size="11" text-anchor="middle">Developer — Operational Tooling · dashboards in every fleet</text>
+  <text x="640" y="594" fill="#64748b" font-size="10" text-anchor="middle">Same skill, three configurations. Humans bridge fleets; agents stay in their lane.</text>
+
+  <!-- Connecting dashed lines shared → each fleet -->
+  <line x1="420" y1="505" x2="300" y2="470" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <line x1="640" y1="505" x2="640" y2="470" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <line x1="860" y1="505" x2="980" y2="470" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="4,4"/>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="system-ui, sans-serif">
+  <rect width="1100" height="560" fill="#0a0a0a"/>
+
+  <!-- Title -->
+  <text x="550" y="34" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">Data &amp; Research — DAG Pipeline (LangGraph)</text>
+  <text x="550" y="54" fill="#64748b" font-size="11" text-anchor="middle">Forward-only flow · deterministic · auditable</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#14b8a6"/>
+    </marker>
+    <marker id="arrBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Dashed DAG container -->
+  <rect x="40" y="80" width="870" height="400" rx="8" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <text x="60" y="104" fill="#f59e0b" font-size="11" font-weight="bold">DAG — FORWARD ONLY, NO ITERATION</text>
+
+  <!-- Trigger (blue) -->
+  <rect x="400" y="120" width="150" height="54" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="475" y="142" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">⏱  TIME TRIGGER</text>
+  <text x="475" y="160" fill="#94a3b8" font-size="9" text-anchor="middle">Market open · cron · daily</text>
+
+  <!-- Parallel streams arrows from trigger -->
+  <line x1="475" y1="174" x2="140" y2="210" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+  <line x1="475" y1="174" x2="475" y2="210" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+  <line x1="475" y1="174" x2="810" y2="210" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- Three parallel agents -->
+  <rect x="60" y="215" width="180" height="66" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="150" y="237" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">MARKET SCANNER</text>
+  <text x="150" y="253" fill="#94a3b8" font-size="9" text-anchor="middle">Prices · news · sentiment</text>
+  <text x="150" y="267" fill="#64748b" font-size="9" text-anchor="middle">Haiku</text>
+
+  <rect x="385" y="215" width="180" height="66" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="475" y="237" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">FUNDAMENTAL ANALYST</text>
+  <text x="475" y="253" fill="#94a3b8" font-size="9" text-anchor="middle">Filings · earnings · balance sheets</text>
+  <text x="475" y="267" fill="#64748b" font-size="9" text-anchor="middle">Sonnet</text>
+
+  <rect x="710" y="215" width="180" height="66" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="800" y="237" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">TECHNICAL ANALYST</text>
+  <text x="800" y="253" fill="#94a3b8" font-size="9" text-anchor="middle">Charts · indicators · volatility</text>
+  <text x="800" y="267" fill="#64748b" font-size="9" text-anchor="middle">Sonnet</text>
+
+  <!-- Converging arrows into Correlator -->
+  <line x1="150" y1="281" x2="430" y2="315" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+  <line x1="475" y1="281" x2="475" y2="315" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+  <line x1="800" y1="281" x2="520" y2="315" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+
+  <!-- Correlator -->
+  <rect x="385" y="320" width="180" height="58" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="475" y="342" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">CORRELATOR</text>
+  <text x="475" y="358" fill="#94a3b8" font-size="9" text-anchor="middle">Cross-stream synthesis</text>
+  <text x="475" y="370" fill="#64748b" font-size="9" text-anchor="middle">Opus</text>
+
+  <!-- Arrow to Report Writer -->
+  <line x1="565" y1="349" x2="630" y2="349" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+
+  <!-- Report Writer -->
+  <rect x="630" y="320" width="150" height="58" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="705" y="342" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">REPORT WRITER</text>
+  <text x="705" y="358" fill="#94a3b8" font-size="9" text-anchor="middle">House format brief</text>
+  <text x="705" y="370" fill="#64748b" font-size="9" text-anchor="middle">Sonnet</text>
+
+  <!-- Arrow down from Report Writer to Compliance -->
+  <line x1="705" y1="378" x2="705" y2="410" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+
+  <!-- Compliance Checker (red) -->
+  <rect x="600" y="412" width="210" height="54" rx="6" fill="#1e293b" stroke="#e11d48" stroke-width="2"/>
+  <text x="705" y="434" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">COMPLIANCE CHECKER</text>
+  <text x="705" y="450" fill="#94a3b8" font-size="9" text-anchor="middle">Audit trace · allowlist · logs</text>
+
+  <!-- Arrow left back toward Correlator (not needed), instead arrow out to human verification on the right -->
+  <line x1="810" y1="439" x2="950" y2="439" stroke="#14b8a6" stroke-width="1.8" marker-end="url(#arrTeal)"/>
+
+  <!-- Human Verification (teal) outside the DAG box -->
+  <rect x="950" y="395" width="130" height="94" rx="6" fill="#0f172a" stroke="#14b8a6" stroke-width="2"/>
+  <text x="1015" y="420" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">HUMAN</text>
+  <text x="1015" y="436" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">VERIFICATION</text>
+  <text x="1015" y="458" fill="#94a3b8" font-size="9" text-anchor="middle">Head of Research</text>
+  <text x="1015" y="472" fill="#64748b" font-size="9" text-anchor="middle">Market judgment</text>
+
+  <!-- Audit trail annotation -->
+  <rect x="60" y="412" width="470" height="54" rx="6" fill="#0f172a" stroke="#e11d48" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="295" y="434" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">AUDIT TRAIL GENERATED AT EVERY NODE</text>
+  <text x="295" y="452" fill="#94a3b8" font-size="9" text-anchor="middle">Input · output · execution time · external calls · model used</text>
+
+  <!-- Legend -->
+  <g transform="translate(40, 510)">
+    <rect x="0" y="0" width="14" height="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="20" y="9" fill="#94a3b8" font-size="9">Trigger / Infra</text>
+    <rect x="120" y="0" width="14" height="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="140" y="9" fill="#94a3b8" font-size="9">Agent node</text>
+    <rect x="230" y="0" width="14" height="10" fill="#1e293b" stroke="#e11d48" stroke-width="1.5"/>
+    <text x="250" y="9" fill="#94a3b8" font-size="9">Compliance / Audit</text>
+    <rect x="370" y="0" width="14" height="10" fill="#1e293b" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="390" y="9" fill="#94a3b8" font-size="9">Human verification</text>
+    <text x="540" y="9" fill="#64748b" font-size="9">Fail fast · investigate · re-run next cycle</text>
+  </g>
+</svg>
