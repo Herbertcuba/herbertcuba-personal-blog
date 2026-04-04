@@ -84,7 +84,7 @@ The PM writes the feature spec and pushes it into the fleet workspace. The Archi
 
 The Frontend Developer completes its first task. The Architect reviews: does it follow the design system? Are components structured correctly? Is accessibility handled? First pass: the Architect flags that the error state component doesn't match the design system's pattern. The Frontend Developer fixes it. Second pass: the Architect approves. The task surfaces for human verification.
 
-The Tech Lead verifies. They're not checking CSS — the Architect already handled structural review. They're checking intent. Does this implementation capture what the PM specified? Does it fit the user flow? Is this the right abstraction? These are the questions only a human with deep product knowledge can answer.
+A Developer verifies. They're not checking CSS — the Architect already handled structural review. They're checking intent. Does this implementation capture what the PM specified? Does it fit the user flow? Is this the right abstraction? These are the questions only a human with deep product knowledge and daily context in the codebase can answer.
 
 Once the Tech Lead approves, the QA Engineer agent activates. It reads the acceptance criteria from the spec, studies the implementation, and writes regression tests and end-to-end tests that verify the feature works correctly. These tests become part of the codebase — codifying human-verified correctness into automated checks that protect against future regressions.
 
@@ -94,7 +94,7 @@ Meanwhile, the Integrator has finished the API integration task. The Architect r
 
 This pattern repeats across all five tasks. Some tasks take one Architect review pass. Some take three. Frontend and Integrator work in parallel where possible, converging when tasks have dependencies. The dashboard updates in real time. By the end of the cycle, five tasks are verified, tested, and merged.
 
-The velocity gain is real. In a traditional workflow, the Tech Lead would review every pull request line by line and QA would manually write test plans. Here, the Tech Lead reviews pre-validated output and QA tests are auto-generated from verified implementations. The cycle that used to take a week compresses into two days of agent execution plus verification touchpoints.
+The velocity gain is real. In a traditional workflow, developers review every pull request line by line and QA manually writes test plans. Here, developers review pre-validated output and QA tests are auto-generated from verified implementations. The cycle that used to take a week compresses into two days of agent execution plus verification touchpoints.
 
 ### Reflection Phase
 
