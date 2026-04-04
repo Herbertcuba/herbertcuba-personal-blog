@@ -36,10 +36,10 @@
 
   <rect x="510" y="215" width="300" height="110" fill="#111" stroke="#e11d48" stroke-width="2"/>
   <rect x="510" y="215" width="300" height="4" fill="#e11d48"/>
-  <text x="530" y="245" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Cycle Velocity</text>
-  <text x="530" y="268" font-family="system-ui, sans-serif" font-size="10" fill="#777">Time from spec to verified delivery.</text>
+  <text x="530" y="245" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Cycle Time</text>
+  <text x="530" y="268" font-family="system-ui, sans-serif" font-size="10" fill="#777">Elapsed time from spec to verified delivery.</text>
   <text x="530" y="285" font-family="system-ui, sans-serif" font-size="10" fill="#777">Compresses as system matures.</text>
-  <text x="530" y="310" font-family="system-ui, sans-serif" font-size="9" fill="#e11d48">↓ Faster = mature system</text>
+  <text x="530" y="310" font-family="system-ui, sans-serif" font-size="9" fill="#e11d48">↓ Shrinking = system maturing</text>
 
   <text x="970" y="380" text-anchor="end" font-family="system-ui, sans-serif" font-size="9" fill="#333">APEX FRAMEWORK</text>
 </svg>
