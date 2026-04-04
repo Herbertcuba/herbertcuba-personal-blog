@@ -63,33 +63,38 @@ This is where the team designs the system that agents will execute within. Every
 
 **QA Strategic.** The QA Lead defines the definition of done for this cycle: all tests pass, code review criteria are met (no security vulnerabilities, follows existing architectural patterns, proper error handling), performance benchmarks are hit. These aren't abstract goals — they're the criteria that the review agent will check against in every iteration, and that the Tech Lead will verify at the end.
 
-**Agent Design.** The AI Engineer and Tech Lead configure three agents:
+**Agent Design.** The AI Engineer and Tech Lead configure four agents:
 
-- A **Planner agent** that reads the PRD and decomposes it into implementable tasks. Its identity file includes the team's task decomposition standards and references the product architecture docs.
-- A **Coder agent** with a SOUL.md containing coding standards, architectural patterns, and naming conventions. It has skills for git operations, running tests, and deploying to staging. Its identity references the Business Context docs so it understands *why* the feature matters, not just *what* to build.
-- A **Reviewer agent** configured with a skeptical review prompt. QA criteria are injected into its context. It evaluates every code change against the definition of done, checks for patterns the team has flagged as anti-patterns, and scores each dimension. It's deliberately configured to be harsh — false negatives (missing real issues) are more expensive than false positives (flagging non-issues).
+- An **Architect agent** that reads the PRD, understands the system's technical landscape, and decomposes features into implementable tasks. This isn't a generic planner — its identity file contains architectural decision records, system diagrams, and the team's technical standards. It assigns tasks to the right specialist and reviews their output with architectural judgment.
+- A **Frontend Developer agent** with a SOUL.md containing UI component standards, design system references, and accessibility requirements. It has skills for running the dev server, executing component tests, and building the frontend. It understands the design system and knows how to translate specs into polished interfaces.
+- An **Integrator agent** focused on backend connections, API integrations, data flows, and service orchestration. Its identity includes API contracts, auth patterns, and infrastructure documentation. Where the Frontend Developer builds what users see, the Integrator builds what connects everything underneath.
+- A **QA Engineer agent** that writes regression tests and end-to-end tests for completed work. It reads the acceptance criteria from the spec, reviews the implementation, and produces test suites that verify the feature works as intended. It runs after human verification confirms the implementation is correct — codifying that correctness into automated tests.
 
-**Orchestration.** The Tech Lead designs the flow: Planner decomposes the PRD → Coder implements each task → Reviewer reviews against criteria → iterate until criteria are met → surface for human verification. The routing is explicit. No agent decides on its own where work goes next.
+**Orchestration.** The Tech Lead designs the flow: Architect decomposes the PRD and assigns tasks to Frontend Developer and Integrator (which can work in parallel on independent tasks). When a task is complete, the Architect reviews the output against architectural standards and QA criteria. If it doesn't meet the bar, it goes back to the implementing agent with specific feedback. If it passes, the task surfaces for human verification. Once the human approves, the QA Engineer agent builds regression and e2e tests for that task. After all tasks in the cycle are verified and tested, the execution loop closes. The routing is explicit. No agent decides on its own where work goes next.
 
 **Operational Tooling.** The Developer sets up a dashboard showing iteration depth per task, first-pass acceptance rate, and cycle time per feature. These are the metrics that will make the Reflection phase concrete instead of speculative.
 
-**Security.** The Security Engineer configures access boundaries: the Coder agent can access the staging environment but not production. It cannot access customer data. It can read architectural docs but cannot modify infrastructure configuration. Least privilege, documented in a Permission Map.
+**Security.** The Security Engineer configures access boundaries: the Frontend Developer and Integrator agents can access the staging environment but not production. They cannot access customer data. They can read architectural docs but cannot modify infrastructure configuration. The QA Engineer can run tests against staging but cannot deploy. Least privilege, documented in a Permission Map.
 
 ### Execution Phase
 
 The system is designed. Now agents run.
 
-The PM writes the feature spec and pushes it into the fleet workspace. The Planner reads it, reads the product architecture docs, and decomposes the feature into five tasks. The Coder picks up the first task, reads the relevant Business Context, and implements it. The Reviewer evaluates the implementation against the QA criteria: does it follow the architectural patterns? Do the tests pass? Is error handling correct? Does it meet the performance benchmark?
+The PM writes the feature spec and pushes it into the fleet workspace. The Architect reads it, reads the product architecture docs, and decomposes the feature into five tasks — three frontend tasks and two integration tasks. The Frontend Developer picks up the first UI task while the Integrator starts on the API layer. They work in parallel on independent tasks.
 
-First iteration: the Reviewer flags two issues. The API integration doesn't follow the team's established auth patterns, and one error state is missing. The Coder fixes both. Second iteration: the Reviewer passes the implementation with a note about a minor naming inconsistency. The Coder adjusts. Third iteration: all criteria pass. The task surfaces for human verification.
+The Frontend Developer completes its first task. The Architect reviews: does it follow the design system? Are components structured correctly? Is accessibility handled? First pass: the Architect flags that the error state component doesn't match the design system's pattern. The Frontend Developer fixes it. Second pass: the Architect approves. The task surfaces for human verification.
 
-The Tech Lead verifies. They're not checking syntax — the agents already handled that across three iterations. They're checking architecture. Does this implementation fit the larger system? Does it follow the patterns we've established? Does it capture the intent of the spec? These are the questions only a human with deep codebase knowledge can answer.
+The Tech Lead verifies. They're not checking CSS — the Architect already handled structural review. They're checking intent. Does this implementation capture what the PM specified? Does it fit the user flow? Is this the right abstraction? These are the questions only a human with deep product knowledge can answer.
+
+Once the Tech Lead approves, the QA Engineer agent activates. It reads the acceptance criteria from the spec, studies the implementation, and writes regression tests and end-to-end tests that verify the feature works correctly. These tests become part of the codebase — codifying human-verified correctness into automated checks that protect against future regressions.
+
+Meanwhile, the Integrator has finished the API integration task. The Architect reviews: does it follow the auth patterns? Are error states handled? Is the data contract correct? The Integrator adjusts based on feedback, the Architect passes it, the Tech Lead verifies, and the QA Engineer builds integration tests.
 
 ![Product Development — Execution Inner Loop](/images/posts/apex-product-execution.svg)
 
-This loop repeats for each of the five tasks. Some tasks take two iterations. Some take four. The dashboard updates in real time. By the end of the cycle, five tasks are verified and merged.
+This pattern repeats across all five tasks. Some tasks take one Architect review pass. Some take three. Frontend and Integrator work in parallel where possible, converging when tasks have dependencies. The dashboard updates in real time. By the end of the cycle, five tasks are verified, tested, and merged.
 
-The velocity gain is real. In a traditional workflow, the Tech Lead would review every pull request line by line. Here, they review pre-validated output. The mechanical issues are resolved. The human focuses on intent and architecture. The cycle that used to take a week compresses into two days of actual agent execution plus verification touchpoints.
+The velocity gain is real. In a traditional workflow, the Tech Lead would review every pull request line by line and QA would manually write test plans. Here, the Tech Lead reviews pre-validated output and QA tests are auto-generated from verified implementations. The cycle that used to take a week compresses into two days of agent execution plus verification touchpoints.
 
 ### Reflection Phase
 
@@ -101,16 +106,17 @@ The Developer pulls up the dashboard. The team sees the data:
 - First-pass acceptance rate across the cycle: 62%.
 - Human touch rate: 8% — the Tech Lead stepped in once to clarify an architectural decision mid-loop.
 
-The agents report their observations. The Coder agent's logs show that API integration tasks consistently required more iterations. The Reviewer's reports show a pattern: the Coder kept misinterpreting the auth flow because the Business Context docs didn't include auth architecture patterns.
+The agents report their observations. The Integrator agent's logs show that API integration tasks consistently required more review passes from the Architect. The Architect's reports show a pattern: the Integrator kept misinterpreting the auth flow because the Business Context docs didn't include auth architecture patterns.
 
-The team reflects. The PM realizes the Business Context is missing a critical document — auth architecture and integration patterns. Without it, the Coder infers auth patterns from code samples, and those inferences are often wrong. The AI Engineer notes that the Coder agent's identity file doesn't reference any auth-specific documentation because none existed.
+The team reflects. The PM realizes the Business Context is missing a critical document — auth architecture and integration patterns. Without it, the Integrator infers auth patterns from code samples, and those inferences are often wrong. The AI Engineer notes that the Integrator agent's identity file doesn't reference any auth-specific documentation because none existed. The QA Engineer also flags that its test coverage for auth flows was shallow because it had no reference architecture to test against.
 
 Calibration actions:
 - **PM** adds an auth architecture patterns document to Business Context
-- **AI Engineer** updates the Coder agent's identity file to reference the new auth doc
+- **AI Engineer** updates the Integrator agent's identity file to reference the new auth doc
+- **AI Engineer** updates the QA Engineer agent's test-generation context with auth flow patterns
 - **QA Lead** adds an auth-pattern-specific check to QA Operational
 
-Next cycle, the Coder won't struggle with auth integration because the context exists. Iteration depth on API tasks should drop. First-pass acceptance should improve. That's the hypothesis. The metrics will confirm or deny it.
+Next cycle, the Integrator won't struggle with auth integration because the context exists. The QA Engineer will generate more thorough auth tests. Iteration depth on API tasks should drop. First-pass acceptance should improve. That's the hypothesis. The metrics will confirm or deny it.
 
 ![Product Development — Full APEX Cycle](/images/posts/apex-product-full-cycle.svg)
 
@@ -201,7 +207,7 @@ Next cycle, social content acceptance should improve because the specs are sharp
 
 Here's where it gets interesting. Both of these teams exist in the same organization. Some of the same people participate in both APEX instances — but with different domain ownership in each.
 
-The AI Engineer owns Infrastructure and Agent Design in both fleets. In the product fleet, they configure coding agents with architectural context. In the content fleet, they configure writing agents with brand voice context. Same domains, completely different artifacts. The skill — understanding how agents consume context, where drift happens, how identity files should be structured — transfers between fleets. The content doesn't.
+The AI Engineer owns Infrastructure and Agent Design in both fleets. In the product fleet, they configure an Architect, Frontend Developer, Integrator, and QA Engineer with architectural context. In the content fleet, they configure writing agents with brand voice context. Same domains, completely different artifacts. The skill — understanding how agents consume context, where drift happens, how identity files should be structured — transfers between fleets. The content doesn't.
 
 The Developer owns Operational Tooling in both fleets. They might build a shared dashboard platform or separate dashboards per fleet. The tooling expertise transfers. The metrics being tracked are different: iteration depth per feature vs iteration depth per content type. Cycle time means different things in weekly product cycles vs daily content cycles.
 
