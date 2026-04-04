@@ -61,7 +61,7 @@ This is where the team designs the system that agents will execute within. Every
 
 **Spec Engineering.** For the current cycle, the PM writes a feature PRD: what the feature does, who it's for, acceptance criteria, technical constraints. The acceptance criteria are specific and testable — not "the feature works well" but "API response time under 200ms, error states render the correct component, validation messages match the copy doc." Vague specs produce vague output. This is Principle 3 in action.
 
-**QA Strategic.** The QA Lead defines the definition of done for this cycle: all tests pass, code review criteria are met (no security vulnerabilities, follows existing architectural patterns, proper error handling), performance benchmarks are hit. These aren't abstract goals — they're the criteria that the review agent will check against in every iteration, and that the Tech Lead will verify at the end.
+**QA Strategic.** The QA Lead defines the definition of done for this cycle: all tests pass, code review criteria are met (no security vulnerabilities, follows existing architectural patterns, proper error handling), performance benchmarks are hit. These aren't abstract goals — they're the criteria that the review agent will check against in every iteration, and that developers will verify at the end.
 
 **Agent Design.** The AI Engineer and Tech Lead configure four agents:
 
@@ -86,9 +86,9 @@ The Frontend Developer completes its first task. The Architect reviews: does it 
 
 A Developer verifies. They're not checking CSS — the Architect already handled structural review. They're checking intent. Does this implementation capture what the PM specified? Does it fit the user flow? Is this the right abstraction? These are the questions only a human with deep product knowledge and daily context in the codebase can answer.
 
-Once the Tech Lead approves, the QA Engineer agent activates. It reads the acceptance criteria from the spec, studies the implementation, and writes regression tests and end-to-end tests that verify the feature works correctly. These tests become part of the codebase — codifying human-verified correctness into automated checks that protect against future regressions.
+Once the Developer approves, the QA Engineer agent activates. It reads the acceptance criteria from the spec, studies the implementation, and writes regression tests and end-to-end tests that verify the feature works correctly. These tests become part of the codebase — codifying human-verified correctness into automated checks that protect against future regressions.
 
-Meanwhile, the Integrator has finished the API integration task. The Architect reviews: does it follow the auth patterns? Are error states handled? Is the data contract correct? The Integrator adjusts based on feedback, the Architect passes it, the Tech Lead verifies, and the QA Engineer builds integration tests.
+Meanwhile, the Integrator has finished the API integration task. The Architect reviews: does it follow the auth patterns? Are error states handled? Is the data contract correct? The Integrator adjusts based on feedback, the Architect passes it, a Developer verifies, and the QA Engineer builds integration tests.
 
 ![Product Development — Execution Inner Loop](/images/posts/apex-product-execution.svg)
 
@@ -104,7 +104,7 @@ The Developer pulls up the dashboard. The team sees the data:
 
 - Feature A took 4 iterations average. Feature B took only 2.
 - First-pass acceptance rate across the cycle: 62%.
-- Human touch rate: 8% — the Tech Lead stepped in once to clarify an architectural decision mid-loop.
+- Human touch rate: 8% — a Developer stepped in once to clarify an architectural decision mid-loop.
 
 The agents report their observations. The Integrator agent's logs show that API integration tasks consistently required more review passes from the Architect. The Architect's reports show a pattern: the Integrator kept misinterpreting the auth flow because the Business Context docs didn't include auth architecture patterns.
 
