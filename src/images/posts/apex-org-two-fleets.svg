@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" font-family="system-ui, sans-serif">
+  <rect width="960" height="580" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="480" y="35" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">One Organization, Two APEX Instances</text>
+  
+  <!-- Left: Content Production -->
+  <rect x="30" y="70" width="420" height="360" rx="10" fill="#0f172a" stroke="#14b8a6" stroke-width="2"/>
+  <text x="240" y="98" fill="#14b8a6" font-size="14" font-weight="bold" text-anchor="middle">CONTENT PRODUCTION</text>
+  <text x="240" y="116" fill="#64748b" font-size="10" text-anchor="middle">Daily cadence</text>
+  
+  <!-- Content Strategic -->
+  <rect x="50" y="135" width="380" height="55" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="240" y="155" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">STRATEGIC</text>
+  <text x="240" y="172" fill="#94a3b8" font-size="9" text-anchor="middle">Brand voice · Editorial calendar · Briefs · Writer agent config · Review criteria</text>
+  
+  <!-- Content Execution -->
+  <rect x="50" y="200" width="380" height="55" rx="5" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="240" y="220" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">EXECUTION</text>
+  <text x="240" y="237" fill="#94a3b8" font-size="9" text-anchor="middle">Brief → Research → Write → Review → Editorial Lead verifies</text>
+  
+  <!-- Content Reflection -->
+  <rect x="50" y="265" width="380" height="55" rx="5" fill="#1e293b" stroke="#e11d48" stroke-width="1"/>
+  <text x="240" y="285" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">REFLECTION</text>
+  <text x="240" y="302" fill="#94a3b8" font-size="9" text-anchor="middle">Acceptance rates by content type · Brief quality · Agent tuning</text>
+  
+  <!-- Content-specific people -->
+  <rect x="50" y="335" width="175" height="80" rx="5" fill="#1e293b"/>
+  <text x="137" y="355" fill="#f59e0b" font-size="10" font-weight="bold" text-anchor="middle">CONTENT-ONLY</text>
+  <text x="137" y="373" fill="#94a3b8" font-size="9" text-anchor="middle">Content Manager</text>
+  <text x="137" y="387" fill="#94a3b8" font-size="9" text-anchor="middle">Content Strategist</text>
+  <text x="137" y="401" fill="#94a3b8" font-size="9" text-anchor="middle">Brand Manager</text>
+  
+  <!-- Right: Product Development -->
+  <rect x="510" y="70" width="420" height="360" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="720" y="98" fill="#3b82f6" font-size="14" font-weight="bold" text-anchor="middle">PRODUCT DEVELOPMENT</text>
+  <text x="720" y="116" fill="#64748b" font-size="10" text-anchor="middle">Weekly cadence</text>
+  
+  <!-- Product Strategic -->
+  <rect x="530" y="135" width="380" height="55" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="720" y="155" fill="#3b82f6" font-size="11" font-weight="bold" text-anchor="middle">STRATEGIC</text>
+  <text x="720" y="172" fill="#94a3b8" font-size="9" text-anchor="middle">Vision doc · PRDs · Coder agent config · Test criteria · Architecture docs</text>
+  
+  <!-- Product Execution -->
+  <rect x="530" y="200" width="380" height="55" rx="5" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+  <text x="720" y="220" fill="#14b8a6" font-size="11" font-weight="bold" text-anchor="middle">EXECUTION</text>
+  <text x="720" y="237" fill="#94a3b8" font-size="9" text-anchor="middle">Spec → Plan → Code → Review → Tech Lead verifies</text>
+  
+  <!-- Product Reflection -->
+  <rect x="530" y="265" width="380" height="55" rx="5" fill="#1e293b" stroke="#e11d48" stroke-width="1"/>
+  <text x="720" y="285" fill="#e11d48" font-size="11" font-weight="bold" text-anchor="middle">REFLECTION</text>
+  <text x="720" y="302" fill="#94a3b8" font-size="9" text-anchor="middle">Iteration depth per feature · Code quality trends · Cycle time compression</text>
+  
+  <!-- Product-specific people -->
+  <rect x="735" y="335" width="175" height="80" rx="5" fill="#1e293b"/>
+  <text x="822" y="355" fill="#f59e0b" font-size="10" font-weight="bold" text-anchor="middle">PRODUCT-ONLY</text>
+  <text x="822" y="373" fill="#94a3b8" font-size="9" text-anchor="middle">CTO / Tech Director</text>
+  <text x="822" y="387" fill="#94a3b8" font-size="9" text-anchor="middle">Tech Lead</text>
+  <text x="822" y="401" fill="#94a3b8" font-size="9" text-anchor="middle">QA Lead</text>
+  
+  <!-- Shared people (center bottom) -->
+  <rect x="310" y="455" width="340" height="100" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="480" y="480" fill="#f59e0b" font-size="13" font-weight="bold" text-anchor="middle">SHARED ACROSS BOTH INSTANCES</text>
+  <text x="480" y="502" fill="#94a3b8" font-size="10" text-anchor="middle">AI Engineer — Infrastructure + Agent Design in both</text>
+  <text x="480" y="518" fill="#94a3b8" font-size="10" text-anchor="middle">Developer — Operational Tooling in both</text>
+  <text x="480" y="534" fill="#94a3b8" font-size="10" text-anchor="middle">Security Engineer — Security &amp; Compliance in both</text>
+  
+  <!-- Connecting lines from shared to both -->
+  <line x1="400" y1="455" x2="240" y2="420" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="560" y1="455" x2="720" y2="420" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+</svg>
