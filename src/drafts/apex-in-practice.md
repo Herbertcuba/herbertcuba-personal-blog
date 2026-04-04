@@ -1,5 +1,5 @@
 ---
-title: "APEX in Practice: Three Teams, One Framework"
+title: "APEX: Three Use Cases, One Framework"
 date: 2026-04-04
 excerpt: "APEX is not a monolith — it's instantiated per use case. This article walks through three complete APEX cycles — a product development team, a content production team, and a data/research team — showing exactly how the same framework adapts to fundamentally different work and fundamentally different harness choices."
 featuredImage: "/images/posts/apex-in-practice.webp"
