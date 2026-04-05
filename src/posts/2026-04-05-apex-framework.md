@@ -1,6 +1,6 @@
 ---
 title: "The APEX Framework: Agentic Production Execution"
-date: 2026-04-01
+date: 2026-04-05
 excerpt: "The complete APEX Framework — three areas, nine domains, ten principles, five metrics. Strategic → Execution → Reflection. A production-grade operating model for teams where humans design and verify while agents execute and iterate."
 featuredImage: "/images/posts/apx-framework.webp"
 layout: post.njk
