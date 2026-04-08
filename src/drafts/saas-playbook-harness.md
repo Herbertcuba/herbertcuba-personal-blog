@@ -10,114 +10,94 @@ eleventyExcludeFromCollections: true
 ---
 
 On April 4th, Anthropic cut off subscription access for third-party harnesses like OpenClaw. On April 8th, they announced Managed Agents — a hosted service that does what those harnesses do, but inside Anthropic's own platform.
-On April 4th, Anthropic cut off subscription access for third-party harnesses like OpenClaw. On April 8th, they announced Managed Agents — a hosted service that does what those harnesses do, but inside Anthropic's own platform.
+On April 4th, Anthropic did three things. They cut subscription access for third-party harnesses like OpenClaw. They launched Claude Code Ultraplan — an agentic planning workflow built into their own CLI. And they set the stage for what came four days later: Managed Agents, a hosted service that does what those third-party harnesses do, but inside Anthropic's platform.
 
-That's a four-day window between closing the door and opening their own.
+If you've worked in enterprise software, this sequence should feel familiar.
 
-If you've worked in enterprise software for any length of time, this sequence should feel familiar. It's the SaaS playbook. And it has been run before — many times, across many industries, with remarkably consistent results.
+## We've Seen This Before
 
-## A Pattern With History
+In the early 2000s, open-source e-commerce pioneered the category. osCommerce, Magento, WooCommerce — they proved you could run a full online store on self-hosted software. Ecosystems formed. Agencies grew. Then Shopify arrived with a hosted version: same capabilities, less friction, no server management. Shopify didn't invent e-commerce. It packaged it.
 
-In the early 2000s, open-source e-commerce was pioneered by projects like osCommerce, Magento, and WooCommerce. They proved the concept: you could run a full online store on open-source software, self-hosted, with total control. Thousands of businesses built on them. Agencies grew around them. Ecosystems formed.
+The CMS world ran the same sequence. WordPress, Drupal, and Joomla democratized content management. Then Contentful, Sanity, and Storyblok arrived with polished, headless alternatives. They didn't invent content management. They turned it into a service.
 
-Then Shopify arrived. Not with better open-source code — with a hosted service. Same capabilities, less friction, no server management, no plugin conflicts, no upgrade nightmares. The value proposition was simple: we'll handle the infrastructure, you handle the business. Shopify didn't invent e-commerce. It packaged it.
+The pattern is consistent:
 
-The CMS world ran the same sequence. WordPress, Drupal, and Joomla proved that content management could be democratized. Then Contentful, Sanity, and Storyblok arrived with hosted, headless alternatives — polished APIs, managed infrastructure, no server patching. They didn't invent content management. They turned it into a service.
+1. Open-source pioneers prove the concept — taking the risk, building communities, validating the market
+2. Adoption grows, ecosystems form
+3. A vendor builds a hosted version that's more polished and easier to operate
+4. The vendor leverages a structural advantage the open-source project can't replicate
+5. The market consolidates around the hosted option
 
-The pattern is always the same:
+Anthropic is running step 3, 4, and 5 simultaneously.
 
-1. **Open-source pioneers prove the concept** — they take the risk, build the community, validate the market
-2. **Adoption grows** — enterprises start using the tools, ecosystems form around them
-3. **A vendor sees the opportunity** — they build a hosted version that's more polished, easier to operate, and backed by a company with resources
-4. **The vendor leverages a structural advantage** — something the open-source project can't easily replicate (in Shopify's case, payments infrastructure; in Anthropic's case, the model itself)
-5. **The market consolidates** — open-source continues to exist but loses the mainstream
+## What Anthropic Actually Built
 
-## Anthropic Is Running This Playbook Right Now
+I want to be precise, because this isn't about dismissing the technology. Managed Agents is genuinely impressive engineering.
 
-Look at the sequence:
+The core architecture separates three concerns: the **brain** (Claude and its harness loop), the **hands** (sandboxes and tool execution), and the **session** (a durable event log). Each is an independent interface. Each can fail, scale, or be replaced without affecting the others.
 
-**The pioneers:** OpenClaw, OpenCode, PaperClip, and others built the concept of the AI agent harness. They proved that you could orchestrate Claude (and other models) through a loop of reasoning, tool use, and execution. They built communities. They created ecosystems. They made agentic workflows accessible.
+This solves real problems. Previously, everything lived in one container — if it died, the session was lost. The new design treats containers as cattle: brains start without waiting for sandboxes, sessions survive crashes, credentials never touch the execution environment, and multiple brains can share hands.
 
-**The structural advantage:** Anthropic controls the model. Unlike Shopify (which had to build its own payments advantage) or Contentful (which had to out-engineer WordPress), Anthropic holds the ultimate leverage — they make the thing that makes the harness work. When they cut subscription access for third-party tools, they didn't just compete with OpenClaw. They turned off the engine.
+The session architecture is particularly interesting. Instead of irreversibly compacting context when the window fills up (and hoping you kept the right tokens), the session log stores everything durably. The harness interrogates it selectively via `getEvents()`. This is a better approach than what most open-source harnesses currently implement.
 
-**The polished alternative:** Managed Agents is technically impressive. Decoupled brain from hands. Sessions as persistent event logs. Sandboxes provisioned on demand. 60% improvement in time-to-first-token. Security credentials isolated from execution environments. This is not a weekend project — it's a production-grade platform built by a team that deeply understands the problem.
+Performance improved too — 60% reduction in median time-to-first-token, over 90% at p95. Real numbers from a real system.
 
-**The timing:** Launch the platform the same week you restrict the alternatives. Classic. And to make the intent unmistakable: Anthropic also launched Claude Code Ultraplan on April 4th — the same day they cut subscription access for OpenClaw. Ultraplan is an agentic planning workflow built directly into Claude Code's CLI, letting you start a complex task in your terminal, draft it via Claude Code on the web, and execute it remotely. A handoff system, fully inside Anthropic's stack. The message wasn't subtle: if you want agentic workflows, use our tools — not theirs.
+Ultraplan complements this by letting you start a complex planning task from the CLI, draft it on the web, and execute it remotely. The terminal stays free while the plan gets built. It's a thoughtful handoff system, fully inside Anthropic's stack.
 
-## What Managed Agents Actually Does Well
+This is not a weekend project competing with open source. This is a production-grade platform built by a team that deeply understands the problem space.
 
-I want to be precise here, because this isn't about dismissing the technology. The engineering blog post describes a genuinely good architecture.
+## The Structural Advantage Is the Model Itself
 
-The core insight is separating the **brain** (Claude and its harness loop), the **hands** (sandboxes and tool execution), and the **session** (the durable event log). Each becomes an independent interface that can fail, scale, or be replaced without affecting the others.
+Here's where the SaaS parallel gets sharper.
 
-This solves real problems. In the old design, everything lived in one container. If the container died, the session was lost. If Claude needed to work across multiple execution environments, it couldn't. If you wanted to connect to your own VPC, you had to peer networks.
+Shopify had to build its own structural advantage — payments infrastructure, merchant ecosystem, brand trust. That took years. Contentful had to out-engineer WordPress on developer experience. Also years.
 
-The new design treats containers as cattle, not pets. Brains start without waiting for sandboxes. Sessions survive crashes. Credentials never touch the execution environment. Multiple brains can share hands, and hands can be passed between brains.
+Anthropic's structural advantage already exists: they make the model. They control the intelligence that makes the harness work. When they cut subscription access for third-party tools, they didn't just compete with OpenClaw — they turned off the engine.
 
-The "session as a context object outside the context window" is particularly interesting. Instead of irreversibly compacting context (and hoping you kept the right tokens), the session log stores everything durably, and the harness can interrogate it selectively. This is a better architecture than what most open-source harnesses currently implement.
+OpenClaw, OpenCode, PaperClip — these projects proved the concept of the AI agent harness. They built communities, created ecosystems, made agentic workflows accessible to developers. They pioneered. And now the model provider is packaging what they built into a managed service, while simultaneously restricting access to the fuel those tools run on.
 
-## The Lock-In Question
+The timing wasn't subtle. The message was clear: if you want agentic workflows powered by the best available models, use our tools.
 
-Here is where it gets strategic for enterprise decision-makers.
+## Why This Time Is Different
 
-Managed Agents is excellent technology — but it runs on Anthropic's platform, with Anthropic's models, inside Anthropic's ecosystem. Every session, every event log, every sandbox execution is mediated by Anthropic. Your agent's memory, its execution history, its accumulated context — all of it lives in their infrastructure.
+But there's a crucial difference between this SaaS cycle and every one before it.
 
-We've seen what happens when a model provider changes terms. Four days ago, thousands of developers lost their workflow because Anthropic changed a pricing policy. That's not a hypothetical risk — it's a demonstrated pattern.
+Shopify controlled a platform. Contentful controlled an API. Anthropic is trying to control the intelligence itself. And intelligence — unlike a platform or an API — is being commoditized from below.
 
-The e-commerce parallel is instructive. Shopify merchants who built their entire business on the platform discovered that platform risk is real. Changes to Shopify's fee structure, app store policies, or feature set affect every merchant simultaneously, with no alternative ready. The merchants who maintained some infrastructure independence — headless architectures, multi-channel distribution — were more resilient.
-
-The CMS parallel is equally telling. Organizations that went all-in on a single SaaS CMS found themselves locked into that vendor's roadmap, pricing, and architectural decisions. When the vendor pivoted (as they always eventually do), migration was painful and expensive.
-
-The same dynamic applies here. Managed Agents is the most polished harness available for Claude — but it only works with Claude. If you build your agent infrastructure on it, your entire agentic capability is coupled to one provider's models, pricing, and platform decisions.
-
-## What Open-Source Harnesses Still Offer
-
-Open-source harnesses like OpenClaw aren't as polished as Managed Agents. That's the trade-off, and it's real. But they offer something Managed Agents structurally cannot:
-
-**Model independence.** An OpenClaw agent can run on Claude, GPT, Gemini, Gemma, Mistral, or a local model. If one provider changes terms, raises prices, or goes down, the orchestration layer stays intact and you switch the model.
-
-**Infrastructure ownership.** Your session logs, your execution history, your agent memory — all of it lives in your infrastructure. No vendor can change the terms of access to your own data.
-
-**Architectural flexibility.** You choose the harness design. You choose the tool integrations. You choose the deployment topology. The harness adapts to your infrastructure, not the other way around.
-
-These aren't theoretical advantages. We saw them play out in real time this week: when Anthropic cut subscription access, OpenClaw users with token-based authentication or alternative model providers continued operating without interruption. Users who depended entirely on Anthropic's subscription OAuth didn't.
-
-## The Strategic Choice
-
-This isn't about whether Managed Agents is good. It is. The engineering is sound, the architecture is forward-looking, and for teams that want a fully managed agentic platform, it's the most complete option available.
-
-The question is whether you want your agentic infrastructure to be owned or rented.
-
-Every SaaS platform starts with the same pitch: we handle the complexity, you focus on your business. And every SaaS platform eventually reaches the same inflection point: the vendor's interests and your interests diverge. When that happens, the cost of leaving determines your negotiating position.
-
-In e-commerce, the answer was composable commerce — headless architectures that let you swap components. In CMS, the answer was headless content — APIs that decoupled content from presentation. In both cases, the market evolved toward architectures that preserved optionality.
-
-AI harnesses will follow the same trajectory. Today, the choice is between polish and independence. Managed Agents gives you polish. Open-source harnesses give you independence. The organizations that figure out how to get both — using open standards, model-agnostic orchestration, and portable session formats — will be the ones best positioned for whatever comes next.
-
-## Why This Time Might Break the Pattern
-
-There is one crucial difference between this SaaS cycle and the ones before it.
-
-Shopify controlled a platform. Contentful controlled an API. Anthropic is trying to control the intelligence itself — the general reasoning capability that makes the entire agentic layer work. That's a different kind of leverage, and it cuts both ways.
-
-Today, frontier general intelligence is expensive and centralized. Training a model like Claude costs hundreds of millions. Running it at scale requires Anthropic's infrastructure. If your agentic system needs the best available reasoning, you need Anthropic (or OpenAI, or Google). That's the gravity that makes Managed Agents compelling — why fight the platform when the platform controls the brain?
+Today, frontier general intelligence is expensive and centralized. Training Claude costs hundreds of millions. Running it at scale requires Anthropic's infrastructure. That's the gravity that makes Managed Agents compelling: why fight the platform when the platform controls the brain?
 
 But general intelligence isn't the only kind of intelligence that matters for agentic work.
 
-Many agent tasks don't require frontier reasoning. A formatting check doesn't need Opus. A data extraction step doesn't need the model that found zero-days in OpenBSD. A content review against a style guide doesn't need the most expensive tokens available. These tasks need specialized intelligence — smaller models, fine-tuned for specific domains, running at a fraction of the cost.
+Many agent tasks don't require frontier reasoning. A formatting check doesn't need Opus. A data extraction step doesn't need the model that found zero-days in OpenBSD. A content review against a style guide doesn't need the most expensive tokens available. These tasks need specialized intelligence — smaller models, tuned for specific domains, at a fraction of the cost. A 4B model tuned for a narrow domain can outperform a general frontier model on that domain's tasks, at perhaps 1% of the token cost. And you can run it locally, on your own hardware, with no API dependency.
 
-A 4B parameter model tuned for a specific domain can outperform a general frontier model on that domain's tasks, at perhaps 1% of the cost per token. And you can run it locally, on your own hardware, with no API dependency at all.
+This creates a tension that Shopify never faced. Anthropic needs you to consume frontier tokens — that's their revenue. They will never genuinely advocate for "use smaller, cheaper, specialized models where you can" because that advice directly cannibalizes their core business. Managed Agents routes everything through Claude. That's not a flaw in the design — it's the design.
 
-This creates a structural tension with the model providers' business model. Anthropic needs you to consume frontier tokens — that's their revenue. They will never genuinely advocate for "use smaller, cheaper, specialized models where you can" because that advice directly cannibalizes their core business. Managed Agents is built to route everything through Claude. That's not a flaw in the design — it's the design.
+Open-source models are getting better every quarter. Specialized fine-tuning is getting cheaper. Local inference is getting faster. The moat around general intelligence is real today, but it erodes with every Gemma, Llama, and Qwen release. Shopify's moat — payments and merchant trust — only gets stronger over time. Anthropic's moat gets weaker.
 
-The organizations that will be best positioned aren't the ones that pick a side — all frontier or all specialized. They're the ones that learn when general intelligence is worth the cost and when specialized intelligence is enough. An agentic system that routes a complex architectural review to Opus, a code generation task to Sonnet, and a linting check to a local 4B model isn't just cheaper. It's more resilient, because no single provider's pricing change or policy shift can take the whole system down.
+## The Lock-In We Already Saw
 
-Model-agnostic harnesses — OpenClaw, LangGraph, and others — are architecturally suited for this mixed approach. Managed Agents, by design, is not.
+This isn't theoretical. We already saw what platform dependency looks like.
 
-None of this diminishes what Anthropic built. Managed Agents is genuinely impressive engineering, and for teams that want a fully managed agentic platform with the best available models, it's the most complete option today. The brain-hands-session separation is elegant. The security model is well-considered. The performance improvements are real.
+On April 4th, thousands of developers lost their agentic workflows because Anthropic changed a pricing policy. One policy change, immediate impact, no recourse. Users running model-agnostic harnesses with alternative authentication or fallback providers continued working without interruption. Users who depended entirely on Anthropic's subscription didn't.
 
-But the SaaS playbook has a weakness it didn't have in e-commerce or CMS: the fuel that powers these platforms — intelligence itself — is being commoditized from below. Open-source models are getting better every quarter. Specialized fine-tuning is getting cheaper. Local inference is getting faster. The moat around general intelligence is real today, but it's eroding.
+The e-commerce parallel is instructive. Shopify merchants who built their entire business on the platform discovered that changes to fee structures, app store policies, or feature sets affect everyone simultaneously. The merchants who maintained some infrastructure independence were more resilient.
 
-The question isn't whether Managed Agents is good. It is. The question is whether betting your agentic infrastructure on a single provider's general intelligence is the right long-term architecture — when the trend line points toward a world of diverse, specialized, increasingly capable models that don't require anyone's cloud.
+The same dynamic applies to Managed Agents. Every session, every event log, every sandbox execution is mediated by Anthropic. Your agent's memory, execution history, and accumulated context lives in their infrastructure. That's convenient — until the terms change.
 
-Because if the SaaS playbook teaches us anything, it's that what comes next is never what the current market leader planned for.
+## The Strategic Question
+
+The choice facing enterprise teams isn't whether Managed Agents is good technology. It is. The brain-hands-session separation is elegant. The security model is well-considered. For teams that want a fully managed agentic platform with the best available models, it's the most complete option today.
+
+The question is what you're optimizing for.
+
+If you're optimizing for time-to-value and you're comfortable with single-provider dependency, Managed Agents is the obvious choice. Ship fast, worry about portability later.
+
+If you're optimizing for long-term resilience, the answer looks different. The organizations best positioned for what's coming aren't the ones that pick a side — all frontier or all specialized. They're the ones that learn when general intelligence is worth the cost and when specialized intelligence is enough. An agentic system that routes an architectural review to Opus, code generation to Sonnet, and a linting check to a local 4B model isn't just cheaper — it's structurally resilient. No single provider's pricing change can take the whole system down.
+
+Model-agnostic harnesses are architecturally suited for this mixed approach. Managed Agents, by design, is not.
+
+In e-commerce, the market eventually evolved toward composable architectures that preserved optionality. In CMS, it evolved toward headless content that decoupled storage from presentation. AI harnesses will follow the same trajectory — from monolithic platforms toward architectures where the orchestration layer is independent of the intelligence layer.
+
+Managed Agents is the Shopify moment for AI harnesses. It's polished, it's powerful, and it will capture a significant share of the market. But the SaaS playbook has a weakness it didn't have before: the fuel that powers these platforms is being commoditized from below, and the open-source alternatives don't need to match Anthropic's models — they just need to be good enough for the task at hand.
+
+The best model wins today. The best architecture wins tomorrow.
