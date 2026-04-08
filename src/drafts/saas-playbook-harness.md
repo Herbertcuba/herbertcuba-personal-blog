@@ -96,7 +96,7 @@ If you're optimizing for long-term resilience, the answer looks different. The o
 
 Model-agnostic harnesses are architecturally suited for this mixed approach. Managed Agents, by design, is not.
 
-In e-commerce, the market eventually evolved toward composable architectures that preserved optionality. In CMS, it evolved toward headless content that decoupled storage from presentation. AI harnesses will follow the same trajectory — from monolithic platforms toward architectures where the orchestration layer is independent of the intelligence layer.
+In e-commerce, the market eventually evolved toward composable architectures that preserved optionality. In CMS, it evolved toward headless content that decoupled storage from presentation. AI harnesses will most likely follow the same trajectory — from monolithic platforms toward architectures where the orchestration layer is independent of the intelligence layer.
 
 Managed Agents is the Shopify moment for AI harnesses. It's polished, it's powerful, and it will capture a significant share of the market. But the SaaS playbook has a weakness it didn't have before: the fuel that powers these platforms is being commoditized from below, and the open-source alternatives don't need to match Anthropic's models — they just need to be good enough for the task at hand.
 
