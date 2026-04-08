@@ -42,7 +42,7 @@ Look at the sequence:
 
 **The polished alternative:** Managed Agents is technically impressive. Decoupled brain from hands. Sessions as persistent event logs. Sandboxes provisioned on demand. 60% improvement in time-to-first-token. Security credentials isolated from execution environments. This is not a weekend project — it's a production-grade platform built by a team that deeply understands the problem.
 
-**The timing:** Launch the platform the same week you restrict the alternatives. Classic.
+**The timing:** Launch the platform the same week you restrict the alternatives. Classic. And to make the intent unmistakable: Anthropic also launched Claude Code Ultraplan on April 4th — the same day they cut subscription access for OpenClaw. Ultraplan is an agentic planning workflow built directly into Claude Code's CLI, letting you start a complex task in your terminal, draft it via Claude Code on the web, and execute it remotely. A handoff system, fully inside Anthropic's stack. The message wasn't subtle: if you want agentic workflows, use our tools — not theirs.
 
 ## What Managed Agents Actually Does Well
 
