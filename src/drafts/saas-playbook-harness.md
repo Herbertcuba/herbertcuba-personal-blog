@@ -10,6 +10,7 @@ eleventyExcludeFromCollections: true
 ---
 
 On April 4th, Anthropic cut off subscription access for third-party harnesses like OpenClaw. On April 8th, they announced Managed Agents — a hosted service that does what those harnesses do, but inside Anthropic's own platform.
+On April 4th, Anthropic cut off subscription access for third-party harnesses like OpenClaw. On April 8th, they announced Managed Agents — a hosted service that does what those harnesses do, but inside Anthropic's own platform.
 
 That's a four-day window between closing the door and opening their own.
 
@@ -92,5 +93,31 @@ Every SaaS platform starts with the same pitch: we handle the complexity, you fo
 In e-commerce, the answer was composable commerce — headless architectures that let you swap components. In CMS, the answer was headless content — APIs that decoupled content from presentation. In both cases, the market evolved toward architectures that preserved optionality.
 
 AI harnesses will follow the same trajectory. Today, the choice is between polish and independence. Managed Agents gives you polish. Open-source harnesses give you independence. The organizations that figure out how to get both — using open standards, model-agnostic orchestration, and portable session formats — will be the ones best positioned for whatever comes next.
+
+## Why This Time Might Break the Pattern
+
+There is one crucial difference between this SaaS cycle and the ones before it.
+
+Shopify controlled a platform. Contentful controlled an API. Anthropic is trying to control the intelligence itself — the general reasoning capability that makes the entire agentic layer work. That's a different kind of leverage, and it cuts both ways.
+
+Today, frontier general intelligence is expensive and centralized. Training a model like Claude costs hundreds of millions. Running it at scale requires Anthropic's infrastructure. If your agentic system needs the best available reasoning, you need Anthropic (or OpenAI, or Google). That's the gravity that makes Managed Agents compelling — why fight the platform when the platform controls the brain?
+
+But general intelligence isn't the only kind of intelligence that matters for agentic work.
+
+Many agent tasks don't require frontier reasoning. A formatting check doesn't need Opus. A data extraction step doesn't need the model that found zero-days in OpenBSD. A content review against a style guide doesn't need the most expensive tokens available. These tasks need specialized intelligence — smaller models, fine-tuned for specific domains, running at a fraction of the cost.
+
+A 4B parameter model tuned for a specific domain can outperform a general frontier model on that domain's tasks, at perhaps 1% of the cost per token. And you can run it locally, on your own hardware, with no API dependency at all.
+
+This creates a structural tension with the model providers' business model. Anthropic needs you to consume frontier tokens — that's their revenue. They will never genuinely advocate for "use smaller, cheaper, specialized models where you can" because that advice directly cannibalizes their core business. Managed Agents is built to route everything through Claude. That's not a flaw in the design — it's the design.
+
+The organizations that will be best positioned aren't the ones that pick a side — all frontier or all specialized. They're the ones that learn when general intelligence is worth the cost and when specialized intelligence is enough. An agentic system that routes a complex architectural review to Opus, a code generation task to Sonnet, and a linting check to a local 4B model isn't just cheaper. It's more resilient, because no single provider's pricing change or policy shift can take the whole system down.
+
+Model-agnostic harnesses — OpenClaw, LangGraph, and others — are architecturally suited for this mixed approach. Managed Agents, by design, is not.
+
+None of this diminishes what Anthropic built. Managed Agents is genuinely impressive engineering, and for teams that want a fully managed agentic platform with the best available models, it's the most complete option today. The brain-hands-session separation is elegant. The security model is well-considered. The performance improvements are real.
+
+But the SaaS playbook has a weakness it didn't have in e-commerce or CMS: the fuel that powers these platforms — intelligence itself — is being commoditized from below. Open-source models are getting better every quarter. Specialized fine-tuning is getting cheaper. Local inference is getting faster. The moat around general intelligence is real today, but it's eroding.
+
+The question isn't whether Managed Agents is good. It is. The question is whether betting your agentic infrastructure on a single provider's general intelligence is the right long-term architecture — when the trend line points toward a world of diverse, specialized, increasingly capable models that don't require anyone's cloud.
 
 Because if the SaaS playbook teaches us anything, it's that what comes next is never what the current market leader planned for.
