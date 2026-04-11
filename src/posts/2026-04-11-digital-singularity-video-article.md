@@ -1,0 +1,223 @@
+---
+title: "When AI Makes Building Cheap, Human Reality Starts to Matter More"
+date: 2026-04-11
+excerpt: "I think we are entering a phase where digital production gets cheaper by the week, and that pushes real value upward into taste, trust, context, accountability, and ultimately meaning."
+featuredImage: "/images/posts/image.webp"
+layout: post.njk
+permalink: /posts/2026-04-11-digital-singularity-video-article/
+tags: ["ai", "digital-singularity", "future-of-work", "strategy", "trust"]
+---
+
+Everyone is talking about Anthropic's unreleased model Mythos and how capable it seems. Maybe the rumors are ahead of reality, maybe they are not. Either way, I think the important part is not Mythos itself. It is what Mythos represents.
+
+We should assume that better language models will keep arriving in waves. Stronger reasoning, better memory, lower friction, more autonomy, more reliability. This is not the end of the AI shift. It is the beginning of the part that actually changes companies, products, and competitive dynamics for real.
+
+That is why I think we are moving out of the pilot phase of AI and into the transformation phase. And once that happens, the consequence is bigger than most people realize.
+
+If more people can generate interfaces, ship workflows, clone feature sets, launch products, and patch together decent user experiences in a fraction of the time, then the market starts asking a different question.
+
+Not can you build this.
+
+Why should anyone care about you specifically?
+
+That, to me, is where this gets interesting.
+
+Because I do not think this is just a software shift. I think it is one more visible sign of something I have been circling for a while in my own thinking around the Digital Singularity Shift.
+
+When technology drives functional excellence toward abundance, functional differentiation starts fading. Better, faster, cheaper, more scalable, more automated, more personalized, all of that keeps improving, but it stops being rare. And when it stops being rare, value starts moving.
+
+In my experience, it moves upward into things that are harder to fake and slower to build. Taste. Trust. Context. Accountability. Meaning.
+
+That is where the real shift starts showing up.
+
+## Digital production is getting cheaper. That changes where value lives
+
+For a long time, digital advantage came from the ability to make things.
+
+If you could build the product, ship the feature, publish the content, launch the campaign, and move faster than everyone else, that alone created leverage.
+
+AI does not remove the value of execution, but it does compress the scarcity of it.
+
+That is the important shift.
+
+If more people can create decent interfaces, services, workflows, and content at a fraction of the previous cost, then the act of creation itself stops being enough. It becomes easier to produce. Harder to matter.
+
+And once that happens, value starts moving upward into judgment, resonance, trust, context, accountability, and meaning.
+
+## Taste & Judgement: The next entrepreneurial edge
+
+If AI can generate endless options, then selection becomes more strategic than generation.
+
+That is why I think taste and judgment move much closer to the center of entrepreneurship.
+
+Not taste as decoration. Not taste as surface. Not judgment as some abstract executive trait. I mean the practical ability to decide what should not be created, and when something is worth creating, how to shape it so it produces the intended effect in the real world.
+
+That kind of judgment is becoming incredibly valuable.
+
+In a world where content, software, interfaces, offers, and campaigns can be generated faster than ever, attention becomes more precious, not less. And for something to deserve attention, someone has to be able to sense whether it will actually resonate, whether it will work, whether it will matter, and whether it should exist at all.
+
+That is where I think a deeper human role starts showing up.
+
+In my book *The Three Crucibles*, I circle around an archetype I think matters more and more in this next era: the **Reality Maker**.
+
+What I mean by that is not the old specialist who goes infinitely deep in one narrow trench. AI will increasingly outperform that version of expertise. What matters more is the person who is enough of a generalist to see the whole landscape, but expert enough to understand what will actually hold up when it meets real customers, real culture, real teams, and real consequences.
+
+The entrepreneur of the coming era will not be the one who creates the most. It will be the one who knows what should not be created, and what is worth bringing into the world because it can create a real effect.
+
+The Reality Maker knows that not everything that can be generated deserves to exist.
+The Reality Maker knows that not everything that looks smart will work.
+The Reality Maker knows that resonance is not random.
+
+In that sense, taste and judgment are really about human resonance. They help us understand what will feel true, timely, and meaningful to the people we are trying to reach.
+
+So taste, in the way I mean it here, is not just aesthetic.
+It is entrepreneurial.
+It is relational.
+It is cultural.
+It is strategic.
+
+## Trust becomes hard currency when the world gets noisy
+
+When the world gets noisier, trust gets more valuable.
+
+That is not a soft branding point. I think it becomes hard currency.
+
+In a low-noise market, people can slowly compare alternatives and make fairly rational choices. In a high-noise market, they need shortcuts. Trust is one of the strongest shortcuts we have.
+
+And in the AI era, that shortcut gets built into more and more decisions.
+
+If a person uses AI to choose a service, evaluate a recommendation, compare vendors, assess information, or even let an agent act on their behalf, trust starts shaping the filter before the final choice is even visible.
+
+In my own writing around the Digital Singularity Shift, I keep coming back to the idea that the next generation of consumers will use trust as a form of hard currency. They are growing up in a world of synthetic content, algorithmic feeds, fractured narratives, and low institutional confidence. In that world, trust stops being a fluffy brand word. It becomes part of the decision logic.
+
+And trust is not built by shouting the loudest.
+It is built by standing out for the right reasons.
+
+An LLM can generate a polished page in seconds.
+It cannot generate a real reputation in the same way.
+
+Reputation comes from history. From consistency. From behavior. From clarity. From how people describe you when you are not in the room. That takes time, and that is exactly why it matters more as everything else speeds up.
+
+## Context is what turns capability into meaning
+
+This is another big one.
+
+AI can know a lot, but knowing a lot is not the same as understanding a situation properly.
+
+A model may know the pattern. That does not mean it knows your constraints, your politics, your internal history, your customer baggage, your timing, your team dynamics, or the subtle reasons a good-looking answer would still fail in the real world.
+
+That is context.
+
+And I think context is becoming one of the most valuable assets in the AI economy.
+
+Not just data. Interpretation.
+
+Why this issue matters here.
+Why this team behaves like that.
+What happened last quarter that changed the incentives.
+What nobody wants to say directly.
+What actually matters in this moment.
+
+Every company has unique histories, customer groups, internal stories, cultural codes, and emotional residues. I think the companies that win in the next phase will not flatten those things away in pursuit of scale. They will protect them, understand them, and elevate them into something more valuable.
+
+That is one reason I keep returning to the idea that the winners in this era will not just be experts or builders in the old sense. They will be orchestrators. People and organizations that can connect tools, memory, incentives, signals, timing, and human realities into coherent action.
+
+The more intelligence becomes abundant, the more context becomes premium.
+
+## Distribution still decides who gets to matter
+
+A lot of builders hate this point, but I think it is true.
+
+The internet has always had a romantic story about merit. Build the best thing and the world will notice.
+
+Sometimes that happens. Often it does not.
+
+Distribution still shapes what gets seen, adopted, normalized, and talked about.
+
+AI does not reduce that dynamic. I think it intensifies it.
+
+When more people can build more things faster, supply expands much faster than human attention does. That makes distribution even more decisive.
+
+Audience matters.
+Network matters.
+Narrative position matters.
+Community matters.
+Repeat reach matters.
+Cultural relevance matters.
+
+In other words, the product alone is not the whole game. It never really was.
+
+I think the future belongs to the people and companies that can create gravity, not just utility.
+
+## Accountability is what proves you are real
+
+One of the most under-discussed forms of value in the AI era is accountability.
+
+Not just ownership in an org chart. Not just a legal checkbox. Not just naming a responsible person in a workflow.
+
+I mean the willingness to stand for consequences in public.
+
+As AI starts generating recommendations, workflows, drafts, decisions, diagnostics, automations, and agentic actions with real-world consequences, the important question is not only what can be produced.
+
+It is who owns the downside when it goes wrong.
+
+Who signs off?
+Who takes the legal risk?
+Who carries the reputational damage?
+Who guarantees a standard?
+Who is accountable when an automated flow behaves badly in a real human setting?
+
+I think this is where a lot of naive disruption narratives hit a wall.
+
+Capability is impressive. Responsibility is expensive.
+
+And that expense is exactly what makes it strategically meaningful.
+
+Because in a world of generated surfaces, accountability becomes one of the clearest proofs that there is something real underneath.
+
+This is also where I think a metamodern posture matters.
+
+The companies that will do better in this next phase are not the ones pretending to be flawless. Everyone will mess up in this faster, stranger, more automated environment. The stronger companies will be the ones that can hold sincerity and self-awareness at the same time. Serious enough to take ownership. Human enough to admit imperfection. Cynical enough to assign real accountability owners and make that visible. Hopeful enough to stay in relationship with their audience afterward.
+
+That is not weakness.
+That is how trust survives pressure.
+
+## Meaning and purpose are where all of this leads
+
+This is really the main thing I wanted to say.
+
+Taste, trust, context, distribution, and accountability matter on their own. But I do not think they are ultimately separate.
+
+I think they are all different paths toward meaning.
+
+Taste matters because people want to feel resonance.
+Trust matters because people want to know what and who to believe in.
+Context matters because people want to feel seen in their actual reality, not treated like interchangeable units.
+Distribution matters because meaning has to travel to become culturally real.
+Accountability matters because people need to believe that there is a real human and moral center behind the signal.
+
+And underneath all of that sits the deeper hunger I keep returning to in the Digital Singularity Shift.
+
+Belonging.
+Purpose.
+Authenticity.
+A sense that something matters.
+
+You can already see this in younger generations. Hyper-connected, but often adrift. Surrounded by content, but not necessarily meaning. More publishing power than any generation before them, but also more fragmentation, more irony, more instability, more distance from shared narratives.
+
+That is why I do not think the future belongs to the businesses that simply use AI best.
+
+I think it belongs to the businesses that know how to wrap intelligence in something more human. Something more resonant. Something that gives people not just utility, but a reason to care.
+
+AI will keep pushing function toward abundance.
+That part is becoming obvious.
+
+What matters now is who can turn abundance into meaning.
+
+That is the real strategic shift.
+And I think that is why the human layer becomes the moat.
+
+---
+
+If you want to go deeper into the broader thesis behind this shift, you can find my ebook **The Digital Singularity** on Amazon:
+[The Digital Singularity on Amazon](https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2)
