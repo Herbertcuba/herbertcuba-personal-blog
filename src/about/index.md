@@ -203,7 +203,8 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   .about-close {
     color: var(--bone) !important;
     font-weight: 500;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
   }
   
   @media (max-width: 640px) {
@@ -226,6 +227,11 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     .about-section p {
       font-size: 1rem;
       line-height: 1.7;
+    }
+
+    .about-close {
+      margin-top: 2.5rem;
+      padding-bottom: 2rem;
     }
   }
 </style>
