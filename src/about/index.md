@@ -125,7 +125,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   
   .about-section--last {
     margin-bottom: 0;
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
   }
   
   .about-section h2 {
@@ -201,17 +201,19 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   }
 
   .about-close {
+    display: block;
     color: var(--bone) !important;
     font-weight: 500;
-    margin-top: 3.5rem;
-    padding-bottom: 1.5rem;
+    margin-top: 0;
+    padding-top: 3.5rem;
+    padding-bottom: 0;
   }
   
   @media (max-width: 640px) {
     .about-container {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
     }
 
     .about-hero {
@@ -231,7 +233,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     }
 
     .about-close {
-      margin-top: 4rem;
+      padding-top: 4rem;
       padding-bottom: 0;
     }
   }
