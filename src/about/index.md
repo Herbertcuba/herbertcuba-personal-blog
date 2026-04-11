@@ -39,9 +39,17 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     <p>My influences reflect where my head is at: Peter Diamandis, who writes about abundance and exponential thinking; Nate B. Jones, who cuts through the noise to find what's actually moving the needle; and Dave Shapiro, who combines entrepreneurial hustle with philosophical depth. These thinkers challenge me to think bigger and act bolder.</p>
   </div>
 
-  <div class="about-section about-section--last">
+  <div class="about-section">
     <h2>This Blog</h2>
     <p>This blog is where I share what I'm learning, building, and thinking about. I write about technology, AI, the future of work, and the intersection of humans and machines. I try to keep things personal and practical—less hype, more substance.</p>
+  </div>
+
+  <div class="about-section about-section--last">
+    <h2>Books</h2>
+    <ul class="about-books">
+      <li><a href="https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2" target="_blank" rel="noopener noreferrer">The Digital Singularity</a></li>
+      <li>The Three Crucibles</li>
+    </ul>
     <p class="about-close">Thanks for being here. Let's build something interesting together.</p>
   </div>
 </div>
@@ -148,6 +156,30 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     margin: 0 0 1rem 0;
   }
   
+  .about-books {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .about-books li {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--ash);
+  }
+
+  .about-books a {
+    color: var(--acid);
+    text-decoration: none;
+  }
+
+  .about-books a:hover {
+    color: var(--bone);
+  }
+
   .about-close {
     color: var(--bone) !important;
     font-weight: 500;
