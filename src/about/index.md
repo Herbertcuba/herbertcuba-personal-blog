@@ -203,7 +203,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   .about-close {
     color: var(--bone) !important;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     padding-bottom: 1.5rem;
   }
   
@@ -231,7 +231,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     }
 
     .about-close {
-      margin-top: 2.5rem;
+      margin-top: 4rem;
       padding-bottom: 0;
     }
   }
