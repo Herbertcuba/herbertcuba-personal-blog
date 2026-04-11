@@ -48,7 +48,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     <h2>Books</h2>
     <ul class="about-books">
       <li><a href="https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2" target="_blank" rel="noopener noreferrer">The Digital Singularity</a></li>
-      <li>The Three Crucibles</li>
+      <li><a href="https://www.amazon.com/Crucibles-Prophecy-Collapse-Transformation-Abundance-ebook/dp/B0GTK53C9H" target="_blank" rel="noopener noreferrer">The Three Crucibles</a></li>
     </ul>
     <p class="about-close">Thanks for being here. Let's build something interesting together.</p>
   </div>
