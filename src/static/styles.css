@@ -74,6 +74,18 @@ body {
   overflow-x: hidden;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(env(safe-area-inset-top, 0px) + 88px);
+  background: #000000;
+  z-index: 999;
+  pointer-events: none;
+}
+
 /* Selection */
 ::selection {
   background: var(--acid);
@@ -864,7 +876,12 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
+  body::before {
+    height: calc(env(safe-area-inset-top, 0px) + 96px);
+  }
+
   .site-header {
+    top: env(safe-area-inset-top, 0px);
     background: #000000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
