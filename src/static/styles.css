@@ -511,7 +511,7 @@ a:hover {
    SINGLE POST LAYOUT\
    ───────────────────────────────────────────────────────────────────────────── */
 .post {
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: var(--section-spacing);
 }
 
@@ -875,8 +875,12 @@ button:focus-visible {
     background: #000000;
   }
 
-  main {
-    padding-top: env(safe-area-inset-top, 0px);
+  .post {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 8.75rem);
+  }
+
+  .post-header {
+    margin-bottom: 3rem;
   }
 
   .bento-grid {
