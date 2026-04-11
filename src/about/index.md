@@ -125,7 +125,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   
   .about-section--last {
     margin-bottom: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
   }
   
   .about-section h2 {
@@ -211,6 +211,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     .about-container {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
+      padding-bottom: 3rem;
     }
 
     .about-hero {
@@ -231,7 +232,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
 
     .about-close {
       margin-top: 2.5rem;
-      padding-bottom: 2rem;
+      padding-bottom: 0;
     }
   }
 </style>
