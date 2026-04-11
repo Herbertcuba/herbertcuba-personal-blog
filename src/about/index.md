@@ -47,8 +47,14 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
   <div class="about-section about-section--last">
     <h2>Books</h2>
     <ul class="about-books">
-      <li><a href="https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2" target="_blank" rel="noopener noreferrer">The Digital Singularity</a></li>
-      <li><a href="https://www.amazon.com/Crucibles-Prophecy-Collapse-Transformation-Abundance-ebook/dp/B0GTK53C9H" target="_blank" rel="noopener noreferrer">The Three Crucibles</a></li>
+      <li>
+        <strong><a href="https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2" target="_blank" rel="noopener noreferrer">The Digital Singularity</a></strong>
+        <p>A book about the deeper civilizational shift that happens when AI, exponential technologies, and collapsing narratives start reshaping how we work, build meaning, and understand reality. I think it matters because we are no longer just adopting new tools. We are entering a period where society itself is being re-authored in real time.</p>
+      </li>
+      <li>
+        <strong><a href="https://www.amazon.com/Crucibles-Prophecy-Collapse-Transformation-Abundance-ebook/dp/B0GTK53C9H" target="_blank" rel="noopener noreferrer">The Three Crucibles</a></strong>
+        <p>A book about the forces I believe will define the next era of human life: collapse, transformation, and abundance. It is relevant because all of us are already feeling versions of these pressures, whether through AI, institutions, culture, identity, or economics. The question is no longer whether the world is changing, but what kind of humans we need to become inside that change.</p>
+      </li>
     </ul>
     <p class="about-close">Thanks for being here. Let's build something interesting together.</p>
   </div>
@@ -162,12 +168,26 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1.5rem;
   }
 
   .about-books li {
     font-family: var(--font-body);
     font-size: 1.125rem;
+    color: var(--ash);
+  }
+
+  .about-books strong {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    color: var(--bone);
+    font-weight: 600;
+  }
+
+  .about-books p {
+    margin: 0.35rem 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--ash);
   }
 
