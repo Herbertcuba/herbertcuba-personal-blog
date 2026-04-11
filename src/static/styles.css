@@ -75,18 +75,6 @@ body {
   overflow-x: hidden;
 }
 
-html::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: env(safe-area-inset-top, 0px);
-  background: #000000;
-  z-index: 2000;
-  pointer-events: none;
-}
-
 /* Selection */
 ::selection {
   background: var(--acid);
@@ -132,23 +120,25 @@ a:hover {
   right: 0;
   z-index: 1000;
   padding: 1.5rem 0;
-  background: #050505;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
 }
 
 .site-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.98), rgba(5, 5, 5, 0.96));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.82));
   pointer-events: none;
 }
 
 .site-header.scrolled {
-  background: #000000;
+  background: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
   border-bottom: 1px solid var(--line);
 }
 
@@ -880,12 +870,12 @@ button:focus-visible {
   .site-header {
     top: 0;
     padding-top: calc(env(safe-area-inset-top, 0px) + 1rem);
-    background: #000000;
+    background: rgba(0, 0, 0, 0.92);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .site-header::before {
-    background: #000000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.88));
   }
 
   .post {
