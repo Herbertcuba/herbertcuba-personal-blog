@@ -2,7 +2,7 @@
 title: "When AI Makes Building Cheap, Human Reality Starts to Matter More"
 date: 2026-04-11
 excerpt: "I think we are entering a phase where digital production gets cheaper by the week, and that pushes real value upward into taste, trust, context, accountability, and ultimately meaning."
-featuredImage: "/images/posts/image.webp"
+featuredImage: "/images/posts/2026-04-11-when-ai-makes-building-cheap-human-reality-starts-to-matter-more.webp"
 layout: post.njk
 permalink: /posts/2026-04-11-when-ai-makes-building-cheap-human-reality-starts-to-matter-more/
 tags: ["ai", "digital-singularity", "future-of-work", "strategy", "trust"]
