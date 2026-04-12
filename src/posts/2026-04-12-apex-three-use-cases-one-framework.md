@@ -8,7 +8,7 @@ permalink: /posts/2026-04-12-apex-three-use-cases-one-framework/
 tags: ["ai", "agents", "methodology", "leadership", "teams", "strategy", "framework", "apex"]
 ---
 
-[The APEX Framework](/drafts/83c585a6/) defined the complete model: three areas, nine domains, three phases, ten principles, five metrics. That article is the reference. This one is the application.
+[The APEX Framework](/posts/2026-04-05-apex-framework/) defined the complete model: three areas, nine domains, three phases, ten principles, five metrics. That article is the reference. This one is the application.
 
 I keep getting asked the same question after people read Part 1: "This makes sense in theory, but what does it actually look like when a team runs it?" Fair question. A framework that only exists as abstract structure is a framework that never gets used.
 
@@ -48,7 +48,7 @@ Seven experts, each owning specific domains:
 - **QA Lead** — owns QA Strategic and QA Operational. They define what "done" means and translate those definitions into automated agent-level checks.
 - **Security Engineer** — owns Security & Compliance. Permissions, audit trails, access boundaries.
 
-Notice: every person maps to specific domains. Nobody owns everything. Nobody owns nothing. The [domain ownership matrix from Part 1](/drafts/83c585a6/) isn't decorative — it's the operating agreement.
+Notice: every person maps to specific domains. Nobody owns everything. Nobody owns nothing. The [domain ownership matrix from Part 1](/posts/2026-04-05-apex-framework/) isn't decorative — it's the operating agreement.
 
 ### Strategic Phase
 
@@ -352,6 +352,6 @@ I think the organizations that treat human-agent team design as a first-class di
 
 The tools will keep changing. The models will keep improving. The harness options will multiply. The thing that stays constant is the need for humans to design the system, verify the output, and feed execution data back into better design. That's the APEX cycle. It doesn't depend on any specific tool or model. It depends on the discipline of running all three phases, every cycle, without cutting corners on Reflection.
 
-The complete framework reference is in [The APEX Framework](/drafts/83c585a6/). Everything you need to understand the areas, domains, principles, and metrics lives there. This article showed you what it looks like when real teams run it.
+The complete framework reference is in [The APEX Framework](/posts/2026-04-05-apex-framework/). Everything you need to understand the areas, domains, principles, and metrics lives there. This article showed you what it looks like when real teams run it.
 
 Start with one fleet. One cycle. Measure, reflect, calibrate. The system will teach you what it needs next.
