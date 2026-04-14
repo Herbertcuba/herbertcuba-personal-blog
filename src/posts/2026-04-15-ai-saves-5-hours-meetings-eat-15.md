@@ -4,9 +4,8 @@ date: 2026-04-15
 excerpt: "DX's Q1 2026 report shows top AI users save 5 hours weekly. But non-AI bottlenecks — meetings, CI pipelines, decision queues — consume far more. We're optimizing the wrong layer."
 featuredImage: "/images/posts/ai-saves-5-hours-meetings-eat-15.webp"
 layout: post.njk
-permalink: /drafts/96b987b8/
+permalink: /posts/2026-04-15-ai-saves-5-hours-meetings-eat-15/
 tags: ["ai", "productivity", "operating-model", "engineering", "leadership"]
-eleventyExcludeFromCollections: true
 ---
 
 DX recently released their Q1 2026 AI Impact Report — data from over 400 companies, covering October 2025 through January 2026. It's the second report in the series, and it lands in the middle of a period defined by rapid model improvements, agentic orchestration, and creative new workflows. AI adoption now sits at 93%. We've moved from "should we use AI?" to "everyone's using AI — but how?"
