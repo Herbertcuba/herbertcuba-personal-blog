@@ -4,7 +4,6 @@ date: 2026-04-21
 excerpt: "We spent two centuries optimizing schools, credentials, and careers for IQ. AI just commoditized exactly that. What remains scarce is the thing we forgot to teach."
 featuredImage: "/images/posts/iq-got-automated-wisdom-didnt.webp"
 layout: post.njk
-permalink: /drafts/0b05205e/
 tags:
   - ai
   - wisdom
