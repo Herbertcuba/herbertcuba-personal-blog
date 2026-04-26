@@ -4,8 +4,10 @@ date: 2026-04-26
 excerpt: "Companies keep training juniors to write code faster. The market is about to punish that bet."
 featuredImage: "/images/posts/junior-engineers-need-fundamentals.webp"
 layout: post.njk
-permalink: /drafts/12c8c17e/
-tags: ["ai", "engineering", "leadership"]
+tags:
+  - ai
+  - engineering
+  - leadership
 ---
 
 A senior engineer I respect told me recently that his team had stopped hiring juniors. Not because of budget. Because, in his words, "I can't figure out what to give them."
