@@ -4,7 +4,6 @@ date: 2026-04-26
 excerpt: "Large organizations optimized for execution velocity. AI just commoditized it. The bottleneck moved to human attention, output quality, and knowing what should be built at all."
 featuredImage: "/images/posts/speed-was-the-edge.webp"
 layout: post.njk
-permalink: /drafts/5399fc4a/
 tags:
   - ai
   - strategy
