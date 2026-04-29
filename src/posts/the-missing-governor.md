@@ -4,8 +4,10 @@ date: 2026-04-29
 excerpt: "AI removed the natural limits on how much we can produce. The burnout isn't from the work being harder — it's from the work never feeling done."
 featuredImage: "/images/posts/the-missing-governor.webp"
 layout: post.njk
-permalink: /drafts/b720d0f2/
-tags: ["ai", "leadership", "culture"]
+tags:
+  - ai
+  - leadership
+  - culture
 ---
 
 A UC Berkeley research group recently published findings from an eight-month study of 200 daily AI users. The headline number: 88% of the heaviest users — mostly developers — reported significant stress and burnout.
