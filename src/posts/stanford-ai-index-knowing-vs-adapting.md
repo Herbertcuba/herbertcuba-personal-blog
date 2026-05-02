@@ -4,7 +4,6 @@ date: 2026-05-01
 excerpt: "The data is in. Junior roles down 20%. Staff cuts in a third of organizations. And most companies are still running last year's org chart."
 featuredImage: "/images/posts/stanford-ai-index-knowing-vs-adapting.webp"
 layout: post.njk
-permalink: /drafts/e92e0863/
 tags:
   - ai
   - strategy
