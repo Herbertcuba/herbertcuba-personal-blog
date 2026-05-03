@@ -1,12 +1,10 @@
 ---
 title: "The Quiet Truth About Headless CMS"
-date: 2026-04-29
+date: 2026-05-04
 excerpt: "Headless CMS accelerated code delivery. AI automation workflows are about to do the same for content — if your organization is ready."
 featuredImage: "/images/posts/headless-cms-infrastructure-0f23abd2.webp"
 layout: post.njk
-permalink: /drafts/0f23abd2/
 tags: ["cms", "content-strategy", "architecture", "ai", "digital-transformation"]
-eleventyExcludeFromCollections: true
 ---
 
 I've spent a lot of years around CMS platforms. Big ones, small ones, open source ones, enterprise ones. Platforms that promise freedom, platforms that promise governance, and platforms that somehow manage to make both editors and developers equally frustrated.
