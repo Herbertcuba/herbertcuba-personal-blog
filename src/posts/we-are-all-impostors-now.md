@@ -4,8 +4,10 @@ date: 2026-05-12
 excerpt: "Half the workforce is hiding their AI usage from their boss. The other half is pretending they don't need it. Both are wrong — and the sooner we accept that, the sooner we can focus on what actually matters."
 featuredImage: "/images/posts/we-are-all-impostors-now.webp"
 layout: post.njk
-permalink: /drafts/c28ca36a/
-tags: ["ai", "strategy"]
+tags:
+  - ai
+  - strategy
+  - leadership
 ---
 
 According to Microsoft's 2024 Work Trend Index, 52% of people who use AI at work are worried their boss will think they're less skilled. A Salesforce study from the same year found that roughly half of all employees who use generative AI don't tell their manager. A Glassdoor survey put the number higher: 70% of professionals using AI tools at work had never mentioned it.
