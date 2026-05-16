@@ -4,8 +4,10 @@ date: 2026-05-16
 excerpt: "When a well-directed set of agents can port a codebase in a week, 'getting it right the first time' stops being the constraint. Reversibility does."
 featuredImage: "/images/posts/reversibility-is-the-new-correctness.webp"
 layout: post.njk
-permalink: /drafts/e7de182a/
-tags: ["ai", "architecture", "engineering"]
+tags:
+  - ai
+  - architecture
+  - engineering
 ---
 
 I used to spend a lot of time helping teams make permanent technical decisions. We'd evaluate, de-risk, build consensus. That rigor made sense when migrations cost 18 months. It's a different calculation when a well-directed set of agents can port a codebase in a week.
