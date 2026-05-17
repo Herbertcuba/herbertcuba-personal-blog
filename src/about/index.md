@@ -52,7 +52,7 @@ image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
         <p>A book about the deeper civilizational shift that happens when AI, exponential technologies, and collapsing narratives start reshaping how we work, build meaning, and understand reality. I think it matters because we are no longer just adopting new tools. We are entering a period where society itself is being re-authored in real time.</p>
       </li>
       <li>
-        <strong><a href="https://www.amazon.com/Crucibles-Prophecy-Collapse-Transformation-Abundance-ebook/dp/B0GTK53C9H" target="_blank" rel="noopener noreferrer">The Three Crucibles</a></strong>
+        <strong>The Three Crucibles</strong>
         <p>A book about the forces I believe will define the next era of human life: collapse, transformation, and abundance. It is relevant because all of us are already feeling versions of these pressures, whether through AI, institutions, culture, identity, or economics. The question is no longer whether the world is changing, but what kind of humans we need to become inside that change.</p>
       </li>
     </ul>
