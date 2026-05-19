@@ -1,6 +1,6 @@
 ---
 title: "/goal Is the Inner Loop. APEX Is the Operating Model."
-date: 2026-05-18
+date: 2026-05-20
 description: "Three platforms independently shipped the same agentic execution pattern within weeks. That pattern was already the middle layer of APEX."
 excerpt: "Claude Code, Codex, and Hermes all launched /goal — a judge-evaluated continuation loop. I'd been running that loop inside APEX for months. The convergence validates the pattern. But the pattern alone isn't enough."
 featuredImage: /images/posts/goal-inner-loop-apex.webp
@@ -9,7 +9,6 @@ tags:
   - agentic
   - apex
   - leadership
-permalink: /drafts/368c1f79/
 ---
 
 Between April 16 and May 11, 2026 — less than four weeks — three independent platforms shipped the same agentic execution pattern. OpenAI's Codex CLI launched its `/goal` command on April 16. Anthropic's Claude Code followed with the same feature in version 2.1.139 on May 11. Hermes Agent had been running it before either shipped publicly.
