@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: "/goal Is the Inner Loop. APEX Is the Operating Model."
 date: 2026-05-20
 description: "Three platforms independently shipped the same agentic execution pattern within weeks. That pattern was already the middle layer of APEX."
