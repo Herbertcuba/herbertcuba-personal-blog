@@ -4,8 +4,10 @@ date: 2026-05-16
 excerpt: "The engineers getting the most from AI aren't prompt engineers. They're the ones who already knew how to write a clear spec."
 featuredImage: "/images/posts/the-spec-is-the-cognitive-work.webp"
 layout: post.njk
-permalink: /drafts/b9da9f03/
-tags: ["ai", "engineering", "specification"]
+tags:
+  - ai
+  - engineering
+  - specification
 ---
 
 The engineers I see getting the most out of AI aren't the ones who've mastered prompting tricks. They're the ones who already knew how to write a clear spec. AI didn't change the value of that skill — it just raised the leverage on it to a level that makes the gap impossible to ignore.
