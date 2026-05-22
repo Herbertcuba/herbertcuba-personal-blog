@@ -4,7 +4,6 @@ date: 2026-05-21
 excerpt: "Google I/O 2026 was a showcase of agentic AI everywhere. But the real question isn't which agent wins — it's who controls the interface between agents and the web."
 featuredImage: "/images/posts/who-owns-the-agent-layer.webp"
 layout: post.njk
-permalink: /drafts/21725f76/
 tags: ["ai", "web-standards", "agentic-ai"]
 ---
 
