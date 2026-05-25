@@ -4,8 +4,10 @@ date: 2026-05-16
 excerpt: "Every dependency management practice you know was designed for deterministic systems. LLMs break all of it."
 featuredImage: "/images/posts/llm-dependency-management.webp"
 layout: post.njk
-permalink: /drafts/5dd8645a/
-tags: ["ai", "engineering", "reliability"]
+tags:
+  - ai
+  - engineering
+  - reliability
 ---
 
 When a database returns the wrong data, you have a bug. When a model update changes how your LLM summarizes text, you have... what, exactly? An incident? A regression? A feature? Most teams don't have an answer, which means they also don't have a test for it.
