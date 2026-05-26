@@ -4,8 +4,10 @@ date: 2026-05-16
 excerpt: "AI lets you build systems that used to require teams. The velocity is real. The blind spots are too."
 featuredImage: "/images/posts/conways-law-one-person-team.webp"
 layout: post.njk
-permalink: /drafts/6df39e37/
-tags: ["ai", "architecture", "engineering"]
+tags:
+  - ai
+  - architecture
+  - engineering
 ---
 
 I used to think code review existed to catch bugs. I was wrong. It exists to catch assumptions — things the author couldn't see because they were standing too close. AI doesn't review your assumptions. It implements them, very consistently.
