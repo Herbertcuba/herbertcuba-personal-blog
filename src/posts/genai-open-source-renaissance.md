@@ -1,10 +1,9 @@
 ---
 title: "GenAI Reignited Open Source. The Real Winners Might Surprise You."
-date: 2026-05-26
+date: 2026-05-27
 excerpt: "Generative AI didn't just change how we write code. It triggered an open-source renaissance — and the downstream effects are about to reshape the entire cloud economy."
 featuredImage: "/images/posts/genai-open-source-renaissance.webp"
 layout: post.njk
-permalink: /drafts/8b2ca427/
 tags:
   - ai
   - open-source
@@ -34,7 +33,7 @@ In *The Expanse*, when the ring gates opened, the entire power structure of the 
 
 GenAI is the ring gate for open source.
 
-But here is the part that most analyses miss: when the gates opened in *The Expanse*, the people who actually gained power were not the Belters flooding through. It was whoever controlled the gates themselves — the infrastructure through which everything had to pass.
+The twist — and this is where it gets interesting — is that when the gates opened in *The Expanse*, the people who actually gained power were not the Belters flooding through. It was whoever controlled the gates themselves: the infrastructure through which everything had to pass.
 
 This is where the cloud providers come in.
 
@@ -46,8 +45,6 @@ AWS, Azure, and Google Cloud are not just hosting more workloads. They are becom
 
 ## The SaaS squeeze
 
-This is where it gets uncomfortable for a very specific category of company.
-
 Shopify understood something early: if you want to survive the commoditization wave, you need to become infrastructure. They did not just build a storefront tool — they built a commerce operating system. Payment rails, fulfillment networks, developer APIs. They made themselves the plumbing. That is durable.
 
 Systems like Adobe Experience Manager occupy a similar position. When a Fortune 500 company runs its entire digital presence through AEM, they are not paying for features. They are paying for the SLA, the security certification, the compliance framework, the guaranteed uptime. That is a moat.
@@ -56,15 +53,13 @@ But Trello? Generic dashboards? Project management tools that offer a thin inter
 
 Those companies are staring at a problem that compounds every quarter.
 
-**The confirmation came yesterday.** ClickUp — once valued at $4 billion, one of the most celebrated productivity SaaS startups of the last decade — announced it had laid off **22% of its workforce**. CEO Zeb Evans called it "a radical embrace of AI" that would propel the company to a "100x org." Workers, Evans said, were now expected to direct roughly 3,000 internal AI agents and review their output.
+**The confirmation came this week.** ClickUp — once valued at $4 billion, one of the most celebrated productivity SaaS startups of the last decade — announced it had laid off **22% of its workforce**. CEO Zeb Evans called it "a radical embrace of AI" that would propel the company to a "100x org." Workers, Evans said, were now expected to direct roughly 3,000 internal AI agents and review their output.
 
-My take: you do not cut a quarter of your headcount and frame it as a visionary strategy. You do it when the business is under siege — and ClickUp's business is under siege.
+I think you do not cut a quarter of your headcount and frame it as a visionary strategy unless you are in serious trouble. ClickUp's business is under siege.
 
 The siege is not coming from some superior AI product. It is coming from the open-source alternatives outlined above — project management tools that a two-person team can now self-host, customize, and run on their own infrastructure for the cost of a monthly cloud bill. The competitive moat of "a pretty UI on top of a database" evaporates when every developer on the team can build the same thing with an AI copilot and a weekend.
 
-Shopify understood something early: if you want to survive the commoditization wave, you need to become infrastructure. They did not just build a storefront tool — they built a commerce operating system. Payment rails, fulfillment networks, developer APIs. They made themselves the plumbing. That is durable.
-
-When a competent developer can spin up an open-source alternative in an afternoon — hosted on their own infrastructure, customized to their exact needs, maintained by a community that moves faster than any product team — the value proposition of the SaaS subscription starts to evaporate. I am saying the **survival criteria just changed**. You either play a critical security and compliance role, or you have achieved infrastructure-level dominance in your category, or you are exposed. There is very little middle ground left.
+The survival criteria just changed. You either play a critical security and compliance role, or you have achieved infrastructure-level dominance in your category, or you are exposed. There is very little middle ground left.
 
 ## The meritocracy dividend
 
@@ -76,15 +71,13 @@ A project with 500 active contributors, each shipping at 2x their previous veloc
 
 I call this the **Meritocracy Dividend**. The best open-source projects will pull further ahead, not because they started with more resources, but because they attracted more attention — and in the age of AI-amplified development, attention converts to capability at an unprecedented rate.
 
-And here is the human dimension: developers no longer need to lock themselves into a single stack. When the cost of learning a new framework drops (because AI handles the boilerplate, explains the patterns, scaffolds the first implementation), mobility between projects increases. People flow toward the most vibrant communities. The best projects attract the best people. The flywheel accelerates.
+And here is the human dimension: developers no longer need to lock themselves into a single stack. When the cost of learning a new framework drops — because AI handles the boilerplate, explains the patterns, scaffolds the first implementation — mobility between projects increases. People flow toward the most vibrant communities. The best projects attract the best people. The flywheel accelerates.
 
 This maximizes the meritocracy dividend between successful open-source projects and those that fall behind. It is Darwinian. And it is already happening.
 
 ## The question I cannot answer
 
-Here is what I keep thinking about.
-
-If you are a developer reading this — how much more code are you shipping today compared to two years ago? How many side projects have you started that you would not have attempted before? How many open-source tools have you deployed that you would have paid a SaaS vendor for in 2023?
+How much more code are you shipping today compared to two years ago? How many side projects have you started that you would not have attempted before? How many open-source tools have you deployed that you would have paid a SaaS vendor for in 2023?
 
 Now multiply that by 150 million developers on GitHub.
 
