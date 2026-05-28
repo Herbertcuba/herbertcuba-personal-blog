@@ -4,7 +4,6 @@ title: "The Five Levels of AI-Augmented Production"
 date: 2026-05-28
 excerpt: "Saying 'we use AI' is meaningless. What matters is how it changes what you do — and what you stop doing. A framework for understanding where you actually are."
 featuredImage: /images/posts/five-levels-ai-augmented-production.webp
-permalink: /drafts/e4c1969e/
 ---
 
 There is an iconic scene in *The Matrix* that made me think. I realized that movie has something to say about AI adoption. Neo stands in the white void of the Construct. Morpheus asks him if he wants to learn. Seconds later, martial arts programs flood his neural interface. He opens his eyes and says: *"I know Kung Fu."*
