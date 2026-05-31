@@ -4,7 +4,6 @@ title: "The Productivity Paradox Is Here. Now What?"
 date: 2026-06-01
 excerpt: "Uber burned through its entire 2026 AI budget in four months. Amazon killed its internal token leaderboard. GitHub Copilot bills just jumped 60x. I tried to map this timeline six months ago. The data is catching up."
 featuredImage: /images/posts/productivity-paradox-now-what.webp
-permalink: /drafts/881deed0/
 tags:
   - ai
   - strategy
