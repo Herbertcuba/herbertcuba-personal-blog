@@ -56,6 +56,24 @@
     {{ content | safe }}
   </main>
 
+  {# ═══════════════════════════════════════════════════════════════════════════
+     Books Banner — appears on all pages before footer
+     ═══════════════════════════════════════════════════════════════════════════ #}
+  <section class="books-banner" aria-label="Books by Herbert Cuba Garcia">
+    <div class="container">
+      <h2 class="books-banner__heading">Books</h2>
+      <div class="books-banner__list">
+        <a href="https://www.amazon.com/dp/B0GTK53C9H" target="_blank" rel="noopener" class="books-banner__card">
+          <img src="/images/crucibles-cover.jpg" alt="The 3 Crucibles book cover" class="books-banner__cover" loading="lazy" />
+          <div class="books-banner__info">
+            <h3 class="books-banner__title">The 3 Crucibles</h3>
+            <p class="books-banner__subtitle">A Prophecy of Collapse, Transformation, and the Fight for Abundance</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container">
       <div class="footer-row">

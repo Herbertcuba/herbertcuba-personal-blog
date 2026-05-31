@@ -1255,3 +1255,83 @@ button:focus-visible {
   object-fit: contain;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   BOOKS BANNER — global, before footer on all pages
+   ───────────────────────────────────────────────────────────────────────────── */
+.books-banner {
+  padding: var(--section-spacing) 0;
+  border-top: 1px solid var(--line);
+}
+
+.books-banner__heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ash);
+  margin-bottom: 2rem;
+}
+
+.books-banner__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.books-banner__card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--graphite);
+  transition: border-color 0.3s ease, background 0.3s ease;
+  max-width: 480px;
+}
+
+.books-banner__card:hover {
+  border-color: var(--acid-dim);
+  background: var(--slate);
+}
+
+.books-banner__cover {
+  width: 80px;
+  min-width: 80px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  filter: grayscale(100%) contrast(1.1);
+  transition: filter 0.4s ease;
+}
+
+.books-banner__card:hover .books-banner__cover {
+  filter: grayscale(0%) contrast(1);
+}
+
+.books-banner__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--bone);
+  margin-bottom: 0.35rem;
+}
+
+.books-banner__subtitle {
+  font-size: var(--text-sm);
+  color: var(--ash);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .books-banner__card {
+    max-width: 100%;
+  }
+  .books-banner__cover {
+    width: 64px;
+    min-width: 64px;
+  }
+}
