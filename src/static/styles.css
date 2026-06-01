@@ -946,6 +946,23 @@ button:focus-visible {
   gap: 1.5rem;
 }
 
+.books-duo__card--link {
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.books-duo__card--link:hover {
+  transform: translateY(-4px);
+}
+
+.books-duo__card--link .book-teaser__title {
+  transition: color 0.2s ease;
+}
+
+.books-duo__card--link:hover .book-teaser__title {
+  color: var(--acid);
+}
+
 .books-duo__card .book-teaser__cover {
   max-width: 320px;
 }
