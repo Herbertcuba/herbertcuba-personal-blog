@@ -950,6 +950,11 @@ button:focus-visible {
   max-width: 320px;
 }
 
+.books-duo__card .book-teaser__cover img {
+  aspect-ratio: 5 / 8;
+  object-fit: cover;
+}
+
 .books-duo__card .book-teaser__title {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
