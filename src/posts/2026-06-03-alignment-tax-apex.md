@@ -4,7 +4,6 @@ date: 2026-06-03
 excerpt: "A senior engineer's honest report from three years inside AI-driven development confirms what APEX was built to solve: build costs collapsed, but coordination costs exploded. The productivity gains got captured by volume, not quality."
 featuredImage: /images/posts/alignment-tax-apex.webp
 layout: post.njk
-permalink: /drafts/8940a2e1/
 tags:
   - ai
   - agentic
