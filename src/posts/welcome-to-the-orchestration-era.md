@@ -4,7 +4,6 @@ date: 2026-06-07
 excerpt: "The moment AI stopped being about prompts and started being about workflows — and the three-year arc that got us here."
 featuredImage: "/images/posts/into-the-agent-workflow-era.webp"
 layout: post.njk
-permalink: /drafts/fca3c283/
 tags: ["ai", "strategy", "agents"]
 ---
 
