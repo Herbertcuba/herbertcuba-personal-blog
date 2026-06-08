@@ -71,7 +71,7 @@ The framing I keep coming back to: infrastructure, not intelligence, is now the 
 
 **Role:** Reviewer and steerer. Engineers run multiple parallel agents simultaneously — monitoring progress across workstreams, intervening when an agent gets stuck, steering priorities. The ratio of thinking to typing inverts.
 
-There's a scene in *Ender's Game* where Ender Wiggin sits at a command console, directing entire fleets through a screen. He thinks it's a simulation. It isn't — every move is real, every outcome counts. The engineer at the terminal today isn't typing code anymore. They're commanding agents that do real, irreversible work. The interface looks like a game. The stakes don't.
+The engineer at the terminal today isn't typing code anymore. They're commanding agents that do real, irreversible work — code merges, data migrations, production deployments. The interface looks deceptively simple. A chat window. A few instructions. But every move lands in production. The gap between what it looks like and what it does has never been wider.
 
 **Bottleneck:** Reliability and infrastructure. Individual agents work. But they fail in ways that are hard to predict. They need the kind of operational maturity that took traditional software two decades to develop. Agents need it now.
 
@@ -79,9 +79,9 @@ There's a scene in *Ender's Game* where Ender Wiggin sits at a command console, 
 
 ## Back to H2 2026 — The orchestration era
 
-Ender didn't win because he had the strongest fleet. He won because the composition was right — the sequencing, the coordination, the verification loop between waves. The firepower was a given. The orchestration was the variable.
+No orchestra ever succeeded because it had the loudest instruments. It succeeded because the composition was right — the sequencing, the coordination, the interplay between sections. The capability was a given. The orchestration was the variable.
 
-Same pattern. Same transition.
+That's where we are now.
 
 Dynamic Workflows is the canonical example of where we are now. The pattern: an orchestrator plans the work, distributes it across specialised subagents running in parallel, and then — the critical piece — separate agents challenge and verify the results before anything gets reported back. Claude doesn't just do the work. It checks the work. Multiple times, from different angles.
 
