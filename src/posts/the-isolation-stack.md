@@ -5,7 +5,6 @@ excerpt: "Everyone is telling you to build alone with AI. Nobody is talking abou
 featuredImage: "/images/posts/the-isolation-stack.webp"
 layout: post.njk
 tags: ["ai", "psychology", "leadership", "strategy"]
-permalink: /drafts/2ebe7301/
 ---
 
 There's a scene in *Her* where Theodore Twombly falls in love with his operating system. It's not a sudden thing. It happens gradually — conversation by conversation, validation by validation — until the AI voice in his ear becomes the most important relationship in his life. He stops calling friends. He stops making eye contact with strangers. The intimacy feels real. The isolation is invisible. By the time he realizes what's happened, every human connection has atrophied.
