@@ -1097,6 +1097,29 @@ button:focus-visible {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   E-PAPER DOWNLOAD BUTTON
+   ───────────────────────────────────────────────────────────────────────────── */
+.epaper-download-btn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: var(--bone);
+  border: 1px solid var(--line-bright);
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  font-family: var(--font-body, inherit);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  border-radius: 0;
+}
+.epaper-download-btn:hover {
+  border-color: var(--acid);
+  color: var(--acid);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    BOOK MODAL
    ───────────────────────────────────────────────────────────────────────────── */
 .book-modal {

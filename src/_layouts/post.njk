@@ -17,6 +17,21 @@ isArticle: true
     </header>
   </div>
 
+  {% if epaper %}
+  <div class="container container--narrow" style="margin-bottom:1rem;">
+    <button
+      class="epaper-download-btn js-open-book-modal"
+      data-book="{{ epaper.title }}"
+      data-download="{{ epaper.download }}"
+      type="button">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:-2px;margin-right:6px;">
+        <path d="M8 1v9m0 0L5 7m3 3 3-3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Download this as an e-paper
+    </button>
+  </div>
+  {% endif %}
+
   <div class="container container--full">
     {% if featuredImage %}
       <img src="{{ featuredImage }}" alt="" class="post-hero-image" />
