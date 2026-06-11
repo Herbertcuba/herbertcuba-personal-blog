@@ -1,10 +1,10 @@
 ---
 layout: post.njk
 title: "Understand First, Save Hours Later: The Understanding Premium of Software 3.0"
-date: 2026-05-28
+date: 2026-06-12
 excerpt: "The AI industry sells time savings. But Software 3.0 inverts the order — understanding comes first, speed is the consequence. The most leveraged skill in the economy is no longer coding. It is comprehension."
 featuredImage: /images/posts/understanding-premium-software-3.webp
-permalink: /drafts/22681156/
+tags: ["ai", "software-3.0", "craft", "shift"]
 ---
 
 Andrej Karpathy recently said something that should make every leader pause: *"You can outsource your thinking, but you can't outsource your understanding."*

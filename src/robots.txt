@@ -3,3 +3,4 @@ Allow: /
 Disallow: /drafts/
 
 Sitemap: https://www.cubagarcia.com/sitemap.xml
+
