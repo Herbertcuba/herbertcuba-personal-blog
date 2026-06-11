@@ -1551,3 +1551,107 @@ button:focus-visible {
     min-width: 64px;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   DRAFTS LIST — /drafts/ page
+   ───────────────────────────────────────────────────────────────────────────── */
+.drafts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drafts-list__item {
+  display: grid;
+  grid-template-columns: 140px 1fr 24px;
+  align-items: start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--graphite);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--smoke);
+  text-decoration: none;
+  color: var(--bone);
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.drafts-list__item:hover {
+  border-color: var(--line-bright);
+  border-left-color: var(--acid);
+  background: var(--obsidian);
+  transform: translateX(4px);
+}
+
+.drafts-list__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.drafts-list__date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--text-xs);
+  color: var(--smoke);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.drafts-list__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.drafts-list__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--bone);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.drafts-list__item:hover .drafts-list__title {
+  color: var(--acid);
+}
+
+.drafts-list__excerpt {
+  font-size: var(--text-sm);
+  color: var(--ash);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.drafts-list__arrow {
+  color: var(--smoke);
+  font-size: 1.25rem;
+  align-self: center;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.drafts-list__item:hover .drafts-list__arrow {
+  color: var(--acid);
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .drafts-list__item {
+    grid-template-columns: 1fr 24px;
+    grid-template-rows: auto auto;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+  .drafts-list__meta {
+    grid-column: 1 / -1;
+  }
+  .drafts-list__arrow {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+  }
+}
