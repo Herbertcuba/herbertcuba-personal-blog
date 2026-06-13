@@ -86,17 +86,17 @@ You didn't make that choice consciously. You made it by default, one API call at
 
 I want to close with four things I keep coming back to this week.
 
-**1. Open-source parity arrived — and most people missed it**
-
-Llama, Mistral, Qwen. A year ago these were "almost as good." Today, on specific domains, they outperform frontier models on accuracy, cost, and latency simultaneously. A legal classification model running on open-source infrastructure showed 38% better accuracy than Gemini 2.5 Pro — at 1/80th the cost and 1/200th the energy consumption. Read that again.
-
-The gap closed faster than anyone predicted. The question is no longer whether open-source is good enough. It's whether you can afford to keep pretending it isn't.
-
-**2. Portability is now a strategic requirement, not a technical preference**
+**1. Portability is now a strategic requirement, not a technical preference**
 
 The organizations that will navigate the next five years aren't necessarily the ones using the best model. They're the ones who built their AI workflows so that switching models takes days, not months. Vendor-agnostic architecture isn't paranoia. It's the same engineering discipline we apply to every other critical system.
 
 The question isn't which model you use today. It's whether you could switch tomorrow.
+
+**2. The open-source alternative is already here**
+
+Open-source models — Llama, Mistral, DeepSeek — have crossed a threshold. They're not catching up anymore. When DeepSeek R1 launched in January 2026 and matched OpenAI's o1 on reasoning benchmarks, the industry took notice. It runs locally. No API. No terms that can be updated overnight. No government directive that can pull it at 5:21pm.
+
+On specific, well-defined tasks, open-source is already the better choice — on accuracy, cost, and control simultaneously. And unlike Fable 5, no one can flip a switch and make it disappear.
 
 **3. We've seen this movie**
 
