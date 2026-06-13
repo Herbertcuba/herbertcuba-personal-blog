@@ -1,7 +1,7 @@
 ---
-title: "The Kill Switch Is Real"
+title: "The Kill Switch Is Real — This Is Your Wakeup Call"
 date: 2026-06-13
-excerpt: "At 5:21pm ET on June 12, one government directive pulled Anthropic's most capable models for hundreds of millions of users — globally, instantly, with no warning. This isn't theoretical anymore."
+excerpt: "At 5:21pm ET on June 12, a single government directive pulled Anthropic's most capable models for hundreds of millions of users worldwide. No appeal. No warning. Done by evening. This isn't a hypothetical risk anymore. We just watched it execute."
 featuredImage: "/images/posts/the-kill-switch-is-real.webp"
 layout: post.njk
 permalink: /drafts/fee5a5f7/
