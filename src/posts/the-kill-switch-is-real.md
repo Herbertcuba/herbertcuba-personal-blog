@@ -4,8 +4,11 @@ date: 2026-06-13
 excerpt: "At 5:21pm ET on June 12, a single government directive pulled Anthropic's most capable models for hundreds of millions of users worldwide. No appeal. No warning. Done by evening. This isn't a hypothetical risk anymore. We just watched it execute."
 featuredImage: "/images/posts/the-kill-switch-is-real.webp"
 layout: post.njk
-permalink: /drafts/fee5a5f7/
-tags: ["ai", "strategy", "wip"]
+tags:
+  - ai
+  - strategy
+  - geopolitics
+  - leadership
 ---
 
 At 5:21pm ET on June 12, 2026, the US government issued a directive to Anthropic. By that evening, Fable 5 and Mythos 5 — the company's most capable models — were pulled from every customer, globally. No advance notice. No public timeline. The directive letter didn't even specify what the national security concern was.
