@@ -1,10 +1,9 @@
 ---
 title: "The Frontier Race Is Over. Composition Won."
-date: 2026-06-14
+date: 2026-06-15
 excerpt: "Andrew Trask has been waiting four years for someone to prove this. Now it's proven: combinations always outperform individual models — and that changes who controls AI."
 featuredImage: "/images/posts/fusion-api-composition.webp"
 layout: post.njk
-permalink: /drafts/588aa67c/
 tags:
   - ai
   - product-strategy
