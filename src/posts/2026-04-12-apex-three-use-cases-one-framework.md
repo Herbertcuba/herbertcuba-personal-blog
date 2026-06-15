@@ -30,6 +30,8 @@ This is a fundamental design decision. I've seen too many frameworks that try to
 
 Think of each instance as a fleet. A fleet has its own agents, its own workspace, its own configuration, its own reflection data. The humans who participate in the fleet might also participate in other fleets, wearing different hats, owning different domains. The fleet is the unit of operation. The organization is the collection of fleets.
 
+One distinction worth naming before going further: APEX applies to two different production modes. The first is **artifact production** — the team builds something that ships and lives indefinitely, like a software feature or a data infrastructure. The second is **recurring operations** — the team produces fresh deliverables on a repeating cycle, like daily reports or an ongoing editorial pipeline. The framework holds in both cases. The cadence differs, the harness choice differs, the rhythm of Reflection differs. But the underlying loop — Strategic design, agent-driven Execution, data-informed Reflection — is the same. The three walkthroughs below cover both modes: the product fleet is artifact production, the content and research fleets are recurring operations.
+
 ---
 
 ## Chapter 2: Product Development Team
@@ -152,7 +154,7 @@ Six experts:
 
 - A **Research agent** that searches the web, evaluates source credibility, and compiles relevant data and quotes. Its identity includes source evaluation criteria — what counts as a credible source, what doesn't.
 - A **Writer agent** with the brand voice document embedded in its SOUL.md. Editorial guidelines are injected into its context. It writes in the brand's voice because it literally carries the brand's voice as part of its identity.
-- A **Review agent** configured to be skeptical. It checks each draft against QA criteria and scores multiple dimensions independently: brand voice consistency (scored 1-10), SEO optimization (scored 1-10), factual accuracy (scored 1-10), and audience relevance (scored 1-10). It doesn't produce a vague "this is good" — it produces a scorecard.
+- A **Review agent** configured to be skeptical. It checks each draft against QA criteria across four dimensions: brand voice consistency, SEO optimization, factual accuracy, and audience relevance. For each dimension it doesn't produce a score — it produces a structured assessment: what's working, what isn't, and specifically why. A flagged brand voice issue comes with the exact phrase that broke register and a suggested alternative. A factual accuracy flag comes with the specific claim and the source that contradicts it. Structured, specific, actionable — because "this feels off" isn't something a Writer agent can act on, but "this paragraph shifts into a tone the brand voice doc explicitly rules out" is.
 
 **Orchestration.** The flow: Brief → Research agent gathers sources → Writer agent produces a draft → Review agent evaluates and scores → if any dimension is below threshold, Writer revises → Review passes → Editorial Lead verifies.
 
