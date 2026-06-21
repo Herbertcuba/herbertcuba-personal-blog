@@ -1,11 +1,10 @@
 ---
 title: "The Orchestrator Identity Shift"
-date: 2026-06-15
+date: 2026-06-22
 excerpt: "Every engineer facing an AI-driven identity crisis is walking a path some of us already walked — without the technology. Here's what I learned from leaving development behind, and why AI just changed the terms."
 featuredImage: "/images/posts/orchestrator-identity-shift.webp"
 layout: post.njk
-permalink: /drafts/712f45a1/
-tags: ["ai", "leadership", "identity", "engineering", "wip"]
+tags: ["ai", "leadership", "identity", "engineering"]
 ---
 
 There's a conversation happening in engineering circles right now. What does it mean to be a developer when AI writes 80% of the code? Is the craft dying? Is the identity dying with it?
