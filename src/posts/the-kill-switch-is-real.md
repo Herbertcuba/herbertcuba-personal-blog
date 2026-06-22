@@ -95,6 +95,11 @@ The organizations that will navigate the next five years aren't necessarily the 
 
 The question isn't which model you use today. It's whether you could switch tomorrow.
 
+> *"The true test of a company's AI sovereignty is whether it can switch out a generalist model without losing the 'company veteran' expertise built into their systems."*
+> — Satya Nadella, CEO, Microsoft
+
+That's the harder question. Switching the model is a technical problem. Not losing what your organization has built around it — the institutional logic, the embedded workflows, the contextual intelligence — that's a strategic one.
+
 **2. The open-source alternative is already here**
 
 Open-source models — Llama, Mistral, DeepSeek — have crossed a threshold. They're not catching up anymore. When DeepSeek R1 launched in January 2026 and matched OpenAI's o1 on reasoning benchmarks, the industry took notice. It runs locally. No API. No terms that can be updated overnight. No government directive that can pull it at 5:21pm.
