@@ -1,10 +1,9 @@
 ---
 title: "Microsoft's HVE Teams Is the Best Agentic Engineering Framework of 2026. It Has One Blind Spot."
-date: 2026-06-23
+date: 2026-06-24
 excerpt: "Microsoft just open-sourced 241 artifacts for AI-augmented engineering teams. It is the most serious attempt I have seen to make agentic production-grade. And it has a hole in the middle."
 featuredImage: "/images/posts/241-artifacts-zero-evals.webp"
 layout: post.njk
-permalink: /drafts/f6b2a4c9/
 tags: ["ai", "operating-model", "apex", "agentic-production"]
 ---
 
