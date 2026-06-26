@@ -36,3 +36,5 @@ Five years used to be the right unit of analysis for a strategic plan. I think i
 The Diamandis piece is worth reading. The data is genuinely useful. I just think its own evidence argues against the format it's presented in — and the more useful output isn't a 5-year forecast, but a sharper set of near-term convictions and a clear sense of what kind of future you're directionally betting on.
 
 That's actually harder to write. It requires committing to a view without the comfort of a roadmap. But that's the actual work now.
+
+That said — I'll admit the irony: I wrote a 10-year prophecy. It's called [The Three Crucibles](https://www.cubagarcia.com/books/the-three-crucibles/). I use the word deliberately. Not a plan — a prophecy. The difference is that a prophecy doesn't pretend to map the path. It names the forces shaping the terrain and points in a direction. You still need that. Without some macro sense of where things are going, optionality is just randomness dressed up as flexibility. The direction is what gives your near-term bets meaning. The pivot stays yours.
