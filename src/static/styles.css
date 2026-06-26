@@ -635,6 +635,15 @@ a:hover {
   border-top: 2px solid var(--acid);
 }
 
+@media (min-width: 1024px) {
+  .prose h3 {
+    padding-left: 0;
+  }
+  .prose h3::before {
+    left: -30px;
+  }
+}
+
 .prose h4 {
   font-family: 'JetBrains Mono', monospace;
   font-size: var(--text-sm);
