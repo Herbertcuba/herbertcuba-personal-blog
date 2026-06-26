@@ -4,8 +4,7 @@ date: 2026-06-26
 excerpt: "DX's research briefing with Brian Houck confirmed what practitioners already know: spec quality beats model capability, review is the new bottleneck, and agent experience is an organizational problem, not a tooling one. APEX was built around all of it."
 featuredImage: "/images/posts/apex-dx-research.webp"
 layout: post.njk
-permalink: /drafts/1b5cc208/
-tags: ["ai", "agents", "apex", "wip"]
+tags: ["ai", "agents", "apex", "strategy"]
 ---
 
 DX recently published their research briefing with Brian Houck, Distinguished Scientist at DX, on how AI is changing engineering productivity. The data is precise, the framing is careful, and for anyone who has been running agents in production rather than just talking about running them, the findings land exactly where you'd expect.
@@ -135,3 +134,5 @@ The data from DX points in the same direction as the practical lessons from runn
 APEX is an attempt to give that problem an organizational structure that scales. Not a replacement for your existing methodology, but a way of ensuring the conditions that research says matter are owned, measured, and continuously improved.
 
 The research is in. The question is what you build around it.
+
+If you want to go deeper on the framework itself, [the full APEX reference is here](/posts/2026-04-05-apex-framework/).
