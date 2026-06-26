@@ -1,10 +1,9 @@
 ---
 title: "I Stopped Planning Five Years Out. That's Too Long."
-date: 2026-06-21
+date: 2026-06-26
 excerpt: "Diamandis just published a compelling 5-year forecast about AI, robots, and AGI — and the data in it is exactly why 5-year plans no longer work."
 featuredImage: "/images/posts/i-stopped-planning-five-years-out.webp"
 layout: post.njk
-permalink: /drafts/6924eb81/
 tags: ["ai", "strategy", "planning"]
 ---
 
