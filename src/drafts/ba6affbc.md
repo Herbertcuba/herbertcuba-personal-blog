@@ -125,36 +125,6 @@ Google's stated goal is to maximize the agent's autonomous run-time — the amou
 
 When things go wrong, Google says: debug the workflow. HVE says: you have research files, planning checkboxes, and line-number references — trace backward. Both provide accountability, but through different mechanisms. Google's approach scales better on novel failures; HVE's traces better on known-failure types.
 
-<div style="margin: 2.5rem 0; overflow-x: auto;">
-<svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
-  <rect width="760" height="220" fill="#0a0a0a" rx="4"/>
-  <!-- Y axis label -->
-  <text x="22" y="112" fill="#444" font-size="9" text-anchor="middle" transform="rotate(-90,22,112)" letter-spacing="1">← ABSTRACTION</text>
-  <!-- Axis line -->
-  <line x1="48" y1="30" x2="48" y2="190" stroke="#222" stroke-width="1"/>
-  <line x1="48" y1="190" x2="720" y2="190" stroke="#222" stroke-width="1"/>
-  <!-- X axis labels -->
-  <text x="250" y="208" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">DESIGN PHASE</text>
-  <text x="510" y="208" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">EXECUTION PHASE</text>
-  <!-- APEX bar (top/full width) -->
-  <rect x="60" y="38" width="648" height="34" fill="#1a1a1a" stroke="#b0ff00" stroke-width="1" rx="2"/>
-  <text x="384" y="60" fill="#b0ff00" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">APEX — OPERATING MODEL</text>
-  <text x="384" y="72" fill="#555" font-size="9" text-anchor="middle">Strategic → Execution → Reflection</text>
-  <!-- Google bar (left, design phase) -->
-  <rect x="60" y="90" width="310" height="34" fill="#1a1a1a" stroke="#b0ff00" stroke-width="1" stroke-dasharray="4,3" rx="2"/>
-  <text x="215" y="111" fill="#b0ff00" font-size="11" font-weight="600" text-anchor="middle">GOOGLE AGENTIC ENGINEERING</text>
-  <text x="215" y="122" fill="#555" font-size="9" text-anchor="middle">Thinking framework · Model-agnostic</text>
-  <!-- HVE bar (right, execution phase) -->
-  <rect x="398" y="90" width="310" height="34" fill="#1a1a1a" stroke="#00cfff" stroke-width="1" stroke-dasharray="4,3" rx="2"/>
-  <text x="553" y="111" fill="#00cfff" font-size="11" font-weight="600" text-anchor="middle">MICROSOFT HVE</text>
-  <text x="553" y="122" fill="#555" font-size="9" text-anchor="middle">Execution toolkit · Copilot-native</text>
-  <!-- Model/Agent layer (bottom) -->
-  <rect x="60" y="142" width="648" height="34" fill="#111" stroke="#333" stroke-width="1" rx="2"/>
-  <text x="384" y="163" fill="#444" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">LLM / AGENT LAYER</text>
-  <text x="384" y="174" fill="#333" font-size="9" text-anchor="middle">Gemini · GPT-4o · Claude · Copilot</text>
-</svg>
-</div>
-
 ---
 
 ## When to use which
