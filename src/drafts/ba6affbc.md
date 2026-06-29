@@ -153,72 +153,6 @@ The most interesting observation: they're not competing. One answers "how should
 
 ---
 
-## Where APEX fits
-
-Both frameworks solve the same layer of the problem: execution. How do you structure the work so an AI agent can do it reliably? That's the right question. But it's not the only question.
-
-Neither Google's Agentic Engineering nor HVE asks: who defines the intent? Who decides what "correct" looks like before the agent starts? How does the organization improve cycle over cycle — not just the harness, but the whole system of work?
-
-That's the layer APEX operates at.
-
-[APEX (Agentic Production Execution)](https://dev.to/herbertcuba/apex-agentic-production-execution-4gjh) is an operating model for organizations running on agentic AI. It doesn't replace Google's framework or HVE. It wraps around them. It defines three phases that structure how AI-assisted work flows through an organization:
-
-<div style="margin: 2.5rem 0; overflow-x: auto;">
-<svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
-  <rect width="760" height="260" fill="#0a0a0a" rx="4"/>
-  <!-- Cycle arrow (outer ring suggestion) -->
-  <path d="M 380 230 Q 680 230 700 130 Q 720 30 380 30 Q 40 30 60 130 Q 80 230 380 230" fill="none" stroke="#1e1e1e" stroke-width="28" stroke-linecap="round"/>
-  <!-- Three phase blocks -->
-  <!-- STRATEGIC -->
-  <rect x="60" y="90" width="185" height="80" fill="#111" stroke="#b0ff00" stroke-width="1.5" rx="3"/>
-  <text x="152" y="118" fill="#b0ff00" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">STRATEGIC</text>
-  <text x="152" y="135" fill="#666" font-size="9" text-anchor="middle">Intent · Specs · Harness</text>
-  <text x="152" y="148" fill="#666" font-size="9" text-anchor="middle">design · Eval criteria</text>
-  <text x="152" y="162" fill="#444" font-size="8" text-anchor="middle">→ feeds Google framework</text>
-  <!-- Arrow S→E -->
-  <path d="M 248 130 L 288 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- EXECUTION -->
-  <rect x="288" y="90" width="185" height="80" fill="#111" stroke="#00cfff" stroke-width="1.5" rx="3"/>
-  <text x="380" y="118" fill="#00cfff" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">EXECUTION</text>
-  <text x="380" y="135" fill="#666" font-size="9" text-anchor="middle">HVE / RPI methodology</text>
-  <text x="380" y="148" fill="#666" font-size="9" text-anchor="middle">Google trajectory model</text>
-  <text x="380" y="162" fill="#444" font-size="8" text-anchor="middle">10–20× velocity</text>
-  <!-- Arrow E→R -->
-  <path d="M 476 130 L 516 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- REFLECTION -->
-  <rect x="516" y="90" width="185" height="80" fill="#111" stroke="#ff6b35" stroke-width="1.5" rx="3"/>
-  <text x="608" y="118" fill="#ff6b35" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">REFLECTION</text>
-  <text x="608" y="135" fill="#666" font-size="9" text-anchor="middle">Evaluate · Calibrate</text>
-  <text x="608" y="148" fill="#666" font-size="9" text-anchor="middle">Improve harness config</text>
-  <text x="608" y="162" fill="#444" font-size="8" text-anchor="middle">closes the loop</text>
-  <!-- Feedback arrow R→S (below) -->
-  <path d="M 608 172 Q 608 220 380 220 Q 152 220 152 172" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-  <text x="380" y="215" fill="#333" font-size="8" text-anchor="middle" letter-spacing="1">CALIBRATION FEEDS BACK INTO STRATEGY</text>
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#333"/>
-    </marker>
-  </defs>
-  <!-- Top label -->
-  <text x="380" y="26" fill="#b0ff00" font-size="10" text-anchor="middle" font-weight="700" letter-spacing="2">APEX CYCLE — ORGANIZATION-TO-AGENT INTERFACE</text>
-</svg>
-</div>
-
-**Strategic** — where intent is set. Who owns the specs? What are the evaluation criteria before implementation begins? What are the boundaries agents work within? This phase produces the input that Google's harness consumes and HVE's Research phase depends on. Without it, both frameworks start from an assumption they never name: that someone, somewhere, has already done the Strategic work. Often they haven't.
-
-**Execution** — where the work happens. This is where HVE's RPI methodology lives. This is where Google's trajectory-and-harness model applies. Both frameworks are excellent maps for this layer. APEX doesn't rewrite them — it contextualizes them inside a larger cycle.
-
-**Reflection** — where the organization learns. After execution, what changed? How does the Strategic configuration improve for the next cycle? Which evaluation criteria were wrong? What would the harness need to do differently? This is the phase that turns velocity into compound advantage — and it's the phase both frameworks leave largely undefined.
-
-The risks I see: teams adopt HVE or implement agentic principles from Google's paper and produce more, faster. But cycle two looks like cycle one. The harness doesn't improve. The evaluation criteria don't sharpen. The Strategic phase is still held in someone's head. The org is running the Execution phase in isolation, without the feedback loop that would make it compound.
-
-APEX is not a coding framework. It's an operating model. The question it answers is different: not "how do we structure this task for an agent" but "how does our organization get better at this, systematically, over time?"
-
-HVE inside APEX's Execution phase produces auditable, reliable engineering. Google's harness principles applied during APEX's Strategic design produce better-specified intent. APEX's Reflection phase closes the loop that makes both of them worth running again.
-
-They're not in competition. They're working at different altitudes. Google and Microsoft are solving the agent-to-task interface. APEX is solving the organization-to-agent interface.
-
 ---
 
 ## The underlying shift
@@ -234,3 +168,65 @@ The teams that pull ahead won't be the ones who've found the best model. They'll
 Both Google and Microsoft are now saying the same thing, in very different voices.
 
 That's usually a signal worth taking seriously.
+
+---
+
+## The hardest part neither framework solves
+
+There's a problem both Google and Microsoft sidestep. You can read both documents cover to cover and still walk away without an answer to the questions that actually break organizations:
+
+Who owns the harness when it goes wrong? How do you know if the system is actually getting better over time? Who writes the specs — the tech lead, the PM, the content manager? What happens when agent output starts drifting two weeks into production?
+
+Neither framework answers those questions. They stop at the engineering layer. And that makes sense — they're engineering frameworks, built by engineers, for engineers. The organizational layer was never their problem to solve.
+
+But it's the hardest part. I know this because it's the problem I tried to tackle with [APEX (Agentic Production Execution)](https://dev.to/herbertcuba/apex-agentic-production-execution-4gjh).
+
+APEX is not a competitor to Google's Agentic Engineering or to HVE. You can't out-Google Google on harness infrastructure — they have ADK, Jules, Agents CLI, the A2A Protocol, and distribution baked into every Google Cloud contract. You can't out-Microsoft Microsoft on developer tooling when Copilot is already in every developer's IDE. Competing on the same layer is a fight you don't need to have.
+
+The analogy I keep coming back to: Scrum didn't compete with Java or AWS. It competed with organizational chaos. APEX isn't competing with engineering frameworks — it's competing with the structural vacuum that appears when organizations try to implement those frameworks and nobody knows who owns what.
+
+APEX defines three phases that sit above and around the engineering layer:
+
+<div style="margin: 2.5rem 0; overflow-x: auto;">
+<svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
+  <rect width="760" height="260" fill="#0a0a0a" rx="4"/>
+  <path d="M 380 230 Q 680 230 700 130 Q 720 30 380 30 Q 40 30 60 130 Q 80 230 380 230" fill="none" stroke="#1e1e1e" stroke-width="28" stroke-linecap="round"/>
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect x="60" y="90" width="185" height="80" fill="#111" stroke="#b0ff00" stroke-width="1.5" rx="3"/>
+  <text x="152" y="118" fill="#b0ff00" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">STRATEGIC</text>
+  <text x="152" y="135" fill="#666" font-size="9" text-anchor="middle">Intent · Specs · Harness</text>
+  <text x="152" y="148" fill="#666" font-size="9" text-anchor="middle">design · Eval criteria</text>
+  <text x="152" y="162" fill="#444" font-size="8" text-anchor="middle">feeds Google + HVE</text>
+  <path d="M 248 130 L 288 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="288" y="90" width="185" height="80" fill="#111" stroke="#00cfff" stroke-width="1.5" rx="3"/>
+  <text x="380" y="118" fill="#00cfff" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">EXECUTION</text>
+  <text x="380" y="135" fill="#666" font-size="9" text-anchor="middle">HVE / RPI methodology</text>
+  <text x="380" y="148" fill="#666" font-size="9" text-anchor="middle">Google trajectory model</text>
+  <text x="380" y="162" fill="#444" font-size="8" text-anchor="middle">10–20× velocity</text>
+  <path d="M 476 130 L 516 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="516" y="90" width="185" height="80" fill="#111" stroke="#ff6b35" stroke-width="1.5" rx="3"/>
+  <text x="608" y="118" fill="#ff6b35" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">REFLECTION</text>
+  <text x="608" y="135" fill="#666" font-size="9" text-anchor="middle">Evaluate · Calibrate</text>
+  <text x="608" y="148" fill="#666" font-size="9" text-anchor="middle">Improve harness config</text>
+  <text x="608" y="162" fill="#444" font-size="8" text-anchor="middle">closes the loop</text>
+  <path d="M 608 172 Q 608 220 380 220 Q 152 220 152 172" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="380" y="215" fill="#333" font-size="8" text-anchor="middle" letter-spacing="1">CALIBRATION FEEDS BACK INTO STRATEGY</text>
+  <text x="380" y="26" fill="#b0ff00" font-size="10" text-anchor="middle" font-weight="700" letter-spacing="2">APEX CYCLE — ORGANIZATION-TO-AGENT INTERFACE</text>
+</svg>
+</div>
+
+**Strategic** — where intent is set. Who owns the specs? What are the evaluation criteria before implementation begins? What are the boundaries agents work within? This phase produces the input that Google's harness consumes and HVE's Research phase depends on. Both frameworks assume someone has already done this work. Often they haven't.
+
+**Execution** — where the work happens. This is exactly where HVE's RPI methodology and Google's trajectory-and-harness model apply. Both are excellent maps for this layer. APEX doesn't rewrite them — it contextualizes them inside a larger cycle.
+
+**Reflection** — where the organization learns. After execution: what changed? Which evaluation criteria were wrong? What would the harness need to do differently? This is the phase that turns velocity into something durable. It's also the phase both frameworks leave largely undefined.
+
+The risks I see: teams adopt HVE or implement agentic principles from Google's paper and produce more, faster. But cycle two looks like cycle one. The harness doesn't improve. The evaluation criteria don't sharpen. The Strategic phase is still held in someone's head. The org is running the Execution phase in isolation, without the feedback loop that would make it compound.
+
+Google and Microsoft have solved 50% of the problem — the engineering layer. The other 50% is organizational: who owns what, how you measure whether it's working, and how the system actually gets better over time. That's what APEX is trying to solve.
+
+The big frameworks tell you how to build the factory. APEX tells you how to run it.
