@@ -24,6 +24,16 @@ Here's my attempt to map them against each other.
 
 The framework also introduces what I think is the most interesting concept in either document: *meta-debugging*. When something goes wrong in an agentic workflow, you don't fix the code. You fix the workflow — the search queries, the tool configurations, the prompt constraints. The debugging target shifts from syntax to process.
 
+I think this signals something larger than a debugging technique. It's a sign that we've entered a meta-age of software development — where the product you ship is not the thing you're building. The product is the *system that builds the thing*.
+
+Think about what that means in practice. The engineer's primary artifact is no longer the feature, the service, or the API. It's the harness. The prompts. The evaluation criteria. The workflow constraints. The scaffolding that turns a raw model into a reliable production system. The actual software that reaches users is one or two degrees of abstraction away from where the engineer is working.
+
+This has happened before, but never quite like this. Infrastructure-as-code moved us from configuring servers to writing programs that configured servers. CI/CD moved us from deploying software to writing pipelines that deployed software. Each shift added a layer of abstraction between the engineer and the output. What's different now is the layer isn't mechanical — it's cognitive. You're not just automating the steps. You're encoding the *judgment* about which steps to take.
+
+Meta-debugging is what this looks like when it breaks. You no longer ask "why is this function returning the wrong value?" You ask "why did the agent choose this search strategy?" or "what in the system prompt made it interpret the requirement this way?" The failure mode has moved upstream. And so has the skill required to address it.
+
+The engineers who adapt fastest to this shift won't necessarily be the best coders. They'll be the ones who can reason clearly about systems that reason — who can look at an agent's output and trace backward through the workflow to find the decision point that went wrong. That's a new skill. It sits somewhere between software architecture and epistemology.
+
 **Microsoft's Hypervelocity Engineering (HVE)** approaches the same problem from the deployment side. It's an open-source toolkit built on top of GitHub Copilot — agents, prompts, coding instructions, and skill packages that make AI-assisted development repeatable and standards-aligned across a team. The core methodology is called RPI: Research, Plan, Implement, Review.
 
 The RPI insight is clean: AI coding assistants fail on complex tasks because they conflate investigation with implementation. When an agent knows it's in the Research phase, it optimizes for verified truth. When it knows it's in the Implement phase, it optimizes for working code. Keeping those phases separate — with a full context reset between them — produces dramatically more reliable results.
@@ -92,6 +102,32 @@ It's not a toolkit. It's a thinking framework. Use it in the design and alignmen
 It's not a design framework. It's an execution toolkit. Use it when you're building.
 
 The most interesting observation: they're not competing. One answers "how should we think about agentic systems?" The other answers "how do we actually run them today, on this stack, with this team?" A mature engineering organization probably needs both.
+
+---
+
+## Where APEX fits
+
+Both frameworks solve the same layer of the problem: execution. How do you structure the work so an AI agent can do it reliably? That's the right question. But it's not the only question.
+
+Neither Google's Agentic Engineering nor HVE asks: who defines the intent? Who decides what "correct" looks like before the agent starts? How does the organization improve cycle over cycle — not just the harness, but the whole system of work?
+
+That's the layer APEX operates at.
+
+[APEX (Agentic Production Execution)](https://dev.to/herbertcuba/apex-agentic-production-execution-4gjh) is an operating model for organizations running on agentic AI. It doesn't replace Google's framework or HVE. It wraps around them. It defines three phases that structure how AI-assisted work flows through an organization:
+
+**Strategic** — where intent is set. Who owns the specs? What are the evaluation criteria before implementation begins? What are the boundaries agents work within? This phase produces the input that Google's harness consumes and HVE's Research phase depends on. Without it, both frameworks start from an assumption they never name: that someone, somewhere, has already done the Strategic work. Often they haven't.
+
+**Execution** — where the work happens. This is where HVE's RPI methodology lives. This is where Google's trajectory-and-harness model applies. Both frameworks are excellent maps for this layer. APEX doesn't rewrite them — it contextualizes them inside a larger cycle.
+
+**Reflection** — where the organization learns. After execution, what changed? How does the Strategic configuration improve for the next cycle? Which evaluation criteria were wrong? What would the harness need to do differently? This is the phase that turns velocity into compound advantage — and it's the phase both frameworks leave largely undefined.
+
+The gap I keep seeing in practice: teams adopt HVE or implement agentic principles from Google's paper and produce more, faster. But cycle two looks like cycle one. The harness doesn't improve. The evaluation criteria don't sharpen. The Strategic phase is still held in someone's head. The org is running the Execution phase in isolation, without the feedback loop that would make it compound.
+
+APEX is not a coding framework. It's an operating model. The question it answers is different: not "how do we structure this task for an agent" but "how does our organization get better at this, systematically, over time?"
+
+HVE inside APEX's Execution phase produces auditable, reliable engineering. Google's harness principles applied during APEX's Strategic design produce better-specified intent. APEX's Reflection phase closes the loop that makes both of them worth running again.
+
+They're not in competition. They're working at different altitudes. Google and Microsoft are solving the agent-to-task interface. APEX is solving the organization-to-agent interface.
 
 ---
 
