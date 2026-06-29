@@ -51,7 +51,52 @@ The shared skeleton:
 - **Structure over improvisation.** Neither framework lets the AI roam. Both constrain it into defined phases, verified outputs, and explicit guardrails.
 - **The engineer as workflow designer.** The work is no longer line-by-line code. It's designing the system the AI operates inside.
 - **Verifiable outputs.** Tests, linters, specifications. If the agent's output passes automated validation, it's accepted — regardless of stylistic preference.
-- **The harness is where the value lives.** In Google's framing, this is explicit. In HVE, it's the entire toolkit. The model is assumed; the surrounding system is the moat.
+- **The harness is where the value lives.** In Google's framing, this is explicit. In HVE, it's the entire toolkit. The model is assumed; the surrounding system is the differentiator.
+
+<div style="margin: 2.5rem 0; overflow-x: auto;">
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
+  <!-- Background -->
+  <rect width="760" height="300" fill="#0a0a0a" rx="4"/>
+  <!-- Divider line -->
+  <line x1="380" y1="20" x2="380" y2="280" stroke="#222" stroke-width="1"/>
+  <!-- Header labels -->
+  <text x="190" y="50" fill="#b0ff00" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">GOOGLE</text>
+  <text x="190" y="66" fill="#555" font-size="10" text-anchor="middle" letter-spacing="1">AGENTIC ENGINEERING</text>
+  <text x="570" y="50" fill="#00cfff" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">MICROSOFT</text>
+  <text x="570" y="66" fill="#555" font-size="10" text-anchor="middle" letter-spacing="1">HYPERVELOCITY ENGINEERING</text>
+  <!-- Separator -->
+  <line x1="40" y1="78" x2="720" y2="78" stroke="#222" stroke-width="1"/>
+  <!-- Row 1 -->
+  <text x="60" y="106" fill="#999" font-size="11" font-weight="600">FORMAT</text>
+  <text x="190" y="106" fill="#eee" font-size="11" text-anchor="middle">Research paper</text>
+  <text x="570" y="106" fill="#eee" font-size="11" text-anchor="middle">Open-source toolkit</text>
+  <!-- Row 2 -->
+  <line x1="40" y1="118" x2="720" y2="118" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="142" fill="#999" font-size="11" font-weight="600">PURPOSE</text>
+  <text x="190" y="142" fill="#eee" font-size="11" text-anchor="middle">Thinking framework</text>
+  <text x="570" y="142" fill="#eee" font-size="11" text-anchor="middle">Execution toolkit</text>
+  <!-- Row 3 -->
+  <line x1="40" y1="154" x2="720" y2="154" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="178" fill="#999" font-size="11" font-weight="600">MODEL</text>
+  <text x="190" y="178" fill="#eee" font-size="11" text-anchor="middle">Agnostic</text>
+  <text x="570" y="178" fill="#eee" font-size="11" text-anchor="middle">GitHub Copilot native</text>
+  <!-- Row 4 -->
+  <line x1="40" y1="190" x2="720" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="214" fill="#999" font-size="11" font-weight="600">OPTIMIZES FOR</text>
+  <text x="190" y="214" fill="#eee" font-size="11" text-anchor="middle">Autonomous run-time</text>
+  <text x="570" y="214" fill="#eee" font-size="11" text-anchor="middle">Reliability + audit trail</text>
+  <!-- Row 5 -->
+  <line x1="40" y1="226" x2="720" y2="226" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="250" fill="#999" font-size="11" font-weight="600">WHEN THINGS BREAK</text>
+  <text x="190" y="250" fill="#eee" font-size="11" text-anchor="middle">Debug the workflow</text>
+  <text x="570" y="250" fill="#eee" font-size="11" text-anchor="middle">Trace the audit trail</text>
+  <!-- Row 6 -->
+  <line x1="40" y1="262" x2="720" y2="262" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="283" fill="#999" font-size="11" font-weight="600">USE WHEN</text>
+  <text x="190" y="283" fill="#eee" font-size="11" text-anchor="middle">Designing the system</text>
+  <text x="570" y="283" fill="#eee" font-size="11" text-anchor="middle">Running the system</text>
+</svg>
+</div>
 
 ---
 
@@ -76,6 +121,36 @@ Google's stated goal is to maximize the agent's autonomous run-time — the amou
 **The meta-debugging concept is Google's; the audit trail is HVE's.**
 
 When things go wrong, Google says: debug the workflow. HVE says: you have research files, planning checkboxes, and line-number references — trace backward. Both provide accountability, but through different mechanisms. Google's approach scales better on novel failures; HVE's traces better on known-failure types.
+
+<div style="margin: 2.5rem 0; overflow-x: auto;">
+<svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
+  <rect width="760" height="220" fill="#0a0a0a" rx="4"/>
+  <!-- Y axis label -->
+  <text x="22" y="112" fill="#444" font-size="9" text-anchor="middle" transform="rotate(-90,22,112)" letter-spacing="1">← ABSTRACTION</text>
+  <!-- Axis line -->
+  <line x1="48" y1="30" x2="48" y2="190" stroke="#222" stroke-width="1"/>
+  <line x1="48" y1="190" x2="720" y2="190" stroke="#222" stroke-width="1"/>
+  <!-- X axis labels -->
+  <text x="250" y="208" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">DESIGN PHASE</text>
+  <text x="510" y="208" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">EXECUTION PHASE</text>
+  <!-- APEX bar (top/full width) -->
+  <rect x="60" y="38" width="648" height="34" fill="#1a1a1a" stroke="#b0ff00" stroke-width="1" rx="2"/>
+  <text x="384" y="60" fill="#b0ff00" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">APEX — OPERATING MODEL</text>
+  <text x="384" y="72" fill="#555" font-size="9" text-anchor="middle">Strategic → Execution → Reflection</text>
+  <!-- Google bar (left, design phase) -->
+  <rect x="60" y="90" width="310" height="34" fill="#1a1a1a" stroke="#b0ff00" stroke-width="1" stroke-dasharray="4,3" rx="2"/>
+  <text x="215" y="111" fill="#b0ff00" font-size="11" font-weight="600" text-anchor="middle">GOOGLE AGENTIC ENGINEERING</text>
+  <text x="215" y="122" fill="#555" font-size="9" text-anchor="middle">Thinking framework · Model-agnostic</text>
+  <!-- HVE bar (right, execution phase) -->
+  <rect x="398" y="90" width="310" height="34" fill="#1a1a1a" stroke="#00cfff" stroke-width="1" stroke-dasharray="4,3" rx="2"/>
+  <text x="553" y="111" fill="#00cfff" font-size="11" font-weight="600" text-anchor="middle">MICROSOFT HVE</text>
+  <text x="553" y="122" fill="#555" font-size="9" text-anchor="middle">Execution toolkit · Copilot-native</text>
+  <!-- Model/Agent layer (bottom) -->
+  <rect x="60" y="142" width="648" height="34" fill="#111" stroke="#333" stroke-width="1" rx="2"/>
+  <text x="384" y="163" fill="#444" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">LLM / AGENT LAYER</text>
+  <text x="384" y="174" fill="#333" font-size="9" text-anchor="middle">Gemini · GPT-4o · Claude · Copilot</text>
+</svg>
+</div>
 
 ---
 
@@ -114,6 +189,48 @@ Neither Google's Agentic Engineering nor HVE asks: who defines the intent? Who d
 That's the layer APEX operates at.
 
 [APEX (Agentic Production Execution)](https://dev.to/herbertcuba/apex-agentic-production-execution-4gjh) is an operating model for organizations running on agentic AI. It doesn't replace Google's framework or HVE. It wraps around them. It defines three phases that structure how AI-assisted work flows through an organization:
+
+<div style="margin: 2.5rem 0; overflow-x: auto;">
+<svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
+  <rect width="760" height="260" fill="#0a0a0a" rx="4"/>
+  <!-- Cycle arrow (outer ring suggestion) -->
+  <path d="M 380 230 Q 680 230 700 130 Q 720 30 380 30 Q 40 30 60 130 Q 80 230 380 230" fill="none" stroke="#1e1e1e" stroke-width="28" stroke-linecap="round"/>
+  <!-- Three phase blocks -->
+  <!-- STRATEGIC -->
+  <rect x="60" y="90" width="185" height="80" fill="#111" stroke="#b0ff00" stroke-width="1.5" rx="3"/>
+  <text x="152" y="118" fill="#b0ff00" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">STRATEGIC</text>
+  <text x="152" y="135" fill="#666" font-size="9" text-anchor="middle">Intent · Specs · Harness</text>
+  <text x="152" y="148" fill="#666" font-size="9" text-anchor="middle">design · Eval criteria</text>
+  <text x="152" y="162" fill="#444" font-size="8" text-anchor="middle">→ feeds Google framework</text>
+  <!-- Arrow S→E -->
+  <path d="M 248 130 L 288 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- EXECUTION -->
+  <rect x="288" y="90" width="185" height="80" fill="#111" stroke="#00cfff" stroke-width="1.5" rx="3"/>
+  <text x="380" y="118" fill="#00cfff" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">EXECUTION</text>
+  <text x="380" y="135" fill="#666" font-size="9" text-anchor="middle">HVE / RPI methodology</text>
+  <text x="380" y="148" fill="#666" font-size="9" text-anchor="middle">Google trajectory model</text>
+  <text x="380" y="162" fill="#444" font-size="8" text-anchor="middle">10–20× velocity</text>
+  <!-- Arrow E→R -->
+  <path d="M 476 130 L 516 130" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- REFLECTION -->
+  <rect x="516" y="90" width="185" height="80" fill="#111" stroke="#ff6b35" stroke-width="1.5" rx="3"/>
+  <text x="608" y="118" fill="#ff6b35" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">REFLECTION</text>
+  <text x="608" y="135" fill="#666" font-size="9" text-anchor="middle">Evaluate · Calibrate</text>
+  <text x="608" y="148" fill="#666" font-size="9" text-anchor="middle">Improve harness config</text>
+  <text x="608" y="162" fill="#444" font-size="8" text-anchor="middle">closes the loop</text>
+  <!-- Feedback arrow R→S (below) -->
+  <path d="M 608 172 Q 608 220 380 220 Q 152 220 152 172" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="380" y="215" fill="#333" font-size="8" text-anchor="middle" letter-spacing="1">CALIBRATION FEEDS BACK INTO STRATEGY</text>
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  <!-- Top label -->
+  <text x="380" y="26" fill="#b0ff00" font-size="10" text-anchor="middle" font-weight="700" letter-spacing="2">APEX CYCLE — ORGANIZATION-TO-AGENT INTERFACE</text>
+</svg>
+</div>
 
 **Strategic** — where intent is set. Who owns the specs? What are the evaluation criteria before implementation begins? What are the boundaries agents work within? This phase produces the input that Google's harness consumes and HVE's Research phase depends on. Without it, both frameworks start from an assumption they never name: that someone, somewhere, has already done the Strategic work. Often they haven't.
 
