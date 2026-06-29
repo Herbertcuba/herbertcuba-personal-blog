@@ -211,7 +211,7 @@ That's the layer APEX operates at.
 
 **Reflection** — where the organization learns. After execution, what changed? How does the Strategic configuration improve for the next cycle? Which evaluation criteria were wrong? What would the harness need to do differently? This is the phase that turns velocity into compound advantage — and it's the phase both frameworks leave largely undefined.
 
-The gap I keep seeing in practice: teams adopt HVE or implement agentic principles from Google's paper and produce more, faster. But cycle two looks like cycle one. The harness doesn't improve. The evaluation criteria don't sharpen. The Strategic phase is still held in someone's head. The org is running the Execution phase in isolation, without the feedback loop that would make it compound.
+The risks I see: teams adopt HVE or implement agentic principles from Google's paper and produce more, faster. But cycle two looks like cycle one. The harness doesn't improve. The evaluation criteria don't sharpen. The Strategic phase is still held in someone's head. The org is running the Execution phase in isolation, without the feedback loop that would make it compound.
 
 APEX is not a coding framework. It's an operating model. The question it answers is different: not "how do we structure this task for an agent" but "how does our organization get better at this, systematically, over time?"
 
