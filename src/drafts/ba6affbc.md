@@ -54,47 +54,50 @@ The shared skeleton:
 - **The harness is where the value lives.** In Google's framing, this is explicit. In HVE, it's the entire toolkit. The model is assumed; the surrounding system is the differentiator.
 
 <div style="margin: 2.5rem 0; overflow-x: auto;">
-<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
-  <!-- Background -->
-  <rect width="760" height="300" fill="#0a0a0a" rx="4"/>
-  <!-- Divider line -->
-  <line x1="380" y1="20" x2="380" y2="280" stroke="#222" stroke-width="1"/>
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;font-family:'Space Grotesk',system-ui,sans-serif;">
+  <rect width="760" height="330" fill="#0a0a0a" rx="4"/>
+  <!-- Vertical divider between two columns -->
+  <line x1="390" y1="15" x2="390" y2="315" stroke="#222" stroke-width="1"/>
+  <!-- Vertical divider: label col -->
+  <line x1="175" y1="75" x2="175" y2="315" stroke="#1e1e1e" stroke-width="1"/>
   <!-- Header labels -->
-  <text x="190" y="50" fill="#b0ff00" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">GOOGLE</text>
-  <text x="190" y="66" fill="#555" font-size="10" text-anchor="middle" letter-spacing="1">AGENTIC ENGINEERING</text>
-  <text x="570" y="50" fill="#00cfff" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">MICROSOFT</text>
-  <text x="570" y="66" fill="#555" font-size="10" text-anchor="middle" letter-spacing="1">HYPERVELOCITY ENGINEERING</text>
-  <!-- Separator -->
-  <line x1="40" y1="78" x2="720" y2="78" stroke="#222" stroke-width="1"/>
-  <!-- Row 1 -->
-  <text x="60" y="106" fill="#999" font-size="11" font-weight="600">FORMAT</text>
-  <text x="190" y="106" fill="#eee" font-size="11" text-anchor="middle">Research paper</text>
-  <text x="570" y="106" fill="#eee" font-size="11" text-anchor="middle">Open-source toolkit</text>
-  <!-- Row 2 -->
-  <line x1="40" y1="118" x2="720" y2="118" stroke="#1a1a1a" stroke-width="1"/>
-  <text x="60" y="142" fill="#999" font-size="11" font-weight="600">PURPOSE</text>
-  <text x="190" y="142" fill="#eee" font-size="11" text-anchor="middle">Thinking framework</text>
-  <text x="570" y="142" fill="#eee" font-size="11" text-anchor="middle">Execution toolkit</text>
-  <!-- Row 3 -->
-  <line x1="40" y1="154" x2="720" y2="154" stroke="#1a1a1a" stroke-width="1"/>
-  <text x="60" y="178" fill="#999" font-size="11" font-weight="600">MODEL</text>
-  <text x="190" y="178" fill="#eee" font-size="11" text-anchor="middle">Agnostic</text>
-  <text x="570" y="178" fill="#eee" font-size="11" text-anchor="middle">GitHub Copilot native</text>
-  <!-- Row 4 -->
-  <line x1="40" y1="190" x2="720" y2="190" stroke="#1a1a1a" stroke-width="1"/>
-  <text x="60" y="214" fill="#999" font-size="11" font-weight="600">OPTIMIZES FOR</text>
-  <text x="190" y="214" fill="#eee" font-size="11" text-anchor="middle">Autonomous run-time</text>
-  <text x="570" y="214" fill="#eee" font-size="11" text-anchor="middle">Reliability + audit trail</text>
-  <!-- Row 5 -->
-  <line x1="40" y1="226" x2="720" y2="226" stroke="#1a1a1a" stroke-width="1"/>
-  <text x="60" y="250" fill="#999" font-size="11" font-weight="600">WHEN THINGS BREAK</text>
-  <text x="190" y="250" fill="#eee" font-size="11" text-anchor="middle">Debug the workflow</text>
-  <text x="570" y="250" fill="#eee" font-size="11" text-anchor="middle">Trace the audit trail</text>
-  <!-- Row 6 -->
-  <line x1="40" y1="262" x2="720" y2="262" stroke="#1a1a1a" stroke-width="1"/>
-  <text x="60" y="283" fill="#999" font-size="11" font-weight="600">USE WHEN</text>
-  <text x="190" y="283" fill="#eee" font-size="11" text-anchor="middle">Designing the system</text>
-  <text x="570" y="283" fill="#eee" font-size="11" text-anchor="middle">Running the system</text>
+  <text x="283" y="44" fill="#b0ff00" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="2">GOOGLE</text>
+  <text x="283" y="60" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">AGENTIC ENGINEERING</text>
+  <text x="573" y="44" fill="#00cfff" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="2">MICROSOFT</text>
+  <text x="573" y="60" fill="#444" font-size="9" text-anchor="middle" letter-spacing="1">HYPERVELOCITY ENGINEERING</text>
+  <!-- Header separator -->
+  <line x1="20" y1="73" x2="740" y2="73" stroke="#222" stroke-width="1"/>
+  <!-- ROW 1 — FORMAT -->
+  <text x="30" y="101" fill="#555" font-size="10" font-weight="600" letter-spacing="1">FORMAT</text>
+  <text x="283" y="101" fill="#ddd" font-size="11" text-anchor="middle">Research paper</text>
+  <text x="573" y="101" fill="#ddd" font-size="11" text-anchor="middle">Open-source toolkit</text>
+  <line x1="20" y1="112" x2="740" y2="112" stroke="#161616" stroke-width="1"/>
+  <!-- ROW 2 — PURPOSE -->
+  <text x="30" y="140" fill="#555" font-size="10" font-weight="600" letter-spacing="1">PURPOSE</text>
+  <text x="283" y="140" fill="#ddd" font-size="11" text-anchor="middle">Thinking framework</text>
+  <text x="573" y="140" fill="#ddd" font-size="11" text-anchor="middle">Execution toolkit</text>
+  <line x1="20" y1="151" x2="740" y2="151" stroke="#161616" stroke-width="1"/>
+  <!-- ROW 3 — MODEL -->
+  <text x="30" y="179" fill="#555" font-size="10" font-weight="600" letter-spacing="1">MODEL</text>
+  <text x="283" y="179" fill="#ddd" font-size="11" text-anchor="middle">Agnostic</text>
+  <text x="573" y="179" fill="#ddd" font-size="11" text-anchor="middle">GitHub Copilot native</text>
+  <line x1="20" y1="190" x2="740" y2="190" stroke="#161616" stroke-width="1"/>
+  <!-- ROW 4 — OPTIMIZES -->
+  <text x="30" y="211" fill="#555" font-size="10" font-weight="600" letter-spacing="1">OPTIMIZES</text>
+  <text x="30" y="224" fill="#555" font-size="10" font-weight="600" letter-spacing="1">FOR</text>
+  <text x="283" y="218" fill="#ddd" font-size="11" text-anchor="middle">Autonomous run-time</text>
+  <text x="573" y="218" fill="#ddd" font-size="11" text-anchor="middle">Reliability + audit trail</text>
+  <line x1="20" y1="234" x2="740" y2="234" stroke="#161616" stroke-width="1"/>
+  <!-- ROW 5 — ON FAILURE -->
+  <text x="30" y="255" fill="#555" font-size="10" font-weight="600" letter-spacing="1">ON</text>
+  <text x="30" y="268" fill="#555" font-size="10" font-weight="600" letter-spacing="1">FAILURE</text>
+  <text x="283" y="261" fill="#ddd" font-size="11" text-anchor="middle">Debug the workflow</text>
+  <text x="573" y="261" fill="#ddd" font-size="11" text-anchor="middle">Trace the audit trail</text>
+  <line x1="20" y1="278" x2="740" y2="278" stroke="#161616" stroke-width="1"/>
+  <!-- ROW 6 — BEST FOR -->
+  <text x="30" y="303" fill="#555" font-size="10" font-weight="600" letter-spacing="1">BEST FOR</text>
+  <text x="283" y="303" fill="#ddd" font-size="11" text-anchor="middle">Designing the system</text>
+  <text x="573" y="303" fill="#ddd" font-size="11" text-anchor="middle">Running the system</text>
 </svg>
 </div>
 
