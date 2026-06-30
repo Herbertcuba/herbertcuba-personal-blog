@@ -1,11 +1,10 @@
 ---
 title: "Google vs. Microsoft: Two Frameworks for the Age of Agentic Engineering"
-date: 2026-06-29
+date: 2026-06-30
 excerpt: "Google just published a rigorous academic framework for building AI agents. Microsoft shipped a deployable toolkit with 241 artifacts. Both are telling developers the same thing: vibe coding is over. But they're solving different problems."
 featuredImage: "/images/posts/agentic-engineering-vs-hve.webp"
 layout: post.njk
-permalink: /drafts/ba6affbc/
-tags: ["ai", "engineering", "wip"]
+tags: ["ai", "engineering", "strategy"]
 ---
 
 In the same month, Google published a research paper called *Industrial Agentic Engineering* and Microsoft open-sourced a toolkit called Hypervelocity Engineering. Both landed with the same opening argument: vibe coding doesn't scale. Agentic engineering does.
