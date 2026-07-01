@@ -61,6 +61,6 @@ The individual wins from AI are real. I'm not dismissing them. But they're not t
 
 The teams that figure this out first won't just be faster. They'll be better — because they'll have found a way to keep expertise in the loop while removing everything that was slowing it down.
 
-That's the shift. From single-player acceleration to multiplayer transformation.
+We've spent three years getting individuals faster. The next three years will be about getting teams better.
 
-The ROI has been waiting there the whole time.
+That's the shift. And that's where the numbers finally move.
