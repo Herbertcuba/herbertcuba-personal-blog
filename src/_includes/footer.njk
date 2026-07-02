@@ -1,0 +1,17 @@
+{# ═══════════════════════════════════════════════════════════════════════════
+   Shared CTA + footer block.
+   Pass `ctaHidden: true` from a page (e.g. Article) to render the plain footer
+   bar without the "Let's talk" CTA heading.
+   ═══════════════════════════════════════════════════════════════════════════ #}
+<div id="contact" class="site-cta">
+  {% if not ctaHidden %}
+  <div class="site-cta__head">
+    <h2 class="site-cta__title">Thinking through an AI operating model? Let's talk<span class="cursor">_</span></h2>
+    <a class="btn btn--primary" href="mailto:herbert@cubagarcia.com">Contact →</a>
+  </div>
+  {% endif %}
+  <div class="site-cta__foot mono">
+    <span>© {{ "" | currentYear }} Herbert Cuba Garcia</span>
+    <span>// built by markdown &amp; AI</span>
+  </div>
+</div>
