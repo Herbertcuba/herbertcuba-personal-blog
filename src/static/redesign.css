@@ -54,8 +54,8 @@
   --gutter:48px;
 }
 
-/* Halve side margins on mobile */
-@media (max-width:600px){
+/* Halve side margins on mobile/tablet (matches where the mobile layout kicks in) */
+@media (max-width:900px){
   :root{--gutter:24px;}
   .thismonth{padding:24px;}
   .latest__body{padding:40px 24px;}
@@ -489,6 +489,11 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 @media (max-width:600px){
   .apex-title{font-size:64px;}
   .apex-metrics__grid{grid-template-columns:1fr;}
+  /* Full-width cards on mobile: trim inner padding so content isn't double-inset */
+  .apex-phase{padding:28px 20px;}
+  .apex-fleet{padding:28px 20px;}
+  .apex-metric{padding:22px 18px;}
+  .apex-step{padding:24px 18px;}
 }
 
 /* ═══════════════════════════════════════════════════════════════════
