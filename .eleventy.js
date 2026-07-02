@@ -25,8 +25,55 @@ export default function(eleventyConfig) {
     return new Date().getFullYear();
   });
 
+  // MM-DD short date for card meta rows
+  eleventyConfig.addFilter("shortDate", (dateObj) => {
+    const d = new Date(dateObj);
+    return d.toISOString().slice(5, 10);
+  });
+
+  // Estimated reading time in minutes from raw content
+  eleventyConfig.addFilter("readingTime", (content) => {
+    if (!content) return 1;
+    const text = String(content).replace(/<[^>]+>/g, " ");
+    const words = text.trim().split(/\s+/).length;
+    return Math.max(1, Math.round(words / 220));
+  });
+
+  // Theme metadata: label + accent colors, keyed by theme slug
+  const THEME_META = {
+    "agentic-engineering": { label: "Agentic engineering", accent: "#00A03A", onDark: "#00E653", viewAll: "#00A03A", key: "green" },
+    "operating-models":    { label: "Operating models",    accent: "#0F8BD1", onDark: "#4FB6F0", viewAll: "#0F8BD1", key: "blue" },
+    "strategy-leadership": { label: "Strategy & leadership", accent: "#FF450F", onDark: "#FF8866", viewAll: "#E63E0E", key: "orange" },
+  };
+  eleventyConfig.addFilter("themeMeta", (slug) => THEME_META[slug] || THEME_META["strategy-leadership"]);
+  eleventyConfig.addGlobalData("themeOrder", ["agentic-engineering", "operating-models", "strategy-leadership"]);
+  eleventyConfig.addGlobalData("themeMetaAll", THEME_META);
+
+  // Tags minus "ai", capped at N — for card meta rows
+  eleventyConfig.addFilter("displayTags", (tags, n) => {
+    if (!Array.isArray(tags)) return [];
+    return tags.filter((t) => t && t.toLowerCase() !== "ai").slice(0, n || 3);
+  });
+
+  // First N items of an array (works on collections/arrays)
+  eleventyConfig.addFilter("take", (arr, n) => (Array.isArray(arr) ? arr.slice(0, n) : []));
+
+  // Items from index start..end
+  eleventyConfig.addFilter("between", (arr, start, end) => (Array.isArray(arr) ? arr.slice(start, end) : []));
+
   eleventyConfig.addCollection("posts", (collectionApi) => {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => b.date - a.date);
+  });
+
+  // Posts grouped by theme (each sorted newest-first)
+  eleventyConfig.addCollection("postsByTheme", (collectionApi) => {
+    const posts = collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => b.date - a.date);
+    const groups = { "agentic-engineering": [], "operating-models": [], "strategy-leadership": [] };
+    for (const p of posts) {
+      const t = p.data.theme || "strategy-leadership";
+      (groups[t] || groups["strategy-leadership"]).push(p);
+    }
+    return groups;
   });
 
   eleventyConfig.addCollection("drafts", (collectionApi) => {

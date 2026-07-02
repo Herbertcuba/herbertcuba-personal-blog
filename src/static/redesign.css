@@ -180,3 +180,129 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important;transition:none !important;}
 }
+
+/* ═══════════════════ HOME ═══════════════════ */
+
+/* Shared section H2 pattern: // + text */
+.section-h2{
+  display:flex;align-items:baseline;gap:14px;
+  font-size:44px;line-height:1;letter-spacing:-0.01em;color:var(--text);margin:0 0 36px;
+}
+.section-h2--light{color:#000;}
+.section-h2__slash{font-family:var(--font-mono);font-weight:700;color:var(--green);font-size:32px;}
+
+.link-accent{color:var(--green);font-size:14px;text-decoration:none;}
+.link-accent:hover{filter:brightness(1.2);}
+
+/* ---- Masthead ---- */
+.masthead{background:#000;color:var(--text);padding:72px var(--gutter);}
+.masthead__kicker{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--green);margin:0 0 28px;}
+.masthead__title{font-size:88px;line-height:1;letter-spacing:-0.01em;max-width:1200px;margin:0 0 40px;}
+.masthead__strip{
+  display:grid;grid-template-columns:auto 1fr auto;gap:48px;align-items:center;
+  border-top:1px solid var(--border-inner);border-bottom:1px solid var(--border-inner);padding:24px 0;
+}
+.masthead__id{display:flex;align-items:center;gap:18px;}
+.masthead__portrait{width:72px;height:72px;flex:none;background:#0A1A0F;}
+.masthead__name{font-family:var(--font-display);font-weight:700;font-size:18px;}
+.masthead__role{font-size:12px;color:var(--muted);}
+.masthead__mission{margin:0;font-weight:350;font-size:17px;line-height:1.5;color:var(--text-2);max-width:520px;}
+.masthead__stats{display:flex;gap:40px;}
+.stat__val{font-family:var(--font-display);font-weight:700;font-size:28px;color:var(--green);}
+.stat__label{font-size:12px;color:var(--muted);}
+
+/* ---- Latest insight hero ---- */
+.latest{background:var(--panel);color:var(--text);border-top:2px solid var(--green);display:grid;grid-template-columns:7fr 5fr;}
+.latest__body{padding:56px 56px 64px 48px;display:flex;flex-direction:column;justify-content:center;}
+.latest__meta{display:flex;align-items:center;gap:24px;font-size:13px;color:var(--faint);margin-bottom:36px;flex-wrap:wrap;}
+.latest__badge{color:var(--text);border:1.5px solid var(--text);font-weight:700;padding:6px 12px;}
+.latest__chips{display:flex;gap:8px;}
+.latest__title{font-size:58px;line-height:1.05;letter-spacing:-0.01em;margin:0 0 24px;}
+.latest__dek{margin:0 0 36px;font-weight:350;font-size:19px;line-height:1.5;color:var(--text-2);max-width:560px;}
+.latest .btn{align-self:flex-start;}
+.latest__media{border-left:1px solid var(--border-inner);min-height:480px;}
+.latest__caption{position:absolute;left:0;bottom:0;padding:16px 20px;font-size:12px;color:var(--green);background:rgba(3,5,3,0.8);z-index:2;}
+
+/* ---- This month rail ---- */
+.thismonth{background:#000;color:var(--text);padding:48px;border-top:1px solid var(--border-dark);}
+.thismonth__grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;}
+.pcard{display:flex;gap:20px;color:var(--text);text-decoration:none;align-items:flex-start;}
+.pcard__thumb{flex:none;width:132px;height:96px;background:#0A1A0F;}
+.pcard__text{display:flex;flex-direction:column;}
+.pcard__meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--faint);margin-bottom:10px;}
+.pcard__title{font-weight:700;font-size:17px;line-height:1.3;transition:color 150ms ease;}
+.pcard:hover .pcard__title{color:var(--green);}
+.thismonth__all{display:flex;justify-content:flex-end;margin-top:32px;}
+
+/* ---- Explore by theme ---- */
+.themes{background:var(--light);color:#000;padding:72px var(--gutter) 80px;}
+.themes__grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;}
+.tcol__h3{font-size:27px;letter-spacing:-0.01em;margin:0;}
+.tcol__rules{display:flex;flex-direction:column;gap:4px;margin:14px 0 12px;}
+.tcol__rules span{display:block;height:2px;}
+.tcol__count{font-size:12px;color:var(--ink-2);margin-bottom:20px;}
+.tfeat{display:block;color:#000;text-decoration:none;margin-bottom:20px;}
+.tfeat__media{display:block;width:100%;height:190px;margin-bottom:14px;background:#0A1A0F;}
+.tfeat__badge{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:8px;padding:7px 12px;font-size:11px;background:#000;z-index:2;}
+.tfeat__meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--faint-light);margin-bottom:8px;}
+.tfeat__title{display:block;font-family:var(--font-display);font-weight:700;font-size:20px;line-height:1.25;}
+.titem{display:flex;flex-direction:column;gap:6px;padding:14px 0;border-top:1px solid var(--border-light);color:#000;text-decoration:none;}
+.titem__meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--faint-light);}
+.titem__title{font-weight:700;font-size:16px;line-height:1.35;transition:color 150ms ease;}
+.titem:hover .titem__title{color:var(--green-light);}
+.tcol__viewall{display:block;padding:16px 0 0;border-top:1px solid var(--border-light);text-decoration:none;font-weight:700;font-size:13px;margin-top:0;}
+
+/* ---- APEX band ---- */
+.apex{background:var(--green);color:#000;padding:64px var(--gutter);}
+.apex__inner{display:flex;align-items:flex-end;justify-content:space-between;gap:64px;}
+.apex__label{font-size:13px;font-weight:700;margin-bottom:20px;}
+.apex__title{font-size:56px;line-height:1;letter-spacing:-0.01em;margin:0 0 16px;}
+.apex__dek{margin:0;font-weight:350;font-size:18px;line-height:1.5;max-width:720px;}
+
+/* ---- Books + About teaser ---- */
+.bookteaser{background:var(--light);color:#000;padding:64px var(--gutter);display:grid;grid-template-columns:2fr 1fr;gap:64px;}
+.bookteaser__row{display:flex;gap:48px;}
+.bookblock{display:flex;gap:24px;}
+.bookblock__cover{flex:none;width:110px;height:160px;background:#ddd;display:block;}
+.bookblock__cover img{width:100%;height:100%;object-fit:cover;}
+.bookblock__title{font-size:20px;margin:0 0 8px;}
+.bookblock__buy{display:inline-block;color:#000;font-weight:700;font-size:14px;margin-bottom:8px;text-decoration:none;}
+.bookblock__buy:hover{color:var(--green-light);}
+.bookblock__free{display:block;color:var(--green-light);font-weight:700;font-size:14px;text-decoration:none;}
+.bookteaser__about{border-left:2px solid var(--border-light);padding-left:48px;}
+.bookteaser__aboutlabel{margin:0 0 20px;font-size:13px;color:var(--ink-2);}
+.bookteaser__aboutrow{display:flex;gap:20px;align-items:flex-start;}
+.bookteaser__portrait{width:88px;height:88px;flex:none;background:#0A1A0F;}
+.bookteaser__blurb{margin:0 0 16px;font-weight:350;font-size:16px;line-height:1.5;color:var(--ink-2);}
+
+/* ---- Home responsive ---- */
+@media (max-width:900px){
+  .masthead__title{font-size:52px;}
+  .masthead__strip{grid-template-columns:1fr;gap:24px;}
+  .masthead__stats{gap:28px;}
+  .latest{grid-template-columns:1fr;}
+  .latest__media{min-height:280px;border-left:none;border-top:1px solid var(--border-inner);order:-1;}
+  .latest__title{font-size:36px;}
+  .thismonth__grid{grid-template-columns:1fr;gap:28px;}
+  .themes__grid{grid-template-columns:1fr;gap:48px;}
+  .apex__inner{flex-direction:column;align-items:flex-start;gap:32px;}
+  .apex__title{font-size:36px;}
+  .bookteaser{grid-template-columns:1fr;gap:48px;}
+  .bookteaser__row{flex-direction:column;gap:32px;}
+  .bookteaser__about{border-left:none;border-top:2px solid var(--border-light);padding-left:0;padding-top:32px;}
+  .section-h2{font-size:32px;}
+}
+
+/* ---- Theme listing pages ---- */
+.themepage{background:#000;color:var(--text);padding:64px var(--gutter) 80px;min-height:60vh;}
+.themepage__back{display:inline-block;color:var(--faint);text-decoration:none;font-size:13px;margin-bottom:40px;}
+.themepage__back:hover{color:var(--green);}
+.themepage__rules{display:flex;flex-direction:column;gap:4px;margin-bottom:16px;width:64px;}
+.themepage__rules span{display:block;height:2px;}
+.themepage__title{font-size:64px;line-height:1;letter-spacing:-0.01em;margin:0 0 12px;}
+.themepage__count{font-size:13px;color:var(--muted);margin:0 0 40px;}
+.themepage__list{max-width:900px;}
+.titem--dark{border-top-color:var(--border-inner);padding:20px 0;}
+.titem__title--dark{color:var(--text);font-size:20px;}
+.titem--dark:hover .titem__title--dark{color:var(--green);}
+@media (max-width:900px){.themepage__title{font-size:40px;}}
