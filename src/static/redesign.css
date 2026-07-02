@@ -470,6 +470,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .apex-metrics__grid{grid-template-columns:repeat(2,1fr);}
 }
 @media (max-width:900px){
+  .apex-h2{padding-left:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .apex-h2__slash{position:static;left:auto;top:auto;}
   .apex-title{font-size:88px;}
   .apex-statstrip{grid-template-columns:repeat(2,1fr);}
   .apex-stat{border-left:none;padding:20px 0;}
