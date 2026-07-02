@@ -632,6 +632,32 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .art-prose > p:first-of-type{font-size:21px;}
 }
 
+/* ---- Book detail (cover + prose) ---- */
+.bk-detail__cover{float:right;width:220px;margin:0 0 24px 32px;border:1px solid var(--border-light);}
+.bk-detail__cover img{display:block;width:100%;height:auto;}
+.bk-detail__cta{clear:both;display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:32px;border-top:1px solid var(--border-light);}
+@media (max-width:600px){
+  .bk-detail__cover{float:none;width:180px;margin:0 0 28px;}
+}
+
+/* ---- Drafts index ---- */
+.drafts{background:#000;color:var(--text);padding:0 var(--gutter) 96px;}
+.drafts__list{display:flex;flex-direction:column;border-top:1px solid var(--border-inner);}
+.dcard{display:flex;align-items:flex-start;gap:24px;padding:28px 0;border-bottom:1px solid var(--border-inner);color:var(--text);text-decoration:none;transition:padding-left 150ms ease;}
+.dcard:hover{padding-left:8px;}
+.dcard__num{flex:none;font-size:13px;color:var(--green);padding-top:4px;width:32px;}
+.dcard__body{flex:1;}
+.dcard__meta{font-size:12px;color:var(--faint);margin-bottom:8px;}
+.dcard__title{font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.25;margin:0;transition:color 150ms ease;}
+.dcard:hover .dcard__title{color:var(--green);}
+.dcard__excerpt{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--muted);max-width:640px;}
+.dcard__arrow{flex:none;color:var(--faint);font-size:18px;padding-top:4px;transition:color 150ms ease;}
+.dcard:hover .dcard__arrow{color:var(--green);}
+@media (max-width:600px){
+  .dcard{gap:16px;}
+  .dcard__title{font-size:19px;}
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    About page
    ═══════════════════════════════════════════════════════════════════ */
