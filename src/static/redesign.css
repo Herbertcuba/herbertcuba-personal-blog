@@ -66,6 +66,7 @@ body{
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
+  overflow-x:hidden;
 }
 img{max-width:100%;display:block;}
 a{color:inherit;}
@@ -475,6 +476,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .apex-principle:nth-last-child(-n+2){border-bottom:none;}
   .apex-principle:last-child{border-bottom:1px solid var(--border-light);}
   .apex-deep__row{flex-direction:column;align-items:flex-start;gap:24px;}
+  .apex-deep__btns{flex-wrap:wrap;}
+  .apex-deep__btns .btn{flex:1 1 auto;justify-content:center;}
 }
 @media (max-width:600px){
   .apex-title{font-size:64px;}
@@ -572,7 +575,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .art-prose p{margin:0 0 28px;}
 .art-prose h2{font-family:var(--font-display);font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-0.01em;margin:48px 0 20px;}
 .art-prose h3{font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1.2;margin:36px 0 16px;}
-.art-prose a{color:var(--green-light);font-weight:700;text-decoration:none;}
+.art-prose a{color:var(--green-light);font-weight:700;text-decoration:none;word-break:break-word;overflow-wrap:anywhere;}
 .art-prose a:hover{text-decoration:underline;}
 .art-prose ul,.art-prose ol{margin:0 0 28px;padding-left:24px;display:flex;flex-direction:column;gap:14px;}
 .art-prose li{padding-left:4px;}
