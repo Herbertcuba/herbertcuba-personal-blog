@@ -58,6 +58,9 @@ export default function(eleventyConfig) {
   // First N items of an array (works on collections/arrays)
   eleventyConfig.addFilter("take", (arr, n) => (Array.isArray(arr) ? arr.slice(0, n) : []));
 
+  // Zero-pad a number to 3 digits — insight numbering (057)
+  eleventyConfig.addFilter("padNum", (n) => String(n).padStart(3, "0"));
+
   // Items from index start..end
   eleventyConfig.addFilter("between", (arr, start, end) => (Array.isArray(arr) ? arr.slice(start, end) : []));
 
