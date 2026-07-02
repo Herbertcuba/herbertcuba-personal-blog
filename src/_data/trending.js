@@ -1,87 +1,37 @@
 /**
- * Trending posts, fetched from Google Analytics (GA4) Data API at build time.
+ * Trending posts — read from a STATIC file committed to the repo.
  *
- * Returns an object: { "/posts/<slug>/": rank, ... } where rank is 1..N
- * (1 = most trafficked in the window). Templates check `trending[post.url]`.
+ * The ranking is produced OUT OF BAND by a scheduled GitHub Actions job
+ * (.github/workflows/update-trending.yml) which calls the GA4 Data API at
+ * most once per day and writes src/_data/trending.json. This keeps the site
+ * build itself completely free of GA calls, tokens, and external runtime
+ * dependencies — every deploy just reads the last committed JSON.
  *
- * Config via environment variables (set in Vercel project settings):
- *   GA4_PROPERTY_ID        — numeric GA4 property id, e.g. "123456789"
- *   GA_SERVICE_ACCOUNT_JSON — the full service-account JSON (as a single-line string)
- *        (or) GOOGLE_APPLICATION_CREDENTIALS — path to a key file (local dev)
+ * Shape of trending.json: { "generated": "<iso>", "ranked": { "/posts/<slug>/": 1, ... } }
  *
- * GRACEFUL FALLBACK: if credentials are missing or the API call fails, this
- * returns null. Templates then fall back to the manual `trending: true`
- * frontmatter flag, so the site always builds — GA is an enhancement, not a
- * dependency.
+ * GRACEFUL FALLBACK: if the file is missing or malformed, returns null and
+ * templates fall back to the manual `trending: true` frontmatter flag, so the
+ * site always builds.
  */
 
-const WINDOW_DAYS = 30;   // trailing window to rank by
-const TOP_N = 8;          // how many posts to mark trending
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 
-export default async function () {
-  const propertyId = process.env.GA4_PROPERTY_ID;
-  const saJson = process.env.GA_SERVICE_ACCOUNT_JSON;
-  const keyFile = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-
-  // No config → silent fallback to frontmatter trending flags.
-  if (!propertyId || (!saJson && !keyFile)) {
-    console.log("[trending] GA4 not configured — using frontmatter `trending` flags.");
-    return null;
-  }
-
+export default function () {
+  const here = dirname(fileURLToPath(import.meta.url));
+  const file = join(here, "trending.json");
   try {
-    const { BetaAnalyticsDataClient } = await import("@google-analytics/data");
-
-    let clientOptions = {};
-    if (saJson) {
-      const credentials = JSON.parse(saJson);
-      // Vercel env vars escape newlines in the private key — restore them.
-      if (credentials.private_key) {
-        credentials.private_key = credentials.private_key.replace(/\\n/g, "\n");
-      }
-      clientOptions = {
-        credentials,
-        projectId: credentials.project_id,
-      };
+    const data = JSON.parse(readFileSync(file, "utf8"));
+    const ranked = data && data.ranked ? data.ranked : null;
+    if (ranked && Object.keys(ranked).length) {
+      console.log(`[trending] loaded ${Object.keys(ranked).length} ranked posts from trending.json (generated ${data.generated || "?"}).`);
+      return ranked;
     }
-    // If keyFile is set, the client picks it up from GOOGLE_APPLICATION_CREDENTIALS automatically.
-
-    const client = new BetaAnalyticsDataClient(clientOptions);
-
-    const [response] = await client.runReport({
-      property: `properties/${propertyId}`,
-      dateRanges: [{ startDate: `${WINDOW_DAYS}daysAgo`, endDate: "today" }],
-      dimensions: [{ name: "pagePath" }],
-      metrics: [{ name: "screenPageViews" }],
-      orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }],
-      dimensionFilter: {
-        filter: {
-          fieldName: "pagePath",
-          stringFilter: { matchType: "BEGINS_WITH", value: "/posts/" },
-        },
-      },
-      limit: 100,
-    });
-
-    const rows = response.rows || [];
-    const ranked = {};
-    let rank = 0;
-    for (const row of rows) {
-      let path = row.dimensionValues?.[0]?.value || "";
-      // Normalize: strip query/hash, ensure trailing slash
-      path = path.split("?")[0].split("#")[0];
-      if (!path.endsWith("/")) path += "/";
-      if (!path.startsWith("/posts/")) continue;
-      if (ranked[path]) continue; // dedupe (e.g. index variants)
-      rank += 1;
-      ranked[path] = rank;
-      if (rank >= TOP_N) break;
-    }
-
-    console.log(`[trending] GA4 ok — ${Object.keys(ranked).length} trending posts from last ${WINDOW_DAYS}d.`);
-    return ranked;
+    console.log("[trending] trending.json present but empty — using frontmatter flags.");
+    return null;
   } catch (err) {
-    console.warn(`[trending] GA4 fetch failed (${err.message}) — falling back to frontmatter flags.`);
+    console.log(`[trending] no usable trending.json (${err.code || err.message}) — using frontmatter flags.`);
     return null;
   }
 }
