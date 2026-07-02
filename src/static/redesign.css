@@ -334,9 +334,9 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
    ═══════════════════════════════════════════════════════════════════ */
 
 /* Shared section headings */
-.apex-h2{font-family:var(--font-display);font-weight:700;font-size:44px;letter-spacing:-0.01em;line-height:1;display:flex;align-items:baseline;gap:14px;margin:0 0 12px;}
+.apex-h2{font-family:var(--font-display);font-weight:700;font-size:44px;letter-spacing:-0.01em;line-height:1;position:relative;padding-left:0;margin:0 0 12px;}
 .apex-h2--light{color:#000;}
-.apex-h2__slash{font-family:var(--font-mono);font-weight:700;color:var(--green);font-size:32px;}
+.apex-h2__slash{position:absolute;left:-46px;top:2px;font-family:var(--font-mono);font-weight:700;color:var(--green);font-size:32px;line-height:1;}
 .apex-h2__slash--light{color:var(--green-light);}
 .apex-dek{font-weight:350;font-size:18px;line-height:1.5;max-width:640px;margin:0 0 48px;}
 .apex-dek--dark{color:var(--text-2);}
@@ -460,6 +460,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 }
 @media (max-width:900px){
   .apex-title{font-size:88px;}
+  .apex-h2{padding-left:30px;}
+  .apex-h2__slash{left:0;top:3px;font-size:26px;}
   .apex-statstrip{grid-template-columns:repeat(2,1fr);}
   .apex-stat{border-left:none;padding:20px 0;}
   .apex-cycle__grid{grid-template-columns:1fr;gap:16px;}
