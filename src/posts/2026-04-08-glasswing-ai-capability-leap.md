@@ -5,6 +5,7 @@ excerpt: "Anthropic built a model so capable at finding software vulnerabilities
 featuredImage: "/images/posts/glasswing-capability-leap.webp"
 layout: post.njk
 tags: ["ai", "cybersecurity", "enterprise", "strategy", "leadership"]
+theme: strategy-leadership
 ---
 
 Anthropic just did something unusual. They built a model so capable at finding software vulnerabilities that instead of selling it, they called their biggest competitors and said: we need to work on this together.

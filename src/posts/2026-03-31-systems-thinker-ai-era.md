@@ -5,6 +5,7 @@ excerpt: "Every major tech transformation demands the same thing: everyone level
 featuredImage: "/images/posts/systems-thinker-ai-era.webp"
 layout: post.njk
 tags: ["ai", "leadership", "career", "strategy", "skills", "consulting"]
+theme: strategy-leadership
 ---
 
 I see both pipelines in my inbox every week.

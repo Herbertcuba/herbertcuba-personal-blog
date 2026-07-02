@@ -10,6 +10,7 @@ tags:
   - transformation
   - governance
 featuredImage: "/images/ai-operating-model-middle.png"
+theme: operating-models
 ---
 
 Every week, I see another announcement about some company "going all-in on AI," usually accompanied by a press release about a Chief AI Officer appointment, a multi-million dollar platform deal, and a vague promise to "transform every aspect of the business." And every time, I think the same thing: this is going to be a very expensive lesson in organizational inertia.

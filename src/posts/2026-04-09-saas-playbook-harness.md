@@ -5,6 +5,7 @@ excerpt: "Anthropic cut third-party harness access on Friday. On Tuesday they la
 featuredImage: "/images/posts/saas-playbook-harness.webp"
 layout: post.njk
 tags: ["ai", "harness", "saas", "enterprise", "strategy", "cms"]
+theme: strategy-leadership
 ---
 
 On April 4th, Anthropic cut off subscription access for third-party harnesses like OpenClaw. On April 8th, they announced Managed Agents — a hosted service that does what those harnesses do, but inside Anthropic's own platform.

@@ -5,6 +5,7 @@ excerpt: "KPMG's AI agent playbook shows organizations that redesign processes b
 featuredImage: "/images/posts/kpmg-process-first.webp"
 layout: post.njk
 tags: ["ai", "agents", "strategy", "enterprise"]
+theme: strategy-leadership
 ---
 
 KPMG published their AI agent playbook last month, and one number stood out: organizations that redesign their processes before deploying AI agents see 20% better ROI than those that don't. Twenty percent. Not from better models, not from fancier tooling, not from bigger budgets. From rethinking the work itself before handing it to machines.

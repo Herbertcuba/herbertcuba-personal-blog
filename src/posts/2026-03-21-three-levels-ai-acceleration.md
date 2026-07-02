@@ -5,6 +5,7 @@ excerpt: "Saying 'we use AI' in 2026 is as blunt as saying 'we use data' — it 
 featuredImage: /images/posts/three-levels-ai-acceleration.webp
 layout: post.njk
 tags: ["ai", "strategy", "leadership", "agents"]
+theme: strategy-leadership
 ---
 
 # The Three Levels of AI Acceleration

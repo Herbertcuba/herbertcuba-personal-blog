@@ -5,6 +5,7 @@ excerpt: "The complete APEX Framework — three areas, nine domains, ten princip
 featuredImage: "/images/posts/apx-framework.webp"
 layout: post.njk
 tags: ["ai", "agents", "methodology", "leadership", "teams", "strategy", "framework"]
+theme: operating-models
 ---
 
 A few months ago I found myself running ten agents across three different projects. Code agents, content agents, research agents. They were producing work. Some of it was good. Some of it was quietly terrible, and I didn't catch it until it had already shipped downstream. The problem wasn't the agents. The problem was me. I had no system for how humans and agents should work together. No structure for who decides what, when agents should iterate on their own, and when a human needs to step in.

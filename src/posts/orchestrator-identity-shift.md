@@ -5,6 +5,7 @@ excerpt: "Every engineer facing an AI-driven identity crisis is walking a path s
 featuredImage: "/images/posts/orchestrator-identity-shift.webp"
 layout: post.njk
 tags: ["ai", "leadership", "identity", "engineering"]
+theme: strategy-leadership
 ---
 
 There's a conversation happening in engineering circles right now. What does it mean to be a developer when AI writes 80% of the code? Is the craft dying? Is the identity dying with it?

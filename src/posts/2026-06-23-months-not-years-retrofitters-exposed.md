@@ -8,6 +8,7 @@ tags:
   - ai
   - strategy
   - geopolitics
+theme: strategy-leadership
 ---
 
 On June 22, five intelligence agencies — the US, UK, Canada, Australia, and New Zealand — issued a joint statement. Not a policy paper. Not a committee recommendation. A warning. The Five Eyes said frontier AI models capable of fundamentally disrupting governments and businesses are not years away. They are months away.

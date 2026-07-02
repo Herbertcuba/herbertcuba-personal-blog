@@ -9,6 +9,7 @@ tags:
   - product-strategy
   - engineering
   - apex
+theme: operating-models
 ---
 
 Andrew Trask — @iamtrask, one of the more credible voices in AI research — responded to the OpenRouter Fusion announcement with this: "Frontier AI companies will never own the frontier again. I kid you not... I've been waiting for someone to show this result for like 4 years."

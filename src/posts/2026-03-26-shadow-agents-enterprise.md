@@ -5,6 +5,7 @@ excerpt: "BeyondTrust's latest data shows a 466% surge in AI agents operating in
 featuredImage: "/images/posts/shadow-agents-enterprise.webp"
 layout: post.njk
 tags: ["ai", "agents", "security", "enterprise", "strategy"]
+theme: agentic-engineering
 ---
 
 A few weeks ago, BeyondTrust's Phantom Labs dropped a number that should make every technology leader pause: **466.7% year-over-year growth** in AI agents operating inside enterprise environments. Not agents deployed by IT. Not agents approved through procurement. Agents that showed up on their own — via SaaS tools, browser extensions, and employees tinkering with the latest AI features.

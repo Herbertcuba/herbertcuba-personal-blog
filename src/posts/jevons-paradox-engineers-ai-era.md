@@ -8,6 +8,7 @@ tags:
   - AI
   - Engineering
   - Future of Work
+theme: agentic-engineering
 ---
 
 **The biggest scare in tech right now? "AI will replace developers."**

@@ -8,6 +8,7 @@ tags:
   - ai
   - leadership
   - culture
+theme: strategy-leadership
 ---
 
 A UC Berkeley research group recently published findings from an eight-month study of 200 daily AI users. The headline number: 88% of the heaviest users — mostly developers — reported significant stress and burnout.

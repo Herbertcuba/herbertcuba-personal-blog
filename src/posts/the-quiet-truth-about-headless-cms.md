@@ -5,6 +5,7 @@ excerpt: "Headless CMS accelerated code delivery. AI automation workflows are ab
 featuredImage: "/images/posts/headless-cms-infrastructure-0f23abd2.webp"
 layout: post.njk
 tags: ["cms", "content-strategy", "architecture", "ai", "digital-transformation"]
+theme: agentic-engineering
 ---
 
 I've spent a lot of years around CMS platforms. Big ones, small ones, open source ones, enterprise ones. Platforms that promise freedom, platforms that promise governance, and platforms that somehow manage to make both editors and developers equally frustrated.

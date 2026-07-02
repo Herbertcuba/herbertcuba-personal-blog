@@ -8,6 +8,7 @@ tags: ["ai", "strategy", "agents"]
 epaper:
   title: "Welcome to the Orchestration Era"
   download: "/downloads/welcome-to-the-orchestration-era.pdf"
+theme: agentic-engineering
 ---
 
 On May 28, 2026, Anthropic shipped Dynamic Workflows alongside Claude Opus 4.8. The feature lets Claude write an orchestration plan, break it into subtasks, spin up hundreds of parallel subagents, and — before reporting anything back — have separate agents verify the results. It handles codebase-scale migrations across hundreds of thousands of lines of code, from kickoff to merge, with the existing test suite as its quality bar.

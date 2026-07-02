@@ -6,6 +6,7 @@ featuredImage: "/images/posts/anatomy-level-3-agent.webp"
 layout: post.njk
 
 tags: ["ai", "agents", "infrastructure", "strategy", "methodology"]
+theme: agentic-engineering
 ---
 
 I've been running autonomous AI agents in production for months now. Not demos. Not weekend prototypes. Actual agents that manage tasks, write code, publish content, delegate work to each other, and operate across my entire digital life without someone watching over them.

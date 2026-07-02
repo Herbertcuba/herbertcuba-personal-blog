@@ -8,6 +8,7 @@ tags:
   - ai
   - strategy
   - enterprise
+theme: strategy-leadership
 ---
 
 Uber burned through its entire 2026 AI budget in four months. Not in experiments. Not in a skunkworks. In production — across the organization — with no measurable return to show for it.

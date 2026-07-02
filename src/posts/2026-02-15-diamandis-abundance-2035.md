@@ -5,6 +5,7 @@ excerpt: "*Reflections on Peter Diamandis's \"Solve Everything\" manifesto*"
 featuredImage: "/images/posts/diamandis-abundance-2035.webp"
 tags: ["Abundance", "AI"]
 layout: post.njk
+theme: strategy-leadership
 ---
 
 I've been thinking a lot about Peter Diamandis lately.

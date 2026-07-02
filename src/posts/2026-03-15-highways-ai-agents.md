@@ -5,6 +5,7 @@ excerpt: "Nobody writes headlines about asphalt. But without it, nothing moves. 
 featuredImage: "/images/posts/highways-ai-agents.webp"
 layout: post.njk
 tags: ["ai", "infrastructure", "strategy", "webmcp", "a2a", "mcp"]
+theme: agentic-engineering
 ---
 
 # The Highways Are Being Built: A2A, MCP, WebMCP, TOON, and the Infrastructure Era of AI

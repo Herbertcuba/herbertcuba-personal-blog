@@ -8,6 +8,7 @@ tags:
   - ai
   - engineering
   - specification
+theme: agentic-engineering
 ---
 
 The engineers I see getting the most out of AI aren't the ones who've mastered prompting tricks. They're the ones who already knew how to write a clear spec. AI didn't change the value of that skill — it just raised the leverage on it to a level that makes the gap impossible to ignore.

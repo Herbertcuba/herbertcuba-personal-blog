@@ -5,6 +5,7 @@ excerpt: "The last time we built operating systems, we were connecting periphera
 featuredImage: "/images/posts/openclaw-agentic-os.webp"
 layout: post.njk
 tags: ["ai", "openclaw", "infrastructure", "strategy", "agents"]
+theme: agentic-engineering
 ---
 
 At GTC 2025, Jensen Huang said something that stopped me mid-coffee. He called OpenClaw the most popular open-source project in the history of humanity — growing faster than Linux ever did. He called it the operating system for the agentic age.

@@ -9,6 +9,7 @@ tags:
   - ai
   - agency
 featuredImage: "/images/when-software-becomes-disposable.jpg"
+theme: strategy-leadership
 ---
 
 Something extraordinary happened in 2024. Cursor's team built a functional browser in one week. Chrome took two years and hundreds of engineers to reach the same milestone.
