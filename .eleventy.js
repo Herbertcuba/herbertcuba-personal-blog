@@ -61,6 +61,16 @@ export default function(eleventyConfig) {
   // Zero-pad a number to 3 digits — insight numbering (057)
   eleventyConfig.addFilter("padNum", (n) => String(n).padStart(3, "0"));
 
+  // Is a post trending? GA4 data (src/_data/trending.js) wins when present;
+  // otherwise fall back to the post's manual `trending: true` frontmatter flag.
+  // Usage in templates: {% if post | isTrending(trending) %}
+  eleventyConfig.addFilter("isTrending", (post, gaTrending) => {
+    if (gaTrending && typeof gaTrending === "object") {
+      return Boolean(gaTrending[post.url]);
+    }
+    return Boolean(post.data && post.data.trending);
+  });
+
   // Items from index start..end
   eleventyConfig.addFilter("between", (arr, start, end) => (Array.isArray(arr) ? arr.slice(start, end) : []));
 

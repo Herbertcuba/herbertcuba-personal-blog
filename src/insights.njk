@@ -34,7 +34,7 @@ description: "All insights by Herbert Cuba Garcia — on agentic engineering, AI
       <div class="ins-card__media duotone">
         <img src="{{ featured.data.featuredImage }}" alt="">
         <span class="ins-badge ins-badge--latest mono">// LATEST</span>
-        {%- if featured.data.trending -%}
+        {%- if featured | isTrending(trending) -%}
         <span class="ins-badge ins-badge--trending mono">
           <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>trending
         </span>
@@ -53,7 +53,7 @@ description: "All insights by Herbert Cuba Garcia — on agentic engineering, AI
     <a class="ins-card" href="{{ post.url }}">
       <div class="ins-card__media ins-card__media--sm duotone">
         <img src="{{ post.data.featuredImage }}" alt="">
-        {%- if post.data.trending -%}
+        {%- if post | isTrending(trending) -%}
         <span class="ins-badge ins-badge--trending mono">
           <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>trending
         </span>

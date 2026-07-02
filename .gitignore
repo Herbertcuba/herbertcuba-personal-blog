@@ -6,3 +6,6 @@ dist/
 # Local Netlify folder
 .netlify
 .vercel
+ga-service-account.json
+*-service-account.json
+.env.local

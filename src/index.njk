@@ -90,10 +90,12 @@ permalink: /
       <a class="tfeat" href="{{ featured.url }}">
         <span class="tfeat__media duotone duotone--{{ meta.key }}">
           <img src="{{ featured.data.featuredImage }}" alt="">
+          {%- if featured | isTrending(trending) -%}
           <span class="tfeat__badge mono" style="color:{{ meta.onDark }}">
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="{{ meta.onDark }}" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>
             trending
           </span>
+          {%- endif -%}
         </span>
         <span class="tfeat__meta mono">
           <span>{{ featured.date | isoDate }}</span>
