@@ -11,6 +11,7 @@ tags:
   - leadership
   - teams
 theme: operating-models
+trending: true
 ---
 
 [Jamie Hurst](https://jamiehurst.co.uk/2026-05-24_ai-sustainable) published something last week that deserves more attention than it's getting. He's a senior engineer inside an organisation of roughly 4,000 engineers. He's been using AI development tools heavily for three years. His report is honest in a way that most AI content isn't — no hype, no triumph, no fear. Just an engineer telling you what actually happened.

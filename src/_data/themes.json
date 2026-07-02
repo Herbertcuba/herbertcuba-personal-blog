@@ -1,0 +1,26 @@
+{
+  "order": ["agentic-engineering", "operating-models", "strategy-leadership"],
+  "meta": {
+    "agentic-engineering": {
+      "label": "Agentic engineering",
+      "accent": "#00A03A",
+      "onDark": "#00E653",
+      "viewAll": "#00A03A",
+      "key": "green"
+    },
+    "operating-models": {
+      "label": "Operating models",
+      "accent": "#0F8BD1",
+      "onDark": "#4FB6F0",
+      "viewAll": "#0F8BD1",
+      "key": "blue"
+    },
+    "strategy-leadership": {
+      "label": "Strategy & leadership",
+      "accent": "#FF450F",
+      "onDark": "#FF8866",
+      "viewAll": "#E63E0E",
+      "key": "orange"
+    }
+  }
+}

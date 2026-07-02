@@ -3,6 +3,9 @@ import markdownItAnchor from "markdown-it-anchor";
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
+// Single source of truth for theme config — also available to templates as `themes`
+const THEMES = JSON.parse(readFileSync(join(process.cwd(), "src", "_data", "themes.json"), "utf8"));
+
 /** @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig */
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
@@ -39,14 +42,11 @@ export default function(eleventyConfig) {
     return Math.max(1, Math.round(words / 220));
   });
 
-  // Theme metadata: label + accent colors, keyed by theme slug
-  const THEME_META = {
-    "agentic-engineering": { label: "Agentic engineering", accent: "#00A03A", onDark: "#00E653", viewAll: "#00A03A", key: "green" },
-    "operating-models":    { label: "Operating models",    accent: "#0F8BD1", onDark: "#4FB6F0", viewAll: "#0F8BD1", key: "blue" },
-    "strategy-leadership": { label: "Strategy & leadership", accent: "#FF450F", onDark: "#FF8866", viewAll: "#E63E0E", key: "orange" },
-  };
+  // Theme metadata: label + accent colors, keyed by theme slug.
+  // Source of truth is src/_data/themes.json (also exposed to templates as `themes`).
+  const THEME_META = THEMES.meta;
   eleventyConfig.addFilter("themeMeta", (slug) => THEME_META[slug] || THEME_META["strategy-leadership"]);
-  eleventyConfig.addGlobalData("themeOrder", ["agentic-engineering", "operating-models", "strategy-leadership"]);
+  eleventyConfig.addGlobalData("themeOrder", THEMES.order);
   eleventyConfig.addGlobalData("themeMetaAll", THEME_META);
 
   // Tags minus "ai", capped at N — for card meta rows
