@@ -79,29 +79,44 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 
 /* Sharp corners everywhere except circular portraits (handoff rule) */
 
-/* ---- Duotone image treatment ---- */
-/* Base: grayscale + contrast, wrapped element gets a hard-light tint overlay */
+/* ---- Duotone image treatment (green CRT phosphor) ---- */
+/* Base: green phosphor monochrome + horizontal CRT scanlines.
+   Hover: fades to full colour + subtle 1.03 zoom, scanlines soften. */
 .duotone{position:relative;overflow:hidden;}
 .duotone > img{
   width:100%;height:100%;object-fit:cover;
-  filter:grayscale(1) contrast(1.08);
+  /* grayscale → sepia → hue-rotate greens it into a phosphor monochrome */
+  filter:grayscale(1) sepia(1) hue-rotate(75deg) saturate(2.2) contrast(1.05) brightness(0.96);
   display:block;
   transition:filter 0.5s ease, transform 0.5s ease;
 }
+/* green glow tint */
 .duotone::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:rgba(0,230,83,0.16);
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:rgba(0,230,83,0.14);
   mix-blend-mode:hard-light;
   transition:opacity 0.5s ease;
 }
+/* CRT scanlines — horizontal dark rows every 3px */
+.duotone::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+  background:repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 1px,
+    rgba(0,0,0,0.16) 1px,
+    rgba(0,0,0,0.16) 3px
+  );
+  transition:opacity 0.5s ease;
+  opacity:1;
+}
 
-/* Hover reveal — matches the live site: greyscale desaturates to full colour
-   + subtle 1.03 zoom, and the green tint fades out so true colour shows. */
+/* Hover reveal: full colour + zoom, tint clears, scanlines soften */
 .pcard:hover .duotone > img,
 .tfeat:hover .duotone > img,
 .ins-card:hover .duotone > img,
 .latest__media:hover > img{
-  filter:grayscale(0) contrast(1);
+  filter:grayscale(0) sepia(0) hue-rotate(0deg) saturate(1) contrast(1) brightness(1);
   transform:scale(1.03);
 }
 .pcard:hover .duotone::after,
@@ -109,6 +124,12 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .ins-card:hover .duotone::after,
 .latest__media:hover::after{
   opacity:0;
+}
+.pcard:hover .duotone::before,
+.tfeat:hover .duotone::before,
+.ins-card:hover .duotone::before,
+.latest__media:hover::before{
+  opacity:0.35;
 }
 @media (prefers-reduced-motion: reduce){
   .duotone > img{transition:filter 0.5s ease;}
@@ -120,13 +141,14 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 /* circular portrait variant */
 .duotone--circle{border-radius:50%;}
 .duotone--circle::after{border-radius:50%;}
+.duotone--circle::before{border-radius:50%;}
 /* theme tints (override the green default) */
-.duotone--green::after{background:rgba(0,230,83,0.20);}
-.duotone--blue::after{background:rgba(15,139,209,0.22);}
-.duotone--orange::after{background:rgba(255,69,15,0.20);}
+.duotone--green::after{background:rgba(0,230,83,0.18);}
+.duotone--blue::after{background:rgba(15,139,209,0.20);}
+.duotone--orange::after{background:rgba(255,69,15,0.18);}
 /* left-edge gradient variant (latest hero) */
 .duotone--hero::after{
-  background:linear-gradient(105deg, rgba(10,26,15,0.85) 0%, rgba(10,26,15,0) 45%), rgba(0,230,83,0.16);
+  background:linear-gradient(105deg, rgba(10,26,15,0.85) 0%, rgba(10,26,15,0) 45%), rgba(0,230,83,0.14);
 }
 
 /* ---- Utilities ---- */
