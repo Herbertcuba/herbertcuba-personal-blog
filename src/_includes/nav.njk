@@ -11,7 +11,7 @@
   <button class="site-nav__toggle mono" id="navToggle" aria-label="Menu" aria-expanded="false">≡</button>
   <div class="site-nav__links" id="navLinks">
     <a href="/#themes">Insights</a>
-    <a href="/#apex">APEX</a>
+    <a href="/apex/"{% if activeNav == "apex" %} class="is-active"{% endif %}>APEX</a>
     <a href="/books/"{% if activeNav == "books" %} class="is-active"{% endif %}>Books</a>
     <a href="/about/"{% if activeNav == "about" %} class="is-active"{% endif %}>About</a>
     <a class="site-nav__cta" href="/about/#contact">Contact ↗</a>
