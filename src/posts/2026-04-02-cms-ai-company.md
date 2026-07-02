@@ -5,6 +5,7 @@ excerpt: "CMS vendors are rebuilding their platforms around AI agents as primary
 featuredImage: "/images/posts/cms-ai-company.webp"
 layout: post.njk
 tags: ["ai", "cms", "agents", "enterprise", "strategy"]
+theme: agentic-engineering
 ---
 
 Six months ago, picking a CMS was a content management decision. Which editing interface felt smoother? How flexible was the content model? Could marketing publish without developer support? Reasonable questions. The kind that guided CMS evaluations for a decade.

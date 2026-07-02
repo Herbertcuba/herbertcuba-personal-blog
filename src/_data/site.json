@@ -6,5 +6,34 @@
   "heroTitle": "Building at the <span class='highlight'>edge</span> of what's possible.",
   "heroLead": "I write about building products, leading teams, and navigating the chaos of modern software.",
   "tagline": "Engineer · Leader · Creator",
-  "showBookTeaser": true
+  "showBookTeaser": true,
+  "portrait": "/images/profile.jpg",
+  "role": "Technology leader — AI, strategy & human potential",
+  "yearsInTech": "20+",
+  "contact": {
+    "email": "herbert@cubagarcia.com",
+    "linkedin": "https://www.linkedin.com/in/herbertcuba/",
+    "curamandoEmail": "herbert.cuba@curamando.com",
+    "curamandoUrl": "https://curamando.com"
+  },
+  "books": [
+    {
+      "num": "01",
+      "title": "The 3 Crucibles",
+      "subtitle": "A Prophecy of Collapse, Transformation, and the Fight for Abundance",
+      "cover": "/images/crucibles-cover.jpg",
+      "amazon": "https://www.amazon.com/dp/B0GTK53C9H",
+      "tags": ["economics", "technology", "future"],
+      "description": "We stand at the edge of three simultaneous disruptions — economic, technological, and existential. This book maps the forces reshaping our world and argues that the choices we make in the next decade will determine whether we descend into scarcity or unlock an era of radical abundance."
+    },
+    {
+      "num": "02",
+      "title": "The Digital Singularity Shift",
+      "subtitle": "The Rise of Metamodern Brand Narratives",
+      "cover": "/images/singularity-cover.jpg",
+      "amazon": "https://www.amazon.com/dp/B0DKBYXLH2",
+      "tags": ["ai", "branding", "strategy"],
+      "description": "When AI commoditizes every functional advantage, the only remaining battleground is the human heart. This book explores how metamodern brand narratives — authentic yet self-aware — become the last durable moat in business."
+    }
+  ]
 }

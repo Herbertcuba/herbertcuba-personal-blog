@@ -5,6 +5,7 @@ excerpt: "Anthropic’s latest Claude Code pricing change is a signal that the v
 featuredImage: "/images/posts/harness-business-model-hero.webp"
 layout: post.njk
 tags: ["ai", "agents", "strategy", "workflow", "openclaw", "anthropic", "infrastructure"]
+theme: agentic-engineering
 ---
 
 Anthropic’s decision to charge extra for Claude Code usage through third-party harnesses like OpenClaw looks, on the surface, like a pricing change.

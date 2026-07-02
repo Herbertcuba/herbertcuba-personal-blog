@@ -10,6 +10,7 @@ tags:
   - agentic
   - apex
   - leadership
+theme: operating-models
 ---
 
 Between April 16 and May 11, 2026 — less than four weeks — three independent platforms shipped the same agentic execution pattern. OpenAI's Codex CLI launched its `/goal` command on April 16. Anthropic's Claude Code followed with the same feature in version 2.1.139 on May 11. Hermes Agent had been running it before either shipped publicly.

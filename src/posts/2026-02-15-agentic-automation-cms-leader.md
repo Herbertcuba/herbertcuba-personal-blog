@@ -5,6 +5,7 @@ excerpt: "The content management landscape is about to experience its biggest sh
 layout: post.njk
 featuredImage: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop
 tags: ["cms", "ai"]
+theme: agentic-engineering
 ---
 
 The content management landscape is about to experience its biggest shift since the move from monolithic to headless architecture. I think we're standing at the threshold of what I call the "agentic automation era" — and frankly, most of the industry isn't prepared for what's coming.

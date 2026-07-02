@@ -9,6 +9,7 @@ tags:
   - productivity
   - knowledge-management
 featuredImage: "/images/001-refined-neo-brutalism-dark-theme-acid-gr.png"
+theme: strategy-leadership
 ---
 
 "Human brains were never designed for storage but for thinking."

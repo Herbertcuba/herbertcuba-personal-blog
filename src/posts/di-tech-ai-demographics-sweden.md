@@ -5,6 +5,7 @@ excerpt: "High-income earners are dominating AI adoption. This isn't just a tech
 layout: post.njk
 featuredImage: "/images/di-tech-ai-demographics-sweden.png"
 tags: ["AI", "Sweden", "DigitalTransformation", "Leadership", "Umain"]
+theme: operating-models
 ---
 
 # The Swedish AI Divide: High-Earners Are Leading the Adoption

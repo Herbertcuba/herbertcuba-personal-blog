@@ -5,6 +5,7 @@ excerpt: "Revenue equals headcount times billable hours. That equation is under 
 featuredImage: "/images/posts/six-unlocks-consultancy.webp"
 layout: post.njk
 tags: ["ai", "leadership", "strategy", "consulting"]
+theme: strategy-leadership
 ---
 
 If you run a consultancy — tech, management, strategy, doesn't matter — you're dealing with a question right now that has no clean answer: should we hire, freeze, or cut?

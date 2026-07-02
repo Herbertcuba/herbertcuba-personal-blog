@@ -8,6 +8,7 @@ tags:
   - ai
   - engineering
   - reliability
+theme: agentic-engineering
 ---
 
 When a database returns the wrong data, you have a bug. When a model update changes how your LLM summarizes text, you have... what, exactly? An incident? A regression? A feature? Most teams don't have an answer, which means they also don't have a test for it.

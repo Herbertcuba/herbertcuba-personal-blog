@@ -5,6 +5,7 @@ excerpt: "When iteration becomes abundant, the constraint moves. And when the co
 layout: post.njk
 featuredImage: /images/posts/2026-02-23-strategic-velocity.jpg
 tags: ["ai-transformation", "velocity", "organizational-transformation"]
+theme: operating-models
 ---
 
 Something is shifting.

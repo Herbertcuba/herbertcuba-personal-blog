@@ -6,6 +6,7 @@ featuredImage: "/images/posts/mckinsey-digital-singularity.webp"
 layout: post.njk
 permalink: /posts/mckinsey-digital-singularity/
 tags: ["ai", "strategy", "marketing", "brand"]
+theme: strategy-leadership
 ---
 
 McKinsey surveyed 500 senior marketing leaders across Europe — France, Germany, Italy, Spain, the UK — and asked them what matters most.

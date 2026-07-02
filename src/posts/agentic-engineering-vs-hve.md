@@ -5,6 +5,8 @@ excerpt: "Google just published a rigorous academic framework for building AI ag
 featuredImage: "/images/posts/agentic-engineering-vs-hve.webp"
 layout: post.njk
 tags: ["ai", "engineering", "strategy"]
+theme: agentic-engineering
+trending: true
 ---
 
 In the same month, Google published a research paper called *Industrial Agentic Engineering* and Microsoft open-sourced a toolkit called Hypervelocity Engineering. Both landed with the same opening argument: vibe coding doesn't scale. Agentic engineering does.

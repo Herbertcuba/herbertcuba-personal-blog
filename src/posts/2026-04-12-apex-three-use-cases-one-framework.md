@@ -6,6 +6,7 @@ featuredImage: "/images/posts/apex-in-practice.webp"
 layout: post.njk
 permalink: /posts/2026-04-12-apex-three-use-cases-one-framework/
 tags: ["ai", "agents", "methodology", "leadership", "teams", "strategy", "framework", "apex"]
+theme: operating-models
 ---
 
 [The APEX Framework](/posts/2026-04-05-apex-framework/) defined the complete model: three areas, nine domains, three phases, ten principles, five metrics. That article is the reference. This one is the application.

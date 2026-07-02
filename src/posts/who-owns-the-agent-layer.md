@@ -5,6 +5,7 @@ excerpt: "Google I/O 2026 was a showcase of agentic AI everywhere. But the real 
 featuredImage: "/images/posts/who-owns-the-agent-layer.webp"
 layout: post.njk
 tags: ["ai", "web-standards", "agentic-ai"]
+theme: agentic-engineering
 ---
 
 900 million Gemini users. 50 billion images generated. A personal agent — Gemini Spark — that keeps working even when your phone is off. Google I/O 2026 wasn't a product announcement. It was a demonstration of infrastructure at planetary scale.

@@ -9,6 +9,7 @@ tags:
   - strategy
   - geopolitics
   - leadership
+theme: strategy-leadership
 ---
 
 At 5:21pm ET on June 12, 2026, the US government issued a directive to Anthropic. By that evening, Fable 5 and Mythos 5 — the company's most capable models — were pulled from every customer, globally. No advance notice. No public timeline. The directive letter didn't even specify what the national security concern was.

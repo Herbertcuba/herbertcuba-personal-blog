@@ -1,178 +1,169 @@
 ---
-layout: base.njk
+layout: base-redesign.njk
 title: Home
+permalink: /
 ---
+{%- set allPosts = collections.posts -%}
+{%- set insightCount = allPosts | length -%}
+{%- set latest = allPosts[0] -%}
+{%- set byTheme = collections.postsByTheme -%}
 
-{# ═══════════════════════════════════════════════════════════════════════════
-   HERO SECTION — Typographic statement
-   ═══════════════════════════════════════════════════════════════════════════ #}
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="tagline">{{ site.tagline }}</div>
-      <h1>{{ site.heroTitle | safe }}</h1>
-      <p class="lead">{{ site.heroLead }}</p>
+{# ═══════════════════ MASTHEAD (spec sheet) ═══════════════════ #}
+<section class="masthead">
+  <p class="masthead__kicker mono"><span class="slash">//</span> Engineer • Entrepreneur • Author</p>
+  <h1 class="masthead__title">Building at the edge of what's possible<span class="cursor">_</span></h1>
+  <div class="masthead__strip">
+    <div class="masthead__id">
+      <span class="duotone duotone--circle masthead__portrait">
+        <img src="{{ site.portrait }}" alt="Herbert Cuba Garcia">
+      </span>
+      <div>
+        <div class="masthead__name">Herbert Cuba Garcia</div>
+        <div class="masthead__role mono">Technology leader — AI, strategy &amp; human potential</div>
+      </div>
+    </div>
+    <p class="masthead__mission">{{ site.description }}</p>
+    <div class="masthead__stats">
+      <div class="stat"><div class="stat__val">20+</div><div class="stat__label mono">years in tech</div></div>
+      <div class="stat"><div class="stat__val">{{ insightCount }}</div><div class="stat__label mono">insights</div></div>
+      <div class="stat"><div class="stat__val">02</div><div class="stat__label mono">books</div></div>
     </div>
   </div>
 </section>
 
-{# ═══════════════════════════════════════════════════════════════════════════
-   BENTO GRID — Featured posts in asymmetric layout
-   ═══════════════════════════════════════════════════════════════════════════ #}
-{% if collections.posts.length > 0 %}
-<section id="insights" class="bento" aria-label="Featured articles">
-  <div class="container">
-    <div class="bento-grid animate-stagger">
-      
-      {# Hero Cell — Latest/Featured Post #}
-      {% set featured = collections.posts[0] %}
-      <article class="bento-cell bento-cell--hero">
-        <a href="{{ featured.url }}" aria-label="Read: {{ featured.data.title }}">
-          {% if featured.data.featuredImage %}
-          <div class="bento-cell__image">
-            <img src="{{ featured.data.featuredImage }}" alt="" loading="eager" />
-          </div>
-          <div class="bento-cell__overlay"></div>
-          {% endif %}
-          <div class="bento-cell__content">
-            <span class="bento-cell__eyebrow">Latest</span>
-            <h2 class="bento-cell__title">{{ featured.data.title }}</h2>
-            <span class="bento-cell__meta">{{ featured.date | isoDate }}</span>
-            {% if featured.data.tags %}
-            <div class="bento-cell__tags">
-              {% for tag in featured.data.tags.slice(0, 3) %}
-                <span class="post-tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
-      
-      {# Secondary Posts — Tall, Wide, Squares #}
-      {% if collections.posts[1] %}
-      <article class="bento-cell bento-cell--tall">
-        <a href="{{ collections.posts[1].url }}" aria-label="Read: {{ collections.posts[1].data.title }}">
-          {% if collections.posts[1].data.featuredImage %}
-          <div class="bento-cell__image">
-            <img src="{{ collections.posts[1].data.featuredImage }}" alt="" loading="lazy" />
-          </div>
-          <div class="bento-cell__overlay"></div>
-          {% endif %}
-          <div class="bento-cell__content">
-            <span class="bento-cell__eyebrow">{{ collections.posts[1].date | isoDate }}</span>
-            <h3 class="bento-cell__title">{{ collections.posts[1].data.title }}</h3>
-            {% if collections.posts[1].data.tags %}
-            <div class="bento-cell__tags">
-              {% for tag in collections.posts[1].data.tags.slice(0, 2) %}
-                <span class="post-tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
-      {% endif %}
+{# ═══════════════════ LATEST INSIGHT HERO ═══════════════════ #}
+<header class="latest">
+  <div class="latest__body">
+    <div class="latest__meta mono">
+      <span class="latest__badge">// LATEST INSIGHT</span>
+      <span>{{ latest.date | isoDate }}</span>
+      <span class="latest__chips">
+        {%- for tag in latest.data.tags | displayTags(3) -%}<span class="chip">{{ tag }}</span>{%- endfor -%}
+      </span>
+    </div>
+    <h2 class="latest__title">{{ latest.data.title }}</h2>
+    <p class="latest__dek">{{ latest.data.excerpt }}</p>
+    <a class="btn btn--primary" href="{{ latest.url }}">Read the insight →</a>
+  </div>
+  <div class="latest__media duotone duotone--hero">
+    <img src="{{ latest.data.featuredImage }}" alt="{{ latest.data.title }}">
+    <span class="latest__caption mono">// latest</span>
+  </div>
+</header>
 
-      {% if collections.posts[2] %}
-      <article class="bento-cell bento-cell--wide">
-        <a href="{{ collections.posts[2].url }}" aria-label="Read: {{ collections.posts[2].data.title }}">
-          {% if collections.posts[2].data.featuredImage %}
-          <div class="bento-cell__image">
-            <img src="{{ collections.posts[2].data.featuredImage }}" alt="" loading="lazy" />
-          </div>
-          <div class="bento-cell__overlay"></div>
-          {% endif %}
-          <div class="bento-cell__content">
-            <span class="bento-cell__eyebrow">{{ collections.posts[2].date | isoDate }}</span>
-            <h3 class="bento-cell__title">{{ collections.posts[2].data.title }}</h3>
-            {% if collections.posts[2].data.tags %}
-            <div class="bento-cell__tags">
-              {% for tag in collections.posts[2].data.tags.slice(0, 2) %}
-                <span class="post-tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
-      {% endif %}
+{# ═══════════════════ THIS MONTH ═══════════════════ #}
+<section class="thismonth">
+  <h2 class="section-h2"><span class="slash section-h2__slash">//</span>This month</h2>
+  <div class="thismonth__grid">
+    {%- for post in allPosts | take(3) -%}
+    <a class="pcard" href="{{ post.url }}">
+      <span class="pcard__thumb duotone"><img src="{{ post.data.featuredImage }}" alt=""></span>
+      <span class="pcard__text">
+        <span class="pcard__meta mono">
+          <span>{{ post.date | shortDate }}</span>
+          {%- for tag in post.data.tags | displayTags(2) -%}<span class="chip">{{ tag }}</span>{%- endfor -%}
+        </span>
+        <span class="pcard__title">{{ post.data.title }}</span>
+      </span>
+    </a>
+    {%- endfor -%}
+  </div>
+  <div class="thismonth__all">
+    <a href="#themes" class="mono link-accent">// all {{ insightCount }} insights →</a>
+  </div>
+</section>
 
-      {% if collections.posts[3] %}
-      <article class="bento-cell bento-cell--wide">
-        <a href="{{ collections.posts[3].url }}" aria-label="Read: {{ collections.posts[3].data.title }}">
-          {% if collections.posts[3].data.featuredImage %}
-          <div class="bento-cell__image">
-            <img src="{{ collections.posts[3].data.featuredImage }}" alt="" loading="lazy" />
-          </div>
-          <div class="bento-cell__overlay"></div>
-          {% endif %}
-          <div class="bento-cell__content">
-            <span class="bento-cell__eyebrow">{{ collections.posts[3].date | isoDate }}</span>
-            <h3 class="bento-cell__title">{{ collections.posts[3].data.title }}</h3>
-            {% if collections.posts[3].data.tags %}
-            <div class="bento-cell__tags">
-              {% for tag in collections.posts[3].data.tags.slice(0, 2) %}
-                <span class="post-tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
-      {% endif %}
+{# ═══════════════════ EXPLORE BY THEME ═══════════════════ #}
+<section id="themes" class="themes">
+  <h2 class="section-h2 section-h2--light"><span class="slash section-h2__slash" style="color:var(--green-light)">//</span>Explore by theme</h2>
+  <div class="themes__grid">
+    {%- for slug in themeOrder -%}
+    {%- set meta = slug | themeMeta -%}
+    {%- set posts = byTheme[slug] -%}
+    {%- set featured = posts[0] -%}
+    <div class="tcol">
+      <h3 class="tcol__h3">{{ meta.label }}</h3>
+      <div class="tcol__rules"><span style="background:{{ meta.accent }}"></span><span style="background:{{ meta.accent }}"></span></div>
+      <div class="tcol__count mono">{{ posts | length }} insights</div>
 
-      {# Additional posts as squares #}
-      {% for post in collections.posts.slice(4, 7) %}
-      <article class="bento-cell bento-cell--square">
-        <a href="{{ post.url }}" aria-label="Read: {{ post.data.title }}">
-          {% if post.data.featuredImage %}
-          <div class="bento-cell__image">
-            <img src="{{ post.data.featuredImage }}" alt="" loading="lazy" />
-          </div>
-          <div class="bento-cell__overlay"></div>
-          {% endif %}
-          <div class="bento-cell__content">
-            <span class="bento-cell__eyebrow">{{ post.date | isoDate }}</span>
-            <h3 class="bento-cell__title">{{ post.data.title }}</h3>
-            {% if post.data.tags %}
-            <div class="bento-cell__tags">
-              {% for tag in post.data.tags.slice(0, 2) %}
-                <span class="post-tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </a>
-      </article>
-      {% endfor %}
-      
+      {%- if featured -%}
+      <a class="tfeat" href="{{ featured.url }}">
+        <span class="tfeat__media duotone duotone--{{ meta.key }}">
+          <img src="{{ featured.data.featuredImage }}" alt="">
+          {%- if featured | isTrending(trending) -%}
+          <span class="tfeat__badge mono" style="color:{{ meta.onDark }}">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="{{ meta.onDark }}" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>
+            trending
+          </span>
+          {%- endif -%}
+        </span>
+        <span class="tfeat__meta mono">
+          <span>{{ featured.date | isoDate }}</span>
+          {%- for tag in featured.data.tags | displayTags(2) -%}<span class="chip chip--light">{{ tag }}</span>{%- endfor -%}
+        </span>
+        <span class="tfeat__title">{{ featured.data.title }}</span>
+      </a>
+      {%- endif -%}
+
+      {%- for post in posts | between(1,5) -%}
+      <a class="titem" href="{{ post.url }}">
+        <span class="titem__meta mono">
+          <span>{{ post.date | isoDate }}</span>
+          {%- for tag in post.data.tags | displayTags(2) -%}<span class="chip chip--light">{{ tag }}</span>{%- endfor -%}
+        </span>
+        <span class="titem__title">{{ post.data.title }}</span>
+      </a>
+      {%- endfor -%}
+
+      <a class="tcol__viewall mono" href="/themes/{{ slug }}/" style="color:{{ meta.viewAll }}">View all {{ posts | length }} →</a>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{# ═══════════════════ APEX BAND ═══════════════════ #}
+<section id="apex" class="apex">
+  <div class="apex__inner">
+    <div>
+      <div class="apex__label mono">// framework</div>
+      <h2 class="apex__title">APEX — Agentic Production Execution</h2>
+      <p class="apex__dek">The operating model behind the insights: how organizations align people, agents, and decisions to actually keep the productivity they gain.</p>
+    </div>
+    <a class="btn btn--dark" href="/posts/2026-04-05-apex-framework/">Explore APEX →</a>
+  </div>
+</section>
+
+{# ═══════════════════ BOOKS + ABOUT TEASER ═══════════════════ #}
+<section id="books" class="bookteaser">
+  <div class="bookteaser__books">
+    <h2 class="section-h2 section-h2--light"><span class="slash section-h2__slash" style="color:var(--green-light)">//</span>Books</h2>
+    <div class="bookteaser__row">
+      <div class="bookblock">
+        <span class="bookblock__cover"><img src="/images/crucibles-cover.jpg" alt="The 3 Crucibles"></span>
+        <div>
+          <h3 class="bookblock__title">The 3 Crucibles</h3>
+          <div><a class="bookblock__buy" href="https://www.amazon.com/dp/B0GTK53C9H" target="_blank" rel="noopener">Buy ↗</a></div>
+          <a class="bookblock__free" href="/books/#free">Free copy</a>
+        </div>
+      </div>
+      <div class="bookblock">
+        <span class="bookblock__cover"><img src="/images/singularity-cover.jpg" alt="The Digital Singularity Shift"></span>
+        <div>
+          <h3 class="bookblock__title">The Digital Singularity Shift</h3>
+          <div><a class="bookblock__buy" href="https://www.amazon.com/dp/B0DKBYXLH2" target="_blank" rel="noopener">Buy ↗</a></div>
+          <a class="bookblock__free" href="/books/#free">Free copy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bookteaser__about">
+    <div class="bookteaser__aboutlabel mono"><span style="color:var(--green-light);font-weight:700">//</span> about</div>
+    <div class="bookteaser__aboutrow">
+      <span class="duotone duotone--circle bookteaser__portrait"><img src="{{ site.portrait }}" alt="Herbert Cuba Garcia"></span>
+      <div>
+        <p class="bookteaser__blurb">Engineer, entrepreneur, and author working at the intersection of AI, strategy, and human potential.</p>
+        <a class="bookblock__buy" href="/about/">More about me →</a>
+      </div>
     </div>
   </div>
 </section>
-{% endif %}
-
-{# ═══════════════════════════════════════════════════════════════════════════
-   POST INDEX — Full archive (if more than bento shows)
-   ═══════════════════════════════════════════════════════════════════════════ #}
-{% if collections.posts.length > 7 %}
-<section class="posts" aria-label="All articles">
-  <div class="container">
-    <header class="posts__header">
-      <span class="posts__title">Archive</span>
-    </header>
-    
-    <ol class="post-list animate-stagger">
-      {% for post in collections.posts.slice(7) %}
-        <li class="post-item">
-          <a class="post-link" href="{{ post.url }}">
-            <span class="post-number">{{ loop.index }}</span>
-            <span class="post-title">{{ post.data.title }}</span>
-            <time class="post-date" datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
-          </a>
-        </li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-{% endif %}

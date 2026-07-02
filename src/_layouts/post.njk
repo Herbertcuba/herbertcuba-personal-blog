@@ -1,67 +1,120 @@
 ---
-layout: base.njk
+layout: base-redesign.njk
 isArticle: true
+ctaHidden: true
 ---
+{%- set allPosts = collections.posts -%}
+{%- set total = allPosts | length -%}
+{# Find this post's position → insight number (newest = highest) #}
+{%- set idx = 0 -%}
+{%- for p in allPosts -%}{%- if p.url == page.url -%}{%- set idx = loop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- set num = (total - idx) | padNum -%}
+{%- set themeSlug = theme or "strategy-leadership" -%}
+{%- set tmeta = themeSlug | themeMeta -%}
+{%- set readMins = content | readingTime -%}
+{# Read next: 3 most recent posts that aren't this one #}
+{%- set readNext = [] -%}
+{%- for p in allPosts -%}
+  {%- if p.url != page.url and readNext | length < 3 -%}{%- set readNext = (readNext.push(p), readNext) -%}{%- endif -%}
+{%- endfor -%}
 
-<article class="post">
-  <div class="container">
-    <header class="post-header">
-      <div class="meta">
-        <time datetime="{{ date }}">{{ date | isoDate }}</time>
-        <span>// TRANSMISSION</span>
+{# ═══════════════════ ARTICLE HEADER ═══════════════════ #}
+<header class="art-header">
+  <a class="art-back mono" href="/insights/">← cd /insights</a>
+  <div class="art-meta mono">
+    <span class="art-badge">// INSIGHT {{ num }}</span>
+    <span>{{ date | isoDate }}</span>
+    <span class="art-meta__tags">
+      {%- for tag in tags | displayTags(3) %}<span class="art-tag art-tag--dark">{{ tag }}</span>{% endfor -%}
+    </span>
+    <span>{{ readMins }} min read</span>
+  </div>
+  <h1 class="art-title">{{ title }}<span class="cursor">_</span></h1>
+  {%- if excerpt -%}<p class="art-dek">{{ excerpt }}</p>{%- endif -%}
+</header>
+
+{# ═══════════════════ HERO IMAGE ═══════════════════ #}
+{%- if featuredImage -%}
+<div class="art-hero duotone">
+  <img src="{{ featuredImage }}" alt="{{ title }}">
+  <div class="art-hero__caption mono">// fig. {{ num }}{% if heroCaption %} — {{ heroCaption }}{% endif %}</div>
+</div>
+{%- endif -%}
+
+{# ═══════════════════ BODY (rail + article) ═══════════════════ #}
+<div class="art-body">
+  <div class="art-body__grid">
+    <aside class="art-rail mono">
+      <div class="art-rules"><span></span><span></span></div>
+      <div class="art-rail__block">
+        <div class="art-rail__label">published</div>
+        <div>{{ date | isoDate }}</div>
       </div>
-      <h1>{{ title }}</h1>
-      {% if excerpt %}
-        <p class="lead">{{ excerpt }}</p>
-      {% endif %}
-    </header>
-  </div>
+      <div class="art-rail__block">
+        <div class="art-rail__label">reading time</div>
+        <div>{{ readMins }} min</div>
+      </div>
+      <div class="art-rail__block">
+        <div class="art-rail__label">filed under</div>
+        <div class="art-rail__tags">
+          {%- for tag in tags | displayTags(4) %}<span class="art-tag art-tag--light">{{ tag }}</span>{% endfor -%}
+        </div>
+      </div>
+      <div class="art-rail__block">
+        <div class="art-rail__label">share</div>
+        <div class="art-rail__share">
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ title }}" target="_blank" rel="noopener">X ↗</a>
+        </div>
+      </div>
+    </aside>
 
-  {% if epaper %}
-  <div class="container container--narrow" style="margin-bottom:1rem;">
-    <button
-      class="epaper-download-btn js-open-book-modal"
-      data-book="{{ epaper.title }}"
-      data-download="{{ epaper.download }}"
-      type="button">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:-2px;margin-right:6px;">
-        <path d="M8 1v9m0 0L5 7m3 3 3-3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      Download this as an e-paper
-    </button>
+    <article class="art-prose">
+      {%- if epaper -%}
+      <a class="art-epaper mono" href="{{ epaper.download }}" download>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:-2px;margin-right:6px;"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download this as an e-paper
+      </a>
+      {%- endif -%}
+      {{ content | safe }}
+    </article>
   </div>
-  {% endif %}
+</div>
 
-  <div class="container container--full">
-    {% if featuredImage %}
-      <img src="{{ featuredImage }}" alt="" class="post-hero-image" />
-    {% endif %}
+{# ═══════════════════ READ NEXT ═══════════════════ #}
+<section class="art-readnext">
+  <h2 class="apex-h2"><span class="apex-h2__slash mono">//</span>Read next</h2>
+  <div class="art-readnext__grid">
+    {%- for post in readNext -%}
+    <a class="art-next" href="{{ post.url }}">
+      <div class="art-next__thumb duotone">
+        <img src="{{ post.data.featuredImage }}" alt="">
+      </div>
+      <div class="art-next__text">
+        <div class="art-next__meta mono">{{ post.date | shortDate }}
+          {%- for tag in post.data.tags | displayTags(2) %}<span class="art-tag art-tag--dark">{{ tag }}</span>{% endfor -%}
+        </div>
+        <div class="art-next__title">{{ post.data.title }}</div>
+      </div>
+    </a>
+    {%- endfor -%}
   </div>
+</section>
 
-  <div class="prose" id="article-content">
-    {{ content | safe }}
-  </div>
-
-  <!-- Lightbox for article images -->
-  <div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
-    <img id="lightbox-img" src="" alt="" />
-  </div>
-  <script>
-    document.getElementById('article-content').addEventListener('click', function(e) {
-      if (e.target.tagName === 'IMG' && !e.target.classList.contains('post-hero-image')) {
+{# Lightbox for inline article images #}
+<div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function(){
+    var c = document.querySelector('.art-prose');
+    if(!c) return;
+    c.addEventListener('click', function(e){
+      if(e.target.tagName === 'IMG'){
+        var lb = document.getElementById('lightbox');
         document.getElementById('lightbox-img').src = e.target.src;
-        document.getElementById('lightbox').classList.add('active');
+        lb.classList.add('active');
       }
     });
-  </script>
-
-  {% if tags %}
-  <div class="container container--narrow">
-    <div class="post-tags">
-      {% for tag in tags %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
-</article>
+  })();
+</script>

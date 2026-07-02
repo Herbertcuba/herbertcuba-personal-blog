@@ -5,6 +5,7 @@ excerpt: "Google, UC Berkeley, and the Ethereum Foundation just proved you need 
 featuredImage: "/images/posts/quantum-crypto-threat.webp"
 layout: post.njk
 tags: ["quantum", "crypto", "security", "infrastructure", "bitcoin"]
+theme: strategy-leadership
 ---
 
 Today, Google Quantum AI published a [research paper](https://quantumai.google/static/site-assets/downloads/cryptocurrency-whitepaper.pdf) together with UC Berkeley and the Ethereum Foundation, accompanied by a [blog post](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly). The title is dry and academic: *"Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities."* The content is anything but.

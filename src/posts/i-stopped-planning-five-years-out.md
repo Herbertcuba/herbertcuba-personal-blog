@@ -5,6 +5,8 @@ excerpt: "Diamandis just published a compelling 5-year forecast about AI, robots
 featuredImage: "/images/posts/i-stopped-planning-five-years-out.webp"
 layout: post.njk
 tags: ["ai", "strategy", "planning"]
+theme: strategy-leadership
+trending: true
 ---
 
 AI token prices dropped 280x in 24 months. That number is from the Stanford AI Index, cited in a piece Peter Diamandis published this week called ["The Next 5 Years: A Supersonic Tsunami"](https://metatrends.substack.com/p/the-next-5-years-a-supersonic-tsunami). The piece is good. Dense with data. Frontier model prices are falling 10x per year — from $20 per million tokens down to roughly $0.40. Dario Amodei thinks AGI could arrive as early as late 2026 or 2027. Humanoid robots are already shipping. It's a lot to absorb.

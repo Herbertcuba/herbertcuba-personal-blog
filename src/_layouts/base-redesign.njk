@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{% if title and title != "Home" %}{{ title }} // {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ excerpt or description or site.description }}" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/chakra-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/redesign.css" />
+
+  {# OpenGraph #}
+  {% set ogTitle = title or site.title %}
+  {% set ogDescription = excerpt or description or site.description %}
+  {% set ogImage = featuredImage or image or '/images/og-default.png' %}
+  {% set ogUrl = site.url + page.url %}
+  {% set ogType = 'article' if isArticle else 'website' %}
+  <meta property="og:title" content="{{ ogTitle }}" />
+  <meta property="og:description" content="{{ ogDescription }}" />
+  <meta property="og:image" content="{{ site.url }}{{ ogImage }}" />
+  <meta property="og:url" content="{{ ogUrl }}" />
+  <meta property="og:type" content="{{ ogType }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ ogTitle }}" />
+  <meta name="twitter:description" content="{{ ogDescription }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage }}" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR3S8G8NB6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YR3S8G8NB6');
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+
+  <script>
+    // Mobile nav toggle
+    (function(){
+      var t = document.getElementById('navToggle');
+      var l = document.getElementById('navLinks');
+      if (t && l) t.addEventListener('click', function(){
+        var open = l.classList.toggle('is-open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>

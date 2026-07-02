@@ -1,0 +1,31 @@
+---
+layout: base-redesign.njk
+pagination:
+  data: themeOrder
+  size: 1
+  alias: themeSlug
+permalink: "/themes/{{ themeSlug }}/"
+eleventyComputed:
+  title: "{{ (themeSlug | themeMeta).label }}"
+---
+{%- set meta = themeSlug | themeMeta -%}
+{%- set posts = collections.postsByTheme[themeSlug] -%}
+<section class="themepage">
+  <div class="themepage__head">
+    <a href="/#themes" class="themepage__back mono">← cd /insights</a>
+    <div class="themepage__rules"><span style="background:{{ meta.accent }}"></span><span style="background:{{ meta.accent }}"></span></div>
+    <h1 class="themepage__title">{{ meta.label }}</h1>
+    <p class="themepage__count mono">{{ posts | length }} insights</p>
+  </div>
+  <div class="themepage__list">
+    {%- for post in posts -%}
+    <a class="titem titem--dark" href="{{ post.url }}">
+      <span class="titem__meta mono">
+        <span>{{ post.date | isoDate }}</span>
+        {%- for tag in post.data.tags | displayTags(3) -%}<span class="chip">{{ tag }}</span>{%- endfor -%}
+      </span>
+      <span class="titem__title titem__title--dark">{{ post.data.title }}</span>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>

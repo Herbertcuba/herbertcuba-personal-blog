@@ -5,6 +5,7 @@ excerpt: "AI-generated code is cheap to produce but expensive to verify. Verific
 featuredImage: "/images/posts/verification-debt-crisis.webp"
 layout: post.njk
 tags: ["ai", "engineering", "code-quality", "leadership"]
+theme: agentic-engineering
 ---
 
 

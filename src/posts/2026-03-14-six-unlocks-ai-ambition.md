@@ -5,6 +5,7 @@ excerpt: "Whoop is hiring 600 people while everyone else cuts. The smartest oper
 featuredImage: "/images/posts/six-unlocks-ai-ambition.webp"
 layout: post.njk
 tags: ["ai", "leadership", "strategy", "future-of-work"]
+theme: strategy-leadership
 ---
 
 Everyone is cutting. AI made it possible to do more with fewer people, so naturally the spreadsheet brains went to work: fewer heads, same output, better margins. Done. Next slide.

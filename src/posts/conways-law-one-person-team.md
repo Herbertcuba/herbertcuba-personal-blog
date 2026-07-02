@@ -8,6 +8,7 @@ tags:
   - ai
   - architecture
   - engineering
+theme: agentic-engineering
 ---
 
 I used to think code review existed to catch bugs. I was wrong. It exists to catch assumptions — things the author couldn't see because they were standing too close. AI doesn't review your assumptions. It implements them, very consistently.

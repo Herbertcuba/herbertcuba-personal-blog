@@ -5,6 +5,7 @@ excerpt: "The technology that will reshape every industry is being concentrated 
 featuredImage: "/images/posts/who-owns-the-intelligence.webp"
 layout: post.njk
 tags: ["ai", "open-source", "decentralization", "leadership", "strategy"]
+theme: strategy-leadership
 ---
 
 AI is advancing faster than any technology I've seen in my career. At the same time, the world feels more fragile than it has in decades — conflicts spreading, supply chains fracturing, alliances shifting. These two things are deeply connected.

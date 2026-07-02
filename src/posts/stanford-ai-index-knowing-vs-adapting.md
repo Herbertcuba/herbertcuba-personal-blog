@@ -8,6 +8,7 @@ tags:
   - ai
   - strategy
   - leadership
+theme: strategy-leadership
 ---
 
 The Stanford AI Index 2026 landed and the reaction was predictable. LinkedIn posts. Quoted statistics. Thoughtful nodding. Then everyone went back to their existing planning cycles.

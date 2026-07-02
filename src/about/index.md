@@ -1,240 +1,73 @@
 ---
+layout: base-redesign.njk
 title: About
-date: 2026-02-03
-description: The story behind the tech, sci-fi, and AI exploration.
-layout: base.njk
-tags:
-  - page
-image: /images/001-refined-neo-brutalism-dark-theme-acid-gr.png
+permalink: /about/
+activeNav: about
+description: "Herbert Cuba Garcia — engineer, entrepreneur, author working at the intersection of AI, strategy, and human potential."
 ---
+{%- set allPosts = collections.posts -%}
+{%- set insightCount = allPosts | length -%}
 
-<div class="about-container">
-  <div class="about-hero">
-    <div class="about-profile">
-      <img src="/images/profile.jpg" alt="Herbert Cuba Garcia" class="about-portrait" />
-    </div>
-    <div class="about-intro">
-      <h1 class="about-title">About Herbert</h1>
-      <p class="about-lead">I've always believed that the best technology doesn't just work—it tells a story.</p>
-    </div>
+{# ═══════════════════ HEADER ═══════════════════ #}
+<header class="ab-header">
+  <div class="ab-header__text">
+    <div class="ab-kicker mono"><span class="slash">//</span>whoami</div>
+    <h1 class="ab-title">Engineer. Entrepreneur. Author<span class="cursor">_</span></h1>
+    <p class="ab-intro">I'm Herbert Cuba Garcia — a technology leader working at the intersection of AI, strategy, and human potential.</p>
+    <p class="ab-intro">After 20+ years building products and leading engineering teams, I now spend my time on one question: how organizations turn AI capability into actual outcomes — without losing the people in the process.</p>
   </div>
-
-  <div class="about-section">
-    <h2>Origins</h2>
-    <p>I grew up on a diet of science fiction. The 1979 Superman movie shaped something in me at a young age: the idea that power comes with responsibility, that we can be something bigger than ourselves, and that the future is something we build rather than wait for. That mindset stuck with me through moving continents, building companies, and navigating the constantly shifting landscape of technology.</p>
+  <div class="ab-portrait duotone">
+    <img src="{{ site.portrait }}" alt="Herbert Cuba Garcia">
+    <div class="ab-portrait__caption mono">// herbert cuba garcia</div>
   </div>
+</header>
 
-  <div class="about-section">
-    <h2>Background</h2>
-    <p>My background is a mix of engineering and entrepreneurship. I studied computer science with a focus on interaction design, which taught me that the best code in the world means nothing if humans can't use it. I spent over a decade building and eventually selling a development agency, learning what it takes to turn ideas into products that actually ship. That experience gave me a deep appreciation for the gap between vision and execution—it's where most projects die.</p>
-  </div>
-
-  <div class="about-section">
-    <h2>AI Collaboration</h2>
-    <p>Today, I'm exploring what happens when you combine human creativity with artificial intelligence. I'm not interested in AI as a replacement for people. I'm interested in AI as a collaborator. Together with AI, I've been creating books, songs, and software—pushing into territory that would have been impossible for me alone just a few years ago.</p>
-  </div>
-
-  <div class="about-section">
-    <h2>Influences</h2>
-    <p>My influences reflect where my head is at: Peter Diamandis, who writes about abundance and exponential thinking; Nate B. Jones, who cuts through the noise to find what's actually moving the needle; and Dave Shapiro, who combines entrepreneurial hustle with philosophical depth. These thinkers challenge me to think bigger and act bolder.</p>
-  </div>
-
-  <div class="about-section">
-    <h2>This Blog</h2>
-    <p>This blog is where I share what I'm learning, building, and thinking about. I write about technology, AI, the future of work, and the intersection of humans and machines. I try to keep things personal and practical—less hype, more substance.</p>
-  </div>
-
-  <div class="about-section about-section--last">
-    <h2>Books</h2>
-    <ul class="about-books">
-      <li>
-        <strong><a href="https://www.amazon.com/Digital-Singularity-Shift-Metamodern-Narratives-ebook/dp/B0DKBYXLH2" target="_blank" rel="noopener noreferrer">The Digital Singularity</a></strong>
-        <p>A book about the deeper civilizational shift that happens when AI, exponential technologies, and collapsing narratives start reshaping how we work, build meaning, and understand reality. I think it matters because we are no longer just adopting new tools. We are entering a period where society itself is being re-authored in real time.</p>
-      </li>
-      <li>
-        <strong>The Three Crucibles</strong>
-        <p>A book about the forces I believe will define the next era of human life: collapse, transformation, and abundance. It is relevant because all of us are already feeling versions of these pressures, whether through AI, institutions, culture, identity, or economics. The question is no longer whether the world is changing, but what kind of humans we need to become inside that change.</p>
-      </li>
-    </ul>
-    <p class="about-close">Thanks for being here. Let's build something interesting together.</p>
+{# ═══════════════════ STATS STRIP ═══════════════════ #}
+<div class="ab-stats-wrap">
+  <div class="ab-stats">
+    <div class="ab-stat"><div class="ab-stat__num">{{ site.yearsInTech }}</div><div class="ab-stat__lbl mono">years in tech</div></div>
+    <div class="ab-stat"><div class="ab-stat__num">{{ insightCount }}</div><div class="ab-stat__lbl mono">insights published</div></div>
+    <div class="ab-stat"><div class="ab-stat__num">02</div><div class="ab-stat__lbl mono">books authored</div></div>
+    <div class="ab-stat"><div class="ab-stat__num">APEX</div><div class="ab-stat__lbl mono">operating-model framework</div></div>
   </div>
 </div>
 
-<style>
-  .about-container {
-    padding-top: 100px;
-    padding-left: clamp(1rem, 5vw, 2rem);
-    padding-right: clamp(1rem, 5vw, 2rem);
-    max-width: var(--content-width);
-    margin: 0 auto;
-  }
-  
-  .about-hero {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #333;
-  }
-  
-  .about-profile {
-    flex-shrink: 0;
-  }
-  
-  .about-portrait {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--acid);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .about-portrait:hover {
-    transform: scale(1.05);
-    border-color: var(--bone);
-  }
-  
-  .about-intro {
-    flex: 1;
-  }
-  
-  .about-title {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: var(--bone);
-    margin: 0 0 0.75rem 0;
-    line-height: 1;
-  }
-  
-  .about-lead {
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    color: var(--acid);
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  .about-section {
-    margin-bottom: 3rem;
-  }
-  
-  .about-section--last {
-    margin-bottom: 0;
-    padding-bottom: 4rem;
-  }
-  
-  .about-section h2 {
-    font-family: var(--font-display);
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    font-weight: 700;
-    color: var(--bone);
-    margin: 0 0 1rem 0;
-    letter-spacing: -0.02em;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .about-section h2::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--acid);
-    transition: width 0.4s ease;
-  }
-  
-  .about-section h2:hover::after {
-    width: 100%;
-  }
-  
-  .about-section p {
-    font-family: var(--font-body);
-    font-size: 1.125rem;
-    color: var(--ash);
-    line-height: 1.75;
-    margin: 0 0 1rem 0;
-  }
-  
-  .about-books {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+{# ═══════════════════ WHAT I DO ═══════════════════ #}
+<section class="ab-do">
+  <h2 class="apex-h2 apex-h2--light"><span class="apex-h2__slash apex-h2__slash--light mono">//</span>What I do</h2>
+  <div class="ab-do__grid">
+    <div class="ab-do__col">
+      <h3 class="ab-do__name">Write</h3>
+      <div class="apex-rules apex-rules--green"><span></span><span></span></div>
+      <p class="ab-do__body">Deep, practical insights on agentic engineering, AI operating models, and what leadership looks like when software becomes cheap.</p>
+      <a class="ab-do__link" href="/insights/">Read the insights →</a>
+    </div>
+    <div class="ab-do__col">
+      <h3 class="ab-do__name">Advise</h3>
+      <div class="apex-rules apex-rules--blue"><span></span><span></span></div>
+      <p class="ab-do__body">I work with leadership teams on AI operating models — turning individual productivity gains into organizational outcomes, using the APEX framework.</p>
+      <a class="ab-do__link" href="#contact">Get in touch →</a>
+    </div>
+    <div class="ab-do__col">
+      <h3 class="ab-do__name">Author</h3>
+      <div class="apex-rules apex-rules--orange"><span></span><span></span></div>
+      <p class="ab-do__body">Two books on the forces reshaping technology and business: The 3 Crucibles and The Digital Singularity Shift.</p>
+      <a class="ab-do__link" href="/books/">See the books →</a>
+    </div>
+  </div>
+</section>
 
-  .about-books li {
-    font-family: var(--font-body);
-    font-size: 1.125rem;
-    color: var(--ash);
-  }
-
-  .about-books strong {
-    display: inline-block;
-    margin-bottom: 0.4rem;
-    color: var(--bone);
-    font-weight: 600;
-  }
-
-  .about-books p {
-    margin: 0.35rem 0 0;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--ash);
-  }
-
-  .about-books a {
-    color: var(--acid);
-    text-decoration: none;
-  }
-
-  .about-books a:hover {
-    color: var(--bone);
-  }
-
-  .about-close {
-    display: block;
-    color: var(--bone) !important;
-    font-weight: 500;
-    margin-top: 0;
-    padding-top: 3.5rem;
-    padding-bottom: 0;
-  }
-  
-  @media (max-width: 640px) {
-    .about-container {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-      padding-bottom: 2rem;
-    }
-
-    .about-hero {
-      flex-direction: column;
-      text-align: center;
-      gap: 1.5rem;
-    }
-    
-    .about-lead {
-      max-width: none;
-      font-size: 1.1rem;
-    }
-
-    .about-section p {
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    .about-close {
-      padding-top: 4rem;
-      padding-bottom: 0;
-    }
-  }
-</style>
+{# ═══════════════════ LONGER STORY ═══════════════════ #}
+<section class="ab-story">
+  <div class="ab-story__grid">
+    <aside class="ab-story__rail mono">
+      <div class="apex-rules apex-rules--green"><span></span><span></span></div>
+      <div class="ab-story__label">the longer story</div>
+    </aside>
+    <div class="ab-story__prose">
+      <p>I started as an engineer, became a founder, and spent the last decade leading technology organizations through platform shifts. The AI shift is the third one I've worked through — and the first where the constraint moved from building to deciding.</p>
+      <p>That's what this site is about. Not tool reviews, not hype cycles — the operating models, team structures, and leadership habits that determine whether AI capability compounds or evaporates inside an organization.</p>
+      <p>When I'm not writing or advising, I'm usually building something anyway. Old habits.</p>
+    </div>
+  </div>
+</section>

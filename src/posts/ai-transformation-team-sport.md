@@ -9,6 +9,8 @@ tags:
   - agents
   - operating-model
   - strategy
+theme: operating-models
+trending: true
 ---
 
 72% of business leaders say their AI investments have not yet produced measurable ROI. That's not a fringe number — that's KPMG, surveying senior executives across industries. Gartner found that 49% of CIOs say AI has failed to deliver the returns they expected from 2023–2024 investments. McKinsey puts the share of organizations with genuine, bottom-line AI impact at around 5%.

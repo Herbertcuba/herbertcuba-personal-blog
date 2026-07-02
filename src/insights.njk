@@ -1,0 +1,70 @@
+---
+layout: base-redesign.njk
+title: Insights
+permalink: /insights/
+activeNav: insights
+description: "All insights by Herbert Cuba Garcia — on agentic engineering, AI operating models, and the strategy of what comes next."
+---
+{%- set allPosts = collections.posts -%}
+{%- set insightCount = allPosts | length -%}
+{%- set byTheme = collections.postsByTheme -%}
+{%- set featured = allPosts[0] -%}
+{%- set rest = allPosts | between(1, insightCount) -%}
+
+{# ═══════════════════ HEADER ═══════════════════ #}
+<header class="ins-header">
+  <div class="ins-kicker mono"><span class="slash">//</span>cd /insights</div>
+  <h1 class="ins-title">All insights<span class="cursor">_</span></h1>
+  <p class="ins-lede">{{ insightCount }} insights since January 2026 — on agentic engineering, AI operating models, and the strategy of what comes next.</p>
+  <div class="ins-filters mono">
+    <span class="ins-chip ins-chip--active">All · {{ insightCount }}</span>
+    {%- for slug in themeOrder -%}
+    {%- set meta = slug | themeMeta -%}
+    <a class="ins-chip" href="/themes/{{ slug }}/">{{ meta.label }} · {{ byTheme[slug] | length }}</a>
+    {%- endfor -%}
+  </div>
+</header>
+
+{# ═══════════════════ GRID ═══════════════════ #}
+<div class="ins-grid-wrap">
+  <div class="ins-grid">
+
+    {# featured: latest, spans 2 #}
+    <a class="ins-card ins-card--featured" href="{{ featured.url }}">
+      <div class="ins-card__media duotone">
+        <img src="{{ featured.data.featuredImage }}" alt="">
+        <span class="ins-badge ins-badge--latest mono">// LATEST</span>
+        {%- if featured | isTrending(trending) -%}
+        <span class="ins-badge ins-badge--trending mono">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>trending
+        </span>
+        {%- endif -%}
+      </div>
+      <div class="ins-card__meta mono">{{ insightCount | padNum }} · {{ featured.date | isoDate }}
+        {%- for tag in featured.data.tags | displayTags(3) %}<span class="ins-tag">{{ tag }}</span>{% endfor -%}
+      </div>
+      <div class="ins-card__title ins-card__title--lg">{{ featured.data.title }}</div>
+      {%- if featured.data.excerpt -%}<p class="ins-card__dek">{{ featured.data.excerpt }}</p>{%- endif -%}
+    </a>
+
+    {# remaining posts #}
+    {%- for post in rest -%}
+    {%- set num = insightCount - loop.index -%}
+    <a class="ins-card" href="{{ post.url }}">
+      <div class="ins-card__media ins-card__media--sm duotone">
+        <img src="{{ post.data.featuredImage }}" alt="">
+        {%- if post | isTrending(trending) -%}
+        <span class="ins-badge ins-badge--trending mono">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>trending
+        </span>
+        {%- endif -%}
+      </div>
+      <div class="ins-card__meta mono">{{ num | padNum }} · {{ post.date | shortDate }}
+        {%- for tag in post.data.tags | displayTags(2) %}<span class="ins-tag">{{ tag }}</span>{% endfor -%}
+      </div>
+      <div class="ins-card__title">{{ post.data.title }}</div>
+    </a>
+    {%- endfor -%}
+
+  </div>
+</div>

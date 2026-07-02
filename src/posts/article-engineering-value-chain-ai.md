@@ -9,6 +9,7 @@ tags:
   - value-chain
   - strategy
 featuredImage: "/images/posts/article-engineering-value-chain-ai.png"
+theme: strategy-leadership
 ---
 
 The code generation race is over. AI won.

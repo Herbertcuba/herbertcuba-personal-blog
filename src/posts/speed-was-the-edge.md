@@ -9,6 +9,7 @@ tags:
   - strategy
   - leadership
   - enterprise
+theme: strategy-leadership
 ---
 
 For two decades, the competitive edge in large organizations was execution velocity. Ship faster. Release more often. Reduce cycle time. Compress the backlog. The entire machinery of modern enterprise — agile, DevOps, CI/CD, platform teams, quarterly OKRs — was built to make one thing happen: get from idea to production as quickly as possible.

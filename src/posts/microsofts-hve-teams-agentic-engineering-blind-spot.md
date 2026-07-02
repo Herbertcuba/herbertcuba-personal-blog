@@ -5,6 +5,7 @@ excerpt: "Microsoft just open-sourced 241 artifacts for AI-augmented engineering
 featuredImage: "/images/posts/241-artifacts-zero-evals.webp"
 layout: post.njk
 tags: ["ai", "operating-model", "apex", "agentic-production"]
+theme: operating-models
 ---
 
 Microsoft recently open-sourced [HVE Core](https://github.com/microsoft/hve-core). I went and looked. Eight months of work, 241 published artifacts, 1,200 stars, a governance document, a transparency note, a 654-commit history. It is the most serious attempt I have seen to make AI-augmented engineering production-grade.

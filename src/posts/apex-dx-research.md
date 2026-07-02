@@ -5,6 +5,7 @@ excerpt: "DX's research briefing with Brian Houck confirmed what practitioners a
 featuredImage: "/images/posts/apex-dx-research.webp"
 layout: post.njk
 tags: ["ai", "agents", "apex", "strategy"]
+theme: operating-models
 ---
 
 DX recently published their research briefing with Brian Houck, Distinguished Scientist at DX, on how AI is changing engineering productivity. The data is precise, the framing is careful, and for anyone who has been running agents in production rather than just talking about running them, the findings land exactly where you'd expect.

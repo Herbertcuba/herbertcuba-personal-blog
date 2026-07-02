@@ -5,6 +5,7 @@ date: 2026-06-12
 excerpt: "The AI industry sells time savings. But Software 3.0 inverts the order — understanding comes first, speed is the consequence. The most leveraged skill in the economy is no longer coding. It is comprehension."
 featuredImage: /images/posts/understanding-premium-software-3.webp
 tags: ["ai", "software-3.0", "craft", "shift"]
+theme: agentic-engineering
 ---
 
 Andrej Karpathy recently said something that should make every leader pause: *"You can outsource your thinking, but you can't outsource your understanding."*

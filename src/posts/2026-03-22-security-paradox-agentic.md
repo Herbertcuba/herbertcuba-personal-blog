@@ -5,6 +5,7 @@ excerpt: "Autonomous AI agents need broad access to be useful. ISO frameworks de
 featuredImage: "/images/posts/iso-security-agentic.webp"
 layout: post.njk
 tags: ["ai", "security", "strategy", "enterprise", "agents"]
+theme: agentic-engineering
 ---
 
 # The Security Paradox: How ISO Certification Is Slowing Down the Agentic Revolution

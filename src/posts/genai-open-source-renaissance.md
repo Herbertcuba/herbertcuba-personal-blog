@@ -9,6 +9,7 @@ tags:
   - open-source
   - cloud
   - strategy
+theme: agentic-engineering
 ---
 
 GitHub's 2024 Octoverse report landed a number that deserves more attention than it got: generative AI repositories grew roughly 98% year-over-year. Python overtook JavaScript as the most-used language on the platform for the first time — driven almost entirely by AI and machine learning projects. Over 150 million developers now call GitHub home.

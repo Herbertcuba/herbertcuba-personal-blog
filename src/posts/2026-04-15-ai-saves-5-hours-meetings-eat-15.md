@@ -6,6 +6,7 @@ featuredImage: "/images/posts/ai-saves-5-hours-meetings-eat-15.webp"
 layout: post.njk
 permalink: /posts/2026-04-15-ai-saves-5-hours-meetings-eat-15/
 tags: ["ai", "productivity", "operating-model", "engineering", "leadership"]
+theme: operating-models
 ---
 
 DX recently released their Q1 2026 AI Impact Report — data from over 400 companies, covering October 2025 through January 2026. It's the second report in the series, and it lands in the middle of a period defined by rapid model improvements, agentic orchestration, and creative new workflows. AI adoption now sits at 93%. We've moved from "should we use AI?" to "everyone's using AI — but how?"

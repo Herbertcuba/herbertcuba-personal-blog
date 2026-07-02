@@ -9,6 +9,7 @@ tags:
   - wisdom
   - leadership
   - future-of-work
+theme: strategy-leadership
 ---
 
 A frontier model just scored in the 99th percentile on the LSAT, cleared the USMLE, and passed competitive programming benchmarks that would have been the bragging rights of a prodigy a decade ago. The headlines framed it as intelligence catching up to humans.

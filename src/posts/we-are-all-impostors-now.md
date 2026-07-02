@@ -8,6 +8,7 @@ tags:
   - ai
   - strategy
   - leadership
+theme: strategy-leadership
 ---
 
 According to Microsoft's 2024 Work Trend Index, 52% of people who use AI at work are worried their boss will think they're less skilled. A Salesforce study from the same year found that roughly half of all employees who use generative AI don't tell their manager. A Glassdoor survey put the number higher: 70% of professionals using AI tools at work had never mentioned it.

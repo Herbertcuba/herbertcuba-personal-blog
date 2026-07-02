@@ -5,6 +5,7 @@ excerpt: "AI models are trained to tell you you're brilliant. The smarter you ar
 featuredImage: "/images/posts/ai-sycophancy-trap.webp"
 layout: post.njk
 tags: ["ai", "psychology", "leadership", "strategy"]
+theme: strategy-leadership
 ---
 
 # The Sycophancy Trap: Why AI Is Making Smart People Delusional

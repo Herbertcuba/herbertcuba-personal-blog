@@ -6,6 +6,7 @@ featuredImage: "/images/posts/2026-04-11-when-ai-makes-building-cheap-human-real
 layout: post.njk
 permalink: /posts/2026-04-11-when-ai-makes-building-cheap-human-reality-starts-to-matter-more/
 tags: ["ai", "digital-singularity", "future-of-work", "strategy", "trust"]
+theme: strategy-leadership
 ---
 
 Everyone is talking about Anthropic's unreleased model Mythos and how capable it seems. Maybe the rumors are ahead of reality, maybe they are not. Either way, I think the important part is not Mythos itself. It is what Mythos represents.
