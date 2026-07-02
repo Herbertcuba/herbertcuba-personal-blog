@@ -57,8 +57,6 @@
 /* Halve side margins on mobile/tablet (matches where the mobile layout kicks in) */
 @media (max-width:900px){
   :root{--gutter:24px;}
-  .thismonth{padding:24px;}
-  .latest__body{padding:40px 24px;}
 }
 
 /* ---- Reset / base ---- */
@@ -313,7 +311,9 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .masthead__title{font-size:52px;}
   .masthead__strip{grid-template-columns:1fr;gap:24px;}
   .masthead__stats{gap:28px;}
+  .thismonth{padding:24px;}
   .latest{grid-template-columns:1fr;}
+  .latest__body{padding:40px 24px;}
   .latest__media{min-height:280px;border-left:none;border-top:1px solid var(--border-inner);order:-1;}
   .latest__title{font-size:36px;}
   .thismonth__grid{grid-template-columns:1fr;gap:28px;}
