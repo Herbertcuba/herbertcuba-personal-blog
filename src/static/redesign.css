@@ -54,6 +54,13 @@
   --gutter:48px;
 }
 
+/* Halve side margins on mobile */
+@media (max-width:600px){
+  :root{--gutter:24px;}
+  .thismonth{padding:24px;}
+  .latest__body{padding:40px 24px;}
+}
+
 /* ---- Reset / base ---- */
 *,*::before,*::after{box-sizing:border-box;}
 html{-webkit-text-size-adjust:100%;}
