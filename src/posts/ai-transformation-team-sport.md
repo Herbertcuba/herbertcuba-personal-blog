@@ -11,6 +11,12 @@ tags:
   - strategy
 theme: operating-models
 trending: true
+anthem: true
+tldr:
+  - "72% of leaders see no measurable AI ROI — because the gains are real but trapped in individuals, not absorbed by the organization."
+  - "We've been playing single-player: one talented person becomes a one-man army, output soars, but org-level numbers (team KPIs, DORA metrics) don't move."
+  - "The fix isn't more agents or automation — it's better coordination: humans and agents cast into clear roles so their work compounds instead of competing."
+  - "That's an operating-model question, not a technology one — the shift from single-player to multiplayer mode is what finally moves the organizational numbers."
 ---
 
 72% of business leaders say their AI investments have not yet produced measurable ROI. That's not a fringe number — that's KPMG, surveying senior executives across industries. Gartner found that 49% of CIOs say AI has failed to deliver the returns they expected from 2023–2024 investments. McKinsey puts the share of organizations with genuine, bottom-line AI impact at around 5%.
@@ -26,7 +32,9 @@ trending: true
 
 The narrative doesn't match the reality. And I think I know why.
 
----
+## We've Been Playing Single-Player
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The default mode is one talented individual becoming a one-man army — hugely productive personally, while the organization's numbers stay flat.</p></div>
 
 We've been treating AI acceleration as a single-player game.
 
@@ -36,7 +44,9 @@ This person is impressive. Their output goes up significantly. They move fast. T
 
 But the organization's numbers don't move.
 
----
+## The Gains Are Real — but Trapped
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Individual AI gains are measurable and large, but they pool at the edge — in the person and their private setup — and never propagate to team-level KPIs.</p></div>
 
 There's a pattern in the data worth sitting with. BCG found that individual consultants using AI outperformed their peers by 25% on speed and 40% on quality. But those gains didn't propagate to team-level business KPIs. The DX Institute found the same thing in engineering: developer-level productivity metrics improved 15–45% with AI tools, but DORA metrics — the ones that actually measure software delivery at the organizational level — showed no statistically significant improvement.
 
@@ -44,7 +54,9 @@ The gains are real. They're just trapped.
 
 They pool at the edge — in the individual, in the isolated workflow, in the clever personal setup that only the person who built it understands. The organization doesn't absorb them. It can't. Because the individual accelerated without the organization changing around them.
 
----
+## The Central Misdiagnosis
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The assumption that enough fast individuals will pull the org forward is wrong — you just get high performers on incompatible setups, producing output without the challenge and verification that make it the <em>right</em> output.</p></div>
 
 I think this is the central misdiagnosis of AI transformation right now.
 
@@ -52,7 +64,9 @@ The assumption is that if enough individuals accelerate, the organization will n
 
 The one-man army produces output. It doesn't always produce the *right* output. Because it lacks the thing that expert collaboration gives you: challenge, verification, and the accumulated judgment of people who've seen this problem before.
 
----
+## From Individual Acceleration to Coordination
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The unlock isn't more agents or automation — it's better coordination between human expertise and agent execution, with agents built to live inside a team rather than boost one person.</p></div>
 
 The shift I think we're about to see — and the one I think will finally unlock the numbers that haven't moved — is from individual acceleration to human-agent collaboration at scale.
 
@@ -71,7 +85,9 @@ The question isn't "how do we get AI to do more?" It's "how do we organize a tea
 
 That's a fundamentally different design problem. It's an operating model question, not a technology question. And it's where I think the real transformation will happen.
 
----
+## What Multiplayer Mode Actually Looks Like
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Multiplayer mode redesigns how work flows around agents — clear roles, deliberate context handoff, humans on the judgment — so gains compound across the team instead of pooling in one person.</p></div>
 
 So what actually changes when a team makes that shift? It's less about adding agents and more about redesigning how the work flows around them.
 
@@ -106,7 +122,9 @@ The key insight is that agents are most valuable when they're embedded in a team
 
 That's the multiplayer mode. And it's the one that moves the organizational numbers.
 
----
+## The Next Three Years
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Individual wins were a preview, not the transformation — the real gains come from engineering for collective output, and the teams that do it first win on quality, not just speed.</p></div>
 
 The individual wins from AI are real. I'm not dismissing them. But they're not transformation. They're a preview of what transformation could look like if we stopped optimizing for personal productivity and started engineering for collective output.
 
