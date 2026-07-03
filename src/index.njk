@@ -52,7 +52,7 @@ permalink: /
 <section class="thismonth">
   <h2 class="section-h2"><span class="slash section-h2__slash">//</span>This month</h2>
   <div class="thismonth__grid">
-    {%- for post in allPosts | take(3) -%}
+    {%- for post in allPosts | between(1, 4) -%}
     <a class="pcard" href="{{ post.url }}">
       <span class="pcard__thumb duotone"><img src="{{ post.data.featuredImage }}" alt=""></span>
       <span class="pcard__text">
