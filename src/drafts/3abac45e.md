@@ -92,6 +92,8 @@ List them. Name them explicitly. If you can't, you don't know your dependency pr
 **2. For each of those workflows — is there a functioning human fallback?**
 Not in theory. In practice. Is there a person who knows how to do this without the model? If not, you haven't augmented a human — you've replaced one without planning for the replacement to fail.
 
+Once you've answered #1 and #2, you can write the single line your board actually needs to hear: *"X% of our revenue-or-compliance workflow value is currently dependent on a single AI provider with no tested fallback."* That sentence belongs in the risk register next to your other concentration risks — vendor, key-person, single-region — because that's exactly what it is. If you can't fill in the number, the number is effectively 100%.
+
 **3. Where is AI augmenting judgment, and where has it absorbed judgment?**
 Augmentation means the human is still the reasoner and the model accelerates them. Absorption means the model is the reasoner and the human is approving outputs they can no longer independently evaluate. You want as much of the first as possible. The second is where you're exposed.
 
@@ -108,11 +110,13 @@ Diagnosis is cheap. Let me be concrete about the two fallbacks that matter — o
 
 **The technical fallback is resilience engineering, and it's not exotic.** If a single provider outage can halt a revenue workflow, that's an architecture decision you made by default. The patterns that fix it are well understood:
 
-- **Multi-provider routing.** Put an abstraction layer between your app and any one model API, so a failing provider fails over to another (Anthropic → OpenAI → Google, or an open-weight model you host) instead of failing the user. Model-agnostic orchestration is the AI-era version of not single-homing your database.
+- **Multi-provider routing.** Put an abstraction layer between your app and any one model API, so a failing provider fails over to another (Anthropic → OpenAI → Google, or an open-weight model you host) instead of failing the user. Model-agnostic orchestration is the AI-era version of not single-homing your database. The honest caveat: providers don't share tool-calling and structured-output schemas, so failover isn't a load-balancer swap — it's a compatibility layer you build and maintain, normalizing each provider's quirks behind one internal contract. Budget for that layer, not just the routing.
+- **State and in-flight reconciliation.** The hard case isn't the request that never started — it's the agentic workflow mid-tool-call when the provider drops. That leaves a half-finished transaction, not a clean retry. Decide up front how in-flight work is checkpointed and reconciled, or your "failover" quietly corrupts state instead of preserving it.
 - **Degraded-mode fallbacks.** Decide in advance what "the model is down" *does*. Serve a cached answer? Route to a smaller/local model? Drop to a deterministic rules path and flag for human review? A workflow with no degraded mode isn't resilient — it's just up until it isn't.
 - **Caching and circuit breakers.** Cache frequent responses so an outage doesn't take out your entire read path, and wrap provider calls in circuit breakers so one hung dependency doesn't cascade into everything that touches it.
+- **Test it like you mean it.** A resilience diagram that's never been exercised is fiction. Run provider-outage game days — kill the primary in staging (or prod, if you're brave) and watch what actually happens. Chaos engineering for AI dependencies is the only thing that turns "we have a fallback" into a claim you can defend.
 
-None of this is a research project. It's a Tuesday for a competent platform team — and the reason to fund it is that the alternative is Company B.
+This is real engineering, not a research project — but don't let anyone sell it to you as trivial either. For a mid-sized platform team, budget it as a focused multi-week build for the first critical workflow (routing + one alternate provider + degraded mode + a game day), then incremental per workflow after that. The reason to fund it is simple: the alternative is Company B.
 
 ---
 
@@ -128,6 +132,8 @@ If your junior staff never built the underlying skill, "keep a human in the loop
 
 One concrete org-design move I'd point to: a claims team that had collapsed into pure output review split itself into two tracks — a "flow" track running AI-accelerated volume, and a rotating "reasoning" track that works a subset of cases model-off and owns training the flow track. Same headcount, restructured. The reasoning track is the insurance policy. It costs a little throughput and buys back the thing Company B lost: people who can still do the work when the API can't.
 
+And measure it, or it becomes theater within two quarters. The KPI that matters isn't how many model-off cases the reasoning track clears — it's the gap between model-off and model-on outcomes on the same case type. Track the reasoning track's accuracy (or decision quality) against the flow track's on a shared sample. When the gap is near zero, the muscle is live. When model-off quality starts drifting below model-on, the muscle is atrophying and your fallback is eroding — before an outage tells you the hard way.
+
 ---
 
 ## Run This Monday: A Two-Hour Exercise
@@ -141,6 +147,8 @@ If you want the X-ray developed rather than filed, put two hours on your leaders
 5. **(20 min) Write the exit answer.** For your single biggest dependency, draft the honest answer to Question 4. If it's "we'd be in serious trouble," you've just found your most important AI initiative of the quarter.
 
 Two hours. No consultant. You'll learn more about your real AI posture than any maturity assessment will tell you.
+
+**If you own a single workflow rather than the whole org,** run the same thing scoped down — 45 minutes, just your process. List the AI touchpoints in your workflow, run Company A / Company B on it honestly, mark where you've drifted from augmentation to absorption, and name one technical and one human fallback you can own without waiting for the C-suite offsite. The leadership version maps the portfolio; this version fixes the workflow you're actually accountable for. Don't wait for the offsite to be scheduled to do the part you already control.
 
 ---
 
