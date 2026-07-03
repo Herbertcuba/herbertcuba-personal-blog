@@ -737,6 +737,28 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .scifi em{color:var(--green);font-style:normal;}
 @media (max-width:760px){.scifi{margin:44px calc(-1 * var(--gutter));padding:32px var(--gutter);} .scifi p{font-size:16px;}}
 
+/* ── Key message / thesis statement (full-bleed, large-type standout) ── */
+.keymsg{
+  background:#000;border-top:2px solid var(--green);border-bottom:2px solid var(--green);
+  margin:60px calc(-1 * var(--gutter));padding:56px var(--gutter) 58px;
+  position:relative;overflow:hidden;
+}
+.keymsg::before{
+  content:"";position:absolute;top:-40%;right:-10%;width:60%;height:180%;pointer-events:none;
+  background:radial-gradient(circle at center, rgba(0,230,83,0.14) 0%, transparent 60%);
+}
+.keymsg__label{position:relative;font-family:var(--font-mono);font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--green);margin-bottom:22px;}
+.keymsg p.keymsg__text{
+  position:relative;font-family:var(--font-display);font-weight:700;
+  font-size:30px;line-height:1.28;letter-spacing:-0.01em;color:var(--text);max-width:20ch;margin:0;
+}
+.keymsg__text .hl{color:var(--green);}
+.keymsg p{position:relative;font-family:var(--font-body);font-weight:400;font-size:17px;line-height:1.6;color:var(--text-2);max-width:56ch;margin:22px 0 0;}
+@media (max-width:760px){
+  .keymsg{margin:48px calc(-1 * var(--gutter));padding:40px var(--gutter);}
+  .keymsg p.keymsg__text{font-size:23px;max-width:none;}
+}
+
 
 /* ---- Read next ---- */
 .art-readnext{background:#000;color:var(--text);padding:64px var(--gutter) 72px;border-top:2px solid var(--green);}
