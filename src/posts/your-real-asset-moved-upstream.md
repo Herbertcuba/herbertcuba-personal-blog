@@ -3,7 +3,8 @@ title: "Your Real Asset Moved Upstream"
 date: 2026-07-03
 excerpt: "For fifty years, code was the asset and everything else was documentation. Agentic development quietly inverts that — and most organizations haven't noticed what they're now responsible for maintaining."
 featuredImage: /images/posts/spec-is-new-source-code.webp
-permalink: /drafts/ece8097a/
+layout: post.njk
+theme: agentic-engineering
 anthem: true
 tldr:
   - "When an agent can regenerate code from a clear spec, the spec becomes the durable asset and the code becomes disposable output."
