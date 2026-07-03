@@ -15,6 +15,15 @@ trending: true
 
 72% of business leaders say their AI investments have not yet produced measurable ROI. That's not a fringe number — that's KPMG, surveying senior executives across industries. Gartner found that 49% of CIOs say AI has failed to deliver the returns they expected from 2023–2024 investments. McKinsey puts the share of organizations with genuine, bottom-line AI impact at around 5%.
 
+<div class="statband">
+<p class="fig-cap">The ROI that isn't showing up</p>
+  <div class="statband__grid">
+    <div class="statband__item"><div class="statband__num">72%</div><div class="statband__label">of leaders see no measurable AI ROI yet (KPMG)</div></div>
+    <div class="statband__item"><div class="statband__num">49%</div><div class="statband__label">of CIOs say AI missed expected returns (Gartner)</div></div>
+    <div class="statband__item"><div class="statband__num">~5%</div><div class="statband__label">of orgs have genuine bottom-line impact (McKinsey)</div></div>
+  </div>
+</div>
+
 The narrative doesn't match the reality. And I think I know why.
 
 ---
@@ -51,13 +60,47 @@ Anthropic signaled exactly this with the launch of [Claude Tag](https://www.anth
 
 Not more agents. Not more automation. *Better coordination* between human expertise and agent execution.
 
+<div class="scifi">
+<span class="scifi__label">Meanwhile, in science fiction</span>
+<p class="scifi__film">Ocean's Eleven</p>
+<p>Danny Ocean doesn't rob the Bellagio by being the smartest guy in the room. He wins by <em>casting roles</em> — the pickpocket, the explosives guy, the inside man, the acrobat — and coordinating them so each does the one thing they're best at, at exactly the right moment. A single genius, however brilliant, never cracks that vault.</p>
+<p>That's the whole argument. The one-man army is Danny trying to do the whole heist alone. Multiplayer mode is the <em>crew</em> — humans and agents cast into clear roles, their work timed to compound instead of collide.</p>
+</div>
+
 The question isn't "how do we get AI to do more?" It's "how do we organize a team where humans and agents each do what they're actually best at, and where their work compounds instead of competing?"
 
 That's a fundamentally different design problem. It's an operating model question, not a technology question. And it's where I think the real transformation will happen.
 
 ---
 
-This is what I've been building toward with [APEX](https://cubagarcia.com/posts/2026-04-05-apex-framework/) — an operating model for exactly this kind of human-agent collaboration. Not a framework for automating humans out of the loop, but a structured way to keep human expertise central while using agents to accelerate production, scale execution, and reduce the parts of the work that don't require judgment.
+So what actually changes when a team makes that shift? It's less about adding agents and more about redesigning how the work flows around them.
+
+<div class="fig-band">
+<p class="fig-cap">fig. — the shift that moves the org numbers</p>
+  <div class="versus">
+    <div class="versus__side versus__side--a">
+      <span class="versus__tag">Single-player</span>
+      <span class="versus__name">The one-man army</span>
+      <ul class="versus__list">
+        <li>One person is the connective tissue between AI and the work</li>
+        <li>Incompatible personal setups only the builder understands</li>
+        <li>No shared context, no coordination, no productive challenge</li>
+        <li>Output goes up — the org's numbers don't</li>
+      </ul>
+    </div>
+    <div class="versus__vs">vs</div>
+    <div class="versus__side versus__side--b">
+      <span class="versus__tag">Multiplayer</span>
+      <span class="versus__name">Humans + agents by role</span>
+      <ul class="versus__list">
+        <li>Agents embedded in the team, scoped to clear roles</li>
+        <li>Context flows deliberately between people and agents</li>
+        <li>Humans do the judgment work only they can do</li>
+        <li>Gains compound across the team instead of pooling at the edge</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 The key insight is that agents are most valuable when they're embedded in a team design — where roles are clear, context flows deliberately, and the humans in the system are actually doing the work only they can do. Not managing prompts. Not babysitting outputs. Applying the expertise that agents can't replicate.
 
@@ -69,6 +112,8 @@ The individual wins from AI are real. I'm not dismissing them. But they're not t
 
 The teams that figure this out first won't just be faster. They'll be better — because they'll have found a way to keep expertise in the loop while removing everything that was slowing it down.
 
-We've spent three years getting individuals faster. The next three years will be about getting teams better.
-
-That's the shift. And that's where the numbers finally move.
+<div class="keymsg">
+<span class="keymsg__label">The next three years</span>
+<p class="keymsg__text">We spent three years making <span class="hl">individuals faster</span>. The next three are about making <span class="hl">teams better</span>.</p>
+<p>That's the shift from single-player to multiplayer — and it's where the organizational numbers finally move.</p>
+</div>
