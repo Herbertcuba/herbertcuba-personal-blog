@@ -106,6 +106,7 @@ permalink: /
       <a class="titem" href="{{ post.url }}">
         <span class="titem__meta mono">
           <span>{{ post.date | isoDate }}</span>
+          {%- if post | isTrending(trending) -%}<span class="chip chip--trending"><svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12 L6 7 L9 10 L15 4"></path><path d="M10 4 H15 V9"></path></svg>trending</span>{%- endif -%}
           {%- for tag in post.data.tags | displayTags(2) -%}<span class="chip chip--light">{{ tag }}</span>{%- endfor -%}
         </span>
         <span class="titem__title">{{ post.data.title }}</span>
