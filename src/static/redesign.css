@@ -164,7 +164,9 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   line-height:1.4;white-space:nowrap;
 }
 .chip--light{border-color:var(--border-light);color:var(--ink-2);}
-.chip--trending{border-color:var(--green-light);color:var(--green-light);display:inline-flex;align-items:center;gap:4px;font-weight:700;}
+.titem__titlerow{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.trend-mark{flex:none;display:inline-flex;align-items:center;gap:4px;font-size:10.5px;letter-spacing:0.04em;text-transform:uppercase;color:var(--green-light);transform:translateY(-1px);}
+.trend-mark svg{flex:none;}
 
 /* Buttons */
 .btn{
