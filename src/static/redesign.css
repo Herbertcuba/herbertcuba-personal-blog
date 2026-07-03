@@ -683,6 +683,37 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .funnel__bar{height:auto;padding:12px 16px;}
 }
 
+/* ── TL;DR block (top of article) ── */
+.art-tldr{background:#0A1A0F;color:var(--text);border-left:4px solid var(--green);padding:22px 26px;margin:0 0 36px;}
+.art-tldr__label{font-size:11px;letter-spacing:0.14em;color:var(--green);margin-bottom:10px;}
+.art-tldr p{margin:0;font-size:18px;line-height:1.55;color:var(--text);}
+.art-tldr ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;}
+.art-tldr li{font-size:16px;line-height:1.5;color:var(--text);}
+
+/* ── Anthem index (in-article TOC) ── */
+.art-index{border:1px solid var(--border-light);background:#F7FAF7;padding:20px 24px;margin:0 0 40px;}
+.art-index__label{font-size:11px;letter-spacing:0.1em;color:var(--green-light);margin-bottom:12px;}
+.art-index__list{margin:0;padding:0;list-style:none;counter-reset:idx;column-count:2;column-gap:32px;}
+.art-index__list li{counter-increment:idx;margin:0 0 8px;break-inside:avoid;font-size:15px;line-height:1.4;}
+.art-index__list li::before{content:counter(idx,decimal-leading-zero)" ";font-family:var(--font-mono);font-size:12px;color:var(--faint-light);margin-right:8px;}
+.art-index__list a{color:var(--ink);font-weight:400;text-decoration:none;}
+.art-index__list a:hover{color:var(--green-light);text-decoration:underline;}
+@media (max-width:640px){.art-index__list{column-count:1;}}
+
+/* ── Spec-doc excerpt (a spec artifact shown inline — NOT a pull-quote) ── */
+.spec-doc{
+  background:#F4F7F4;border:1px solid var(--border-light);border-left:3px solid var(--green-light);
+  padding:16px 20px;margin:18px 0 28px;
+}
+.spec-doc__label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--green-light);display:block;margin-bottom:10px;}
+.spec-doc p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-2);}
+.spec-doc ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;}
+.spec-doc li{font-size:15px;line-height:1.55;color:var(--ink-2);}
+.spec-doc--code{background:#0A1A0F;border-left-color:var(--green);}
+.spec-doc--code .spec-doc__label{color:var(--green);}
+.spec-doc--code p{font-family:var(--font-mono);font-size:14px;color:var(--text);}
+
+
 /* ---- Read next ---- */
 .art-readnext{background:#000;color:var(--text);padding:64px var(--gutter) 72px;border-top:2px solid var(--green);}
 .art-readnext .apex-h2{margin-bottom:36px;}

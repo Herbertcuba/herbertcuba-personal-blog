@@ -76,6 +76,30 @@ ctaHidden: true
         Download this as an e-paper
       </a>
       {%- endif -%}
+
+      {%- if tldr -%}
+      <div class="art-tldr">
+        <div class="art-tldr__label mono">TL;DR</div>
+        {%- if tldr is string -%}
+        <p>{{ tldr }}</p>
+        {%- else -%}
+        <ul>{%- for point in tldr %}<li>{{ point }}</li>{% endfor -%}</ul>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+
+      {%- if anthem -%}
+      {%- set toc = content | toc -%}
+      {%- if toc | length > 2 -%}
+      <nav class="art-index" aria-label="In this article">
+        <div class="art-index__label mono">// in this article</div>
+        <ol class="art-index__list">
+          {%- for h in toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor -%}
+        </ol>
+      </nav>
+      {%- endif -%}
+      {%- endif -%}
+
       {{ content | safe }}
     </article>
   </div>

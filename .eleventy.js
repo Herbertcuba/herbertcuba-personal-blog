@@ -61,6 +61,20 @@ export default function(eleventyConfig) {
   // Zero-pad a number to 3 digits — insight numbering (057)
   eleventyConfig.addFilter("padNum", (n) => String(n).padStart(3, "0"));
 
+  // Build a table of contents from rendered content HTML: extract <h2 id="...">text</h2>.
+  // markdown-it-anchor adds the id attributes. Returns [{id, text}] for the anthem index.
+  eleventyConfig.addFilter("toc", (content) => {
+    if (!content) return [];
+    const out = [];
+    const re = /<h2[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g;
+    let m;
+    while ((m = re.exec(String(content))) !== null) {
+      const text = m[2].replace(/<[^>]+>/g, "").trim();
+      if (text) out.push({ id: m[1], text });
+    }
+    return out;
+  });
+
   // Is a post trending? GA4 data (src/_data/trending.js) wins when present;
   // otherwise fall back to the post's manual `trending: true` frontmatter flag.
   // Usage in templates: {% if post | isTrending(trending) %}
