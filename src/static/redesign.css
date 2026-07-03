@@ -793,6 +793,20 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .bshift__arrow{transform:rotate(90deg);height:22px;}
 }
 
+/* ── Numbered list (findings / steps with title + description) ── */
+.numlist{margin:8px 0 4px;display:flex;flex-direction:column;}
+.numlist__eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);margin-bottom:20px;}
+.numlist__item{display:flex;gap:20px;align-items:flex-start;padding:20px 0;border-top:1px solid rgba(0,230,83,0.18);}
+.numlist__item:last-child{border-bottom:1px solid rgba(0,230,83,0.18);}
+.numlist__n{flex:none;font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;color:var(--green);width:44px;letter-spacing:-0.02em;}
+.numlist__body{flex:1;}
+.numlist__title{font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.25;color:var(--text);margin:0 0 6px;}
+.numlist__desc{font-size:14.5px;line-height:1.55;color:var(--text-2);margin:0;}
+@media (max-width:760px){
+  .numlist__item{gap:14px;}
+  .numlist__n{font-size:22px;width:32px;}
+}
+
 
 /* ---- Read next ---- */
 .art-readnext{background:#000;color:var(--text);padding:64px var(--gutter) 72px;border-top:2px solid var(--green);}

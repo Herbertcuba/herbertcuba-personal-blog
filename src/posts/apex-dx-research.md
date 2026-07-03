@@ -6,6 +6,13 @@ featuredImage: "/images/posts/apex-dx-research.webp"
 layout: post.njk
 tags: ["ai", "agents", "apex", "strategy"]
 theme: operating-models
+anthem: true
+tldr:
+  - "DX's research with Brian Houck confirms what production practitioners already knew: spec quality beats model capability, and agent experience is a subset of developer experience."
+  - "Fast code generation doesn't remove the bottleneck — it relocates it downstream to review, integration, and validation, which most teams haven't redesigned around."
+  - "AI readiness is cultural and contextual, not just licenses: adoption is 7× higher where leadership advocates and trusted peers model it."
+  - "Writing code is ~14% of the job. The other 86% — judgment, verification, architecture — is where strong engineers get more valuable, not less."
+  - "The constraint was never model capability. It's organizational readiness — which is exactly what APEX gives an ownable, measurable structure."
 ---
 
 DX recently published their research briefing with Brian Houck, Distinguished Scientist at DX, on how AI is changing engineering productivity. The data is precise, the framing is careful, and for anyone who has been running agents in production rather than just talking about running them, the findings land exactly where you'd expect.
@@ -27,53 +34,51 @@ I want to take each major finding seriously — not to rubber-stamp them, but be
 
 Six findings. Six places where the research names the problem but stops short of telling you what to build. Here's what we'll cover:
 
-<div class="findings-section">
-  <div class="findings-section__inner">
-    <span class="findings-section__eyebrow">Six findings</span>
-    <ol class="findings-list">
-      <li class="findings-list__item">
-        <span class="findings-list__number">01</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">Agent experience is a subset of developer experience</p>
-          <p class="findings-list__desc">The conditions that let agents do useful work — clear requirements, accurate data, sufficient context — are the agent-side counterpart to developer experience, not a separate discipline.</p>
-        </div>
-      </li>
-      <li class="findings-list__item">
-        <span class="findings-list__number">02</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">The DX Core 4 dimensions of productivity remain stable</p>
-          <p class="findings-list__desc">Speed, Effectiveness, Quality, and Impact still hold. AI changes how work gets done, not what engineering organizations are trying to accomplish. But diagnostic metrics now require more careful interpretation.</p>
-        </div>
-      </li>
-      <li class="findings-list__item">
-        <span class="findings-list__number">03</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">Code generation shifts the bottleneck, not eliminates it</p>
-          <p class="findings-list__desc">When agents write code fast, the constraint moves downstream — to review, integration, and validation. PR size has nearly doubled over the past year. Most teams haven't adapted.</p>
-        </div>
-      </li>
-      <li class="findings-list__item">
-        <span class="findings-list__number">04</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">AI readiness depends on culture, infrastructure, and context</p>
-          <p class="findings-list__desc">Licenses and access are the easiest layer to solve. Developers adopt AI at 7x the rate when leadership advocates for it and trusted peers model it on real work.</p>
-        </div>
-      </li>
-      <li class="findings-list__item">
-        <span class="findings-list__number">05</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">Documentation quality compounds as agents rely on shared context</p>
-          <p class="findings-list__desc">Teams with higher documentation satisfaction onboard new developers 2x faster. The same effect applies to agents — and human-readable docs may need to be separated from agent-specific memory.</p>
-        </div>
-      </li>
-      <li class="findings-list__item">
-        <span class="findings-list__number">06</span>
-        <div class="findings-list__body">
-          <p class="findings-list__title">AI is changing roles, but engineering judgment remains central</p>
-          <p class="findings-list__desc">Writing code is 14% of a developer's day. Agents are far less capable across verification, architecture, and deciding what's worth building. Strong engineers become more valuable, not less.</p>
-        </div>
-      </li>
-    </ol>
+<div class="fig-band">
+  <div class="numlist">
+    <span class="numlist__eyebrow">Six findings</span>
+    <div class="numlist__item">
+      <span class="numlist__n">01</span>
+      <div class="numlist__body">
+        <p class="numlist__title">Agent experience is a subset of developer experience</p>
+        <p class="numlist__desc">The conditions that let agents do useful work — clear requirements, accurate data, sufficient context — are the agent-side counterpart to developer experience, not a separate discipline.</p>
+      </div>
+    </div>
+    <div class="numlist__item">
+      <span class="numlist__n">02</span>
+      <div class="numlist__body">
+        <p class="numlist__title">The DX Core 4 dimensions of productivity remain stable</p>
+        <p class="numlist__desc">Speed, Effectiveness, Quality, and Impact still hold. AI changes how work gets done, not what engineering organizations are trying to accomplish. But diagnostic metrics now require more careful interpretation.</p>
+      </div>
+    </div>
+    <div class="numlist__item">
+      <span class="numlist__n">03</span>
+      <div class="numlist__body">
+        <p class="numlist__title">Code generation shifts the bottleneck, not eliminates it</p>
+        <p class="numlist__desc">When agents write code fast, the constraint moves downstream — to review, integration, and validation. PR size has nearly doubled over the past year. Most teams haven't adapted.</p>
+      </div>
+    </div>
+    <div class="numlist__item">
+      <span class="numlist__n">04</span>
+      <div class="numlist__body">
+        <p class="numlist__title">AI readiness depends on culture, infrastructure, and context</p>
+        <p class="numlist__desc">Licenses and access are the easiest layer to solve. Developers adopt AI at 7&times; the rate when leadership advocates for it and trusted peers model it on real work.</p>
+      </div>
+    </div>
+    <div class="numlist__item">
+      <span class="numlist__n">05</span>
+      <div class="numlist__body">
+        <p class="numlist__title">Documentation quality compounds as agents rely on shared context</p>
+        <p class="numlist__desc">Teams with higher documentation satisfaction onboard new developers 2&times; faster. The same effect applies to agents — and human-readable docs may need to be separated from agent-specific memory.</p>
+      </div>
+    </div>
+    <div class="numlist__item">
+      <span class="numlist__n">06</span>
+      <div class="numlist__body">
+        <p class="numlist__title">AI is changing roles, but engineering judgment remains central</p>
+        <p class="numlist__desc">Writing code is 14% of a developer's day. Agents are far less capable across verification, architecture, and deciding what's worth building. Strong engineers become more valuable, not less.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -81,7 +86,9 @@ Each one maps directly to a structural decision. Let's go through them.
 
 ---
 
-### Agent experience is a subset of developer experience
+## Agent experience is a subset of developer experience
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agent experience isn't a new discipline — it's developer-experience thinking applied to agents, and it's what caps the return on your model and tooling spend.</p></div>
 
 Houck's framing here is worth sitting with. Agent experience — whether agents have the right conditions to do useful work — isn't a new discipline. It's a direct extension of developer experience thinking applied to agents. Clear requirements, accurate data, sufficient context, a shared understanding of what good output looks like. The same variables that determine whether a developer can do great work determine whether an agent can.
 
@@ -96,7 +103,9 @@ That's a meaningful reframe. Most AI investment in engineering organizations is 
 
 APEX's entire Strategic Phase is structured around this. The Spec Area — Business Context, Spec Engineering, QA Strategic — exists to answer the question Houck is pointing at: what does an agent actually need to do useful work, and who owns making sure it has it? When agent output is mediocre, the instinct is to blame the model. The correct question is whether the agent had what it needed in the first place.
 
-### The DX Core 4 dimensions of productivity remain stable
+## The DX Core 4 dimensions of productivity remain stable
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The four productivity dimensions still hold — but AI has made the signals harder to read, so you need agent-specific metrics to decode what they now mean.</p></div>
 
 This finding deserves more attention than it typically gets in AI coverage. Houck argued that the four dimensions of engineering productivity DX tracks — Speed, Effectiveness, Quality, and Impact — remain stable even as AI reshapes how work gets done. The objective hasn't changed. The path to it has.
 
@@ -106,7 +115,9 @@ The same applies to token usage. Houck framed it explicitly as a cost metric, no
 
 This is where APEX Metrics matter. First-pass acceptance rate, iteration depth, human touch rate, calibration impact — these are designed to give you the additional context that makes traditional metrics interpretable again. You don't abandon the DX Core 4. You surround them with the agent-specific signals that explain what's driving them.
 
-### Code generation shifts the bottleneck
+## Code generation shifts the bottleneck
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Instant generation doesn't eliminate the constraint — it relocates it to review, integration, and validation, which is why agent-to-agent review before a human sees the work matters.</p></div>
 
 DX's data shows PR size has nearly doubled over the past year. Agents write code fast. Everything downstream — integration, testing, review — hasn't scaled at the same rate. The bottleneck moved without anyone planning for it.
 
@@ -129,7 +140,9 @@ Houck proposed measuring "idea to customer" rather than PR merge rate — how fa
 
 This is the structural reason agent-to-agent review matters. In APEX, work passes through an automated review loop before a human sees it. By the time a human verifies, the mechanical problems are already resolved. The human's job is to assess whether the work actually captures the intent — the "idea to customer" signal Houck is pointing at. Without that structure, faster generation just produces more unvalidated output for humans to sort through.
 
-### AI readiness depends on culture, infrastructure, and context
+## AI readiness depends on culture, infrastructure, and context
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Licenses are the easy layer; culture and context move adoption — and agents amplify whatever spec quality already exists, so calibration cycles are how you build the social proof that compounds.</p></div>
 
 Houck described AI readiness across four dimensions: tooling, culture, infrastructure, and context. Of these, tooling and licenses are the easiest layer to solve. They're also where most organizations stop.
 
@@ -146,7 +159,9 @@ Context readiness is especially critical for agents specifically. Agents amplify
 
 This maps directly to why APEX treats the Reflection Phase as mandatory. The organizations that run calibration cycles consistently — measuring what worked, adjusting the system, running again — are the ones where agents visibly improve over time. Visible improvement is how you build the internal social proof that compounds into organization-wide adoption.
 
-### Documentation quality compounds
+## Documentation quality compounds
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Shared context cuts the inference where drift happens — but agent memory and human docs are different artifacts, and you have to validate that your context layer is actually improving output.</p></div>
 
 Brian's unpublished DX research shows that teams with higher documentation satisfaction onboard new developers about 2x faster. The same effect applies to agents, though further research is still being done. The mechanism is the same: shared context reduces inference, and inference is where drift happens.
 
@@ -154,7 +169,9 @@ Reock added a useful distinction here that often gets glossed over: human-readab
 
 This is an extension of the specification quality finding, but at the infrastructure level. It's not just about writing better specs for individual tasks. It's about maintaining a context layer — agent-specific markdown, structured memory, versioned instructions — that agents can actually consume reliably. And then validating that it's working. Houck emphasized this explicitly: if you invest in better context, you also need ways to confirm it improves agent output and to detect regressions when it doesn't.
 
-### AI is changing roles, but engineering judgment remains central
+## AI is changing roles, but engineering judgment remains central
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents cover the ~14% that's writing code; the 86% of judgment they can't handle is where expertise concentrates and moves up a level — from doing to orchestrating.</p></div>
 
 Writing code is roughly 14% of a developer's day. Agents are increasingly capable at that 14%. Across the rest of the job — verification, failure detection, architecture, operations, deciding what's worth building — they're far less capable. The scope of what's being automated is narrower than the coverage of the conversation around it.
 
