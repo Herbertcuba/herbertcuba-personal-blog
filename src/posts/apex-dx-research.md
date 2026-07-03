@@ -90,7 +90,7 @@ Each one maps directly to a structural decision. Let's go through them.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agent experience isn't a new discipline — it's developer-experience thinking applied to agents, and it's what caps the return on your model and tooling spend.</p></div>
 
-Houck's framing here is worth sitting with. Agent experience — whether agents have the right conditions to do useful work — isn't a new discipline. It's a direct extension of developer experience thinking applied to agents. Clear requirements, accurate data, sufficient context, a shared understanding of what good output looks like. The same variables that determine whether a developer can do great work determine whether an agent can.
+Houck's framing here is a useful reframe. Agent experience — whether agents have the right conditions to do useful work — isn't a new discipline. It's a direct extension of developer experience thinking applied to agents. Clear requirements, accurate data, sufficient context, a shared understanding of what good output looks like. The same variables that determine whether a developer can do great work determine whether an agent can.
 
 The research citation he used makes this concrete: Sara Chizari's work shows that the strongest predictor of multi-agent success is specification quality, not model capability.
 

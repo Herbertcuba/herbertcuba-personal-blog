@@ -62,7 +62,7 @@ This is creating what I think of as the Understanding Premium — a widening gap
 
 ## What this means practically
 
-Three implications worth sitting with:
+Three implications follow:
 
 **Understanding compounds, speed doesn't.** A person who spends a week deeply understanding a domain can then produce months of high-quality output through agents. A person who skips the understanding phase produces faster but has to redo, redirect, and repair constantly. The upfront investment in comprehension is the highest-leverage time you can spend.
 

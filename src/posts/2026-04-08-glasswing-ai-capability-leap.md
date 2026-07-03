@@ -80,7 +80,7 @@ The twelve partners aren't collaborating because it's good PR. They're collabora
 
 That's the real signal here. Not the benchmarks. Not the zero-days. The fact that the most competitive companies in technology looked at what AI can now do and concluded: this one, we handle together.
 
-And here's the thing worth sitting with: Mythos is a preview. Not a product. Anthropic explicitly says they plan to bring Mythos-class capabilities to a future Opus release once they've developed adequate safeguards. That means the model that just found thousands of zero-days autonomously is the starting point, not the ceiling.
+And here's the thing: Mythos is a preview. Not a product. Anthropic explicitly says they plan to bring Mythos-class capabilities to a future Opus release once they've developed adequate safeguards. That means the model that just found thousands of zero-days autonomously is the starting point, not the ceiling.
 
 We are going to get an extraordinarily capable model. And then a better one. And then another. The cybersecurity application is just the most dramatic demonstration of a broader truth: AI capability is compounding faster than our institutions, our security practices, and our mental models can keep up with.
 

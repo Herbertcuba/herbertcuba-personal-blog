@@ -48,7 +48,7 @@ But the organization's numbers don't move.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Individual AI gains are measurable and large, but they pool at the edge — in the person and their private setup — and never propagate to team-level KPIs.</p></div>
 
-There's a pattern in the data worth sitting with. BCG found that individual consultants using AI outperformed their peers by 25% on speed and 40% on quality. But those gains didn't propagate to team-level business KPIs. The DX Institute found the same thing in engineering: developer-level productivity metrics improved 15–45% with AI tools, but DORA metrics — the ones that actually measure software delivery at the organizational level — showed no statistically significant improvement.
+There's a pattern in the data. BCG found that individual consultants using AI outperformed their peers by 25% on speed and 40% on quality. But those gains didn't propagate to team-level business KPIs. The DX Institute found the same thing in engineering: developer-level productivity metrics improved 15–45% with AI tools, but DORA metrics — the ones that actually measure software delivery at the organizational level — showed no statistically significant improvement.
 
 The gains are real. They're just trapped.
 

@@ -89,6 +89,6 @@ The companies building their backbone right now — quietly, without press relea
 
 I wrote that line as a prediction. It's starting to feel like a caption.
 
-The disillusionment is not the end of the story. It is the prerequisite for the next chapter. The question worth sitting with is not whether to continue — it's whether you're building something during this phase, or just waiting for it to pass.
+The disillusionment is not the end of the story. It is the prerequisite for the next chapter. The real question is not whether to continue — it's whether you're building something during this phase, or just waiting for it to pass.
 
 I wrote [*The Three Crucibles*](https://www.amazon.com/dp/B0GTK53C9H) to try to map this sequence — the correction, the transformation, and what comes after. If you're in the thick of figuring out where your organization goes from here, it might be a useful frame.
