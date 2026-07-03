@@ -14,6 +14,17 @@ Not because the research is surprising. Because it confirms what the hard cases 
 
 I want to take each major finding seriously — not to rubber-stamp them, but because the gap between knowing the research and knowing what to do with it is exactly where most organizations get stuck.
 
+<div class="statband">
+<p class="fig-cap">What the data actually says</p>
+  <div class="statband__grid">
+    <div class="statband__item"><div class="statband__num">14%</div><div class="statband__label">of a developer's day is spent writing code</div></div>
+    <div class="statband__item"><div class="statband__num">7&times;</div><div class="statband__label">higher daily AI adoption when leadership advocates</div></div>
+    <div class="statband__item"><div class="statband__num">~2&times;</div><div class="statband__label">growth in PR size over the past year</div></div>
+    <div class="statband__item"><div class="statband__num">2&times;</div><div class="statband__label">faster onboarding with strong documentation</div></div>
+    <div class="statband__item"><div class="statband__num">86%</div><div class="statband__label">of the job is judgment agents can't reliably handle</div></div>
+  </div>
+</div>
+
 Six findings. Six places where the research names the problem but stops short of telling you what to build. Here's what we'll cover:
 
 <div class="findings-section">
@@ -74,7 +85,12 @@ Each one maps directly to a structural decision. Let's go through them.
 
 Houck's framing here is worth sitting with. Agent experience — whether agents have the right conditions to do useful work — isn't a new discipline. It's a direct extension of developer experience thinking applied to agents. Clear requirements, accurate data, sufficient context, a shared understanding of what good output looks like. The same variables that determine whether a developer can do great work determine whether an agent can.
 
-The research citation he used makes this concrete: Sara Chizari's work shows that the strongest predictor of multi-agent success is specification quality, not model capability. Houck put it directly: "Agent capabilities are what vendors sell you. Agent experience is what developers actually get."
+The research citation he used makes this concrete: Sara Chizari's work shows that the strongest predictor of multi-agent success is specification quality, not model capability.
+
+<div class="callout">
+<span class="callout__label">The reframe</span>
+<p>"Agent capabilities are what vendors sell you. Agent experience is what developers actually get." &mdash; Brian Houck, DX</p>
+</div>
 
 That's a meaningful reframe. Most AI investment in engineering organizations is going toward model selection, tooling access, and prompt experimentation. The research says the return on those investments is limited by a variable most teams aren't managing: the quality of the conditions they're giving agents to work in.
 
@@ -94,6 +110,19 @@ This is where APEX Metrics matter. First-pass acceptance rate, iteration depth, 
 
 DX's data shows PR size has nearly doubled over the past year. Agents write code fast. Everything downstream — integration, testing, review — hasn't scaled at the same rate. The bottleneck moved without anyone planning for it.
 
+<div class="fig-band">
+<p class="fig-cap">fig. — the bottleneck relocated, it didn't disappear</p>
+  <div class="bshift">
+    <div class="bshift__stage"><span class="bshift__k">Generation</span><span class="bshift__v">Now instant</span><span class="bshift__note">agents, ~2&times; PR size</span></div>
+    <div class="bshift__arrow">→</div>
+    <div class="bshift__stage bshift__stage--slow"><span class="bshift__k">Review</span><span class="bshift__v">Didn't scale</span><span class="bshift__note">humans, unchanged</span></div>
+    <div class="bshift__arrow">→</div>
+    <div class="bshift__stage bshift__stage--slow"><span class="bshift__k">Integration</span><span class="bshift__v">Didn't scale</span><span class="bshift__note">45-min builds</span></div>
+    <div class="bshift__arrow">→</div>
+    <div class="bshift__stage bshift__stage--slow"><span class="bshift__k">Validation</span><span class="bshift__v">Didn't scale</span><span class="bshift__note">flaky tests</span></div>
+  </div>
+</div>
+
 Justin Reock, DX's Deputy CTO, acknowledged this directly: if code can be generated instantly but builds take 45 minutes or tests are flaky, you haven't eliminated the constraint. You've relocated it. And a relocated bottleneck that nobody has redesigned around is often worse than the original one, because the team is still optimizing for the wrong thing.
 
 Houck proposed measuring "idea to customer" rather than PR merge rate — how fast intent becomes production reality, not how fast code gets written. That's a metric that survives the shift. PR throughput is still useful as a system-level flow measure, but the leading signal for organizational velocity has moved.
@@ -107,6 +136,13 @@ Houck described AI readiness across four dimensions: tooling, culture, infrastru
 The harder layers are the ones that actually move adoption. Brian cited research showing that developers in organizations where leadership strongly advocates for AI report daily adoption at 7x the rate of those without it. Social proof — seeing trusted peers use AI on real work — was identified as the most consistent adoption catalyst. Developers don't adopt because they have access. They adopt because they see someone they respect doing it on something that matters.
 
 Context readiness is especially critical for agents specifically. Agents amplify whatever specification quality already exists. Clear specs produce good outcomes. Unclear specs produce unpredictable results — and unpredictable results erode the trust that drives adoption. The two problems are connected. You can't build social proof on top of inconsistent output.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile, in science fiction</span>
+<p class="scifi__film">2001: A Space Odyssey — HAL 9000</p>
+<p>HAL was the most capable system on the ship. It still went catastrophically wrong — not because the model was weak, but because it was given <em>contradictory instructions</em>: report information accurately, and conceal the mission's true purpose. A flawless engine running an incoherent spec.</p>
+<p>That's the finding in a sentence. Agents amplify the <em>specification</em> they're given. Point the most capable model on the market at an unclear spec and you don't get brilliance — you get confident, unpredictable failure. The capability was never the variable.</p>
+</div>
 
 This maps directly to why APEX treats the Reflection Phase as mandatory. The organizations that run calibration cycles consistently — measuring what worked, adjusting the system, running again — are the ones where agents visibly improve over time. Visible improvement is how you build the internal social proof that compounds into organization-wide adoption.
 
@@ -130,7 +166,13 @@ The APEX framework's Domain-Mapped Ownership model is built around this reality.
 
 ---
 
-The data from DX points in the same direction as the practical lessons from running agents at scale: the constraint has never been model capability. It's organizational readiness — the quality of the context you provide, the clarity of the specs you write, the structure you put around review and verification, the measurement systems that make improvement visible, and the willingness to run calibration cycles that actually change how the system is configured.
+The data from DX points in the same direction as the practical lessons from running agents at scale.
+
+<div class="keymsg">
+<span class="keymsg__label">What the research actually confirms</span>
+<p class="keymsg__text">The constraint has never been <span class="hl">model capability</span>. It's <span class="hl">organizational readiness</span>.</p>
+<p>The quality of the context you provide, the clarity of the specs you write, the structure around review and verification, the measurement systems that make improvement visible, and the willingness to run calibration cycles that actually change how the system is configured.</p>
+</div>
 
 APEX is an attempt to give that problem an organizational structure that scales. Not a replacement for your existing methodology, but a way of ensuring the conditions that research says matter are owned, measured, and continuously improved.
 

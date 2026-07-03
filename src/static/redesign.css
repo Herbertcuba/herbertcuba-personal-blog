@@ -762,6 +762,37 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .keymsg p.keymsg__text{font-size:23px;max-width:none;}
 }
 
+/* ── Stat band (full-bleed row of big numbers, for data-driven pieces) ── */
+.statband{
+  background:#000;color:var(--text);
+  margin:52px calc(-1 * var(--gutter));padding:40px var(--gutter) 42px;
+  border-top:2px solid var(--green);border-bottom:2px solid var(--green);
+}
+.statband .fig-cap{margin-bottom:26px;}
+.statband__grid{display:flex;flex-wrap:wrap;gap:30px 44px;}
+.statband__item{flex:1 1 140px;min-width:128px;}
+.statband__num{font-family:var(--font-display);font-weight:700;font-size:44px;line-height:1;letter-spacing:-0.02em;color:var(--green);}
+.statband__label{font-family:var(--font-mono);font-size:12px;line-height:1.45;color:var(--text-2);margin-top:12px;}
+@media (max-width:760px){
+  .statband{margin:44px calc(-1 * var(--gutter));padding:32px var(--gutter);}
+  .statband__num{font-size:34px;}
+  .statband__item{flex:1 1 40%;}
+}
+
+/* ── Bottleneck-shift flow (generation fast, downstream not scaled) ── */
+.bshift{display:flex;align-items:stretch;gap:12px;flex-wrap:wrap;}
+.bshift__stage{flex:1 1 0;min-width:118px;border:1px solid var(--green);background:rgba(0,230,83,0.08);padding:15px 16px;display:flex;flex-direction:column;gap:6px;}
+.bshift__stage--slow{border-style:dashed;border-color:var(--muted);background:rgba(255,255,255,0.03);}
+.bshift__k{font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);}
+.bshift__stage--slow .bshift__k{color:var(--muted);}
+.bshift__v{font-family:var(--font-display);font-weight:700;font-size:15px;line-height:1.2;color:var(--text);}
+.bshift__note{font-family:var(--font-mono);font-size:11px;color:var(--muted);}
+.bshift__arrow{display:flex;align-items:center;justify-content:center;flex:none;color:var(--green);font-size:22px;}
+@media (max-width:760px){
+  .bshift{flex-direction:column;}
+  .bshift__arrow{transform:rotate(90deg);height:22px;}
+}
+
 
 /* ---- Read next ---- */
 .art-readnext{background:#000;color:var(--text);padding:64px var(--gutter) 72px;border-top:2px solid var(--green);}
