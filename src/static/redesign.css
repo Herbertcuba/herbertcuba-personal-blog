@@ -880,8 +880,12 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .art-dek{font-size:19px;}
   .art-prose{font-size:17px;}
   .art-prose > p:first-of-type{font-size:21px;}
-  .art-rail{display:flex;flex-direction:column;flex-wrap:nowrap;gap:14px;align-items:flex-start;}
-  .art-rail__block{width:100%;}
+  .art-body{padding-top:40px;}
+  .art-rail{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;align-items:start;}
+  .art-rail > :nth-child(1){grid-column:1 / -1;}
+  .art-rail > :nth-child(4),
+  .art-rail > :nth-child(5){grid-column:1 / -1;}
+  .art-rail__block{width:auto;}
 }
 
 /* ---- Book detail (cover + prose) ---- */
