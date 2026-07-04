@@ -609,7 +609,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .art-epaper:hover{background:#000;color:var(--green);}
 
 /* ---- Prose (markdown content) ---- */
-.art-prose{font-weight:400;font-size:19px;line-height:1.65;color:var(--ink);}
+.art-prose{font-weight:400;font-size:19px;line-height:1.65;color:var(--ink);min-width:0;}
 .art-prose > p:first-of-type{font-weight:350;font-size:24px;line-height:1.55;color:#000;margin:0 0 28px;}
 .art-prose p{margin:0 0 28px;}
 .art-prose h2{font-family:var(--font-display);font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-0.01em;margin:48px 0 20px;}
@@ -808,7 +808,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 }
 
 /* ── Comparison matrix (dimensions × options, e.g. levels) ── */
-.matrix{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:14px;}
+.matrix{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:14px;table-layout:fixed;}
 .matrix th,.matrix td{text-align:left;padding:12px 14px;border-bottom:1px solid rgba(0,230,83,0.16);vertical-align:top;line-height:1.45;}
 .matrix thead th{font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--green);border-bottom:1px solid var(--green);}
 .matrix tbody th{font-family:var(--font-mono);font-size:11px;letter-spacing:0.04em;text-transform:uppercase;color:var(--muted);font-weight:400;white-space:nowrap;}
@@ -818,6 +818,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 @media (max-width:760px){
   .matrix{font-size:12.5px;}
   .matrix th,.matrix td{padding:9px 8px;}
+  .matrix tbody th{white-space:normal;}
 }
 
 /* ── Self-assessment checklist (green-tick items on dark) ── */
@@ -869,7 +870,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 /* ---- Article responsive ---- */
 @media (max-width:900px){
   .art-title{font-size:48px;}
-  .art-body__grid{grid-template-columns:1fr;gap:40px;}
+  .art-body__grid{grid-template-columns:minmax(0,1fr);gap:40px;}
   .art-rail{position:static;flex-direction:row;flex-wrap:wrap;gap:20px 32px;}
   .art-hero{height:340px;}
   .art-readnext__grid{grid-template-columns:1fr;gap:28px;}
