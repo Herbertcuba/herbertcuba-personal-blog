@@ -3,7 +3,8 @@ title: "Stop Choosing an AI Governance Framework. Build the Control Core."
 date: 2026-07-04
 excerpt: "NIST AI RMF, ISO 42001, or the EU AI Act? It's the wrong question. The frameworks are labels on the same underlying controls — so build the control structure once and relabel it on demand."
 featuredImage: /images/posts/ai-governance-control-core.webp
-permalink: /drafts/c04e9a1b/
+layout: post.njk
+theme: operating-models
 anthem: true
 tags:
   - ai-governance
