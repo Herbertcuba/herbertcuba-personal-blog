@@ -21,7 +21,7 @@ tldr:
 
 Which AI governance framework should you adopt? NIST AI RMF, ISO/IEC 42001, or the EU AI Act?
 
-I've come to think the question is wrong.
+I've come to think about this highly relevant question. Maybe the question is wrong?
 
 Not wrong as in premature. Wrong as in *misframed* — the way "which cloud provider makes us secure?" is misframed. The framework was never going to be the thing that governs your AI. The controls underneath it are. And once you see that, the entire "which one?" debate collapses into a much more useful question: what is the control structure that would satisfy all of them at once?
 

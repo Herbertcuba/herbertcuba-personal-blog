@@ -3,7 +3,8 @@ title: "No, AI Didn't Kill Agile"
 date: 2026-07-05
 excerpt: "The people declaring Agile obsolete because agents write the code are mistaking the disappearance of one bottleneck for the disappearance of the problem. It's the oldest error there is."
 featuredImage: /images/posts/orchestration-discipline.webp
-permalink: /drafts/f007c2db/
+layout: post.njk
+theme: operating-models
 tags:
   - ai
   - operating-model
