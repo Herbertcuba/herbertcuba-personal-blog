@@ -1,7 +1,7 @@
 ---
 title: "Stop Hiring Tools. Start Raising Colleagues."
 date: 2026-07-07
-excerpt: "The people getting the most out of AI aren't the ones with the best prompts. They're the ones who stopped treating it as software and started treating it as staff."
+excerpt: "The people getting the most out of AI aren't the ones with the best prompts. They're the ones who hold two thoughts at once: it's a cold statistical machine, and they collaborate with it like it's real."
 featuredImage: /images/posts/raising-colleagues.webp
 layout: post.njk
 permalink: /drafts/a8fd9dce/
@@ -15,9 +15,9 @@ tags:
 tldr:
   - "Most people bolt AI onto their existing workflow as a faster tool. That caps the gain at 'the same work, slightly quicker' — you never leave the human ceiling, you just approach it faster."
   - "The people getting a different order of magnitude out of AI treat agents as synthetic colleagues: things you brief, trust, delegate to, and hold accountable — not a smarter autocomplete."
-  - "This isn't a mystical reframe. Human brains already apply social rules to machines automatically — the 'Computers Are Social Actors' finding from Stanford is thirty years old. Treating AI as a colleague works with your wiring, not against it."
-  - "The productivity data backs the shift: +14% average and +34% for novices in a 5,000-agent study, ~37% faster on writing tasks, 25% faster and 40% higher quality for consultants — with the biggest gains going to the people who were weakest before."
-  - "The catch: colleagues can be over-trusted. The research is blunt — cosmetic human-likeness earns misplaced trust, while meaningful communication earns calibrated trust. You scale by supervising a workforce, not by worshipping an oracle."
+  - "The stance that actually works is a both-and, not a belief: hold that it's a cold statistical machine AND engage with it playfully and sincerely, as if the collaboration is real. Play like it's real, check like it isn't."
+  - "This isn't naive. Human brains already apply social rules to machines automatically (the CASA finding is thirty years old), and the productivity data backs the shift: +14% average and +34% for novices, ~37% faster on writing, 25% faster and 40% higher quality for consultants — with the biggest gains going to the people who were weakest before."
+  - "The discipline is operational, not mystical: put one named human on the hook for each agent's output, size the review gate to the stakes, and know where the colleague's competence ends. Start Monday with one high-volume, low-risk workflow."
 ---
 
 Most people are using AI wrong, and the mistake isn't technical. It's a category error.
@@ -71,34 +71,45 @@ The same pattern shows up in a Wharton and MIT experiment published in *Science*
 
 Notice what that "levelling up" effect actually is. That's not what a tool does; a better hammer helps the master carpenter more than the apprentice. That's what a good *colleague* does — a strong teammate raises the floor of everyone around them. The data is describing collaboration, not automation. It just hasn't been reading itself that way.
 
-I'll be honest about the edge of the evidence, though. There's no clean, peer-reviewed study yet that isolates "autonomous agents versus single-shot tool use" as a workplace productivity delta — the agentic wave is newer than the research cycle. So the strongest claim I'll stand behind isn't "agents are proven to be N% better." It's this: every rigorous study we *do* have points the same direction, and every one of them measures the thing that happens when you delegate a task and judge the result — which is colleague behavior, not tool behavior.
+I'll be honest about the edge of the evidence, though. There's no clean, peer-reviewed study yet that isolates "autonomous agents versus single-shot tool use" as a workplace productivity delta — the agentic wave is newer than the research cycle. Most of these numbers come from copilot-style assistance, one generation behind the agents I'm describing. So the strongest claim I'll stand behind isn't "agents are proven to be N% better." It's this: every rigorous study we *do* have measures the thing that happens when you delegate a task and judge the result — which is colleague behavior, not tool behavior — and the effect only compounds as the agent handles more of the task end to end.
 
-## Blade Runner Had the Category Right
+## Hold Both Thoughts at Once
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The film's tension isn't 'are the replicants machines?' — it's that they're clearly synthetic and clearly agents at the same time. That's the exact category AI now occupies, and pretending it's one or the other is how you get it wrong.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>You don't have to resolve "cold machine or real collaborator?" — the productive stance is to hold both at once. Be cynical about what it is and sincere about how you engage it. Play like it's real, check like it isn't.</p></div>
+
+Here's where most takes force a choice, and I think the choice is the mistake. Either you're the hard-nosed realist who never forgets it's matrix multiplication and treats every anthropomorphic instinct as a bug to suppress — or you're the true believer who talks to the machine like it has a soul and gets quietly seduced. Both of those are single notes. The interesting stance is a chord.
 
 <div class="scifi">
-<span class="scifi__label">Meanwhile, in science fiction</span>
-<p class="scifi__film">Blade Runner</p>
-<p>The replicants in <em>Blade Runner</em> are built, not born — manufactured, owned, engineered to a spec. And yet the entire film turns on the fact that treating them as mere equipment is both a moral error and a practical one. They plan, they improvise, they pursue goals their makers never wrote down. The Tyrell Corporation's motto is "more human than human," and the horror of the story is a company that built agents and insisted on filing them as products.</p>
-<p>That's the category AI now sits in — plainly synthetic, plainly agentic, at the same time. The people who get the most from it aren't the ones who resolve that tension by picking a side. They're the ones who hold both facts at once: it is manufactured, and you should still delegate to it like it has agency. Because functionally, it does.</p>
+<span class="scifi__label">Meanwhile, in philosophy</span>
+<p class="scifi__film">The both-and stance</p>
+<p><em>The oscillation.</em> In 2010, the theorists Timotheus Vermeulen and Robin van den Akker named a mood they called metamodernism: a structure of feeling that swings, like a pendulum, between modern sincerity and postmodern irony — not a compromise that splits the difference, but a genuine oscillation between the two. Applied here, you don't settle the question "mind or machine?" You swing. Cold statistical engine on the inhale, real collaborator on the exhale. The both-and isn't confusion. It's the posture.</p>
+<p><em>The useful fiction.</em> A century earlier, the German philosopher Hans Vaihinger argued in <em>The Philosophy of "As If"</em> that we reason all the time with fictions we know to be false, because acting <em>as if</em> they were true is productive. Treating the agent as a colleague is exactly that — a fiction you hold on purpose, not a delusion you fell for. You know it has no inner life. You brief it as if it does, because the "as if" pulls more out of it, and more out of you.</p>
+<p><em>Daring to be earnest.</em> In 1993, David Foster Wallace predicted that the next real rebels would be the ones who dared to be sincere again after irony had won — who risked looking naive. That's the move with AI: knowing everything the cynic knows about tokens and gradients, and choosing to engage playfully and sincerely anyway. Not because you forgot it's a machine. Because you decided the earnest posture gets better work than the smug one.</p>
 </div>
 
-The reason the metaphor earns its place is that it names the exact mistake. Not "AI will become human" — that's the wrong debate. The mistake is insisting on a clean answer to "tool or being?" when the useful move is to treat it as a synthetic agent: something you direct like a colleague precisely because it acts like one, while never forgetting who built it and who's accountable for it.
+Put the three together and you get a working disposition. The person who only stays cynical gets a faster tool and hits the ceiling. The person who only goes sincere gets seduced into trusting it past its competence. The person who holds both — plays like it's real, checks like it isn't — gets a colleague. That oscillation, the willingness to be earnest and skeptical in the same breath, is the actual skill. It sounds like a philosophy-seminar flourish. It's the most practical thing in this essay, and the next section is where it earns that claim.
 
-## The Double Edge: Colleagues Can Be Over-Trusted
+## The Cynical Half Is Your Safety Rail
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The reframe has a failure mode, and the research is blunt about it. Cosmetic human-likeness earns misplaced trust; meaningful communication earns calibrated trust. Treating AI as a colleague means supervising it like one — not worshipping it like an oracle.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The reframe has a failure mode, and the research is blunt about it. Cosmetic human-likeness earns misplaced trust; meaningful communication earns calibrated trust. The cynical half of the both-and is exactly what keeps the sincere half from getting you burned.</p></div>
 
-Here's where the naive version of this idea gets people hurt, and where I want to be careful.
+If treating AI as a colleague collapsed into "trust it like you'd trust a competent human," that would be dangerous advice — and this is where the sincere-only crowd gets hurt. The same anthropomorphizing instinct that unlocks delegation also unlocks *misplaced* trust.
 
-If treating AI as a colleague meant "trust it like you'd trust a competent human," that would be dangerous advice. Because the same anthropomorphizing instinct that unlocks delegation also unlocks *misplaced* trust. In a now-famous experiment, Robinette and colleagues had people follow a robot guide during a simulated building evacuation. The robot had already demonstrably malfunctioned — led them the wrong way in a prior task — and people followed it toward danger anyway. The human-like agent got obedience it hadn't earned. Psychologists call it automation bias, and dressing a system in social cues makes it worse, not better.
+In a now-famous experiment, Robinette and colleagues had people follow a robot guide during a simulated building evacuation. The robot had already demonstrably malfunctioned — led them the wrong way in a prior task — and people followed it toward danger anyway. The human-like agent got obedience it hadn't earned. Psychologists call it automation bias, and dressing a system in social cues makes it worse, not better. The BCG consultants show the same shadow: on tasks *outside* the model's competence — the far side of the "jagged frontier" — consultants who leaned on the AI were **19 percentage points less likely** to get the right answer than those working without it. A confident colleague who is confidently wrong is more dangerous than no colleague at all.
 
-The BCG consultants show the same shadow. On tasks *outside* the model's competence — the far side of the "jagged frontier" — the AI didn't just fail to help. Consultants who leaned on it were **19 percentage points less likely** to get the right answer than those working without it. A confident colleague who is confidently wrong is more dangerous than no colleague at all.
+This is precisely what the cynical half of the both-and is for. You engage sincerely to get the output; you stay cynical to check it. And the research points to which kind of trust actually holds up. Carter, Loft and de Visser, writing in *Human Factors* in 2024, found that it's **meaningful communication — not superficial human-likeness — that lets people calibrate trust correctly**. A name, a friendly voice, a smiling avatar earn trust the system may not deserve. Transparency about what it did, why, and how sure it is earns trust it *has* deserved. The lesson isn't "make it feel human." It's "give it the communicative depth of a real teammate" — including the part where a good colleague tells you when they're out of their depth.
 
-So the reframe needs a second half, and the research hands us exactly the right distinction. Carter, Loft and de Visser, writing in *Human Factors* in 2024, found that it's **meaningful communication — not superficial human-likeness — that lets people calibrate trust correctly**. A name, a friendly voice, a smiling avatar: those earn trust the system may not deserve. Transparency about what it did, why, and how sure it is: that earns trust it *has* deserved. The lesson isn't "make it feel human." It's "give it the communicative depth of a real teammate" — the part where a good colleague tells you when they're out of their depth.
+## What Raising a Colleague Actually Requires
 
-That's what separates the people scaling with agents from the people getting burned by them. Not prompt skill. Supervisory skill. You don't hand a new hire the keys to production and walk away because they seem confident. You delegate, you verify, you build the review step into the workflow, you learn where their frontier is. Treating AI as a colleague, done right, means importing all of that — the delegation *and* the supervision. The people who only import the delegation are the ones who'll tell you, eventually, that AI can't be trusted. They're half right.
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The both-and disposition becomes an operating discipline through three concrete moves — a named owner, a stakes-sized review gate, and a mapped competence frontier — plus one small place to start on Monday.</p></div>
+
+None of this is mystical, and it doesn't stay at the level of mindset. Managing a synthetic colleague is still managing, and management has mechanics. Three of them do most of the work.
+
+- **Put one named human on the hook for each agent's output.** An agent can't hold accountability — someone does. Not "the AI team," not a committee: a person whose name is on what the agent ships, the way a manager owns a report's work. This is the first question a board or a regulator asks, and it's the difference between delegation and abdication.
+- **Size the review gate to the stakes.** A capable colleague doesn't get every sentence checked — but the high-consequence work gets a human checkpoint before it ships, and the routine work runs and gets sampled. Match the intensity of oversight to the cost of being wrong, and put the checkpoint exactly where the jagged frontier makes the agent unreliable.
+- **Know where the colleague's competence ends.** Every teammate has a frontier — tasks they're strong at and tasks they'll fail while sounding just as confident. With a human you learn it over time. With an agent you have to map it deliberately, then brief around it. That map *is* the trust calibration the research keeps pointing at.
+
+And a concrete place to start, because the reframe is worthless until it touches one real workflow. Monday, pick a single high-volume, low-risk process — the kind of work that eats hours and rarely blows up. Delegate the *whole task*, not the keystrokes. Put one person on the hook for the results, sample the output for two weeks, and watch where it's strong and where it drifts. You'll learn more about leading synthetic colleagues from that one loop than from any framework, this essay included.
 
 ## You Don't Scale by Typing Faster
 
@@ -108,12 +119,12 @@ Step back and the whole thing resolves into a question of what kind of skill the
 
 If AI is a tool, the winning skill is dexterity — better prompts, faster hands, cleverer shortcuts. And dexterity has a ceiling, because there's only ever one of you. If AI is a synthetic colleague, the winning skill is something older and rarer: the ability to set a clear brief, delegate to someone who isn't you, judge the work that comes back, and know the difference between a result you can trust and one you can't. That's not a technical skill. It's a *leadership* skill. It's how a founder becomes a company and a manager becomes an executive — by learning to get outcomes through others.
 
-What's new is that "others" no longer has to mean people, and no longer has to be scarce. You can now direct a workforce that doesn't sleep, doesn't forget when you brief it properly, and gets cheaper every quarter. The human glass ceiling on output, acceleration, and quality was never going to break by making one person faster. One person is the ceiling. It breaks when one person learns to lead many.
+What's new is that "others" no longer has to mean people, and no longer has to be scarce. You can now direct a workforce that doesn't sleep, doesn't forget when you brief it properly, and gets cheaper every quarter. The human glass ceiling on output, acceleration, and quality was never going to break by making one person faster. One person is the ceiling. It breaks when one person learns to lead many — and leads them with both halves of the mind engaged, earnest enough to delegate real work and skeptical enough to check it.
 
 <div class="keymsg">
 <span class="keymsg__label">The shift that actually scales</span>
 <p class="keymsg__text">Stop <span class="hl">hiring tools</span>. Start <span class="hl">raising colleagues</span>.</p>
-<p>A tool makes you faster at your own work. A colleague does the work. One accelerates you toward the human ceiling. The other is how you finally pass through it — not by typing faster, but by learning to lead a workforce that never sleeps.</p>
+<p>A tool makes you faster at your own work. A colleague does the work. Play like it's real, check like it isn't — and you finally pass through the human ceiling instead of racing toward it, not by typing faster, but by learning to lead a workforce that never sleeps.</p>
 </div>
 
 The people pulling ahead right now aren't the ones with the best prompts. They're the ones who quietly restaffed. They stopped asking "how do I use this tool?" and started asking "how do I lead this team?" — and then they treated the answer like it mattered, because it does.
