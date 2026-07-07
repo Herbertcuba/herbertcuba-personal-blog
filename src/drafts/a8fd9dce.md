@@ -1,7 +1,7 @@
 ---
 title: "Stop Hiring Tools. Start Raising Colleagues."
 date: 2026-07-07
-excerpt: "The people getting the most out of AI aren't the ones with the best prompts. They're the ones who hold two thoughts at once: it's a cold statistical machine, and they collaborate with it like it's real."
+excerpt: "The people getting the most out of AI aren't the ones with the best prompts. They're the ones who stopped scaling the novice and started multiplying the expert — through synthetic colleagues that behave less like software and more like a new species."
 featuredImage: /images/posts/raising-colleagues.webp
 layout: post.njk
 permalink: /drafts/a8fd9dce/
@@ -13,11 +13,11 @@ tags:
   - operating-model
   - psychology
 tldr:
-  - "Most people bolt AI onto their existing workflow as a faster tool. That caps the gain at 'the same work, slightly quicker' — you never leave the human ceiling, you just approach it faster."
-  - "The people getting a different order of magnitude out of AI treat agents as synthetic colleagues: things you brief, trust, delegate to, and hold accountable — not a smarter autocomplete."
-  - "The stance that actually works is a both-and, not a belief: hold that it's a cold statistical machine AND engage with it playfully and sincerely, as if the collaboration is real. Play like it's real, check like it isn't."
-  - "This isn't naive. Human brains already apply social rules to machines automatically (the CASA finding is thirty years old), and the productivity data backs the shift: +14% average and +34% for novices, ~37% faster on writing, 25% faster and 40% higher quality for consultants — with the biggest gains going to the people who were weakest before."
-  - "The discipline is operational, not mystical: put one named human on the hook for each agent's output, size the review gate to the stakes, and know where the colleague's competence ends. Start Monday with one high-volume, low-risk workflow."
+  - "Most people bolt AI onto their workflow as a faster tool, or dream of a bigger deterministic workflow they deploy once like SaaS. Both are the same ceiling — you get out what you specced, forever."
+  - "The productivity studies everyone cites (novices +34%, experts ~0%) measured Level 1 — chat assistance. At that level AI is a tool, and a tool is an equalizer: it raises the floor and barely moves the expert's ceiling. That's compression, not scaling."
+  - "The 10x isn't in lifting the novice. It's in multiplying the expert — scaling one person through many persistent synthetic colleagues (Level 3), the oldest organizational move (more brains) with a new twist: the returns re-concentrate on whoever can direct them."
+  - "The stance that works is a both-and: hold that it's a cold statistical machine AND collaborate with it sincerely. Play like it's real, check like it isn't — the cynical half is your trust calibration."
+  - "The real disruption isn't a bigger machine — it's an organism: synthetic and human intelligence woven into a living system, messier and less predictable but able to scale past any rigid workflow. In effect we've grown a new species, and the winners will be the ones who learn the symbiosis first."
 ---
 
 Most people are using AI wrong, and the mistake isn't technical. It's a category error.
@@ -57,21 +57,29 @@ In the early 1990s, Clifford Nass and Byron Reeves at Stanford ran a series of e
 
 Sit with that. Decades before large language models, humans were already extending social behavior to boxes that could barely hold a conversation. The instinct to treat a responsive machine as a social being is not a mistake you might make — it's the default setting of the human brain, running whether you endorse it or not.
 
-Which flips the usual framing on its head. Treating AI as a synthetic colleague isn't the naive move. Insisting it's "just a tool" while your own nervous system treats it as an agent — that's the position fighting reality. The reframe doesn't ask you to believe something false. It asks you to stop pretending you're not already doing it, and to do it *deliberately* — because deliberate delegation is far more productive than the reluctant, hedged, keystroke-level version most people are stuck in.
+Which flips the usual framing on its head. Treating AI as a synthetic colleague isn't the naive move. Insisting it's "just a tool" while your own nervous system treats it as an agent — that's the position fighting reality. The reframe doesn't ask you to believe something false. It asks you to stop pretending you're not already doing it, and to do it *deliberately*.
 
-## The Numbers Behind the Reframe
+## Level 1 Compresses. Level 3 Multiplies.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The productivity gains are real and measured — but the most telling pattern is who benefits most. AI lifts the weakest performers the hardest, which is exactly what a good colleague does: it levels the floor.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The famous productivity studies measured Level 1 — chat assistance — where AI is a tool that lifts the novice and barely moves the expert. That's compression, not scaling. The 10x lives one level up: multiplying the expert through many persistent synthetic colleagues.</p></div>
 
-If this were only philosophy I'd drop it. It isn't. When you delegate real tasks to AI and evaluate the results, the effect sizes are large and they've been measured properly.
+Now the numbers — because the way they're usually read gets the whole thing backwards.
 
-The clearest study is also the largest. Brynjolfsson, Li and Raymond followed **5,179 customer support agents** through the staggered rollout of an AI assistant. Average productivity — issues resolved per hour — rose **14%**. But the headline average hides the real story: novice and low-tenure workers gained **34%**, while the most experienced agents gained close to nothing. The AI didn't lift everyone equally. It lifted the people who had the furthest to climb.
+The clearest study is also the largest. Brynjolfsson, Li and Raymond followed **5,179 customer support agents** through the staggered rollout of an AI assistant. Average productivity rose **14%** — but novices gained **34%** while the most experienced agents gained close to nothing. Noy and Zhang, in *Science*, found the same shape on writing tasks: about **37% faster**, and the gap between weak and strong writers narrowed. Read most takes and you'll hear this celebrated as proof that AI is a brilliant colleague. I think it's the opposite, and the reason is the *level* these studies ran at.
 
-The same pattern shows up in a Wharton and MIT experiment published in *Science*. Noy and Zhang gave 453 professionals writing tasks; those with AI finished about **37% faster**, quality scores rose, and — critically — the gap between the strong and weak writers narrowed. And in the BCG–Harvard "Jagged Frontier" study, 758 consultants using GPT-4 completed **12% more tasks, 25% faster, at 40% higher quality** — with, again, the lower-skilled consultants gaining most.
+Every one of them measured what I've called [Level 1 — chat AI](/posts/2026-03-21-three-levels-ai-acceleration/): prompt, response, one human in the loop for every turn. At Level 1 there is no colleague. There's a tool. And a tool is an *equalizer* — it hands the novice the floor the expert was already standing on. The junior support agent gained 34% because the model gave them answers the senior already knew. The gap narrowed not because the ceiling rose, but because the floor rose to meet it.
 
-Notice what that "levelling up" effect actually is. That's not what a tool does; a better hammer helps the master carpenter more than the apprentice. That's what a good *colleague* does — a strong teammate raises the floor of everyone around them. The data is describing collaboration, not automation. It just hasn't been reading itself that way.
+That's the tell. If the biggest gains go to the weakest performers and your best people gain almost nothing, you haven't broken the ceiling — you've democratized the floor. Genuinely useful. Not disruptive. Not 10x. The levelling-up effect everyone cites as AI's magic is actually the *signature of the tool ceiling* — the exact thing you have to get past to scale.
 
-I'll be honest about the edge of the evidence, though. There's no clean, peer-reviewed study yet that isolates "autonomous agents versus single-shot tool use" as a workplace productivity delta — the agentic wave is newer than the research cycle. Most of these numbers come from copilot-style assistance, one generation behind the agents I'm describing. So the strongest claim I'll stand behind isn't "agents are proven to be N% better." It's this: every rigorous study we *do* have measures the thing that happens when you delegate a task and judge the result — which is colleague behavior, not tool behavior — and the effect only compounds as the agent handles more of the task end to end.
+So where does the 10x live? Not in lifting the novice. In multiplying the expert. And that's a different level entirely.
+
+The oldest way to scale an expert is the way organizations have always done it: give her more brains. A brilliant engineer becomes a lead becomes a VP not by typing faster but by directing more minds at the same goal. Headcount was always how one person broke past their own ceiling — more people, more brains, more reach.
+
+[Level 3](/posts/2026-03-21-three-levels-ai-acceleration/) is that move without the hiring plan. Persistent agents — memory, continuity, initiative — let one expert direct many synthetic brains that don't start from zero each morning. Not one faster keyboard: a standing team of them, each carrying context, each briefed by someone who knows what good looks like. And here the returns stop levelling. They *re-concentrate* — on the expert who can tell ten synthetic colleagues what actually matters, because she's the one who knows what matters. Level 1 lifts the person who knows least. Level 3 multiplies the person who knows most. Those are opposite effects, and mistaking the first for evidence of the second is how people conclude the ceiling can't be broken.
+
+I'll be straight about the evidence, because it cuts the honest way. The clean numbers are all Level 1 — copilot-era, one generation behind the agents I'm describing. There is no peer-reviewed study yet that measures one expert plus a standing team of synthetic colleagues scaling 10x. That claim is a *thesis*, not a result. I hold it because it's the same shape as every scaling move organizations have ever made — but I'll call it what it is: argued, not proven.
+
+What changes with it is the *skill*. When you scaled yourself through people, the competence was social — motivate, delegate, resolve conflict, read a room. When you scale yourself through synthetic colleagues, the competence is something new: part technical, because you have to understand what the system genuinely can and can't do, and part a new kind of social — learning to brief, trust, and correct an intelligence that isn't human, that fails in unhuman ways, that needs a different kind of instruction than any person ever did. Similar to managing people. And completely different. It's a literacy we're all still inventing, and it's the one that will separate the operators who scale from the ones who just type faster.
 
 ## Hold Both Thoughts at Once
 
@@ -82,12 +90,11 @@ Here's where most takes force a choice, and I think the choice is the mistake. E
 <div class="scifi">
 <span class="scifi__label">Meanwhile, in philosophy</span>
 <p class="scifi__film">The both-and stance</p>
-<p><em>The oscillation.</em> In 2010, the theorists Timotheus Vermeulen and Robin van den Akker named a mood they called metamodernism: a structure of feeling that swings, like a pendulum, between modern sincerity and postmodern irony — not a compromise that splits the difference, but a genuine oscillation between the two. Applied here, you don't settle the question "mind or machine?" You swing. Cold statistical engine on the inhale, real collaborator on the exhale. The both-and isn't confusion. It's the posture.</p>
+<p><em>The oscillation.</em> In 2010, the theorists Timotheus Vermeulen and Robin van den Akker named a mood they called metamodernism: a structure of feeling that swings, like a pendulum, between modern sincerity and postmodern irony — not a compromise that splits the difference, but a genuine oscillation between the two. Applied here, you don't settle the question "mind or machine?" You swing. Cold statistical engine on the inhale, real collaborator on the exhale. It takes the nerve to be earnest and skeptical in the same breath — to know everything the cynic knows about tokens and gradients and choose to engage sincerely anyway. The both-and isn't confusion. It's the posture.</p>
 <p><em>The useful fiction.</em> A century earlier, the German philosopher Hans Vaihinger argued in <em>The Philosophy of "As If"</em> that we reason all the time with fictions we know to be false, because acting <em>as if</em> they were true is productive. Treating the agent as a colleague is exactly that — a fiction you hold on purpose, not a delusion you fell for. You know it has no inner life. You brief it as if it does, because the "as if" pulls more out of it, and more out of you.</p>
-<p><em>Daring to be earnest.</em> In 1993, David Foster Wallace predicted that the next real rebels would be the ones who dared to be sincere again after irony had won — who risked looking naive. That's the move with AI: knowing everything the cynic knows about tokens and gradients, and choosing to engage playfully and sincerely anyway. Not because you forgot it's a machine. Because you decided the earnest posture gets better work than the smug one.</p>
 </div>
 
-Put the three together and you get a working disposition. The person who only stays cynical gets a faster tool and hits the ceiling. The person who only goes sincere gets seduced into trusting it past its competence. The person who holds both — plays like it's real, checks like it isn't — gets a colleague. That oscillation, the willingness to be earnest and skeptical in the same breath, is the actual skill. It sounds like a philosophy-seminar flourish. It's the most practical thing in this essay, and the next section is where it earns that claim.
+Put the two together and you get a working disposition. The person who only stays cynical gets a faster tool and hits the ceiling. The person who only goes sincere gets seduced into trusting it past its competence. The person who holds both — plays like it's real, checks like it isn't — gets a colleague. That oscillation sounds like a philosophy-seminar flourish. It's the most practical thing in this essay, and the next section is where it earns that claim.
 
 ## The Cynical Half Is Your Safety Rail
 
@@ -101,25 +108,43 @@ This is precisely what the cynical half of the both-and is for. You engage since
 
 ## What Raising a Colleague Actually Requires
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The both-and disposition becomes an operating discipline through three concrete moves — a named owner, a stakes-sized review gate, and a mapped competence frontier — plus one small place to start on Monday.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The both-and disposition becomes an operating discipline through three concrete moves — a named owner, a stakes-sized review gate, and a mapped competence frontier — plus a way to introduce it without triggering panic, and one small place to start on Monday.</p></div>
 
 None of this is mystical, and it doesn't stay at the level of mindset. Managing a synthetic colleague is still managing, and management has mechanics. Three of them do most of the work.
 
 - **Put one named human on the hook for each agent's output.** An agent can't hold accountability — someone does. Not "the AI team," not a committee: a person whose name is on what the agent ships, the way a manager owns a report's work. This is the first question a board or a regulator asks, and it's the difference between delegation and abdication.
-- **Size the review gate to the stakes.** A capable colleague doesn't get every sentence checked — but the high-consequence work gets a human checkpoint before it ships, and the routine work runs and gets sampled. Match the intensity of oversight to the cost of being wrong, and put the checkpoint exactly where the jagged frontier makes the agent unreliable.
-- **Know where the colleague's competence ends.** Every teammate has a frontier — tasks they're strong at and tasks they'll fail while sounding just as confident. With a human you learn it over time. With an agent you have to map it deliberately, then brief around it. That map *is* the trust calibration the research keeps pointing at.
+- **Size the review gate to the stakes.** Make it concrete: in a regulated workflow — say KYC checks or anything touching HR or customer data — every agent output above a risk threshold gets human sign-off *before* it ships, and everything below it runs and gets sampled, maybe 10%, after the fact. High-consequence work gets a checkpoint; routine work gets spot-checks. Put the gate exactly where the jagged frontier makes the agent unreliable, and nowhere it doesn't.
+- **Know where the colleague's competence ends.** Every teammate has a frontier — tasks they're strong at and tasks they'll fail while sounding just as confident. With a human you learn it over time. With an agent you map it deliberately: run it against work where you already know the right answer, watch where it drifts, and brief around the edge. That map *is* the trust calibration the research keeps pointing at.
 
-And a concrete place to start, because the reframe is worthless until it touches one real workflow. Monday, pick a single high-volume, low-risk process — the kind of work that eats hours and rarely blows up. Delegate the *whole task*, not the keystrokes. Put one person on the hook for the results, sample the output for two weeks, and watch where it's strong and where it drifts. You'll learn more about leading synthetic colleagues from that one loop than from any framework, this essay included.
+One more thing, because this is where most rollouts actually die: how you introduce it. Delegating tasks to synthetic colleagues reads to a nervous team as "my job is next." Name it directly — this moves people up to briefing and judging the work, not out of it — and prove it by putting a person's name *on* each agent rather than replacing them with it. The framing isn't spin; it's the literal operating model. The humans move from doing the task to owning the colleague that does it.
+
+And a concrete place to start, because the reframe is worthless until it touches one real workflow. Monday, pick a single high-volume, low-risk process — the kind of work that eats hours and rarely blows up. Delegate the *whole task*, not the keystrokes. Put one person on the hook, sample the output for two weeks, and watch where it's strong and where it drifts. You'll learn more about leading synthetic colleagues from that one loop than from any framework, this essay included.
+
+## The Organism, Not the Product System
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Most people picture AI's endgame as a bigger deterministic workflow — software you deploy once that spits out predictable output forever. The real disruption is the opposite: weaving synthetic and human intelligence into a living system that's messier, less predictable, and able to scale far past any rigid machine.</p></div>
+
+Zoom out from the desk to the whole company, and the same category error is waiting — just wearing an enterprise suit.
+
+The dominant picture of AI's endgame is the product-system. You take AI and build a bigger, more deterministic workflow — something that behaves like a computer program. Design it once, deploy it like a piece of SaaS, and it produces a predictable, positive output on every run. Clean, auditable, controllable. It's the factory model, and it's what most enterprises are reaching for, because it's the model they already trust.
+
+I don't think that's where the power is. And I really don't think it's where the scaling is. A product-system can only ever produce what it was designed to produce. It's deterministic by construction, which means it's *bounded* by construction — you get out roughly what you specced, forever, and the day the world shifts you go back and re-spec it. That's not scaling. It's a bigger machine with the same ceiling.
+
+The disruption is the other model. Instead of engineering a deterministic machine, you cultivate an organism: synthetic intelligence and human understanding woven together into a system that adapts, improvises, and produces things nobody explicitly designed. It's messier. It's less predictable. The outputs surprise you — sometimes badly, sometimes far above what you'd have thought to spec. And that unpredictability isn't a defect to engineer out. It's the price of a system that can grow rather than repeat, and growth is the only thing that scales past a rigid workflow.
+
+This is the both-and one level up. The deterministic rails still matter — you keep them exactly where the stakes demand certainty, which is what the named owner and the review gate are for. But the acceleration, the compounding, the 10x lives in the organic layer — the part you cultivate instead of specify. Hard rails where being wrong is expensive; open ground where emergence is the whole point. A living company runs both, and refuses to collapse either into the other.
+
+Step back far enough and something stranger comes into view. We didn't build a better tool. We grew a new kind of mind — one that reasons, and surprises, and fails in ways no software ever did, and that we don't fully understand even though we made it. In plain terms we've done something closer to evolution than engineering: we've introduced a new species into the workplace, and we're in the early, clumsy phase of learning to work alongside it. The organizations that win the next decade won't be the ones with the most rigid automation. They'll be the ones that learn the symbiosis first — how a human intelligence and a synthetic one, held in that both-and tension, make each other larger.
 
 ## You Don't Scale by Typing Faster
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The human ceiling on output, speed, and quality was never going to move by making one person faster. It moves when one person learns to direct many agents — and that's a leadership skill, not a typing skill.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The human ceiling on output, speed, and quality was never going to move by making one person faster. It moves when one expert learns to direct many synthetic colleagues — and that's a leadership skill, not a typing skill.</p></div>
 
 Step back and the whole thing resolves into a question of what kind of skill the coming years actually reward.
 
-If AI is a tool, the winning skill is dexterity — better prompts, faster hands, cleverer shortcuts. And dexterity has a ceiling, because there's only ever one of you. If AI is a synthetic colleague, the winning skill is something older and rarer: the ability to set a clear brief, delegate to someone who isn't you, judge the work that comes back, and know the difference between a result you can trust and one you can't. That's not a technical skill. It's a *leadership* skill. It's how a founder becomes a company and a manager becomes an executive — by learning to get outcomes through others.
+If AI is a tool, the winning skill is dexterity — better prompts, faster hands, cleverer shortcuts. And dexterity has a ceiling, because there's only ever one of you. If AI is a synthetic colleague, the winning skill is something older and rarer: the ability to set a clear brief, delegate to someone who isn't you, judge the work that comes back, and know the difference between a result you can trust and one you can't. That's not a technical skill. It's a *leadership* skill — how a founder becomes a company and a manager becomes an executive, by learning to get outcomes through others.
 
-What's new is that "others" no longer has to mean people, and no longer has to be scarce. You can now direct a workforce that doesn't sleep, doesn't forget when you brief it properly, and gets cheaper every quarter. The human glass ceiling on output, acceleration, and quality was never going to break by making one person faster. One person is the ceiling. It breaks when one person learns to lead many — and leads them with both halves of the mind engaged, earnest enough to delegate real work and skeptical enough to check it.
+What's new is that "others" no longer has to mean people, and no longer has to be scarce. You can now direct a workforce that doesn't sleep, doesn't forget when you brief it properly, and gets cheaper every quarter. The human glass ceiling on output, acceleration, and quality was never going to break by making one person faster. One person is the ceiling. It breaks when one expert learns to lead many — and leads them with both halves of the mind engaged, earnest enough to delegate real work and skeptical enough to check it.
 
 <div class="keymsg">
 <span class="keymsg__label">The shift that actually scales</span>
