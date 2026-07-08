@@ -3,7 +3,8 @@ title: "The Cardinal Sin of the AI Era Is Entropy"
 date: 2026-07-05
 excerpt: "The AI models that write the most code aren't the best ones. The entrepreneurs who create the most aren't the sharpest ones either. The real skill of this decade is knowing what should not exist."
 featuredImage: /images/posts/entropy-cardinal-sin.webp
-permalink: /drafts/4e3a07c7/
+layout: post.njk
+theme: strategy-leadership
 tags:
   - ai
   - operating-model
