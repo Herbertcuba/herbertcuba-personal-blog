@@ -153,3 +153,15 @@ What's new is that "others" no longer has to mean people, and no longer has to b
 </div>
 
 The people pulling ahead right now aren't the ones with the best prompts. They're the ones who quietly restaffed. They stopped asking "how do I use this tool?" and started asking "how do I lead this team?" — and then they treated the answer like it mattered, because it does.
+
+## The Mirror We Didn't Expect
+
+In 1987, Ronald Reagan stood before the United Nations General Assembly and said something that was meant to be about geopolitics but turned out to be about something else entirely: *"Perhaps we need some outside, universal threat to make us recognize this common bond. I occasionally think how quickly our differences worldwide would vanish if we were facing an alien threat from outside this world."*
+
+We didn't get the alien. We grew something stranger.
+
+Kevin Kelly, who has been thinking about this longer than most, calls it alien intelligence — not a smarter copy of humanity, but a genuinely different kind of mind, shaped by everything we've ever written and built, yet experiencing none of it. A mirror made of all human knowledge, reflecting back something that reasons but doesn't live, that surprises but doesn't intend to.
+
+And like Reagan's hypothetical alien, it's already doing the thing he predicted — not uniting us against it, but forcing the question underneath everything else: what is it that humans actually do? What does it mean to judge, to care, to stake your name on an outcome? The named owner in the review gate, the person on the hook for what the agent ships — those aren't bureaucratic safeguards. They're answers to that question, written into an operating model.
+
+The synthetic colleague doesn't resolve what makes us human. It sharpens the question. The organizations that figure out the symbiosis first won't be the ones who engineered the most elegant workflows. They'll be the ones who understood, with some clarity, what the humans in the room were actually *for* — and built accordingly.
