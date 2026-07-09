@@ -1,10 +1,9 @@
 ---
 title: "Stop Hiring Tools. Start Raising Colleagues."
-date: 2026-07-07
+date: 2026-07-09
 excerpt: "The people getting the most out of AI aren't the ones with the best prompts. They're the ones who stopped scaling the novice and started multiplying the expert — through synthetic colleagues that behave less like software and more like a new species."
 featuredImage: /images/posts/raising-colleagues.webp
 layout: post.njk
-permalink: /drafts/a8fd9dce/
 theme: operating-models
 anthem: true
 tags:
