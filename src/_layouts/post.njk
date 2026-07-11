@@ -68,7 +68,7 @@ ctaHidden: true
           <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ title }}" target="_blank" rel="noopener">X ↗</a>
         </div>
       </div>
-      {%- if anthem and toc | length > 2 -%}
+      {%- if toc | length > 2 -%}
       {# TOC: shown in rail on desktop, shown in-prose on mobile #}
       <nav class="art-index art-index--rail" aria-label="In this article">
         <div class="art-index__label mono">// in this article</div>
@@ -98,7 +98,7 @@ ctaHidden: true
       </div>
       {%- endif -%}
 
-      {%- if anthem and toc | length > 2 -%}
+      {%- if toc | length > 2 -%}
       {# Mobile TOC: hidden on desktop, shown in-prose on mobile #}
       <nav class="art-index art-index--mobile" aria-label="In this article">
         <div class="art-index__label mono">// in this article</div>
