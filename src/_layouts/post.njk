@@ -69,6 +69,7 @@ ctaHidden: true
         </div>
       </div>
       {%- if anthem and toc | length > 2 -%}
+      {# TOC: shown in rail on desktop, shown in-prose on mobile #}
       <nav class="art-index art-index--rail" aria-label="In this article">
         <div class="art-index__label mono">// in this article</div>
         <ol class="art-index__list art-index__list--rail">
@@ -95,6 +96,16 @@ ctaHidden: true
         <ul>{%- for point in tldr %}<li>{{ point }}</li>{% endfor -%}</ul>
         {%- endif -%}
       </div>
+      {%- endif -%}
+
+      {%- if anthem and toc | length > 2 -%}
+      {# Mobile TOC: hidden on desktop, shown in-prose on mobile #}
+      <nav class="art-index art-index--mobile" aria-label="In this article">
+        <div class="art-index__label mono">// in this article</div>
+        <ol class="art-index__list">
+          {%- for h in toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor -%}
+        </ol>
+      </nav>
       {%- endif -%}
 
       {{ content | safe }}
@@ -141,7 +152,7 @@ ctaHidden: true
 </script>
 <script>
   (function(){
-    var nav = document.querySelector('.art-index--rail');
+    var nav = document.querySelector('.art-index--rail') || document.querySelector('.art-index--mobile');
     if(!nav) return;
     var links = nav.querySelectorAll('a');
     var headings = [];
