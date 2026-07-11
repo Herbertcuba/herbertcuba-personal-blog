@@ -1,10 +1,9 @@
 ---
 title: "Everyone Discovered Loops. Nobody Agrees What the Word Means."
-date: 2026-07-08
+date: 2026-07-13
 excerpt: "The loop became AI engineering's favorite word this summer — and Laurie Voss counted four different architectures hiding behind it. Here's the map, and the operating model that says which loop belongs to whom."
 featuredImage: /images/posts/four-loops-one-model.webp
 layout: post.njk
-permalink: /drafts/b3a32696/
 theme: agentic-engineering
 anthem: true
 tags:
@@ -154,7 +153,7 @@ So the full picture is: loops where you want adaptation, pipelines where you wan
 
 Voss ends his post on a line that could be APEX's epigraph: *"people are dialing up their level of abstraction and pushing human judgment further up the stack. That's the actual lesson of loops."*
 
-That is the whole thing. Every loop in the taxonomy is a rung — you start inside the execution loop writing tool calls, and each loop out is a step up in abstraction, a step further from doing and closer to governing. The execution loop is capability. The oversight loop is agency. The trajectory of the last two years is people climbing from the first to the last, and the climb is the skill. It's the same move I described as [raising colleagues instead of hiring tools](/drafts/a8fd9dce/) — pushing yourself up from operator to orchestrator — seen from the engineering side instead of the organizational one.
+That is the whole thing. Every loop in the taxonomy is a rung — you start inside the execution loop writing tool calls, and each loop out is a step up in abstraction, a step further from doing and closer to governing. The execution loop is capability. The oversight loop is agency. The trajectory of the last two years is people climbing from the first to the last, and the climb is the skill. It's the same move I described as [raising colleagues instead of hiring tools](/posts/stop-hiring-tools-start-raising-colleagues/) — pushing yourself up from operator to orchestrator — seen from the engineering side instead of the organizational one.
 
 But there's a reason the climb needs an operating model and not just enthusiasm. Mike Krieger made the observation that should sober everyone: even at Anthropic, the agent tag team is bottlenecked on human review and conceptualization. *The checkpoint humans kept for themselves is now the constraint.* Push judgment up the stack carelessly and you don't remove the bottleneck — you relocate it to a place you haven't staffed or designed for. That's what an operating model is *for*: making sure that when human judgment moves up a level, there's an actual structure waiting for it — owned exit conditions, named verification gates, a calibration cadence — instead of a single overwhelmed person rubber-stamping a firehose.
 
