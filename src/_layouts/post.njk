@@ -12,6 +12,7 @@ ctaHidden: true
 {%- set themeSlug = theme or "strategy-leadership" -%}
 {%- set tmeta = themeSlug | themeMeta -%}
 {%- set readMins = content | readingTime -%}
+{%- set toc = content | toc -%}
 {# Read next: 3 most recent posts that aren't this one #}
 {%- set readNext = [] -%}
 {%- for p in allPosts -%}
@@ -67,6 +68,14 @@ ctaHidden: true
           <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ title }}" target="_blank" rel="noopener">X ↗</a>
         </div>
       </div>
+      {%- if anthem and toc | length > 2 -%}
+      <nav class="art-index art-index--rail" aria-label="In this article">
+        <div class="art-index__label mono">// in this article</div>
+        <ol class="art-index__list art-index__list--rail">
+          {%- for h in toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor -%}
+        </ol>
+      </nav>
+      {%- endif -%}
     </aside>
 
     <article class="art-prose">
@@ -86,18 +95,6 @@ ctaHidden: true
         <ul>{%- for point in tldr %}<li>{{ point }}</li>{% endfor -%}</ul>
         {%- endif -%}
       </div>
-      {%- endif -%}
-
-      {%- if anthem -%}
-      {%- set toc = content | toc -%}
-      {%- if toc | length > 2 -%}
-      <nav class="art-index" aria-label="In this article">
-        <div class="art-index__label mono">// in this article</div>
-        <ol class="art-index__list">
-          {%- for h in toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor -%}
-        </ol>
-      </nav>
-      {%- endif -%}
       {%- endif -%}
 
       {{ content | safe }}
@@ -140,5 +137,30 @@ ctaHidden: true
         lb.classList.add('active');
       }
     });
+  })();
+</script>
+<script>
+  (function(){
+    var nav = document.querySelector('.art-index--rail');
+    if(!nav) return;
+    var links = nav.querySelectorAll('a');
+    var headings = [];
+    links.forEach(function(link){
+      var id = link.getAttribute('href').slice(1);
+      var h = document.getElementById(id);
+      if(h) headings.push({el: h, link: link});
+    });
+    if(headings.length === 0) return;
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var match = headings.find(function(h){ return h.el === entry.target; });
+        if(!match) return;
+        if(entry.isIntersecting){
+          links.forEach(function(l){ l.classList.remove('active'); });
+          match.link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+    headings.forEach(function(h){ observer.observe(h.el); });
   })();
 </script>
