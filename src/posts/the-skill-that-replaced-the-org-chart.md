@@ -1,10 +1,9 @@
 ---
 title: "The Skill That Replaced the Org Chart"
-date: 2026-07-14
+date: 2026-07-16
 excerpt: "Leading people was the core leadership skill for a century. Now teams include agents, and the competence that matters most is the one no MBA teaches."
 featuredImage: "/images/posts/orchestration-new-leadership.webp"
 layout: post.njk
-permalink: /drafts/b7f2896b/
 tags: ["ai", "strategy", "leadership", "agents"]
 anthem: true
 tldr:
