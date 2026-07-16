@@ -4,7 +4,7 @@ date: 2026-07-12
 excerpt: "Two AI judges scored an agent's answer 0.85. The agent never opened the file it claimed to read. Both judges said it looked solid."
 featuredImage: "/images/posts/stop-evaluating-agents-with-llm-as-judge.webp"
 layout: post.njk
-theme: agentic-engineering
+permalink: /drafts/d8c3f91a/
 tags: ["ai-engineering", "agent-evaluation", "llm-as-judge", "reliability"]
 ---
 
