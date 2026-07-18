@@ -1,10 +1,9 @@
 ---
 title: "When 16 Nobel Laureates Say We Must Act Now"
-date: 2026-07-17
+date: 2026-07-18
 excerpt: "On July 13, 2026, 226 economists and tech leaders signed a four-sentence letter. It said AI could reshape the economy more than the Industrial Revolution, in a fraction of the time. They did not say this lightly."
 featuredImage: "/images/posts/nobel-laureates-act-now.webp"
 layout: post.njk
-permalink: /drafts/a0f238a0/
 tags: ["ai", "strategy", "future-of-work", "economics", "policy"]
 anthem: true
 tldr:
