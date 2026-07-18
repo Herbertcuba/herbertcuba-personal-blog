@@ -99,7 +99,7 @@ Reflection is where the system evolves. Maybe specs in a particular domain were 
 
 The output of Reflection feeds directly back into Strategic. The cycle restarts, but now the system is better than it was. Strategic designs improve because they're informed by real execution data. Agents perform better because their configurations evolved. Quality gates sharpen because you know which checks caught real problems and which were noise.
 
-This is what separates APEX from a static pipeline. A pipeline runs the same way forever. APEX evolves.
+This is what separates APEX from a static pipeline. A pipeline is deterministic — the same inputs produce the same outputs, and there is nothing to learn. It runs the same way forever. APEX works differently because it orchestrates synthetic collaborators. Agents are not fixed components — they are probabilistic. They drift. They improve with better context and degrade without it. They infer where code executes. They fill gaps with assumptions where engineers judge. Reflection is the mechanism by which the system learns and the collaboration sharpens. Without it, you are not running an operating model — you are running a static process and hoping the agents stay good. They won't. APEX evolves.
 
 ### The Cycle in Practice
 
@@ -186,7 +186,7 @@ A common mistake is treating Business Context as a one-time exercise. Write the 
 
 Spec Engineering owns human intent. It does not own agent capabilities. A spec document describes what should be produced and the criteria for success. How agents are configured to produce it belongs in the Config Area. When Spec Engineering starts including agent instructions, you've blurred a boundary that causes problems downstream. Keep them separate.
 
-**QA Strategic** is the measurement and evaluation layer. Measurement plans, calibration specs, human evaluation criteria, definition of how output quality is assessed. This domain answers: how do we know the output is good enough?
+**QA Strategic** is where humans define what good looks like. It is the human evaluation layer — the criteria against which verified output is judged. This domain answers: when a human verifies this work, what are they actually checking for?
 
 QA Strategic owns the definition of quality at the system level. What does "done" mean for each deliverable type? What data feeds into Reflections? The artifacts are Review Criteria documents and Reflection Report templates. The primary handshake is with Spec Engineering on input and with QA Operational in the Config Area on execution.
 
@@ -202,7 +202,7 @@ The artifacts are an Agent Roster and Agent Identity Files. Each identity file d
 
 A simple workflow might be one agent executing and another reviewing. A complex workflow might involve a research agent feeding a writing agent, a review agent checking the output, and a routing agent deciding whether to iterate or escalate. The artifacts are Workflow Maps and Routing Rules. Orchestration Design does not own what agents do (that's Agent Design) or what they're working toward (that's Spec Engineering). It owns the traffic between them.
 
-**QA Operational** is the quality layer inside the execution loop. Agent-to-agent review criteria, quality gates within iteration cycles, automated checks per iteration. While QA Strategic defines what "good" means at the system level, QA Operational translates those definitions into checks that run every time an agent produces output.
+**QA Operational** is entirely agentic. It is the set of quality gates baked into the Execution loop — the agent-to-agent checks that resolve mechanical and criteria-based issues before work ever reaches a human. Every gate in QA Operational exists to serve the standard set by QA Strategic. It answers the question: how do we get there, automatically? While QA Strategic defines what "good" means at the system level, QA Operational translates those definitions into checks that run every time an agent produces output.
 
 The distinction between the two QA domains is important. QA Strategic is owned by humans who define quality. QA Operational is configured by humans but executed by agents. A review agent checking whether a code change passes tests, whether an article matches the brand voice guidelines, whether a financial analysis uses the correct data sources: that's QA Operational. The human who designed those checks operates in QA Strategic. The agent executing them operates in QA Operational.
 
@@ -359,7 +359,11 @@ Start with Platform and the domains that matter most for your context. Get them 
 
 **Principle 2: Human in Control of Outcome.** Humans own the outcome — not every step, but the result. They design the system, verify the output, and decide what to change. Agents handle the execution and iteration. The human doesn't need to be at the start and the end of every task. They need to be in control of what the system produces.
 
-**Principle 3: Quality In = Quality Out.** The output of any agentic system is a direct function of what goes in — specs, context, configuration, criteria. Better input produces better output. Vague input produces vague results. This applies across all three areas: Platform, Specs, and Config.
+**Principle 3: Quality In = Quality Out.** The output of any agentic system is bounded by the least reliable component in the chain. The system is only as strong as its weakest input.
+
+Every APEX system is built from three kinds of components, and they are not equally reliable. **Code** is deterministic. It does exactly what it is told, every time, at zero marginal cost, with zero hallucination. It is the most reliable component in any system. **Engineers** are judgment. They design, verify, and decide. Humans are reliable in a different way — not through speed or consistency, but through understanding. They are the only component that can evaluate whether output actually serves its purpose. **Agents** are probabilistic compute. They are flexible, scalable, and fast — but they are also the least predictable component in the chain. They infer, they drift, and they fill gaps with assumptions when context is missing.
+
+The implication is structural: the system is only as reliable as its least reliable component. Since agents are probabilistic by nature, the quality of everything that surrounds them — specs, context, configuration, criteria — determines the quality of what they produce. This is why Spec Engineering and Agent Design are not administrative tasks. They are the engineering of reliability itself. This applies across all three areas: Platform, Specs, and Config.
 
 **Principle 4: Agents Review Agents First.** All work passes through agent-to-agent review before a human sees it. This is how you get speed without sacrificing quality.
 
