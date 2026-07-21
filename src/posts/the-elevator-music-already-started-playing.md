@@ -73,6 +73,48 @@ Today we are in the in-between. We have the production power of AI without the m
 
 The slop we are starting to see is not a model problem. It is a maturity problem. ***Production-efficiency mode*** is the problem — we are optimizing for volume because volume is the only lever we have learned to pull. The Me-Verse promises hyper-personalization. What we have instead is hyper-production, and it tastes like sameness.
 
+<div class="fig-band">
+<svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;font-family:var(--font-mono, monospace)">
+  <!-- Background zones -->
+  <rect x="20" y="30" width="180" height="100" fill="#1a3a1a" opacity="0.3" rx="4"/>
+  <rect x="200" y="30" width="180" height="100" fill="#1a3a1a" opacity="0.5" rx="4"/>
+  <rect x="380" y="30" width="180" height="100" fill="#22c55e" opacity="0.2" rx="4"/>
+  <rect x="560" y="30" width="180" height="100" fill="#0d1117" opacity="0.8" rx="4"/>
+
+  <!-- Zone labels -->
+  <text x="110" y="55" text-anchor="middle" font-size="11" fill="#22c55e" letter-spacing="0.08em">MAINSTREAM ERA</text>
+  <text x="110" y="70" text-anchor="middle" font-size="9" fill="#6b7280">Broadcast scarcity</text>
+  <text x="110" y="82" text-anchor="middle" font-size="9" fill="#6b7280">One shared sameness</text>
+  <text x="110" y="95" text-anchor="middle" font-size="8" fill="#4b5563">~1950–2005</text>
+
+  <text x="290" y="55" text-anchor="middle" font-size="11" fill="#22c55e" letter-spacing="0.08em">FEED BUBBLE ERA</text>
+  <text x="290" y="70" text-anchor="middle" font-size="9" fill="#6b7280">Algorithmic selection</text>
+  <text x="290" y="82" text-anchor="middle" font-size="9" fill="#6b7280">Fractured sameness</text>
+  <text x="290" y="95" text-anchor="middle" font-size="8" fill="#4b5563">~2005–2023</text>
+
+  <text x="470" y="55" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="bold" letter-spacing="0.08em">THE IN-BETWEEN</text>
+  <text x="470" y="70" text-anchor="middle" font-size="9" fill="#6b7280">Hyper-production</text>
+  <text x="470" y="82" text-anchor="middle" font-size="9" fill="#6b7280">Sameness tastes like slop</text>
+  <text x="470" y="95" text-anchor="middle" font-size="8" fill="#4b5563">~2023–now</text>
+
+  <text x="650" y="55" text-anchor="middle" font-size="11" fill="#6b7280" letter-spacing="0.08em">ME-VERSE</text>
+  <text x="650" y="70" text-anchor="middle" font-size="9" fill="#4b5563">Hyper-personalization</text>
+  <text x="650" y="82" text-anchor="middle" font-size="9" fill="#4b5563">Audience of one</text>
+  <text x="650" y="95" text-anchor="middle" font-size="8" fill="#4b5563">Future state</text>
+
+  <!-- Timeline arrow -->
+  <line x1="20" y1="150" x2="740" y2="150" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="740,145 752,150 740,155" fill="#22c55e"/>
+
+  <!-- Era markers on timeline -->
+  <circle cx="110" cy="150" r="4" fill="#22c55e"/>
+  <circle cx="290" cy="150" r="4" fill="#22c55e"/>
+  <circle cx="470" cy="150" r="5" fill="#ffffff"/>
+  <circle cx="650" cy="150" r="4" fill="#4b5563"/>
+</svg>
+<p class="fig-cap" style="margin-top:12px;font-size:12px">Culture has cycled through eras of sameness. The Me-Verse promises personalization. What we have is hyper-production.</p>
+</div>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>We are in the in-between: we have AI production power but not AI maturity. The Me-Verse promises hyper-personalization, but what we have instead is hyper-production, and it tastes like sameness. The organizations that learn to differentiate through meaning and intent are the ones that will cut through.</p></div>
 
 ## What survives the average
