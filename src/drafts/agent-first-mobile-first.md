@@ -15,7 +15,54 @@ Within five years, mobile-first stopped being a design choice and became a survi
 
 The pattern repeated. Cloud-first demanded infrastructure that could scale without owning hardware. API-first demanded systems designed for integration before interface. Digital-first demanded organizations that treated the web as the primary channel, not a brochure. Each shift followed the same arc: a constraint identified, a doctrine formed, a generation of organizations that adapted faster than their competitors.
 
+<div class="fig-band">
+<svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;font-family:var(--font-mono, monospace)">
+  <!-- Timeline base line -->
+  <line x1="40" y1="88" x2="720" y2="88" stroke="#22c55e" stroke-width="1.5"/>
+  <!-- Arrow -->
+  <polygon points="720,83 732,88 720,93" fill="#22c55e"/>
+
+  <!-- Mobile-first -->
+  <circle cx="120" cy="88" r="5" fill="#22c55e"/>
+  <text x="120" y="72" text-anchor="middle" font-size="10" fill="#22c55e" letter-spacing="0.08em">MOBILE-FIRST</text>
+  <text x="120" y="110" text-anchor="middle" font-size="9" fill="#6b7280">2009</text>
+  <text x="120" y="122" text-anchor="middle" font-size="9" fill="#6b7280">New primary</text>
+  <text x="120" y="133" text-anchor="middle" font-size="9" fill="#6b7280">screen</text>
+
+  <!-- Cloud-first -->
+  <circle cx="250" cy="88" r="5" fill="#22c55e"/>
+  <text x="250" y="72" text-anchor="middle" font-size="10" fill="#22c55e" letter-spacing="0.08em">CLOUD-FIRST</text>
+  <text x="250" y="110" text-anchor="middle" font-size="9" fill="#6b7280">2012</text>
+  <text x="250" y="122" text-anchor="middle" font-size="9" fill="#6b7280">New primary</text>
+  <text x="250" y="133" text-anchor="middle" font-size="9" fill="#6b7280">infrastructure</text>
+
+  <!-- API-first -->
+  <circle cx="390" cy="88" r="5" fill="#22c55e"/>
+  <text x="390" y="72" text-anchor="middle" font-size="10" fill="#22c55e" letter-spacing="0.08em">API-FIRST</text>
+  <text x="390" y="110" text-anchor="middle" font-size="9" fill="#6b7280">2015</text>
+  <text x="390" y="122" text-anchor="middle" font-size="9" fill="#6b7280">New primary</text>
+  <text x="390" y="133" text-anchor="middle" font-size="9" fill="#6b7280">interface</text>
+
+  <!-- Digital-first -->
+  <circle cx="530" cy="88" r="5" fill="#22c55e"/>
+  <text x="530" y="72" text-anchor="middle" font-size="10" fill="#22c55e" letter-spacing="0.08em">DIGITAL-FIRST</text>
+  <text x="530" y="110" text-anchor="middle" font-size="9" fill="#6b7280">2018</text>
+  <text x="530" y="122" text-anchor="middle" font-size="9" fill="#6b7280">New primary</text>
+  <text x="530" y="133" text-anchor="middle" font-size="9" fill="#6b7280">channel</text>
+
+  <!-- Agent-first -->
+  <circle cx="670" cy="88" r="7" fill="#22c55e"/>
+  <text x="670" y="68" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="bold" letter-spacing="0.08em">AGENT-FIRST</text>
+  <text x="670" y="110" text-anchor="middle" font-size="9" fill="#6b7280">2025 →</text>
+  <text x="670" y="122" text-anchor="middle" font-size="9" fill="#6b7280">New primary</text>
+  <text x="670" y="133" text-anchor="middle" font-size="9" fill="#6b7280">reader</text>
+</svg>
+<p class="fig-cap" style="margin-top:12px;font-size:12px">Each "first" shift reorganized around a new constraint. Agent-first is the next.</p>
+</div>
+
 I think we are at that moment again. The constraint is not screen size. It is the reader.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every generation gets a design constraint that reorganizes everything. Mobile-first was one. Agent-first is the next.</p></div>
 
 ## The parallel
 
