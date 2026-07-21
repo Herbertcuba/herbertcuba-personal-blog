@@ -13,6 +13,8 @@ In 2009, Luke Wroblewski wrote a blog post that became a doctrine. He called it 
 
 Within five years, mobile-first stopped being a design choice and became a survival requirement. Organizations that treated mobile as a shrunken desktop struggled. The ones that rebuilt around the constraint pulled ahead.
 
+The pattern repeated. Cloud-first demanded infrastructure that could scale without owning hardware. API-first demanded systems designed for integration before interface. Digital-first demanded organizations that treated the web as the primary channel, not a brochure. Each shift followed the same arc: a constraint identified, a doctrine formed, a generation of organizations that adapted faster than their competitors.
+
 I think we are at that moment again. The constraint is not screen size. It is the reader.
 
 ## The parallel
