@@ -31,6 +31,8 @@ The second parallel is process. Mobile-first required new tools, new testing reg
 
 The third parallel is organizational. Mobile-first was not a design team project. It required product, engineering, marketing, and leadership to align around a new primary user. Agent-first is the same. It is not an IT project. It is an operating model shift.
 
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Mobile-first, cloud-first, API-first: every generation gets a constraint that reorganizes everything. Agent-first is next. Writing for a reader that cannot ask questions is the shared discipline.</p></div>
+
 ## The difference
 
 Here is where the parallel breaks.
@@ -45,6 +47,8 @@ The scale is different. Mobile-first was a design constraint. Agent-first is a s
 
 This is why agent-first is not a design principle. It is an operating model. And operating models do not retrofit. They replace what came before.
 
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Mobile-first changed how you build. Agent-first changes who builds, who decides, who is accountable. The blast radius is operational, not experiential.</p></div>
+
 ## Clarity debt
 
 Technical debt is the cost of shortcuts in code. It accumulates silently until it breaks something.
@@ -57,6 +61,8 @@ This is not new. API documentation has always mattered. Onboarding has always ma
 
 The audit is simple. Count the documents that reference judgment without naming who exercises it. Each one is a liability. The test before publishing anything: can an agent follow this without asking a single clarifying question? If not, it is not finished.
 
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Clarity debt is the new technical debt. Humans bridged unclear writing with context. Agents cannot. Every gap becomes a confident wrong decision at scale.</p></div>
+
 ## The compression
 
 Mobile-first took five years to go from blog post to business requirement. The transition was painful but legible. You could see the shift in your analytics, your user feedback, your competitor's redesign.
@@ -64,6 +70,8 @@ Mobile-first took five years to go from blog post to business requirement. The t
 Agent-first is moving faster. The infrastructure is already here: llms.txt, MCP tool descriptions, OpenAPI specs. Companies born today are agent-first from birth. They do not have 40,000 legacy documents to triage. They do not have processes built for human readers. They do not have to unlearn.
 
 The rest of us have maybe eighteen months. Not because the technology demands it. Because the organizations that get this right will operate at a different speed, and the market will notice.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Mobile-first took five years. Agent-first is moving faster. Companies born today are agent-first from birth. The gap is not technology. It is operating model.</p></div>
 
 The question is not whether your organization becomes agent-first. The question is whether you redesign for it or get redesigned by it.
 
