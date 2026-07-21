@@ -154,7 +154,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 /* ---- Utilities ---- */
 .mono{font-family:var(--font-mono);}
 .slash{font-family:var(--font-mono);font-weight:700;color:var(--green);}
-.cursor{color:var(--green);}          /* trailing _ accent */
+.cursor{color:var(--green);animation:blink 1.06s step-end infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .container{max-width:1440px;margin:0 auto;}
 
 /* Tag chips */
