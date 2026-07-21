@@ -6,13 +6,7 @@ featuredImage: "/images/posts/agent-first-mobile-first.webp"
 layout: post.njk
 permalink: /drafts/agent-first-mobile-first/
 tags: ["ai", "agentic-engineering", "operating-model", "strategy", "digital-singularity-shift"]
-anthem: true
-tldr:
-  - "Mobile-first reorganized design around a new primary user. Agent-first reorganizes the entire operating model around a new primary actor."
-  - "The parallel: both demand new documentation, new processes, new tools. Both punish organizations that retrofit instead of redesign."
-  - "The difference: mobile-first changed how you build. Agent-first changes who builds, who decides, and who is accountable."
-  - "Clarity debt is the new technical debt. It always existed, but humans bridged it. Agents cannot."
-  - "Companies born today are agent-first from birth. Everyone else has maybe eighteen months to close the gap."
+anthem: false
 ---
 
 In 2009, Luke Wroblewski wrote a blog post that became a doctrine. He called it mobile-first. The idea was simple: design for the smallest screen first, then scale up. Not as a compromise. As a discipline.
@@ -27,7 +21,7 @@ Mobile-first forced a new kind of writing. Shorter paragraphs. Clearer hierarchy
 
 Agent-first demands the same shift, but harder. You are no longer writing for a distracted human. You are writing for a literal executor that cannot ask questions at all.
 
-I wrote about this recently: the primary reader of your runbook, your decision memo, your API spec is becoming a machine. Ambiguous documentation does not confuse a junior developer anymore. It spreads confident, wrong decisions at scale. The standard changed from clear enough to unambiguous enough.
+The primary reader of your runbook, your decision memo, your API spec is becoming a machine. Ambiguous documentation does not confuse a junior developer anymore. It spreads confident, wrong decisions at scale. The standard changed from clear enough to unambiguous enough.
 
 This is the first parallel. Both shifts require a new discipline of writing. Both punish the assumption that your reader shares your context.
 
@@ -71,6 +65,3 @@ The rest of us have maybe eighteen months. Not because the technology demands it
 
 The question is not whether your organization becomes agent-first. The question is whether you redesign for it or get redesigned by it.
 
----
-
-*(The broader operating model for building around this — from documentation discipline to agent orchestration — is in my book [The Digital Singularity Shift](/books/the-digital-singularity-shift/).)*
