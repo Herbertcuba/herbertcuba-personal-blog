@@ -11,6 +11,9 @@
   <link rel="preload" href="/fonts/inter-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/redesign.css" />
 
+  {# Canonical — single canonical URL #}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
   {# OpenGraph #}
   {% set ogTitle = title or site.title %}
   {% set ogDescription = excerpt or description or site.description %}
@@ -23,10 +26,62 @@
   <meta property="og:url" content="{{ ogUrl }}" />
   <meta property="og:type" content="{{ ogType }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
+  {%- if isArticle and date %}
+  <meta property="article:published_time" content="{{ date | isoDate }}" />
+  {%- endif %}
+  {%- if updated %}
+  <meta property="article:modified_time" content="{{ updated | isoDate }}" />
+  {%- endif %}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ ogTitle }}" />
   <meta name="twitter:description" content="{{ ogDescription }}" />
   <meta name="twitter:image" content="{{ site.url }}{{ ogImage }}" />
+
+  {# JSON-LD structured data #}
+  {%- if isArticle %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ title | dump | safe }},
+    "description": {{ ogDescription | dump | safe }},
+    "image": "{{ site.url }}{{ ogImage }}",
+    "url": "{{ ogUrl }}",
+    "datePublished": "{{ date | isoDate }}",
+    {%- if updated %}
+    "dateModified": "{{ updated | isoDate }}",
+    {%- endif %}
+    "author": {
+      "@type": "Person",
+      "name": "Herbert Cuba Garcia",
+      "url": "{{ site.url }}/about/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Herbert Cuba Garcia",
+      "url": "{{ site.url }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ ogUrl }}"
+    }
+  }
+  </script>
+  {%- else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | dump | safe }},
+    "url": "{{ site.url }}",
+    "author": {
+      "@type": "Person",
+      "name": "Herbert Cuba Garcia",
+      "url": "{{ site.url }}/about/"
+    }
+  }
+  </script>
+  {%- endif %}
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR3S8G8NB6"></script>
