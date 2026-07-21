@@ -1,10 +1,10 @@
 ---
 title: "The Elevator Music Already Started Playing"
-date: 2026-07-13
+date: 2026-07-21
 excerpt: "AI systems left talking to themselves collapse into visual elevator music. That is less a model quirk than a preview of where our content culture is heading."
 featuredImage: "/images/posts/ai-cultural-stagnation.webp"
 layout: post.njk
-permalink: /drafts/f1e83f73/
+theme: strategy-leadership
 tags: ["ai", "culture", "generative-ai", "digital-singularity-shift"]
 anthem: true
 tldr:
