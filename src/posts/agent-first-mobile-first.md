@@ -1,10 +1,10 @@
 ---
 title: "Agent-First Is the New Mobile-First. It Is Also Nothing Like It."
-date: 2026-07-21
+date: 2026-07-22
 excerpt: "Every generation gets a design constraint that reorganizes everything. Mobile-first was one. Agent-first is the next. The parallel is exact. The scale is not."
 featuredImage: "/images/posts/agent-first-mobile-first.webp"
 layout: post.njk
-permalink: /drafts/agent-first-mobile-first/
+permalink: /posts/agent-first-mobile-first/
 tags: ["ai", "agentic-engineering", "operating-model", "strategy", "digital-singularity-shift"]
 anthem: false
 ---
