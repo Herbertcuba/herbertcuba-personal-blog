@@ -1,7 +1,7 @@
 ---
 title: "96% of What You Pay for Is Text You Already Sent"
-date: 2026-07-30
-excerpt: "One tracker logged 3.77 billion tokens in a single day of agentic coding, and 96% of them were the same context resent on every turn. Token discipline is the least glamorous, highest leverage skill in AI engineering right now."
+date: 2026-07-31
+excerpt: "One tracker logged 3.77 billion tokens in a single day of agentic coding. 96% was the same context resent on every turn. Context is a consumable engineering resource, and it deserves the same rigor as memory management."
 layout: post.njk
 tags: ["ai", "agentic-ai", "engineering"]
 theme: agentic-engineering
@@ -12,23 +12,25 @@ I tried to fix my agent costs last month by switching to a cheaper model. The bi
 
 The reason was sitting in my own request logs. I was paying to send the same text, over and over, on every turn.
 
-Nate B. Jones just put hard numbers on this. He ran a tracker across his agentic coding setup for one day. It logged 3.77 billion tokens across 143 threads. Roughly 96% of that was reused input, the same context resent again and again. Four percent was new information. The rest was the price of not cleaning up.
+Nate B. Jones just put hard numbers on this. He ran a tracker across his agentic coding setup for one day. It logged 3.77 billion tokens across 143 threads. Roughly 96% of that was reused input, the same context resent again and again. Four percent was new information.
 
-Most people see a number like that and reach for prompt caching or a cheaper model. I think that optimizes the wrong variable. The lever is how much you send in the first place.
+One person's tracker is one person's tracker. So triangulate. Manus, a company running a production agent at scale, reports an average of 100 input tokens for every output token in its agent loop. Input dominates the bill. And Anthropic's own pricing tells the same story from the other side: a cache read, meaning input the model has seen before, costs a tenth of fresh input. The providers know exactly where your money goes.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Tokens are a consumable resource with compounding cost. Five boring failure modes burn most of them, five habits fix it, and the number that improves is cost per accepted result.</p></div>
+Most people see numbers like that and reach for prompt caching or a cheaper model. I think that optimizes the wrong variable. The lever is how much you send in the first place.
 
 ## Context is a consumable resource
 
 A token is the unit of text a model reads and writes, roughly three quarters of a word. The context window is everything the model can see at once, its working memory.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every turn resends the whole conversation, so long threads cost worse than linear. Context deserves the same rigor as memory management in C.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every turn resends the whole conversation, so threads get expensive in a curve, and stale context degrades answers on top of the cost. Treat context like memory in C.</p></div>
 
 A language model has no memory between requests. None. Every turn, your agent framework takes the full conversation, the system prompt, the tool definitions, every message, every file the model opened, and sends it again with the new question stapled to the end.
 
 Say I ask an agent to fix a checkout bug. The cart total ignores a discount code. Turn one sends the system prompt, the tool list, and the bug report. Turn two resends all of that, plus the model's first reply, plus the file it opened. By turn twenty, I am resending nineteen replies and a pile of file contents to ask one more question. The thread does not get expensive in a straight line. It gets expensive in a curve, because every new turn pays for every old turn.
 
 I think about this the way C programmers think about memory. You allocate, you use, you free. Leak memory and the process bloats until it dies. Context works the same way. It is a consumable engineering resource with compounding cost, and almost nobody treats it with that rigor.
+
+The stale part of a long thread deserves its own name, so here is one: context debt. Like technical debt, it charges interest. The interest comes due on every turn, in dollars. And it costs you accuracy too. A 2023 study out of Stanford and Berkeley found that models get measurably worse at using information buried in the middle of long contexts. A 2026 preprint on long agent runs found that as context piles up, models start giving up early or answering with less confidence. The 300k token thread is a liability twice: once on the invoice, once in the answer.
 
 ## Five ways agents burn the budget
 
@@ -49,15 +51,15 @@ Fifth, tool servers that eat the window before breakfast. MCP, the Model Context
 <div class="scifi">
 <span class="scifi__label">Meanwhile, in science fiction</span>
 <p class="scifi__film">Edge of Tomorrow</p>
-<p>In Edge of Tomorrow, Tom Cruise's character relives the same battle hundreds of times. Every loop resets the world, but he keeps his memory, so each run gets sharper. He skips what he already knows and spends the loop on what is new.</p>
-<p>Your model lives that movie in reverse. Every turn is a fresh loop, and it remembers nothing. You are the memory. You decide what it carries into the next run, and most people hand it everything: the full transcript, every file, every dead end. The brief is the budget. Write it like one.</p>
+<p>In Edge of Tomorrow, Tom Cruise's character relives the same battle over and over. Every loop resets the world, but he keeps his memory, so each run gets sharper. He skips what he already knows and spends the loop on what is new.</p>
+<p>Your model lives that movie in reverse. Every turn is a fresh loop, and it remembers nothing. You are the memory. You decide what it carries into the next run, and most people hand it everything: the full transcript, every file, every dead end.</p>
 </div>
 
 ## The practices that move the number
 
-None of this is exotic. All of it is hygiene.
+None of this needs new tooling. It is habits, plus one query against your logs.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Clean threads, carry the artifact, cap the output, pre-search yourself, smallest model that passes. Boring habits, real money.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Clean threads, carry the artifact, cap the output, pre-search yourself, smallest model that passes, stable prefix for the cache. Boring habits, real money.</p></div>
 
 Start a clean task when the job changes. The checkout bug is fixed, the thread is done. New job, new thread. In my experience, this one habit does more for the bill than any model downgrade I have tried.
 
@@ -69,18 +71,24 @@ Pre-search sources yourself. You already know the discount logic is in pricing.p
 
 Use the dumbest model that still clears the bar. A small model can classify, route, and summarize. Escalate to the expensive one when the small one fails. Nate Jones takes this further with a layer he calls Ringer that sits between the agent and the provider, intercepts every request, and enforces hard limits. You do not need his framework to steal the idea. Put something between your agent and the API that is allowed to say no.
 
+Then let the cache do its job. Prompt caching gives you the 0.1x price on repeated input, but only if the front of your request stays identical. System prompt, tool list, reference material: keep them stable, append new stuff at the end, and the reused part of every turn gets 90% cheaper on its own. Change one byte early in the request and the discount vanishes. Caching rewards hygiene. It does not replace it.
+
+Start tonight. Open your request logs and compute one number: how much of what you sent was text you had sent before. That is your reuse ratio. Everything else in this piece follows from it.
+
 ## Cost per accepted result
 
 The industry quotes token prices the way airlines quote seat prices. It is the visible number. It is rarely the decisive one.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The KPI is cost per accepted result: total spend to land one change you actually merge. Context hygiene moves that number directly, from both sides.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The KPI is cost per accepted result: total spend to land one change you actually merge. Context hygiene moves that number directly, and at org scale it becomes a budget line someone needs to own.</p></div>
 
 My take: the metric that matters is cost per accepted result. How much did you spend, end to end, to produce one change you actually merged, one answer you actually used? Token price is an input to that number. Context hygiene is the multiplier.
 
 It works in two directions at once. Less input per turn shrinks every request. And cleaner context raises the odds the answer is right the first time, because the model reasons over the twelve lines that matter instead of 2,000 lines of noise and three stale files from a different task. Fewer retries, smaller envelopes, cheaper accepted results.
 
-This is why I think context discipline beats model upgrades for cost. A cheaper model shaves the price of each token. Hygiene removes the tokens. Only one of those compounds.
+Now scale it. Say 200 developers each push 50 million tokens a day through agent loops, a fraction of what Jones's setup does. That is 10 billion tokens a day. At his ratio, 9.6 billion of those are reused input. Even at cache-read prices, call it $0.30 per million tokens, that is close to $3,000 a day spent on text already sent. Roughly a quarter of a million dollars a quarter, for one mid-size engineering org. That is a number a CFO will ask about, and right now most orgs cannot answer, because nobody owns the context budget. In a governed setup that owner is the platform team, the same people who own the cloud bill and the slow query log. I think any team that cannot state its reuse ratio will misprice its agent workloads, and badly.
 
-I don't know where the floor is. I do know most teams are nowhere near it, because nobody owns the context budget the way someone owns the cloud bill or the slow query log. The moment someone does own it, the number starts moving.
+This is why I think context discipline beats model upgrades for cost. A cheaper model shaves the price of each token. Hygiene removes the tokens. Only one of those compounds. And the providers have already told you where this ends: cache pricing is hygiene turned into a price list. The savings from clean context exist today, waiting for anyone with a stable prefix.
+
+I don't know where the floor is. I do know most teams are nowhere near it, because the context budget has no owner and no meter. The moment it gets both, the number starts moving.
 
 This is the orchestration thesis at the smallest scale there is. Decide what enters the room. Carry forward only what earned its place. The cheapest token is the one you never send.
