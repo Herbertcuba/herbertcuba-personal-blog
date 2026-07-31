@@ -18,7 +18,7 @@ One person's tracker is one person's tracker. So triangulate. Manus, a company r
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Most of the token spend in an agentic workflow is text you already sent. Context is a consumable resource with compounding cost, and the habits that control it are boring and cheap to adopt.</p></div>
 
-Most people see numbers like that and reach for prompt caching or a cheaper model. I think that optimizes the wrong variable. The lever is how much you send in the first place.
+Caching and cheaper models both earn their place, and I will get to caching below. But the biggest lever sits earlier: how much you send at all.
 
 ## Context is a consumable resource
 
@@ -30,11 +30,11 @@ A token is the unit of text a model reads and writes, roughly three quarters of 
 
 Say I ask an agent to fix a checkout bug. The cart total ignores a discount code. Turn one sends the system prompt, the tool list, and the bug report. Turn two resends all of that, plus the model's first reply, plus the file it opened. By turn twenty, I am resending nineteen replies and a pile of file contents to ask one more question. The thread does not get expensive in a straight line. It gets expensive in a curve, because every new turn pays for every old turn.
 
-I think about this the way C programmers think about memory. You allocate, you use, you free. Leak memory and the process bloats until it dies. Context works the same way. It is a consumable engineering resource with compounding cost, and almost nobody treats it with that rigor.
+I think about this the way C programmers think about memory. You allocate, you use, you free. Leak memory and the process bloats until it dies. Context works the same way. It is a consumable engineering resource with compounding cost, and it deserves the same rigor.
 
 The stale part of a long thread deserves its own name, so here is one: context debt. Like technical debt, it charges interest. The interest comes due on every turn, in dollars. And it costs you accuracy too. A [2023 study out of Stanford and Berkeley](https://arxiv.org/abs/2307.03172) found that models get measurably worse at using information buried in the middle of long contexts. A [2026 preprint on long agent runs](https://arxiv.org/abs/2606.29718) found that as context piles up, models start giving up early or answering with less confidence. The 300k token thread is a liability twice: once on the invoice, once in the answer.
 
-Here is the claim I will stake on the name: any team that cannot state its reuse ratio will misprice its agent workloads, and badly. Context debt is measurable, it compounds, and right now almost nobody has a meter on it.
+Any team that cannot state its reuse ratio will misprice its agent workloads, and badly. Context debt is measurable and it compounds. A team with no meter on it is taking the invoice's word for its own behavior.
 
 ## Five ways agents burn the budget
 
@@ -56,7 +56,7 @@ Fifth, tool servers that eat the window before breakfast. MCP, the Model Context
 <span class="scifi__label">Meanwhile, in science fiction</span>
 <p class="scifi__film">Edge of Tomorrow</p>
 <p>In Edge of Tomorrow, Tom Cruise's character relives the same battle over and over. Every loop resets the world, but he keeps his memory, so each run gets sharper. He skips what he already knows and spends the loop on what is new.</p>
-<p>Your model lives that movie in reverse. Every turn is a fresh loop, and it remembers nothing. You are the memory. You decide what it carries into the next run, and most people hand it everything: the full transcript, every file, every dead end.</p>
+<p>Your model lives that movie in reverse. Every turn is a fresh loop, and it remembers nothing. You are the memory. You decide what it carries into the next run, and the lazy default is to hand it everything: the full transcript, every file, every dead end.</p>
 </div>
 
 ## The practices that move the number
@@ -98,14 +98,12 @@ The industry quotes token prices the way airlines quote seat prices. It is the v
 
 My take: the KPI is cost per accepted result. How much did you spend, end to end, to produce one change you actually merged, one answer you actually used? Token price is an input to that number. Context hygiene is the multiplier.
 
-It works in two directions at once. Less input per turn shrinks every request. And cleaner context raises the odds the answer is right the first time, because the model reasons over the twelve lines that matter instead of 2,000 lines of noise and three stale files from a different task. Fewer retries and smaller envelopes mean cheaper accepted results.
+It works in two directions at once. Less input per turn shrinks every request. And cleaner context raises the odds the answer is right the first time, because the model reasons over the twelve lines that matter instead of 2,000 lines of noise. Fewer retries and smaller envelopes mean cheaper accepted results.
 
-Now scale it. Say 200 developers each push 50 million tokens a day through agent loops, a fraction of what Jones's setup does. That is 10 billion tokens a day. At his ratio, 9.6 billion of those are reused input. Even at cache-read prices, call it $0.30 per million tokens, that is close to $3,000 a day spent on text already sent. Roughly a quarter of a million dollars a quarter, for one mid-size engineering org. That is a number a CFO will ask about, and right now most orgs cannot answer, because nobody owns the context budget. In a governed setup that owner is the platform team, the same people who own the cloud bill and the slow query log.
+Now scale it. Say 200 developers each push 50 million tokens a day through agent loops, a fraction of what Jones's setup does. That is 10 billion tokens a day. At his ratio, 9.6 billion of those are reused input. Even at cache-read prices, call it $0.30 per million tokens, that is close to $3,000 a day spent on text already sent. Roughly a quarter of a million dollars a quarter, for one mid-size engineering org. That is a number a CFO will ask about, and the teams that can answer it are the teams where someone owns the context budget. In a governed setup that owner is the platform team, the same people who own the cloud bill and the slow query log.
 
-Who captures the savings? Today the provider takes a share through cache pricing: the discount for a stable prefix is real, and the vendor still collects on every cached token you resend. Tomorrow nothing stops repricing. The part nobody can take back is the instrumentation itself. The team that knows its reuse ratio can defend its agent budget in a review and negotiate from numbers. The team that cannot will accept whatever the invoice says.
+The savings have more than one claimant. Today the provider takes a share through cache pricing: the discount for a stable prefix is real, and the vendor still collects on every cached token you resend. Tomorrow nothing stops repricing. The part that stays yours is the instrumentation itself. The team that knows its reuse ratio can defend its agent budget in a review and negotiate from numbers.
 
-This is why I think context discipline beats model upgrades for cost. A cheaper model shaves the price of each token. Hygiene removes the tokens. Only one of those compounds. And the providers have already told you where this ends: cache pricing is hygiene turned into a price list. The savings from clean context exist today, waiting for anyone with a stable prefix.
+This is why I think context discipline beats model upgrades for cost. A cheaper model shaves the price of each token. Hygiene removes the tokens. Only one of those compounds.
 
-I don't know where the floor is. I do know most teams are nowhere near it, because the context budget has no owner and no meter. The moment it gets both, the number starts moving.
-
-This is the orchestration thesis at the smallest scale there is. Decide what enters the room. Carry forward only what earned its place. The cheapest token is the one you never send.
+I don't know where the floor is. I do know where the meter starts: one query against your logs, run tonight. This is the orchestration thesis at the smallest scale there is. Decide what enters the room. Carry forward only what earned its place. The cheapest token is the one you never send.
