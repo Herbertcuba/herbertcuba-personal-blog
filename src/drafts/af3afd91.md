@@ -6,6 +6,7 @@ layout: post.njk
 tags: ["ai", "agentic-ai", "engineering"]
 theme: agentic-engineering
 permalink: /drafts/af3afd91/
+featuredImage: "/images/posts/token-discipline-context-hygiene.webp"
 ---
 
 I tried to fix my agent costs last month by switching to a cheaper model. The bill barely moved.
