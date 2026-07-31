@@ -1,0 +1,81 @@
+---
+title: "Two maps, one fork: what AI 2040 and The Three Crucibles tell you comes next"
+date: 2026-07-31
+excerpt: "The team behind AI 2027 just published ninety pages on how the world should survive superintelligence. Their economic engine is the mechanism I published in The Three Crucibles four months earlier: the Citizen's Dividend, modeled on Alaska's oil fund. A solo pattern-watcher and a six-author forecasting shop reached for the same word from opposite directions. Where we split is ownership, and their own document keeps drifting to my side."
+featuredImage: "/images/posts/two-maps-one-fork.webp"
+layout: post.njk
+permalink: /drafts/two-maps-one-fork/
+tags: ["ai", "strategy", "future-of-work", "economics", "policy"]
+tldr:
+  - "AI 2040: Plan A, from the team behind AI 2027, proposes a US-China deal: total research transparency, a training pause, and compute permits whose revenue funds a Citizen's Dividend modeled on the Alaska Permanent Fund."
+  - "The Three Crucibles, public since March 2026, argued for the same dividend mechanism, the same diagnosis of why the tax base dies when AI replaces payroll, and the same endgame fork: abundance for all or techno-feudalism."
+  - "We diverge on the variable that decides the outcome. Plan A trusts verified international governance. I think distributed ownership of the intelligence layer decides more, and their own document quietly agrees."
+---
+
+In 1976, Alaska made an unusual deal with itself. The oil at Prudhoe Bay belonged to everyone in the state, so when the oil companies came to drill, a share of the revenue went into a public fund. Since 1982 every Alaska resident has received a yearly check from it. No work requirement. You live there, you own a share of the resource, you get paid.
+
+Earlier this month the AI Futures Project published [AI 2040: Plan A](https://ai-2040.com/AI-2040.pdf), exactly ninety pages of scenario modeling and policy engineering from the team that wrote AI 2027. Its economic centerpiece is that same machine at planetary scale. Permit fees on compute flow into a Compute Dividend Corporation, and their footnote says it plainly: "This is similar to the setup of the Alaska Permanent Fund, except at a much larger scale." Their 2033 chapter is titled "The Citizen's Dividend." I published the same mechanism, under the same name, in The Three Crucibles, public on my site since March.
+
+The scenario draws on direct OpenAI experience and conversations inside the frontier labs. Their own self-assessment is blunter than anything I could write: "So far reality is tracking closer to AI 2027 than even we expected." So when that team reaches for the same word and the same fifty-year-old fund I built a book around, I pay attention. Two maps of the same fire, and both of them force the question neither scenario can answer for you: who owns the machines.
+
+## What Plan A says
+
+Plan A is a treaty scenario with an economic engine bolted on.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The US and China agree in 2029 to avoid a reckless race. The deal triggers a training pause, total research transparency, and a compute declaration. The world scales inside the human range until 2035, pauses at top-expert-level AI to keep humans in control, then unpauses to superintelligence in 2040. The economy runs on capped compute, permit fees, and a Citizen's Dividend that reaches about $1M per person per year in their scenario.</p></div>
+
+The timeline, in their scenario. Fully automated AI R&D would arrive in 2030 and produce superintelligence within the year. The 2029 deal stops that. Between 2030 and 2035 the world scales to AI roughly as capable as top human experts, then pauses there on purpose. In 2040 the world unpauses. Hence the title.
+
+The economics are why I am writing this. All of these numbers are in-scenario, their forecast inside their own model. Real GDP growth hits about 50% per year in 2032. World compute goes from roughly 20 million H100-equivalents in 2026 to 60 billion by 2034. The AI share of the labor economy climbs from about 20% in 2032 to about 85% by 2035. And the US tax base collapses as a fraction of GDP, because under the 2026 tax code firms can expense the machines that replaced the workers until taxable income reaches zero.
+
+So Plan A replaces the dead base. Compute and robots get capped and traded, the permit fees become federal revenue (roughly $50 trillion in FY2032, climbing toward $180 trillion by 2034), and the Citizen's Dividend starts at $45,000 per person in 2032, climbing to about $1M by 2035.
+
+Translate that curve into one company. Company A from my book, an insurer with 5,000 claims adjusters, sits near the 20% end of that line. Its cost base gets renegotiated role by role inside a single planning cycle. Salaries and vendor contracts merge into one decision: which hours do you still buy from people. By the time its industry approaches the 85% end, the question of which roles still exist has been answered for it. The only live question is whether it answered first. It did not. Company B did. More on them below.
+
+The authors are honest about the genre. Plan A calls itself "primarily a recommendation, not a prediction." It is a stress test for a set of policies: Compute Declaration, Training Pause, Verification Plan, Transparency Plan, Capability Scaling Strategy. The whole accounting exercise is thinkable at all because datacenters are big enough to see from space and chip fabs sit in a handful of countries.
+
+## Where the maps converge
+
+The overlap is specific enough to check, and specific enough to be wrong about. This is what survives checking.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The convergence runs deeper than vocabulary: same term, same precedent, same diagnosis of why the tax base dies, same refusal to treat the future as fixed. The funding mechanisms split on one question: does a treaty exist or not.</p></div>
+
+First, the terrain. My book describes the transition as three passages: a Correction that breaks the labor economy (Productivity = Capital x Labor loses its labor variable, and what remains is Productivity = Capital), a Transformation that rebuilds distribution, and an Alignment that settles who owns the machines. Plan A's 2027 chapter opens inside the Correction already running. America runs two workforces: 165 million humans alongside millions of AI agents spun up and shut down every hour. By mid-2031, in their scenario, a third of all cognitive labor is done by AIs. Their fires burn on a slower schedule than mine. The shape of the burn is the same.
+
+Second, the tell. Same term, same precedent: the Citizen's Dividend, modeled on the Alaska Permanent Fund. The term has older roots in UBI discourse, so I claim convergence, and the word belongs to the commons. But a solo pattern-watcher and a six-author forecasting shop reached for the same word and the same precedent from opposite directions, months apart. I think something real is being triangulated there.
+
+Third, the diagnosis and the fork. Start with the money. Both documents see the same hole in the budget: when machines replace payroll, the payroll tax base dies. My book funds the dividend through instruments a single country can pass on its own, an AI Labor Equivalence Tax and an AI Output Tax. Plan A funds it through cap-and-trade permits, which only work if the Consortium exists to run the market. One mechanism survives a world without a treaty. The other requires the treaty first.
+
+Then the endgame. Their foreword frames the whole project as avoiding extinction or irreversible concentration of power, where a tiny group of people ends up controlling the world's only army of superintelligences. That is my Third Crucible in different vocabulary: stewards of abundance, or new feudal lords, chosen by the owners of the infrastructure. Their postscript says the quiet part out loud: "We think the world is asleep at the wheel." And both documents refuse the forecaster's chair. Theirs is a recommendation. Mine is a preparation manual. Both insist the fork is a choice.
+
+## Where the maps diverge
+
+The deepest disagreement is about which variable decides the outcome.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Plan A bets on verified international governance to slow the race. I bet on distributed ownership of the intelligence layer. Their own covert-project math shows both the strength of their bet and the seam where it can tear: the entire scenario rests on a verification chokepoint, a measurement stack that does not exist yet.</p></div>
+
+Plan A is a governance story. It runs on diplomats backed by verification devices. I think ownership decides more than governance. A capped, permitted, beautifully governed intelligence economy with five owners is a well-run Matrix: the simulation runs smoothly, and nobody inside it owns anything, including themselves. I would rather have a messier world where compute sits in millions of hands. My book calls open models the most important technological resistance movement of our era. When five companies own the intelligence layer, you get feudalism with better marketing.
+
+George Hotz made the strongest published attack on the document, and he landed on my side without knowing it. He called the Consortium world government with sci-fi characteristics and warned you will get a massively expanded nanny state that seizes your GPUs the way FDR seized the gold. His alternative is Plan L, for local: AI aligned to the individual owner, working for you, never refusing a request. Plan L is structurally my third pillar. The sharpest critic of the governance map rebuilt the ownership map on his own.
+
+Their own document keeps drifting toward my side too. In their 2035 chapter, the system that keeps superhuman AI under human control works because its components are open-source and thoroughly understood by human experts. In their transparency appendix, they place "Mandate Open Source" on the policy spectrum and argue over how close Plan A should sit to it. They end up short of open weights for frontier models, mostly on bioweapon grounds, and I think that call will age badly. But the instinct is there. The most governance-heavy plan on the table keeps reaching for open infrastructure whenever it asks who should actually hold the power.
+
+The strongest part of their document is the covert-project math. I tried to find a hole in it and came away half-convinced. Their worst case is a Chinese covert project built from about 500k smuggled H100-equivalents, roughly 17% of the 3 million smuggled in during 2028, with only around 200 humans aware of it. Their analysts project it would reach top-expert-dominating AI in 2043, and they estimate the chance of a covert project getting there undetected stays below 10% until then. Attempts small enough to stay hidden would also be too small to confer a significant advantage.
+
+But the whole forecast rests on a measurement claim: by the end of 2029, each side is confident the other is hiding less than about 1% of AI compute. Look at what that confidence requires physically. Verification devices retrofitted into nearly every major datacenter, proving that hardware is running inference and nothing more. New chips designed from the ground up with security as the priority, some with model weights hardcoded into silicon so they physically cannot train. A chip buyback program chasing down 400k of a million missing H100-equivalents, with the last 100k written off as untraceable because smugglers never recorded their customers. None of this exists as shipped infrastructure today. Fabs report shipments; a GPU cannot testify about its own training runs. The scenario has to invent the entire measurement stack on a treaty timeline. That stack is the verification chokepoint: Plan A fails if the chips cannot prove what they are doing, and whoever builds the attestation layer owns the chokepoint of the governed world. If you build systems for a living, that is the assumption to watch.
+
+The asymmetry cuts both ways, and I will own my side of it. Plan A covers what my book treats lightly: verification protocols, covert-project detection, the enforcement machinery of a treaty. I wrote the sociology of the transition; they wrote the machinery of the treaty. I don't know which failure mode is more likely, a deal that collapses or a concentration that never gets challenged.
+
+## What this means for you
+
+If you build with LLMs for a living, this debate prices your skills and picks your employer.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Selling hours is the losing position in both futures. Own assets, and become the person who can verify what the agents did. Start with two vendor questions and one contract clause.</p></div>
+
+I think the boring documents decide more than the scenarios do, so start there. Ask your vendor two questions this quarter. What happens to my model access if your licensing terms tighten? Which of my prices only hold while the subsidy war lasts? Then put one line in the next contract: an exit clause that lets you take your fine-tunes and eval suites with you when the terms change. Ask these at every renewal, because the leverage only exists before you sign.
+
+In Europe this stops being theoretical on August 2, 2026, when the EU AI Act becomes fully applicable and provenance and accountability language lands in procurement whether you planned for it or not.
+
+The machine explains why the clause matters. Company B, the second insurer in my book, deploys a claims agent swarm, cuts headcount 40%, drops premiums 20%, and crushes Company A inside six months. Its agent is a ReAct loop: the model reasons about the claim, calls a tool, reads the result, repeats. A verification seam sits between the steps and routes anything above a set amount to a human adjuster. That seam is the job. Approval gates are old workflow tooling; what is new is the volume, thousands of agent decisions crossing the seam every day instead of a dozen tickets a week. Learn evals the way you learned tests, and write the verifier before you trust the agent. In every scenario on the table, the scarce human is the one who can verify what the machine did. A model two years behind the frontier, running on hardware you own, beats a superintelligence you rent.
+
+Alaska answered the ownership question for oil in 1976, on purpose, before the money got big enough to buy the answer. We have a shorter window for intelligence, and the answer will come from contracts and cap tables long before it comes from treaties. They drew the treaty. I drew the fork. Grabbing the wheel starts with the next contract you sign, and the next model you choose to own.
