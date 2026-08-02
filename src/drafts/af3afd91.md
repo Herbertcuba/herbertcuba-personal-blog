@@ -5,6 +5,7 @@ excerpt: "One tracker logged 3.77 billion tokens in a single day of agentic codi
 layout: post.njk
 tags: ["ai", "agentic-ai", "engineering"]
 theme: agentic-engineering
+featuredImage: "/images/posts/token-discipline-context-hygiene.webp"
 permalink: /drafts/af3afd91/
 ---
 
