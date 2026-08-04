@@ -1,13 +1,16 @@
 ---
-title: "Open Weights vs Closed Source — the 1999 Microsoft playbook, again"
+title: "Anthropic is playing Microsoft's old role in the open-weights fight"
 date: 2026-08-04
-excerpt: "I tried to read Anthropic's missing signature on a July 24 open-weights letter as a policy footnote. Then OpenAI and Amazon joined the coalition. Anthropic stayed off the list."
+excerpt: "Anthropic's open-weights holdout echoes Microsoft's Linux-era position, but released models introduce a real recall problem."
 featuredImage: "/images/posts/550388bd.webp"
-permalink: /drafts/550388bd/
 layout: post.njk
 tags:
   - ai
-  - draft
+  - open-weights
+  - ai-safety
+  - open-source
+  - strategy
+theme: strategy-leadership
 ---
 
 # Anthropic is playing Microsoft's old role in the open-weights fight
