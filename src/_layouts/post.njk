@@ -89,11 +89,12 @@ ctaHidden: true
 
       {%- if tldr -%}
       <div class="art-tldr">
-        <div class="art-tldr__label mono">TL;DR</div>
+        <div class="art-tldr__label mono">TLDR</div>
         {%- if tldr is string -%}
         <p>{{ tldr }}</p>
         {%- else -%}
-        <ul>{%- for point in tldr %}<li>{{ point }}</li>{% endfor -%}</ul>
+        {# Backward compatibility for old list-valued frontmatter: one paragraph. #}
+        <p>{{ tldr | join(" ") }}</p>
         {%- endif -%}
       </div>
       {%- endif -%}
