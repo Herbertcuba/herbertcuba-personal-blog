@@ -1,11 +1,10 @@
 ---
-title: "Open weights may be a safety feature for humanity"
-date: 2026-08-06
+title: "Open Weights May Be a Safety Feature for Humanity"
+date: "2026-08-06"
 excerpt: "The fight echoes Microsoft's war on Linux, but open weights add a harder question: can decentralizing AI power make humanity safer?"
 tldr: "The open-weights fight echoes Microsoft's campaign against Linux: a controlled platform is being defended with safety language while openness threatens its position. Anthropic's warning carries more weight because released model capabilities can be hard to withdraw. Open weights may still make humanity safer by distributing AI power beyond a handful of companies."
 featuredImage: "/images/posts/anthropic-open-weights-fight.webp"
 layout: post.njk
-permalink: /drafts/550388bd/
 tags:
   - ai
   - open-weights
