@@ -1,10 +1,9 @@
 ---
-title: "Hermes vs OpenClaw: Learning speed versus governed change"
-date: 2026-08-06
+title: "Hermes vs OpenClaw: Learning Speed Versus Governed Change"
+date: "2026-08-07"
 excerpt: "Hermes turns corrections into reusable skills with very little ceremony. OpenClaw puts the same learning impulse through a governed change path."
 tldr: "Hermes and OpenClaw can both turn a correction into a reusable skill. Hermes favors direct, low-friction improvement, while OpenClaw routes learned procedures through proposals, scanning, workspace boundaries, and rollback metadata. The better choice depends on whether fast personal adaptation or controlled shared change carries more value."
 featuredImage: "/images/posts/two-harnesses-one-control-plane.webp"
-permalink: /drafts/bc325cc0/
 layout: post.njk
 tags:
   - ai
