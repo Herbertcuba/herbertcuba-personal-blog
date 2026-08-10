@@ -23,7 +23,7 @@ His third says OpenAI is *"designed for bottom-up innovation"* and that *"things
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Arvind KC and Benjamin Simkin describe the same structural shift from two vantage points. An AI-first company spreads the ability to judge AI systems across the business, and reliable agents may reduce layers devoted mainly to routine routing. Coaching, accountability, authority, and trade-offs between areas of the business remain human work.</p></div>
 
-## Claim 1: every role is a technical role
+## Every role is a technical role
 
 "Every role is a technical role" can sound like a call for universal coding skills, although the practical demand is broader. Everyone should understand what the systems supporting their work do well, where they fail, and how those limits affect the decisions they own. Coding remains a specialist skill, while technical judgment becomes a shared language.
 
@@ -35,7 +35,7 @@ Simkin describes that effect by calling AI an amplifier: *"It takes whatever you
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A technical role is one whose owner can judge the AI system within the scope of their decisions. Shared literacy helps teams recognize weak inputs, unreliable outputs, and cases that need human review before automation multiplies an error.</p></div>
 
-## Claim 2: some coordination layers shrink
+## Some coordination layers shrink
 
 Hierarchies serve several purposes. Managers allocate resources, coach people, resolve conflict, maintain accountability, and make trade-offs between areas of the business. They also perform repeatable coordination by collecting status, assigning routine work, translating updates, routing approvals, and surfacing exceptions.
 
@@ -53,7 +53,7 @@ The people transition is harder. Some coordination-heavy roles can grow into dom
 
 ## How the advantage builds over time
 
-Arvind's eighth reflection gives every role a second label: *"agent manager."* An agent manager knows how to assign work to AI agents, set boundaries, test results, and improve the workflow over time. Domain skill determines what a good result looks like, while agent skill increases the amount of work one knowledgeable person can direct.
+Arvind's eighth reflection gives every role a second label: *"agent manager."* The operating skill described above changes how much work one knowledgeable person can direct. Domain expertise supplies the standard for a good result, while agents extend how consistently that standard can be applied.
 
 Consider a content editor whose agents prepare a draft, check factual claims against approved sources, and flag repeated language before human review. A finance analyst might use agents to pull records, reconcile known fields, and surface anomalies for investigation. These examples show the mechanism, while the actual gain depends on how often the task changes, whether quality can be tested, and how costly an error would be.
 
@@ -81,7 +81,7 @@ Arvind and Simkin are restating an old idea: an organization's structure shapes 
 
 The case for redesign needs evidence from the work itself. Choose one contained workflow with measurable handoffs and an accountable domain owner. Record how long the work takes and how often it fails, define the decisions an agent may make, and create a route for human review. Those measures show whether a coordination layer can shrink. Invented ratios and fixed month-by-month promises offer false confidence.
 
-The human question remains open. Fewer coordination roles also remove familiar career steps, so retraining and redeployment need defined destinations: a role with useful work, clear decision authority, and standards for success. Where the company cannot offer that, leaders need to provide a transparent exit path. Some positions will still end. What does ambition look like when familiar management rungs disappear? Can every capable person find a domain to own, and what happens when there are more ambitious people than domains?
+The human question remains open. Fewer coordination roles also remove familiar career steps, so retraining and redeployment need defined destinations: a role with useful work, clear decision authority, and standards for success. A credible path lets someone deepen expertise or take responsibility for a durable area of work, with advancement tied to measurable results. The company can then recognize growth through scope and expertise even when no management title is available. Where the company cannot offer such a path, leaders need to provide a transparent exit. Some positions will still end.
 
 My take is that organizational redesign should begin with one contained workflow and evidence about where agents perform reliably. Let that evidence determine which handoffs disappear, which decisions move closer to the work, and who carries responsibility for exceptions. If leaders cannot also name the destination roles or transparent exits available to affected people, the redesign has outrun their responsibility.
 
