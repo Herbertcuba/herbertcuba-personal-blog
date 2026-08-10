@@ -36,7 +36,7 @@ My inference goes one step further. When agents absorb reliable execution and ro
     <ul class="versus__list">
       <li><strong>7</strong>: every role is a technical role</li>
       <li><strong>3</strong>: innovation moves from the bottom up</li>
-      <li><strong>8</strong>: every role also becomes an agent manager</li>
+      <li><strong>8</strong>: every role also directs agents, sets their limits, and reviews their work</li>
       <li><strong>1 question</strong>: when routing disappears, who owns the outcome?</li>
     </ul>
   </div>
@@ -58,7 +58,7 @@ The distinction between fixed automation and AI agents matters here. Determinist
 Simkin describes AI as an amplifier because it produces more of whatever the workflow gives it, faster. Clear instructions and sound review criteria can increase useful output. Confused ownership can repeat the same mistake across a large batch before a dashboard reveals the damage. I think shared technical literacy is the first structural requirement of an AI-first company because local autonomy becomes reckless without it.
 
 <div class="fig-band">
-<p class="fig-cap">fig. 01 / technical reasoning at the altitude of each decision</p>
+<p class="fig-cap">fig. 01 / technical judgment at each decision level</p>
 <table class="matrix">
   <thead>
     <tr><th>Role</th><th>AI-supported decision</th><th>Human review trigger</th></tr>
@@ -72,7 +72,7 @@ Simkin describes AI as an amplifier because it produces more of whatever the wor
 </table>
 </div>
 
-The readiness test is whether the person who owns a decision can explain the system's likely failure modes. If they cannot, that decision is not ready to move closer to the machine.
+Before a decision moves closer to the machine, its human owner should be able to explain the system's likely failure modes. If they cannot, the work is not ready.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A technical role is one whose owner can judge the AI system within the scope of their decisions. Shared literacy lets teams recognize weak inputs, unreliable outputs, and cases that need human review before automation multiplies an error.</p></div>
 
@@ -123,7 +123,7 @@ This changes the production structure. In the Retrofit Trap, humans still carry 
 </div>
 </div>
 
-The stop condition is equally important because it states what evidence would reject the redesign. If task variation keeps outrunning the instructions, quality cannot be measured, failures carry a high and irreversible cost, or exceptions consume most of the owner's time, the coordination layer should not shrink. The evidence has rejected the redesign, at least for that workflow. A leader who removes managers anyway has automated the org chart rather than improved the work.
+A redesign also needs evidence that can stop it. If task variation keeps outrunning the instructions, quality cannot be measured, failures carry a high and irreversible cost, or exceptions consume most of the owner's time, the workflow is not ready and the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; where quality cannot be tested or failures contained, the existing coordination layer still has a job.</p></div>
 
@@ -135,7 +135,7 @@ Take a content editor. Agents can prepare a draft, check factual claims against 
 
 The gain is not a universal productivity ratio. It depends on how often the task changes, whether quality can be measured, the cost of integration and review, and what happens when the system is wrong. Fixed claims about two people doing the work of six conceal those differences and give leaders the confidence of a number without the evidence behind it.
 
-I think the real compounding mechanism is more useful. Each run leaves behind reusable instructions, evaluated examples, sharper standards, and a history of exceptions. Those assets improve the next run if someone reviews them and changes the workflow. Without that work, the same loop compounds mistakes with equal efficiency.
+I think compounding begins in the feedback, not in a universal ratio. Each run leaves behind reusable instructions, evaluated examples, sharper standards, and a history of exceptions. This creates a feedback loop: someone studies those results and changes the workflow so the next run can improve. Without that work, the same loop compounds mistakes with equal efficiency.
 
 <div class="fig-band">
 <p class="fig-cap">fig. 03 / the compounding loop lives in the feedback</p>
@@ -150,7 +150,7 @@ I think the real compounding mechanism is more useful. Each run leaves behind re
 </div>
 </div>
 
-This is also why technically literate people matter more over time. They do not merely operate an agent. They turn its failures into better operating context and know when a failure reveals that the task should stay human. The durable advantage is the accumulated ability to make that distinction.
+This is also why technically literate people matter more over time. They do not merely operate an agent. They turn its failures into better operating context and know when a failure reveals that the task should stay human. Over time, the advantage sits in that accumulated judgment.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agent management can multiply domain expertise when each run produces evidence that improves the next one. The advantage comes from reusable standards, evaluated outcomes, and learned exceptions, while weak review loops compound errors just as quickly.</p></div>
 
