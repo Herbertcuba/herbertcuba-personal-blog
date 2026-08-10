@@ -11,7 +11,7 @@ provenance: verified-by-author
 anthem: true
 ---
 
-Arvind KC joined OpenAI as Chief People Officer in February 2026. OpenAI is an AI research and product company developing systems that can write, reason, and use tools across many kinds of work, so its people leader has a close view of how those systems affect jobs and decisions. A few months after joining, Arvind published ten workplace reflections. I read them twice, first as observations from a fast-moving company and then as a structural blueprint.
+Arvind KC joined OpenAI as Chief People Officer in February 2026. OpenAI is an AI research and product company developing systems that can write, reason, and use tools across many kinds of work, so its people leader has a close view of how those systems affect jobs and decisions. A few months after joining, Arvind published ten workplace reflections. I read them twice, first as observations from a fast-moving company and then as a model for workflows, decision rights, and roles designed around AI capabilities.
 
 They mapped closely to Benjamin Simkin's *The AI First Company*. Simkin is an engineer turned business coach who spent two years redesigning his own company, then wrote a self-published field manual about the process. He calls his early mistake the Retrofit Trap: preserving an old human workflow and adding AI around its edges. That approach may speed up individual steps while preserving the roles and handoffs, including the decision rights that specify who may decide what.
 
@@ -65,7 +65,7 @@ Arvind's eighth reflection gives every role a second label: *"agent manager."* A
 
 Consider a content editor whose agents prepare a draft, check factual claims against approved sources, and flag repeated language before human review. A finance analyst might use agents to pull records, reconcile known fields, and surface anomalies for investigation. These examples show the mechanism. Actual gains depend on task stability, quality tests, and the cost of an error.
 
-Simkin argues that the advantage compounds because leaner operations can fund further improvement and each cycle adds useful feedback. I think accumulated systems are the strongest version of that claim. Reusable instructions improve, evaluation criteria become sharper, and the history of exceptions teaches the team where human review earns its cost. Weak feedback loops compound mistakes with equal efficiency, so a universal productivity ratio would overreach.
+Simkin argues that the advantage compounds because leaner operations can fund further improvement and each cycle adds useful feedback. I think the strongest version of that claim is the accumulation of reusable instructions, sharper evaluation criteria, and an exception history that shows where human review earns its cost. Weak feedback loops compound mistakes with equal efficiency, so a universal productivity ratio would overreach.
 
 *Star Trek: The Next Generation*, the science-fiction television series that began in 1987, offers a useful picture of shared system literacy. Its starship Enterprise has an explicit command hierarchy, while officers in different specialties understand how local choices affect the whole vessel. The metaphor supports the literacy claim: an AI-first company needs deep domain knowledge alongside enough system knowledge to see downstream effects. That shared view also makes local autonomy safer.
 
@@ -85,7 +85,7 @@ Arvind's fourth reflection describes OpenAI as *"all in on AGI for the benefit o
 
 ## The architecture is the strategy
 
-Arvind and Simkin are restating an old idea: an organization's structure shapes what it can produce. AI raises the stakes because a redesigned workflow can combine execution, coordination, and feedback in one system. A retrofit keeps old handoffs alive, which means each improvement must pass through the same queues and approval paths.
+Arvind and Simkin are restating an old idea: an organization's structure shapes what it can produce. AI raises the stakes because a single AI-assisted workflow can combine execution, coordination, and feedback. A retrofit keeps old handoffs alive, which means each improvement must pass through the same queues and approval paths.
 
 The case for redesign needs evidence from the work itself. Choose a bounded workflow with measurable handoffs and an accountable domain owner. Record how long the work takes and how often it fails, define the decisions an agent may make, and create a route for human review. Those measures show whether a coordination layer can shrink. Invented ratios and fixed month-by-month promises offer false confidence.
 
