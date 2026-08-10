@@ -45,7 +45,7 @@ That gives the flattening claim clear boundaries. The operating conditions inclu
 
 Arvind's description of bottom-up innovation shows what follows. Work looks less orderly when more decisions happen near people with current context. Simkin's owner-as-architect makes the same move by concentrating senior attention on system design and decisions with serious consequences.
 
-In my work, I call the supporting structure *domain-mapped ownership*. A domain is a coherent area of work, such as customer-support quality or financial reconciliation. It gets a named owner who defines a good result, sets decision rights, and judges exceptions. I think this structure also prevents the Everybody Reviews Everything Trap, where every stakeholder reviews every output and authority dissolves into slow, inconsistent feedback.
+In my work, I call the supporting structure *domain-mapped ownership*. A domain is a coherent area of work, such as customer-support quality or financial reconciliation. It gets a named owner who defines a good result, sets decision rights, and judges exceptions. I think this structure also prevents a common failure mode, where every stakeholder reviews every output and authority dissolves into slow, inconsistent feedback.
 
 The people transition is harder. Some coordination-heavy roles can grow into domain ownership, while others may move toward agent management, which means assigning work to AI agents, setting limits, testing results, and reviewing exceptions. Other positions will disappear. I don't know a clean formula for that transition, but treating every middle-management function as routing would hide the human work and encourage careless cuts.
 
@@ -75,14 +75,14 @@ Arvind's fourth reflection refers to AGI, or artificial general intelligence, Op
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works through named ownership, visible measures, and clear exception paths. Leaders should examine where decisions wait and where failures surface because a tidy chart may show operating discipline or an executive bottleneck.</p></div>
 
-## The architecture is the strategy
+## How organizational structure follows the work
 
 Arvind and Simkin are restating an old idea: an organization's structure shapes what it can produce. AI raises the stakes because a single AI-supported workflow can combine execution, coordination, and feedback. A retrofit keeps old handoffs alive, which means each improvement must pass through the same queues and approval paths.
 
 The case for redesign needs evidence from the work itself. Choose one contained workflow with measurable handoffs and an accountable domain owner. Record how long the work takes and how often it fails, define the decisions an agent may make, and create a route for human review. Those measures show whether a coordination layer can shrink. Invented ratios and fixed month-by-month promises offer false confidence.
 
-The human question remains open. Fewer coordination roles also remove familiar career steps, so retraining and redeployment need to lead somewhere credible. Companies will need paths for deeper expertise, domain ownership, and broader judgment, while acknowledging that some positions will still end. What does ambition look like when familiar management rungs disappear? Can every capable person find a domain to own, and what happens when there are more ambitious people than domains?
+The human question remains open. Fewer coordination roles also remove familiar career steps, so retraining and redeployment need defined destinations: a role with useful work, clear decision authority, and standards for success. Where the company cannot offer that, leaders need to provide a transparent exit path. Some positions will still end. What does ambition look like when familiar management rungs disappear? Can every capable person find a domain to own, and what happens when there are more ambitious people than domains?
 
-My take is that organizational redesign should begin with one contained workflow, followed by evidence about where agents perform reliably and where people carry irreplaceable responsibility. The org chart should follow that evidence. Reliable systems and clearer human ownership must earn every layer the company removes.
+My take is that organizational redesign should begin with one contained workflow and evidence about where agents perform reliably. Let that evidence determine which handoffs disappear, which decisions move closer to the work, and who carries responsibility for exceptions. If leaders cannot also name the destination roles or transparent exits available to affected people, the redesign has outrun their responsibility.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Redesign starts with a measurable workflow, a capable human owner, clear decision rights, and a route for exceptions. The org chart should follow evidence from the work, and every removed layer must be earned by reliable systems, clearer human ownership, and a credible transition for the people affected.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Redesign starts with a measurable workflow, a capable human owner, clear decision rights, and a route for exceptions. Evidence from the work should determine the org chart, while defined destination roles or transparent exits determine whether the people transition is responsible.</p></div>
