@@ -37,7 +37,7 @@ Simkin describes that effect by calling AI an amplifier: *"It takes whatever you
 
 ## Some coordination layers shrink
 
-Hierarchies serve several purposes. Managers allocate resources, coach people, resolve conflict, maintain accountability, and make trade-offs between areas of the business. They also perform repeatable coordination by collecting status, assigning routine work, translating updates, routing approvals, and surfacing exceptions.
+Hierarchies serve several purposes. Some management work depends on human judgment and authority: managers allocate resources, coach people, resolve conflict, maintain accountability, and make trade-offs between areas of the business. A separate category is repeatable coordination. Managers collect status, assign routine work, translate updates, route approvals, and surface exceptions.
 
 AI agents can absorb parts of that second category once the workflow is explicit, system activity is visible, and outputs can be tested. An AI customer-support agent can classify a request, send it to the right specialist, summarize the account history, and alert a manager when risk crosses a defined threshold. Once enough handoffs run reliably, a layer built mainly around routing may shrink. People remain responsible wherever authority, development, conflict, or judgment across areas carries the work.
 
@@ -81,7 +81,7 @@ Arvind and Simkin are restating an old idea: an organization's structure shapes 
 
 The case for redesign needs evidence from the work itself. Choose one contained workflow with measurable handoffs and an accountable domain owner. Record how long the work takes and how often it fails, define the decisions an agent may make, and create a route for human review. Those measures show whether a coordination layer can shrink. Invented ratios and fixed month-by-month promises offer false confidence.
 
-The human question remains open. Fewer coordination roles also remove familiar career steps, so retraining and redeployment need defined destinations: a role with useful work, clear decision authority, and standards for success. A credible path lets someone deepen expertise or take responsibility for a durable area of work, with advancement tied to measurable results. The company can then recognize growth through scope and expertise even when no management title is available. Where the company cannot offer such a path, leaders need to provide a transparent exit. Some positions will still end.
+The human question remains open. Fewer coordination roles also remove familiar career steps. Retraining and redeployment therefore need defined destinations. A destination role should offer useful work and clear decision authority, with standards for success. A credible path lets someone deepen expertise or take responsibility for a durable area of work, with advancement tied to measurable results. The company can then recognize growth through scope and expertise even when no management title is available. Where the company cannot offer such a path, leaders need to provide a transparent exit. Some positions will still end.
 
 My take is that organizational redesign should begin with one contained workflow and evidence about where agents perform reliably. Let that evidence determine which handoffs disappear, which decisions move closer to the work, and who carries responsibility for exceptions. If leaders cannot also name the destination roles or transparent exits available to affected people, the redesign has outrun their responsibility.
 
