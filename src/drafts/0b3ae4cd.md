@@ -13,7 +13,7 @@ anthem: true
 
 Arvind KC joined OpenAI as Chief People Officer in February 2026. OpenAI is an AI research and product company developing systems that can write, reason, and use software tools across many kinds of work, so its people leader has a close view of how those systems affect roles and decisions. On July 21, 2026, a few months after joining, Arvind published ten workplace reflections. I read them twice, first as observations from a fast-moving company and then as a model for workflows, roles, and decision rights. Decision rights are the rules that specify who may decide what.
 
-Those reflections share a specific view of workflow design and decision rights with Benjamin Simkin's 2026 book *The AI First Company*. Simkin is an engineer turned business coach who spent two years redesigning his own company and turned the process into a self-published field manual. He calls his early mistake the Retrofit Trap: preserving an old human workflow while adding AI around its edges. That approach may speed up individual steps while keeping the same handoffs and authority structure.
+Those reflections share a specific view of workflow design and decision rights with Benjamin Simkin's 2026 book *The AI First Company*. Simkin is an engineer turned business coach who spent two years redesigning his own company and documented that process in a self-published book about rebuilding a business around AI. He calls his early mistake the Retrofit Trap: preserving an old human workflow while adding AI around its edges. That approach may speed up individual steps while keeping the same handoffs and authority structure.
 
 An AI-first company begins with a different production model. It designs the sequence of work around AI agents, with people overseeing points where judgment carries consequences. This is agentic production: AI agents complete and coordinate defined steps under human oversight. Each agent is software that can pursue a goal through several actions, use tools, and report a result or an exception that needs attention.
 
@@ -25,11 +25,11 @@ His third says OpenAI is *"designed for bottom-up innovation"* and that *"things
 
 ## Every role is a technical role
 
-"Every role is a technical role" can sound like a call for universal coding skills, although the practical demand is broader. Everyone should understand what the systems supporting their work do well, where they fail, and how those limits affect the decisions they own. Coding remains a specialist skill, while technical judgment becomes a shared language.
+"Every role is a technical role" can sound like a call for universal coding skills, although the practical demand is broader. Everyone should understand what the systems supporting their work do well, where they fail, and how those limits affect the decisions they own; coding remains a specialist skill, while technical judgment becomes a shared language.
 
 A sales lead, for example, should know which parts of lead qualification an AI system handles reliably and which cases require review. An operations lead should understand the error rate in automated ticket classification before allowing a customer request to bypass a person. Finance and marketing carry the same responsibility within their own decisions because they need enough system knowledge to judge investment quality and AI-generated claims.
 
-In my work advising organizations on agentic production, I see teams stall when technical reasoning remains inside a separate department and everyone else submits requests. A marketing team may accept an unsupported campaign claim because nobody owns the output standard. An operations team may automate a weak labeling scheme and send customer tickets to the wrong queue faster. Once those workflows are automated, the unsupported claim reaches more customers and the weak labeling scheme misroutes more tickets before anyone intervenes.
+In my work advising organizations on agentic production, I see teams stall when technical reasoning remains inside a separate department and everyone else submits requests: a marketing team may accept an unsupported campaign claim because nobody owns the output standard, while an operations team may automate a weak labeling scheme and send customer tickets to the wrong queue faster. Once those workflows are automated, the unsupported claim reaches more customers and the weak labeling scheme misroutes more tickets before anyone intervenes.
 
 Simkin describes that effect by calling AI an amplifier: *"It takes whatever you give it and produces more of it, faster."* Clear instructions and sound review criteria can increase useful output. Confused ownership can repeat the same mistake across a large batch before a dashboard reveals the damage. I think shared technical literacy is the first structural requirement of an AI-first company because local decision-making becomes reckless without it.
 
@@ -49,7 +49,7 @@ In my work, I call the supporting structure *domain-mapped ownership*. A domain 
 
 The people transition is harder. Some coordination-heavy roles can grow into domain ownership, while others may move toward agent management, which means assigning work to AI agents, setting limits, testing results, and reviewing exceptions. Other positions will disappear. I don't know a clean formula for that transition, but treating every middle-management function as routing would hide the human work and encourage careless cuts.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Explicit and visible workflows allow agents to handle routine routing, status collection, and exception handling. Fewer layers then become possible, while people continue to own coaching, accountability, resource choices, conflict, and judgment across areas of the business.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Explicit and visible workflows allow agents to collect status, route routine work, and triage defined cases, while high-risk exceptions go to a named human owner. Fewer layers then become possible, while people continue to own coaching, accountability, resource choices, conflict, and judgment across areas of the business.</p></div>
 
 ## How the advantage builds over time
 
@@ -65,7 +65,7 @@ Simkin argues that the advantage compounds, meaning each cycle can improve the n
 
 ## When local autonomy looks messy
 
-Fewer approvals and more decisions close to the work can make an organization look untidy from the outside, although appearance alone proves very little. Useful decentralization has named owners, measurable outputs, visible failure signals, and clear routes for exceptions. Conflicting priorities, uncertain authority, and hidden failures signal disorder.
+Fewer approvals and more decisions close to the work can make an organization look untidy from the outside, although appearance alone proves very little. Useful decentralization has named owners, measurable outputs, visible failure signals, and clear routes for exceptions, whereas conflicting priorities, uncertain authority, and hidden failures signal disorder.
 
 A clean org chart can also mean two different things. It may reflect useful operating discipline when decision rights are clear and teams know when to escalate. It may reveal a bottleneck when routine choices wait for the same small group of executives. I think leaders should inspect queues, repeated overrides, and unresolved exceptions before treating either neatness or mess as evidence of performance.
 
