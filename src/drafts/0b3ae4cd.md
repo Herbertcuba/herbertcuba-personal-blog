@@ -1,7 +1,7 @@
 ---
 title: "How AI changes the shape of a company"
 date: 2026-07-24
-excerpt: "When AI agents absorb defined execution and routine coordination, the production pyramid can flip: agents run repeatable workflows while people own judgment, exceptions, and consequences."
+excerpt: "AI agents are software systems that can take several actions and use approved tools within defined limits. When they absorb defined execution and routine coordination, the production pyramid can flip: agents run repeatable workflows while people own judgment, exceptions, and consequences."
 featuredImage: "/images/posts/architecture-ai-first-company.webp"
 layout: post.njk
 tags: ["ai", "organization", "leadership", "strategy", "agents"]
@@ -72,7 +72,7 @@ Simkin describes AI as an amplifier because it produces more of whatever the wor
 </table>
 </div>
 
-The test is simple enough to say and hard enough to matter: if the person who owns a decision cannot explain the system's likely failure modes, that decision is not ready to move closer to the machine.
+The readiness test is whether the person who owns a decision can explain the system's likely failure modes. If they cannot, that decision is not ready to move closer to the machine.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A technical role is one whose owner can judge the AI system within the scope of their decisions. Shared literacy lets teams recognize weak inputs, unreliable outputs, and cases that need human review before automation multiplies an error.</p></div>
 
@@ -84,11 +84,11 @@ Simkin describes the owner moving from day-to-day operator toward architect of t
 
 Consider an enterprise customer-support workflow. An agent may classify an inbound request, retrieve approved account context, prepare a summary, and route the case to the right specialist. It may not close the account, issue a refund, change a contract, or decide a security incident. The support operations leader owns the workflow, while legal, security, and commercial owners define the exceptions that cross into their domains.
 
-That workflow needs a contract, not just a prompt. The permitted actions must be listed, and quality needs an observable measure such as routing accuracy on a reviewed sample. The team should agree on the acceptable error rate before the trial begins. A missed security or legal case should send the system back to shadow mode, where it recommends actions but a person still executes them. Allowlisted data access, complete activity logs, and a manual queue keep the change reversible.
+That workflow needs a contract, not just a prompt. The permitted actions must be listed, and quality needs an observable measure such as routing accuracy on a reviewed sample. The team should agree on the acceptable error rate before the trial begins. A missed security or legal case should send the system back to shadow mode, where it recommends actions but a person still executes them. Restricting data access to named, preapproved sources, keeping complete activity logs, and maintaining a manual queue make the change reversible.
 
 This is where I think the useful frame is *domain-mapped ownership*. Domain-mapped ownership means one coherent area of work, one named human owner, and one explicit boundary beyond which the agent cannot decide. The boundary matters as much as the owner. A domain cannot be delegated safely when the team lacks an observable way to distinguish acceptable work from a plausible-looking failure before harm occurs.
 
-The geometry then changes. In the Retrofit Trap, humans still carry the full workflow and AI assists at the narrow edge. In an AI-first design, agents carry the broad base of repeatable execution while a smaller number of people add judgment, set direction, and own exceptions at the top.
+This changes the production structure. In the Retrofit Trap, humans still carry the full workflow and AI assists at the narrow edge. In an AI-first design, agents carry the broad base of repeatable execution while a smaller number of people add judgment, set direction, and own exceptions at the top.
 
 <div class="fig-band">
 <p class="fig-cap">fig. 02 / the retrofit trap and the AI-first inversion</p>
@@ -123,7 +123,7 @@ The geometry then changes. In the Retrofit Trap, humans still carry the full wor
 </div>
 </div>
 
-The falsifier is equally important. If task variation keeps outrunning the instructions, quality cannot be measured, failures carry a high and irreversible cost, or exceptions consume most of the owner's time, the coordination layer should not shrink. The evidence has rejected the redesign, at least for that workflow. A leader who removes managers anyway has automated the org chart rather than improved the work.
+The stop condition is equally important because it states what evidence would reject the redesign. If task variation keeps outrunning the instructions, quality cannot be measured, failures carry a high and irreversible cost, or exceptions consume most of the owner's time, the coordination layer should not shrink. The evidence has rejected the redesign, at least for that workflow. A leader who removes managers anyway has automated the org chart rather than improved the work.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; where quality cannot be tested or failures contained, the existing coordination layer still has a job.</p></div>
 
@@ -179,7 +179,7 @@ The Monday-morning version should fit on one page. Pick a contained workflow, th
 </div>
 </div>
 
-This diagnostic prevents a pilot from becoming an alibi for a reorganization. The workflow earns a structural change by producing evidence. The org chart does not get to declare victory first.
+Only evidence from the workflow should justify a structural change. A revised org chart cannot prove that the work improved.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works when a contained workflow has measurable quality, bounded authority, a funded owner, and a stop condition agreed before the trial. Leaders should include data, procurement, control, and people costs in the test, then let the evidence decide whether the design expands.</p></div>
 
