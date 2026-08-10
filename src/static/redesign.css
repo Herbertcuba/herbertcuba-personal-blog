@@ -649,6 +649,29 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 /* Figure caption / eyebrow */
 .fig-cap{font-family:var(--font-mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint-light);margin:0 0 20px;}
 
+/* Managed inline SVG diagrams. The SVG uses the article column's canonical
+   760px canvas so a <=760-unit viewBox preserves 16-unit labels at >=16 CSS
+   pixels. Narrow screens scroll inside the figure instead of widening the page. */
+.article-diagram{
+  overflow-x:auto;
+  overflow-y:hidden;
+  overscroll-behavior-inline:contain;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-color:var(--green) var(--border-dark);
+  scrollbar-width:thin;
+}
+.article-diagram > .fig-cap{position:sticky;left:0;max-width:100%;}
+.article-diagram > svg{
+  display:block;
+  width:100%;
+  min-width:760px;
+  height:auto;
+  margin-inline:auto;
+}
+.article-diagram::-webkit-scrollbar{height:8px;}
+.article-diagram::-webkit-scrollbar-track{background:var(--border-dark);}
+.article-diagram::-webkit-scrollbar-thumb{background:var(--green);}
+
 /* Callout box — pull a key idea out of the flow */
 .callout{
   border:1px solid var(--border-light);border-left:4px solid var(--green-light);

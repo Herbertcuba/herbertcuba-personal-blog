@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
+    "test": "node --test tests/*.test.mjs",
     "sync:obsidian": "node scripts/sync-obsidian.mjs",
     "new": "node scripts/new-post.mjs"
   },
