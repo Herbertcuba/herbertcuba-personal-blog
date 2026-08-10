@@ -43,7 +43,7 @@ AI agents can absorb parts of that second category once the workflow is explicit
 
 That gives the flattening claim clear boundaries. The operating conditions include visible workflows, capable owners for each coherent area of work, explicit decision rights, and an exception path that sends high-risk cases to a person. A leader who removes managers before building those conditions creates an accountability gap. As agents absorb routine handoffs, decisions that once traveled upward need capable owners closer to the work, with clear limits on their authority.
 
-Arvind's description of bottom-up innovation shows what follows. Work looks less orderly when more decisions happen near people with current context. Simkin's owner-as-architect makes the same move by concentrating senior attention on system design and decisions with serious consequences.
+Arvind's description of bottom-up innovation names the organizational effect: decision-making moves closer to people with current context, which can make the company look less orderly from outside. Simkin's owner-as-architect makes the same move by concentrating senior attention on system design and decisions with serious consequences.
 
 In my work, I call the supporting structure *domain-mapped ownership*. A domain is a coherent area of work, such as customer-support quality or financial reconciliation. It gets a named owner who defines a good result, sets decision rights, and judges exceptions. I think this structure also prevents a common failure mode, where every stakeholder reviews every output and authority dissolves into slow, inconsistent feedback.
 
@@ -53,7 +53,7 @@ The people transition is harder. Some coordination-heavy roles can grow into dom
 
 ## How the advantage builds over time
 
-Arvind's eighth reflection gives every role a second label: *"agent manager."* The operating skill described above changes how much work one knowledgeable person can direct. Domain expertise supplies the standard for a good result, while agents extend how consistently that standard can be applied.
+Arvind's eighth reflection gives every role a second label: *"agent manager."* Agent management means using domain expertise to set a standard, direct agents against it, and review their results and exceptions. That combination changes how much work one knowledgeable person can direct and how consistently their standard can be applied.
 
 Consider a content editor whose agents prepare a draft, check factual claims against approved sources, and flag repeated language before human review. A finance analyst might use agents to pull records, reconcile known fields, and surface anomalies for investigation. These examples show the mechanism, while the actual gain depends on how often the task changes, whether quality can be tested, and how costly an error would be.
 
