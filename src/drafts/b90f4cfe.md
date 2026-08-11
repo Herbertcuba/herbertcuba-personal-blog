@@ -1,5 +1,6 @@
 ---
 title: "Tireless intelligence needs a stopping rule"
+date: 2026-08-12
 description: "Claude's mathematical search shows what changes when persistence becomes a budget, and why leaders must decide what deserves another attempt."
 tldr: "Anthropic's reported Riemann zeta result shows that organizations can now fund large, persistent AI searches as a metered resource. The result depended on prior mathematics, a conceptual step, and rigorous checks, so the leadership lesson is to choose worthy questions, define evidence before launch, fund attempts in stages, and stop when another loop no longer earns its cost."
 permalink: /drafts/b90f4cfe/
