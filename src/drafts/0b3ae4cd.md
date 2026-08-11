@@ -1,12 +1,12 @@
 ---
 title: "How AI changes the shape of a company"
 date: 2026-07-24
-excerpt: "AI agents are software systems that can take several actions and use approved tools within defined limits. When they absorb defined execution and routine coordination, the production pyramid can flip: agents run repeatable workflows while people own judgment, exceptions, and consequences."
+excerpt: "AI agents can absorb repeatable execution and routine coordination, but a thinner hierarchy is justified only when the workflow is measurable, bounded, reversible, and owned. Change the work first, then let the evidence decide what happens to the org chart."
 featuredImage: "/images/posts/architecture-ai-first-company.webp"
 layout: post.njk
 tags: ["ai", "organization", "leadership", "strategy", "agents"]
 anthem: true
-tldr: "An AI-first company redesigns workflows around AI agents, software that can take several actions and use tools within defined limits, while people own judgment, exceptions, and consequences. As agents absorb reliable execution and routine coordination, technical reasoning spreads across roles and some management layers may shrink. That redesign is defensible only when quality can be measured, authority is bounded, ownership is named, failures are reversible, and affected people have credible paths forward."
+tldr: "An AI-first company redesigns workflows around AI agents, software that can take several actions and use approved tools within defined limits, while people own judgment, exceptions, and consequences. As agents absorb reliable execution and routine coordination, technical reasoning spreads across roles and some management layers may shrink. That redesign is defensible only when quality can be measured, authority is bounded, ownership is named, failures are reversible, and affected people have credible paths forward."
 permalink: /drafts/0b3ae4cd/
 provenance: verified-by-author
 ---
@@ -20,6 +20,8 @@ An AI-first company begins with a different production model. It designs the seq
 I think two of Arvind's reflections carry the structural argument. His seventh says, *“Every role is a technical role.”* His third says OpenAI is *“designed for bottom-up innovation”* and that *“things will seem chaotic”* because the organization promotes individual empowerment. Technical reasoning means understanding what the systems inside your work can and cannot do. Bottom-up innovation means people close to the work can improve it and make decisions within clear limits, without sending every choice through senior leaders.
 
 My inference goes one step further. When agents absorb reliable execution and routine coordination, some layers built mainly to route work can shrink. The company does not become leaderless. Coaching, accountability, resource choices, conflict, and trade-offs across the business remain human responsibilities, and they become more important when fewer approvals stand between a local decision and its consequences.
+
+The sequence matters. Change the workflow first, inspect what the system can carry safely, and only then decide whether the organization should change around it.
 
 <div class="fig-band">
 <p class="fig-cap">source artifact / ten reflections from inside OpenAI</p>
@@ -37,7 +39,7 @@ My inference goes one step further. When agents absorb reliable execution and ro
       <li><strong>7</strong>: every role is a technical role</li>
       <li><strong>3</strong>: innovation moves from the bottom up</li>
       <li><strong>8</strong>: every role also directs agents, sets their limits, and reviews their work</li>
-      <li><strong>1 question</strong>: when routing disappears, who owns the outcome?</li>
+      <li><strong>1 question</strong>: when routine routing disappears, who owns the outcome?</li>
     </ul>
   </div>
 </div>
@@ -53,9 +55,11 @@ A sales lead should know which parts of lead qualification an AI system handles 
 
 In my work advising organizations on agentic production, I see teams stall when technical reasoning remains inside a separate department and everyone else submits requests. The problem then appears in specific workflows. A marketing team may accept an unsupported campaign claim because nobody owns the output standard. An operations team may automate a weak labeling scheme and send customer tickets to the wrong queue faster.
 
-The distinction between fixed automation and AI agents matters here. Deterministic automation follows rules written in advance, such as routing every invoice above an agreed amount to a reviewer. A tool-using agent can interpret a less structured request and choose several actions within its permissions. That flexibility handles more variation, but it also creates more ways to fail, which means the people using it need to understand the boundary rather than admire the output.
+Conventional workflow software deserves a strong defense here. Deterministic automation follows rules written in advance, such as routing every invoice above an agreed amount to a reviewer. When the cases and conditions are stable, a rules engine is easier to test and usually easier to trust than an AI agent. A tool-using agent earns its place when requests arrive in varied language, context must be gathered from several approved sources, and the next permitted action cannot be captured sensibly in a fixed decision tree.
 
-Simkin describes AI as an amplifier because it produces more of whatever the workflow gives it, faster. Clear instructions and sound review criteria can increase useful output. Confused ownership can repeat the same mistake across a large batch before a dashboard reveals the damage. I think shared technical literacy is the first structural requirement of an AI-first company because local autonomy becomes reckless without it.
+That flexibility adds a reliability burden. A model-driven choice can vary even when two cases look similar, so the owner needs reviewed samples, named error categories, a record of every tool action, and a route for uncertain cases. A capable-sounding response proves little; the team has to detect a wrong choice before it becomes an expensive one.
+
+The amplifier metaphor is useful because AI produces more of whatever the workflow gives it, faster. Clear instructions and sound review criteria can increase useful output. Confused ownership can repeat the same mistake across a large batch before a dashboard reveals the damage. I think shared technical literacy is the first structural requirement of an AI-first company because local autonomy becomes reckless without it.
 
 <div class="fig-band">
 <p class="fig-cap">fig. 01 / technical judgment at each decision level</p>
@@ -72,23 +76,27 @@ Simkin describes AI as an amplifier because it produces more of whatever the wor
 </table>
 </div>
 
-Before a decision moves closer to the machine, its human owner should be able to explain the system's likely failure modes. If they cannot, the work is not ready.
+Before a decision moves closer to the machine, its human owner should be able to explain the system's likely failure modes and the evidence that would reveal them. If they cannot, the work is not ready.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A technical role is one whose owner can judge the AI system within the scope of their decisions. Shared literacy lets teams recognize weak inputs, unreliable outputs, and cases that need human review before automation multiplies an error.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A technical role is one whose owner can judge the AI system within the scope of their decisions. Rules remain the better tool for stable, fully specified work; agents take on variable cases only when people can inspect their actions, measure their errors, and catch exceptions before automation multiplies them.</p></div>
 
 ## The production pyramid flips
 
 Hierarchies serve several purposes, and treating all of them as routing produces bad organizational design. Managers allocate resources and coach people. They also resolve conflict, maintain accountability, and make trade-offs across areas of the business. A separate category is repeatable coordination: collecting status, assigning routine work, translating updates, routing approvals, and surfacing exceptions. AI agents can absorb parts of that category once the work is explicit and the result can be tested.
 
-Simkin describes the owner moving from day-to-day operator toward architect of the system. Arvind's account of bottom-up innovation describes the corresponding move inside OpenAI: decisions shift toward people with current context, while senior leaders concentrate on system design and consequences that cross domains. Both accounts reduce the need for routine routing without removing the need for authority.
+Applied to ownership, Simkin's clean-slate question changes the job. Instead of approving every movement inside an inherited process, the owner designs the system, chooses its limits, and concentrates on decisions with consequences across the business. Arvind's account of bottom-up innovation describes the corresponding move inside OpenAI: decisions shift toward people with current context, while senior leaders retain authority over trade-offs that no local workflow can settle.
 
-Consider an enterprise customer-support workflow. An agent may classify an inbound request, retrieve approved account context, prepare a summary, and route the case to the right specialist. It may not close the account, issue a refund, change a contract, or decide a security incident. The support operations leader owns the workflow, while legal, security, and commercial owners define the exceptions that cross into their domains.
+Consider an enterprise customer-support workflow. An agent may classify an inbound request, retrieve approved account context, prepare a summary, and route the case to the right specialist. It may not close the account, issue a refund, change a contract, or decide whether an event is a security incident. If a message says, “Your system exposed our employee records,” the agent must reject ordinary routing and send the untouched case to the security queue for immediate human review.
 
-That workflow needs a contract, not just a prompt. The permitted actions must be listed, and quality needs an observable measure such as routing accuracy on a reviewed sample. The team should agree on the acceptable error rate before the trial begins. A missed security or legal case should send the system back to shadow mode, where it recommends actions but a person still executes them. Restricting data access to named, preapproved sources, keeping complete activity logs, and maintaining a manual queue make the change reversible.
+That workflow needs a contract, not just a prompt. The team should list every permitted tool and data source, record each attempted action, and define error categories such as wrong destination, unsupported summary, restricted-data access, missed escalation, and tool failure. Quality can then be measured on a reviewed sample, while the share of recommendations changed by people reveals the override rate. The time between an agent flag and a human response reveals whether the escalation path works under real conditions.
 
-This is where I think the useful frame is *domain-mapped ownership*. Domain-mapped ownership means one coherent area of work, one named human owner, and one explicit boundary beyond which the agent cannot decide. The boundary matters as much as the owner. A domain cannot be delegated safely when the team lacks an observable way to distinguish acceptable work from a plausible-looking failure before harm occurs.
+Customer tickets often contain personal data. [Article 5 of the General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng#art_5), the European Union's 2016 data-protection law, requires personal data to be collected for specified purposes and limited to what is necessary. In practical terms, a named data owner must approve which customer fields the agent can retrieve and why. Giving it the whole customer record because access is convenient would turn an operating shortcut into a governance failure.
 
-This changes the production structure. In the Retrofit Trap, humans still carry the full workflow and AI assists at the narrow edge. In an AI-first design, agents carry the broad base of repeatable execution while a smaller number of people add judgment, set direction, and own exceptions at the top.
+I think *domain-mapped ownership* is the useful frame here: one coherent area of work, one named human owner, and one explicit boundary beyond which the agent cannot decide. A product owner may prioritize features, while a platform team keeps shared technical services reliable. The domain owner carries a different obligation: the end-to-end outcome of one operating workflow, including its data access, exception rules, evidence, and effects on people.
+
+At enterprise scale, that domain may cross business units and vendors. The owner therefore needs authority to bring support, engineering, security, privacy, procurement, and workforce concerns into one release decision. A name on a slide is not ownership if the person cannot obtain the logs, change the vendor contract, fund the manual queue, or stop the workflow.
+
+This changes the production structure. In the Retrofit Trap, people still carry the full workflow and AI assists at the narrow edge. In an AI-first design, agents carry the broad base of repeatable execution while a smaller number of people add judgment, set direction, and own exceptions at the top.
 
 <div class="fig-band">
 <p class="fig-cap">fig. 02 / the retrofit trap and the AI-first inversion</p>
@@ -123,9 +131,9 @@ This changes the production structure. In the Retrofit Trap, humans still carry 
 </div>
 </div>
 
-A redesign also needs evidence that can stop it. If task variation keeps outrunning the instructions, quality cannot be measured, failures carry a high and irreversible cost, or exceptions consume most of the owner's time, the workflow is not ready and the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
+A redesign also needs evidence that can stop it. If routing accuracy remains below the agreed threshold, a security or legal case is missed, overrides stay frequent, or exception handling consumes more of the owner's time than the old process, the workflow is not ready and the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; where quality cannot be tested or failures contained, the existing coordination layer still has a job.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; where quality cannot be tested, authority enforced, or exceptions absorbed, the existing coordination layer still has a job.</p></div>
 
 ## The advantage compounds through feedback
 
@@ -135,7 +143,7 @@ Take a content editor. Agents can prepare a draft, check factual claims against 
 
 The gain is not a universal productivity ratio. It depends on how often the task changes, whether quality can be measured, the cost of integration and review, and what happens when the system is wrong. Fixed claims about two people doing the work of six conceal those differences and give leaders the confidence of a number without the evidence behind it.
 
-I think compounding begins in the feedback, not in a universal ratio. Each run leaves behind reusable instructions, evaluated examples, sharper standards, and a history of exceptions. This creates a feedback loop: someone studies those results and changes the workflow so the next run can improve. Without that work, the same loop compounds mistakes with equal efficiency.
+I think the compounding begins in the feedback. Each run leaves behind reusable instructions, evaluated examples, sharper standards, and a history of exceptions. This creates a feedback loop: someone studies those results and changes the workflow so the next run can improve. Without that work, the same loop compounds mistakes with equal efficiency.
 
 <div class="fig-band">
 <p class="fig-cap">fig. 03 / the compounding loop lives in the feedback</p>
@@ -150,7 +158,7 @@ I think compounding begins in the feedback, not in a universal ratio. Each run l
 </div>
 </div>
 
-This is also why technically literate people matter more over time. They do not merely operate an agent. They turn its failures into better operating context and know when a failure reveals that the task should stay human. Over time, the advantage sits in that accumulated judgment.
+This is also why technically literate people matter more over time. They do more than operate an agent. They turn failures into better operating context and recognize when a failure reveals that the task should stay human. The durable advantage sits in that accumulated judgment, because the system improves only when somebody understands what the evidence means.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agent management can multiply domain expertise when each run produces evidence that improves the next one. The advantage comes from reusable standards, evaluated outcomes, and learned exceptions, while weak review loops compound errors just as quickly.</p></div>
 
@@ -164,47 +172,51 @@ Simkin's clean-slate question is useful because it brings the argument back to a
 
 Arvind's fourth reflection describes OpenAI as *“all in on AGI for the benefit of humanity. There is no Plan B.”* AGI means artificial general intelligence, OpenAI's stated long-term goal of building systems with broad ability across cognitive tasks; the [OpenAI Charter](https://openai.com/charter/) says that capability should benefit all humanity. An ordinary company has customers, contracts, employees, and a portfolio of commitments, so OpenAI's singular mission is a limited comparison. The transferable lesson is smaller: choose the priority for one workflow and make competing goals visible before granting local autonomy.
 
-The Monday-morning version should fit on one page. Pick a contained workflow, then set the trial window, budget, and time required from the domain owner. Include integration, evaluation, procurement, and change costs rather than only the model subscription. Decide in advance what evidence permits expansion and what sends the system back to shadow mode. If the work affects roles or monitoring, involve employee representatives before the operating model hardens around a technical pilot.
+The Monday-morning version should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them. The charter reserves one day a week from the support operations owner, up to two engineering days a week, and a cost cap of 150,000 Swedish kronor (SEK) covering the vendor, integration, security review, and evaluation. The team chooses its own numbers, but it chooses them before the trial so enthusiasm cannot move the goalposts later.
+
+European rules make the ownership question concrete without applying the same duty to every AI tool. Article 26 of the [European Union's 2024 Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng#art_26) sets duties for organizations deploying systems that qualify as high risk, with [application dates staged](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng#art_113) from August 2026 and, for some product-related systems, August 2027. It requires deployers to assign human oversight to people with the necessary competence, training, and authority. It also requires automatically generated logs under the deployer's control to be retained for at least six months. The first governance task is therefore to classify the use correctly; whether or not Article 26 applies, the named owner needs both the evidence and the authority to stop the system.
 
 <div class="fig-band">
-<p class="fig-cap">fig. 04 / the workflow selection test</p>
+<p class="fig-cap">fig. 04 / an illustrative support-agent trial charter</p>
 <div class="checklist">
-  <div class="checklist__eyebrow">Progress only when every answer is credible</div>
-  <div class="checklist__item"><span class="checklist__tick">1</span><span class="checklist__text"><b>Contained:</b> Does the workflow have a clear beginning, end, and accountable business outcome?</span></div>
-  <div class="checklist__item"><span class="checklist__tick">2</span><span class="checklist__text"><b>Measurable:</b> Can reviewers tell good work from failure using agreed evidence?</span></div>
-  <div class="checklist__item"><span class="checklist__tick">3</span><span class="checklist__text"><b>Bounded:</b> Are permitted actions, data access, and forbidden decisions explicit?</span></div>
-  <div class="checklist__item"><span class="checklist__tick">4</span><span class="checklist__text"><b>Reversible:</b> Can the team return to shadow mode or a manual queue without losing the work?</span></div>
-  <div class="checklist__item"><span class="checklist__tick">5</span><span class="checklist__text"><b>Owned:</b> Is one person funded and empowered to maintain quality and decide exceptions?</span></div>
-  <div class="checklist__item"><span class="checklist__tick">6</span><span class="checklist__text"><b>Responsible:</b> Are redeployment, training, employee representation, and possible exits part of the trial plan?</span></div>
+  <div class="checklist__eyebrow">Six weeks in shadow mode · thresholds agreed before the first run</div>
+  <div class="checklist__item"><span class="checklist__tick">1</span><span class="checklist__text"><b>Scope:</b> Classify, summarize, and recommend a queue; review 100 randomly sampled tickets each week, every security and legal escalation, and a fixed set of known security and legal edge cases.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">2</span><span class="checklist__text"><b>Tools and data:</b> Read-only access to the approved knowledge base and only the customer fields needed for routing; log every retrieval and attempted action.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">3</span><span class="checklist__text"><b>Forbidden:</b> No refunds, account closures, contract changes, customer commitments, or decisions that an event is not a security incident.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">4</span><span class="checklist__text"><b>Pass:</b> At least 95% correct routing in the reviewed sample, no missed security or legal cases, and a median human response within 15 minutes for urgent escalations.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">5</span><span class="checklist__text"><b>Capacity and cost:</b> One owner day and up to two engineering days a week, with a SEK 150,000 cap that includes integration, evaluation, procurement, and change work.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">6</span><span class="checklist__text"><b>Release or stop:</b> Report error categories, overrides, response time, owner load, unresolved failures, data access, and total cost; any missed restricted case returns the workflow to manual handling.</span></div>
 </div>
 </div>
 
-Only evidence from the workflow should justify a structural change. A revised org chart cannot prove that the work improved.
+Before the workflow leaves shadow mode, its owner should take that report to the people who control the dependent boundaries: business operations, engineering, security, privacy, procurement, and workforce representation where roles or monitoring change. The exact thresholds will vary, but the falsifier is simple. If quality stays below the agreed level, serious exceptions escape, or the owner cannot absorb the review load within the funded capacity, the coordination layer should not shrink.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works when a contained workflow has measurable quality, bounded authority, a funded owner, and a stop condition agreed before the trial. Leaders should include data, procurement, control, and people costs in the test, then let the evidence decide whether the design expands.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works when a contained workflow has measurable quality, bounded authority, a funded owner, and a stop condition agreed before the trial. A release decision should expose data access, errors, overrides, escalation time, owner capacity, and full cost, then let that evidence decide whether the design expands.</p></div>
 
 ## Meanwhile in sci-fi
 
-[*Star Trek: The Next Generation*](https://api.tvmaze.com/shows/491), the science-fiction television series that began in 1987, follows Captain Jean-Luc Picard and the crew of the starship Enterprise. It is a better metaphor for this argument than a leaderless swarm because the ship has an explicit command structure. The useful idea is how that authority works alongside specialist knowledge and a shared view of the vessel.
+[*Star Trek: The Next Generation*](https://api.tvmaze.com/shows/491), the science-fiction television series that began in 1987, follows Captain Jean-Luc Picard and the crew of the starship Enterprise. I think it is a better metaphor for this argument than a leaderless swarm because the ship keeps an explicit command structure. Local expertise and mission-level authority coexist.
 
 <div class="scifi">
 <span class="scifi__label">Meanwhile, in science fiction</span>
 <p class="scifi__film">Star Trek: The Next Generation, every station sees the same ship</p>
-<p>Each officer owns a specialist station, but nobody treats a local reading as the whole truth. Navigation, engineering, medicine, security, and command operate from a common picture of the mission and the ship's condition. That shared system literacy lets an officer act quickly inside a domain while recognizing when a local choice could endanger the wider vessel.</p>
-<p>The Enterprise computer can execute commands, retrieve information, and coordinate systems, but it does not own the mission. Picard remains accountable for trade-offs across the ship. An AI-first company needs the same separation: agents handle bounded execution and routing, domain owners judge their part of the system, and senior leaders decide conflicts that no local workflow can resolve.</p>
+<p>Imagine the Enterprise as a company with several operating domains. Engineering, navigation, medicine, security, and command each have specialist knowledge, but a local decision can change the condition of the whole vessel. The officer at a station therefore needs enough of the shared picture to recognize when a choice has crossed the boundary of that station.</p>
+<p>This is the useful comparison for an AI-first company. Agents can handle bounded execution and routing inside a domain. Domain owners judge the output and escalate consequences that travel across domains, while senior leaders remain accountable for conflicts that change the mission itself.</p>
 </div>
 
-The point is clearer once the hierarchy stays in the metaphor. Local autonomy does not require the absence of command. It requires people at every station to understand enough of the wider system to know when their authority ends.
+The metaphor works because it preserves hierarchy where hierarchy still carries a necessary function. Local autonomy does not require the absence of command. It requires shared system literacy, visible conditions, and people at every station who know exactly when their authority ends.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The Enterprise works through specialist stations, a shared operating picture, and explicit command. AI-first organizations need the same combination: local expertise and bounded autonomy for ordinary decisions, with clear human authority when one domain's choice changes the whole mission.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The Enterprise combines specialist stations, a shared operating picture, and explicit command. AI-first organizations need the same balance: bounded autonomy for ordinary decisions, enough system knowledge to recognize wider consequences, and clear human authority when one domain's choice changes the whole mission.</p></div>
 
 ## The people transition is part of the architecture
 
 The technical design is easier than the human transition. Some coordination-heavy roles can grow into domain ownership. Others may move toward agent management, setting standards, assigning work, testing results, and handling exceptions. Some positions will disappear because the work that justified them no longer exists in the same form.
 
-I don't know a clean formula for this, and I distrust anyone who offers one. Treating every middle-management role as routine routing hides coaching, conflict resolution, institutional memory, and care. Preserving every role regardless of the work would be equally dishonest. A responsible redesign has to inspect the job itself, separate the functions, and say which ones remain valuable.
+I don't know a clean formula for this, and I distrust anyone who offers one. Treating every middle-management role as routine routing hides coaching, conflict resolution, institutional memory, and care. Preserving every role regardless of the work would be equally dishonest. A responsible redesign has to inspect the job itself, separate its functions, and say which ones remain valuable.
 
-The transition needs concrete answers before reporting lines change. Which people have a credible destination role, and what authority will it carry? Who funds the new domain owner rather than asking someone to perform it beside a full-time job? What training leads to real work instead of a certificate? When should employee representatives enter the process? If no destination exists, how will the company explain and support the exit?
+In Sweden, this is also an operating obligation rather than a courtesy after the technical choice. [Section 11 of the 1976 Co-Determination Act](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-1976580-om-medbestammande-i-arbetslivet_sfs-1976-580/) requires an employer bound by a collective agreement to initiate negotiations with the employee organization covered by that agreement, usually the union, before deciding on significant changes to the business or to employees' working or employment conditions. The timing matters here. That negotiation must happen early enough to change the workflow's monitoring, staffing, training, and transition plan, rather than after a pilot has made those choices difficult to reverse.
+
+The transition needs concrete answers before reporting lines change. Which people have a credible destination role, and what authority will it carry? Who funds the new domain owner rather than asking someone to perform it beside a full-time job? What training leads to real work instead of a certificate? If no destination exists, how will the company explain and support the exit?
 
 The career system also has to change. Traditional pyramids turn coordination into a route toward status, pay, and broader responsibility. When routine coordination shrinks, companies need another route based on deeper expertise, wider system scope, and demonstrated judgment. Otherwise “flat” becomes a polite word for fewer opportunities above you.
 
@@ -237,6 +249,6 @@ The career system also has to change. Traditional pyramids turn coordination int
 
 My take is that organizational redesign should begin with one contained workflow and evidence about where agents perform reliably. Let that evidence determine which handoffs disappear, which decisions move closer to the work, and which human responsibilities become more important. Then name the destination roles or transparent exits for the people affected, before efficiency language makes the choice sound inevitable.
 
-When coordination stops being the road to management, companies must build another road to mastery and responsibility. An AI-first architecture is only credible if people can see both where the agents stop and where their own growth continues.
+When coordination stops being the road to management, companies must build another road to mastery and responsibility. The org chart may become thinner, but the obligation to design authority, evidence, and human growth only gets heavier.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Workflow redesign changes jobs and removes familiar career steps, so destination roles, funded ownership, employee representation, and transparent exits belong in the architecture. A thinner hierarchy is responsible only when the company replaces coordination-based advancement with credible growth through expertise, scope, and judgment.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Workflow redesign changes jobs and removes familiar career steps, so destination roles, funded ownership, early employee representation, and transparent exits belong in the architecture. If people cannot see both where the agents stop and where their own growth continues, the architecture is incomplete.</p></div>
