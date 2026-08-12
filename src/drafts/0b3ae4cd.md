@@ -5,19 +5,19 @@ excerpt: "AI agents can absorb repeatable execution and routine coordination, bu
 featuredImage: "/images/posts/architecture-ai-first-company.webp"
 layout: post.njk
 tags: ["ai", "organization", "leadership", "strategy", "agents"]
-anthem: true
 tldr: "An AI-first company redesigns workflows around AI agents, software that can take several actions and use approved tools within defined limits, while people own judgment, exceptions, and consequences. Some coordination layers may shrink, but only when the evidence shows that owner hours, unresolved exceptions, serious misses, escalation time, and full cost improve together. Otherwise the work has merely moved into review queues and overloaded owners."
 permalink: /drafts/0b3ae4cd/
 provenance: verified-by-author
+anthem: true
 ---
+
+An AI-first company earns a thinner hierarchy only when coordination truly disappears. If agents absorb routine work while review load, unresolved exceptions, owner hours, or cross-domain escalation time rise, the company has not become simpler. Coordination has changed address. Cross-domain escalation time means the elapsed time between detecting an exception that affects more than one business area and placing it with people authorized to resolve it.
 
 [Arvind KC joined OpenAI as Chief People Officer in February 2026](https://openai.com/index/arvind-kc-chief-people-officer/). OpenAI is an [AI research and product company](https://openai.com/index/introducing-chatgpt-agent/) developing systems that can write, reason, and use software tools across many kinds of work, so its people leader has a close view of how those systems affect roles and decisions. A few months after joining, Arvind published [ten reflections on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/). I read them twice, first as observations from a fast-moving company and then as a blueprint for workflows, roles, and decision rights. Decision rights are the rules that specify who may decide what.
 
 Benjamin Simkin is the author of the independently published May 2026 book [*The AI First Company*](https://www.amazon.com/AI-First-Company-Engineering-Business/dp/B0H45WZRX5), a field manual for business owners redesigning companies around AI. The publisher's description says Simkin spent two years finding a way out of what he calls the Retrofit Trap: preserving an old human workflow while adding AI around its edges. That may speed up individual steps, but it leaves the same handoffs, queues, and authority structure in place.
 
-Neither account proves that a large enterprise has completed this transition. Together they offer a structural hypothesis that leaders can test. One useful measure is cross-domain escalation time: the elapsed time between detecting an exception that affects more than one business area and placing it with people authorized to resolve it. If agents absorb routine work while review load, unresolved exceptions, cross-domain escalation time, or owner hours rise, coordination has not disappeared. It has changed address.
-
-An AI-first company begins with a different production model. It designs the sequence of work around AI agents, software that can pursue a goal through several actions, use approved tools, and return a result or an exception under human oversight. This is agentic production: agents complete and coordinate defined work while people retain judgment where the consequences matter.
+Neither account proves that a large enterprise has completed this transition. Together they offer a structural hypothesis that leaders can test. An AI-first company begins with a different production model: it designs the sequence of work around AI agents, software that can pursue a goal through several actions, use approved tools, and return a result or an exception under human oversight. This is agentic production, where agents complete and coordinate defined work while people retain judgment where the consequences matter.
 
 Two of Arvind's reflections carry the structural argument. His seventh says, *“Every role is a technical role.”* His third says OpenAI is *“designed for bottom-up innovation”* and that *“things will seem chaotic”* because the organization promotes individual empowerment. Technical reasoning means understanding what the systems inside your work can and cannot do. Bottom-up innovation means people close to the work can improve it and make decisions within clear limits, without sending every choice through senior leaders.
 
@@ -25,14 +25,25 @@ My inference goes one step further. When agents absorb reliable execution and ro
 
 The sequence matters. Establish how the current workflow performs, redesign the work, inspect what the system can carry safely, and only then decide whether the organization should change around it.
 
+<figure class="fig-band article-diagram" data-diagram-id="workflow-sequence">
+<figcaption class="fig-cap">Fig. — sequence before structure</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 456" role="img" aria-labelledby="ad-workflow-sequence-title ad-workflow-sequence-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-workflow-sequence-title">Decide on organization after evidence about the workflow</title>
+<desc id="ad-workflow-sequence-desc">A four-stage vertical sequence: establish current workflow performance, redesign the work, inspect what the system can carry safely, then decide whether the organization should change around it.</desc>
+<defs><marker id="ad-workflow-sequence-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="456" fill="#000000"></rect><rect x="24" y="24" width="6" height="408" fill="#00E653"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-workflow-sequence"><rect x="92" y="34" width="590" height="68" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="122" y="76" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">1 / establish current workflow performance</text><line x1="387" y1="102" x2="387" y2="137" stroke="#00E653" stroke-width="3" marker-end="url(#ad-workflow-sequence-arrow)"></line><rect x="92" y="144" width="590" height="68" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="122" y="186" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">2 / redesign the work</text><line x1="387" y1="212" x2="387" y2="247" stroke="#00E653" stroke-width="3" marker-end="url(#ad-workflow-sequence-arrow)"></line><rect x="92" y="254" width="590" height="68" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="122" y="296" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">3 / inspect safe system capacity</text><line x1="387" y1="322" x2="387" y2="357" stroke="#00E653" stroke-width="3" marker-end="url(#ad-workflow-sequence-arrow)"></line><rect x="92" y="364" width="590" height="68" fill="#00E653"></rect><text x="122" y="406" fill="#000000" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">4 / decide whether organization changes</text></g>
+</svg>
+</figure>
+
 <div class="fig-band">
-<p class="fig-cap">source artifact / ten reflections from inside OpenAI</p>
+<p class="fig-cap">source / ten reflections from inside OpenAI</p>
 <div class="versus">
   <div class="versus__side versus__side--a">
-    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" aria-label="Open Arvind KC's LinkedIn post">
-      <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" width="458" height="800" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
-    </a>
-    <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">View Arvind KC's original public LinkedIn post</a></p>
+    <span class="versus__tag">Primary source</span>
+    <span class="versus__name">Arvind KC's public LinkedIn post</span>
+    <p>The original post identifies Arvind as OpenAI's Chief People Officer and contains the ten numbered reflections discussed here.</p>
+    <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="external">Open the original public post on LinkedIn</a></p>
   </div>
   <div class="versus__vs">→</div>
   <div class="versus__side versus__side--b">
@@ -175,7 +186,11 @@ A clean org chart can also mean two things. It may reflect discipline when decis
 
 Simkin's clean-slate question is useful because it brings the argument back to actual work: *“If I were building this business today, from scratch, knowing what AI can do, would it look like this?”* Applied to one workflow, it can expose an approval kept by habit, a rarely used feature that creates recurring support exceptions, or a data handoff nobody trusts. Removing that burden first lowers the practical cost of redesign.
 
+The first workflow should pass a simple screen. Its cases vary enough to justify an agent rather than fixed rules; a failure can be reversed; data sensitivity is understood; quality can be measured; and human review is funded. Support routing may fit when restricted cases always escalate. A finance workflow that releases payments or a marketing workflow that publishes unsupported claims should begin with much narrower authority, because the cost of a wrong action is harder to contain.
+
 Arvind's fourth reflection describes OpenAI as *“all in on AGI for the benefit of humanity. There is no Plan B.”* AGI means artificial general intelligence; the [OpenAI Charter](https://openai.com/charter/) defines it as *“highly autonomous systems that outperform humans at most economically valuable work”* and says OpenAI's mission is to ensure that capability benefits all humanity. An ordinary company has customers, contracts, employees, and a portfolio of commitments, so OpenAI's singular mission is a limited comparison. The transferable lesson is smaller: choose the priority for one workflow and make competing goals visible before granting local autonomy.
+
+The executive decision rule is short: do not change the org chart until the workflow beats the old process on quality, serious exceptions, owner load, escalation time, and full cost, while remaining safe to reverse.
 
 The Monday-morning version should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them.
 
