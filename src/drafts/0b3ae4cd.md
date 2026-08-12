@@ -6,7 +6,7 @@ featuredImage: "/images/posts/architecture-ai-first-company.webp"
 layout: post.njk
 tags: ["ai", "organization", "leadership", "strategy", "agents"]
 anthem: true
-tldr: "An AI-first company redesigns workflows around AI agents, software that can take several actions and use approved tools within defined limits, while people own judgment, exceptions, and consequences. As agents absorb reliable execution and routine coordination, technical reasoning spreads across roles and some management layers may shrink. That redesign is defensible only when quality can be measured, authority is bounded, ownership is named, failures are reversible, and affected people have credible paths forward."
+tldr: "An AI-first company redesigns workflows around AI agents, software that can take several actions and use approved tools within defined limits, while people own judgment, exceptions, and consequences. Some coordination layers may shrink, but only when the evidence shows that owner hours, unresolved exceptions, serious misses, escalation time, and full cost improve together. Otherwise coordination has only changed address."
 permalink: /drafts/0b3ae4cd/
 provenance: verified-by-author
 ---
@@ -15,21 +15,24 @@ provenance: verified-by-author
 
 Those reflections share a view with Benjamin Simkin's May 2026 book, [*The AI First Company*](https://www.amazon.com/AI-First-Company-Engineering-Business/dp/B0H45WZRX5). Simkin documents two years spent finding a way out of what he calls the Retrofit Trap: preserving an old human workflow while adding AI around its edges. That may speed up individual steps, but it leaves the same handoffs, queues, and authority structure in place.
 
+Neither account proves that a large enterprise has completed this transition. Together they offer a structural hypothesis that leaders can test: if agents absorb routine work while review load, unresolved exceptions, cross-domain escalation time, or owner hours rise, coordination has not disappeared. It has changed address.
+
 An AI-first company begins with a different production model. It designs the sequence of work around AI agents, software that can pursue a goal through several actions, use approved tools, and return a result or an exception under human oversight. This is agentic production: agents complete and coordinate defined work while people retain judgment where the consequences matter.
 
 Two of Arvind's reflections carry the structural argument. His seventh says, *“Every role is a technical role.”* His third says OpenAI is *“designed for bottom-up innovation”* and that *“things will seem chaotic”* because the organization promotes individual empowerment. Technical reasoning means understanding what the systems inside your work can and cannot do. Bottom-up innovation means people close to the work can improve it and make decisions within clear limits, without sending every choice through senior leaders.
 
 My inference goes one step further. When agents absorb reliable execution and routine coordination, some layers built mainly to route work can shrink. The company does not become leaderless. Coaching, accountability, resource choices, conflict, and trade-offs across the business remain human responsibilities, and they become more important when fewer approvals stand between a local decision and its consequences.
 
-The sequence matters. Change the workflow first, inspect what the system can carry safely, and only then decide whether the organization should change around it.
+The sequence matters. Establish how the current workflow performs, redesign the work, inspect what the system can carry safely, and only then decide whether the organization should change around it.
 
 <div class="fig-band">
 <p class="fig-cap">source artifact / ten reflections from inside OpenAI</p>
 <div class="versus">
   <div class="versus__side versus__side--a">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" aria-label="Open Arvind KC's LinkedIn post">
-      <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
+      <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" width="458" height="800" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
     </a>
+    <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">View Arvind KC's original public LinkedIn post</a></p>
   </div>
   <div class="versus__vs">→</div>
   <div class="versus__side versus__side--b">
@@ -45,7 +48,7 @@ The sequence matters. Change the workflow first, inspect what the system can car
 </div>
 </div>
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Arvind KC and Benjamin Simkin describe the same structural shift from different vantage points. An AI-first company spreads technical judgment across the business and may reduce layers devoted mainly to routine routing, while human authority, accountability, and care for people remain load-bearing.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Arvind KC and Benjamin Simkin describe the same structural shift from different vantage points. An AI-first company spreads technical judgment across the business and may reduce layers devoted mainly to routine routing, but the claim fails if coordination merely moves into review queues, unresolved exceptions, and overloaded owners.</p></div>
 
 ## Every role becomes a technical role
 
@@ -133,7 +136,7 @@ This changes the production structure. In the Retrofit Trap, people still carry 
 </div>
 </div>
 
-A redesign also needs evidence that can stop it. If routing accuracy remains below the agreed threshold, a security or legal case is missed, overrides stay frequent, or exception handling consumes more of the owner's time than the old process, the workflow is not ready and the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
+Before any management layer is removed, owner hours, the unresolved-exception queue, serious misses, and cross-domain escalation time must improve together against the old process, within funded capacity. If one measure gets worse or the workflow cannot be reversed safely, the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; if review and exceptions create more coordination than the system removes, the existing layer still has a job.</p></div>
 
@@ -176,7 +179,9 @@ Arvind's fourth reflection describes OpenAI as *“all in on AGI for the benefit
 
 The Monday-morning version should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them. The charter reserves one day a week from the support operations owner, up to two engineering days a week, and a cost cap of 150,000 Swedish kronor (SEK) covering the vendor, integration, security review, and evaluation. The team chooses its own numbers, but it chooses them before the trial so enthusiasm cannot move the goalposts later.
 
-The evidence trail must also survive changes to the system. For each run, the team should retain the model and prompt version, tool permissions, retrieved inputs, state changes, rejected actions, retries, and tool failures. A change to the model, prompt, or permissions should trigger the fixed edge-case tests again before expansion. Otherwise yesterday's result is being used to approve a different system.
+The evidence trail must survive changes to the system. For each run, the team should retain the model and prompt version, tool permissions, retrieved inputs, state changes, rejected actions, retries, and tool failures. A change to the model, prompt, tool, or permission creates a different system, so the release gate has to evaluate it again.
+
+Random samples can estimate routine routing accuracy, but they cannot establish safety for rare, severe cases. Those need a fixed adversarial test set, deliberately constructed cases that try to trigger a missed security or legal escalation, plus review of every real high-severity event. The control model is portable across workflow engines, audit systems, and evaluation tools. The implementation may vary, but a changed system must stay behind the release gate until the fixed test set passes again.
 
 European rules make the ownership question concrete without applying the same duty to every AI tool. Article 26 of the [European Union's 2024 Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng#art_26) sets duties for organizations deploying systems that qualify as high risk, with [application dates staged](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng#art_113) from August 2026 and, for some product-related systems, August 2027. It requires deployers to assign human oversight to people with the necessary competence, training, and authority. It also requires automatically generated logs under the deployer's control to be retained for at least six months. The first governance task is therefore to classify the use correctly; whether or not Article 26 applies, the named owner needs both the evidence and the authority to stop the system.
 
@@ -184,7 +189,7 @@ European rules make the ownership question concrete without applying the same du
 <p class="fig-cap">fig. 04 / an illustrative support-agent trial charter</p>
 <div class="checklist">
   <div class="checklist__eyebrow">Six weeks in shadow mode · thresholds and decision rights agreed before the first run</div>
-  <div class="checklist__item"><span class="checklist__tick">1</span><span class="checklist__text"><b>Scope:</b> Classify, summarize, and recommend a queue; review 100 randomly sampled tickets each week, every security and legal escalation, and a fixed set of known security and legal edge cases.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">1</span><span class="checklist__text"><b>Scope:</b> Classify, summarize, and recommend a queue; review 100 randomly sampled tickets each week, every security and legal escalation, and a fixed adversarial set of known security and legal edge cases.</span></div>
   <div class="checklist__item"><span class="checklist__tick">2</span><span class="checklist__text"><b>Trace:</b> Use read-only approved data; record model and prompt versions, retrievals, state changes, rejected actions, retries, and tool failures. A security signal may never transition to the ordinary support queue.</span></div>
   <div class="checklist__item"><span class="checklist__tick">3</span><span class="checklist__text"><b>Forbidden:</b> No refunds, account closures, contract changes, customer commitments, or decisions that an event is not a security incident.</span></div>
   <div class="checklist__item"><span class="checklist__tick">4</span><span class="checklist__text"><b>Pass:</b> At least 95% correct routing in the reviewed sample, no missed security or legal cases, and a median human response within 15 minutes for urgent escalations.</span></div>
@@ -193,9 +198,11 @@ European rules make the ownership question concrete without applying the same du
 </div>
 </div>
 
-Before the workflow leaves shadow mode, its owner should take the report to the people who control the dependent boundaries. The accountable owner recommends expand, hold, or stop; each required approver accepts or rejects the risk within their area; and the senior sponsor accepts the remaining business risk only after those boundaries are satisfied. The test that should stop the release is simple. If quality stays below the agreed level, serious exceptions escape, or the owner cannot absorb the review load within funded capacity, the coordination layer should not shrink.
+At the end of the six-week trial, the accountable owner should take the report to the people who control the dependent boundaries. The owner recommends expand, hold, or stop; each required approver accepts or rejects the risk within their area; and the senior sponsor accepts the remaining business risk only after those boundaries are satisfied. If quality stays below the agreed level, serious exceptions escape, or the owner cannot absorb the review load within funded capacity, the coordination layer should not shrink.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works when a contained workflow has measurable quality, inspectable system state, bounded authority, a funded owner, and a stop condition agreed before the trial. An explicit expand, hold, or stop decision should expose errors, overrides, escalation time, owner capacity, full cost, and who has the authority to refuse release.</p></div>
+A workflow that passes should enter the quarterly operating review rather than disappear into the portfolio. The domain owner compares owner hours, the unresolved-exception queue, cross-domain escalation time, serious misses, and full cost with the old process. Full cost includes the manual queue, review capacity, integration upkeep, vendor changes, and employee-transition costs. Expansion across business units remains blocked until data-residency rules, meaning where customer and employee data may be stored and processed, access and logging controls, incident duties, vendor change terms, and accountable owners are agreed for every unit. If these measures do not improve together, the use case should be redesigned or retired, because coordination has only changed address.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Local autonomy works when a contained workflow has measurable quality, inspectable system state, bounded authority, a funded owner, and a stop condition agreed before the trial. Trial and quarterly reviews should compare the new workflow with the old one, count its full cost, and block wider release when severe failures, hidden queues, vendor boundaries, or owner load remain unresolved.</p></div>
 
 ## Meanwhile in sci-fi
 
