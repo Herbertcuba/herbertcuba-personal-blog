@@ -40,9 +40,9 @@ The sequence matters. Establish how the current workflow performs, redesign the 
 <p class="fig-cap">source / ten reflections from inside OpenAI</p>
 <div class="versus">
   <div class="versus__side versus__side--a">
-    <span class="versus__tag">Primary source</span>
-    <span class="versus__name">Arvind KC's public LinkedIn post</span>
-    <p>The original post identifies Arvind as OpenAI's Chief People Officer and contains the ten numbered reflections discussed here.</p>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" aria-label="Open Arvind KC's LinkedIn post">
+      <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" width="458" height="800" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
+    </a>
     <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="external">Open the original public post on LinkedIn</a></p>
   </div>
   <div class="versus__vs">→</div>
@@ -71,7 +71,7 @@ In my work advising organizations on agentic production, I see teams stall when 
 
 Conventional workflow software deserves a strong defense here. Deterministic automation follows rules written in advance, such as routing every invoice above an agreed amount to a reviewer. When the cases and conditions are stable, a rules engine is easier to test and usually easier to trust than an AI agent. A tool-using agent earns its place when requests arrive in varied language, context must be gathered from several approved sources, and the next permitted action cannot be captured sensibly in a fixed decision tree.
 
-Established software can enforce part of that boundary. A durable workflow engine records the state of a process so it can resume reliably after a failure, while typed validation checks whether data matches a declared structure before the next step. These controls can prevent some illegal transitions and malformed inputs, but they cannot assign human decision rights or judge whether the business outcome is acceptable.
+Established software can enforce part of that boundary. A durable workflow engine records the state of a process so it can resume reliably after a failure, while typed validation checks whether data matches a declared structure before the next step. These controls can prevent some illegal transitions and malformed inputs, but they cannot assign human decision rights or judge whether the business outcome is acceptable. For a board, the boundary is simple: stable cases stay with conventional automation; an agent is justified only when variable context matters and its choices can be bounded, observed, and reversed.
 
 That flexibility adds a reliability burden. A model-driven choice can vary even when two cases look similar, so the owner needs reviewed samples, named error categories, a protected record of relevant tool actions, and a route for uncertain cases. A capable-sounding response proves little; the team has to detect a wrong choice before it becomes an expensive one.
 
@@ -106,6 +106,8 @@ Consider an enterprise customer-support workflow. An agent may classify an inbou
 
 That workflow needs a contract, not just a prompt. The team should list every permitted tool and data source, record each attempted action, and define error categories such as wrong destination, unsupported summary, restricted-data access, missed escalation, and tool failure. Quality can then be measured on a reviewed sample, while the share of recommendations changed by people reveals the override rate. The time between an agent flag and a human response reveals whether the escalation path works under real conditions. Because a ticket may contain personal data, the trace should contain only what investigation requires, be visible only to approved roles, and expire under a stated retention policy.
 
+At minimum, each case record should carry its current state, accountable owner, approved tools and data, escalation target, retention boundary, and any rejected transition. In the example above, a move from *security signal* to *ordinary support* is illegal. The workflow engine blocks and records that transition; a qualified person determines whether the event is a security incident, and the accountable owner decides whether the workflow is fit for release.
+
 Customer tickets often contain personal data. [Article 5 of the General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng#art_5), the European Union's 2016 data-protection law, requires personal data to be collected for specified purposes and limited to what is necessary. In practical terms, a named data owner must approve which customer fields the agent can retrieve and why. Giving it the whole customer record because access is convenient would turn an operating shortcut into a governance failure.
 
 *Domain-mapped ownership* is the useful frame here: one coherent area of work, one named human owner, and one explicit boundary beyond which the agent cannot decide. A product owner may prioritize features, while a platform team keeps shared technical services reliable. The domain owner carries a different obligation: the end-to-end outcome of one operating workflow, including its data access, exception rules, evidence, and effects on people.
@@ -114,7 +116,11 @@ At enterprise scale, that domain may cross business units and vendors. The owner
 
 A central AI control function should keep the minimum rules shared across domains, including identity and access, trace protection, release gates, severe-event definitions, and vendor-change controls. Domain owners still own workflow outcomes. Security, privacy, procurement, and workforce leaders retain authority within their boundaries, while a senior sponsor resolves business trade-offs after those required controls have been met.
 
-The strongest counterargument is that agents may create more coordination rather than less. Review queues can grow, vendor failures can require several teams to respond, and one local exception can cross security, legal, and customer boundaries. A thinner organization is earned only when the coordination displacement test shows that measured review load, the unresolved-exception queue, cross-domain escalation time, and vendor oversight all fit within funded capacity. If that work merely moves from managers into hidden exception queues, the hierarchy has not become simpler. Its coordination cost has changed address.
+To scale, the central function should publish versioned controls, reusable tests, and a common evidence format rather than approve every workflow run. A domain owner may release within that floor; central specialists intervene when a domain seeks an exception, a shared control changes, or a severe event crosses domains. That keeps common controls consistent without pulling ordinary decisions back to the center.
+
+The strongest counterargument is that agents may create more coordination rather than less. Review queues can grow, vendor failures can require several teams to respond, and one local exception can cross security, legal, and customer boundaries. A thinner organization is earned only when the coordination displacement test shows that measured review load, the unresolved-exception queue, cross-domain escalation time, and vendor oversight all fit within funded capacity. If that work merely moves from managers into hidden review and exception handling, the hierarchy has not become simpler.
+
+My prediction is that premature flattening will show up before any headline failure: owner hours rise, the oldest exceptions keep aging, and cross-domain escalations take longer. Those measures expose the hidden coordination layer while the top-line productivity chart may still look healthy.
 
 This changes the production structure. In the Retrofit Trap, people still carry the full workflow and AI assists at the narrow edge. In an AI-first design, agents carry the broad base of repeatable execution while a smaller number of people add judgment, set direction, and own exceptions at the top.
 
@@ -153,7 +159,7 @@ This changes the production structure. In the Retrofit Trap, people still carry 
 
 Before any management layer is removed, owner hours, the unresolved-exception queue, serious misses, and cross-domain escalation time must improve together against the old process, within funded capacity. If one measure gets worse or the workflow cannot be reversed safely, the coordination layer should stay. A leader who removes managers anyway has automated the org chart rather than improved the work.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; shared controls set the floor across domains, and the coordination layer stays wherever review and exceptions create more work than the system removes.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can absorb routine routing only inside an explicit, measurable, and reversible workflow. The production pyramid flips when agents carry the repeatable base and named people own judgment at the top; shared controls provide a reusable floor across domains without taking release ownership from them, and the coordination layer stays wherever review and exceptions create more work than the system removes.</p></div>
 
 ## The advantage compounds through feedback
 
@@ -190,7 +196,7 @@ A clean org chart can also mean two things. It may reflect discipline when decis
 
 Simkin's clean-slate question is useful because it brings the argument back to actual work: *“If I were building this business today, from scratch, knowing what AI can do, would it look like this?”* Applied to one workflow, it can expose an approval kept by habit, a rarely used feature that creates recurring support exceptions, or a data handoff nobody trusts. Removing that burden first lowers the practical cost of redesign.
 
-To choose among candidate workflows, rank them by variability, reversibility, data sensitivity, measurable quality, and funded review capacity. Start where cases vary enough to justify an agent rather than fixed rules, a failure can be reversed, data sensitivity is understood, quality can be measured, and people have paid capacity to review the work. Support routing may fit when restricted cases always escalate. A finance workflow that releases payments or a marketing workflow that publishes unsupported claims should begin with much narrower authority because a wrong action is harder to contain.
+To choose among candidate workflows, rank them by expected reduction in routine coordination, case variability, reversibility, data sensitivity, measurable quality, and funded review capacity. Start where cases vary enough to justify an agent rather than fixed rules, a failure can be reversed, data sensitivity is understood, quality can be measured, and people have paid capacity to review the work. A simple portfolio score can compare candidates across those dimensions, but reversibility, measurable quality, and funded review capacity are gates: a weak result on any one keeps the workflow out of shadow mode, regardless of its total. Support routing may fit when restricted cases always escalate. A finance workflow that releases payments or a marketing workflow that publishes unsupported claims should begin with much narrower authority because a wrong action is harder to contain.
 
 An employee-dismissal decision is the opposite kind of case. The evidence can cross performance, legal, and human contexts, the quality of the decision cannot be reduced to a fast accuracy score, and reversal cannot repair every consequence. Agents may organize approved evidence, but the human coordination and decision layer should remain.
 
@@ -198,9 +204,13 @@ Arvind's fourth reflection describes OpenAI as *“all in on AGI for the benefit
 
 The executive decision rule is short: do not change the org chart until the workflow beats the old process on quality, serious exceptions, owner load, escalation time, and full cost, while remaining safe to reverse.
 
-The Monday-morning version should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them.
+The operating plan should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them.
 
 The charter reserves one day a week from the support operations owner and up to two engineering days a week. It also sets a cost cap of 150,000 Swedish kronor (SEK) for the vendor, integration, security review, and evaluation. The accountable owner and required approvers may choose different numbers, but they must set them before the trial so enthusiasm cannot move the goalposts later.
+
+Capacity should be calculated before launch. Multiply the expected number of flagged cases by the median review time, then add a reserve for severe exceptions and owner decisions. The trial stays manual if that weekly load exceeds the reviewer hours and owner ceiling reserved in the charter. A held trial keeps consuming the same capacity, so its fix window needs an end date rather than an open place in the portfolio.
+
+Each weekly review should place routing quality, override rate, the age of the oldest unresolved exception, reviewer and owner hours, and full cost on one line. A quality gain does not pass if it depends on an exception queue the funded team cannot clear.
 
 The evidence trail must survive changes to the system without becoming an uncontrolled copy of customer data. For each run, the team should retain the model and prompt version, tool permissions, retrieved inputs needed for evaluation, state changes, rejected actions, retries, and tool failures. Access should be restricted by role, unnecessary personal fields removed, and the retention period agreed before launch. A change to the model, prompt, tool, or permission creates a different system, so the release gate has to evaluate it again.
 
@@ -216,7 +226,7 @@ European rules make the ownership question concrete without applying the same du
   <div class="checklist__item"><span class="checklist__tick">2</span><span class="checklist__text"><b>Trace:</b> Use read-only approved data; minimize trace content, restrict access by role, and apply the approved retention period while recording model and prompt versions, retrievals, state changes, rejected actions, retries, and tool failures. A security signal may never transition to the ordinary support queue.</span></div>
   <div class="checklist__item"><span class="checklist__tick">3</span><span class="checklist__text"><b>Forbidden:</b> No refunds, account closures, contract changes, customer commitments, or decisions that an event is not a security incident.</span></div>
   <div class="checklist__item"><span class="checklist__tick">4</span><span class="checklist__text"><b>Pass:</b> At least 95% correct routing in the reviewed sample, no missed security or legal cases, and a median human response within 15 minutes for urgent escalations.</span></div>
-  <div class="checklist__item"><span class="checklist__tick">5</span><span class="checklist__text"><b>Owner and approvers:</b> The support operations owner is accountable. Engineering, security, privacy, and procurement approve their boundaries; workforce representatives are consulted where roles or monitoring change. A senior sponsor resolves business trade-offs and funds the manual queue.</span></div>
+  <div class="checklist__item"><span class="checklist__tick">5</span><span class="checklist__text"><b>Owner and approvers:</b> The support operations owner is accountable. Engineering, security, privacy, and procurement approve their boundaries. Where roles, monitoring, or staffing may change, workforce representatives are consulted before shadow mode so their input can change access, sampling, staffing, training, and transition plans. A senior sponsor resolves business trade-offs and funds the manual queue.</span></div>
   <div class="checklist__item"><span class="checklist__tick">6</span><span class="checklist__text"><b>Expand, hold, or stop:</b> Expand only when every pass condition and the funded owner-load limit hold. Hold for a bounded fix with no serious miss. Stop and return to manual handling after any missed restricted case, uncontained data access, or review load above capacity.</span></div>
 </div>
 </div>
