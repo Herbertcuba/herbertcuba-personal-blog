@@ -1,5 +1,6 @@
 ---
 title: "Tireless intelligence needs a stopping rule"
+date: 2026-08-12
 description: "Claude's Riemann zeta search shows what changes when persistence becomes a budget and why leaders must decide what deserves another attempt."
 featuredImage: "/images/posts/tireless-intelligence-needs-a-stopping-rule.webp"
 tldr: "Anthropic's reported Riemann zeta result shows that organizations can now fund unusually large AI searches as a metered resource. The case does not establish that persistence alone caused the advance or that more attempts always pay; it shows why leaders need to choose worthy questions, define independent evidence, limit delegated authority, and write continuation and stopping rules before a tireless campaign begins."
