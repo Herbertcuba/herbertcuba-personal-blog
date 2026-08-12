@@ -157,7 +157,7 @@ Before any management layer is removed, owner hours, the unresolved-exception qu
 
 ## The advantage compounds through feedback
 
-Arvind's eighth reflection gives every role a second label: *“agent manager.”* He says people should wield agents in ways that significantly amplify themselves or their teams. I interpret agent management as using domain expertise to set a standard, direct agents within limits, evaluate their work, and review exceptions. That combination changes how much work one knowledgeable person can direct and how consistently their judgment can be applied.
+Arvind's eighth reflection calls every role an *“agent manager.”* He says people should wield agents in ways that significantly amplify themselves or their teams. I interpret agent management as using domain expertise to set a standard, direct agents within limits, evaluate their work, and review exceptions. That combination changes how much work one knowledgeable person can direct and how consistently their judgment can be applied.
 
 Take a content editor. Agents can prepare a draft, check factual claims against approved sources, and flag repeated language before human review. In finance, they can pull records and reconcile known fields before surfacing anomalies for investigation. A customer-success lead might use them to triage requests and prepare account summaries while retaining control of commitments to the customer.
 
@@ -200,7 +200,7 @@ The executive decision rule is short: do not change the org chart until the work
 
 The Monday-morning version should fit on one page. The following support trial is illustrative rather than a universal benchmark. It starts with six weeks in shadow mode, where the agent recommends actions but a person still executes them.
 
-The charter reserves one day a week from the support operations owner and up to two engineering days a week. It also sets a cost cap of 150,000 Swedish kronor (SEK) for the vendor, integration, security review, and evaluation. The team chooses its own numbers, but it chooses them before the trial so enthusiasm cannot move the goalposts later.
+The charter reserves one day a week from the support operations owner and up to two engineering days a week. It also sets a cost cap of 150,000 Swedish kronor (SEK) for the vendor, integration, security review, and evaluation. The accountable owner and required approvers may choose different numbers, but they must set them before the trial so enthusiasm cannot move the goalposts later.
 
 The evidence trail must survive changes to the system without becoming an uncontrolled copy of customer data. For each run, the team should retain the model and prompt version, tool permissions, retrieved inputs needed for evaluation, state changes, rejected actions, retries, and tool failures. Access should be restricted by role, unnecessary personal fields removed, and the retention period agreed before launch. A change to the model, prompt, tool, or permission creates a different system, so the release gate has to evaluate it again.
 
