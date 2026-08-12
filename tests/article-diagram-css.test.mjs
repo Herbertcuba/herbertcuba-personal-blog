@@ -32,8 +32,8 @@ test("managed article diagrams are responsive without widening the page", () => 
     "managed diagrams must not force a fixed minimum canvas width",
   );
   assert.ok(
-    /\.article-diagram>\.article-diagram__canvas--stacked\{max-width:420px;}/.test(compactCss),
-    "mobile-first stacked diagrams must stay readable rather than stretching on desktop",
+    /\.article-diagram\[data-diagram-id="workflow-sequence"\]>svg\{max-width:420px;}/.test(compactCss),
+    "the workflow-sequence diagram must stay readable rather than stretching on desktop",
   );
 });
 
