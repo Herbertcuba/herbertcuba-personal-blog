@@ -12,32 +12,37 @@ const compactCss = compact(css);
 
 test("managed article diagrams are responsive without widening the page", () => {
   assert.ok(
-    /\.article-diagram\{[^}]*overflow-x:auto;/.test(compactCss),
-    "article-diagram must own horizontal overflow",
+    /\.article-diagram\{[^}]*min-width:0;[^}]*overflow:visible;/.test(compactCss),
+    "article-diagram must shrink with its article container without becoming a scroller",
+  );
+  assert.doesNotMatch(
+    compactCss,
+    /\.article-diagram\{[^}]*overflow-x:(?:auto|scroll);/,
+    "managed diagrams must never create nested horizontal scrolling",
   );
   assert.ok(
-    /\.article-diagram\{[^}]*overscroll-behavior-inline:contain;/.test(compactCss),
-    "article-diagram must contain horizontal overscroll",
-  );
-  assert.ok(
-    /\.article-diagram>svg\{[^}]*display:block;[^}]*width:100%;[^}]*height:auto;/.test(
+    /\.article-diagram>svg\{[^}]*display:block;[^}]*width:100%;[^}]*max-width:100%;[^}]*min-width:0;[^}]*height:auto;/.test(
       compactCss,
     ),
-    "article-diagram SVG must scale responsively",
+    "article-diagram SVG must scale entirely inside its container",
   );
-  const managedSvgMinimums = [
-    ...compactCss.matchAll(
-      /\.article-diagram>svg\{[^}]*min-width:([0-9]+)px;/g,
-    ),
-  ].map((match) => Number(match[1]));
+  assert.doesNotMatch(
+    compactCss,
+    /\.article-diagram>svg\{[^}]*min-width:[1-9][0-9]*px;/,
+    "managed diagrams must not force a fixed minimum canvas width",
+  );
   assert.ok(
-    managedSvgMinimums.length > 0,
-    "managed diagram SVGs must declare a minimum canvas width",
+    /\.article-diagram>\.article-diagram__canvas--stacked\{max-width:420px;}/.test(compactCss),
+    "mobile-first stacked diagrams must stay readable rather than stretching on desktop",
   );
-  assert.deepEqual(
-    [...new Set(managedSvgMinimums)],
-    [760],
-    "the CSS canvas must stay at 760px so <=760-unit SVG viewBoxes keep 16-unit labels at >=16 CSS pixels",
+});
+
+test("all inline article images and SVGs are constrained to the prose width", () => {
+  assert.ok(
+    /\.art-proseimg,\.art-prosesvg\{[^}]*display:block;[^}]*max-width:100%;[^}]*height:auto;/.test(
+      compactCss,
+    ),
+    "inline images and SVGs must never exceed the article container",
   );
 });
 
