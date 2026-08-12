@@ -41,7 +41,7 @@ The sequence matters. Establish how the current workflow performs, redesign the 
 <div class="versus">
   <div class="versus__side versus__side--a">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" aria-label="Open Arvind KC's LinkedIn post">
-      <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" width="458" height="800" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
+      <img src="/images/posts/arvind-kc-linkedin-post.jpg?v=43ef96e9" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" width="458" height="800" loading="lazy" style="display:block;width:100%;max-width:458px;height:auto;margin:0 auto;" />
     </a>
     <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="external">Open the original public post on LinkedIn</a></p>
   </div>
