@@ -272,8 +272,6 @@ At portfolio level, the executive team should report to the board how many workf
 
 The metaphor works because it preserves hierarchy where hierarchy still carries a necessary function. Local autonomy does not require the absence of command. It requires shared system literacy, visible conditions, and people at every station who know exactly when their authority ends.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The Enterprise combines specialist stations, a shared operating picture, and explicit command. AI-first organizations need the same balance: bounded autonomy for ordinary decisions, enough system knowledge to recognize wider consequences, and clear human authority when one domain's choice changes the whole mission.</p></div>
-
 ## The people transition is part of the architecture
 
 I think the technical design is easier to specify than the human transition. Some coordination-heavy roles can grow into domain ownership. Others may move toward agent management, setting standards, assigning work, testing results, and handling exceptions. Some positions will disappear because the work that justified them no longer exists in the same form.
