@@ -1,90 +1,72 @@
 ---
-title: "The real org chart lives in the exceptions"
+title: "Flattening the company is the last step"
 date: 2026-07-24
-excerpt: "AI can speed up routine work without changing who waits for whom. The real test of a flatter company is what happens when the normal path breaks."
+excerpt: "AI can remove routine execution without removing the coordination around it. A flatter company becomes credible only when authority, judgment, and careers are redesigned with the work."
 featuredImage: "/images/posts/architecture-ai-first-company.webp"
 layout: post.njk
 tags: ["ai", "organization", "leadership", "strategy", "agents"]
-tldr: "An AI-first company becomes flatter only when agents remove routine coordination as well as execution, people throughout the business can judge the systems they use, and unusual cases reach someone with clear authority. If those conditions are met, the organization still owes employees credible paths to expertise, responsibility, status, and pay as traditional management steps disappear."
+tldr: "An AI-first company earns a flatter structure only after agents remove routine coordination as well as execution, people close to the work can judge and govern those systems, and unusual cases have explicit routes to accountable decision-makers. If management layers shrink, the company must also replace the careers, status, coaching, and pay progression those layers carried."
 permalink: /drafts/0b3ae4cd/
 provenance: verified-by-author
 anthem: true
 ---
 
-The most revealing part of an organization is rarely its org chart. It is the path taken by a problem that does not fit the normal process. Follow that problem and you will see who waits, who translates, who can decide, and who carries the consequences.
+A flat organization is easy to announce. It is much harder to make the work stop needing the missing layers.
 
-This matters because AI can make ordinary work look transformed while leaving those relationships intact. An AI agent, meaning software that can pursue a defined goal through several steps and approved tools, may gather information, prepare a recommendation, and update business systems. An AI-first company designs the workflow around that capability from the beginning. Even then, faster execution does not prove that a management layer has become unnecessary.
+That distinction matters as companies become AI-first, meaning they design workflows around what artificial intelligence can do instead of attaching it to an unchanged human process. An AI agent is software that can pursue a defined goal across several steps and approved tools. It may research an issue, prepare a decision, update a system, or route an unusual case. None of that proves the organization needs fewer managers.
 
-I think a thinner hierarchy is earned when two conditions hold. Routine coordination has genuinely left the workflow, and unusual cases reach people who have both the knowledge and the authority to resolve them. Otherwise the hierarchy has merely gone underground, reappearing as private messages, informal approvals, and senior people working late to keep the system moving.
+I think the real test is where the work waits. If an agent completes the routine steps but people still chase approvals, translate between functions, and find someone willing to own an exception, coordination has moved rather than disappeared. The formal chart may look flatter while an informal hierarchy grows underneath it.
 
-[Arvind KC joined OpenAI as Chief People Officer in February 2026](https://openai.com/index/arvind-kc-chief-people-officer/). OpenAI is an AI research and product company building systems that can write, reason, and use software tools, so its senior people leader has a relevant view of how those capabilities reshape jobs. A few months after joining, KC shared [ten reflections on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/). Among them were “Every role is a technical role,” and the claim that OpenAI is “designed for bottom-up innovation.”
+[Arvind KC joined OpenAI as Chief People Officer in February 2026](https://openai.com/index/arvind-kc-chief-people-officer/). OpenAI is an AI research and product company developing systems that can write, reason, and use software tools, which makes its senior people leader a relevant observer of changing roles. A few months after joining, KC published [ten reflections on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/), including “Every role is a technical role” and the claim that OpenAI is “designed for bottom-up innovation.”
 
-Benjamin Simkin approaches the same subject from outside an AI developer. His independently published May 2026 book, [*The AI First Company*](https://www.amazon.com/AI-First-Company-Engineering-Business/dp/B0H45WZRX5), is a field manual for owners who want to rebuild their companies around AI. He calls the weaker alternative the *Retrofit Trap*: attaching AI to an old human process while preserving the same queues, handoffs, and authority.
+Benjamin Simkin looks at the same shift from outside an AI developer. His independently published May 2026 book, [*The AI First Company*](https://www.amazon.com/AI-First-Company-Engineering-Business/dp/B0H45WZRX5), is a field manual for owners redesigning companies around AI. He calls the weaker approach the *Retrofit Trap*: adding AI around the edges of an old human workflow while preserving its queues, handoffs, and authority.
 
-Neither account proves that every business should become flat. Together, however, they expose a sharper question than “How many managers do we need?” The question is whether the work still waits in the same places after agents arrive.
+Neither source proves that every company should flatten. Together, they point toward a more useful claim: organizational structure should follow demonstrated changes in the work. Flattening is the last step, not the first.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>AI changes organizational structure only when it removes waiting and routine relay work, while exceptions still reach people with explicit knowledge and authority. The path of an unusual case reveals whether hierarchy disappeared or simply became harder to see.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>AI does not justify a flatter company merely by making tasks faster. The structure should change only after routine coordination has left the workflow, exceptions have clear owners, and the hidden burden on senior people has not increased.</p></div>
 
-## Speed can hide the old hierarchy
+## Technical judgment moves into the role
 
-Consider an illustrative supplier-onboarding process in a large company. An agent could collect tax documents, compare contract terms with approved standards, check whether required security answers are present, and prepare the record for a purchasing decision. That removes hours of searching and copying without necessarily changing the organization.
+KC’s statement that every role is technical does not mean every employee must learn to code. It means that anyone accountable for an outcome must understand enough about the system producing it to question the result. Technical judgment is the ability to inspect what information an AI system used, recognize where it can fail, and decide whether its output is safe enough for the situation.
 
-The real test begins when the supplier wants to store customer data in a new region, rejects a security clause, or serves several business units with conflicting requirements. If the case travels through the same meetings and waits for the same senior approvals, execution became cheaper while coordination survived. If nobody knows who owns the conflict, the missing manager has become an invisible job shared by everyone nearby.
+Consider a customer-operations leader overseeing refunds. An agent may collect the order history, compare it with policy, detect missing evidence, and recommend an outcome. The leader does not need to build the software, but ownership is hollow if they cannot tell whether the policy is current, whether the evidence is complete, or when the recommendation should be stopped.
 
-*Decision rights* make the difference. They are written boundaries stating who may decide, what evidence that person needs, and which conditions require escalation. In the supplier example, procurement might approve ordinary terms within a defined policy, while a data-location conflict moves directly to named legal and security owners. The goal is not to automate every decision. It is to stop using hierarchy as a routing system for predictable work.
+KC’s eighth reflection gives every role another suffix: “agent manager.” I interpret agent management as defining the goal, limiting access, checking evidence, handling failures, and improving the workflow when the same exception returns. That extends domain expertise into the system applying it. It does not transfer accountability to the system.
 
-I think leaders should measure the waiting that remains rather than the volume an agent produces. Useful signals include how long unusual cases remain unowned, how much time domain leaders spend chasing cross-business answers, and how often a supposedly automated workflow needs informal supervision. Those measures are less exciting than a productivity dashboard, but they reveal whether coordination was removed or displaced.
+I think central AI teams still matter. They can provide shared infrastructure, security standards, and specialist support. But if every uncertain business decision returns to that team, the company has rebuilt the old technical queue around a newer tool. Judgment has to move closer to the work, within boundaries that everyone can see.
 
-A company should change reporting lines only after the workflow produces that evidence. Flatten first, and capable employees inherit an unofficial management burden without the role, time, or authority to perform it. The chart looks lean while the work becomes politically expensive.
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A role becomes technical when its owner can question an AI system’s evidence, understand its limits, and stop it when necessary. Central specialists support that judgment, but they cannot become the approval desk for every business decision.</p></div>
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Faster preparation is not the same as less coordination. A management layer becomes removable only when routine cases flow without it, exceptions have named owners, and hidden supervision does not rise elsewhere.</p></div>
+## Coordination has to leave the workflow
 
-## Technical judgment follows authority
+Traditional hierarchies do more than supervise people. They route information, reconcile competing priorities, and carry decisions across organizational boundaries. AI agents can absorb part of that relay work, but only when the workflow also contains clear *decision rights*: written boundaries for who may decide, what evidence they need, and which conditions require escalation.
 
-KC's statement that every role is technical can sound like a demand that everyone learn to code. Its more useful meaning is that anyone who owns a business outcome must understand enough about the system producing it to judge the result. *Technical reasoning* means knowing what information the system used, where its rules or model can fail, and how those limits affect the decision at hand.
+Imagine a commercial agreement that follows standard pricing, approved terms, and a known risk profile. An agent could assemble the evidence and move it through the normal path without a manager relaying status between sales, finance, and legal. If the customer asks for an unusual liability clause or a new use of personal data, the case should move directly to named owners with authority to resolve that conflict.
 
-For the procurement owner, that may mean checking whether an agent used current policy, whether a missing document was treated as an error, and whether the software accessed data it was allowed to see. The owner does not need to build the agent. Yet ownership becomes fiction if that person cannot question its evidence or stop its action.
+The structure has changed only if both paths work. When ordinary cases flow but exceptions sit unowned, domain leaders become unofficial coordinators. They spend evenings searching for context and authority, which means the management layer still exists as unpaid, invisible work.
 
-KC's eighth reflection describes every role as having the suffix “agent manager.” I interpret *agent management* as setting a goal, limiting access, inspecting evidence, handling failure, and improving the workflow when a recurring exception reveals a weak rule. This is domain expertise extended into the system that applies it.
+This is also the practical meaning of KC’s “bottom-up innovation.” People near the work can change a process and decide within known limits instead of sending every improvement upward. The activity may look chaotic because authority is distributed, but useful freedom has edges. Decisions that create material financial exposure, cross several business areas, or alter risk for the whole company still need a deliberate route upward.
 
-I think many companies will respond by creating a central AI team and sending every uncertain choice there. Such a team can build shared infrastructure and protect security standards, but it cannot own the meaning of every commercial, legal, operational, or customer decision. If all judgment returns to one technical queue, the company has recreated the old pyramid around a newer tool.
+I don’t know a universal span of control that settles this. The right shape depends on the cost of failure, the variety of exceptions, and whether authority can be made explicit. I think leaders should therefore measure unresolved exceptions, time spent chasing cross-functional decisions, and the amount of informal supervision a workflow needs before they remove a reporting layer. Output volume alone tells them almost nothing about the coordination that remains.
 
-The alternative is distributed technical judgment with clear limits. People close to the work decide within an agreed boundary, while specialists handle failures that cross domains or threaten the wider system. That is how authority moves outward without turning trust into guesswork.
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every role becomes technical when business owners must understand enough about an AI system to question its evidence, contain its failures, and remain accountable for the outcome. Central experts still matter, but they cannot become the approval desk for every decision.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A management layer becomes removable when routine work no longer needs it and unusual cases travel quickly to named people with the authority to decide. If coordination resurfaces as informal chasing and late-night intervention, the hierarchy was hidden rather than removed.</p></div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
-<p class="scifi__film">Minority Report (2002)</p>
-<p>Steven Spielberg's 2002 film follows a police unit that acts on predictions of future murders as though faster foresight has settled responsibility. The mapping to an AI-first company is direct: a system can compress detection and routing while leaving the hardest question untouched. Someone still has to understand the evidence, challenge the prediction, and hold the authority to stop the machine when an exception exposes its limits.</p>
+<p class="scifi__film">The Matrix (1999)</p>
+<p>Lana and Lilly Wachowski’s 1999 film presents a simulated world whose visible surface hides the code governing it. The mapping to organizational design is simple: the org chart is the visible surface, while queues, permissions, escalations, and informal influence are the code. AI changes the company only when that underlying system changes, not when the diagram acquires fewer boxes.</p>
 </div>
 
-## A flat company still needs vertical moments
+## A missing layer leaves a missing career
 
-KC writes that OpenAI is “designed for bottom-up innovation” and warns that “things will seem chaotic.” *Bottom-up innovation* means people near the work can improve a process and decide within known limits instead of sending each change upward. The resulting activity may look untidy because authority is spread across more capable edges.
+Management layers also carry coaching, status, pay progression, and a visible future. When a company removes coordination-heavy roles, it may reduce operating cost, but it also breaks part of the career system. Calling the result “flat” does not answer what ambition, development, or greater responsibility now look like.
 
-That does not eliminate the need for hierarchy in every moment. A decision that affects several business units, creates a large financial exposure, or changes the risk accepted by the whole company needs wider authority. A flat organization works only when these vertical moments are explicit and rare enough to deserve senior attention.
+One alternative is *domain ownership*: responsibility for an end-to-end business outcome, with authority to change standards, pause an agent, resolve recurring exceptions, and address their causes. Other paths may reward deeper expertise, system design, or coaching. These destinations need real decision rights, protected learning time, and pay progression. A new title without those things is a label attached to the same uncertainty.
 
-This is where Simkin's Retrofit Trap becomes a practical test. He asks, “If I were building this business today, from scratch, knowing what AI can do, would it look like this?” Applied to one workflow, the question separates inherited ceremony from necessary control. A recurring approval may exist because a real conflict needs executive judgment, or because the process was designed when information moved slowly. Those are different reasons, and only one survives redesign.
+Some positions will still disappear because too little necessary work remains. Leaders should say that plainly rather than describe every reduction as empowerment. My take is that the people transition belongs in the architecture decision itself. Before removing a layer, the company should know which responsibilities have ended, which have moved, who will carry them, and how employees can qualify for the work that remains.
 
-I don't know a universal span of control that resolves the distinction. The right structure depends on the cost of failure, the number of genuine conflicts, and whether ownership can be made clear. I think the aim should be a company that is horizontal for ordinary movement and deliberately vertical when consequences cross a boundary.
+I think this is where the ambition to become AI-first becomes serious. Agents can make routine execution abundant, but responsibility remains scarce because it requires context, judgment, and a willingness to carry consequences. A company earns a flatter structure only when the work no longer needs the missing layer and its people can see a credible future beyond it.
 
-That structure may look less orderly than a pyramid. It is also more honest. Instead of making every choice climb, it reserves hierarchy for decisions that truly require a broader mandate.
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Bottom-up innovation moves ordinary decisions toward the people with context, but consequential conflicts still need an explicit route upward. A flatter company succeeds by making hierarchy selective rather than pretending authority no longer matters.</p></div>
-
-## The missing layer was also a career
-
-Removing relay work changes more than operating cost. Traditional organizations use management layers to distribute status, higher pay, broader influence, and a visible future. When those layers shrink, employees lose part of the career system even if their current tasks remain.
-
-One replacement is *domain ownership*: responsibility for an end-to-end business outcome, including the authority to change standards, pause an agent, resolve recurring exceptions, and address their causes. Other paths may reward deeper expertise, coaching, or system design. These roles need more than ambitious labels. They need real decision rights, pay progression, and protected time to learn.
-
-Some coordination-heavy positions will still disappear because too little necessary work remains. Leaders should say that plainly. “Flat” becomes a polite word for fewer opportunities above you when the company removes rungs without building credible destinations.
-
-My take is that the people transition belongs inside the architecture decision, not in a communication plan written after it. Before removing a layer, leaders should know which responsibilities have ended, which have moved, who will carry them, and how employees can qualify for the roles that remain. That is part of the full cost of redesign.
-
-I think this is the standard an AI-first company should accept. Agents may make execution abundant, but responsibility stays scarce because it requires context, judgment, and the willingness to carry consequences. A company earns a thinner hierarchy when its structure makes that responsibility clearer than the pyramid did.
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Management layers also carry careers, status, and pay. Any company that removes them owes employees credible routes into domain ownership, expertise, coaching, or system design, and it must count that transition as part of the redesign rather than an afterthought.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Removing management layers also removes part of the career ladder. A responsible redesign replaces it with credible routes into domain ownership, expertise, system design, or coaching, backed by authority, learning time, and pay rather than titles alone.</p></div>
