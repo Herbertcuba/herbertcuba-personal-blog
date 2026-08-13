@@ -777,6 +777,24 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .recordlist__row{grid-template-columns:1fr;gap:5px;padding:13px 0;}
 }
 
+/* ── Grid matrix (multi-column comparison table replacement) ── */
+.gridmatrix{margin:18px 0 28px;border-top:1px solid var(--border-light);font-size:14px;}
+.gridmatrix__row{display:grid;grid-template-columns:var(--gm-cols,1fr 1fr);gap:18px;padding:12px 0;border-bottom:1px solid var(--border-light);align-items:start;}
+.gridmatrix__row--head{padding:10px 0 8px;}
+.gridmatrix__row--head .gridmatrix__cell{font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint-light);}
+.gridmatrix__cell{font-size:14px;line-height:1.5;color:var(--ink-2);}
+.gridmatrix__cell--key{font-family:var(--font-mono);font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--green-light);line-height:1.4;}
+.gridmatrix__cell p{margin:0;}
+@media (max-width:760px){
+  /* Each row becomes a card: key cell on top, remaining cells stacked with
+     their column header repeated as a mini-label via data-col attr. */
+  .gridmatrix__row{display:block;padding:14px 0;}
+  .gridmatrix__row--head{display:none;}
+  .gridmatrix__cell{display:block;margin-top:8px;}
+  .gridmatrix__cell--key{margin-top:0;}
+  .gridmatrix__cell[data-col]::before{content:attr(data-col);display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint-light);margin-bottom:2px;}
+}
+
 /* ── Sci-fi metaphor band (full-bleed cinematic aside) ── */
 .scifi{
   background:radial-gradient(120% 140% at 15% 0%, #06140C 0%, #000 70%);
