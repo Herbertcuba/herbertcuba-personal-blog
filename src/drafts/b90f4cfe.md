@@ -67,6 +67,41 @@ The deeper failure mode arrives after the budget does. When another attempt is a
 
 At the scheduled review, the owner has three honest choices. Continue when the agreed threshold is met and independently replicated. Pivot when a failed approach produces a distinct, testable hypothesis with its own budget. Stop when the campaign repeats its failure without reducing uncertainty. Wider permissions always require a fresh review, because they change the risk of the search and not merely its size, and when a campaign begins to touch employees' working conditions, the consultation duty travels with the authority. No new tranche should be approved without a falsifiable hypothesis, independent evidence, and a reversible path.
 
+<figure class="fig-band article-diagram" data-diagram-id="review-stopping-rule">
+<figcaption class="fig-cap">Fig. — At the scheduled review, a persistent-agent campaign has three prewritten outcomes: continue, pivot, or stop.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 340" role="img" aria-labelledby="ad-review-stopping-rule-title ad-review-stopping-rule-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-review-stopping-rule-title">Three prewritten outcomes at the scheduled review</title>
+<desc id="ad-review-stopping-rule-desc">A decision tree with a scheduled review node branching into continue, pivot, and stop, each labeled with its prewritten condition.</desc>
+<defs><marker id="ad-review-stopping-rule-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="340" fill="#000000"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-review-choices">
+<rect x="265" y="30" width="230" height="54" rx="8" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="64" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">Scheduled review</text>
+<line x1="320" y1="84" x2="140" y2="176" stroke="#00E653" stroke-width="3" marker-end="url(#ad-review-stopping-rule-arrow)"></line>
+<line x1="380" y1="84" x2="380" y2="176" stroke="#00E653" stroke-width="3" marker-end="url(#ad-review-stopping-rule-arrow)"></line>
+<line x1="440" y1="84" x2="620" y2="176" stroke="#00E653" stroke-width="3" marker-end="url(#ad-review-stopping-rule-arrow)"></line>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-continue">
+<rect x="26" y="176" width="228" height="140" rx="8" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="140" y="212" text-anchor="middle" fill="#00E653" font-size="20" font-weight="700">Continue</text>
+<text x="140" y="242" text-anchor="middle" fill="#DCE7DE" font-size="16">Threshold met and</text>
+<text x="140" y="264" text-anchor="middle" fill="#DCE7DE" font-size="16">independently replicated</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-pivot">
+<rect x="266" y="176" width="228" height="140" rx="8" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="212" text-anchor="middle" fill="#00E653" font-size="20" font-weight="700">Pivot</text>
+<text x="380" y="242" text-anchor="middle" fill="#DCE7DE" font-size="16">Distinct, testable</text>
+<text x="380" y="264" text-anchor="middle" fill="#DCE7DE" font-size="16">hypothesis, own budget</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-stop">
+<rect x="506" y="176" width="228" height="140" rx="8" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="620" y="212" text-anchor="middle" fill="#00E653" font-size="20" font-weight="700">Stop</text>
+<text x="620" y="242" text-anchor="middle" fill="#DCE7DE" font-size="16">Failure repeats without</text>
+<text x="620" y="264" text-anchor="middle" fill="#DCE7DE" font-size="16">reducing uncertainty</text>
+</g>
+</svg>
+</figure>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A Persistence Warrant ties every agent campaign to a named owner, falsifiable claim, independent evaluator, limited authority, inspectable record, and prewritten continuation and futility rules. Evidence thresholds fixed in advance protect the organization from its own enthusiasm.</p></div>
 
 ## Meanwhile in sci-fi
