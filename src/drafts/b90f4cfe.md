@@ -1,76 +1,61 @@
 ---
-title: "Tireless intelligence needs a stopping rule"
-tldr: "Anthropic's Claude result did not prove the Riemann hypothesis, and persistence alone did not cause it. It showed that an organization can fund a large, measured search, which shifts leadership toward selecting worthy questions, demanding independent evidence, releasing budget in stages, and setting stopping rules before the work begins."
+title: "Claude and the economics of trying again"
+tldr: "Anthropic’s zeta result shows that organizations can now fund and coordinate far more attempts on a problem with clear tests, but it does not show that persistence alone caused discovery or that agent activity equals value. Leaders must choose questions worth sustained search, require independent evidence, release budget and authority in stages, and write stopping rules before tireless systems begin."
 permalink: /drafts/b90f4cfe/
 layout: post.njk
 date: 2026-08-15
 ---
 
-In August 2026, [Anthropic](https://www.anthropic.com/research/riemann-zeta), the AI company behind Claude, reported that an unreleased research version of its system tried 650 ideas and found that none worked. Across two sessions in Claude Code, its coding-agent environment, Claude generated 31 million output tokens and coordinated roughly 60 subagents. An output token counts model-generated text; a subagent is a delegated Claude run assigned to part of the search.
+On August 10, 2026, [Anthropic, the AI company behind Claude](https://www.anthropic.com/research/riemann-zeta), reported that an unreleased research version of its system had generated and tested 650 mathematical ideas. Every one failed. These were the opening approaches in a longer search, and Anthropic does not say that idea 651 succeeded.
 
-The resulting preprint, a public research paper without completed journal peer review, presents a new bound for the Riemann zeta function, a mathematical object tied to the distribution of prime numbers. The viral story is machine genius. I think the stranger fact is that an organization could fund hundreds of failures as a structured search.
+Claude continued through two sessions in Claude Code, its tool-using coding environment, producing 31 million output tokens, or metered units of model-generated text. During a later day-and-a-half phase, roughly 60 subagents, delegated AI processes rather than employees, divided work across proofs, software checks, counterexample searches and literature review. That process eventually produced a new argument. I think the strategic change sits in this sequence: an organization funded and coordinated the willingness to try again.
 
-Human researchers pay for dead ends in time and may also face fatigue, shame, or career pressure. Anthropic did not measure those effects. The defensible shift is that retry capacity can now be allocated through model output, tools, elapsed time, and expert attention.
+The argument concerns the Riemann zeta function, a mathematical function connected to the distribution of prime numbers and central to German mathematician Bernhard Riemann’s 1859 work. A zero is an input where that function returns zero. The nontrivial zeros are those connected to Riemann’s famous hypothesis; the function also has a known, simpler set at negative even numbers.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Anthropic’s project shows that an organization can fund and measure hundreds of failed search paths. The leadership problem is deciding which questions deserve that capacity and what evidence will justify another round.</p>
-</div>
+The function takes complex numbers, which have real and imaginary parts, so mathematicians can plot its inputs on a two-dimensional graph. The critical line is the target vertical line where the horizontal, or real, part is one half. The Riemann hypothesis says every nontrivial zero sits there.
 
-## What the proof actually moved
+Claude’s [lab-released preprint](https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf), a public paper that has not completed conventional journal peer review, proves something narrower. Its basic theorem raises the proven lower bound from 5/12, about 41.7%, to at least two thirds, about 66.7%, a gain of 25 percentage points. An optimized version reaches 0.6725, or 67.25%.
 
-In 1859, German mathematician Bernhard Riemann linked the zeta function to prime numbers. A zero is an input where the function equals zero; its relevant “nontrivial” zeros carry information about prime distribution. The unproved Riemann hypothesis says all of them lie on the critical line, where the input’s real part equals one half.
+The result is asymptotic: it describes the share as the counted range grows without limit, rather than making a claim about every finite sample. The calculation counts multiplicity in its total, so a zero repeated at one location counts more than once; the proven two-thirds are simple zeros that occur once and lie on the critical line. This is meaningful progress because far more zeros are now proved to meet the target condition, but the hypothesis requires every nontrivial zero to meet it.
 
-Claude did not prove that hypothesis. Its [technical paper](https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf) claims a new unconditional lower bound, a minimum proved without assuming the hypothesis. The statement is asymptotic: as zeros are counted higher in the complex plane, at least two thirds are simple and on the critical line, up from 5/12. A simple zero occurs once rather than with higher multiplicity. The basic bound moves from about 41.7% to 66.7%, exactly 25 percentage points; an optimized version reaches 0.6725, or 67.25%.
+The history matters too. Number theorist J. B. Conrey proved in a [peer-reviewed 1989 paper](https://doi.org/10.1515/crll.1989.399.1) that more than two fifths of the zeros lie on the line, and later human work lifted the record to 5/12 in 2020. So the popular “37-year record” frame describes the span from Conrey’s paper to 2026, not 37 years without progress.
 
-The “37-year” label also needs care. Number theorist J. B. Conrey’s [1989 peer-reviewed paper](https://doi.org/10.1515/crll.1989.399.1) proved more than two fifths, but later human work took the record to 5/12 in 2020. The interval runs from 1989 to 2026, not through 37 years without progress.
+The new proof also builds on a [2024 peer-reviewed paper](https://arxiv.org/abs/2306.04799) by number theorists Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh. Their work established a result about the spacing between pairs of zeros without assuming the Riemann hypothesis. Claude’s paper treated the resulting sum as a quadratic form, an expression whose possible values can be bounded with linear algebra, and used that reframing in the stronger proof.
 
-The paper also credits a [2024 peer-reviewed number-theory study](https://arxiv.org/abs/2306.04799) and calls its new ingredient a linear-algebraic reading: a way to represent the problem through vectors and transformations. I think the honest account combines human mathematics, conceptual insight, scaled search, and checking.
+Anthropic reports that two internal mathematicians validated the paper and that specialist number theorists Brian Conrey and Dan Goldston examined it on short notice. It also released a [Lean 4 formalization](https://github.com/anthropics/zeta-23-lean), meaning a theorem-proving language checked a precisely encoded version of the argument under declared assumptions. That makes the result unusually open to inspection, although it does not replace independent replication or wider scrutiny by the field. I think the achievement becomes more interesting, not less, when these boundaries are visible.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>The paper moves a proven minimum from 5/12 to at least two thirds without proving the Riemann hypothesis. Human groundwork and a new conceptual reading mattered alongside persistence.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Claude’s 650 failures were an initial phase in a longer, coordinated search that produced a specific new lower bound, not a proof of the Riemann hypothesis and not a documented victory of persistence alone.</p></div>
 
-## Persistence became a budget line
+## The new resource is sustained search
 
-The search was structured. Anthropic says the agents issued 2,400 shell commands, wrote hundreds of Python scripts, tested calculations against known zeros, searched for counterexamples, and reviewed each other. They downloaded 54 papers from arXiv, an open preprint repository, to check prior work, although a search cannot prove that no one found the result first.
+Anthropic also reports 2,400 shell commands, hundreds of Python scripts, numerical tests, counterexample searches and checks across 54 research papers. Those numbers describe a search built around tests and records, not a price. Anthropic published neither a full cost ledger nor data from similar campaigns that produced nothing.
 
-Checks mattered as much as volume. Anthropic says its mathematicians validated the paper and two outside specialists examined it on short notice. The company also released a [formalization in Lean 4](https://github.com/anthropics/zeta-23-lean), a theorem-proving language that checks a precisely encoded proof against stated assumptions. This improves auditability, but it does not complete journal review or decide the result’s significance.
+I don’t know whether 650 rejected ideas were necessary, whether fewer agents could have found the same route, or whether the decisive factor was one conceptual reframing. There is no controlled comparison that separates model capability, agent coordination, prior mathematics and search volume. I think the defensible economic claim is narrower: an organization can now fund persistence as a metered input and direct it toward a chosen problem.
 
-I don’t know whether 60 subagents were necessary, whether a smaller run could have found the argument, or whether similar campaigns usually fail. Anthropic’s release provides no controlled comparison or public cost ledger. The case shows one possibility: a search can be funded, observed, and checked as coordinated machine runs rather than carried within one researcher’s working life.
+This is the part of my Three Crucibles framing that matters here: productivity increasingly behaves like capital. A firm can allocate attempts, tools and review time instead of asking one researcher to absorb every dead end. Anthropic did not measure fatigue, shame or career risk; these are human frictions that funded AI search may partly move from an individual’s tolerance into an organizational budget.
 
-My take is that this is productivity becoming capital: an organization funds capacity before it knows the answer, as it does with laboratory time or computing infrastructure. The cost can be tracked as model output, tools, elapsed time, expert review, and delayed work instead of being absorbed solely by one person’s stamina.
+A budget still does not create value by itself. A [2023 working paper](https://www.nber.org/papers/w31161) from the National Bureau of Economic Research, a US economics research organization, found a 14% average gain in issues resolved per hour among 5,179 customer-support workers using an AI assistant. In a different setting, [METR, an independent AI research group](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/), found in 2025 that 16 experienced open-source developers took 19% longer with the early-2025 tools tested; METR now calls that result historical. I think the shared lesson is simple: count validated outcomes in the actual work, not tokens, messages or confidence.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>The advance joined scaled search to numerical, formal, and human checks. It shows that retry capacity can be funded, not that more agents or tokens guarantee discovery.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The Claude case makes large-scale persistence allocatable, but its return is unknown. Search volume becomes economically useful only when an organization measures what the work proves, improves or decides.</p></div>
 
-## Attempt 651 is a leadership decision
+## Another run needs a prior agreement
 
-Purchasable persistence can also produce waste. A [2023 working paper](https://www.nber.org/papers/w31161) from the U.S. National Bureau of Economic Research studied 5,179 customer-support agents and found that access to an AI assistant raised issues resolved per hour by 14% on average. By contrast, a [2025 randomized study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) by the independent research group METR found that 16 experienced open-source developers took 19% longer on 246 real software issues with early-2025 AI tools, although they thought they had sped up. METR now calls that result outdated for current models, and the tasks are too different to compare directly. Together they show why measured outcomes, rather than AI activity or confidence, must decide value.
+Mathematics gave this campaign an unusual advantage: a theorem can be stated precisely, numerical claims can be tested, prior work can be searched, and a formal proof can be checked. Strategy, hiring and product discovery rarely arrive with such clean tests for success. A tireless system can instead build a polished trail of arguments that all inherit the same weak premise.
 
-I think every persistent-agent campaign needs a Tireless Intelligence Charter: a short agreement written before the search, before attachment to a hunch changes the rules.
+My take is that persistent AI work should begin with a Tireless Intelligence Charter, a short agreement written before the agents start. It names the question, the observable result that warrants more investment, what would show the idea is wrong, and how the team will establish that the result is new. It also names an independent verifier, such as a domain expert, external data, a controlled test or a proof system whose method is unlikely to repeat the agent’s mistakes. I think evidence design has to come before scale because an agent cannot manufacture both the claim and its standard of truth.
 
-1. **Name the question and its acceptance test.** State the theorem, decision, experiment, or design outcome whose value justifies the search.
-2. **Separate search from proof.** Define success, disproof, and novelty. Require an independent checker likely to fail differently, such as a domain expert, controlled test, external dataset, or formal proof system.
-3. **Fund in stages.** Cap output, time, tool permissions, and reviewer hours. Renew only for a new testable idea or stronger evidence, and measure cost per validated result.
-4. **Write the stopping rule first.** Pause if failure repeats without a new hypothesis, review cannot reproduce the result, authority expands, or another candidate offers more likely value. Archive rejected paths for inspection and reuse.
+Funding should arrive in stages, with limits on tokens, elapsed time, reviewer hours, tool permissions, data access, spending authority and campaign scope. Renewal requires a gain agreed in advance, such as a testable new hypothesis, a reproduced result or an improvement on a validated measure. The ledger includes work postponed for the campaign and reports cost per validated outcome rather than activity alone.
 
-This leaves humans as more than budget holders. They bring ideas, context, interpretation, relationships, and accountability. But I think leaders now own a decision that once hid inside endurance: whether another attempt is disciplined inquiry or an expensive refusal to let go.
+The same charter sets the stopping rule. Pause when attempts repeat one failure without changing the hypothesis, when an independent reviewer cannot reproduce the result, or when another batch looks less valuable than the next question in the portfolio. Keep rejected routes, tests and source records so a stopped campaign leaves an auditable map instead of making the next system buy the same failures. The human responsibility is deciding what deserves another run and who can refuse it.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>A Tireless Intelligence Charter turns persistence into a controlled choice: fund a defined question, demand evidence from an independent checker, renew in stages, and let prewritten rules stop a convincing but unproductive campaign.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Persistent AI campaigns need a question, an evidence contract, staged limits on budget and authority, and a stopping rule set in advance. Otherwise tirelessness turns an untested hunch into an expensive source of its own confirmation.</p></div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In this science-fiction film, a soldier relives the same battle, dying and returning with knowledge from the previous cycle. Repetition helps only because feedback changes what he does next.</p>
+<p>Doug Liman’s science-fiction film follows Major William Cage, a soldier trapped in a battle that restarts whenever he dies. Each reset helps because he carries information from the failed loop into his next move.</p>
 </div>
 
-The mapping is useful but incomplete: Claude’s subagents were not conscious soldiers, and Anthropic does not show that every failure improved the next attempt. Tireless repetition needs evidence and someone accountable for ending it. Machines can make another attempt purchasable; leadership decides whether buying it is still an act of learning.
+The mapping is narrow: an agent campaign earns another loop only when the last failure changes the hypothesis, the evidence or the test. A tireless system can always spend another life. Leadership decides whether that life still serves the question.
