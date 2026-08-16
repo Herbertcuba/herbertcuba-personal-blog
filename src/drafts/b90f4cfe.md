@@ -1,6 +1,7 @@
 ---
 title: "Tireless intelligence needs a stopping rule"
 tldr: "Claude's 2026 result on the Riemann zeta function shows that organizations can now buy unusually persistent, instrumented search. The constraint moves to verification: leaders must choose worthy questions, freeze evidence standards, separate delivery from renewal, and enforce stopping rules before tireless systems turn every hunch into an endless campaign."
+featuredImage: "/images/posts/tireless-intelligence-needs-a-stopping-rule.webp"
 permalink: /drafts/b90f4cfe/
 layout: post.njk
 date: 2026-08-16
@@ -68,6 +69,19 @@ A concrete pilot could ask an AI campaign to find a factory-scheduling change th
 The Charter needs its own stopping rule too. In a 90-day portfolio test, require at least 20% fewer renewals unsupported by independent evidence, no increase in false stops, meaning campaigns closed despite already meeting their frozen test, and a lower full cost per accepted result. If the Charter merely transfers unmeasured work to reviewers or cannot beat the existing review process, retire or redesign it.
 
 People still contribute technical ideas, domain knowledge, interpretation, relationships and accountability. The added leadership duty is to choose which question deserves institutional persistence, what evidence can earn another round and when refusal protects more value than continued search.
+
+<figure class="fig-band article-diagram" data-diagram-id="campaign-stop-flow">
+<figcaption class="fig-cap">Fig. — an enforceable campaign stopping path.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 420" role="img" aria-labelledby="ad-campaign-stop-flow-title ad-campaign-stop-flow-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-campaign-stop-flow-title">Campaign stopping path</title>
+<desc id="ad-campaign-stop-flow-desc">A campaign moves from active to paused when a quota or review date is reached. It returns to active only after independent evidence and a new authorization; failed evidence or refused funding closes it.</desc>
+<defs><marker id="ad-campaign-stop-flow-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="420" fill="#000000"></rect><rect x="20" y="20" width="720" height="380" fill="#0A1A0F" stroke="#00A03A" stroke-width="2"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-auto-pause"><rect x="270" y="25" width="220" height="70" fill="#000000" stroke="#00E653" stroke-width="3"></rect><text x="380" y="70" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700" font-family="JetBrains Mono, monospace">ACTIVE</text><line x1="380" y1="95" x2="380" y2="175" stroke="#00E653" stroke-width="3" marker-end="url(#ad-campaign-stop-flow-arrow)"></line><text x="400" y="132" fill="#9EB8A4" font-size="24" font-family="JetBrains Mono, monospace">QUOTA OR</text><text x="400" y="158" fill="#9EB8A4" font-size="24" font-family="JetBrains Mono, monospace">REVIEW DATE</text><rect x="270" y="175" width="220" height="70" fill="#000000" stroke="#00E653" stroke-width="3"></rect><text x="380" y="220" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700" font-family="JetBrains Mono, monospace">PAUSED</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-reactivation"><path d="M270 210 H110 V60 H270" fill="none" stroke="#00E653" stroke-width="3" marker-end="url(#ad-campaign-stop-flow-arrow)"></path><text x="270" y="120" text-anchor="end" fill="#DCE7DE" font-size="24" font-family="JetBrains Mono, monospace">PASSED CHECK</text><text x="270" y="150" text-anchor="end" fill="#DCE7DE" font-size="24" font-family="JetBrains Mono, monospace">NEW AUTHORIZATION</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-closure"><line x1="380" y1="245" x2="380" y2="325" stroke="#00E653" stroke-width="3" marker-end="url(#ad-campaign-stop-flow-arrow)"></line><text x="400" y="278" fill="#9EB8A4" font-size="24" font-family="JetBrains Mono, monospace">EVIDENCE FAILS</text><text x="400" y="304" fill="#9EB8A4" font-size="24" font-family="JetBrains Mono, monospace">FUNDING REFUSED</text><rect x="270" y="325" width="220" height="70" fill="#000000" stroke="#00E653" stroke-width="3"></rect><text x="380" y="370" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700" font-family="JetBrains Mono, monospace">CLOSED</text></g>
+</svg>
+</figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A credible stopping rule is a system control, not a sentence in a policy. Quotas must trigger a real pause, independent evidence and a separate budget owner must govern renewal, and the Charter itself must reduce unsupported renewals without raising false stops or total cost.</p></div>
 
