@@ -1,63 +1,72 @@
 ---
-title: "Claude’s 650 failures and the price of another attempt"
-tldr: "Anthropic's 2026 zeta result shows that organizations can buy large amounts of bounded, tool-assisted persistence, but token volume becomes valuable only when the question is precise, the evidence is independently checked, and the budget has a stopping rule. Leadership shifts toward deciding which searches merit another attempt and remaining accountable for ending them."
+title: "Tireless intelligence needs a stopping rule"
+description: "Claude’s 650 unsuccessful ideas show that persistent search can now be funded, measured, and governed as an organizational input."
+date: 2026-08-17
+tldr: "Anthropic’s reported Riemann-zeta result shows that persistent AI search can be funded as a metered input, but the case worked because the target had unusually strong proof and review gates. Leaders should choose the question, define independent evidence, fund retries in stages, and write stopping conditions before a tireless system begins."
 permalink: /drafts/b90f4cfe/
 layout: post.njk
-date: 2026-08-17
 ---
 
-In August 2026, [Anthropic](https://www.anthropic.com/research/riemann-zeta), the AI company behind Claude, reported an unusual path to mathematical progress. An unreleased research version of Claude generated and tried 650 initial ideas, all unsuccessful. Across two sessions in Claude Code, Anthropic’s tool-using coding environment, the work consumed 31 million output tokens, or units of model-generated text, and later involved roughly 60 subagents, delegated AI runs working on parts of the problem.
+There is a capital-allocation decision hiding inside Anthropic’s latest mathematics result. In August 2026, the AI company [reported](https://www.anthropic.com/research/riemann-zeta) that an unreleased research version of Claude, its AI system, generated 650 unsuccessful ideas before a more coordinated search produced a new lower-bound result. Across two sessions in Claude Code, Anthropic’s tool-using environment for coding agents, the system generated 31 million output tokens, units of model-produced text used to meter computing work. The later search involved about 60 subagents, meaning delegated AI runs that used tools to work on parts of the problem.
 
-The result was important, but it was not a proof of the Riemann hypothesis. Proposed by German mathematician Bernhard Riemann in 1859, the hypothesis concerns the zeros of the Riemann zeta function, inputs where a function connected to the distribution of prime numbers has a value of zero. It says all the relevant zeros lie on a particular “critical line.” Claude’s paper instead established a higher lower bound, meaning a larger guaranteed minimum share on that line: from the previous 5/12 to at least 2/3, with an optimized figure of 0.6725. The hypothesis remains open.
+The result matters, but its boundary matters too. Claude did not prove the Riemann hypothesis, German mathematician Bernhard Riemann’s still-unproved 1859 claim about where certain zeros of the Riemann zeta function lie. The zeta function is a mathematical object closely tied to the distribution of prime numbers. Its relevant zeros are points where the function equals zero, and the hypothesis says all of them sit on a specific line called the critical line. Claude’s result instead raised a lower bound, the minimum share proven to sit there, from 5/12 to at least 2/3.
 
-That distinction makes the economic lesson more precise. Claude’s run shows that a large, bounded search can now be provisioned as organizational capacity. Persistence no longer has to reside entirely in one person’s willingness to absorb another dead end, but value still depends on the question, the tests and the people accountable for stopping. I think that is the leadership problem hiding inside the mathematics.
+I think the deeper shift is economic. Sustained search can now be provisioned like other productive capacity, which moves the leadership problem upstream. Before buying the retries, someone must decide whether the question deserves them, what evidence can settle it, and what will end the campaign.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Claude did not solve the Riemann hypothesis or make thought free. The case shows that hundreds of tool-assisted attempts can become a funded search capacity, shifting attention toward question choice, proof standards and the decision to stop.</p></div>
+<div class="chapter-tldr">
+  <span class="chapter-tldr__label">In short</span>
+  <p>Claude did not settle the Riemann hypothesis. The case shows that organizations can meter and allocate persistent search, making question choice, proof standards, and stopping rules more important.</p>
+</div>
 
-## What the search budget actually bought
+## What 31 million output tokens made possible
 
-Scale alone did not produce the result. Anthropic reports 2,400 shell commands, hundreds of Python scripts, numerical checks against known zeta zeros, searches for counterexamples and downloads of 54 papers from arXiv, the public archive for scholarly preprints. This was an instrumented search in which candidate paths could be tested and rejected, rather than a long sequence of plausible answers accepted on style.
+The 650 failures were useful because they happened inside a mature field with a narrow obstacle, not because a large pile of failure automatically becomes insight. Number theorist J. B. Conrey’s [peer-reviewed 1989 paper](https://doi.org/10.1515/crll.1989.399.1) proved that more than two fifths of the relevant zeros lie on the critical line. Later human work pushed the bound to 5/12, where it had stood since 2020. The popular “37-year record” framing therefore describes the arc from Conrey’s work to 2026, not 37 years without progress.
 
-The search also began far inside a human-built body of mathematics. The “37-year record” shorthand points back to number theorist J. B. Conrey’s peer-reviewed 1989 result showing that more than two fifths of the zeros lie on the critical line. Human work continued after that, and the previous 5/12 record had stood since 2020. Claude’s [preprint](https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf) credits a key 2024 paper by four number theorists, Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh, then describes its new ingredient as a linear-algebraic reading of an existing calculation. Search capacity surfaced a conceptual move; it did not replace the research lineage that made the move possible.
+Anthropic’s [technical preprint](https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf), a paper released before journal review, says the proof used earlier analytic results and added a new way of reading them through linear algebra, a branch of mathematics used to express relationships among many quantities. During the search, agents ran numerical checks, looked for counterexamples, wrote hundreds of scripts in Python, a general-purpose programming language, and downloaded 54 papers from arXiv, a public repository for scholarly preprints, to check whether the idea was already known. The mechanism was parallel search joined to feedback and review.
 
-Validation was part of the production system too. Anthropic says internal mathematicians studied the paper and two outside specialists examined it on short notice. It also released a [Lean 4 formalization](https://github.com/anthropics/zeta-23-lean): a precisely encoded version that a proof-assistant program can check against its stated logical dependencies. That makes the claim more auditable, although it does not turn a lab preprint into completed journal peer review or independent replication.
+This remains one unusual case rather than a controlled test of agent persistence. Anthropic did not show whether fewer tokens, different prompts, or fewer subagents would have reached the same result. The evidence supports a narrower conclusion: large, instrumented search can surface a checkable discovery, not that more retries reliably produce one.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The useful unit was not a token or an attempt by itself. Prior mathematics, delegated trials, executable tests, novelty checks and several layers of review turned a large search into a result that specialists can now examine.</p></div>
+Humans can tire, become attached to a favored path, or avoid a visible trail of failure because careers are social. Anthropic did not measure those effects, so this case cannot price fatigue, shame, or career risk. An organization can nevertheless replace part of the endurance constraint with metered machine output. An output token is not a unit of thought, and Anthropic published no dollar cost, but the meter makes persistence allocatable. That is one practical sense in which productivity starts to behave like capital.
 
-## Another attempt is now a budget decision
+<div class="chapter-tldr">
+  <span class="chapter-tldr__label">In short</span>
+  <p>The result combined decades of human mathematics, a conceptual move, large-scale search, and repeated checks. The economic change is that search endurance can be allocated, even though its return is neither automatic nor publicly priced.</p>
+</div>
 
-Anthropic did not measure fatigue, shame or career risk, so the case cannot prove that compute replaced those human experiences. The economic asymmetry is still real: people can bear personal costs when they pursue hundreds of failed hypotheses, while an AI system does not become embarrassed or discouraged. An organization can authorize another machine-generated batch in units of tokens, time, tools and review.
+## Mathematics supplied the evidence gate
 
-This is one practical meaning of productivity becoming capital. Some capacity to keep working can be provisioned, concentrated and moved between problems instead of remaining tied to one person’s endurance. Anthropic published no dollar cost, hardware bill or energy total, however, so 31 million output tokens describes production volume rather than economic return.
+This was an unusually favorable setting for persistent agents because a mathematical claim can be stated precisely and checked. Anthropic released the preprint, says internal mathematicians validated it, and says two outside specialists examined it on short notice. It also published a [Lean 4 formalization](https://github.com/anthropics/zeta-23-lean). Lean 4 is a proof-assistant language; formal verification means the software checks a precisely encoded theorem and its logical dependencies. That is a serious evidence layer, although it does not independently establish novelty, importance, or conventional journal peer review.
 
-And more production can destroy value. A 2023 [National Bureau of Economic Research working paper](https://www.nber.org/papers/w31161), based on 5,179 customer-support workers, found that access to a conversational assistant raised issues resolved per hour by 14% on average. In a different setting, a [2025 randomized study by METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/), an independent organization that evaluates AI capabilities, found that experienced open-source developers took 19% longer on 246 real software issues when allowed to use early-2025 AI tools. Neither study tells us the return on mathematical agents. Together, they show why output and confidence cannot stand in for measured value.
+Most enterprise questions offer no equivalent of the critical line. A 2023 [working paper from the National Bureau of Economic Research](https://www.nber.org/papers/w31161), a U.S. economics research organization, covered 5,179 customer-support agents and found that access to an AI assistant raised issues resolved per hour by 14% on average. In a different setting, a 2025 [randomized study by the independent research group METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that 16 experienced developers working on large, publicly shared software projects took 19% longer on measured tasks when allowed to use early-2025 AI tools, even though they believed the tools had made them faster. The studies cover different work, people, dates, and tool versions, so they should not be collapsed into one universal productivity score.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>AI turns some persistence into allocatable capacity, but a larger meter reading is not a larger return. The relevant economic measure is the cost of a validated outcome, including review time and the other work the organization chose not to fund.</p></div>
+Their shared warning is more useful: activity and confidence are weak substitutes for validated value. A tireless system can test a theorem, but it can also spend weeks polishing a strategy that rests on a circular assumption. If leaders cannot describe what would show the hunch to be wrong, more attempts may manufacture conviction rather than knowledge.
 
-## Write the stopping decision first
-
-I think leaders should define the end of a persistent search before approving its beginning. A useful search mandate names the exact question, why an answer would matter, what tools and authority the agents receive, and the initial allowance in tokens, elapsed time and human review. “Find something useful about this market” fails that test because almost any polished output can be declared a success afterward.
-
-Beside the question, write an evidence contract: a plain statement of what would count as success, disconfirmation, novelty and independent verification. The independent check should have a different failure mode from the producer. Depending on the problem, that could be a domain expert, a controlled experiment, separate data or a formal proof assistant. Mathematics is unusually favorable here because a theorem can be stated exactly; strategy and product choices need deliberately constructed tests.
-
-Funding should then expand in stages. Another batch earns support when it produces a new falsifiable hypothesis, improves a predeclared measure or passes an evidence gate. The campaign pauses when the same failure recurs without a new explanation, independent review cannot reproduce the claim, the requested authority exceeds the original mandate, or the expected value of continuing falls below that of another candidate in the portfolio.
-
-Stopping need not erase the work. Failed hypotheses, test results, rejected paths and their sources can be archived so another team or agent does not pay to discover the same dead ends. That record also lets leaders distinguish a disciplined search that ended from an expensive campaign that merely ran out of patience or budget.
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Persistent AI needs a mandate written in advance: a precise question, an evidence contract, an initial budget, independent checking and explicit exit conditions. Funding expands only when verified learning earns the next stage.</p></div>
+<div class="chapter-tldr">
+  <span class="chapter-tldr__label">In short</span>
+  <p>Mathematics offered Claude a precise claim and several ways to check it. Business problems are usually less observable, so agent activity must be judged against predeclared evidence rather than output volume or confidence.</p>
+</div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
-<span class="scifi__label">Meanwhile in sci-fi</span>
-<p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In this film, a soldier repeats the same battle and uses each death as information. The parallel is limited but useful: persistent AI search gains value only when failed paths are retained, evidence separates progress from motion, and someone has defined what ends the repetition.</p>
+  <span class="scifi__label">Meanwhile in sci-fi</span>
+  <p class="scifi__film">Edge of Tomorrow (2014)</p>
+  <p>The 2014 film follows a soldier forced to repeat the same deadly day, using feedback from each repetition to change the next one and eventually escape. The mapping is precise: an agent swarm supplies the retries, an evidence contract supplies the feedback, and a stopping rule defines whether another loop is still learning. Repetition alone would leave the character trapped.</p>
 </div>
 
-## The scarce resource is permission
+## Authorize the search and its end
 
-This shift does not reduce people to budget setters. Human mathematicians built the underlying field, posed and refined the questions, assessed significance and supplied scrutiny. People will continue to contribute ideas, interpretation, relationships and accountability. What changes is the reason a search ends: machine fatigue is no longer available as a natural limit.
+A useful response is a Tireless Intelligence Charter, a short agreement written before a persistent AI campaign begins. It starts with a decision-shaped question and a named owner. “Find something useful about this market” is too loose; the brief should state what result could change a decision and why that result would justify the search and review costs.
 
-That leaves a harder form of judgment. When another attempt is easy to request and possible to scale across an organization, permission becomes scarce. The leader who authorizes attempt 651 should be able to name the evidence that would justify attempt 652 and the evidence that would end the campaign. Tireless intelligence does not remove leadership; it makes leaders accountable for every search they choose to keep alive.
+The charter then defines an evidence contract. It states what will count as success, what would show the claim to be wrong, and what would qualify as a genuinely new result. It also names who or what will verify the answer. For consequential work, the verifier should fail differently from the system doing the search: a domain expert, a controlled experiment, data kept out of the search and used only for testing, an independent method, or a formal proof where one is possible.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Human value does not collapse into supervision, but responsibility moves forward in the process. Leaders must decide which questions deserve persistent capacity and remain answerable for both continuing the search and ending it.</p></div>
+Funding should arrive in stages, with limits on output tokens, elapsed time, tool permissions, and reviewer hours. Another stage earns funding only when the campaign produces a new testable hypothesis, improves a validated measure, or clears an agreed evidence gate. The work pauses when the same failure repeats without a new idea, independent review cannot reproduce the claim, or the likely value of another batch falls below that of the next question in the portfolio.
+
+Stopping does not have to waste the search. Failed hypotheses, tests, rejected paths, and source records can be archived so another team or agent does not pay to rediscover them. This turns persistence into institutional memory rather than an endless expense.
+
+None of this reduces people to budget keepers. Humans still contribute technical ideas, context, interpretation, relationships, and accountability. Yet once retries can continue beyond human endurance, continuation no longer proves conviction; it proves that budget and permission remain. Leadership means taking responsibility for granting both, and for withdrawing them when the next attempt no longer deserves the organization’s capacity to think.
+
+<div class="chapter-tldr">
+  <span class="chapter-tldr__label">In short</span>
+  <p>Persistent AI work needs a charter that names the decision, evidence, verifier, staged budget, and stop conditions in advance. Leadership owns both sides of the allocation: which questions receive tireless effort and when that effort must end.</p>
+</div>
