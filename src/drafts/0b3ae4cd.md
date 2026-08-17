@@ -2,7 +2,7 @@
 title: "The architecture of an AI-first company"
 description: "AI-first design begins with workflows, bounded authority, human judgment, and evidence strong enough to justify a different organization."
 tldr: "An AI-first company puts agents and ordinary software beneath selected workflows as a bounded execution layer, keeps consequential authority inside explicit controls, and uses people for judgment, exceptions, and accountability. The org chart should change only after an end-to-end trial proves better outcomes, controlled risk, lower coordination load, and a credible way for people to keep learning."
-image: "/images/posts/architecture-ai-first-company.webp"
+featuredImage: "/images/posts/architecture-ai-first-company.webp"
 anthem: true
 provenance: "verified-by-author"
 permalink: /drafts/0b3ae4cd/
@@ -147,7 +147,7 @@ Moving routine execution into software changes how people become capable. Judgme
 
 <figure class="anthem-visual">
   <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">
-    <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's public LinkedIn post containing ten numbered reflections from his first months at OpenAI" loading="lazy" />
+    <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's public LinkedIn post containing ten numbered reflections from his first months at OpenAI" />
   </a>
   <figcaption>Arvind KC's public LinkedIn post is included as a source artifact. The surrounding argument does not depend on the reader opening the link.</figcaption>
 </figure>
@@ -163,8 +163,9 @@ People doing the work, and employee representatives where roles may change, shou
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Star Trek: The Next Generation (1987)</p>
-<p>In this science-fiction television series, which ran from 1987 to 1994, specialists aboard the starship Enterprise act within a clear command structure while understanding how choices at one station affect the whole vessel. The mapping is limited but useful: an AI-first company can grant local authority only when people can see the wider workflow, understand its current state, and know when to escalate; hierarchy alone does not create that shared system awareness.</p>
 </div>
+
+In this science-fiction television series, which ran from 1987 to 1994, specialists aboard the starship Enterprise act within a clear command structure while understanding how choices at one station affect the whole vessel. The mapping is limited but useful: an AI-first company can grant local authority only when people can see the wider workflow, understand its current state, and know when to escalate; hierarchy alone does not create that shared system awareness.
 
 ## Let structure follow the evidence
 
