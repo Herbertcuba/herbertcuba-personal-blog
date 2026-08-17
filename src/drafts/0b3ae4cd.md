@@ -1,161 +1,136 @@
 ---
-title: "The AI-first company turns the triangle upside down"
-description: "Why adding agents to human workflows creates a retrofit trap, and how to redesign work around agent execution and human judgment."
-tldr: "An AI-first company does not attach agents to the bottom of a human-dependent organization. It makes bounded, observable agent workflows the operating foundation, then concentrates human attention on goals, judgment, exceptions, and accountability."
+title: "The AI-first company turns the organization upside down"
+description: "Why adding agents to old workflows preserves the coordination burden, and how to redesign the company around agent execution and human judgment."
+tldr: "An AI-first company makes controlled agent workflows the broad execution layer and concentrates people where intent, judgment, exceptions, and accountability matter most. Reaching that model requires leaders to redesign the flow of work before they redraw roles or the org chart."
 image: "/images/posts/architecture-ai-first-company.webp"
 anthem: true
-provenance: "verified-by-author"
+provenance: verified-by-author
+tags:
+  - AI agents
+  - organizational design
+  - operating models
 permalink: /drafts/0b3ae4cd/
 layout: post.njk
 date: 2026-08-17
 ---
 
-An AI-first company begins with a basic design question: who carries the workflow?
+Most companies are placing AI agents at the narrow end of an old organization. An AI agent is software that can pursue a goal across several steps and use approved digital tools. Yet the people around it still move the work from team to team, reconcile different systems, chase approvals and decide what happens when the process breaks.
 
-In most organizations, a person still carries it. Software stores information or speeds up a step, but people remember the context, move work between teams, check what happened, and decide what to do next. An AI agent, meaning software that can choose and carry out multiple steps toward a goal within explicit permissions, is then added as another helper.
+That arrangement may make individual tasks faster while leaving the operating model unchanged. An operating model is the way work, decisions, information and accountability fit together. If humans still carry the workflow, the company remains limited by human coordination even when some tasks run at machine speed.
 
-That arrangement can improve individual tasks without changing the company. A genuinely AI-first operating model starts elsewhere. It treats the workflow, the sequence from a trigger to an outcome, as something agents can run within clear limits. Humans set direction, resolve ambiguity, change the system, and remain accountable for its consequences.
+An AI-first company changes the geometry. Agents carry the broad layer of repeatable execution, while humans concentrate their attention where intent, judgment and accountability have the greatest consequence. This does not require unsupervised automation, nor does it make headcount reduction the goal. It requires a deliberate division of work based on what software can carry reliably and what people must still decide.
 
-This is an architectural choice, not an automation target. “AI-first” does not mean giving every decision to software. It means designing work, authority, information, and accountability together, based on what agents can execute reliably and where human judgment is essential.
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Adding agents to isolated tasks can improve local speed without changing how the company works. The larger opportunity appears when agent workflows carry execution and people focus on judgment, exceptions and responsibility.</p></div>
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>The strategic shift is from agents helping people carry workflows to agents carrying bounded workflows while people supply direction, judgment, and accountability.</p>
-</div>
+## Turn the operating model over
 
-## The retrofit trap
+The retrofit trap begins with a reasonable instinct: keep the current process and add an agent wherever a task looks automatable. The agent drafts the document, checks the record or prepares the analysis, but a person still supplies the context, sends the output onward and watches for failure. The task changes; the coordination burden does not.
 
-Established companies were built around human coordination. Their processes assume that someone will interpret the request, find missing information, chase an approval, reconcile conflicting versions, and notice when an ordinary case has become unusual. Put an agent at the end of that chain and it inherits every hidden dependency above it.
+As more agents enter this arrangement, people can end up coordinating software as well as colleagues. Outputs arrive faster, so review queues grow faster too. Local gains then compete with the same handoffs, approvals and fragmented information that slowed the company before.
 
-The result is the retrofit trap: capable software operating inside a system that still needs people to make the system coherent. The agent may produce an answer faster, yet the workflow remains limited by meetings, handoffs, unclear ownership, and context held in people’s heads.
-
-<figure class="anthem-visual" aria-labelledby="inversion-caption">
-<svg viewBox="0 0 1200 520" role="img" aria-labelledby="inversion-title inversion-desc" style="width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg">
-<title id="inversion-title">The retrofit trap compared with an AI-first company</title>
-<desc id="inversion-desc">A downward triangle shows humans carrying workflows above agents that assist. An upward triangle shows agents running bounded workflows beneath humans who add judgment.</desc>
-<defs>
-<linearGradient id="retrofitFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#7c2d12"/></linearGradient>
-<linearGradient id="aifirstFill" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#0f766e"/></linearGradient>
-<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
-</defs>
-<g font-family="system-ui, sans-serif" text-anchor="middle">
-<text x="290" y="48" font-size="27" font-weight="700" fill="#0f172a">RETROFIT TRAP</text>
-<polygon points="70,105 510,105 290,450" fill="url(#retrofitFill)" rx="8"/>
-<text x="290" y="170" font-size="22" font-weight="700" fill="white">HUMANS CARRY WORKFLOWS</text>
-<text x="290" y="207" font-size="18" fill="white">context, coordination, approvals</text>
-<text x="290" y="382" font-size="18" font-weight="650" fill="white">Agents assist</text>
-<line x1="545" y1="270" x2="655" y2="270" stroke="#64748b" stroke-width="5" marker-end="url(#arrowhead)"/>
-<text x="600" y="240" font-size="17" fill="#475569">redesign</text>
-<text x="910" y="48" font-size="27" font-weight="700" fill="#0f172a">AI-FIRST COMPANY</text>
-<polygon points="910,90 690,450 1130,450" fill="url(#aifirstFill)"/>
-<text x="910" y="166" font-size="18" font-weight="650" fill="white">Human judgment</text>
-<text x="910" y="366" font-size="21" font-weight="700" fill="white">AGENTS RUN BOUNDED WORKFLOWS</text>
-<text x="910" y="402" font-size="18" fill="white">execution, coordination, records</text>
-</g>
-</svg>
-<figcaption id="inversion-caption">The triangle describes where work sits, not how many people the company employs. There is no universal human-to-agent ratio.</figcaption>
+<figure class="anthem-viz">
+  <svg viewBox="0 0 960 480" role="img" aria-labelledby="operating-geometry-title operating-geometry-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="operating-geometry-title">The retrofit trap and the AI-first company</title>
+    <desc id="operating-geometry-desc">A downward triangle shows humans carrying workflows across a wide top layer while AI agents sit at the narrow bottom. An upward triangle shows AI agents carrying workflows across a wide base while humans add judgment and accountability at the narrow top.</desc>
+    <rect x="10" y="10" width="450" height="450" rx="24" fill="#F5F2EC"/>
+    <rect x="500" y="10" width="450" height="450" rx="24" fill="#EEF4F2"/>
+    <text x="235" y="48" text-anchor="middle" font-size="24" font-weight="700" fill="#222222">The retrofit trap</text>
+    <polygon points="70,82 400,82 235,420" fill="#E8C7B5" stroke="#8E4B35" stroke-width="3"/>
+    <text x="235" y="126" text-anchor="middle" font-size="19" font-weight="700" fill="#3A241D">Humans carry workflows</text>
+    <text x="235" y="158" text-anchor="middle" font-size="15" fill="#3A241D">handoffs, approvals, exceptions</text>
+    <text x="235" y="337" text-anchor="middle" font-size="17" font-weight="700" fill="#3A241D">AI agents</text>
+    <text x="235" y="365" text-anchor="middle" font-size="14" fill="#3A241D">added to tasks</text>
+    <text x="725" y="48" text-anchor="middle" font-size="24" font-weight="700" fill="#222222">The AI-first company</text>
+    <polygon points="560,420 890,420 725,82" fill="#BFDAD2" stroke="#2F6D60" stroke-width="3"/>
+    <text x="725" y="126" text-anchor="middle" font-size="17" font-weight="700" fill="#173B33">Human judgment</text>
+    <text x="725" y="154" text-anchor="middle" font-size="14" fill="#173B33">intent and accountability</text>
+    <text x="725" y="337" text-anchor="middle" font-size="19" font-weight="700" fill="#173B33">Agents carry workflows</text>
+    <text x="725" y="369" text-anchor="middle" font-size="15" fill="#173B33">repeatable execution and coordination</text>
+  </svg>
+  <figcaption>Two operating geometries. Retrofitting keeps people as the workflow. AI-first design gives agents the repeatable flow and reserves human attention for consequential decisions.</figcaption>
 </figure>
 
-Turning the triangle over does not remove people. It changes the load-bearing layer. Agents handle repeatable execution and routine coordination at the base, while scarce human attention enters where choices carry wider consequences.
+The right-hand triangle is wider at the agent layer because repeatable work can be copied and run across many cases. It narrows toward the human layer because people enter where a goal must be interpreted, evidence is incomplete, an exception matters or someone must own the result. The shape is a design principle, not a prediction that every workflow will use the same ratio.
 
-That base must still be bounded, observed, and easy to stop. Autonomy without limits only makes failure travel faster. The point is to give agents enough room to complete well-defined work while preserving a clear route to a responsible person when the situation leaves that definition.
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The retrofit trap automates tasks while preserving human coordination. AI-first design reverses that arrangement: agents carry repeatable workflows, and human involvement concentrates where consequences or uncertainty justify it.</p></div>
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Adding agents beneath a human-dependent process preserves its bottlenecks. The operating model changes only when bounded agent workflows become the foundation and human attention moves to consequential choices.</p>
-</div>
+## Give agents a real operating surface
 
-## Make the workflow executable
+Turning the triangle over starts with the workflow, meaning the connected sequence of states, decisions and actions that produces an outcome. An agent cannot carry that sequence on capability alone. It needs a controlled operating surface: clear goals, trusted information, limited access to tools, a visible record of its actions and an agreed path for escalation.
 
-A workflow cannot be delegated safely because someone drew boxes around its current steps. It becomes executable when the system contains the context a competent person previously supplied: a clear outcome, reliable inputs, permitted actions, acceptance checks, a record of what happened, and conditions for escalation.
-
-Those elements form a control loop. The agent acts, checks the result against an explicit standard, records evidence, and either continues or hands the case to a named owner. Each part matters because an agent can follow a poorly specified goal with impressive speed.
-
-<figure class="anthem-visual" aria-labelledby="workflow-caption">
-<svg viewBox="0 0 1200 390" role="img" aria-labelledby="workflow-title workflow-desc" style="width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg">
-<title id="workflow-title">An executable agent workflow</title>
-<desc id="workflow-desc">A trigger enters a goal and context stage, moves to bounded agent action, then to checks and records. Accepted work becomes an outcome, while an exception escalates to a human owner.</desc>
-<defs><marker id="flowArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#334155"/></marker></defs>
-<g font-family="system-ui, sans-serif" text-anchor="middle">
-<rect x="35" y="105" width="170" height="90" rx="14" fill="#e2e8f0"/><text x="120" y="143" font-size="20" font-weight="700" fill="#0f172a">TRIGGER</text><text x="120" y="174" font-size="16" fill="#334155">work begins</text>
-<rect x="250" y="105" width="200" height="90" rx="14" fill="#dbeafe"/><text x="350" y="143" font-size="20" font-weight="700" fill="#0f172a">GOAL + CONTEXT</text><text x="350" y="174" font-size="16" fill="#334155">outcome and limits</text>
-<rect x="495" y="105" width="185" height="90" rx="14" fill="#bfdbfe"/><text x="588" y="143" font-size="20" font-weight="700" fill="#0f172a">AGENT ACTS</text><text x="588" y="174" font-size="16" fill="#334155">within permissions</text>
-<rect x="725" y="105" width="195" height="90" rx="14" fill="#a7f3d0"/><text x="823" y="143" font-size="20" font-weight="700" fill="#0f172a">CHECK + RECORD</text><text x="823" y="174" font-size="16" fill="#334155">evidence is visible</text>
-<rect x="965" y="105" width="195" height="90" rx="14" fill="#86efac"/><text x="1063" y="143" font-size="20" font-weight="700" fill="#0f172a">OUTCOME</text><text x="1063" y="174" font-size="16" fill="#334155">standard accepted</text>
-<line x1="205" y1="150" x2="242" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#flowArrow)"/><line x1="450" y1="150" x2="487" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#flowArrow)"/><line x1="680" y1="150" x2="717" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#flowArrow)"/><line x1="920" y1="150" x2="957" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#flowArrow)"/>
-<rect x="725" y="270" width="195" height="82" rx="14" fill="#fee2e2"/><text x="823" y="305" font-size="19" font-weight="700" fill="#7f1d1d">HUMAN OWNER</text><text x="823" y="333" font-size="16" fill="#7f1d1d">exception or stop</text>
-<line x1="823" y1="198" x2="823" y2="262" stroke="#991b1b" stroke-width="4" marker-end="url(#flowArrow)"/><text x="865" y="239" font-size="15" fill="#7f1d1d">outside limit</text>
-</g>
-</svg>
-<figcaption id="workflow-caption">Execution becomes dependable when the route to a normal outcome and the route to human escalation are designed together.</figcaption>
+<figure class="anthem-viz">
+  <svg viewBox="0 0 960 330" role="img" aria-labelledby="workflow-contract-title workflow-contract-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="workflow-contract-title">The contract for an agent-carried workflow</title>
+    <desc id="workflow-contract-desc">Five connected boxes show the conditions for agent execution: goal, context, permissions, evidence and escalation. Human judgment sets the goal and receives exceptions.</desc>
+    <rect x="20" y="24" width="920" height="282" rx="24" fill="#F4F6F8"/>
+    <text x="480" y="61" text-anchor="middle" font-size="23" font-weight="700" fill="#20252A">The workflow contract</text>
+    <line x1="140" y1="160" x2="820" y2="160" stroke="#6C7780" stroke-width="4"/>
+    <g fill="#FFFFFF" stroke="#405563" stroke-width="3">
+      <rect x="55" y="112" width="150" height="96" rx="16"/>
+      <rect x="230" y="112" width="150" height="96" rx="16"/>
+      <rect x="405" y="112" width="150" height="96" rx="16"/>
+      <rect x="580" y="112" width="150" height="96" rx="16"/>
+      <rect x="755" y="112" width="150" height="96" rx="16"/>
+    </g>
+    <g text-anchor="middle" fill="#22333D">
+      <text x="130" y="151" font-size="17" font-weight="700">Goal</text><text x="130" y="178" font-size="13">what good means</text>
+      <text x="305" y="151" font-size="17" font-weight="700">Context</text><text x="305" y="178" font-size="13">trusted inputs</text>
+      <text x="480" y="151" font-size="17" font-weight="700">Permissions</text><text x="480" y="178" font-size="13">allowed actions</text>
+      <text x="655" y="151" font-size="17" font-weight="700">Evidence</text><text x="655" y="178" font-size="13">proof and records</text>
+      <text x="830" y="151" font-size="17" font-weight="700">Escalation</text><text x="830" y="178" font-size="13">when people enter</text>
+    </g>
+    <text x="130" y="254" text-anchor="middle" font-size="14" fill="#4A555C">Human intent</text>
+    <text x="830" y="254" text-anchor="middle" font-size="14" fill="#4A555C">Human judgment</text>
+  </svg>
+  <figcaption>An agent-carried workflow needs more than a prompt. These five conditions turn software capability into controlled execution.</figcaption>
 </figure>
 
-This is where many transformation programs meet their real constraint. The company’s knowledge is scattered across documents, messages, software fields, and unwritten habits. Agents expose that fragmentation because they need usable state: a current, shared account of what is true, what has been decided, and what may happen next.
+The goal says what outcome matters. Context supplies the current and authoritative information. Permissions define which systems the agent may read or change. Evidence makes the work inspectable, while an acceptance test provides a concrete check for whether the result is good enough to continue. Escalation tells the agent when to stop and hand the case to a person.
 
-Making work executable therefore requires more than connecting a model to company software. Leaders have to decide which rules are real, which approvals protect against a specific risk, and which handoffs exist only because the old system could not share context. The workflow improves as those decisions become explicit.
+When any of these conditions is missing, humans compensate. They restate the objective, find the data, repair an unauthorized action or investigate a result with no reliable record behind it. That hidden repair work is why a capable model can still produce a weak operating model.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>An agent-ready workflow contains its goal, context, permissions, checks, record, and escalation path. Making those elements explicit removes hidden coordination work before automation can scale it.</p>
-</div>
+The practical standard should be bounded autonomy. Let the agent proceed through routine cases when the evidence passes the agreed checks. Bring a person in when confidence falls, consequences rise or the case falls outside the rules. As the system earns trust through visible performance, its scope can expand without making accountability disappear.
 
-## Put human judgment where consequences widen
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agent execution becomes dependable when a workflow specifies the goal, context, permissions, evidence and escalation path. Bounded autonomy reduces routine handoffs while keeping consequential decisions visible to people.</p></div>
 
-When agents carry routine execution, human work does not vanish. It moves toward decisions that are harder to encode because they involve competing goals, incomplete evidence, unusual circumstances, or consequences beyond one workflow. “Higher” in the triangle describes the reach of a decision, not the status of the person making it.
+## Move people toward judgment
 
-This shift also changes management. Status collection, routine routing, and version reconciliation can increasingly become system behavior. Managers still set priorities, develop people, resolve conflict, and accept responsibility for trade-offs. Their value comes less from carrying information between layers and more from improving the conditions under which people and agents act.
+When software carries more of the flow, people no longer need to act as its default transport layer. Their work moves toward judgment: making a decision when evidence is incomplete, values conflict or a rule cannot settle the case. They also set intent, define constraints, resolve exceptions and improve the system after it fails.
 
-Arvind KC published ten reflections from his first months at OpenAI, the AI research and product company. That public LinkedIn post is an inside account rather than a representative study, so it should be read as field notes, not proof of a universal model. It matters here because organization design is easier to examine through concrete operating observations than through claims about “the future of work.”
+This shift makes ownership more important. Decision rights are the explicit authority to approve, stop or override an action. For every agent-carried workflow, a leader should be able to answer who sets the outcome, what the agent may change, which evidence permits it to continue, who receives an exception and who can stop the system. If those answers are vague, the workflow is not ready for greater autonomy.
 
-<figure class="source-artifact" aria-labelledby="arvind-source-caption" style="border:1px solid #cbd5e1;border-radius:16px;padding:24px;background:#f8fafc;">
-<p style="margin:0 0 8px;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#475569;">External source artifact</p>
-<p style="margin:0 0 16px;font-size:1.2rem;font-weight:700;color:#0f172a;">Arvind KC’s ten reflections from his first months at OpenAI</p>
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="noopener noreferrer">Open the original public LinkedIn post →</a>
-<figcaption id="arvind-source-caption" style="margin-top:14px;color:#475569;">Linked to the original source so its wording and context remain intact.</figcaption>
+<figure class="source-artifact">
+  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="noopener noreferrer">
+    <strong>Source artifact</strong><br />
+    Arvind KC: ten reflections from his first months at OpenAI (LinkedIn)
+  </a>
+  <figcaption>Arvind KC's public post on the professional network LinkedIn is a first-person account from his early months working at OpenAI, an artificial intelligence research and product company. Treat it as one inside view of an AI-first environment, not as a universal benchmark.</figcaption>
 </figure>
 
-The broader design principle can stand without turning one company into a template. Local autonomy works when authority is explicit, shared state is visible, and exceptions reach someone able to judge the wider effects. If those conditions are absent, an AI-first label can hide the same old organization under a faster interface.
+A primary account like this is useful because organizational design is lived through everyday choices, not declared in a strategy document. The right question is not how to copy one company's habits. It is which conditions allow more work to move through software without making responsibility harder to locate.
 
-Accountability must remain attached to people with real authority. An agent can record why a check passed, but it cannot carry legal, ethical, or commercial responsibility. The more execution moves into software, the more clearly the company must name who owns the objective, the limits, and the consequences.
+This also changes management. A manager creates less value by checking every handoff and more by improving the goals, controls and feedback around the workflow. The role remains human because the system still needs someone to weigh competing outcomes and own the consequences of its operation.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Human value moves toward cross-boundary judgment and responsibility as routine execution and coordination become system behavior. Clear authority and visible state make that local autonomy governable.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>As agents absorb routine execution, people move toward intent, exceptions and decisions under ambiguity. That shift only works when authority to approve, override and stop the system is explicit.</p></div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
-<span class="scifi__label">Meanwhile in sci-fi</span>
-<p class="scifi__film">Star Trek: The Next Generation (1987)</p>
-<p>The television series follows the starship Enterprise, where specialists can act within their stations without asking the captain to approve every technical step. That freedom depends on a shared view of the ship’s condition, clear areas of authority, and a command structure for decisions whose effects cross the vessel.</p>
+  <span class="scifi__label">Meanwhile in sci-fi</span>
+  <p class="scifi__film">Star Trek: The Next Generation (1987)</p>
+  <p>The television series follows the starship Enterprise, where officers at different stations can act within their specialties because the bridge maintains a shared picture of the vessel, its mission and its risks. Local action remains connected to a visible chain of command, and unusual conditions move quickly to the people authorized to decide.</p>
 </div>
 
-The mapping to an AI-first company is specific: agents can act locally only when the organization exposes current state, defines their authority, and routes cross-boundary consequences to a responsible person. Employees also need enough understanding of the wider system to recognize when a locally sensible action could damage another workflow. Shared system awareness is what turns distributed action into coordinated action.
+The useful mapping is shared operational context: enough common information for a local action to make sense within the whole system. An AI-first company needs the same visibility. Agents may execute locally, but people must be able to see their state, understand downstream effects and intervene through clear authority. Without that common picture, autonomy hides coordination risk instead of removing it.
 
-## Redesign one operating slice
+## Redraw work before the org chart
 
-The practical place to begin is not the whole enterprise. Choose one operating slice: a complete path from a real trigger to a measurable outcome, including its decisions, checks, and handoffs. It should have a named owner and a failure mode the company can contain while it learns.
+I think the best starting point is one workflow that matters enough to expose real trade-offs and is bounded enough to inspect. Redraw it from a blank page. Specify the outcome, place agent execution where the work is repeatable, define the evidence each stage must produce and mark the decisions that still require a person.
 
-Then redesign the slice from the outcome backward. Preserve a human approval when it controls a real consequence, but do not keep one merely because the old process routed work through a manager. Give the agent only the information and permissions it needs, make its actions visible, and define the conditions that stop execution.
+Then compare that design with the current process. A human step may remain because it carries judgment, trust, legal responsibility or a limit the technology cannot yet handle. An agent step needs an owner, a clear result and a stop condition. This comparison reveals which roles should change, which controls are missing and which handoffs survive only because the old process assumed a person had to move the work.
 
-<figure class="anthem-visual design-test" aria-labelledby="design-test-caption" style="border:2px solid #0f766e;border-radius:18px;padding:26px;background:linear-gradient(135deg,#f0fdfa,#eff6ff);">
-<p style="margin:0 0 18px;font-size:0.82rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#0f766e;">The operating-slice test</p>
-<ol style="margin:0;padding-left:1.4rem;display:grid;gap:12px;color:#0f172a;">
-<li><strong>Outcome:</strong> What result does this workflow own?</li>
-<li><strong>Boundary:</strong> What may the agent decide and do without approval?</li>
-<li><strong>Evidence:</strong> What checks and records show that the work is acceptable?</li>
-<li><strong>Escalation:</strong> Which conditions stop the workflow, and who takes over?</li>
-<li><strong>Learning:</strong> Who changes the workflow when the same exception keeps returning?</li>
-</ol>
-<figcaption id="design-test-caption" style="margin-top:18px;color:#475569;">If these answers are vague, more agent capability will amplify ambiguity rather than remove it.</figcaption>
-</figure>
+Only after that should the org chart move. Its purpose is to show where expertise and accountability sit after the workflow has been redesigned. Starting with titles and reporting lines does the opposite: it asks new capabilities to fit the old distribution of work.
 
-Run that slice until its normal work, exceptions, and failures are understood. Expansion should follow evidence that the controls work, not enthusiasm about the model. Some workflows will remain mostly human because their value lies in trust, negotiation, care, or judgment that cannot be reduced to a stable rule.
+The inversion is therefore a management choice, not a software rollout. Speed is one consequence, but the deeper aim is a company that can execute through software while keeping human judgment visible and accountable. Turn the workflow over first, and let the organization follow the work.
 
-Agent count tells us almost nothing about whether a company is AI-first. The stronger signal is how much work has been made explicit, bounded, observable, and owned. Turning the triangle upside down begins when leaders accept responsibility for building that foundation, one complete workflow at a time.
-
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Start with one complete, containable workflow and design its outcome, authority, evidence, escalation, and learning loop together. Scale only when the company understands both normal execution and failure.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Begin with one consequential workflow and design it from a blank page around agent execution, evidence, human decisions and stop conditions. Change roles and reporting lines only after the new flow of work makes their purpose clear.</p></div>
