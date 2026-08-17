@@ -1,125 +1,108 @@
 ---
-title: "The AI-first company starts with an inversion"
-description: "Why adding agents beneath existing teams preserves the human bottleneck, and how to redesign work around agent execution, human judgment, and explicit control."
-tldr: "An AI-first company puts agents at the base of execution and coordination while people concentrate judgment and accountability at clear decision points. The shift only works when leaders replace human handoffs with bounded autonomy, instrument the workflow with meaningful operating statistics, and keep responsibility unambiguously human."
+title: "Turn the company upside down"
+description: "An AI-first company puts agents into the flow of execution and concentrates human attention where judgment and accountability change the outcome."
 image: "/images/posts/architecture-ai-first-company.webp"
+image_alt: "Two organizational triangles comparing an AI retrofit with an AI-first company"
 anthem: true
+tldr: "An AI-first company redesigns complete workflows so agents carry repeatable execution and coordination, while people own intent, ambiguous decisions, and consequences. Leaders should avoid the retrofit trap, define authority and escalation clearly, treat insider accounts as hypotheses rather than blueprints, and expand from one measured end-to-end outcome only when the evidence supports it."
 permalink: /drafts/0b3ae4cd/
 layout: post.njk
 date: 2026-08-17
 ---
 
-Most AI programs begin with a sensible question: where can an agent save a person time? The question is useful, but it keeps the current company fixed. People still receive the work, divide it into tasks, move it between teams, and approve the result. The agent becomes another tool inside a human-run system.
+I think “AI-first” is useful only when it changes the shape of the company. A business can add an AI assistant to every team and still leave its basic design untouched. People continue to carry work between functions, wait for approvals, and rebuild context after each handoff.
 
-Here, an AI agent means software that can interpret a goal, choose actions, and use tools across several steps. I think its larger organizational value appears when we ask a harder question: if agents can execute and coordinate a workflow, where do people create the most value?
+In this article, an AI agent means software that can pursue a goal across several steps, use digital tools, and choose actions within limits set by people. An AI-first company treats that capacity as part of its operating base. Agents handle repeatable execution and coordination, while humans concentrate on intent, judgment, exceptions, and accountability.
 
-An AI-first company answers by changing the shape of work. Agents handle the routine operating layer, while people set direction, resolve meaningful uncertainty, and remain accountable for the consequences. This is an organizational design choice rather than a software upgrade.
+That shift cannot be measured by agent count. The practical question is whether the workflow has changed, including who acts, who decides, and who owns the consequence.
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
-<p>The strategic question is no longer where an agent can assist a person. It is how to design a company in which agents run suitable workflows and people provide judgment, direction, and accountability.</p>
+<p>AI-first is an organizational design choice. It begins when agents carry meaningful parts of a workflow and human attention moves toward judgment, exceptions, and responsibility.</p>
 </div>
 
-## The retrofit trap preserves the bottleneck
+## The retrofit trap
 
-A workflow is the chain of actions that turns a request into an outcome. In a retrofit, that chain still belongs to people: they interpret the request, route each task, check the output, and decide what happens next. An agent may draft a document or update a system, but the work repeatedly returns to a human queue.
+Most AI adoption begins by placing an agent at the narrow end of an existing process. The agent drafts, checks, or routes one task, but the surrounding workflow still depends on people moving information and requesting permission. That is a reasonable way to learn, yet it becomes a trap when a useful local improvement is mistaken for a new operating design.
 
-This can improve task speed without improving flow. When an agent creates output faster, the next approval queue may simply fill faster too. Coordination remains scarce because people are still carrying context between tools, teams, and decisions.
-
-<figure class="anthem-visual anthem-visual--triangles">
-<svg viewBox="0 0 960 430" role="img" aria-labelledby="triangle-title triangle-desc" xmlns="http://www.w3.org/2000/svg">
-<title id="triangle-title">The retrofit trap and the AI-first company</title>
-<desc id="triangle-desc">A downward triangle places human-run workflows across the broad top and AI agents at the bottom tip. An upward triangle places agent-run workflows across the broad base and human judgment at the top point.</desc>
-<text x="255" y="34" text-anchor="middle" font-size="24" font-weight="700">Retrofit trap</text>
-<polygon points="70,70 440,70 255,360" fill="#24324a" />
-<text x="255" y="122" text-anchor="middle" fill="white" font-size="20" font-weight="700">Humans run workflows</text>
-<text x="255" y="205" text-anchor="middle" fill="white" font-size="17">Approvals and handoffs</text>
-<text x="255" y="318" text-anchor="middle" fill="white" font-size="17">AI agents assist</text>
-<text x="705" y="34" text-anchor="middle" font-size="24" font-weight="700">AI-first company</text>
-<polygon points="520,360 890,360 705,70" fill="#126b5b" />
-<text x="705" y="118" text-anchor="middle" fill="white" font-size="17" font-weight="700">Human judgment</text>
-<text x="705" y="210" text-anchor="middle" fill="white" font-size="17">Decision boundaries</text>
-<text x="705" y="322" text-anchor="middle" fill="white" font-size="20" font-weight="700">Agents run workflows</text>
+<figure class="anthem-visual" aria-labelledby="operating-shapes-title">
+<svg viewBox="0 0 1000 460" width="100%" style="height:auto" role="img" aria-labelledby="operating-shapes-title operating-shapes-desc">
+<title id="operating-shapes-title">The retrofit trap and the AI-first company</title>
+<desc id="operating-shapes-desc">On the left, a downward triangle places humans carrying workflows across the broad top and AI agents at the narrow bottom. On the right, an upward triangle places AI agents running workflows across the broad bottom and human judgment at the narrow top.</desc>
+<rect x="10" y="10" width="980" height="440" rx="24" fill="#F7F8FA" />
+<text x="255" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="#1D2433">The retrofit trap</text>
+<polygon points="65,100 445,100 255,390" fill="#F2C9C2" stroke="#873B32" stroke-width="3" />
+<text x="255" y="145" text-anchor="middle" font-size="21" font-weight="700" fill="#2B1D1B">Humans carry workflows</text>
+<text x="255" y="178" text-anchor="middle" font-size="17" fill="#2B1D1B">Handoffs and approvals remain</text>
+<text x="255" y="345" text-anchor="middle" font-size="19" font-weight="700" fill="#2B1D1B">AI agents</text>
+<text x="745" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="#1D2433">The AI-first company</text>
+<polygon points="555,390 935,390 745,100" fill="#CDE8D5" stroke="#28633B" stroke-width="3" />
+<text x="745" y="145" text-anchor="middle" font-size="19" font-weight="700" fill="#173923">Human judgment</text>
+<text x="745" y="245" text-anchor="middle" font-size="17" fill="#173923">Unclear cases rise</text>
+<text x="745" y="333" text-anchor="middle" font-size="20" font-weight="700" fill="#173923">AI agents run workflows</text>
+<text x="745" y="361" text-anchor="middle" font-size="17" fill="#173923">and routine coordination</text>
 </svg>
-<figcaption>The inversion changes the location of human work, placing it where judgment and accountability matter.</figcaption>
+<figcaption>The triangles show where execution capacity sits. They do not rank the value of people and software.</figcaption>
 </figure>
 
-The practical test is simple. If the workflow stops whenever a person stops forwarding, checking, or approving routine work, the company has added agents without redesigning the operating model.
+The left-hand shape can produce real task savings. However, every gain still feeds into the same queues, approvals, and transfers. Agent speed then meets a human coordination ceiling, and faster output may even create more review work than the organization can absorb.
+
+The right-hand shape starts with the complete flow of work. Agents perform the repeatable steps and pass context through the workflow, while people define the outcome, set limits, and take over when a case requires judgment. Reliability still sets the boundary: unclear success criteria, irreversible consequences, and weak evidence all call for tighter human control.
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
-<p>A retrofit makes individual tasks faster but leaves human queues and handoffs intact. The bottleneck moves only when agents can carry suitable work from request to outcome.</p>
+<p>A retrofit makes one task faster while preserving the old human queues. An AI-first design changes the whole flow, with agent execution at the base and human judgment concentrated at explicit decision points.</p>
 </div>
 
-## Put people at the decision boundaries
+## Judgment becomes the scarce layer
 
-Turning the triangle upwards concentrates human work instead of erasing it. People define the outcome, set acceptable limits, resolve trade-offs, and own decisions whose effects cannot simply be reversed.
+As agents take on more execution, human judgment becomes more valuable because it no longer needs to be spread across every routine step. The organization must therefore make clear what can happen automatically, what requires a person, and what evidence that person receives.
 
-A decision boundary is the point where uncertainty, competing interests, or serious consequences require human judgment. Before that boundary, an agent can follow a routine path. At the boundary, it should present the relevant context and ask for a decision rather than quietly guessing.
-
-<figure class="anthem-visual anthem-visual--decision-table">
+<figure class="anthem-visual">
 <table>
+<caption>Where work and authority sit in an AI-first workflow</caption>
 <thead>
-<tr><th>Work condition</th><th>Default owner</th><th>Evidence required</th></tr>
+<tr><th>Layer</th><th>Work performed</th><th>Responsible center</th></tr>
 </thead>
 <tbody>
-<tr><td>Repeated and easy to reverse</td><td>Agent</td><td>Action log and outcome check</td></tr>
-<tr><td>Uncertain but contained</td><td>Agent until a defined threshold</td><td>Context for human escalation</td></tr>
-<tr><td>High-consequence or hard to reverse</td><td>Human</td><td>Options, source material, and accountable decision</td></tr>
+<tr><td>Purpose and limits</td><td>Define the outcome, policy, and acceptable risk</td><td>A named human owner</td></tr>
+<tr><td>Ambiguous or high-impact cases</td><td>Interpret context and accept trade-offs</td><td>A person decides with evidence assembled by the agent</td></tr>
+<tr><td>Repeatable execution</td><td>Choose routine next steps, use tools, and move work forward</td><td>An agent acting within specific permissions</td></tr>
+<tr><td>Record and review</td><td>Capture actions, sources, results, and uncertainty</td><td>The system records; the human owner reviews</td></tr>
 </tbody>
 </table>
-<figcaption>Human involvement should follow the nature of the decision, not habit or organizational rank.</figcaption>
+<figcaption>Delegation works when authority, evidence, and accountability are separated clearly.</figcaption>
 </figure>
 
-This distinction also prevents a common mistake: defining human value as whatever the agent cannot do yet. Capabilities will change. A durable role for people comes from authority and responsibility, including the right to set goals, constrain action, and answer for the result.
+Every agent-run workflow needs an accountable person, permitted actions, stop conditions, and a usable record of what happened. These are part of the workflow itself. If they are added later as a compliance layer, people will struggle to understand failures and will often respond by restoring blanket approvals.
+
+Moving human attention upward does not mean moving people away from the work. They need contact with exceptions and outcomes so they can adjust rules, identify failure patterns, and improve the system. The design works when human feedback changes future agent behavior instead of becoming permanent manual cleanup.
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
-<p>People belong at explicit decision boundaries where uncertainty or consequence demands judgment. Authority and accountability provide a more durable definition of their role than the current limits of a model.</p>
+<p>Human attention should gather around purpose, difficult exceptions, and consequences. Agents can carry routine execution only when their permissions, stop conditions, evidence, and accountable owner are clear.</p>
 </div>
 
-## Control has to live inside the workflow
+## What an insider artifact can tell us
 
-When software carries more of the operating load, a faulty instruction or permission can affect many cases before anyone notices. Requiring a person to approve every step would recreate the old bottleneck, while allowing unrestricted action would turn speed into concentrated risk.
+Arvind KC published ten reflections from his first months at OpenAI, an AI research and product company, in a public post on LinkedIn, the professional network. It is a contemporaneous account from one person inside one company, so it offers a field note rather than a general dataset.
 
-The useful middle ground is bounded autonomy: an agent may act within defined permissions, while tests check its work, logs preserve what happened, and escalation rules stop or redirect it when conditions change. Control becomes part of the workflow rather than a manager watching from outside it.
-
-<figure class="anthem-visual anthem-visual--metrics">
-<div class="metric-grid">
-<div class="metric-card"><strong>Autonomous completion</strong><span>Share of cases completed without human intervention</span></div>
-<div class="metric-card"><strong>Human intervention</strong><span>Share of cases that cross a decision boundary</span></div>
-<div class="metric-card"><strong>Recovery time</strong><span>Time from a detected exception to a safe state</span></div>
-<div class="metric-card"><strong>Consequential error</strong><span>Share of cases with a material customer, financial, legal, or safety effect</span></div>
+<figure class="anthem-visual source-artifact" aria-labelledby="arvind-source-title">
+<div class="source-artifact__card">
+<p class="source-artifact__eyebrow">Primary source artifact</p>
+<p id="arvind-source-title"><strong>10 reflections from Arvind KC’s first months at OpenAI</strong></p>
+<p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">Open the public post on LinkedIn</a></p>
 </div>
-<figcaption>Four operating statistics reveal whether autonomy is producing reliable flow or merely hiding failure.</figcaption>
+<figcaption>The original post is linked directly so its claims and context can be examined at the source.</figcaption>
 </figure>
 
-These statistics have to be read together. A rising autonomous-completion rate loses its value when consequential errors also rise or recovery slows. Together, the measures should reward reliable execution while preserving the evidence and intervention paths that make accountability possible.
+A numbered account does not become statistical evidence simply because it contains ten observations. Its value is different: a primary account can expose assumptions worth testing. Leaders can compare those observations with evidence from their own workflows, including where work waits, how often people intervene, which actions can be reversed, and where ownership becomes unclear.
+
+Treat the artifact as a source of hypotheses, then establish what transfers under your constraints. Copying a visible practice without its surrounding goals, permissions, and shared context would reproduce the retrofit trap in a new form.
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
-<p>Bounded autonomy combines agent execution with permissions, checks, records, and escalation. Measuring those controls as one operating system keeps speed connected to reliable outcomes.</p>
-</div>
-
-## Read frontier artifacts with discipline
-
-Arvind KC published ten reflections on LinkedIn, the professional network, after his first months at OpenAI, an artificial intelligence research and product company. Because this is one person's account from one company and period, it cannot establish a general operating model. It can still reveal which questions become important close to the work.
-
-<figure class="anthem-visual source-artifact">
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/" rel="noopener noreferrer">
-<span class="source-artifact__eyebrow">Public source artifact</span>
-<strong class="source-artifact__number">10 reflections</strong>
-<span>Arvind KC on his first months at OpenAI</span>
-<span class="source-artifact__link">View the original LinkedIn post ↗</span>
-</a>
-<figcaption>A practitioner reflection is a signal to examine alongside evidence from your own workflows.</figcaption>
-</figure>
-
-Use the artifact to test operating assumptions against your own work. Where does context live? Which actions can be delegated safely? What evidence lets a person understand an escalation quickly? Those questions turn a field note into a falsifiable design exercise.
-
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Arvind KC's ten reflections offer a firsthand field note from his first months at OpenAI. Their value lies in sharpening operating questions that leaders can test against evidence from their own workflows.</p>
+<p>An insider account can reveal useful questions, but it cannot prove a universal company design. Use primary-source observations to form hypotheses and test them against the behavior of your own workflows.</p>
 </div>
 
 ## Meanwhile in sci-fi
@@ -127,30 +110,38 @@ Use the artifact to test operating assumptions against your own work. Where does
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Star Trek: The Next Generation (1987)</p>
-<p>The science-fiction television series follows the crew of the starship Enterprise. Its computer and specialized systems handle much of the vessel's routine operation, while officers work within explicit roles and take command when a situation requires interpretation, negotiation, or a consequential choice.</p>
+<p>This science-fiction television series follows the starship Enterprise, whose officers act within distinct specialties while sharing the vessel’s mission, connected systems, and command boundaries. They can make many local choices because they also know when a decision affects the wider ship and must move to another level.</p>
 </div>
 
-The relevant mapping concerns the placement of attention. In an AI-first company, agents can maintain state and execute the ordinary path, while people need shared system literacy: enough understanding of the wider workflow to see how a local decision affects the whole. Clear roles and escalation paths then allow local autonomy while keeping accountability visible.
+The mapping is organizational: shared system literacy means understanding how a local action affects connected workflows, controls, and outcomes. Local autonomy, the ability to act without seeking approval at every step, is safe only when goals, authority, interfaces, and escalation paths are explicit. The useful idea here is the combination of distributed action and common context, rather than the fictional chain of command.
 
-## Redesign one consequential workflow
+## Start with one complete outcome
 
-The inversion can begin well before a company-wide reorganization. Choose one consequential workflow with a clear outcome and a downside that can be contained. That is enough to expose whether the organization is genuinely changing the flow of work or merely adding faster tools to old queues.
+The useful unit of redesign is one complete outcome rather than an isolated task. Choose a workflow with a visible start and finish, enough activity to learn from, and consequences that can be contained. Map its current path, including waiting, approvals, corrections, and the decisions that genuinely change the result.
 
-<figure class="anthem-visual anthem-visual--operating-loop">
-<ol>
-<li><strong>Define the outcome.</strong><span>Name the result, constraints, and accountable human owner.</span></li>
-<li><strong>Give agents the routine path.</strong><span>Remove human relay work that adds no judgment.</span></li>
-<li><strong>Mark decision boundaries.</strong><span>Specify when and why a person must decide.</span></li>
-<li><strong>Instrument and revise.</strong><span>Track intervention, errors, and recovery before widening autonomy.</span></li>
-</ol>
-<figcaption>A small, consequential redesign produces evidence that a broad transformation program cannot manufacture.</figcaption>
+<figure class="anthem-visual">
+<table>
+<caption>A scorecard for the first end-to-end workflow</caption>
+<thead>
+<tr><th>Signal</th><th>What to record</th><th>What it reveals</th></tr>
+</thead>
+<tbody>
+<tr><td>Time to outcome</td><td>Elapsed time from request to accepted result</td><td>Whether the whole workflow became faster</td></tr>
+<tr><td>Human handoffs</td><td>Transfers between people or teams per case</td><td>Whether routine coordination moved into the workflow</td></tr>
+<tr><td>Escalation rate</td><td>Share of cases that require a person to take over</td><td>Whether the boundary around agent authority is useful</td></tr>
+<tr><td>Rework rate</td><td>Share of results that need correction</td><td>Whether speed is hiding poor output</td></tr>
+<tr><td>Cost per accepted outcome</td><td>Total operating cost divided by accepted results</td><td>Whether local savings survive at system level</td></tr>
+<tr><td>Evidence coverage</td><td>Share of actions recorded with their source, tool, and result</td><td>Whether people can review what happened</td></tr>
+</tbody>
+</table>
+<figcaption>Measure the completed outcome, including hidden human work, rather than the speed of one automated step.</figcaption>
 </figure>
 
-The intended outcome is a company in which fewer people spend their days carrying information between systems, and more human attention goes to choices that deserve it. Agents may absorb execution and coordination; institutional responsibility remains human even when a workflow runs unattended.
+Leadership should give the workflow one accountable owner and settle the boundaries before launch. The agent receives only the tools and data it needs, high-impact actions go to a person, and each run leaves a record that can be reviewed. Failures and near misses then become material for improving the workflow instead of reasons to add approvals everywhere.
 
-The organization will be shaped less by the model it buys than by where its leaders place judgment and accountability. That design decision still belongs to people.
+Expansion should follow evidence. If one step gets faster while queues grow elsewhere, the triangle has not turned. Agent count tells us little; the stronger test is whether agents carry meaningful work across the full path while people retain clear authority over goals, exceptions, and consequences. Turn the triangle at the speed that evidence and control allow, then let each successful workflow change how the company is built.
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
-<p>Begin with one important, contained workflow. Give agents the routine path, keep people at explicit decision boundaries, measure the resulting system, and expand only when reliable execution and human accountability remain intact.</p>
+<p>Begin with one bounded end-to-end outcome and measure time, handoffs, escalations, rework, cost, and evidence. Expand only when the complete workflow improves within explicit limits and a human owner remains accountable.</p>
 </div>
