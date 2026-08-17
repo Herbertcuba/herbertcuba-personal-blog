@@ -1,79 +1,89 @@
 ---
-title: "Tireless intelligence needs a stopping rule"
-tldr: "Anthropic’s reported mathematical advance shows that repeated AI search can now be funded as an organizational resource, but activity is not value. As candidate production grows, leaders must reserve independent verification capacity, make every campaign earn its next round of funding, and give someone outside the delivery team the authority to stop it."
+title: "Claude made persistence purchasable. Leadership must decide when to stop."
+description: "Anthropic's zeta result shows that large-scale persistence can be funded like any other search capacity, which makes evidence and stopping authority the real leadership problem."
+tldr: "Anthropic reports that an unreleased Claude research system reached a new mathematical lower bound after 650 unsuccessful ideas, roughly 60 subagents, and 31 million output tokens. The strategic lesson is that metered persistence can generate candidates faster than organizations can verify them, so leaders need to choose the question, reserve an independent evidence budget, and make stopping rules enforceable before the search starts."
 permalink: /drafts/b90f4cfe/
 layout: post.njk
 date: 2026-08-17
 ---
 
-An organization can now purchase another attempt at a hard question at a scale few human teams could sustain. That may be more consequential than any single answer an AI system produces.
+A metered AI system can keep a weak question alive just as easily as a valuable one. Every dead end can lead to another search path, another delegated process, and another polished request for permission to continue. The system does not become tired or embarrassed, but the organization still pays for compute, tools, review, and the opportunities it leaves unfunded.
 
-Anthropic’s recent mathematics project makes the shift concrete. The AI company says an unreleased research version of Claude tried 650 ideas that did not work. It then coordinated roughly 60 subagents, delegated AI processes assigned narrower tasks, during a larger search using 31 million output tokens, units of model-generated text used to meter activity. The result was a checkable new proof claim in number theory, the branch of mathematics concerned with whole numbers and their relationships.
+That is why Anthropic's new mathematics result matters beyond mathematics. On August 10, 2026, the AI company [reported](https://www.anthropic.com/research/riemann-zeta) that an unreleased research version of Claude had tried 650 unsuccessful ideas before coordinating roughly 60 subagents, meaning delegated AI processes working on parts of the problem with tools. The work used 31 million output tokens, the metered units of text produced by the model.
 
-The seductive reading is that machines have acquired superhuman stamina. I think the harder lesson is economic: persistence has become an allocatable resource, so the right to continue can no longer be left implicit. Leaders now have to decide which questions deserve repeated search, which evidence can release more budget, and who has the authority to end the campaign.
+I think the important change is economic. Once persistence can be provisioned and redirected, it starts to behave like capital rather than personal endurance. Leadership then moves toward a harder question: who may authorize the next attempt when generating a reason to continue is becoming easier than judging whether that reason is sound?
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>AI can make another attempt available on demand. That turns persistence from a personal virtue into a portfolio decision, with verification and termination at its center.</p></div>
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>Claude's run makes large-scale persistence an allocatable input. That increases the value of independent judgment because the organization can now produce search paths, and arguments for extending them, at machine speed.</p>
+</div>
 
-## What the 650 failures actually bought
+## The theorem came with a strong acceptance test
 
-On August 10, 2026, Anthropic reported that Claude had produced a new result connected to the Riemann hypothesis. On August 13, the company [updated its release page to point to a revised preprint dated August 11](https://www.anthropic.com/research/riemann-zeta). The revision changed attribution and some scope wording while retaining the central mathematical result. Its status still matters: this is a company-released research paper with public checking artifacts and short-notice specialist examination, not conventional journal peer review or independent replication.
+The Riemann zeta function is a mathematical function that helps describe the distribution of prime numbers. In 1859, the German mathematician Bernhard Riemann proposed that all its nontrivial zeros, special points where the function equals zero, lie on a line with real coordinate one-half. This is the “critical line,” and the still-unproved claim is the Riemann hypothesis.
 
-The Riemann zeta function is a mathematical function that helps describe the distribution of prime numbers. In 1859, the German mathematician Bernhard Riemann proposed that all its nontrivial zeros, meaning inputs where the function equals zero outside a set of already understood cases, lie on the “critical line” with real coordinate one-half. That claim, now called the Riemann hypothesis, remains unproved.
+Claude did not prove that hypothesis. Anthropic's [revised preprint, dated August 11](https://www-cdn.anthropic.com/95c246936988e43127bc6b2ceb7077c1dad2d68e.pdf), raised an unconditional lower bound on the share of nontrivial zeros that are simple, meaning not repeated, and lie on the critical line. A lower bound is a proven minimum. The previous record was 5/12; the new basic result is at least 2/3, with a further optimization reaching 0.6725.
 
-Claude did not prove it. The revised work instead raises a lower bound, a proven minimum share of those zeros known to lie on the critical line, from 5/12 to at least 2/3. A further optimization reaches 0.6725. The popular “37-year record” description reaches back to number theorist J. B. Conrey’s [1989 peer-reviewed result](https://doi.org/10.1515/crll.1989.399.1), but human work continued after that; the previous 5/12 record had stood since 2020.
+The popular “37-year” framing starts with number theorist J. B. Conrey's [1989 peer-reviewed result](https://doi.org/10.1515/crll.1989.399.1), but it should not be read as 37 years without progress. Other mathematicians improved the work in between, and the 5/12 record had stood since 2020. The new paper also relies on decades of prior mathematics and adds a linear-algebraic reading to that foundation. Anthropic says the wider process included numerical tests, counterexample searches, scripts, literature checks, internal mathematicians, and outside specialists who examined the work on short notice.
 
-Nor did hundreds of retries replace mathematical ideas. The paper credits decades of prior research and adds a new linear-algebraic reading, which means it recasts existing mathematical relationships in a form that can be studied through structured operations on quantities. Anthropic says the broader run also used numerical tests, counterexample searches, literature checks, scripts, internal mathematicians, and outside specialists.
+This case could support an unusually large search because its output faced a demanding acceptance process. Anthropic released a [Lean 4 formalization](https://github.com/anthropics/zeta-23-lean), which encodes the claims in a theorem-proving language so a computer can check each formal step under declared rules. That provides more evidence than persuasive prose, but it does not decide the work's importance or replace normal scholarly scrutiny. The current status is a company-released preprint with a public formal artifact and short-notice specialist examination, not conventional journal peer review or independent external replication. Anthropic updated its page on August 13 to point to the August 11 revision, which changed attribution and some scope wording while retaining the central two-thirds result.
 
-The reported token count measures activity, not return, and Anthropic has published no campaign invoice. The public material also lacks a complete attempt trace, a rule for what counted as one idea, the full run configuration, and a controlled comparison proving that the number of attempts caused the discovery. Those limits make this a valuable case, not a general return-on-investment study.
+The operational numbers need the same discipline. Anthropic has not published a counting rule for what qualified as one of the 650 ideas, the unreleased model's full configuration, a complete run trace, or a cost ledger. There is also no controlled comparison showing which ingredient caused the result. The case demonstrates that a large, instrumented search can surface a checkable discovery; it does not establish an average return on retries.
 
-One validation layer is especially relevant. Anthropic released a [Lean 4 formalization](https://github.com/anthropics/zeta-23-lean), an encoding that lets a proof-assistant program check precisely stated theorems and their logical dependencies. That is stronger evidence than persuasive prose, but it cannot by itself settle novelty, importance, or whether every informal claim has been represented appropriately. The claim is substantive enough to examine and bounded enough to resist mythology.
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>The mathematical advance is specific and assessable, but it cannot be reduced to stamina. Prior research, a new conceptual move, numerical work, formal checking, and human scrutiny all sit between 31 million output tokens and a credible result.</p>
+</div>
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The project produced a specific, checkable lower-bound claim through scaled search, prior mathematics, a conceptual reformulation, and several validation layers. The public record does not show that persistence alone caused the result or what the campaign cost.</p></div>
+## Permission becomes the scarce resource
 
-## The scarce resource moves to acceptance
+Humans can become tired, ashamed of repeated failure, or wary of attaching a career to a dead end. Claude does not bear those costs. The Anthropic case did not measure this psychological difference, so “purchasing persistence” is an interpretation of the new capacity, not a causal finding about why the proof emerged.
 
-For a human researcher, a failed path consumes attention and may also carry fatigue, embarrassment, or professional opportunity cost. The Claude case did not measure those effects. The narrower operational point is that a compute process can begin another search path as soon as budget and permission exist; no recovery period is built into the loop.
+Even with that limit, the organizational shift is real. Search volume can grow with token allowances and parallel agent processes, while qualified review remains constrained by domain expertise, attention, and accountability. The agents can also produce renewal arguments alongside candidate answers. A campaign may therefore become easier to defend at exactly the moment when an independent reviewer is least able to inspect its growing evidence trail.
 
-That makes persistence a form of capital in the practical sense: leaders can allocate it among competing questions. It does not make thinking free. Every additional search path consumes compute, tool access, coordination, and eventually the time of someone qualified to decide whether the output is true and useful.
+Stage gates, separation of duties, and automatic circuit breakers are established management and engineering practices. The U.S. National Institute of Standards and Technology, a federal measurement agency, made similar control logic explicit in its voluntary [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework), released in 2023. The AI-specific pressure is the imbalance: candidate claims and reasons to fund another round can scale faster than independent verification capacity.
 
-This is where the limiting factor changes. An agent system can scale both candidate answers and polished arguments for why it deserves one more run. Independent reviewers cannot necessarily scale at the same rate. When the queue of plausible claims grows faster than the capacity to test them, verification becomes scarce and continuation becomes easier to justify than closure.
+Output is a poor substitute for value. A [2023 National Bureau of Economic Research working paper](https://www.nber.org/papers/w31161) covering 5,179 customer-support agents found that an AI assistant raised issues resolved per hour by 14 percent on average. In a different setting, a [2025 randomized study by the independent research group METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that 16 experienced open-source developers took 19 percent longer on 246 tasks when allowed to use early-2025 AI tools. That second result is now a historical snapshot, not a forecast for current tools. Together, the studies show why each workflow needs its own measure; they cannot be averaged into a universal return on AI.
 
-Evidence from ordinary work already warns against treating visible AI activity as economic return. A [2023 working paper from the U.S. National Bureau of Economic Research](https://www.nber.org/papers/w31161), an economics research organization, studied a rollout to 5,179 customer-support agents and found 14% more issues resolved per hour on average, with larger gains among less experienced workers. In a different setting, a [2025 randomized study by the independent research group METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that experienced open-source developers took 19% longer with the AI tools tested; METR has since called that estimate out of date for newer systems. The studies should not be averaged into one verdict. They show that value depends on the task, the workflow, and the measure.
+Portfolio accounting should therefore charge the whole campaign to each independently accepted result. That includes rejected paths, compute and tool use, reviewer time, replication, and the work required to put a result into practice. A token count records activity, not a return.
 
-For persistent agents, the useful economic unit is therefore the full cost per independently accepted outcome. It includes failed search, reviewer time, replication, delivery work, and the opportunity cost of the strongest project that went unfunded. Token volume tells us how much motion occurred. It cannot tell us whether another round of funding is warranted.
+Formal mathematics is the favorable case because a theorem can be stated precisely and checked. Strategy, product choices, and organizational change often lack that clean acceptance test. If the same system searches, writes the evidence, and argues for renewal, tirelessness can manufacture confidence without producing a better decision.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>As AI search expands, independent acceptance can become scarcer than candidate production. Leaders should measure the full cost of validated outcomes and compare every renewal with the next-best use of money and review capacity.</p></div>
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>The binding constraint moves from generating possibilities to accepting them responsibly. AI raises a distinctive governance problem because it can scale both the candidate work and the case for keeping that work alive.</p>
+</div>
+
+## Write the right to continue
+
+A Tireless Intelligence Charter can be a one-page authorization that makes every extension a fresh decision. It should sit inside the existing portfolio, risk, security, procurement, and employee-representation forums that already carry authority.
+
+Here is a deliberately illustrative charter for a 5,000-person company considering an agent-designed accounts-payable process:
+
+- **Decision at stake:** decide whether to move the proposed process from a sandbox into a limited live pilot.
+- **Accountability:** the chief financial officer sponsors the decision; an automation lead runs the search; internal audit owns acceptance; the portfolio forum alone may renew it. Security, privacy, procurement, and an employee representative approve any change to data, supplier, tool, or work-design boundaries.
+- **Evidence contract v1.0:** on a fixed test set hidden from the delivery team, reduce manual invoice exceptions by at least 20 percent, create no unsupported payment approvals, and reproduce the result in an independent replay. A changed test requires a new version and approval before more search begins.
+- **Search cap:** 14 calendar days, 10 million output tokens, no more than 12 simultaneous agent processes, and 40 engineering hours. The agents may read a sandbox and run scripts, but they cannot write to the payment system.
+- **Evidence reserve:** book 60 internal-audit hours and a security review before launch. The verifier has three working days after each submitted result; if that capacity is unavailable, the campaign pauses rather than accumulating an unchecked queue.
+- **Operating boundary:** use only invoice data classified as internal, with European Union residency and the contracted supplier. No employee-performance data, public posting, supplier substitution, or new external tool access is allowed.
+- **Renewal test:** review on day seven and at the cap. Another round must beat the expected value of the highest-ranked unfunded finance-control initiative, here a duplicate-payment detection upgrade, using the same portfolio criteria.
+- **Closure:** internal audit or the portfolio chair may pause the work immediately. Closing it revokes credentials, removes temporary data according to retention policy, confirms that no live-system changes remain, and archives hypotheses, tests, rejected routes, costs, and the final evidence decision.
+
+The state contract should be just as explicit. **ACTIVE** permits work only inside the current caps and permissions. **ACTIVE → PAUSED** happens automatically at a cap, a missed review deadline, a failed acceptance test, or a boundary breach. **PAUSED → ACTIVE** requires a signed portfolio decision against Evidence Contract v1.0 and the named alternative investment. **PAUSED → CLOSED** ends access and triggers the closure record. A delivery-team attempt to renew its own campaign is an invalid transition.
+
+At launch, the sponsor commits the question and the evidence capacity, not merely the search budget. The delivery lead then produces candidates, the independent verifier accepts or rejects them, and the portfolio forum decides whether new evidence justifies another round. This handoff protects independent judgment before the volume of generated reasoning raises the organizational cost of stopping.
+
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>Fund persistent AI through a versioned charter with a separate search cap and protected evidence reserve. Named owners, fixed boundaries, an external renewal decision, and enforceable operating states turn “keep trying” into a portfolio choice rather than a default.</p>
+</div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>Doug Liman’s science-fiction film follows a soldier forced to repeat the same disastrous battle. Repetition becomes useful only because information survives each reset and changes what happens in the next loop.</p>
+<p>Doug Liman's science-fiction film follows a soldier forced to repeat the same deadly day. Repetition becomes useful only because he retains information, tests a changed action, and learns which routes fail.</p>
 </div>
 
-The mapping here is limited but useful: an AI campaign also needs memory of failed routes, feedback that changes the next attempt, and an exit condition. Repeating a search without those three properties is not learning; it is merely another bill.
-
-## Make every campaign earn the right to continue
-
-Tests written before launch, automatic pause controls, and separation of duties, where different people run and approve work, all existed before AI agents. The new pressure is one of scale: candidate answers and renewal arguments can multiply faster than independent evidence capacity. A sensible mandate must therefore reserve search and verification as separate budgets, then make continuation expire unless someone outside the delivery team renews it.
-
-Here is a deliberately illustrative campaign card for a company considering an AI agent for billing disputes. The numbers show the shape of a decision record; they are not universal recommendations or a description of Anthropic’s process.
-
-**Illustrative campaign mandate**
-
-- **Decision at stake:** whether a billing-dispute agent may move from a read-only shadow test, in which it sees real cases but cannot act, to a supervised pilot in European operations.
-- **Accountability:** the chief operating officer sponsors the decision; an AI product lead runs the search; an independent risk-analytics lead owns acceptance; the existing portfolio forum that compares investments alone may renew funding. An employee representative reviews proposed changes to roles and monitoring.
-- **Evidence test v1.0:** on billing cases kept out of development and stripped of customer identifiers, reduce reopened tickets by at least 10% without increasing incorrect refund recommendations or customer complaints. The independent verifier, not the delivery team, signs the result.
-- **Separate caps:** at most 5,000 agent runs, 14 calendar days, and 10 concurrent subagents. Reserve 80 verifier hours and 25% of the total campaign budget for evidence work; if the verifier cannot respond within two business days, search pauses rather than consuming that reserve.
-- **Operating boundary:** confidential billing data with customer identifiers removed, stored and processed in the European Union by an approved supplier that cannot retain it for training. Tools remain read-only, with no customer-contact or refund authority. Credentials must be removable immediately, and test outputs must be deletable without changing the production process.
-- **Review and alternative:** formal reviews on days 7 and 14 against a named portfolio comparator, in this example an unfunded upgrade to the existing billing-rules engine.
-- **Kill and closure:** the portfolio chair or risk owner may pause the campaign. Closure requires revoked access, a saved record naming the model, prompts, tools, data, and test version, plus the verifier’s report and an archive of failed routes.
-
-The operating states can stay equally plain. **ACTIVE → PAUSED** when a cap, evidence test, data boundary, or review deadline is missed. **PAUSED → ACTIVE** requires a saved evidence packet and approval from the portfolio forum; a delivery-team request cannot renew itself. **ACTIVE or PAUSED → CLOSED** when the end date arrives, the kill authority acts, or the portfolio alternative offers greater expected value. **CLOSED** removes permissions and rejects any previously queued job that tries to resume.
-
-This discipline protects the evidence budget from becoming leftover money and gives the verifier an escalation path. It also turns failed attempts into a reusable record rather than a private history that the next agent has to rediscover. Most importantly, it places the decision to continue where it belongs: with an accountable human forum that can compare the campaign against everything else the organization could be doing.
-
-Tireless systems will make another attempt easy to request. Leadership begins when the evidence is no longer good enough to grant it.
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A persistent AI campaign needs two protected budgets, a saved acceptance test, explicit operating boundaries, and renewal authority outside the delivery team. If continuation cannot be denied and technically enforced, the organization has not written a stopping rule.</p></div>
+The mapping is precise: the agent system supplies repetition, the evidence contract determines whether information survived the attempt, and the portfolio forum controls access to another round. Human responsibility sits in that authorization. Leaders must decide whether the next attempt can still change what the organization knows, and close the campaign when it cannot.
