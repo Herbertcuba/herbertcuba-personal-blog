@@ -46,6 +46,17 @@ Existing disciplines already control important parts of that configuration. Rele
 
 Consider a simple structural example. If traces show that a synthesis step creates most retries, a candidate change might move a source-quality evaluator earlier and reduce the context passed into synthesis. That proposal is still another hypothesis. APEX is the process that carries it from evidence to diagnosis, test, human judgment, and a governed production decision.
 
+<figure class="fig-band article-diagram" data-diagram-id="apex-outer-loop">
+<figcaption class="fig-cap">Fig. — APEX’s outer loop around the execution graph</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 440" role="img" aria-labelledby="ad-apex-outer-loop-title ad-apex-outer-loop-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-apex-outer-loop-title">APEX outer loop around an execution graph</title>
+<desc id="ad-apex-outer-loop-desc">APEX places an outer loop around the execution graph: strategic intent leads to execution, execution produces evidence for reflection, and reflection leads to calibration before the next cycle.</desc>
+<defs><marker id="ad-apex-outer-loop-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="440" fill="#000000"></rect><rect x="20" y="20" width="720" height="400" fill="none" stroke="#0A1A0F" stroke-width="2"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-apex-outer-cycle"><rect x="274" y="30" width="212" height="60" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="380" y="66" text-anchor="middle" fill="#DCE7DE" font-size="22" font-weight="700">Strategic intent</text><rect x="274" y="160" width="212" height="100" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="380" y="220" text-anchor="middle" fill="#DCE7DE" font-size="24" font-weight="700">Execution graph</text><rect x="540" y="178" width="160" height="64" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="620" y="205" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">Evidence</text><text x="620" y="228" text-anchor="middle" fill="#DCE7DE" font-size="18">reflection</text><rect x="274" y="350" width="212" height="60" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="380" y="386" text-anchor="middle" fill="#DCE7DE" font-size="22" font-weight="700">Calibration</text><path d="M380 90 L380 160" fill="none" stroke="#00E653" stroke-width="4" marker-end="url(#ad-apex-outer-loop-arrow)"></path><path d="M486 210 L540 210" fill="none" stroke="#00E653" stroke-width="4" marker-end="url(#ad-apex-outer-loop-arrow)"></path><path d="M620 242 L620 320 L486 320 L486 350" fill="none" stroke="#00E653" stroke-width="4" marker-end="url(#ad-apex-outer-loop-arrow)"></path><path d="M274 380 L58 380 L58 60 L274 60" fill="none" stroke="#00E653" stroke-width="4" marker-end="url(#ad-apex-outer-loop-arrow)"></path></g>
+</svg>
+</figure>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>APEX treats the run and its trace as a second production output. Its distinct job is to turn that evidence into an approved change across the complete execution configuration, including how quality is defined.</p></div>
 
 ## Agents can inspect the system, but experts define good
@@ -82,8 +93,9 @@ This operating contract makes APEX testable; it does not prove that APEX already
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In this 2014 science-fiction film, Major William Cage repeatedly relives the same battle and changes his actions using what each attempt reveals. The mapping to this argument is direct: an APEX cycle becomes learning only when evidence from one execution changes the graph used for the next, while human judgment still determines which lesson is worth encoding.</p>
 </div>
+
+In this 2014 science-fiction film, Major William Cage repeatedly relives the same battle and changes his actions using what each attempt reveals. The mapping to this argument is direct: an APEX cycle becomes learning only when evidence from one execution changes the graph used for the next, while human judgment still determines which lesson is worth encoding.
 
 ## There is no final graph
 
