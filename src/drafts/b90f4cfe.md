@@ -5,6 +5,7 @@ date: 2026-08-18
 tldr: "Anthropic’s Riemann-zeta experiment did more than produce a new mathematical lower bound: it showed that an organization can buy a large, instrumented search through failure. That does not make thought free or prove that more retries create value. It makes question choice, independent verification, full campaign cost, and stopping authority central leadership decisions."
 permalink: /drafts/b90f4cfe/
 layout: post.njk
+featuredImage: "/images/posts/tireless-intelligence-needs-a-stopping-rule.webp"
 ---
 
 Anthropic, the AI company that develops Claude, says an unreleased research version of its system generated 650 ideas that did not work before the broader effort produced a new result in number theory, the study of whole numbers and primes. Those failures are the consequential part of the story. They show that persistence can now be provisioned as a metered research input rather than left entirely to human endurance.
@@ -53,8 +54,10 @@ What the case does establish is operational possibility. An organization can all
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>Director Doug Liman’s science-fiction film follows a soldier who relives the same deadly day while retaining what he learned in earlier loops. Repetition becomes useful because feedback survives each reset and the character has a stable exit condition. The mapping to persistent AI search is limited but precise: cheap retries create value only when failed paths change the next attempt and someone outside the loop defines what would count as escape. Without those conditions, another cycle is merely more expenditure.</p>
+<p>Director Doug Liman’s science-fiction film follows a soldier who relives the same deadly day while retaining what he learned in earlier loops. Repetition becomes useful because feedback survives each reset and the character has a stable exit condition.</p>
 </div>
+
+The mapping to persistent AI search is limited but precise: cheap retries create value only when failed paths change the next attempt and someone outside the loop defines what would count as escape. Without those conditions, another cycle is merely more expenditure.
 
 ## Give every campaign a mandate to expire
 
@@ -76,6 +79,20 @@ For illustration, the mandate could allow 14 days, a €25,000 full-cost ceiling
 The pilot should track wrong claims accepted as valid, reviewer queue time, total cost per accepted result, renewals granted without the required evidence, and stopped campaigns later shown to have had a viable path. The stopping rule is itself a hypothesis, so it should be reviewed and improved. It should never be silently waived by the system whose continued operation depends on it.
 
 I think this is where leadership becomes more consequential. A tireless system can absorb another attempt. People remain accountable for deciding whether the question still deserves money, attention, and exposure to risk. The impressive part of 650 failures is the validated result that eventually followed; in many organizations, the wiser outcome will be a well-evidenced decision to stop.
+
+<figure class="fig-band article-diagram" data-diagram-id="persistence-mandate">
+<figcaption class="fig-cap">Fig. — The four parts of a persistence mandate.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 390 430" role="img" aria-labelledby="ad-persistence-mandate-title ad-persistence-mandate-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-persistence-mandate-title">Persistence mandate with four parts</title>
+<desc id="ad-persistence-mandate-desc">A stacked diagram of the four parts of a persistence mandate.</desc>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="390" height="430" fill="#000000"></rect><line x1="22" y1="110" x2="368" y2="110" stroke="#00A03A" stroke-width="2"></line></g>
+<g class="article-diagram__claim" data-claim-id="claim-mandate-four-parts"><text x="22" y="44" fill="#DCE7DE" font-size="26" font-weight="700">Persistence mandate</text><text x="22" y="70" fill="#9EB8A4" font-size="16">Four parts, set before funding</text><text x="22" y="92" fill="#9EB8A4" font-size="16">a long-running agent effort</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-decision-owner"><rect x="22" y="130" width="346" height="54" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="38" y="164" fill="#00E653" font-size="20" font-weight="700">Decision and owner</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-evidence-review"><rect x="22" y="202" width="346" height="54" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="38" y="236" fill="#00E653" font-size="20" font-weight="700">Evidence and review</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-resource-envelope"><rect x="22" y="274" width="346" height="54" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="38" y="308" fill="#00E653" font-size="20" font-weight="700">Resource envelope</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-expiry-renewal"><rect x="22" y="346" width="346" height="54" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="38" y="380" fill="#00E653" font-size="20" font-weight="700">Expiry and renewal</text></g>
+</svg>
+</figure>
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
