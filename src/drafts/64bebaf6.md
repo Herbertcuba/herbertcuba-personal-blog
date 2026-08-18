@@ -1,83 +1,96 @@
 ---
-title: "You Don’t Build the Perfect Graph. You Continuously Shape It."
-tldr: "Graph Engineering builds the agentic production system, but its first design is only a hypothesis. APEX adds a governed outer loop in which execution evidence, agent diagnosis, and domain-expert judgment produce versioned, tested, and reversible improvements rather than uncontrolled configuration churn."
+title: "You don't build the perfect graph. You continuously shape it."
+tldr: "Graph Engineering builds the agentic production system, while APEX provides the outer improvement loop that uses execution evidence, agent analysis, and domain-expert judgment to reshape that system through governed, reversible changes."
+provenance: "verified-by-author"
 permalink: /drafts/64bebaf6/
 layout: post.njk
 date: 2026-08-18
 ---
 
-Graph Engineering is becoming a useful name for a real engineering problem. Once agentic production moves beyond one model working through one loop, we have to coordinate agents, tools, models, context, conventional code, human intervention, evaluation, routing, and parallel work. Complex production needs that structure.
+Agentic engineering is moving beyond the single-agent loop. A production system may now coordinate agents, models, tools, context, conventional code, human interventions, evaluation, routing, and parallel work. Engineering how those parts cooperate is increasingly described as Graph Engineering.
 
-The danger is treating the structure as the finished answer. Every decision about responsibilities, context, sequence, tools, retries, handoffs, and human intervention encodes an assumption about how the work should be done. Before the system meets real work, many of those assumptions are necessarily speculative. The first graph is a hypothesis.
+The name is useful because complex production needs structure. It can also hide a bad assumption: that the work ends when we design the right graph. For complex knowledge work, the first graph encodes many decisions that have not yet survived contact with real work. It is our best current hypothesis about how production should happen.
 
-That is the distinction I want to make. Graph Engineering builds the system that performs the work. [APEX, the Agentic Production Execution framework](/posts/2026-04-05-apex-framework/), is the outer improvement system through which humans and agents learn from the work and reshape the graph. The goal is not a perfect design at launch. It is a production system that can become better without losing control of why it changed.
+[APEX, short for Agentic Production Execution](/posts/2026-04-05-apex-framework/), sits around that hypothesis as an improvement system. The graph performs the work. APEX helps humans and agents learn from each execution and change the system that will perform the next one. That distinction is the core of the argument.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A production graph is an executable theory of how work should happen. Graph Engineering builds that theory into a system; APEX keeps testing and revising it after reality arrives.</p></div>
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>Graph Engineering structures agentic production; APEX is the outer loop that keeps the structure open to evidence and deliberate change.</p>
+</div>
 
-## Every execution tests the graph
+## The graph is the production hypothesis
 
-Small graphs make the problem look simpler than it is. Add another evaluator and quality may rise while cycle time becomes unacceptable. Give one task a stronger model and its local result may improve without changing final acceptance enough to justify the cost. A failing agent may have a weak instruction, but it may also receive the wrong context, sit at the wrong point in the flow, have the wrong tool, or exist as a separate agent when conventional code would be more reliable.
+When I say graph, I do not mean only visible nodes and edges. The production graph is the complete execution configuration: its agents and responsibilities, prompts, context, skills, tools, models, memory, and routing. It also includes deterministic components, meaning conventional code paths intended to behave the same way for the same input.
 
-APEX turns that uncertainty into a cycle: strategic direction sets the intended outcome and constraints; execution performs the work; reflection interprets what happened; and calibration decides what to keep or change before the next run. Every execution should therefore produce two outputs: the intended result and evidence about the system that produced it. That evidence includes failures, retries, human corrections, evaluation scores, cost, latency, and traces, meaning time-ordered records of decisions, tool calls, handoffs, and results.
+The boundary extends to evaluators, which are automated or human checks of the output or process; quality gates that decide whether work may continue; human checkpoints; and autonomy boundaries that limit what an agent may do without approval. The visual workflow is one representation of this larger system.
 
-Within APEX, the graph is broader than a diagram of nodes and edges. It is the complete production configuration: the arrangement of steps and connections; agent responsibilities; prompts, context, reusable skills, tools, models, and memory; routing; deterministic components, which are conventional code paths expected to behave the same way for the same input; and evaluators, meaning automated or human checks of output or process. It also includes quality gates, which stop work or promotion when criteria fail; human checkpoints; and autonomy boundaries, the limits on decisions or actions an agent may take without human approval.
+These choices encode a theory of the work itself. They decide which tasks belong together, where context is needed, when work should run in parallel, what deserves evaluation, and when a person should intervene. Before production, much of that theory is speculative. Once the graph runs, its parts also interact: a stronger model may raise cost without improving final acceptance, while another evaluator may catch errors but make cycle time unacceptable. A repeated agent failure may originate in its prompt, its tools, its position in the workflow, or the decision to create that agent at all.
 
-A first-party example shows why that wider unit of change matters. In [its engineering account of Claude’s Research system](https://www.anthropic.com/engineering/multi-agent-research-system), Anthropic, the AI company behind the Claude language models, describes a tool-testing agent that tried a poorly described external tool dozens of times, found failure-causing details, and rewrote the tool description. Anthropic reports that later agents using the new description completed their tasks 40% faster because they avoided most of those mistakes.
+This is why Graph Engineering cannot stop at design, build, and deploy. The graph has to be executed, observed, evaluated, and reshaped.
 
-That result is not independent validation of APEX. It does demonstrate the mechanism: observe a recurring failure, locate it in the production configuration, change the relevant component, and measure the next executions. The important change was neither a larger model nor a more elaborate graph. It was a better tool description.
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>A production graph contains the whole execution configuration, and every part expresses a provisional theory about how the work should be done.</p>
+</div>
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The graph includes every configuration choice that shapes execution, not only its visible topology. Each run should deliver work and produce evidence that can test those choices.</p></div>
+## Every run has a second output
 
-## Agents should diagnose, humans should authorize
+In APEX, each execution produces the intended result and evidence about the system that produced it. That evidence includes failures, retries, human corrections, evaluator scores, cost, latency, and execution traces, the time-ordered records of decisions, tool calls, handoffs, and outcomes.
 
-A Lead Agent, meaning a supervisory agent assigned to study system performance, can compare traces across hundreds or thousands of runs. It can find where failures cluster, which step causes repeated retries, where context is expensive but unused, which evaluator disagrees with final acceptance, and which tasks could run in parallel. That scale of observation is difficult for any human team to sustain.
+The outer loop moves through strategy, execution, reflection, and calibration. Reflection asks why the system produced this result. Calibration turns that diagnosis into a decision about what to retain or change for the next cycle. The evidence matters only when it can alter the production hypothesis.
 
-Its default authority should stop at the proposal. A Lead Agent can observe, diagnose, draft a change, and predict how the change should be tested. A named human owner should approve material changes to data access, models, routing, evaluators, quality criteria, or autonomy boundaries. The mechanism that performs the work should not be able to promote its own redesign without an independent decision.
+A Lead Agent, meaning a supervisory agent that can compare evidence across runs, can help find patterns at a scale no person should inspect manually. It might detect that one handoff causes most retries, expensive context is routinely unused, or an automated evaluator agrees poorly with final human acceptance. By default, its job should be to observe, diagnose, and propose. Reconfiguration is a separate authority.
 
-This does not require a narrow view of Human-in-the-Loop, or HITL. Mature HITL practice already includes intervention, correction, supervision, escalation, and learning, not only final approval. APEX makes one additional move explicit: expert judgment should update the production system instead of disappearing as a one-off correction.
+There is already a public example of this narrower mechanism. [Anthropic, the company behind Claude, reported](https://www.anthropic.com/engineering/multi-agent-research-system) that a tool-testing agent used a flawed external tool dozens of times, identified bugs and important details, and rewrote the tool description. Anthropic says future agents using the new description completed tasks 40 percent faster because they avoided most earlier mistakes. This is a first-party result rather than an independent benchmark, but it shows the trace-to-change path clearly: observe failure, diagnose its cause, change the configuration, and measure the next runs.
 
-That matters because quality in complex knowledge work cannot always be completed as a specification before execution begins. In [*Who Validates the Validators?* (2024)](https://arxiv.org/abs/2404.12272), a human-computer interaction research paper by Shreya Shankar and colleagues, participants refined their evaluation criteria while grading language-model outputs. The authors call this “criteria drift”: judging real outputs reveals distinctions that were missing from the original rubric.
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>The useful by-product of every execution is evidence that can support a specific change to the next version of the production system.</p>
+</div>
 
-When a domain expert says, “This isn’t good enough,” even though every automated check passed, Reflection should ask what the system failed to recognize. The answer may be a weak evaluator, missing context, poor examples, the wrong task decomposition, or the wrong strategy. The expert supplies judgment about what good means; agents supply the scale needed to find where the system repeatedly falls short.
+## Human judgment needs a change contract
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Agents can inspect execution at scale and propose improvements, but domain experts remain responsible for quality and named human owners remain responsible for consequential changes.</p></div>
+Human-in-the-Loop, or HITL, is an established approach in which people may supervise, correct, interrupt, escalate, or approve automated work. APEX does not dismiss that mature practice. Its additional claim is that expert judgment should improve the production system itself, rather than disappear into a one-off correction at the end of a run.
 
-## Improvement needs a change contract
+This matters because quality in complex knowledge work cannot be fully specified upfront. In the 2024 human-computer interaction paper [Who Validates the Validators?](https://arxiv.org/abs/2404.12272), researcher Shreya Shankar and her colleagues studied people evaluating outputs from large language models, the text-generating models used in many AI systems. Participants refined their evaluation criteria while grading and sometimes revisited earlier grades, a phenomenon the researchers called “criteria drift.” The expert who says an output is still wrong after it passes every automated check may therefore be supplying new information about what the system failed to measure. That judgment becomes operational when the team turns it into better context, examples, instructions, task boundaries, routing, or evaluation criteria for the next run.
 
-APEX should not pretend that feedback was invented for agents. Control theory studies how feedback keeps a changing system near a desired state. Continuous integration and delivery, or CI/CD, gives software teams versioned testing and promotion. Durable workflow engines preserve execution state and recovery across failures, while machine-learning operations, or MLOps, versions and monitors models, data, and deployments. Eval-driven development turns representative cases into repeatable tests.
+APEX is a synthesis, not a claim that continuous-improvement practice starts here. Workflow orchestration coordinates steps; evaluation-driven development tests behavior against criteria; MLOps manages changes to models and data in production; continuous integration and delivery versions, tests, and promotes software changes; and feedback control adjusts a system using observed performance. APEX brings these ideas around one object, the entire agentic production configuration, while treating domain-expert judgment as an input to its redesign.
 
-APEX borrows feedback, recovery, monitoring, testing, and promotion discipline from those practices. Its additional claim is a synthesis about the unit and source of improvement. The unit is the complete agentic production configuration, including human checkpoints and quality criteria. The source is both machine-scale observation and expert judgment, because the target itself may become clearer when people inspect real outputs.
+That redesign needs a change contract. Each proposal should preserve four things:
 
-That claim needs to be falsifiable. Every proposed change should carry a compact contract:
+- **Evidence:** the relevant trace segment, observed failure, and affected quality, cost, or latency measure.
+- **Hypothesis and graph diff:** the expected reason for improvement and a recorded comparison between the current and proposed configurations.
+- **Promotion rule:** replay against failure-derived cases and holdout cases, which are examples kept outside proposal design, with explicit quality, cost, and latency limits.
+- **Authority and recovery:** a named approver, a canary release to a limited share of work, an audit record, and a known rollback target.
 
-- **Evidence:** the relevant trace slice, the observed failure, its frequency, and the affected outcome.
-- **Hypothesis and graph diff:** the expected improvement and an exact record of what will change in prompts, context, tools, models, routing, evaluators, or authority.
-- **Evaluation and limits:** offline replay, meaning running the candidate version against saved cases before live use; failure-derived cases; holdout cases withheld from redesign to expose overfitting; an expert acceptance rule; and cost and latency ceilings.
-- **Authority:** the domain expert who owns the quality criterion and the named owner who may approve, reject, or stop the change.
-- **Promotion and reversal:** a canary release that sends a small share of live work to the candidate version, plus the previous version as an explicit rollback target.
+Material changes to data access, models, routing, evaluators, human checkpoints, or agent authority should require approval from that named owner. A proposal that improves an automated score but breaks the cost limit or fails expert review on holdout cases is rejected. The rejection still teaches the system because the evidence, decision, and boundary remain available for the next proposal.
 
-The calibration ritual can be short. At an agreed cadence or execution threshold, the owner reviews evidence collected within a fixed time and cost budget, decides whether to reject the proposal or run a canary, and records the version, rationale, result, and rollback condition. If a new evaluator fixes known failures but adds no improvement on holdout cases and breaches the latency ceiling, the transition is rejected. More configuration is not the same as more learning.
+A regular calibration review can then be simple without being casual: review the evidence, decide whether to reject, test, promote, or reverse a change, and record why. Changing prompts or routing without that record is configuration churn. Versioned changes tied to evidence and measured outcomes are organizational learning.
 
-The test is simple enough to state: a new graph version must improve expert acceptance, reduce avoidable intervention, or lower cost or latency while respecting the other agreed limits. If repeated cycles create more versions and complexity without a durable improvement on held-out work, the outer loop has failed for that system. Three questions keep the review honest: What evidence justifies the change? Who authorizes it? How is it reversed?
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>APEX becomes more than continuous-improvement language when each graph change is evidence-based, testable against unseen cases, approved by a named owner, measured within explicit limits, and reversible.</p></div>
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>Agents can propose improvements at scale, but domain experts define what good means and named owners govern every material, testable, and reversible change.</p>
+</div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In the film, Major William Cage, a soldier trapped in a time loop, repeats the same battle while retaining what each failed attempt taught him. The mapping to APEX is precise: repeated execution has value only when evidence from one cycle changes the system used in the next; repetition without retained learning is merely another failure.</p>
+<p>In the 2014 film, a soldier repeats the same battle while retaining what each failed attempt revealed. The mapping is narrow: the production graph is the current battle plan, while APEX is the mechanism that preserves evidence and changes the next attempt. In a real production system, unlike the film, those changes also need shared judgment, approval, and rollback.</p>
 </div>
 
 ## There is no final graph
 
-Imagine a production graph at version one. After real executions, version two changes routing, version three improves context, version four adds an evaluator, and version five removes an unnecessary agent. A later version may grant one agent more freedom, replace several deterministic steps with an agentic loop, or do the opposite when predictable code proves safer and cheaper.
+A graph at version one captures the organization's initial understanding of the work. Later versions may change routing, improve context, move evaluation earlier, remove an unnecessary agent, or replace an agentic step with deterministic code. Another version may move in the opposite direction when the evidence supports more autonomy.
 
-Those changes do not necessarily mean the earlier graph was badly engineered. They mean the organization learned, provided it retained the evidence, decision, result, and rollback path behind each version. If teams change prompts or routing without that record, the version history shows configuration churn rather than accumulated knowledge.
+Those changes do not prove that the earlier graph was badly engineered. They show that the organization learned. The claim becomes testable in the history: each version should retain the evidence that justified it, the person who authorized it, and the outcome that followed.
 
-There cannot be a final graph because the conditions around it do not stand still. Customers, strategy, models, tools, costs, products, and our understanding of quality all change. The best production system is therefore the one we can currently justify and safely improve, not the one we declare complete.
+Even a strong graph cannot become final because its environment keeps moving. Models, tools, costs, customer expectations, strategy, and the organization's own understanding of quality will change. There is only the best production system we currently know how to build, plus a disciplined way to discover the next one.
 
-Graph Engineering gives us the production system. APEX gives us the governed outer loop that helps humans and agents improve it together. Domain experts provide judgment, agents provide scale, and named owners preserve authority. You do not build the perfect graph. You continuously shape the best one you can currently defend.
+The future of agentic production will not be decided by who can draw the most elaborate graph. It will depend on who can improve a production graph without losing judgment or control. Graph Engineering gives us the system that does the work. APEX gives domain experts and agents a governed way to keep shaping it: experts provide judgment, agents provide scale, and both contribute to the system's next version.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The evolution of a governed graph can become a record of organizational learning. The goal is not permanent architecture, but continuous improvement that keeps evidence, expert judgment, authority, and reversibility intact.</p></div>
+<div class="chapter-tldr">
+<span class="chapter-tldr__label">In short</span>
+<p>The evolving graph is a record of accumulated learning: expert judgment sets direction, agent observation supplies scale, and governed change turns both into a better production system.</p>
+</div>
