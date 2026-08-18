@@ -3,6 +3,7 @@ title: "The graph is a hypothesis"
 description: "Graph Engineering builds the agentic production system. APEX is the outer loop that helps humans and agents improve it."
 tldr: "Graph Engineering builds the full production system that coordinates agents, tools, models, context, code, evaluation, and human intervention. APEX surrounds that graph with a governed improvement loop: each run produces evidence, agents help diagnose it, domain experts define what better means, and versioned changes are tested, approved, measured, and reversible."
 provenance: verified-by-author
+featuredImage: "/images/posts/the-graph-is-a-hypothesis.webp"
 permalink: /drafts/64bebaf6/
 layout: post.njk
 date: 2026-08-18
@@ -45,6 +46,31 @@ Every run should therefore produce two outputs. The first is the intended result
 A Lead Agent, meaning an agent assigned to compare runs and propose system changes, can look across those records for patterns. It can identify where failures concentrate, which step causes most retries, where expensive context adds little value, or where an automated evaluator disagrees with final expert acceptance. Its default role should be **Observe → Diagnose → Propose**, not silently rewrite the live system.
 
 A public example shows the mechanism at a smaller scale. [Anthropic, the company behind the Claude AI assistant, reports](https://www.anthropic.com/engineering/multi-agent-research-system) that a tool-testing agent exercised a flawed Model Context Protocol tool dozens of times. Model Context Protocol, or MCP, is a standard for connecting AI applications to external tools and data. The agent found bugs and important details, then rewrote the tool description. Anthropic says later agents avoided most of the earlier mistakes, and it reported a 40 percent decrease in task-completion time for agents using the revised description. This is Anthropic's first-party account, not an independent benchmark, but it demonstrates the path from repeated trace evidence to a measured configuration change.
+
+<figure class="fig-band article-diagram" data-diagram-id="apex-outer-cycle">
+<figcaption class="fig-cap">Fig. — APEX places a second cycle around execution.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 560" role="img" aria-labelledby="ad-apex-outer-cycle-title ad-apex-outer-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-apex-outer-cycle-title">APEX outer improvement cycle</title>
+<desc id="ad-apex-outer-cycle-desc">A vertical feedback cycle with Strategic, Execution, Reflection, and Calibration stages; Calibration loops to the next cycle.</desc>
+<defs><marker id="ad-apex-outer-cycle-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="560" fill="#000000"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-apex-outer-cycle">
+<rect x="180" y="30" width="400" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="77" text-anchor="middle" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700">Strategic</text>
+<line x1="380" y1="106" x2="380" y2="150" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<rect x="180" y="150" width="400" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="197" text-anchor="middle" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700">Execution</text>
+<line x1="380" y1="226" x2="380" y2="270" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<rect x="180" y="270" width="400" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="317" text-anchor="middle" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700">Reflection</text>
+<line x1="380" y1="346" x2="380" y2="390" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<rect x="180" y="390" width="400" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="380" y="437" text-anchor="middle" fill="#DCE7DE" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700">Calibration</text>
+<path d="M580 428 H680 V68 H580" fill="none" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></path>
+<text x="660" y="260" text-anchor="end" fill="#9EB8A4" font-family="JetBrains Mono, monospace" font-size="32">next cycle</text>
+</g>
+</svg>
+</figure>
 
 <div class="chapter-tldr">
 <span class="chapter-tldr__label">In short</span>
@@ -96,8 +122,9 @@ The practical goal is to turn that new judgment into better context, instruction
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In the film, Major William Cage repeatedly relives the same battle and changes his actions using what each failed cycle reveals. The mapping to APEX is narrow: another run matters only when evidence from the previous one changes the next production configuration; repetition without diagnosis, authority, and a recorded change is merely another loop.</p>
 </div>
+
+In the film, Major William Cage repeatedly relives the same battle and changes his actions using what each failed cycle reveals. The mapping to APEX is narrow: another run matters only when evidence from the previous one changes the next production configuration; repetition without diagnosis, authority, and a recorded change is merely another loop.
 
 ## There is no final graph
 
