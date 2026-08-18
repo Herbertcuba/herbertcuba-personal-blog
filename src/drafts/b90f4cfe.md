@@ -2,6 +2,7 @@
 title: "Who Gets to Authorize Attempt 651?"
 excerpt: "Claude’s mathematical result shows that organizations can now buy far more persistence than any person can supply. The harder question is which problems deserve it, what evidence counts, and when the run must end."
 tldr: "Anthropic reports that an unreleased Claude research system advanced a bound related to the Riemann hypothesis after 650 unsuccessful ideas and a large, delegated search. The case does not prove that retries caused the result, but it shows that persistence can be funded as a metered input. Leaders now need to authorize bounded questions, reserve independent verification capacity, count the full cost of search, and enforce stopping rules before another attempt begins."
+featuredImage: "/images/posts/who-gets-to-authorize-attempt-651.webp"
 permalink: /drafts/b90f4cfe/
 layout: post.njk
 date: 2026-08-18
@@ -61,6 +62,21 @@ Other reviewers enter when the scope creates a concrete reason for them. Sensiti
 Applied retrospectively, the Claude case fills only part of this record. The public sources give us a theorem, several validation layers, 31 million output tokens across both sessions, and the later session’s time and subagent counts. They do not disclose a full cost limit, planned reviewer capacity, the strongest competing use of those resources, or the precommitted rule for ending or renewing the search. The result may still be important. It simply cannot serve as a complete investment template.
 
 Failures should survive closure as an auditable record of rejected hypotheses, tests, and proof routes. If a stopped run produces an interesting side result, that result can support a new question; it should not silently extend the old authorization. This is how an organization gains from machine persistence without giving persistence authority over its own purpose.
+
+<figure class="fig-band article-diagram" data-diagram-id="authorization-record">
+<figcaption class="fig-cap">Fig. — Six lines turn persistent search into a bounded authorization record.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 480" role="img" aria-labelledby="ad-authorization-record-title ad-authorization-record-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-authorization-record-title">Six lines of persistent-search authorization</title>
+<desc id="ad-authorization-record-desc">A six-field record for authorizing a persistent AI search: question and owner, acceptance test, resource envelope, best alternative, renewal evidence, and closure.</desc>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="480" fill="#000000"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-question-owner"><rect x="40" y="50" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="145" y="118" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Question</text><text x="145" y="150" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">and owner</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-acceptance-test"><rect x="275" y="50" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="380" y="118" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Acceptance</text><text x="380" y="150" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">test</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-resource-envelope"><rect x="510" y="50" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="615" y="118" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Resource</text><text x="615" y="150" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">envelope</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-best-alternative"><rect x="40" y="275" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="145" y="343" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Best</text><text x="145" y="375" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">alternative</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-renewal-evidence"><rect x="275" y="275" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="380" y="343" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Renewal</text><text x="380" y="375" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">evidence</text></g>
+<g class="article-diagram__claim" data-claim-id="claim-closure"><rect x="510" y="275" width="210" height="155" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="615" y="360" text-anchor="middle" fill="#DCE7DE" font-size="32" font-weight="700">Closure</text></g>
+</svg>
+</figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Authorize persistent search through a fixed question, an independent evidence test, a staged resource limit, a named renewal decision, and a technically enforced close. The system may propose another attempt, but it must not grant itself one.</p></div>
 
