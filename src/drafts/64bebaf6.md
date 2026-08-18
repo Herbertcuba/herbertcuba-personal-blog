@@ -4,6 +4,7 @@ description: "Graph Engineering builds the agentic production system. APEX creat
 excerpt: "The first production graph is not the answer. It is a testable theory of the work, and every real execution should help humans and agents improve the next version."
 tldr: "Graph Engineering builds the agentic production system, but the first graph is only a hypothesis about how work should happen. APEX adds an outer loop that turns traces, evaluations, failures, costs, and expert judgment into governed changes to the full production configuration, so humans and agents can improve it together without pretending there is a final graph."
 provenance: verified-by-author
+featuredImage: "/images/posts/the-graph-is-a-hypothesis.webp"
 permalink: /drafts/64bebaf6/
 layout: post.njk
 date: 2026-08-18
@@ -45,6 +46,17 @@ Most of these parts already have good engineering disciplines. Version control a
 
 That contribution still has to prove itself. If successive graph versions do not improve expert acceptance without unexplained growth in cost, latency, failures, or review effort, APEX has added ceremony rather than learning.
 
+<figure class="fig-band article-diagram" data-diagram-id="apex-improvement-cycle">
+<figcaption class="fig-cap">Fig. — the APEX outer improvement loop.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 500" role="img" aria-labelledby="ad-apex-improvement-cycle-title ad-apex-improvement-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-apex-improvement-cycle-title">The APEX outer improvement loop</title>
+<desc id="ad-apex-improvement-cycle-desc">Strategic intent enters the execution graph. Execution produces evidence for reflection, reflection leads to calibration, and calibration begins the next cycle.</desc>
+<defs><marker id="ad-apex-improvement-cycle-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="500" fill="#000000"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-apex-evidence-loop"><rect x="270" y="30" width="220" height="62" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="380" y="68" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">STRATEGIC INTENT</text><rect x="532" y="190" width="160" height="62" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="612" y="228" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">EVIDENCE</text><rect x="418" y="386" width="180" height="62" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="508" y="424" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">REFLECTION</text><rect x="162" y="386" width="180" height="62" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="252" y="424" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">CALIBRATION</text><rect x="68" y="190" width="160" height="62" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect><text x="148" y="228" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">NEXT CYCLE</text><rect x="270" y="190" width="220" height="86" fill="#000000" stroke="#00A03A" stroke-width="2"></rect><text x="380" y="226" text-anchor="middle" fill="#DCE7DE" font-size="20" font-weight="700">EXECUTION</text><text x="380" y="252" text-anchor="middle" fill="#9EB8A4" font-size="16">GRAPH</text><line x1="380" y1="92" x2="380" y2="190" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line><line x1="490" y1="233" x2="532" y2="223" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line><line x1="588" y1="252" x2="540" y2="386" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line><line x1="418" y1="417" x2="342" y2="417" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line><line x1="162" y1="417" x2="148" y2="252" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line><line x1="228" y1="211" x2="270" y2="116" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-improvement-cycle-arrow)"></line></g>
+</svg>
+</figure>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>APEX treats each run as both production and evidence. Its added value is the decision loop that can reshape the whole execution configuration, including its quality criteria, rather than merely release another component.</p></div>
 
 ## Agents can diagnose the graph, but not own quality
@@ -85,8 +97,9 @@ This contract does not prove APEX. It makes the idea testable. A real demonstrat
 <div class="scifi">
 <span class="scifi__label">Meanwhile in sci-fi</span>
 <p class="scifi__film">Edge of Tomorrow (2014)</p>
-<p>In this science-fiction film, Major William Cage repeatedly relives the same battle and changes his actions using what each attempt reveals. The mapping to APEX is precise: repetition matters only when evidence from one execution changes the configuration of the next, and the human judgment around the loop still determines which lesson is worth acting on.</p>
 </div>
+
+In this science-fiction film, Major William Cage repeatedly relives the same battle and changes his actions using what each attempt reveals. The mapping to APEX is precise: repetition matters only when evidence from one execution changes the configuration of the next, and the human judgment around the loop still determines which lesson is worth acting on.
 
 ## There is no final graph
 
