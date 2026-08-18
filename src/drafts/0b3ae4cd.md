@@ -1,6 +1,7 @@
 ---
 title: "The AI-First Company Starts at the Bottom"
 description: "An organizational design that puts governed agents beneath repeatable work and people where judgment, learning, and accountability matter."
+featuredImage: "/images/posts/the-ai-first-company-starts-at-the-bottom.webp"
 tldr: "An AI-first company is built from workflows upward: governed agents carry repeatable execution while people set intent, handle exceptions, develop expertise, and remain accountable. Funding, authority, ownership, and reporting lines should move only after the model proves its outcomes, total cost, control, recovery, and transfer across materially different workflows."
 provenance: verified-by-author
 anthem: true
@@ -106,7 +107,7 @@ Workplace-learning researcher Michael Eraut's 2004 peer-reviewed article, [“In
 Arvind KC is Chief People Officer at [OpenAI](https://openai.com/about/), which describes itself as an AI research and deployment company. In the public LinkedIn post captured below, he writes, “It has been a few months for me at OpenAI, so I thought I'd share a few reflections,” and presents ten numbered reflections. The artifact contributes evidence of a practice rather than proof of operating performance: a people leader records early organizational observations so they can be examined instead of left as private intuition.
 
 <figure class="anthem-image">
-  <img src="./arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's public LinkedIn post listing ten reflections from his first months at OpenAI" style="max-width:100%;height:auto">
+  <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's public LinkedIn post listing ten reflections from his first months at OpenAI" style="max-width:100%;height:auto">
   <figcaption>Arvind KC's ten reflections from his first months at OpenAI. Source: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">public LinkedIn post</a>.</figcaption>
 </figure>
 
