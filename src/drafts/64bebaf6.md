@@ -4,6 +4,7 @@ date: 2026-08-18
 excerpt: "Agentic production needs structure, but its first graph is only our best current guess about how the work should happen. APEX turns execution into evidence for shaping the next version."
 tldr: "Graph Engineering builds the full agentic production system. APEX is the outer improvement loop that uses execution evidence, agent analysis, and domain-expert judgment to reshape that system through versioned and governed changes. The aim is not a final graph or a human-free loop, but a production system that keeps learning without authorizing itself."
 layout: post.njk
+featuredImage: "/images/posts/the-graph-is-a-hypothesis.webp"
 tags:
   - agentic-engineering
   - artificial-intelligence
@@ -41,6 +42,26 @@ Each execution therefore produces two outputs. The first is the intended deliver
 This makes the graph broader than nodes and edges. Its real configuration includes how agents and steps connect, their responsibilities, prompts, context, skills, tools, models, memory, routing, and evaluators. The configuration also covers deterministic components, which are conventional code paths intended to follow predefined behavior, as well as quality gates, human checkpoints, and limits on what an agent may change or approve.
 
 Once the object is defined this way, Graph Engineering becomes continuous engineering of the production system itself. The visible workflow is one representation. APEX is the process that asks what should change, why, under whose authority, and whether the change worked.
+
+<figure class="fig-band article-diagram" data-diagram-id="apex-outer-loop">
+<figcaption class="fig-cap">Fig. — APEX turns Strategic, Execution, Reflection, and Calibration into a recurring outer loop.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 760 420" role="img" aria-labelledby="ad-apex-outer-loop-title ad-apex-outer-loop-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-apex-outer-loop-title">The APEX outer loop</title>
+<desc id="ad-apex-outer-loop-desc">A four-stage clockwise loop from Strategic to Execution to Reflection to Calibration and back to the next cycle.</desc>
+<defs><marker id="ad-apex-outer-loop-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="760" height="420" fill="#000000"></rect><path d="M40 40 H720 M40 380 H720" stroke="#0A1A0F" stroke-width="2"></path></g>
+<g class="article-diagram__claim" data-claim-id="claim-apex-outer-loop">
+<rect x="265" y="40" width="230" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="380" y="87" text-anchor="middle" fill="#DCE7DE" font-size="26" font-weight="700">Strategic</text>
+<line x1="495" y1="78" x2="552" y2="166" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-loop-arrow)"></line>
+<rect x="510" y="172" width="180" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="600" y="219" text-anchor="middle" fill="#DCE7DE" font-size="26" font-weight="700">Execution</text>
+<line x1="552" y1="248" x2="495" y2="336" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-loop-arrow)"></line>
+<rect x="265" y="304" width="230" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="380" y="351" text-anchor="middle" fill="#DCE7DE" font-size="26" font-weight="700">Reflection</text>
+<line x1="265" y1="342" x2="208" y2="254" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-loop-arrow)"></line>
+<rect x="70" y="172" width="180" height="76" fill="#0A1A0F" stroke="#00E653" stroke-width="3"></rect><text x="160" y="219" text-anchor="middle" fill="#DCE7DE" font-size="26" font-weight="700">Calibration</text>
+<line x1="208" y1="172" x2="265" y2="84" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-loop-arrow)"></line>
+</g>
+</svg>
+</figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every run produces a deliverable and evidence about the system that produced it. APEX converts that evidence into governed changes across the full execution configuration, not merely the visible workflow.</p></div>
 
