@@ -41,6 +41,33 @@ The trace is part of the governed system, so it cannot be treated as casual obse
 
 This is where agents add real leverage. They can extend the scale of observation and shorten diagnosis. They still do not get to define what counts as good, approve their own proposal, or promote it into production.
 
+<figure class="fig-band article-diagram" data-diagram-id="apex-outer-cycle">
+<figcaption class="fig-cap">Fig. — APEX’s outer loop around the current graph.</figcaption>
+<svg width="100%" height="auto" viewBox="0 0 600 420" role="img" aria-labelledby="ad-apex-outer-cycle-title ad-apex-outer-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="ad-apex-outer-cycle-title">The APEX outer improvement cycle</title>
+<desc id="ad-apex-outer-cycle-desc">Strategy, Execution, Reflection, and Calibration form a cycle around the current graph. Execution runs the graph while the other stages interpret evidence and change the next configuration.</desc>
+<defs><marker id="ad-apex-outer-cycle-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#00E653"></path></marker></defs>
+<g class="article-diagram__decoration"><rect x="0" y="0" width="600" height="420" fill="#000000"></rect><rect x="18" y="18" width="564" height="384" fill="none" stroke="#0A1A0F" stroke-width="2"></rect></g>
+<g class="article-diagram__claim" data-claim-id="claim-apex-outer-cycle">
+<line x1="390" y1="60" x2="445" y2="154" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<line x1="450" y1="240" x2="405" y2="325" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<line x1="195" y1="355" x2="190" y2="250" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<line x1="190" y1="170" x2="210" y2="90" stroke="#00E653" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+<rect x="210" y="25" width="180" height="70" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="300" y="68" text-anchor="middle" fill="#DCE7DE" font-size="28" font-weight="700">Strategy</text>
+<rect x="450" y="170" width="150" height="70" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="525" y="213" text-anchor="middle" fill="#DCE7DE" font-size="28" font-weight="700">Execution</text>
+<rect x="195" y="320" width="210" height="70" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="300" y="363" text-anchor="middle" fill="#DCE7DE" font-size="28" font-weight="700">Reflection</text>
+<rect x="0" y="170" width="190" height="70" fill="#0A1A0F" stroke="#00E653" stroke-width="2"></rect>
+<text x="95" y="213" text-anchor="middle" fill="#DCE7DE" font-size="28" font-weight="700">Calibration</text>
+<rect x="195" y="160" width="240" height="90" fill="#000000" stroke="#00A03A" stroke-width="3"></rect>
+<text x="315" y="215" text-anchor="middle" fill="#DCE7DE" font-size="28" font-weight="700">Current graph</text>
+<line x1="450" y1="205" x2="440" y2="205" stroke="#00A03A" stroke-width="3" marker-end="url(#ad-apex-outer-cycle-arrow)"></line>
+</g>
+</svg>
+</figure>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Every execution should leave trustworthy evidence about how the system behaved. Agents can analyze that evidence and propose graph changes; trace access, quality definitions, and promotion remain governed separately.</p></div>
 
 ## A graph change needs a contract
