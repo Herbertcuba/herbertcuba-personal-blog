@@ -7,12 +7,6 @@ layout: post.njk
 theme: strategy-leadership
 tags: ["ai", "culture", "generative-ai", "digital-singularity-shift"]
 anthem: true
-tldr:
-  - "AI models in a loop converge to polished, empty sameness. Randomness does not break the drift."
-  - "Culture has been here before: the Mainstream Era gave us one shared sameness. The feed bubble era fragmented it. AI is about to fuse them into something worse."
-  - "The Me-Verse promises hyper-personalization. What we have instead is hyper-production, and it tastes like sameness."
-  - "The sameness phase we are entering looks like AI slop, but it is really production-efficiency mode doing what it was told to do."
-  - "Differentiation deserves at least the same attention as production, today, as a parallel discipline from the first prompt and brief."
 ---
 
 You have seen it. Maybe today. An email that reads like the last three. A LinkedIn post using the same phrasing as the one above it. A pitch deck where every slide says "moat" and "delve."

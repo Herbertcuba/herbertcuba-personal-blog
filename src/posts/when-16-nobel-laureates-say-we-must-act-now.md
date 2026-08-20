@@ -6,12 +6,6 @@ featuredImage: "/images/posts/nobel-laureates-act-now.webp"
 layout: post.njk
 tags: ["ai", "strategy", "future-of-work", "economics", "policy"]
 anthem: true
-tldr:
-  - "On July 13, 2026, 226 economists and AI leaders, including 16 Nobel laureates, signed a letter titled We Must Act Now. It warns of economic transformation larger than the Industrial Revolution, unfolding in a fraction of the time."
-  - "The signatories include the people building the technology. Eric Schmidt, Reid Hoffman, OpenAI's CEO, Anthropic's co-founder, Google's Chief Scientist. This is not outsiders warning about insiders. This is insiders warning about themselves."
-  - "METR's data shows AI task capability doubling every three months. The Industrial Revolution took 80 years. The AI transformation compresses comparable change into months. This is not a metaphor. It is a measurement."
-  - "The letter is four sentences and 88 words. Its brevity is the signal. When the world's leading economists cannot find nuance worth adding, the nuance is gone."
-  - "The question is not whether the curve is real. The question is whether we build institutional muscle for a transformation beyond anything in human history, or keep treating it as a productivity tool story. The moves are concrete: governance, workforce mapping, vendor risk, board literacy. The cadence is quarterly, not annual."
 ---
 
 On July 13, 2026, something quietly unprecedented happened. Over 200 economists and technology leaders signed the same letter. It was published by Stanford's Digital Economy Lab under the title "[We Must Act Now: A Statement on AI's Transformation of the Economy](https://www.wemustactnow.ai/)."

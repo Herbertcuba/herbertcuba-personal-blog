@@ -6,11 +6,6 @@ featuredImage: "/images/posts/orchestration-new-leadership.webp"
 layout: post.njk
 tags: ["ai", "strategy", "leadership", "agents"]
 anthem: true
-tldr:
-  - "Leadership theory assumes your team is human. In 2026, it isn't."
-  - "Agents aren't tools. They're participants. The old management toolkit doesn't cover them."
-  - "Orchestration (designing the system, not supervising the people) is the new core competence."
-  - "Organizations will get smaller and more senior. The pyramid flattens."
 ---
 
 Leadership theory has spent a hundred years refining how to lead people. Build trust. Set direction. Manage conflict. Develop talent. The entire framework assumes your team is made of humans.

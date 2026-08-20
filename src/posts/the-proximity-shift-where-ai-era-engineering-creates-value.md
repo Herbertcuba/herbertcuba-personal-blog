@@ -6,7 +6,6 @@ layout: post.njk
 toc: true
 featuredImage: "/images/posts/the-proximity-shift-why-the-forward-deployed-engineer-is-the-job-of-the-ai-era.webp"
 provenance: verified-by-author
-tldr: "As AI lowers the cost of implementation, valuable engineering work moves toward problem discovery, domain knowledge, integration, evaluation, and continuous improvement. The forward-deployed engineer, who builds beside the people doing the work, is a strong candidate for the defining engineering role of the AI era."
 ---
 
 A small software problem used to die in a budget meeting. If solving it required six engineers and six months, the value had to be large enough to justify the team. AI coding tools are changing that threshold, which means thousands of narrower problems may suddenly become worth solving.

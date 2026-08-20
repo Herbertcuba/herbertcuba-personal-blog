@@ -19,7 +19,7 @@ I tried to read Anthropic's missing signature on a July 24 open-weights letter a
 
 I think the AI industry is replaying the late 1990s fight over open source, with safety taking the place once held by fear of Linux. The parallel works until a downloaded model carries a dangerous capability that its developer cannot force every owner to return.
 
-<div class="article-tldr"><span class="article-tldr__label">In short</span><p>Microsoft's warnings about Linux tracked a real threat to its server business. Anthropic now occupies a similar structural position around closed models, although its safety case is stronger. Policy should test what a model can do and set a higher release bar when copies can spread beyond the developer's control.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Microsoft's warnings about Linux tracked a real threat to its server business. Anthropic now occupies a similar structural position around closed models, although its safety case is stronger. Policy should test what a model can do and set a higher release bar when copies can spread beyond the developer's control.</p></div>
 
 ## Anthropic chose a different line
 

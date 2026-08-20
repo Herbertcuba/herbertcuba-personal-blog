@@ -2,7 +2,6 @@
 title: "The Production Graph Is a Versioned Hypothesis"
 date: "2026-08-19"
 excerpt: "Agentic production needs structure, but its first graph is only our best current guess about how the work should happen. APEX turns execution into evidence for shaping the next version."
-tldr: "Graph Engineering builds the full agentic production system. APEX is the outer improvement loop that uses execution evidence, agent analysis, and domain-expert judgment to reshape that system through versioned and governed changes. The aim is not a final graph or a human-free loop, but a production system that keeps learning without authorizing itself."
 layout: post.njk
 featuredImage: "/images/posts/the-graph-is-a-hypothesis.webp"
 tags:

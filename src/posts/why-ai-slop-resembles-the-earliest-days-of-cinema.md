@@ -2,7 +2,6 @@
 title: "Why AI Slop Resembles the Earliest Days of Cinema"
 date: "2026-08-11"
 excerpt: "AI slop does not prove that a new creative medium has failed; it shows that we are still asking AI to imitate forms humans already make better."
-tldr: "AI slop is the imitation-heavy phase of a young medium, much as early film borrowed from theatre and recorded music first copied live performance. That hopeful reading must still earn its survival: artists need to create valued experiences that depend on AI, while source creators need agreed terms, promised payment, and a practical way to challenge misuse."
 featuredImage: "/images/posts/it-is-1895-go-make-the-cut.webp"
 layout: post.njk
 tags:
