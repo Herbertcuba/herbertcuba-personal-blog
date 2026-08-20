@@ -676,6 +676,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .article-diagram[data-diagram-id="topology-compare"] > svg{max-width:440px;}
 .article-diagram[data-diagram-id="ownership-layers"] > svg{max-width:600px;}
 .article-diagram[data-diagram-id="topology-selection"] > svg{max-width:500px;}
+.article-diagram[data-diagram-id="governed-workflow-boundary"] > svg{max-width:420px;}
 
 /* Callout box — pull a key idea out of the flow */
 .callout{
