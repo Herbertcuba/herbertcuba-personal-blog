@@ -1,13 +1,12 @@
 ---
-title: "Why the Forward-Deployed Engineer Is the Job of the AI Era"
-date: 2026-08-19
+title: "The Proximity Shift: Where AI-Era Engineering Creates Value"
+date: "2026-08-20"
 excerpt: "AI can make code cheaper without making engineers less valuable. The opportunity moves to people who can get close to a real problem, learn what good looks like, and turn that knowledge into a working system."
 layout: post.njk
 toc: true
 featuredImage: "/images/posts/the-proximity-shift-why-the-forward-deployed-engineer-is-the-job-of-the-ai-era.webp"
 provenance: verified-by-author
 tldr: "As AI lowers the cost of implementation, valuable engineering work moves toward problem discovery, domain knowledge, integration, evaluation, and continuous improvement. The forward-deployed engineer, who builds beside the people doing the work, is a strong candidate for the defining engineering role of the AI era."
-permalink: /drafts/d621a905/
 ---
 
 A small software problem used to die in a budget meeting. If solving it required six engineers and six months, the value had to be large enough to justify the team. AI coding tools are changing that threshold, which means thousands of narrower problems may suddenly become worth solving.
