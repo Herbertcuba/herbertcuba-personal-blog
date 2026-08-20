@@ -5,6 +5,7 @@ tldr: "An AI-first company moves repeatable workflow execution onto a governed a
 provenance: verified-by-author
 anthem: true
 image: "/images/posts/architecture-ai-first-company.webp"
+featuredImage: "/images/posts/architecture-ai-first-company.webp"
 image_alt: "Two contrasting organizational triangles showing the retrofit trap and an AI-first company"
 permalink: /drafts/0b3ae4cd/
 layout: post.njk
@@ -133,7 +134,7 @@ Moving people out of routine handling creates a less obvious risk: judgment can 
 That contact can come from replaying recorded cases, reviewing near misses, tracing why an agent escalated, and revising the rules that shaped its options. These are not status meetings. They are how people maintain practical skill while turning individual observations into changes the whole workflow can use.
 
 <figure class="source-artifact">
-  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/"><img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" loading="lazy"></a>
+  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/"><img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI"></a>
   <figcaption>Arvind KC, Chief People Officer at OpenAI, the AI company behind ChatGPT, used this public LinkedIn post to record ten reflections from his first months at the company. The supplied screenshot documents those written reflections; it does not establish OpenAI's operating model.</figcaption>
 </figure>
 
