@@ -1,168 +1,203 @@
 ---
-title: "Turn the Company Upside Down: The Architecture of an AI-First Organization"
-excerpt: "Most companies are attaching agents to an organization built for human coordination. The deeper move is to redesign the flow of work so that automation carries the volume while people concentrate judgment where the company can truly commit itself."
-tldr: "An AI-first company rests on a broad base of agent-run workflows and a concentrated layer of human judgment. Leaders should define which commitments remain human, require operational and regulatory evidence from every workflow, preserve the path by which people develop expertise, and change budgets or reporting lines only after a governed portfolio proves the model."
+layout: post.njk
+title: "The AI-first company has the opposite shape"
+excerpt: "Most organizations are placing agents beneath the company they already have. The deeper opportunity is to redesign work so agents carry repeatable execution while people concentrate judgment, responsibility, and change."
+tldr: "An AI-first company starts from outcomes, assigns repeatable workflow execution to agents inside deterministic controls, scales authority with consequence, protects the development of human expertise, and changes its formal structure only after live operations prove quality, reversibility, cost, and accountability."
+image: "/images/posts/architecture-ai-first-company.webp"
+imageAlt: "Two organizational pyramids showing the retrofit trap and an AI-first company"
 provenance: verified-by-author
 anthem: true
-image: "/images/posts/architecture-ai-first-company.webp"
-image_alt: "Two triangular operating models showing the retrofit trap and an AI-first organization"
+tags:
+  - artificial intelligence
+  - operating model
+  - organizational design
 permalink: /drafts/0b3ae4cd/
-layout: post.njk
 date: 2026-08-20
 ---
 
-AI use has spread faster than organizational design. The [2025 AI Index](https://hai.stanford.edu/ai-index/2025-ai-index-report), an annual report from Stanford University's Institute for Human-Centered AI, found that 78% of organizations reported using AI in 2024, up from 55% the year before. That jump shows adoption. It does not show that companies have learned how to organize around the technology.
+AI adoption is moving faster than most company designs. The [2025 AI Index from Stanford University's Institute for Human-Centered AI](https://hai.stanford.edu/ai-index/2025-ai-index-report), an annual report on the state of artificial intelligence, found that 78% of surveyed organizations reported using AI in 2024, up from 55% the year before. The result confirms that tools are spreading while leaving open whether workflows, authority, or accountability have moved with them.
 
-<figure class="anthem-stat" aria-labelledby="ai-adoption-caption">
-  <div class="anthem-stat__comparison">
-    <div class="anthem-stat__item"><strong>55%</strong><span>2023</span></div>
-    <div class="anthem-stat__arrow" aria-hidden="true">→</div>
-    <div class="anthem-stat__item"><strong>78%</strong><span>2024</span></div>
-  </div>
-  <figcaption id="ai-adoption-caption">Organizations reporting AI use. Source: Stanford University, 2025 AI Index.</figcaption>
+<figure class="anthem-stat" aria-label="Seventy-eight percent of surveyed organizations reported using AI in 2024">
+  <div class="anthem-stat__value">78%</div>
+  <p class="anthem-stat__statement">of surveyed organizations reported using AI in 2024</p>
+  <figcaption>Up from 55% in 2023. Source: <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">Stanford HAI, 2025 AI Index</a>.</figcaption>
 </figure>
 
-An AI agent is software that can interpret a goal, choose steps, use tools, and act with limited supervision. A workflow is the full route from a trigger, such as a customer request, to a business outcome. When a company places an agent inside one old task but leaves people to route, check, and reconnect the surrounding work, it gains speed without changing its operating logic.
+That gap matters because an AI agent is more than a chat interface. It is software that can interpret a goal, choose among actions, use tools, and continue with limited supervision. A workflow is the whole route from a trigger to a business outcome, including data, rules, handoffs, exceptions, and proof of what happened. [Anthropic's engineering guide to agents](https://www.anthropic.com/engineering/building-effective-agents), published by the AI company in 2024, makes a useful distinction between model-directed agents and workflows that follow predefined paths.
 
-I think an AI-first company has a different shape. Agent-run workflows form the broad operating base. People set direction, decide where the company may commit itself, handle genuine ambiguity, and remain accountable for the result. The organization chart should follow that allocation of work only after the evidence is strong enough.
+An AI-first company redesigns that whole route. Repeatable execution moves into governed systems, while people set intent, judge ambiguity, change policy, and remain answerable for consequences. A simple test exposes the difference: if removing the agent tomorrow would leave the workflow and its decision rights essentially unchanged, the company has added a tool rather than changed its operating model.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>AI adoption is already common, but adoption is not an operating model. The strategic question is how to redistribute execution and judgment across the whole workflow.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>AI use is already widespread, but an AI-first operating model begins only when the workflow and its decision rights change.</p></div>
 
-## Turn the work pyramid over
+## The work has to change shape
 
-The retrofit trap begins with the organization as it already exists. People own workflows, pass cases between functions, and coordinate exceptions. Agents enter at the narrow bottom as helpers for isolated steps, so the human coordination layer remains the real system of work.
+Most organizations place agents at the narrow end of an existing process. People still carry work across functions, reconcile systems, request approvals, and recover failures. The agent drafts a message, summarizes a document, or recommends a next step. That can save time, but the human organization remains the workflow engine.
 
-An AI-first design reverses that geometry. Agents operate the repeatable path across a broad base of workflows, while people add judgment at the narrower points where context, values, or accountability matter. This is a picture of work allocation, not a prediction that every company will employ only a small number of people.
+The AI-first shape reverses the load: agents and ordinary software carry the broad base of repeatable work. Human attention enters where interpretation becomes uncertain, consequences rise, or the rules themselves need to change.
 
-<figure class="anthem-diagram" aria-labelledby="operating-shapes-caption">
-  <svg viewBox="0 0 760 340" role="img" aria-labelledby="operating-shapes-title operating-shapes-desc" width="100%">
-    <title id="operating-shapes-title">The retrofit trap compared with an AI-first company</title>
-    <desc id="operating-shapes-desc">A downward-pointing triangle places humans across the broad top and AI agents at the bottom tip. An upward-pointing triangle places agents across the broad bottom and human judgment at the top point.</desc>
-    <text x="185" y="28" text-anchor="middle" font-size="20" font-weight="700">Retrofit trap</text>
-    <polygon points="35,55 335,55 185,285" fill="#eef2ff" stroke="#334155" stroke-width="3" />
-    <text x="185" y="92" text-anchor="middle" font-size="16" font-weight="700">Humans working in workflows</text>
-    <text x="185" y="128" text-anchor="middle" font-size="14">routing · checking · coordinating</text>
-    <text x="185" y="247" text-anchor="middle" font-size="15" font-weight="700">AI agents</text>
-    <text x="575" y="28" text-anchor="middle" font-size="20" font-weight="700">AI-first company</text>
-    <polygon points="425,285 725,285 575,55" fill="#ecfdf5" stroke="#334155" stroke-width="3" />
-    <text x="575" y="91" text-anchor="middle" font-size="15" font-weight="700">Human judgment</text>
-    <text x="575" y="218" text-anchor="middle" font-size="16" font-weight="700">Agents working in workflows</text>
-    <text x="575" y="250" text-anchor="middle" font-size="14">executing · monitoring · escalating</text>
+<figure class="work-shape">
+  <svg viewBox="0 0 1000 430" role="img" aria-labelledby="work-shape-title work-shape-desc" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+    <title id="work-shape-title">The retrofit trap compared with an AI-first company</title>
+    <desc id="work-shape-desc">A downward-pointing triangle shows humans carrying workflows above a small layer of AI assistance. An upward-pointing triangle shows agents carrying repeatable workflows at the base and human judgment at the top.</desc>
+    <rect x="0" y="0" width="1000" height="430" rx="24" fill="#f8fafc"/>
+    <text x="250" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">RETROFIT TRAP</text>
+    <polygon points="65,85 435,85 250,350" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <line x1="130" y1="180" x2="370" y2="180" stroke="#2563eb" stroke-width="2"/>
+    <text x="250" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="650" fill="#0f172a">Humans carry workflows</text>
+    <text x="250" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#334155">handoffs, approvals, recovery</text>
+    <text x="250" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="650" fill="#0f172a">AI assists tasks</text>
+    <text x="750" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">AI-FIRST COMPANY</text>
+    <polygon points="565,350 935,350 750,85" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <line x1="685" y1="180" x2="815" y2="180" stroke="#15803d" stroke-width="2"/>
+    <text x="750" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="650" fill="#0f172a">Human judgment</text>
+    <text x="750" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#334155">intent and accountability</text>
+    <text x="750" y="285" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="650" fill="#0f172a">Agents carry workflows</text>
+    <text x="750" y="307" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#334155">repeatable execution and evidence</text>
   </svg>
-  <figcaption id="operating-shapes-caption">The change is an inversion of who carries routine flow and where human attention enters it.</figcaption>
+  <figcaption>The retrofit trap leaves people underneath the process. The AI-first shape puts governed execution underneath human judgment.</figcaption>
 </figure>
 
-Consider a product-return workflow. An agent can receive the request, retrieve the order, compare it with the return policy, arrange collection, and keep the customer informed. A person becomes necessary when the case would change policy, accuse someone of fraud, create an unusual financial exposure, or treat a vulnerable customer unfairly. Human attention enters because the decision carries weight, not because every case must pass through a person.
+Consider supplier invoices. Software can receive a document, extract its contents, match it to an order, request missing evidence, and prepare a payment instruction. A bank-account change, disputed delivery, unusual amount, or broken policy condition should change the route and bring in a person with the right authority. Human involvement is triggered by meaning and consequence, rather than placed at every step as a ceremonial checkpoint.
 
-That distinction prevents the inverted pyramid from becoming a slogan. The broad agent layer needs clear limits, visible state, and a route back to a responsible person. Without those conditions, the company has merely moved coordination from employees into software it cannot properly govern.
+This changes the object of management. Leaders stop designing around queues of tasks and start defining outcomes, allowed states, exception classes, evidence, and stopping rights. The picture makes no promise about headcount, and it grants agents no blanket autonomy. It shows where each kind of work belongs.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>The retrofit trap uses agents inside human-owned workflows. An AI-first design gives agents the repeatable flow and reserves human attention for decisions that require context, values, or accountability.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The operating pyramid turns over when governed systems carry routine execution and people enter because a case requires judgment, authority, or a change of rules.</p></div>
+
+## Authority should rise with consequence
+
+Moving execution without redesigning permission creates an impressive demo and a fragile company. Delegated authority means permission to take a specified action within stated limits, for a stated period, with a record that allows the action to be reviewed, stopped, or reversed. “Human in the loop” is too vague unless the company can name which human decides what, and under which condition.
+
+The [EU AI Act, Regulation (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), is the European Union's 2024 risk-based law for AI systems. Its obligations become stricter as particular uses create greater risk. An internal operating model should follow the same proportional logic without pretending that an internal tier is a legal classification.
+
+<figure class="decision-table">
+  <div class="table-scroll" role="region" aria-label="Illustrative authority gradient" tabindex="0">
+    <table>
+      <caption>An illustrative authority gradient</caption>
+      <thead>
+        <tr>
+          <th scope="col">Operating tier</th>
+          <th scope="col">Typical consequence</th>
+          <th scope="col">Agent authority</th>
+          <th scope="col">Release and renewal</th>
+          <th scope="col">Suspend and reverse</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tier 1: reversible</td>
+          <td>Internal routing, classification, or a draft with no external effect</td>
+          <td>Execute inside approved rules and budgets</td>
+          <td>Workflow owner after measured trial; renew on a fixed review date</td>
+          <td>Operations lead can stop the workflow and restore the previous route</td>
+        </tr>
+        <tr>
+          <td>Tier 2: material</td>
+          <td>Money, customer commitments, or access to sensitive data</td>
+          <td>Act only below explicit thresholds; route exceptions before commitment</td>
+          <td>Business owner with risk, security, privacy, and finance input</td>
+          <td>Named incident owner can freeze actions, reconcile records, and compensate</td>
+        </tr>
+        <tr>
+          <td>Tier 3: rights or safety</td>
+          <td>Employment, essential access, safety, or another potentially high-impact decision</td>
+          <td>Gather evidence and propose; a person retains the final decision</td>
+          <td>Accountable executive after legal, risk, and employee-representation review where applicable</td>
+          <td>Independent control function can halt use and require case review</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <figcaption>The boundaries are examples. Each company must set them against the actual use, law, reversibility, and harm.</figcaption>
+</figure>
+
+The technical design has to enforce those boundaries. Deterministic orchestration, ordinary software that controls predefined workflow states, should own the official sequence. An agent may interpret an unstructured supplier email and propose the next action, but it should not rewrite the record simply because a model produced a confident answer. A payment path might move from `received` to `matched`, `authorized`, `submitted`, and `settled`; disagreement between a provider receipt and the internal record should send it to `reconciliation_required`. Every approval should be bound to the case, amount, policy version, approver, expiry, and idempotency key, so a stale or mismatched request is rejected.
+
+The engineering foundation predates generative AI. [Temporal](https://docs.temporal.io/workflow-execution), a durable workflow platform, records progress so execution can resume after an interruption. [Open Policy Agent](https://www.openpolicyagent.org/docs/policy-language), an open-source policy engine, evaluates machine-readable permission rules independently of the agent. An idempotency key, documented here by payment provider [Stripe](https://docs.stripe.com/api/idempotent_requests), lets a retried request be recognized so the same payment is not made twice. Safe recovery also needs durable commands, provider receipts, reconciliation, and a compensating action, such as a correcting payment, when the original step cannot simply be undone.
+
+Release evidence should compare quality with the human baseline fixed before the trial, and the bar should be at or above that baseline. High-impact routing recall, the share of dangerous cases correctly escalated, must be paired with the rate of unnecessary escalation so a system cannot look safe by sending everything to a person. Recovery time and fully loaded cost per correctly closed case belong beside outcome quality. Supplier contracts must also preserve audit records, model-change notice, data export and deletion, termination support, and a tested manual route if the service disappears.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Delegated authority should expand only as consequence, enforceable controls, recovery, measured quality, and named ownership allow it.</p></div>
 
 ## Meanwhile in sci-fi
 
 <div class="scifi">
-<span class="scifi__label">Meanwhile in sci-fi</span>
-<p class="scifi__film">Star Trek: The Next Generation (1987)</p>
-<p>The <a href="https://www.startrek.com/series/star-trek-the-next-generation">science-fiction television series</a>, which ran from 1987 to 1994, follows the starship Enterprise under Captain Jean-Luc Picard. Its bridge officers can act quickly within distinct specialist roles because they share the ship's current state, understand the mission, and know which decisions belong to the captain.</p>
+  <span class="scifi__label">Meanwhile in sci-fi</span>
+  <p class="scifi__film">Star Trek: The Next Generation (1987)</p>
+  <p>The television series follows the USS Enterprise, a starship with a clear command hierarchy and specialists who act locally from a shared view of the vessel's condition and mission. An engineering officer can respond to a failure without waiting for the captain to prescribe every step, while decisions that alter the mission or endanger the crew move up the chain.</p>
 </div>
 
-The mapping to an AI-first company is about visibility and responsibility. Agents can carry more local action when goals, system state, dependencies, and escalation routes are available to them, while a named person retains authority over decisions that alter the mission or expose the whole organization. Autonomy without that shared operational picture is simply action detached from accountability.
+The mapping is specific: workflow state is the shared view, policy defines each role's authority, and escalation moves decisions when consequences exceed that authority. Local autonomy works because everyone can see the wider system and because command responsibility remains explicit.
 
-## Draw a map of company commitments
+## Judgment needs a supply chain
 
-The operating model becomes concrete when leaders list the commitments inside a workflow. A company commitment is an action that creates a meaningful financial, legal, safety, reputational, customer, or employee consequence. Some commitments can be delegated within firm limits. Others should remain with a person even when an agent prepares the decision.
+Controls preserve accountability in a live case. The company also needs people capable of exercising that accountability next year. When agents absorb routine cases, they may remove the repetition through which employees learn normal patterns, notice weak signals, and earn the right to handle exceptions. A junior colleague who sees only unusual failures receives difficulty without the experience that makes difficulty understandable.
 
-A commitment map records that allocation before automation goes live. It gives the business owner, risk team, engineers, and employees one object to review, rather than leaving authority hidden inside prompts or vendor settings.
-
-| Step in a return workflow | Agent authority | Human authority |
-| --- | --- | --- |
-| Read the request and collect order evidence | Execute and record | Review sampled cases |
-| Apply a published rule to an ordinary, low-value return | Execute within a fixed amount and time window | Set the rule and delegation limit |
-| Recommend an exception outside policy | Prepare options and supporting evidence | Approve, reject, or change the remedy |
-| Flag suspected fraud or customer vulnerability | Pause and route the case | Assess the person, context, and response |
-| Change the return policy or financial limit | Model effects only | Approve the policy and accept accountability |
-
-The important boundary sits between preparing a commitment and making it. An agent may assemble evidence and recommend a €2,000 exceptional refund, for example, while the system blocks settlement until a named approver grants permission for that case, amount, and period. The approval should be narrow enough that it cannot quietly become standing authority.
-
-This also gives employees a clearer role. They are no longer generic reviewers placed after every automated step. They own specific commitments, improve the rules around them, and remain answerable for how those rules affect real people.
-
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>A commitment map turns “human in the loop” into an explicit allocation of authority. Agents may execute or prepare decisions within defined limits; named people own the commitments that can materially bind the company.</p>
-</div>
-
-## Demand evidence before autonomy
-
-A commitment map matters only when the software can enforce it. One simple method is to give each case an explicit state. A return might move from received to assessed, then to authorized and settled. The agent can assess the case and request authorization, but an independent control layer rejects the move to “authorized” unless it receives a valid approval tied to the right case, amount, approver, and expiry time. A rejected move is recorded as evidence, not treated as an invitation to try a different prompt.
-
-The engineering foundations already exist. A durable workflow engine records each step so work can resume safely after an interruption. Machine-readable policy rules decide whether a requested action is permitted. Idempotency means that retrying a step cannot produce the same refund twice. The larger organizational move is to use those controls as the basis for deciding when software receives wider operating authority.
-
-Regulation adds use-specific duties. The [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), Regulation (EU) 2024/1689, applies obligations according to how an AI system is used and the risk it creates, with stricter duties for high-risk systems. The [General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj), or GDPR, is the European Union's 2016 law governing the processing of personal data. Before release, legal and risk owners should classify the use, document the data involved, and specify which control evidence they need. A generic “AI approved” stamp is too weak.
-
-The release bar must be fixed before results arrive. The table below gives an intentionally strict example for a bounded live run, meaning a trial with fixed time, case volume, authority, and stop rights. These are not universal numbers. High-impact routing recall means the share of cases that require a person and are correctly sent to one. Full cost per correctly closed case includes model use, integration, review time, support, and supplier fees, rather than counting only the cheapest technical line item.
-
-| Decision test | Example release bar | Accountable sign-off |
-| --- | --- | --- |
-| Correctly closed cases | At least the human baseline fixed before the trial on 500 preselected cases, judged independently by two domain experts with a third resolving disagreements | Business owner |
-| High-impact routing recall | 100% on the test set and no missed high-impact case during the bounded live run | Risk owner |
-| Recovery | 95% of failed runs restored to a clean state within 60 minutes, with no unreconciled external action | Operations owner |
-| Full cost per correctly closed case | No more than 90% of the baseline after all human, supplier, and support costs | Finance owner |
-| Control and exit evidence | Complete event records plus witnessed suspension, log export, supplier exit, and manual-continuity rehearsals | Chief information officer with privacy and procurement owners |
-
-Rates should include the underlying numerator and denominator, along with a range showing how much sampling uncertainty remains. The evidence pack should also contain the applicable AI Act assessment, the GDPR data purpose and retention decision, incident ownership, and artifacts from the fallback and supplier-exit rehearsals. Leaders can then see both performance and the conditions under which that performance was achieved.
-
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Autonomy should be released through enforceable state changes and a pre-agreed evidence pack. Quality, risk routing, recovery, full cost, regulatory duties, and supplier exit all need an owner and a decidable threshold.</p>
-</div>
-
-## Keep developing human judgment
-
-Operational evidence can show whether a workflow is safe and economic, but it cannot show whether the company is still producing the people it will need to judge future exceptions. That matters because when agents absorb routine cases, they also absorb the practice through which people used to learn. Junior employees often develop judgment by seeing normal work, noticing variation, and gradually taking on harder decisions. Remove that path without replacing it and the narrow human layer at the top of the triangle eventually loses depth.
-
-In a public LinkedIn post after his first months at OpenAI, [Arvind KC](https://openai.com/index/arvind-kc-chief-people-officer/), chief people officer at the AI research and deployment company, writes, “It has been a few months for me at OpenAI, so I thought I'd share a few reflections,” and presents ten numbered points. They are early observations rather than proof of an operating model. The image still matters here because it captures a people leader documenting the organization while its way of working is evolving, which is exactly when learning paths need to become explicit.
+Arvind KC, a people executive at OpenAI, the AI research and product company, published a LinkedIn post with ten reflections from his first months inside the organization. Its value here is narrow: it captures a people leader making organizational learning visible while roles and routines are changing, rather than offering evidence that automation weakens apprenticeship.
 
 <figure class="source-artifact">
   <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">
-    <img src="./arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's public LinkedIn post listing ten reflections from his first months at OpenAI" loading="lazy">
+    <img src="/images/posts/arvind-kc-linkedin-post.jpg" alt="Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI" loading="lazy">
   </a>
-  <figcaption>Arvind KC's ten early reflections from OpenAI. Source: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">public LinkedIn post</a>.</figcaption>
+  <figcaption>Arvind KC's public LinkedIn post on ten early reflections from OpenAI. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7485407006204493825/">View the source post.</a></figcaption>
 </figure>
 
-An AI-first company therefore needs a deliberate way to develop judgment. Developing employees can review a sample of completed agent cases, rotate through exceptions, practise rare decisions in simulations, and help revise the rules that govern ordinary work. These activities are part of production because they maintain the people who will handle future ambiguity and take responsibility when conditions change.
+An AI-first company should make the development of judgment equally explicit. Keep a teaching sample of ordinary cases, rotate people through agent evaluation and incident review, and require them to explain why a policy or escalation exists. Track the time it takes someone to make sound independent decisions, the quality of human overrides, and whether the team can operate during an agent outage. Those measures reveal whether automation is producing stronger judgment or quietly consuming it.
 
-The business owner and people leader should measure this system just as seriously as automation. Useful signals include time to independent decision authority, agreement with expert decisions on a fixed case set, the proportion of policy changes that involve developing staff, and whether each critical commitment has more than one qualified human owner. Efficiency that consumes its own future expertise is a temporary gain.
+This is also where employee representation belongs. When a workflow changes job content, performance data, or the route by which people develop expertise, representatives should enter before the trial design is fixed wherever law or collective agreements require it. Their role is part of operating design, rather than a communication step after deployment.
 
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Routine work has also been a training ground. An AI-first operating model must create new routes into expertise, measure them, and ensure that critical judgment never depends on one overextended person.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Automation is incomplete if it consumes the routine experience that creates future judgment; learning, evaluation, and employee involvement need their own operating design.</p></div>
 
-## Let a portfolio earn the new structure
+## Let evidence redraw the company
 
-Evidence from one workflow, including its learning evidence, can justify a broader release of that workflow. It cannot justify a company-wide reorganization. Until a business has its own governed operating record, the inverted pyramid remains a testable design rather than an established fact, and broad adoption statistics cannot close that evidence gap.
+This article offers no comparable Nordic production case that proves the complete organizational shape. The responsible response is to treat it as a design to test rather than a benchmark to copy. Formal reporting lines should move only after several workflows show that delegated execution works across normal operations, incidents, renewal, and supplier exit.
 
-My default starting rule would require at least three materially different workflows across two business functions to meet their release bars for two consecutive quarters. Their combined benefit must remain positive after full costs, critical incidents must be resolved, and the learning measures must show that human capability is being renewed. That is a starting policy rather than a universal law; a company can tighten it for higher-risk work, but it should not loosen the rule after seeing results to support a preferred reorganization.
+The first test can still be small. Reserve one accountable business owner, one workflow lead, one engineer, and one operations expert for an eight-to-ten-week cycle, with part-time participation from risk, security, privacy, procurement, finance, and people or employee representatives as the use requires. Set one capped budget that includes integration, model use, control work, human review, and recovery testing. Hidden review time is still cost.
 
-The decision forum could be an AI Operating Council chaired by the chief operating officer and including the chief information officer, finance, risk or legal, relevant business owners, the people function, procurement, and employee representation. It would connect workflow evidence to enterprise decisions through three distinct gates.
+<figure class="operating-cycle">
+  <div class="table-scroll" role="region" aria-label="Bounded first operating cycle" tabindex="0">
+    <table>
+      <caption>A bounded first operating cycle</caption>
+      <thead>
+        <tr>
+          <th scope="col">Window</th>
+          <th scope="col">Work</th>
+          <th scope="col">Evidence produced</th>
+          <th scope="col">Decision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Days 1–5</td>
+          <td>Choose one workflow and map its states, exceptions, data, owners, supplier dependencies, and risk tier</td>
+          <td>Human baseline, cost boundary, release bars, stopping rights, and consultation needs</td>
+          <td>Approve or reject the trial design</td>
+        </tr>
+        <tr>
+          <td>Weeks 2–3</td>
+          <td>Run in shadow mode, where the agent proposes actions without creating external effects</td>
+          <td>Quality by case type, missed high-impact cases, unnecessary escalations, and expected review load</td>
+          <td>Revise, stop, or release a narrow scope</td>
+        </tr>
+        <tr>
+          <td>Weeks 4–8</td>
+          <td>Operate a bounded live scope with daily review and an incident log</td>
+          <td>Correctly closed cases, full cost, recovery time, receipts, reversals, and learning measures</td>
+          <td>Continue, suspend, or narrow authority</td>
+        </tr>
+        <tr>
+          <td>Weeks 9–10</td>
+          <td>Rehearse supplier exit and review the record with the decision forum</td>
+          <td>Manual continuity, data export and deletion, unresolved incidents, and owner sign-off</td>
+          <td>Renew, expand, hold, or revoke</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <figcaption>The dates are a planning proposal, not an industry benchmark. A higher-risk use may need a longer and stricter path.</figcaption>
+</figure>
 
-| Decision gate | Evidence horizon | Decision and authority |
-| --- | --- | --- |
-| Workflow release | Fixed test set plus a bounded live run | Business and risk owners may expand one workflow within its commitment map |
-| Portfolio release | At least three workflows in two functions meeting all bars for two consecutive quarters | The AI Operating Council may approve permanent platform funding and shared controls |
-| Structure release | Portfolio economics, control records, continuity drills, workforce-learning evidence, and unresolved risks reviewed together | Executive leadership, with board approval where required, may change budgets, roles, or reporting lines |
+One successful workflow is not enough to reorganize a company. Look for a portfolio spanning more than one function, with at least one genuine renewal or revocation decision, before changing management layers or role families. The operating record should show who can release, suspend, reverse, and renew authority, along with the quality, incidents, full cost, supplier exposure, and effect on human expertise.
 
-The council's job goes beyond watching a dashboard. It owns the portfolio rule, records exceptions, and can suspend expansion when the evidence pack no longer supports it. This makes the connection between operating results and organizational change visible to everyone affected by the decision.
+The AI-first company appears when repeatable execution can move into governed systems without sending responsibility away with it. Agents can carry more of the route, but people still define the destination, understand the system, and answer for the consequences. That is the shape an org chart should eventually reflect.
 
-The flow of work can change before the formal hierarchy does. Teams can learn where agents are reliable, where human authority must remain close, and what the new model costs under real conditions. When several workflows sustain the result and the company can recover cleanly from failure, leadership has a defensible reason to move funding and roles. The new shape is then grounded in an operating record rather than enthusiasm.
-
-<div class="chapter-tldr">
-<span class="chapter-tldr__label">In short</span>
-<p>Permanent organizational change needs portfolio evidence, not one impressive workflow. A named council should apply a pre-agreed horizon across performance, economics, control, continuity, and human learning before releasing new budgets, roles, or reporting lines.</p>
-</div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Start with one bounded workflow, make cost and failure visible, and let a portfolio of renewals and revocations earn any permanent change to the organization.</p></div>
