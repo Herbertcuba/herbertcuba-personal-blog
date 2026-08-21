@@ -40,6 +40,20 @@ jobs:
           GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
         run: node scripts/update-trending.mjs
 
+      - name: Export Content Engine article analytics
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/export-content-engine-analytics.mjs
+
+      - name: Upload private Content Engine analytics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-engine-article-analytics
+          path: analytics-artifact/article-analytics.json
+          retention-days: 14
+          if-no-files-found: error
+
       - name: Commit & push if changed
         run: |
           if git diff --quiet -- src/_data/trending.json; then
