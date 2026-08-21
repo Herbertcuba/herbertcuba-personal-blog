@@ -1,10 +1,9 @@
 ---
-title: 'AI 2040 Is Not Really About 2040'
+title: "When Two AI Futures Reach the Same Fork"
 excerpt: 'AI 2040 and The Three Crucibles trace the same unsettling sequence: AI weakens the link between work and income, society rebuilds distribution, and ownership decides who benefits.'
 featuredImage: '/images/posts/two-maps-one-fork.webp'
-permalink: /drafts/13e41830/
 layout: post.njk
-date: 2026-08-21
+date: "2026-08-21"
 ---
 
 In 1976, Alaska voters amended their state constitution so at least 25 percent of certain mineral revenues would enter the [Alaska Permanent Fund](https://apfc.org/about/history/), a public investment fund. The first resident dividend was paid in 1982. Rather than treating oil only as government revenue, Alaska created a mechanism that returns part of the invested resource wealth to eligible residents.
