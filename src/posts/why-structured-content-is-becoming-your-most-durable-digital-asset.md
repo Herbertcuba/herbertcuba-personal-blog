@@ -1,10 +1,9 @@
 ---
-title: "Your Website Is Becoming a Delivery Channel, Not the Digital Hub"
+title: "Why Structured Content Is Becoming Your Most Durable Digital Asset"
 excerpt: "Search is becoming conversational, agents are beginning to act, and generated interfaces are making the page less durable. The investment that lasts is verified, structured company knowledge."
 featuredImage: "/images/posts/your-website-is-becoming-a-delivery-channel-not-the-digital-hub.webp"
-permalink: /drafts/f9855d4e/
 layout: post.njk
-date: 2026-08-21
+date: "2026-08-24"
 ---
 
 Your company can spend the next two years refining a digital front door that many customers may never open. The website is not disappearing, but it is losing its position as the default place for discovery and comparison.
