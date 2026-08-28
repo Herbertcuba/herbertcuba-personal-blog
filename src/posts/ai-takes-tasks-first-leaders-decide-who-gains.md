@@ -1,11 +1,10 @@
 ---
 layout: post.njk
-title: "AI Will Take Parts of Your Job. That Could Be the Point."
+title: "AI Takes Tasks First. Leaders Decide Who Gains."
 excerpt: "AI is changing which tasks live inside your job faster than it is eliminating whole occupations. The strategic question for Nordic leaders is not who loses work, but which work should stop being human and where the hours that come back should go."
 anthem: false
-permalink: /drafts/724996a0/
 featuredImage: "/images/posts/ai-will-take-parts-of-your-job-that-could-be-the-point.webp"
-date: 2026-08-27
+date: "2026-08-28"
 ---
 
 The question "will AI take your job?" is the wrong one. It hides the more useful question underneath: which tasks inside your job should stop being human work, and what should happen to the hours that come back?
