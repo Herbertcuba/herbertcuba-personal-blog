@@ -4,6 +4,7 @@ title: "The Retrofit Trap and the AI-First Company"
 excerpt: "Companies absorbing AI agents at scale end up in one of two organizational shapes. One preserves the workflow and bolts agents onto its edges; the other rebuilds work around agent execution and reserves humans for judgment. The choice determines who captures value as the models improve."
 anthem: true
 permalink: /drafts/0b3ae4cd/
+featuredImage: "/images/posts/the-retrofit-trap-and-the-ai-first-company.webp"
 date: 2026-08-31
 ---
 
