@@ -1,11 +1,10 @@
 ---
 layout: post.njk
-title: "Personal Software Is Not a Smaller SaaS Product"
+title: "Who Owns the Context Your Personal Software Accumulates?"
 excerpt: "AI makes it cheap to generate code. What stays valuable is the context you build around it: the specifications, records, and decisions only you own."
 anthem: false
-permalink: /drafts/59f8ed18/
 featuredImage: "/images/posts/personal-software-is-not-a-smaller-saas-product.webp"
-date: 2026-08-27
+date: "2026-08-31"
 ---
 
 Nate B. Jones, an analyst who writes about how AI is changing software, published a video in August 2026 called [Nobody Laid Out The Five Kinds Of Software You Can Make. So I Did](https://www.youtube.com/watch?v=joRXo6x7Pgk). In it, he describes a category he calls personal software: tools built by one person, for one person, to solve a problem that would never justify a startup. His examples are ordinary. A couple builds a small app to track maintenance on their house. Someone in Amsterdam builds a tool that tells them when the next ferry is arriving so they can time the walk from home.
