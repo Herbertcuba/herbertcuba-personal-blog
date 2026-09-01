@@ -21,28 +21,6 @@ The rest of this piece is a map of that trap and a sketch of the operating model
 
 Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Person A hands work to person B, who runs it through their copilot, then hands it to person C, who has an agent draft the customer email.
 
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-triangle">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-triangle-title ad-retrofit-triangle-desc">
-<title id="ad-retrofit-triangle-title">The retrofit triangle</title>
-<desc id="ad-retrofit-triangle-desc">Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top. AI agents sit at the narrow bottom point, tucked inside individual tasks.</desc>
-<g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="400" rx="24" fill="#0a1a0f"/>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-wide-human-workflow">
-<polygon points="120,50 640,50 455,285 305,285" fill="#00a03a"/>
-<text x="380" y="115" text-anchor="middle" font-size="24" font-weight="700" fill="#dce7de">Humans and their workflows</text>
-<text x="380" y="165" text-anchor="middle" font-size="18" fill="#dce7de">meetings, approvals, handoffs,</text>
-<text x="380" y="200" text-anchor="middle" font-size="18" fill="#dce7de">spreadsheets, weekly reviews</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-narrow-agent-tasks">
-<polygon points="305,285 455,285 380,365" fill="#00e653"/>
-<text x="380" y="315" text-anchor="middle" font-size="18" font-weight="700" fill="#0a1a0f">AI agents</text>
-<text x="380" y="341" text-anchor="middle" font-size="16" fill="#0a1a0f">individual tasks</text>
-</g>
-</svg>
-<figcaption class="fig-cap">Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks.</figcaption>
-</figure>
-
 That is what most organizations mean when they say they are using AI. The Microsoft Work Trend Index 2024 reported that 75 percent of surveyed knowledge workers were already using AI at work, and that 78 percent of AI users were bringing their own tools. Task-level gains show up in the field, too: the 2023 study of 5,179 customer-support agents published by the National Bureau of Economic Research found a 14 percent average productivity gain from a conversational assistant, rising to 34 percent for novice and lower-skilled workers. Anthropic's Economic Index, which analyzes anonymized Claude interactions, estimates that current AI use is about 57 percent augmentation and 43 percent automation, spread unevenly across occupational tasks.
 
 Most organizations begin with the retrofit because it is the honest first move. You can learn what the technology can actually do in your context without disturbing the operating model. The trap is treating that initial pattern as the destination. Adoption keeps climbing. Deployment dashboards look healthy. And yet cycle time stays the same, because the queue between step three and step four still exists, the compliance review at step six still waits for a person, and the Monday planning meeting still has thirty attendees.
@@ -55,28 +33,38 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="ai-first-triangle">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="100%" height="auto" role="img" aria-labelledby="ad-ai-first-triangle-title ad-ai-first-triangle-desc">
-<title id="ad-ai-first-triangle-title">The AI-first triangle</title>
-<desc id="ad-ai-first-triangle-desc">Turn the triangle upright. Agents form the wide base. Humans occupy the narrow point at the top and enter at explicit judgment gates.</desc>
+<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc">
+<title id="ad-retrofit-ai-first-triangles-title">The AI-first triangle</title>
+<desc id="ad-retrofit-ai-first-triangles-desc">Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</desc>
 <g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="400" rx="24" fill="#0a1a0f"/>
+<rect x="0" y="0" width="760" height="680" rx="24" fill="#0a1a0f"/>
+<line x1="48" y1="340" x2="712" y2="340" stroke="#9eb8a4" stroke-width="2" opacity="0.45"/>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-human-point">
-<polygon points="380,35 460,135 300,135" fill="#00e653"/>
-<text x="380" y="82" text-anchor="middle" font-size="18" font-weight="700" fill="#0a1a0f">Humans</text>
-<text x="380" y="110" text-anchor="middle" font-size="16" fill="#0a1a0f">judgment gates</text>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-humans-wide-top">
+<polygon points="80,84 680,84 438,286 322,286" fill="#00a03a" stroke="#00e653" stroke-width="3"/>
+<text x="380" y="54" text-anchor="middle" font-size="22" fill="#dce7de">The retrofit triangle</text>
+<text x="380" y="132" text-anchor="middle" font-size="21" fill="#dce7de">Humans and their workflows</text>
+<text x="380" y="162" text-anchor="middle" font-size="17" fill="#dce7de">meetings, approvals, handoffs, spreadsheets, weekly reviews</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-agent-base">
-<polygon points="300,135 460,135 650,365 110,365" fill="#00a03a"/>
-<text x="380" y="205" text-anchor="middle" font-size="24" font-weight="700" fill="#dce7de">Agents</text>
-<text x="380" y="247" text-anchor="middle" font-size="18" fill="#dce7de">execute the end-to-end workflow</text>
-<text x="380" y="282" text-anchor="middle" font-size="18" fill="#dce7de">retrieve information, draft,</text>
-<text x="380" y="317" text-anchor="middle" font-size="18" fill="#dce7de">decide within defined bounds,</text>
-<text x="380" y="347" text-anchor="middle" font-size="16" fill="#dce7de">call tools, and hand off to one another</text>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-agents-narrow-point">
+<circle cx="380" cy="286" r="42" fill="#00e653" stroke="#dce7de" stroke-width="3"/>
+<text x="380" y="293" text-anchor="middle" font-size="18" fill="#0a1a0f">AI agents</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-agents-wide-base">
+<polygon points="322,404 438,404 680,606 80,606" fill="#00a03a" stroke="#00e653" stroke-width="3"/>
+<text x="380" y="652" text-anchor="middle" font-size="22" fill="#dce7de">Agents form the wide base</text>
+<text x="380" y="536" text-anchor="middle" font-size="18" fill="#dce7de">execute the end-to-end workflow</text>
+<text x="380" y="566" text-anchor="middle" font-size="16" fill="#dce7de">retrieve information, draft, decide within defined bounds, call tools</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-humans-narrow-point">
+<circle cx="380" cy="404" r="42" fill="#00e653" stroke="#dce7de" stroke-width="3"/>
+<text x="380" y="399" text-anchor="middle" font-size="17" fill="#0a1a0f">Humans occupy</text>
+<text x="380" y="421" text-anchor="middle" font-size="17" fill="#0a1a0f">the narrow point</text>
+<text x="380" y="374" text-anchor="middle" font-size="22" fill="#dce7de">The AI-first triangle</text>
 </g>
 </svg>
-<figcaption class="fig-cap">Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</figcaption>
+<figcaption class="fig-cap">Turn the triangle upright.</figcaption>
 </figure>
 
 This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
