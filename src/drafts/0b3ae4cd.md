@@ -29,28 +29,34 @@ This shape assumes agents can complete workflows, not tasks. The design work bec
 
 Reaching the AI-first shape from a retrofit involves shrinking the wide human top. Roles change, spans of control widen, and review rituals collapse or disappear. Companies stall at step one because those adjustments are political as well as structural, and because the retrofit's dashboards keep looking healthy while the redesign is postponed.
 
-<figure class="fig-band article-diagram" data-diagram-id="two-organizational-shapes">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="100%" height="auto" role="img" aria-labelledby="ad-two-organizational-shapes-title ad-two-organizational-shapes-desc">
-<title id="ad-two-organizational-shapes-title">Companies adopting AI agents at scale end up with one of two organizational shapes.</title>
-<desc id="ad-two-organizational-shapes-desc">Picture a triangle pointing downward. Turn the triangle upright.</desc>
+<figure class="fig-band article-diagram" data-diagram-id="organizational-triangles">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" width="100%" height="auto" role="img" aria-labelledby="ad-organizational-triangles-title ad-organizational-triangles-desc">
+<title id="ad-organizational-triangles-title">The two shapes have different fates when models improve.</title>
+<desc id="ad-organizational-triangles-desc">Picture a triangle pointing downward. Turn the triangle upright.</desc>
 <g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="470" rx="16" fill="#0a1a0f"></rect>
-<line x1="30" y1="235" x2="730" y2="235" stroke="#9eb8a4" opacity="0.45"></line>
+<rect x="0" y="0" width="760" height="620" rx="24" fill="#0a1a0f"/>
+<line x1="56" y1="310" x2="704" y2="310" stroke="#9eb8a4" opacity="0.4"/>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-shape">
-<polygon points="60,65 700,65 380,215" fill="#000000" stroke="#00e653" stroke-width="4"></polygon>
-<text x="30" y="36" fill="#dce7de" font-size="20" font-weight="700">The retrofit triangle</text>
-<text x="380" y="105" fill="#dce7de" font-size="18" text-anchor="middle">people</text>
-<text x="380" y="194" fill="#00e653" font-size="18" text-anchor="middle">agents</text>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
+<polygon points="120,92 640,92 380,274" fill="#00e653" opacity="0.22" stroke="#00e653" stroke-width="4"/>
+<line x1="120" y1="150" x2="640" y2="150" stroke="#00e653" stroke-width="3"/>
+<text x="380" y="54" fill="#dce7de" font-size="24" text-anchor="middle" font-weight="700">The retrofit triangle</text>
+<text x="380" y="126" fill="#dce7de" font-size="18" text-anchor="middle">wide top</text>
+<text x="380" y="181" fill="#dce7de" font-size="16" text-anchor="middle">people doing the same work they had before</text>
+<text x="380" y="248" fill="#dce7de" font-size="16" text-anchor="middle">narrow bottom point</text>
+<text x="380" y="294" fill="#00e653" font-size="18" text-anchor="middle">agents live</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-shape">
-<polygon points="380,275 60,430 700,430" fill="#000000" stroke="#00e653" stroke-width="4"></polygon>
-<text x="30" y="266" fill="#dce7de" font-size="20" font-weight="700">The AI-first triangle</text>
-<text x="380" y="307" fill="#dce7de" font-size="18" text-anchor="middle">humans</text>
-<text x="380" y="407" fill="#00e653" font-size="18" text-anchor="middle">agents</text>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
+<polygon points="380,346 120,554 640,554" fill="#00e653" opacity="0.22" stroke="#00e653" stroke-width="4"/>
+<line x1="120" y1="496" x2="640" y2="496" stroke="#00e653" stroke-width="3"/>
+<text x="380" y="338" fill="#00e653" font-size="18" text-anchor="middle">humans operate</text>
+<text x="380" y="382" fill="#dce7de" font-size="16" text-anchor="middle">narrow apex</text>
+<text x="380" y="475" fill="#dce7de" font-size="18" text-anchor="middle">agents run</text>
+<text x="380" y="530" fill="#dce7de" font-size="18" text-anchor="middle">wide base</text>
+<text x="380" y="600" fill="#dce7de" font-size="24" text-anchor="middle" font-weight="700">The AI-first triangle</text>
 </g>
 </svg>
-<figcaption class="fig-cap">Companies adopting AI agents at scale end up with one of two organizational shapes, and the choice between them decides how much value they capture and how the gains are distributed inside the company.</figcaption>
+<figcaption class="fig-cap">The two shapes have different fates when models improve.</figcaption>
 </figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The AI-first shape reserves humans for consequential judgment and lets agents run whole workflows, which requires the coordination layer above them to shrink rather than persist unchanged.</p></div>
@@ -79,10 +85,7 @@ Two kinds of skill become disproportionately valuable. Deep specialists, particu
 
 ## Meanwhile in sci-fi
 
-<div class="scifi">
-<p>Star Trek: The Next Generation, the science-fiction series that premiered in 1987, offers a picture worth borrowing. The starship Enterprise-D runs through a clear command hierarchy, and its officers hold specialist stations across the ship: operations, tactical, conn, and science at the bridge, plus engineering and medical departments elsewhere. What lets the ship work is a combination each officer holds: deep expertise at their own station, paired with enough system knowledge to understand how a local choice ripples through the whole vessel. The captain can delegate a great deal because everyone around the table can reason about the ship as a system.</p>
-<p>An AI-first company needs the same combination. Expertise runs deep inside a domain, and it is paired with enough system literacy to see how a local choice lands elsewhere in the operating model. Without that literacy, distributed autonomy becomes local optimization at the expense of the whole. With it, a small human apex can safely give agents wide execution latitude and still make good decisions where they matter most.</p>
-</div>
+<div class="scifi"><p>Star Trek: The Next Generation, the science-fiction series that premiered in 1987, offers a picture worth borrowing. The starship Enterprise-D runs through a clear command hierarchy, and its officers hold specialist stations across the ship: operations, tactical, conn, and science at the bridge, plus engineering and medical departments elsewhere. What lets the ship work is a combination each officer holds: deep expertise at their own station, paired with enough system knowledge to understand how a local choice ripples through the whole vessel. The captain can delegate a great deal because everyone around the table can reason about the ship as a system.</p><p>An AI-first company needs the same combination. Expertise runs deep inside a domain, and it is paired with enough system literacy to see how a local choice lands elsewhere in the operating model. Without that literacy, distributed autonomy becomes local optimization at the expense of the whole. With it, a small human apex can safely give agents wide execution latitude and still make good decisions where they matter most.</p></div>
 
 ## Monday morning inside a retrofit company
 
