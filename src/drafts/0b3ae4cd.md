@@ -4,7 +4,6 @@ title: "The Retrofit Trap and the AI-First Company"
 excerpt: "Companies absorbing AI agents at scale end up in one of two organizational shapes. One preserves the workflow and bolts agents onto its edges; the other rebuilds work around agent execution and reserves humans for judgment. The choice determines who captures value as the models improve."
 anthem: true
 permalink: /drafts/0b3ae4cd/
-featuredImage: "/images/posts/the-retrofit-trap-and-the-ai-first-company.webp"
 date: 2026-09-01
 ---
 
@@ -26,11 +25,33 @@ Redesigning the workflow to match agent capacity forces companies to answer ques
 
 Turn the triangle upright. The wide base is where agents run: continuous execution across whole workflows, on the assumption that agents originate the work rather than assist it. The narrow apex is where humans operate: reviewing outputs at consequential moments, resolving ambiguity, setting direction, and taking responsibility for decisions with legal or reputational weight.
 
+<figure class="fig-band article-diagram" data-diagram-id="organizational-triangles">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="auto" role="img" aria-labelledby="ad-organizational-triangles-title ad-organizational-triangles-desc">
+<title id="ad-organizational-triangles-title">The retrofit triangle and the AI-first triangle</title>
+<desc id="ad-organizational-triangles-desc">Picture a triangle pointing downward. Turn the triangle upright.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="760" height="440" rx="24" fill="#0a1a0f"></rect>
+<line x1="380" y1="48" x2="380" y2="392" stroke="#9eb8a4" stroke-width="2" opacity="0.35"></line>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
+<text x="190" y="62" fill="#dce7de" font-size="22" text-anchor="middle">The retrofit triangle</text>
+<polygon points="62,106 318,106 190,352" fill="#00a03a" stroke="#00e653" stroke-width="4" opacity="0.55"></polygon>
+<text x="190" y="154" fill="#dce7de" font-size="20" text-anchor="middle">people</text>
+<text x="190" y="329" fill="#dce7de" font-size="18" text-anchor="middle">agents</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
+<text x="570" y="62" fill="#dce7de" font-size="22" text-anchor="middle">The AI-first triangle</text>
+<polygon points="570,106 442,352 698,352" fill="#00e653" stroke="#00e653" stroke-width="4" opacity="0.55"></polygon>
+<text x="570" y="145" fill="#dce7de" font-size="18" text-anchor="middle">humans</text>
+<text x="570" y="318" fill="#dce7de" font-size="20" text-anchor="middle">agents</text>
+</g>
+</svg>
+<figcaption class="fig-cap">The retrofit shape resembles a familiar company running faster: existing workflows, existing roles, and agents plugged in at the edges. The AI-first shape is a redesigned company in which agents run entire workflows and humans concentrate on judgment.</figcaption>
+</figure>
+
 This shape assumes agents can complete workflows, not tasks. The design work becomes deciding which workflows to hand over end-to-end and where in each workflow a human has to appear. That exercise differs from picking a use case and buying a tool. It requires describing how work actually gets done inside the company rather than how work appears on process maps built for compliance and headcount planning.
 
 Reaching the AI-first shape from a retrofit involves shrinking the wide human top. Roles change, spans of control widen, and review rituals collapse or disappear. Companies stall at step one because those adjustments are political as well as structural, and because the retrofit's dashboards keep looking healthy while the redesign is postponed.
-
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 680" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc"><title id="ad-retrofit-ai-first-triangles-title">The retrofit triangle</title><desc id="ad-retrofit-ai-first-triangles-desc">Picture a triangle pointing downward. The wide top is filled with people doing the same work they had before, in the same workflows, with the same handoffs and review meetings. Turn the triangle upright. The wide base is where agents run: continuous execution across whole workflows, on the assumption that agents originate the work rather than assist it.</desc><g class="article-diagram__decoration"><rect x="20" y="20" width="680" height="640" rx="24" fill="#0a1a0f"/><line x1="60" y1="330" x2="660" y2="330" stroke="#9eb8a4" stroke-width="2" opacity="0.5"/></g><g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle"><polygon points="90,100 630,100 360,290" fill="#0a1a0f" stroke="#00e653" stroke-width="5"/><text x="360" y="70" fill="#dce7de" font-size="24" text-anchor="middle">The retrofit triangle</text><text x="360" y="145" fill="#dce7de" font-size="22" text-anchor="middle">people</text><text x="360" y="265" fill="#00e653" font-size="22" text-anchor="middle">agents</text></g><g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle"><polygon points="360,370 90,570 630,570" fill="#0a1a0f" stroke="#00e653" stroke-width="5"/><text x="360" y="625" fill="#dce7de" font-size="24" text-anchor="middle">The AI-first triangle</text><text x="360" y="410" fill="#dce7de" font-size="22" text-anchor="middle">humans</text><text x="360" y="545" fill="#00e653" font-size="22" text-anchor="middle">agents</text></g></svg><figcaption class="fig-cap">Turn the triangle upright.</figcaption></figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The AI-first shape reserves humans for consequential judgment and lets agents run whole workflows, which requires the coordination layer above them to shrink rather than persist unchanged.</p></div>
 
