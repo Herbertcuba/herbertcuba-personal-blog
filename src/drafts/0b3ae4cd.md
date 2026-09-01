@@ -1,109 +1,145 @@
 ---
 layout: post.njk
-title: "The Retrofit Trap and the AI-First Company"
-excerpt: "Companies absorbing AI agents at scale end up in one of two organizational shapes. One preserves the workflow and bolts agents onto its edges; the other rebuilds work around agent execution and reserves humans for judgment. The choice determines who captures value as the models improve."
+title: The Retrofit Trap and the AI-First Company
+excerpt: McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates.
 anthem: true
 permalink: /drafts/0b3ae4cd/
-featuredImage: "/images/posts/the-retrofit-trap-and-the-ai-first-company.webp"
-date: 2026-09-01
+date: 2026-09-02
 ---
 
-Companies adopting AI agents at scale end up with one of two organizational shapes, and the choice between them decides how much value they capture and how the gains are distributed inside the company. The retrofit shape resembles a familiar company running faster: existing workflows, existing roles, and agents plugged in at the edges. The AI-first shape is a redesigned company in which agents run entire workflows and humans concentrate on judgment. Most organizations begin with the retrofit because it is the honest first move; the trap is treating it as the destination.
+McKinsey published *The state of AI: How organizations are rewiring to capture value* on March 12, 2025. Its online survey of 1,491 respondents, conducted July 16–31, 2024 and weighted by each country's share of global GDP, produced one finding that keeps coming up in board conversations: more than 80 percent said their organizations were not seeing a tangible impact on enterprise-level EBIT from generative AI. In the same survey, 71 percent reported regular generative-AI use in at least one business function.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Two organizational shapes emerge as companies absorb agents, and the choice between them determines whether gains accrue inside old workflows or flow into a redesigned company.</p></div>
+Adoption is high. Enterprise financial impact is thin. These are respondent reports rather than audited financial statements, so treat them as a signal about the current gap.
+
+McKinsey did not diagnose a single cause. One plausible explanation is architectural, and it is the working thesis of this article. An AI agent — a model-powered system that can perform a bounded sequence of workflow actions under defined controls, call tools, and respond to their results — can make individual tasks dramatically faster while leaving the handoffs, approvals, ownership boundaries, and review meetings around those tasks unchanged. Local speed rises. Cycle time, unit cost, and quality barely move. That is the retrofit trap.
+
+The rest of this piece is a map of that trap and a sketch of the operating model that escapes it. The framework is my interpretation, and I mark where the evidence bounds it as I go.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>McKinsey's survey shows widespread generative-AI adoption alongside little reported enterprise-level EBIT impact. One architectural explanation is that companies are retrofitting agents into unchanged workflows.</p></div>
 
 ## The retrofit triangle
 
-Picture a triangle pointing downward. The wide top is filled with people doing the same work they had before, in the same workflows, with the same handoffs and review meetings. The narrow bottom point is where agents live: bolted onto the seams of existing processes, filling ticket queues, summarizing calls, generating drafts that humans then approve. Value flows through the human layer, which passes through the agent layer briefly on its way somewhere else.
+Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Person A hands work to person B, who runs it through their copilot, then hands it to person C, who has an agent draft the customer email.
 
-Retrofits stall for a structural reason. The workflow itself was designed around human throughput, so the workflow becomes the constraint on how much value an agent can deliver. An agent that completes its discrete task in seconds still waits for a human review that happens twice a week, and process cycle time barely moves. The ceiling is set by the workflow, and installing an agent inside it does not raise the ceiling.
+<figure class="fig-band article-diagram" data-diagram-id="retrofit-triangle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-triangle-title ad-retrofit-triangle-desc">
+<title id="ad-retrofit-triangle-title">The retrofit triangle</title>
+<desc id="ad-retrofit-triangle-desc">Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top. AI agents sit at the narrow bottom point, tucked inside individual tasks.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="760" height="400" rx="24" fill="#0a1a0f"/>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-wide-human-workflow">
+<polygon points="120,50 640,50 455,285 305,285" fill="#00a03a"/>
+<text x="380" y="115" text-anchor="middle" font-size="24" font-weight="700" fill="#dce7de">Humans and their workflows</text>
+<text x="380" y="165" text-anchor="middle" font-size="18" fill="#dce7de">meetings, approvals, handoffs,</text>
+<text x="380" y="200" text-anchor="middle" font-size="18" fill="#dce7de">spreadsheets, weekly reviews</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-narrow-agent-tasks">
+<polygon points="305,285 455,285 380,365" fill="#00e653"/>
+<text x="380" y="315" text-anchor="middle" font-size="18" font-weight="700" fill="#0a1a0f">AI agents</text>
+<text x="380" y="341" text-anchor="middle" font-size="16" fill="#0a1a0f">individual tasks</text>
+</g>
+</svg>
+<figcaption class="fig-cap">Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks.</figcaption>
+</figure>
 
-Redesigning the workflow to match agent capacity forces companies to answer questions retrofits let them defer. Human review has to be located precisely rather than assumed at every handoff. Legally required approvals have to be separated from approvals kept in place by habit. End-to-end automation of a workflow becomes possible only when individual handoffs are examined and defended one by one. These questions cross departmental lines, and no single manager owns them, so the retrofit persists as the path of least resistance.
+That is what most organizations mean when they say they are using AI. The Microsoft Work Trend Index 2024 reported that 75 percent of surveyed knowledge workers were already using AI at work, and that 78 percent of AI users were bringing their own tools. Task-level gains show up in the field, too: the 2023 study of 5,179 customer-support agents published by the National Bureau of Economic Research found a 14 percent average productivity gain from a conversational assistant, rising to 34 percent for novice and lower-skilled workers. Anthropic's Economic Index, which analyzes anonymized Claude interactions, estimates that current AI use is about 57 percent augmentation and 43 percent automation, spread unevenly across occupational tasks.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The retrofit installs agents inside workflows shaped around human throughput, which leaves the throughput ceiling exactly where it was and defers the redesign work.</p></div>
+Most organizations begin with the retrofit because it is the honest first move. You can learn what the technology can actually do in your context without disturbing the operating model. The trap is treating that initial pattern as the destination. Adoption keeps climbing. Deployment dashboards look healthy. And yet cycle time stays the same, because the queue between step three and step four still exists, the compliance review at step six still waits for a person, and the Monday planning meeting still has thirty attendees.
+
+The retrofit shape is efficient at accumulating tools. It is inefficient at moving work through the organization, because the shape of the work is still the shape you had before agents existed.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>In a retrofit organization, humans and their workflows sit at the wide top of the triangle and agents live at the narrow point, embedded in individual tasks. Local speed rises while the surrounding workflow remains untouched.</p></div>
 
 ## The AI-first triangle
 
-Turn the triangle upright. The wide base is where agents run: continuous execution across whole workflows, on the assumption that agents originate the work rather than assist it. The narrow apex is where humans operate: reviewing outputs at consequential moments, resolving ambiguity, setting direction, and taking responsibility for decisions with legal or reputational weight.
+Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="organizational-triangles">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="auto" role="img" aria-labelledby="ad-organizational-triangles-title ad-organizational-triangles-desc">
-<title id="ad-organizational-triangles-title">The retrofit triangle and the AI-first triangle</title>
-<desc id="ad-organizational-triangles-desc">Picture a triangle pointing downward. Turn the triangle upright.</desc>
+<figure class="fig-band article-diagram" data-diagram-id="ai-first-triangle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="100%" height="auto" role="img" aria-labelledby="ad-ai-first-triangle-title ad-ai-first-triangle-desc">
+<title id="ad-ai-first-triangle-title">The AI-first triangle</title>
+<desc id="ad-ai-first-triangle-desc">Turn the triangle upright. Agents form the wide base. Humans occupy the narrow point at the top and enter at explicit judgment gates.</desc>
 <g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="440" rx="24" fill="#0a1a0f"></rect>
-<line x1="380" y1="48" x2="380" y2="392" stroke="#9eb8a4" stroke-width="2" opacity="0.35"></line>
+<rect x="0" y="0" width="760" height="400" rx="24" fill="#0a1a0f"/>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
-<text x="190" y="62" fill="#dce7de" font-size="22" text-anchor="middle">The retrofit triangle</text>
-<polygon points="62,106 318,106 190,352" fill="#00a03a" stroke="#00e653" stroke-width="4" opacity="0.55"></polygon>
-<text x="190" y="154" fill="#dce7de" font-size="20" text-anchor="middle">people</text>
-<text x="190" y="329" fill="#dce7de" font-size="18" text-anchor="middle">agents</text>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-human-point">
+<polygon points="380,35 460,135 300,135" fill="#00e653"/>
+<text x="380" y="82" text-anchor="middle" font-size="18" font-weight="700" fill="#0a1a0f">Humans</text>
+<text x="380" y="110" text-anchor="middle" font-size="16" fill="#0a1a0f">judgment gates</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
-<text x="570" y="62" fill="#dce7de" font-size="22" text-anchor="middle">The AI-first triangle</text>
-<polygon points="570,106 442,352 698,352" fill="#00e653" stroke="#00e653" stroke-width="4" opacity="0.55"></polygon>
-<text x="570" y="145" fill="#dce7de" font-size="18" text-anchor="middle">humans</text>
-<text x="570" y="318" fill="#dce7de" font-size="20" text-anchor="middle">agents</text>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-agent-base">
+<polygon points="300,135 460,135 650,365 110,365" fill="#00a03a"/>
+<text x="380" y="205" text-anchor="middle" font-size="24" font-weight="700" fill="#dce7de">Agents</text>
+<text x="380" y="247" text-anchor="middle" font-size="18" fill="#dce7de">execute the end-to-end workflow</text>
+<text x="380" y="282" text-anchor="middle" font-size="18" fill="#dce7de">retrieve information, draft,</text>
+<text x="380" y="317" text-anchor="middle" font-size="18" fill="#dce7de">decide within defined bounds,</text>
+<text x="380" y="347" text-anchor="middle" font-size="16" fill="#dce7de">call tools, and hand off to one another</text>
 </g>
 </svg>
-<figcaption class="fig-cap">The retrofit shape resembles a familiar company running faster: existing workflows, existing roles, and agents plugged in at the edges. The AI-first shape is a redesigned company in which agents run entire workflows and humans concentrate on judgment.</figcaption>
+<figcaption class="fig-cap">Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</figcaption>
 </figure>
 
-This shape assumes agents can complete workflows, not tasks. The design work becomes deciding which workflows to hand over end-to-end and where in each workflow a human has to appear. That exercise differs from picking a use case and buying a tool. It requires describing how work actually gets done inside the company rather than how work appears on process maps built for compliance and headcount planning.
+This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
 
-Reaching the AI-first shape from a retrofit involves shrinking the wide human top. Roles change, spans of control widen, and review rituals collapse or disappear. Companies stall at step one because those adjustments are political as well as structural, and because the retrofit's dashboards keep looking healthy while the redesign is postponed.
+The AI-first shape does not promise that everything runs autonomously. Anthropic's usage data still shows more augmentation than full automation. The preregistered Boston Consulting Group experiment described in *Navigating the Jagged Technological Frontier* found that GPT-4 users were more productive on 18 tasks selected as inside the model's capability frontier and less accurate on a task deliberately chosen outside it. METR's July 2025 randomized study of 16 experienced open-source developers found that early-2025 AI tools increased their completion time by 19 percent in mature repositories. Task fit matters. Model choice matters. Review controls matter.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The AI-first shape reserves humans for consequential judgment and lets agents run whole workflows, which requires the coordination layer above them to shrink rather than persist unchanged.</p></div>
+What the AI-first shape does is locate the human deliberately. Instead of a person in every seat performing supervision that has calcified into habit, one accountable person makes the decision the workflow actually requires and takes responsibility for it.
 
-## What OpenAI's Chief People Officer noticed
-
-Arvind KC, OpenAI's Chief People Officer, published a LinkedIn post after a few months at the company. It lists ten reflections about working inside an organization whose default assumption is that agents are part of daily execution.
-
-The reflections cover the pace of work, talent density, how innovation moves through the company from the bottom, internal use of OpenAI's own products, the mix of technical roles, and what it takes to manage agents alongside people. Read together, they describe an operating model designed for agent-native work rather than adapted to include agents.
-
-The reflections do not automatically transfer to other companies. OpenAI is unusual in age, capital, and mission. What is transferable is the direction of adaptation. When an organization takes agent execution as its default, human work concentrates around judgment, direction, and quality of taste. That reorganization takes deliberate effort, and it is the price of shifting the operating shape.
-
-<!-- Screenshot of Arvind KC's LinkedIn post listing ten reflections from his first months at OpenAI -->
-
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>OpenAI's Chief People Officer describes a company built around agent execution rather than a company that added agents to existing workflows, which is what the AI-first shape looks like from the inside.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>In an AI-first organization, agents form the base of the triangle and execute the workflow, while humans sit at the point and enter at explicit judgment and accountability gates. This shape assumes a redesigned workflow, not a smarter tool inserted into the old one.</p></div>
 
 ## Where judgment concentrates
 
-Human roles inside the AI-first triangle get denser and heavier. Fewer decisions cross a person's desk, and each of those decisions carries more consequence. A single person may own decisions that used to require a director, a compliance function, and a sign-off committee.
+An AI-first design does not eliminate expertise. It rearranges where expertise pays off.
 
-The management job changes with the shape. Overseeing eight agents is a fundamentally different exercise from managing eight direct reports, and treating them as equivalent installs the wrong controls. Agents do not need career development or alignment conversations; they need clear objectives, feedback loops that repair errors, and boundaries that keep them from causing harm. The human on top of an agent team functions closer to a systems designer than to a people manager.
+Three kinds of human work become more valuable when agents absorb execution. The first is domain judgment: understanding what "good" looks like inside a business function, spotting the exception the agent does not flag, and knowing when a superficially reasonable draft is quietly wrong. The 2023 field study found that experienced workers gained little from the conversational assistant, precisely because their advantage lay in exactly this kind of judgment. That advantage becomes the reason the whole workflow does not go off the rails when execution scales.
 
-Two kinds of skill become disproportionately valuable. Deep specialists, particularly the engineers who build and repair the systems the agents run inside, become load-bearing because a broken pipeline stops an entire agent workflow. People with reliable taste, who can tell a subtly wrong output from a correct one, become the last defense against confident nonsense produced at scale. Both roles depend on judgment that is expensive to develop and hard to hire for.
+The second is system literacy — understanding how a decision at one station affects the wider workflow, controls, data, and downstream outcomes. When an agent can execute a policy change across a thousand transactions in a minute, whoever authorizes that change has to be able to reason about second-order effects. Reason about, not necessarily solve. The World Economic Forum's *Future of Jobs Report 2025*, based on employer responses covering more than 14 million workers, found that employers expected 39 percent of workers' key skills to change by 2030, with technological literacy rising alongside analytical thinking, resilience, leadership, and creative thinking.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The AI-first shape reduces the number of decisions humans make while increasing the weight of each one, and it raises the value of deep specialists and people with reliable taste.</p></div>
+The third is accountability. Segregation of duties, regulated approvals, security review, and professional responsibility exist for reasons that predate AI. Some human reviews genuinely protect against material risk. Others are habit dressed as governance. The design job is to distinguish them and place the necessary human decision explicitly, rather than distributing informal supervision across every seat that used to touch the work.
+
+Arvind KC, OpenAI's Chief People Officer, described this shift in a LinkedIn post from July 2026 that collected ten reflections from his first months at the company. He wrote about bottom-up innovation, small teams, dense internal agent use, and what he called agent managers — people who direct and evaluate agent systems within their domain. OpenAI is an extreme case. It has unusual talent, capital, and access to models, and its operating model does not automatically transfer to ordinary companies. The direction of change, though, shows up in the broader evidence as well: human work concentrated around objectives, judgment, and evaluation, with agents handling execution.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>As agents absorb execution, human value concentrates in domain judgment, system literacy, and accountability. Reviews required by law or material risk stay; reviews preserved only by habit become expensive.</p></div>
 
 ## Meanwhile in sci-fi
 
-<div class="scifi"><span class="scifi__label">Meanwhile in sci-fi</span><p>Star Trek: The Next Generation, the science-fiction series that premiered in 1987, offers a picture worth borrowing. The starship Enterprise-D runs through a clear command hierarchy, and its officers hold specialist stations across the ship: operations, tactical, conn, and science at the bridge, plus engineering and medical departments elsewhere. What lets the ship work is a combination each officer holds: deep expertise at their own station, paired with enough system knowledge to understand how a local choice ripples through the whole vessel. The captain can delegate a great deal because everyone around the table can reason about the ship as a system.</p><p>An AI-first company needs the same combination. Expertise runs deep inside a domain, and it is paired with enough system literacy to see how a local choice lands elsewhere in the operating model. Without that literacy, distributed autonomy becomes local optimization at the expense of the whole. With it, a small human apex can safely give agents wide execution latitude and still make good decisions where they matter most.</p></div>
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p>
+<p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p>
+<p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p>
+</div>
 
 ## Monday morning inside a retrofit company
 
-The retrofit trap disguises itself as ordinary progress. A quarterly update lists twelve new agents deployed, a rollout dashboard shows adoption climbing, and time-savings surveys report double-digit gains per employee per week. Those numbers give leadership a defensible transformation narrative.
+Consider a Monday morning at a company that has been enthusiastically adopting AI for eighteen months. The AI committee has 47 pilots in flight. The intranet page has case studies. Every knowledge worker has a copilot licence. Individual employees report saving several hours a week on drafting, summarizing, and searching.
 
-Sitting inside the company on a Monday tells a different story. Standups still run forty minutes and still exist to resolve the same handoff ambiguity they resolved last quarter. The three-review approval process is unchanged. Agents summarize the pre-reads for meetings that were already too long and could have been an email before AI existed. Cycle times for the workflows customers actually experience have moved by a rounding error. Any productivity gain that reaches an individual is quickly absorbed by additional meetings, requests, and surface-level work.
+And yet the sales operations lead still spends her Monday morning in the same three status meetings. Marketing still waits four days for legal review on a campaign asset. Finance still runs the same close process, with the same seven approvers, over the same nine business days. Customer support has a chatbot at the top of the funnel and the same queue behind it, because the tickets that reach a human are the exact tickets that were hard to route before.
 
-The exit from a retrofit is a workflow-level decision, not another tool. Choosing one workflow per quarter and redesigning it end-to-end for agent execution is a modest, testable move a leadership team can actually make. It forces the questions retrofits let a company avoid: where a human decision is genuinely required, which reviews exist because of habit rather than law, and what the workflow would look like if it were rebuilt from what agents can already do.
+Adoption metrics tell one story. Cycle time, unit economics, escalation rates, and customer outcomes tell another. When those measurements disagree with the pilot dashboard, the workflow has not actually changed — only the seat covers. The diagnosis is straightforward, and it is where most organizations get stuck: the retrofit was successful as a tool-adoption program, and it has produced almost nothing at the level of the company.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Retrofit companies begin to exit the trap when they pick a single workflow each quarter and redesign it end-to-end for agent execution, which forces the design questions the retrofit lets them defer.</p></div>
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>A retrofit organization can post strong adoption metrics while cycle time, unit economics, and customer outcomes remain unchanged. The diagnosis is that the tool-adoption program succeeded on its own terms and did almost nothing to the workflow.</p></div>
 
 ## Model improvements and the agent layer
 
-The two shapes have different fates when models improve. Every capability gain lands in the agent layer of both triangles, but that layer sits in a different place inside each shape. In the AI-first triangle, the agent layer occupies the wide base, so an improvement multiplies through the entire execution capacity of the company. In the retrofit triangle, the agent layer sits at the narrow point, so an improvement makes a small piece of the workflow faster while the human coordination above absorbs most of the benefit.
+Here is a structural consequence worth thinking through, marked clearly as a hypothesis rather than a proven law. When your operating model puts agents in the execution layer of a workflow, a capability improvement in the underlying model can reach outcomes directly. Latency drops. Reliability rises. New tasks come inside the capability frontier. The organization feels the release.
 
-Frontier model releases are therefore not neutral events for organizational design. They widen the gap between the two shapes each time they arrive. The AI-first company earns a compounding return on its structural bet; the retrofit company sees its dashboards move slightly and its coordination costs stay where they are. Over a few model generations, the gap becomes structural and difficult to close from a standing start.
+When your operating model keeps agents inside isolated tasks, a capability improvement stops at the edge of that task. The person still hands off. The queue still forms. The review still waits. The release lands in your inbox and dies there.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Model improvements always land in the agent layer, but that layer is the wide base in an AI-first company and the narrow point in a retrofit, so each release widens the operating gap between the two.</p></div>
+Better benchmark scores do not automatically translate into better reliability, cost, latency, security, or regulatory fit in your specific workflow. "Compounding advantage" is a testable claim, not a physical law. What the AI-first shape gives you is exposure to improvement. Whether that exposure turns into value depends on the workflow, the controls, and the people who own the judgment gates.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Workflow shape determines how much of a model release your organization can absorb. Agents in the execution layer expose more of the workflow to capability improvements; agents inside isolated tasks cap the benefit at the task boundary.</p></div>
 
 ## The design question
 
-The retrofit is a legitimate starting position for organizations that need to learn what agents can do before betting on a redesign. It stops being legitimate as a permanent strategy once the first workflow has been through the loop and the leadership team has seen what an agent-native workflow looks like on the ground.
+The design question is not which tools to buy. It is which workflow to redesign around agent execution first.
 
-Choosing between the two shapes is a design decision that a senior leadership team can actually make. It involves answering unglamorous questions about which workflows move first, what part of the middle management layer will thin out, and where the remaining humans will concentrate their attention. Delay carries its own cost as the models continue to improve, and the questions do not resolve themselves in the meantime.
+Pick one flow where the outcome matters, where you can measure cycle time and quality, and where the failure modes are recoverable. Map every handoff, approval, and review. For each control, ask two questions. Does this exist because of a material risk we are legally or ethically bound to manage? Or does it exist because that is how the work was done before agents? Keep the first category. Move the second to the judgment point where a real decision needs a real human.
 
-<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The choice between retrofit and AI-first is a design decision available to senior leadership, and delay compounds against the company as model capability keeps advancing.</p></div>
+Then redesign the workflow itself. Assign one accountable owner. Instrument cycle time, unit cost, quality, escaped errors, and customer outcome. Run the redesigned flow against the retrofitted flow for a defined period. When cycle time and unit economics move materially, you have escaped the trap for that flow. Then choose the next one.
+
+McKinsey did not prove any of this. The framework is my interpretation of a pattern that shows up in the survey, in the field studies, in the platform telemetry, and in the organizations I talk to. What McKinsey did show is that a lot of adoption has not turned into a lot of enterprise value yet. The retrofit shape is one explanation for why. The AI-first shape is one design that treats the gap as a workflow problem rather than a tool problem.
+
+The organizations that will look different in three years are the ones that pick a single workflow this quarter and let the redesign teach them what the rest should become.
+
+<div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Choose one end-to-end workflow, separate risk-based controls from habit-based ones, redesign around agent execution, and measure against cycle time, unit economics, quality, and customer outcome. That is the concrete first step out of the retrofit trap.</p></div>
