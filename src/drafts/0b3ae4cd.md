@@ -33,35 +33,13 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
+<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc"><title id="ad-retrofit-ai-first-triangles-title">Turn the triangle upright.</title><desc id="ad-retrofit-ai-first-triangles-desc">Picture a triangle with its point at the bottom. Turn the triangle upright.</desc><g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle"><polygon points="80,80 680,80 380,390" fill="#0a1a0f" stroke="#00e653" stroke-width="6"></polygon><text x="380" y="135" text-anchor="middle" fill="#dce7de" font-size="24">Humans and their workflows</text><text x="380" y="340" text-anchor="middle" fill="#00e653" font-size="24">AI agents</text></g><g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle"><polygon points="380,500 80,820 680,820" fill="#0a1a0f" stroke="#00e653" stroke-width="6"></polygon><text x="380" y="555" text-anchor="middle" fill="#00e653" font-size="24">Humans</text><text x="380" y="770" text-anchor="middle" fill="#dce7de" font-size="24">Agents</text></g></svg><figcaption class="fig-cap">Turn the triangle upright.</figcaption></figure>
+
 This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
 
 The AI-first shape does not promise that everything runs autonomously. Anthropic's usage data still shows more augmentation than full automation. The preregistered Boston Consulting Group experiment described in *Navigating the Jagged Technological Frontier* found that GPT-4 users were more productive on 18 tasks selected as inside the model's capability frontier and less accurate on a task deliberately chosen outside it. METR's July 2025 randomized study of 16 experienced open-source developers found that early-2025 AI tools increased their completion time by 19 percent in mature repositories. Task fit matters. Model choice matters. Review controls matter.
 
 What the AI-first shape does is locate the human deliberately. Instead of a person in every seat performing supervision that has calcified into habit, one accountable person makes the decision the workflow actually requires and takes responsibility for it.
-
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 700" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-title ad-retrofit-ai-first-desc">
-<title id="ad-retrofit-ai-first-title">Turn the triangle upright.</title>
-<desc id="ad-retrofit-ai-first-desc">In a retrofit organization, humans and their workflows sit at the wide top of the triangle and agents live at the narrow point, embedded in individual tasks. In an AI-first organization, agents form the base of the triangle and execute the workflow, while humans sit at the point and enter at explicit judgment and accountability gates.</desc>
-<g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="700" rx="24" fill="#0a1a0f" />
-<line x1="80" y1="350" x2="680" y2="350" stroke="#9eb8a4" stroke-width="2" opacity="0.4" />
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
-<polygon points="100,92 660,92 380,300" fill="#00e653" opacity="0.22" stroke="#00e653" stroke-width="4" />
-<text x="380" y="52" text-anchor="middle" fill="#dce7de" font-size="24" font-weight="700">The retrofit triangle</text>
-<text x="380" y="132" text-anchor="middle" fill="#dce7de" font-size="20">Humans and their workflows</text>
-<text x="380" y="270" text-anchor="middle" fill="#00e653" font-size="20" font-weight="700">AI agents</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
-<polygon points="380,400 100,620 660,620" fill="#00e653" opacity="0.22" stroke="#00e653" stroke-width="4" />
-<text x="380" y="382" text-anchor="middle" fill="#dce7de" font-size="24" font-weight="700">The AI-first triangle</text>
-<text x="380" y="448" text-anchor="middle" fill="#dce7de" font-size="20" font-weight="700">Humans</text>
-<text x="380" y="590" text-anchor="middle" fill="#00e653" font-size="20" font-weight="700">Agents</text>
-</g>
-</svg>
-<figcaption class="fig-cap">Turn the triangle upright.</figcaption>
-</figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>In an AI-first organization, agents form the base of the triangle and execute the workflow, while humans sit at the point and enter at explicit judgment and accountability gates. This shape assumes a redesigned workflow, not a smarter tool inserted into the old one.</p></div>
 
@@ -81,12 +59,7 @@ Arvind KC, OpenAI's Chief People Officer, described this shift in a LinkedIn pos
 
 ## Meanwhile in sci-fi
 
-<div class="scifi">
-<span class="scifi__label">Meanwhile in sci-fi</span>
-<p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p>
-<p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p>
-<p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p>
-</div>
+<div class="scifi"><span class="scifi__label">Meanwhile in sci-fi</span><p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p><p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p><p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p></div>
 
 ## Monday morning inside a retrofit company
 
