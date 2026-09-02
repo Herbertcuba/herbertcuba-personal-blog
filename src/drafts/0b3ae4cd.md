@@ -21,21 +21,6 @@ The rest of this piece is a map of that trap and a sketch of the operating model
 
 Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Person A hands work to person B, who runs it through their copilot, then hands it to person C, who has an agent draft the customer email.
 
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-triangle">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-triangle-title ad-retrofit-triangle-desc">
-<title id="ad-retrofit-triangle-title">Picture a triangle with its point at the bottom.</title>
-<desc id="ad-retrofit-triangle-desc">Humans and their workflows fill the wide top. AI agents sit at the narrow bottom point, tucked inside individual tasks.</desc>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
-<polygon points="70,70 690,70 380,500" fill="#0a1a0f" stroke="#00e653" stroke-width="5"></polygon>
-<text x="380" y="125" fill="#dce7de" font-size="28" text-anchor="middle">Humans and their workflows</text>
-<text x="380" y="170" fill="#9eb8a4" font-size="18" text-anchor="middle">meetings, approvals, handoffs, spreadsheets, weekly reviews</text>
-<text x="380" y="415" fill="#00e653" font-size="28" text-anchor="middle">AI agents</text>
-<text x="380" y="450" fill="#dce7de" font-size="18" text-anchor="middle">individual tasks</text>
-</g>
-</svg>
-<figcaption class="fig-cap">Picture a triangle with its point at the bottom.</figcaption>
-</figure>
-
 That is what most organizations mean when they say they are using AI. The Microsoft Work Trend Index 2024 reported that 75 percent of surveyed knowledge workers were already using AI at work, and that 78 percent of AI users were bringing their own tools. Task-level gains show up in the field, too: the 2023 study of 5,179 customer-support agents published by the National Bureau of Economic Research found a 14 percent average productivity gain from a conversational assistant, rising to 34 percent for novice and lower-skilled workers. Anthropic's Economic Index, which analyzes anonymized Claude interactions, estimates that current AI use is about 57 percent augmentation and 43 percent automation, spread unevenly across occupational tasks.
 
 Most organizations begin with the retrofit because it is the honest first move. You can learn what the technology can actually do in your context without disturbing the operating model. The trap is treating that initial pattern as the destination. Adoption keeps climbing. Deployment dashboards look healthy. And yet cycle time stays the same, because the queue between step three and step four still exists, the compliance review at step six still waits for a person, and the Monday planning meeting still has thirty attendees.
@@ -48,16 +33,32 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="ai-first-triangle">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="100%" height="auto" role="img" aria-labelledby="ad-ai-first-triangle-title ad-ai-first-triangle-desc">
-<title id="ad-ai-first-triangle-title">Turn the triangle upright.</title>
-<desc id="ad-ai-first-triangle-desc">Agents form the wide base. Humans occupy the narrow point at the top and enter at explicit judgment gates.</desc>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
-<polygon points="380,60 690,500 70,500" fill="#0a1a0f" stroke="#00e653" stroke-width="5"></polygon>
-<text x="380" y="145" fill="#00e653" font-size="28" text-anchor="middle">Humans</text>
-<text x="380" y="180" fill="#dce7de" font-size="18" text-anchor="middle">explicit judgment gates</text>
-<text x="380" y="410" fill="#dce7de" font-size="28" text-anchor="middle">Agents</text>
-<text x="380" y="450" fill="#9eb8a4" font-size="18" text-anchor="middle">execute the end-to-end workflow</text>
+<figure class="fig-band article-diagram" data-diagram-id="triangle-flip">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" width="100%" height="auto" role="img" aria-labelledby="ad-triangle-flip-title ad-triangle-flip-desc">
+<title id="ad-triangle-flip-title">The retrofit triangle</title>
+<desc id="ad-triangle-flip-desc">Turn the triangle upright. Humans and their workflows fill the wide top. AI agents sit at the narrow bottom point. Agents form the wide base. Humans occupy the narrow point at the top.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="760" height="620" rx="24" fill="#0a1a0f" />
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-humans-wide-top">
+<polygon points="50,70 350,70 260,420 140,420" fill="#00e653" />
+<text x="200" y="205" text-anchor="middle" font-size="22" font-weight="700" fill="#0a1a0f">Humans and their workflows</text>
+<text x="200" y="239" text-anchor="middle" font-size="18" fill="#0a1a0f">fill the wide top</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-agents-narrow-point">
+<polygon points="140,430 260,430 200,555" fill="#00a03a" />
+<text x="200" y="480" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">AI agents</text>
+<text x="200" y="510" text-anchor="middle" font-size="16" fill="#dce7de">narrow bottom point</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-humans-narrow-point">
+<polygon points="560,65 500,190 620,190" fill="#00a03a" />
+<text x="560" y="130" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">Humans</text>
+<text x="560" y="160" text-anchor="middle" font-size="16" fill="#dce7de">narrow point at the top</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-agents-wide-base">
+<polygon points="500,200 620,200 710,555 410,555" fill="#00e653" />
+<text x="560" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#0a1a0f">Agents form the wide base</text>
+<text x="560" y="404" text-anchor="middle" font-size="18" fill="#0a1a0f">execute the end-to-end workflow</text>
 </g>
 </svg>
 <figcaption class="fig-cap">Turn the triangle upright.</figcaption>
