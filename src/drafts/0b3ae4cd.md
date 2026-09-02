@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: The Retrofit Trap and the AI-First Company
-excerpt: "McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates."
+excerpt: McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates.
 anthem: true
 permalink: /drafts/0b3ae4cd/
 date: 2026-09-02
@@ -21,8 +21,6 @@ The rest of this piece is a map of that trap and a sketch of the operating model
 
 Picture a triangle with its point at the bottom. Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Person A hands work to person B, who runs it through their copilot, then hands it to person C, who has an agent draft the customer email.
 
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-triangle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-triangle-title ad-retrofit-triangle-desc"><title id="ad-retrofit-triangle-title">Picture a triangle with its point at the bottom.</title><desc id="ad-retrofit-triangle-desc">Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks.</desc><g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle"><polygon points="70,70 650,70 360,470" fill="#0a1a0f" stroke="#00e653" stroke-width="5"/><line x1="145" y1="175" x2="575" y2="175" stroke="#00e653" stroke-width="3"/><line x1="238" y1="300" x2="482" y2="300" stroke="#00e653" stroke-width="3"/><text x="360" y="120" fill="#dce7de" font-size="24" text-anchor="middle">Humans and their workflows</text><text x="360" y="220" fill="#9eb8a4" font-size="18" text-anchor="middle">meetings, approvals, handoffs,</text><text x="360" y="250" fill="#9eb8a4" font-size="18" text-anchor="middle">spreadsheets, weekly reviews</text><text x="360" y="355" fill="#dce7de" font-size="24" text-anchor="middle">AI agents</text><text x="360" y="390" fill="#9eb8a4" font-size="18" text-anchor="middle">individual tasks</text></g></svg><figcaption class="fig-cap">The retrofit shape is efficient at accumulating tools. It is inefficient at moving work through the organization, because the shape of the work is still the shape you had before agents existed.</figcaption></figure>
-
 That is what most organizations mean when they say they are using AI. The Microsoft Work Trend Index 2024 reported that 75 percent of surveyed knowledge workers were already using AI at work, and that 78 percent of AI users were bringing their own tools. Task-level gains show up in the field, too: the 2023 study of 5,179 customer-support agents published by the National Bureau of Economic Research found a 14 percent average productivity gain from a conversational assistant, rising to 34 percent for novice and lower-skilled workers. Anthropic's Economic Index, which analyzes anonymized Claude interactions, estimates that current AI use is about 57 percent augmentation and 43 percent automation, spread unevenly across occupational tasks.
 
 Most organizations begin with the retrofit because it is the honest first move. You can learn what the technology can actually do in your context without disturbing the operating model. The trap is treating that initial pattern as the destination. Adoption keeps climbing. Deployment dashboards look healthy. And yet cycle time stays the same, because the queue between step three and step four still exists, the compliance review at step six still waits for a person, and the Monday planning meeting still has thirty attendees.
@@ -35,7 +33,44 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="ai-first-triangle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="100%" height="auto" role="img" aria-labelledby="ad-ai-first-triangle-title ad-ai-first-triangle-desc"><title id="ad-ai-first-triangle-title">Turn the triangle upright.</title><desc id="ad-ai-first-triangle-desc">Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates.</desc><g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle"><polygon points="360,70 650,470 70,470" fill="#0a1a0f" stroke="#00e653" stroke-width="5"/><line x1="282" y1="180" x2="438" y2="180" stroke="#00e653" stroke-width="3"/><line x1="190" y1="305" x2="530" y2="305" stroke="#00e653" stroke-width="3"/><text x="360" y="135" fill="#dce7de" font-size="24" text-anchor="middle">Humans</text><text x="360" y="225" fill="#9eb8a4" font-size="18" text-anchor="middle">judgment gates</text><text x="360" y="370" fill="#dce7de" font-size="24" text-anchor="middle">Agents</text><text x="360" y="405" fill="#9eb8a4" font-size="18" text-anchor="middle">execute the end-to-end workflow</text></g></svg><figcaption class="fig-cap">Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</figcaption></figure>
+<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc">
+<title id="ad-retrofit-ai-first-triangles-title">Turn the triangle upright.</title>
+<desc id="ad-retrofit-ai-first-triangles-desc">Picture a triangle with its point at the bottom. Agents form the wide base. Humans occupy the narrow point at the top.</desc>
+<g class="article-diagram__decoration">
+<rect x="10" y="10" width="740" height="480" rx="20" fill="#0a1a0f"/>
+<line x1="380" y1="45" x2="380" y2="455" stroke="#9eb8a4" stroke-width="2" opacity="0.45"/>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle-shape">
+<polygon points="65,140 335,140 200,410" fill="none" stroke="#00e653" stroke-width="5"/>
+<text x="200" y="65" fill="#dce7de" font-size="24" text-anchor="middle">The retrofit triangle</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-humans-wide-top">
+<rect x="80" y="160" width="240" height="72" rx="12" fill="#00a03a"/>
+<text x="200" y="191" fill="#dce7de" font-size="18" text-anchor="middle">Humans and their</text>
+<text x="200" y="216" fill="#dce7de" font-size="18" text-anchor="middle">workflows</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-agents-bottom-point">
+<circle cx="200" cy="372" r="29" fill="#00e653"/>
+<text x="200" y="378" fill="#0a1a0f" font-size="17" text-anchor="middle">AI agents</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle-shape">
+<polygon points="560,130 425,400 695,400" fill="none" stroke="#00e653" stroke-width="5"/>
+<text x="560" y="65" fill="#dce7de" font-size="24" text-anchor="middle">The AI-first triangle</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-agents-wide-base">
+<rect x="440" y="310" width="240" height="72" rx="12" fill="#00a03a"/>
+<text x="560" y="341" fill="#dce7de" font-size="18" text-anchor="middle">Agents form the</text>
+<text x="560" y="366" fill="#dce7de" font-size="18" text-anchor="middle">wide base</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-humans-top-point">
+<circle cx="560" cy="165" r="38" fill="#00e653"/>
+<text x="560" y="160" fill="#0a1a0f" font-size="16" text-anchor="middle">Humans occupy</text>
+<text x="560" y="181" fill="#0a1a0f" font-size="16" text-anchor="middle">the narrow point</text>
+</g>
+</svg>
+<figcaption class="fig-cap">Turn the triangle upright.</figcaption>
+</figure>
 
 This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
 
@@ -61,7 +96,12 @@ Arvind KC, OpenAI's Chief People Officer, described this shift in a LinkedIn pos
 
 ## Meanwhile in sci-fi
 
-<div class="scifi"><span class="scifi__label">Meanwhile in sci-fi</span><p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p><p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p><p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p></div>
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p>
+<p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p>
+<p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p>
+</div>
 
 ## Monday morning inside a retrofit company
 
