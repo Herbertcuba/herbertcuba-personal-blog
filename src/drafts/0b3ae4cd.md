@@ -33,7 +33,31 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc"><title id="ad-retrofit-ai-first-triangles-title">The retrofit triangle</title><desc id="ad-retrofit-ai-first-triangles-desc">Picture a triangle with its point at the bottom. Turn the triangle upright.</desc><g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle"><polygon points="90,70 670,70 380,280" fill="#0a1a0f"/><text x="380" y="125" text-anchor="middle" font-size="24" fill="#dce7de">Humans and their workflows</text><text x="380" y="165" text-anchor="middle" font-size="18" fill="#9eb8a4">meetings, approvals, handoffs</text><circle cx="380" cy="268" r="30" fill="#00e653"/><text x="380" y="274" text-anchor="middle" font-size="16" fill="#0a1a0f">AI agents</text></g><g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle"><polygon points="380,390 90,620 670,620" fill="#0a1a0f"/><circle cx="380" cy="408" r="34" fill="#00e653"/><text x="380" y="414" text-anchor="middle" font-size="16" fill="#0a1a0f">Humans</text><text x="380" y="525" text-anchor="middle" font-size="22" fill="#dce7de">Agents form the wide base</text><text x="380" y="566" text-anchor="middle" font-size="18" fill="#9eb8a4">execute the end-to-end workflow</text></g></svg><figcaption class="fig-cap">Turn the triangle upright.</figcaption></figure>
+<figure class="fig-band article-diagram" data-diagram-id="triangle-inversion">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 700" width="100%" height="auto" role="img" aria-labelledby="ad-triangle-inversion-title ad-triangle-inversion-desc">
+<title id="ad-triangle-inversion-title">The retrofit triangle</title>
+<desc id="ad-triangle-inversion-desc">Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="720" height="700" rx="24" fill="#0a1a0f" />
+<line x1="48" y1="340" x2="672" y2="340" stroke="#9eb8a4" stroke-width="2" opacity="0.45" />
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
+<text x="360" y="45" fill="#dce7de" font-size="24" text-anchor="middle">The retrofit triangle</text>
+<polygon points="80,75 640,75 360,300" fill="none" stroke="#00e653" stroke-width="5" />
+<line x1="178" y1="155" x2="542" y2="155" stroke="#00a03a" stroke-width="3" />
+<text x="360" y="125" fill="#dce7de" font-size="20" text-anchor="middle">Humans and their workflows</text>
+<text x="360" y="250" fill="#00e653" font-size="20" text-anchor="middle">AI agents</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
+<text x="360" y="385" fill="#dce7de" font-size="24" text-anchor="middle">The AI-first triangle</text>
+<polygon points="360,420 80,650 640,650" fill="none" stroke="#00e653" stroke-width="5" />
+<line x1="222" y1="535" x2="498" y2="535" stroke="#00a03a" stroke-width="3" />
+<text x="360" y="490" fill="#dce7de" font-size="20" text-anchor="middle">Humans</text>
+<text x="360" y="605" fill="#00e653" font-size="20" text-anchor="middle">Agents</text>
+</g>
+</svg>
+<figcaption class="fig-cap">Turn the triangle upright.</figcaption>
+</figure>
 
 This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
 
@@ -59,7 +83,12 @@ Arvind KC, OpenAI's Chief People Officer, described this shift in a LinkedIn pos
 
 ## Meanwhile in sci-fi
 
-<div class="scifi"><span class="scifi__label">Meanwhile in sci-fi</span><p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p><p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p><p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p></div>
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p><em>Star Trek: The Next Generation</em> (1987) offers a useful picture of what shared system literacy looks like in practice. The USS Enterprise-D has an unambiguous chain of command: Captain Picard makes the call, Commander Riker executes, department heads own their stations. The bridge is not a flat organization.</p>
+<p>What makes the crew interesting is that each specialist — flight control at the conn, engineering, tactical, medical, science — combines deep expertise at one station with enough understanding of the wider ship to anticipate effects elsewhere. When the chief engineer proposes routing power away from a system, everyone on the bridge already knows what that will do to weapons, life support, and warp capability. Local autonomy works because system literacy is distributed across the crew.</p>
+<p>An AI-first company needs the same combination. Agents can execute inside a domain safely only when the person who owns that domain understands how a local change ripples through the workflow. Autonomy without system literacy is how a small tweak in a pricing agent quietly reprices half the inventory.</p>
+</div>
 
 ## Monday morning inside a retrofit company
 
