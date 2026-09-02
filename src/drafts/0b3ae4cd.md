@@ -27,51 +27,60 @@ Most organizations begin with the retrofit because it is the honest first move. 
 
 The retrofit shape is efficient at accumulating tools. It is inefficient at moving work through the organization, because the shape of the work is still the shape you had before agents existed.
 
+<figure class="fig-band article-diagram" data-diagram-id="retrofit-triangle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-triangle-title ad-retrofit-triangle-desc">
+<title id="ad-retrofit-triangle-title">The retrofit triangle</title>
+<desc id="ad-retrofit-triangle-desc">Humans and their workflows fill the wide top. AI agents sit at the narrow bottom point, tucked inside individual tasks.</desc>
+<g class="article-diagram__decoration">
+<rect x="20" y="20" width="720" height="400" rx="20" fill="#0a1a0f" />
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-wide-top">
+<polygon points="90,70 670,70 455,285 305,285" fill="#00a03a" />
+<text x="380" y="125" text-anchor="middle" font-size="24" fill="#dce7de">Humans and their workflows</text>
+<text x="380" y="165" text-anchor="middle" font-size="18" fill="#dce7de">meetings, approvals, handoffs, spreadsheets, weekly reviews</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-retrofit-narrow-point">
+<polygon points="305,285 455,285 380,385" fill="#00e653" />
+<text x="380" y="325" text-anchor="middle" font-size="20" fill="#0a1a0f">AI agents</text>
+<text x="380" y="355" text-anchor="middle" font-size="16" fill="#0a1a0f">individual tasks</text>
+</g>
+</svg>
+<figcaption class="fig-cap">The retrofit shape is efficient at accumulating tools. It is inefficient at moving work through the organization, because the shape of the work is still the shape you had before agents existed.</figcaption>
+</figure>
+
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>In a retrofit organization, humans and their workflows sit at the wide top of the triangle and agents live at the narrow point, embedded in individual tasks. Local speed rises while the surrounding workflow remains untouched.</p></div>
 
 ## The AI-first triangle
 
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
-<figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc">
-<title id="ad-retrofit-ai-first-triangles-title">The AI-first triangle</title>
-<desc id="ad-retrofit-ai-first-triangles-desc">Humans and their workflows fill the wide top: meetings, approvals, handoffs, spreadsheets, weekly reviews, the whole coordination surface an organization runs on today. AI agents sit at the narrow bottom point, tucked inside individual tasks. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</desc>
-<g class="article-diagram__decoration">
-<rect x="0" y="0" width="760" height="680" rx="24" fill="#0a1a0f"/>
-<line x1="48" y1="340" x2="712" y2="340" stroke="#9eb8a4" stroke-width="2" opacity="0.45"/>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-humans-wide-top">
-<polygon points="80,84 680,84 438,286 322,286" fill="#00a03a" stroke="#00e653" stroke-width="3"/>
-<text x="380" y="54" text-anchor="middle" font-size="22" fill="#dce7de">The retrofit triangle</text>
-<text x="380" y="132" text-anchor="middle" font-size="21" fill="#dce7de">Humans and their workflows</text>
-<text x="380" y="162" text-anchor="middle" font-size="17" fill="#dce7de">meetings, approvals, handoffs, spreadsheets, weekly reviews</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-retrofit-agents-narrow-point">
-<circle cx="380" cy="286" r="42" fill="#00e653" stroke="#dce7de" stroke-width="3"/>
-<text x="380" y="293" text-anchor="middle" font-size="18" fill="#0a1a0f">AI agents</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-agents-wide-base">
-<polygon points="322,404 438,404 680,606 80,606" fill="#00a03a" stroke="#00e653" stroke-width="3"/>
-<text x="380" y="652" text-anchor="middle" font-size="22" fill="#dce7de">Agents form the wide base</text>
-<text x="380" y="536" text-anchor="middle" font-size="18" fill="#dce7de">execute the end-to-end workflow</text>
-<text x="380" y="566" text-anchor="middle" font-size="16" fill="#dce7de">retrieve information, draft, decide within defined bounds, call tools</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-ai-first-humans-narrow-point">
-<circle cx="380" cy="404" r="42" fill="#00e653" stroke="#dce7de" stroke-width="3"/>
-<text x="380" y="399" text-anchor="middle" font-size="17" fill="#0a1a0f">Humans occupy</text>
-<text x="380" y="421" text-anchor="middle" font-size="17" fill="#0a1a0f">the narrow point</text>
-<text x="380" y="374" text-anchor="middle" font-size="22" fill="#dce7de">The AI-first triangle</text>
-</g>
-</svg>
-<figcaption class="fig-cap">Turn the triangle upright.</figcaption>
-</figure>
-
 This shape assumes the workflow itself has been redesigned around agent execution. McKinsey's survey found that only 21 percent of respondents reporting generative-AI use said their organizations had fundamentally redesigned at least some workflows, and it identified workflow redesign as the organizational practice most strongly associated with reported EBIT impact. The survey shows an association, and it points at a plausible mechanism: value follows the redesign, because retrofitted tasks feed the same queues.
 
 The AI-first shape does not promise that everything runs autonomously. Anthropic's usage data still shows more augmentation than full automation. The preregistered Boston Consulting Group experiment described in *Navigating the Jagged Technological Frontier* found that GPT-4 users were more productive on 18 tasks selected as inside the model's capability frontier and less accurate on a task deliberately chosen outside it. METR's July 2025 randomized study of 16 experienced open-source developers found that early-2025 AI tools increased their completion time by 19 percent in mature repositories. Task fit matters. Model choice matters. Review controls matter.
 
 What the AI-first shape does is locate the human deliberately. Instead of a person in every seat performing supervision that has calcified into habit, one accountable person makes the decision the workflow actually requires and takes responsibility for it.
+
+<figure class="fig-band article-diagram" data-diagram-id="ai-first-triangle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="auto" role="img" aria-labelledby="ad-ai-first-triangle-title ad-ai-first-triangle-desc">
+<title id="ad-ai-first-triangle-title">The AI-first triangle</title>
+<desc id="ad-ai-first-triangle-desc">Agents form the wide base. Humans occupy the narrow point at the top and enter at explicit judgment gates.</desc>
+<g class="article-diagram__decoration">
+<rect x="20" y="20" width="720" height="400" rx="20" fill="#0a1a0f" />
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-narrow-point">
+<polygon points="380,55 455,155 305,155" fill="#00e653" />
+<text x="380" y="105" text-anchor="middle" font-size="20" fill="#0a1a0f">Humans</text>
+<text x="380" y="135" text-anchor="middle" font-size="16" fill="#0a1a0f">judgment gates</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-ai-first-wide-base">
+<polygon points="305,155 455,155 675,380 85,380" fill="#00a03a" />
+<text x="380" y="245" text-anchor="middle" font-size="24" fill="#dce7de">Agents</text>
+<text x="380" y="285" text-anchor="middle" font-size="18" fill="#dce7de">execute the end-to-end workflow</text>
+<text x="380" y="325" text-anchor="middle" font-size="16" fill="#dce7de">retrieve information, draft, decide within defined bounds, call tools</text>
+</g>
+</svg>
+<figcaption class="fig-cap">What the AI-first shape does is locate the human deliberately.</figcaption>
+</figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>In an AI-first organization, agents form the base of the triangle and execute the workflow, while humans sit at the point and enter at explicit judgment and accountability gates. This shape assumes a redesigned workflow, not a smarter tool inserted into the old one.</p></div>
 
