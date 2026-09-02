@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: The Retrofit Trap and the AI-First Company
-excerpt: "McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates."
+excerpt: McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates.
 anthem: true
 permalink: /drafts/0b3ae4cd/
 date: 2026-09-02
@@ -34,20 +34,24 @@ The retrofit shape is efficient at accumulating tools. It is inefficient at movi
 Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.
 
 <figure class="fig-band article-diagram" data-diagram-id="retrofit-ai-first-triangles">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc">
-<title id="ad-retrofit-ai-first-triangles-title">The retrofit triangle</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" width="100%" height="auto" role="img" aria-labelledby="ad-retrofit-ai-first-triangles-title ad-retrofit-ai-first-triangles-desc">
+<title id="ad-retrofit-ai-first-triangles-title">The AI-first triangle</title>
 <desc id="ad-retrofit-ai-first-triangles-desc">Turn the triangle upright. Agents form the wide base: they execute the end-to-end workflow, retrieve information, draft, decide within defined bounds, call tools, and hand off to one another. Humans occupy the narrow point at the top and enter at explicit judgment gates — defining objectives, resolving ambiguity, approving consequential action, catching subtle failures, and carrying accountability.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="760" height="640" rx="20" fill="#0a1a0f" />
+<line x1="60" y1="320" x2="700" y2="320" stroke="#9eb8a4" stroke-width="2" opacity="0.5" />
+</g>
 <g class="article-diagram__claim" data-claim-id="claim-retrofit-triangle">
-<polygon points="80,70 680,70 380,270" fill="#0a1a0f" stroke="#00e653" stroke-width="4"></polygon>
-<line x1="170" y1="130" x2="590" y2="130" stroke="#00e653" stroke-width="3"></line>
-<text x="380" y="110" fill="#dce7de" font-size="24" text-anchor="middle">Humans and their workflows</text>
-<text x="380" y="205" fill="#9eb8a4" font-size="22" text-anchor="middle">AI agents</text>
+<text x="380" y="42" fill="#dce7de" font-size="22" font-weight="700" text-anchor="middle">The retrofit triangle</text>
+<polygon points="80,72 680,72 380,286" fill="#00a03a" stroke="#00e653" stroke-width="3" />
+<text x="380" y="125" fill="#dce7de" font-size="20" font-weight="700" text-anchor="middle">Humans and their workflows</text>
+<text x="380" y="245" fill="#dce7de" font-size="18" font-weight="700" text-anchor="middle">AI agents</text>
 </g>
 <g class="article-diagram__claim" data-claim-id="claim-ai-first-triangle">
-<polygon points="380,350 80,550 680,550" fill="#0a1a0f" stroke="#00e653" stroke-width="4"></polygon>
-<line x1="170" y1="490" x2="590" y2="490" stroke="#00e653" stroke-width="3"></line>
-<text x="380" y="415" fill="#dce7de" font-size="22" text-anchor="middle">Humans</text>
-<text x="380" y="530" fill="#00e653" font-size="24" text-anchor="middle">Agents</text>
+<text x="380" y="354" fill="#dce7de" font-size="22" font-weight="700" text-anchor="middle">The AI-first triangle</text>
+<polygon points="380,380 80,594 680,594" fill="#00a03a" stroke="#00e653" stroke-width="3" />
+<text x="380" y="430" fill="#dce7de" font-size="18" font-weight="700" text-anchor="middle">Humans</text>
+<text x="380" y="548" fill="#dce7de" font-size="20" font-weight="700" text-anchor="middle">Agents form the wide base</text>
 </g>
 </svg>
 <figcaption class="fig-cap">Turn the triangle upright.</figcaption>
