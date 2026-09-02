@@ -4,6 +4,7 @@ title: The Retrofit Trap and the AI-First Company
 excerpt: McKinsey's March 2025 survey found that more than 80 percent of respondents saw no tangible enterprise-level EBIT impact from generative AI, even as regular use climbed to 71 percent. One architectural explanation is that companies are speeding up individual tasks while leaving the workflow around those tasks intact. This piece maps that retrofit trap and sketches the AI-first operating model that redesigns work around agent execution, with humans placed deliberately at judgment and accountability gates.
 anthem: true
 permalink: /drafts/0b3ae4cd/
+featuredImage: "/images/posts/the-retrofit-trap-and-the-ai-first-company.webp"
 date: 2026-09-02
 ---
 
