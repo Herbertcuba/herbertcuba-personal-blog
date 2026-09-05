@@ -52,36 +52,39 @@ The alternative is not less governance. It is governance built into the workflow
 Google's site-reliability engineers already work this way. They set explicit reliability targets, hold an error budget — the amount of failure permitted by those targets, which authorizes speed within tolerances — and treat every significant incident as material for a documented postmortem. Toyota's factories embody a related pattern in `jidoka`, meaning "automation with a human touch": production lines designed so an abnormality can be detected and stopped before a defect propagates. Neither is a template for AI. Both prove that automation gets more powerful, not less, when it can notice and stop.
 
 <figure class="fig-band article-diagram" data-diagram-id="adaptive-governance-comparison">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 680" width="100%" height="auto" role="img" aria-labelledby="ad-adaptive-governance-comparison-title ad-adaptive-governance-comparison-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 720" width="100%" height="auto" role="img" aria-labelledby="ad-adaptive-governance-comparison-title ad-adaptive-governance-comparison-desc">
 <title id="ad-adaptive-governance-comparison-title">Adaptive governance, not inherited bureaucracy</title>
 <desc id="ad-adaptive-governance-comparison-desc">The wrong response is to bolt the old approval workflow onto the faster production line. The alternative is not less governance. It is governance built into the workflow rather than appended to it.</desc>
 <g class="article-diagram__decoration">
-<rect x="0" y="0" width="720" height="680" rx="24" fill="#0a1a0f"/>
-<line x1="56" y1="292" x2="664" y2="292" stroke="#9eb8a4" stroke-width="2"/>
+<rect x="0" y="0" width="760" height="720" rx="24" fill="#0a1a0f"/>
+<line x1="70" y1="326" x2="690" y2="326" stroke="#9eb8a4" stroke-width="2" opacity="0.45"/>
 </g>
 <g class="article-diagram__claim" data-claim-id="claim-old-approval-workflow">
-<rect x="48" y="48" width="624" height="212" rx="18" fill="#000000" stroke="#9eb8a4" stroke-width="2"/>
-<text x="76" y="88" fill="#dce7de" font-size="22" font-weight="700">The wrong response</text>
-<text x="76" y="126" fill="#dce7de" font-size="18">bolt the old approval workflow onto the faster production line.</text>
-<text x="76" y="166" fill="#9eb8a4" font-size="18">Uniform committee review and quarterly policy refreshes</text>
-<text x="76" y="198" fill="#9eb8a4" font-size="18">will either drown in volume or be quietly bypassed.</text>
-<text x="76" y="230" fill="#dce7de" font-size="18">Neither outcome is safe.</text>
+<rect x="40" y="40" width="680" height="128" rx="16" fill="#000000" stroke="#9eb8a4" stroke-width="2"/>
+<text x="70" y="82" fill="#dce7de" font-size="20" font-weight="700">The wrong response</text>
+<text x="70" y="116" fill="#dce7de" font-size="18">bolt the old approval workflow</text>
+<text x="70" y="146" fill="#9eb8a4" font-size="18">onto the faster production line</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-governance-built-into-workflow">
-<rect x="48" y="324" width="624" height="244" rx="18" fill="#dce7de" stroke="#00a03a" stroke-width="4"/>
-<text x="76" y="366" fill="#0a1a0f" font-size="22" font-weight="700">The alternative is not less governance.</text>
-<text x="76" y="404" fill="#0a1a0f" font-size="18">governance built into the workflow rather than appended to it:</text>
-<text x="76" y="442" fill="#0a1a0f" font-size="18">risk-tiered controls proportional to consequence and reversibility,</text>
-<text x="76" y="476" fill="#0a1a0f" font-size="18">explicit ownership for every material artifact, traceability</text>
-<text x="76" y="510" fill="#0a1a0f" font-size="18">exception handling with predefined stop and rollback paths,</text>
-<text x="76" y="544" fill="#0a1a0f" font-size="18">and feedback loops that turn each failure into a test or a policy update.</text>
+<g class="article-diagram__claim" data-claim-id="claim-uniform-review">
+<rect x="40" y="188" width="680" height="108" rx="16" fill="#000000" stroke="#9eb8a4" stroke-width="2"/>
+<text x="70" y="228" fill="#dce7de" font-size="18">Uniform committee review and quarterly policy refreshes</text>
+<text x="70" y="264" fill="#9eb8a4" font-size="18">will either drown in volume or be quietly bypassed.</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-governance-built-in">
+<rect x="40" y="356" width="680" height="238" rx="16" fill="#0a1a0f" stroke="#00e653" stroke-width="3"/>
+<text x="70" y="398" fill="#00e653" font-size="20" font-weight="700">The alternative is not less governance.</text>
+<text x="70" y="434" fill="#dce7de" font-size="18">governance built into the workflow rather than appended to it</text>
+<text x="70" y="476" fill="#dce7de" font-size="16">risk-tiered controls proportional to consequence and reversibility</text>
+<text x="70" y="510" fill="#dce7de" font-size="16">explicit ownership for every material artifact</text>
+<text x="70" y="544" fill="#dce7de" font-size="16">exception handling with predefined stop and rollback paths</text>
+<text x="70" y="578" fill="#dce7de" font-size="16">feedback loops that turn each failure into a test or a policy update</text>
 </g>
 <g class="article-diagram__claim" data-claim-id="claim-notice-and-stop">
-<rect x="48" y="600" width="624" height="48" rx="12" fill="#00e653"/>
-<text x="360" y="631" fill="#0a1a0f" font-size="18" font-weight="700" text-anchor="middle">automation gets more powerful, not less, when it can notice and stop.</text>
+<rect x="40" y="624" width="680" height="56" rx="16" fill="#00a03a"/>
+<text x="70" y="660" fill="#dce7de" font-size="18" font-weight="700">automation gets more powerful, not less, when it can notice and stop.</text>
 </g>
 </svg>
-<figcaption class="fig-cap">Both prove that automation gets more powerful, not less, when it can notice and stop.</figcaption>
+<figcaption class="fig-cap">The alternative is not less governance. It is governance built into the workflow rather than appended to it:</figcaption>
 </figure>
 
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>Adaptive governance embeds proportional controls, named ownership, and learning loops inside the production workflow itself, so speed and reliability reinforce each other.</p></div>
