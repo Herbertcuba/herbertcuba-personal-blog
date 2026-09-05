@@ -2,8 +2,9 @@
 layout: post.njk
 title: "When Output Gets Cheap, Operations Become the Advantage"
 excerpt: "AI is not making process expertise obsolete. By making candidate output abundant, it turns the ability to organize, verify, and learn from that output into scarce strategic infrastructure."
-anthem: true
+anthem: false
 permalink: /drafts/bbbbc74e/
+featuredImage: "/images/posts/when-output-gets-cheap-operations-become-the-advantage.webp"
 date: 2026-09-05
 ---
 
