@@ -2,8 +2,9 @@
 layout: post.njk
 title: "When Output Gets Cheap, Operations Become the Advantage"
 excerpt: "AI is collapsing the price of an attempt, not the price of a dependable outcome. That is why operational competence, not raw production speed, is becoming the scarce strategic asset."
-anthem: true
+anthem: false
 permalink: /drafts/bbbbc74e/
+featuredImage: "/images/posts/when-output-gets-cheap-operations-become-the-advantage.webp"
 date: 2026-09-05
 ---
 
