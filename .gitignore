@@ -9,3 +9,4 @@ dist/
 ga-service-account.json
 *-service-account.json
 .env.local
+.cache/
