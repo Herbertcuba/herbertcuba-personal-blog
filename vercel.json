@@ -1,5 +1,15 @@
 {
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "buildCommand": "npm run build"
+  "buildCommand": "npm run build",
+  "rewrites": [
+    {
+      "source": "/images/:path*",
+      "destination": "https://bulhkuohv8utm7vd.public.blob.vercel-storage.com/site-assets/images/:path*"
+    },
+    {
+      "source": "/downloads/:path*",
+      "destination": "https://bulhkuohv8utm7vd.public.blob.vercel-storage.com/site-assets/downloads/:path*"
+    }
+  ]
 }
