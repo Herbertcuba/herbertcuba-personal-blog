@@ -42,7 +42,6 @@ image: /images/crucibles-cover.jpg
         <div class="art-rail__label">get the book</div>
         <div class="art-rail__share">
           <a href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
-          <a href="/books/#free">Get a free copy →</a>
         </div>
       </div>
     </aside>
@@ -78,7 +77,6 @@ image: /images/crucibles-cover.jpg
 
       <div class="bk-detail__cta">
         <a class="btn btn--primary" href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
-        <a class="btn btn--secondary" href="/books/#free">Get a free copy</a>
       </div>
     </article>
   </div>

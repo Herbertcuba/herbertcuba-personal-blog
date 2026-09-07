@@ -28,7 +28,6 @@ description: "Three books about what comes next — including AION, Engineering 
     <p class="bk-panel__desc">{{ b1.description }}</p>
     <div class="bk-panel__btns">
       <a class="btn btn--primary" href="{{ b1.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
-      <a class="btn btn--secondary" href="#free">Get a free copy</a>
     </div>
   </div>
 </div>
@@ -46,7 +45,6 @@ description: "Three books about what comes next — including AION, Engineering 
     <p class="bk-panel__desc">{{ b2.description }}</p>
     <div class="bk-panel__btns">
       <a class="btn btn--primary" href="{{ b2.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
-      <a class="btn btn--secondary" href="#free">Get a free copy</a>
     </div>
   </div>
   <div class="bk-panel__cover">
@@ -74,55 +72,3 @@ description: "Three books about what comes next — including AION, Engineering 
     </div>
   </div>
 </div>
-
-
-{# ═══════════════════ FREE COPY FORM ═══════════════════ #}
-<div id="free" class="bk-free">
-  <div class="bk-free__grid">
-    <div class="bk-free__intro">
-      <h2 class="apex-h2 apex-h2--light"><span class="apex-h2__slash apex-h2__slash--light mono">//</span>Get your free copies</h2>
-      <p class="bk-free__dek">All three books, free in your inbox as e-books. No newsletter strings attached — just the ideas.</p>
-    </div>
-    <div class="bk-free__formwrap">
-      <form class="bk-form" id="freeCopyForm">
-        <input type="text" name="website" tabindex="-1" autocomplete="off" class="bk-form__honeypot" aria-hidden="true">
-        <div class="bk-form__field">
-          <label for="free-name" class="mono bk-form__label">your name</label>
-          <input id="free-name" name="name" type="text" placeholder="Jane Doe" class="bk-form__input" required>
-        </div>
-        <div class="bk-form__field">
-          <label for="free-email" class="mono bk-form__label">your email</label>
-          <input id="free-email" name="email" type="email" placeholder="name@company.com" class="bk-form__input" required>
-        </div>
-        <button type="submit" class="bk-form__submit">Send me the books →</button>
-      </form>
-      <div class="bk-form__success mono" id="freeCopySuccess" hidden>
-        ✓ Sent — check your inbox for the download links.
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  (function(){
-    var form = document.getElementById('freeCopyForm');
-    var success = document.getElementById('freeCopySuccess');
-    if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var honeypot = form.querySelector('input[name=website]').value;
-      if(honeypot){ form.style.display='none'; success.hidden=false; return; }
-      var name = form.querySelector('input[name=name]').value;
-      var email = form.querySelector('input[name=email]').value;
-      var btn = form.querySelector('button[type=submit]');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      fetch('https://script.google.com/macros/s/AKfycbxzOUrR_mkzegywYY379t0sh9sRu-I0KU-aGZLrq-CqAeerJM2E5KRy_uDrxsQfYLm-/exec', {
-        method: 'POST', mode: 'no-cors',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({name:name, email:email, book:'All three books (free copies page)'})
-      }).then(function(){ form.style.display='none'; success.hidden=false; })
-        .catch(function(){ form.style.display='none'; success.hidden=false; });
-    });
-  })();
-</script>
