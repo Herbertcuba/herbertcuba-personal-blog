@@ -81,7 +81,7 @@ description: "Three books about what comes next — including AION, Engineering 
   <div class="bk-free__grid">
     <div class="bk-free__intro">
       <h2 class="apex-h2 apex-h2--light"><span class="apex-h2__slash apex-h2__slash--light mono">//</span>Get your free copies</h2>
-      <p class="bk-free__dek">All three books, free in your inbox as e-books. No newsletter strings attached — just the ideas.</p>
+      <p class="bk-free__dek">The 3 Crucibles and The Digital Singularity Shift, free in your inbox as e-books. AION is available separately as a paid field manual.</p>
     </div>
     <div class="bk-free__formwrap">
       <form class="bk-form" id="freeCopyForm">
@@ -120,7 +120,7 @@ description: "Three books about what comes next — including AION, Engineering 
       fetch('https://script.google.com/macros/s/AKfycbxzOUrR_mkzegywYY379t0sh9sRu-I0KU-aGZLrq-CqAeerJM2E5KRy_uDrxsQfYLm-/exec', {
         method: 'POST', mode: 'no-cors',
         headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({name:name, email:email, book:'All three books (free copies page)'})
+        body: JSON.stringify({name:name, email:email, book:'The 3 Crucibles + The Digital Singularity Shift (free copies page)'})
       }).then(function(){ form.style.display='none'; success.hidden=false; })
         .catch(function(){ form.style.display='none'; success.hidden=false; });
     });

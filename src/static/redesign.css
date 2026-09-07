@@ -1099,3 +1099,18 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .bk-title{font-size:40px;}
   .bk-panel__cover img{width:220px;height:323px;box-shadow:16px 16px 0 rgba(0,230,83,0.25);}
 }
+
+/* ---- AION Stripe checkout ---- */
+.aion-price{color:var(--green);font-size:13px;font-weight:700;margin-top:24px;}
+.aion-purchase{display:flex;flex-direction:column;align-items:flex-start;gap:16px;max-width:480px;}
+.aion-checkout{display:flex;flex-direction:column;align-items:flex-start;gap:16px;}
+.aion-checkout__consent{display:flex;gap:12px;align-items:flex-start;color:var(--text-2);font-size:13px;line-height:1.5;cursor:pointer;}
+.aion-checkout__consent input{accent-color:var(--green);margin-top:3px;flex:none;}
+.aion-checkout__note{color:var(--faint);font-size:11px;margin:0;}
+.aion-checkout__error{color:#ff7878;font-size:12px;margin:0;}
+.aion-thanks{background:#000;color:var(--text);min-height:70vh;padding:96px var(--gutter);}
+.aion-thanks__inner{max-width:900px;}
+.aion-thanks__download{margin-top:32px;}
+.aion-thanks__note{color:var(--faint);font-size:12px;margin:24px 0 0;}
+.aion-thanks__support{color:var(--text-2);margin-top:32px;}
+.aion-thanks__support a{color:var(--green);}
