@@ -27,7 +27,7 @@ description: "Herbert Cuba Garcia — engineer, entrepreneur, author working at 
   <div class="ab-stats">
     <div class="ab-stat"><div class="ab-stat__num">{{ site.yearsInTech }}</div><div class="ab-stat__lbl mono">years in tech</div></div>
     <div class="ab-stat"><div class="ab-stat__num">{{ insightCount }}</div><div class="ab-stat__lbl mono">insights published</div></div>
-    <div class="ab-stat"><div class="ab-stat__num">02</div><div class="ab-stat__lbl mono">books authored</div></div>
+    <div class="ab-stat"><div class="ab-stat__num">03</div><div class="ab-stat__lbl mono">books authored</div></div>
     <div class="ab-stat"><div class="ab-stat__num">APEX</div><div class="ab-stat__lbl mono">operating-model framework</div></div>
   </div>
 </div>
@@ -51,7 +51,7 @@ description: "Herbert Cuba Garcia — engineer, entrepreneur, author working at 
     <div class="ab-do__col">
       <h3 class="ab-do__name">Author</h3>
       <div class="apex-rules apex-rules--orange"><span></span><span></span></div>
-      <p class="ab-do__body">Two books on the forces reshaping technology and business: The 3 Crucibles and The Digital Singularity Shift.</p>
+      <p class="ab-do__body">Three books on the forces reshaping technology, business, and the AI-first organization — including AION.</p>
       <a class="ab-do__link" href="/books/">See the books →</a>
     </div>
   </div>

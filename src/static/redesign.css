@@ -315,6 +315,10 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .apex__label{font-size:13px;font-weight:700;margin-bottom:20px;}
 .apex__title{font-size:56px;line-height:1;letter-spacing:-0.01em;margin:0 0 16px;}
 .apex__dek{margin:0;font-weight:350;font-size:18px;line-height:1.5;max-width:720px;}
+.aion-band{background:#000;color:var(--text);border-top:2px solid var(--green);}
+.aion-band .apex__label{color:var(--green);}
+.aion-band .apex__dek{color:var(--text-2);}
+.aion-band .btn--dark{background:var(--green);color:#000;}
 
 /* ---- Books + About teaser ---- */
 .bookteaser{background:var(--light);color:#000;padding:64px var(--gutter);display:grid;grid-template-columns:2fr 1fr;gap:64px;}
@@ -1038,7 +1042,9 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .bk-kicker{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--green);margin-bottom:28px;}
 .bk-title{font-family:var(--font-display);font-weight:700;font-size:80px;line-height:1;letter-spacing:-0.01em;max-width:1100px;margin:0 0 24px;}
 .bk-lede{font-weight:350;font-size:20px;line-height:1.5;color:var(--text-2);max-width:640px;margin:0;}
+.bk-panel--3{background:var(--panel);color:var(--text);border-top:2px solid var(--green);grid-template-columns:5fr 7fr;}
 
+.bk-panel--3 .bk-panel__cover{border-right:1px solid var(--border-inner);}
 .bk-panel{display:grid;min-height:560px;}
 .bk-panel--1{background:var(--panel);color:var(--text);border-top:2px solid var(--green);grid-template-columns:5fr 7fr;}
 .bk-panel--2{background:#000;color:var(--text);border-top:1px solid var(--border-dark);grid-template-columns:7fr 5fr;}
@@ -1079,7 +1085,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .ab-do__grid{grid-template-columns:1fr;gap:32px;}
   .ab-story__grid{grid-template-columns:1fr;gap:32px;}
   .bk-title{font-size:52px;}
-  .bk-panel--1,.bk-panel--2{grid-template-columns:1fr;}
+  .bk-panel--1,.bk-panel--2,.bk-panel--3{grid-template-columns:1fr;}
   .bk-panel--2 .bk-panel__text{order:2;}
   .bk-panel--2 .bk-panel__cover{order:1;}
   .bk-panel__cover{border:none !important;padding:40px var(--gutter);}

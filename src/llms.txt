@@ -1,11 +1,12 @@
 # Herbert Cuba Garcia
 
-> Technology leader at the intersection of AI, strategy, and human potential. Author of The 3 Crucibles and The Digital Singularity Shift. Writes about agentic operating models, AI transformation, and the organizational shifts required when agents become first-class actors.
+> Technology leader at the intersection of AI, strategy, and human potential. Author of The 3 Crucibles, The Digital Singularity Shift, and AION. Writes about agentic operating models, AI transformation, and the organizational shifts required when agents become first-class actors.
 
 ## Insights
 
 - [All insights](https://www.cubagarcia.com/insights/)
 - [APEX — Agentic Production Execution](https://www.cubagarcia.com/posts/2026-04-05-apex-framework/)
+- [AION — Engineering the Organization for the Age of Agents](https://www.cubagarcia.com/aion/)
 
 ## Key articles
 
