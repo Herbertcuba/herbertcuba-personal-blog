@@ -34,6 +34,15 @@
       "amazon": "https://www.amazon.com/dp/B0DKBYXLH2",
       "tags": ["ai", "branding", "strategy"],
       "description": "When AI commoditizes every functional advantage, the only remaining battleground is the human heart. This book explores how metamodern brand narratives — authentic yet self-aware — become the last durable moat in business."
+    },
+    {
+      "num": "03",
+      "title": "AION",
+      "subtitle": "Engineering the Organization for the Age of Agents",
+      "cover": "/images/aion-cover.webp",
+      "download": "/aion/#get-the-book",
+      "tags": ["ai", "organizations", "agents"],
+      "description": "AI is collapsing the cost of structured coordination. AION is a field manual for redesigning the organization itself — with explicit contracts, bounded authority, evidence-based autonomy, and humans retaining consequential judgment."
     }
   ]
 }
