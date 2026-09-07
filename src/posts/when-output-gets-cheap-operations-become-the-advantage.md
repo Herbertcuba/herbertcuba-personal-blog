@@ -3,9 +3,8 @@ layout: post.njk
 title: "When Output Gets Cheap, Operations Become the Advantage"
 excerpt: "AI collapses the price of an attempt, not the price of a dependable outcome. Operational competence, not raw production speed, is becoming the scarce strategic asset."
 anthem: false
-permalink: /drafts/bbbbc74e/
 featuredImage: "/images/posts/when-output-gets-cheap-operations-become-the-advantage.webp"
-date: 2026-09-06
+date: "2026-09-07"
 ---
 
 The dominant story about AI is one of collapse: the cost of producing another draft, another prototype, another analysis is falling toward zero, and whoever produces the most will win. Half of that story is right. The half that gets ignored is where the real strategic question lives.
