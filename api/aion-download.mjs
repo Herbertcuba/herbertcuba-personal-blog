@@ -19,7 +19,11 @@ export default async function handler(request, response) {
     response.setHeader("Allow", "GET, HEAD");
     return fail(response, 405, "Method not allowed.");
   }
-  if (!process.env.STRIPE_SECRET_KEY || !process.env.AION_BLOB_STORE_ID) {
+  if (
+    !process.env.STRIPE_SECRET_KEY ||
+    !process.env.AION_BLOB_STORE_ID ||
+    !process.env.AION_READ_WRITE_TOKEN
+  ) {
     return fail(response, 503, "Downloads are not configured yet.");
   }
 
@@ -47,6 +51,7 @@ export default async function handler(request, response) {
     const file = await get(process.env.AION_BLOB_PATH || AION_BLOB_PATH, {
       access: "private",
       storeId: process.env.AION_BLOB_STORE_ID,
+      token: process.env.AION_READ_WRITE_TOKEN,
     });
     if (!file?.stream) return fail(response, 404, "The book file is not available.");
     response.status(200);

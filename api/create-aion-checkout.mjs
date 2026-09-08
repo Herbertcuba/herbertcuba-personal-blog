@@ -23,7 +23,11 @@ export default async function handler(request, response) {
     response.setHeader("Allow", "POST");
     return json(response, 405, { error: "Method not allowed." });
   }
-  if (!process.env.STRIPE_SECRET_KEY || !process.env.AION_BLOB_STORE_ID) {
+  if (
+    !process.env.STRIPE_SECRET_KEY ||
+    !process.env.AION_BLOB_STORE_ID ||
+    !process.env.AION_READ_WRITE_TOKEN
+  ) {
     return json(response, 503, { error: "Checkout is not configured yet." });
   }
   let body;
