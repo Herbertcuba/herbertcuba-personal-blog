@@ -28,6 +28,7 @@ description: "Three books about what comes next — including AION, Engineering 
     <p class="bk-panel__desc">{{ b1.description }}</p>
     <div class="bk-panel__btns">
       <a class="btn btn--primary" href="{{ b1.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
+      <a class="btn btn--secondary" href="{{ b1.page }}">Buy PDF — {{ b1.priceSek }} SEK →</a>
     </div>
   </div>
 </div>
@@ -45,6 +46,7 @@ description: "Three books about what comes next — including AION, Engineering 
     <p class="bk-panel__desc">{{ b2.description }}</p>
     <div class="bk-panel__btns">
       <a class="btn btn--primary" href="{{ b2.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
+      <a class="btn btn--secondary" href="{{ b2.page }}">Buy PDF — {{ b2.priceSek }} SEK →</a>
     </div>
   </div>
   <div class="bk-panel__cover">
@@ -68,7 +70,7 @@ description: "Three books about what comes next — including AION, Engineering 
     <p class="bk-panel__desc">{{ b3.description }}</p>
     <div class="bk-panel__btns">
       <a class="btn btn--primary" href="/aion/">Explore AION →</a>
-      <a class="btn btn--secondary" href="{{ b3.download }}">Get the e-book</a>
+      <a class="btn btn--secondary" href="{{ b3.page }}">Buy PDF — 1,999 SEK →</a>
     </div>
   </div>
 </div>

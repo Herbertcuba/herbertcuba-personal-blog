@@ -105,16 +105,16 @@ description: "AION is a field manual for engineering the AI-first organization: 
     <div>
       <h2 class="apex-deep__title">Build for the age of agents</h2>
       <p class="apex-deep__dek">The organization is not merely automated. It is engineered.</p>
-      <div class="aion-price mono">DIGITAL FIELD MANUAL · PDF · 99 SEK</div>
+      <div class="aion-price mono">DIGITAL FIELD MANUAL · PDF · 1,999 SEK</div>
     </div>
     <div class="aion-purchase">
-      <form class="aion-checkout js-aion-checkout">
+      <form class="aion-checkout js-book-checkout" data-book-slug="aion" data-button-label="Buy AION — 1,999 SEK →">
         <label class="aion-checkout__consent">
           <input type="checkbox" name="digitalContentConsent" required>
           <span>I request immediate access to the digital book and acknowledge that my statutory right of withdrawal ends when delivery begins.</span>
         </label>
-        <button class="btn btn--primary" type="submit">Buy AION — 99 SEK →</button>
-        <p class="aion-checkout__error mono" role="alert" hidden></p>
+        <button class="btn btn--primary" type="submit">Buy AION — 1,999 SEK →</button>
+        <p class="aion-checkout__error book-checkout__error mono" role="alert" hidden></p>
       </form>
       <p class="aion-checkout__note mono">Secure payment via Stripe · download available for 72 hours</p>
       <a class="btn btn--secondary" href="/about/#contact">Discuss AION →</a>
@@ -122,4 +122,4 @@ description: "AION is a field manual for engineering the AI-first organization: 
   </div>
 </section>
 
-<script src="/aion-checkout.js" defer></script>
+<script src="/book-checkout.js" defer></script>

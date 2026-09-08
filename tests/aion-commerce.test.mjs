@@ -1,13 +1,19 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  BOOKS,
   DEFAULT_AION_PRICE_ORE,
+  isPaidBookSession,
   isPaidAionSession,
   priceInOre,
+  priceInOreForBook,
 } from "../lib/aion-commerce.mjs";
 
-test("AION defaults to a 99 SEK price", () => {
+test("the three books use the configured server-side prices", () => {
+  assert.equal(DEFAULT_AION_PRICE_ORE, 199900);
   assert.equal(priceInOre(), DEFAULT_AION_PRICE_ORE);
+  assert.equal(priceInOreForBook(BOOKS["digital-singularity-shift"]), 9900);
+  assert.equal(priceInOreForBook(BOOKS["three-crucibles"]), 9900);
   assert.equal(priceInOre("149"), 14900);
   assert.equal(priceInOre("99.50"), 9950);
 });
@@ -47,4 +53,17 @@ test("unpaid, refunded, wrong-product, and expired sessions cannot download", ()
   }, now), false);
   assert.equal(isPaidAionSession({ ...base, metadata: { book_slug: "other" } }, now), false);
   assert.equal(isPaidAionSession({ ...base, created: now - 73 * 60 * 60 }, now), false);
+});
+
+test("each paid book session is bound to its purchased title", () => {
+  const now = 2_000_000;
+  const session = {
+    mode: "payment",
+    payment_status: "paid",
+    created: now,
+    metadata: { book_slug: "three-crucibles" },
+    payment_intent: { latest_charge: { refunded: false } },
+  };
+  assert.equal(isPaidBookSession(session, "three-crucibles", now), true);
+  assert.equal(isPaidBookSession(session, "digital-singularity-shift", now), false);
 });

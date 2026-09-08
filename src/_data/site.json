@@ -23,6 +23,8 @@
       "subtitle": "A Prophecy of Collapse, Transformation, and the Fight for Abundance",
       "cover": "/images/crucibles-cover.jpg",
       "amazon": "https://www.amazon.com/dp/B0GTK53C9H",
+      "priceSek": 99,
+      "page": "/books/the-three-crucibles/#get-the-book",
       "tags": ["economics", "technology", "future"],
       "description": "We stand at the edge of three simultaneous disruptions — economic, technological, and existential. This book maps the forces reshaping our world and argues that the choices we make in the next decade will determine whether we descend into scarcity or unlock an era of radical abundance."
     },
@@ -32,6 +34,8 @@
       "subtitle": "The Rise of Metamodern Brand Narratives",
       "cover": "/images/singularity-cover.jpg",
       "amazon": "https://www.amazon.com/dp/B0DKBYXLH2",
+      "priceSek": 99,
+      "page": "/books/the-digital-singularity-shift/#get-the-book",
       "tags": ["ai", "branding", "strategy"],
       "description": "When AI commoditizes every functional advantage, the only remaining battleground is the human heart. This book explores how metamodern brand narratives — authentic yet self-aware — become the last durable moat in business."
     },
@@ -40,7 +44,8 @@
       "title": "AION",
       "subtitle": "Engineering the Organization for the Age of Agents",
       "cover": "/images/aion-cover.webp",
-      "download": "/aion/#get-the-book",
+      "priceSek": 1999,
+      "page": "/aion/#get-the-book",
       "tags": ["ai", "organizations", "agents"],
       "description": "AI is collapsing the cost of structured coordination. AION is a field manual for redesigning the organization itself — with explicit contracts, bounded authority, evidence-based autonomy, and humans retaining consequential judgment."
     }

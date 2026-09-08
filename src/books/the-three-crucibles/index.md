@@ -76,8 +76,22 @@ image: /images/crucibles-cover.jpg
       <p>Leaders, strategists, and anyone who senses that the ground beneath the economy is shifting — and wants a map of what comes next. This is not a prediction. It is a preparation manual.</p>
 
       <div class="bk-detail__cta">
-        <a class="btn btn--primary" href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
+        <div id="get-the-book" class="aion-purchase">
+          <div class="aion-price mono">DIGITAL E-BOOK · PDF · 99 SEK</div>
+          <form class="aion-checkout js-book-checkout" data-book-slug="three-crucibles" data-button-label="Buy PDF — 99 SEK →">
+            <label class="aion-checkout__consent">
+              <input type="checkbox" name="digitalContentConsent" required>
+              <span>I request immediate access to the digital book and acknowledge that my statutory right of withdrawal ends when delivery begins.</span>
+            </label>
+            <button class="btn btn--primary" type="submit">Buy PDF — 99 SEK →</button>
+            <p class="aion-checkout__error book-checkout__error mono" role="alert" hidden></p>
+          </form>
+          <p class="aion-checkout__note mono">Secure payment via Stripe · download available for 72 hours</p>
+        </div>
+        <a class="btn btn--secondary" href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
       </div>
     </article>
   </div>
 </div>
+
+<script src="/book-checkout.js" defer></script>

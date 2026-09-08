@@ -78,8 +78,22 @@ image: /images/singularity-cover.jpg
       <p>CMOs, brand strategists, and business leaders navigating the AI era. If you sense that your competitive advantages are evaporating and you need a new playbook — one built on narrative, meaning, and metamodern authenticity — this book provides the framework.</p>
 
       <div class="bk-detail__cta">
-        <a class="btn btn--primary" href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
+        <div id="get-the-book" class="aion-purchase">
+          <div class="aion-price mono">DIGITAL E-BOOK · PDF · 99 SEK</div>
+          <form class="aion-checkout js-book-checkout" data-book-slug="digital-singularity-shift" data-button-label="Buy PDF — 99 SEK →">
+            <label class="aion-checkout__consent">
+              <input type="checkbox" name="digitalContentConsent" required>
+              <span>I request immediate access to the digital book and acknowledge that my statutory right of withdrawal ends when delivery begins.</span>
+            </label>
+            <button class="btn btn--primary" type="submit">Buy PDF — 99 SEK →</button>
+            <p class="aion-checkout__error book-checkout__error mono" role="alert" hidden></p>
+          </form>
+          <p class="aion-checkout__note mono">Secure payment via Stripe · download available for 72 hours</p>
+        </div>
+        <a class="btn btn--secondary" href="{{ b.amazon }}" target="_blank" rel="noopener">Buy on Amazon ↗</a>
       </div>
     </article>
   </div>
 </div>
+
+<script src="/book-checkout.js" defer></script>

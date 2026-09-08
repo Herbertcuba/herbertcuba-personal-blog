@@ -1,11 +1,7 @@
 import { Readable } from "node:stream";
 import { get } from "@vercel/blob";
 import Stripe from "stripe";
-import {
-  AION_BLOB_PATH,
-  AION_DOWNLOAD_FILENAME,
-  isPaidAionSession,
-} from "../lib/aion-commerce.mjs";
+import { bookBySlug, isPaidBookSession } from "../lib/aion-commerce.mjs";
 
 function fail(response, status, message) {
   response.status(status);
@@ -39,7 +35,8 @@ export default async function handler(request, response) {
     const session = await stripe.checkout.sessions.retrieve(sessionId, {
       expand: ["payment_intent.latest_charge"],
     });
-    if (!isPaidAionSession(session)) {
+    const book = bookBySlug(session.metadata?.book_slug);
+    if (!book || !isPaidBookSession(session, book.slug)) {
       return fail(response, 403, "This download is unavailable or has expired.");
     }
     if (request.method === "HEAD") {
@@ -48,7 +45,7 @@ export default async function handler(request, response) {
       return response.end();
     }
 
-    const file = await get(process.env.AION_BLOB_PATH || AION_BLOB_PATH, {
+    const file = await get(book.blobPath, {
       access: "private",
       storeId: process.env.AION_BLOB_STORE_ID,
       token: process.env.AION_READ_WRITE_TOKEN,
@@ -60,14 +57,14 @@ export default async function handler(request, response) {
     response.setHeader("Content-Length", String(file.blob.size));
     response.setHeader(
       "Content-Disposition",
-      'attachment; filename="' + AION_DOWNLOAD_FILENAME + '"',
+      'attachment; filename="' + book.downloadFilename + '"',
     );
     return Readable.fromWeb(file.stream).pipe(response);
   } catch (error) {
     if (error?.statusCode === 404 || error?.code === "resource_missing") {
       return fail(response, 404, "The payment session could not be found.");
     }
-    console.error("AION download verification failed", error?.type || error?.name || "Error");
+    console.error("Book download verification failed", error?.type || error?.name || "Error");
     return fail(response, 500, "The download could not be verified. Please try again.");
   }
 }

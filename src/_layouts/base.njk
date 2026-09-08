@@ -75,7 +75,7 @@
             <p class="book-teaser__text">We stand at the edge of three simultaneous disruptions — economic, technological, and existential. This book maps the forces reshaping our world and argues that the choices we make in the next decade will determine whether we descend into scarcity or unlock an era of radical abundance.</p>
             <div class="book-teaser__ctas">
               <a href="https://www.amazon.com/dp/B0GTK53C9H" target="_blank" rel="noopener" class="book-teaser__btn book-teaser__btn--primary">Buy on Amazon</a>
-              <button class="book-teaser__btn book-teaser__btn--secondary js-open-book-modal" data-book="The 3 Crucibles" data-download="/downloads/three-crucibles.pdf" type="button">Get Free Copy</button>
+              <a class="book-teaser__btn book-teaser__btn--secondary" href="/books/the-three-crucibles/#get-the-book">Buy PDF — 99 SEK</a>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
             <p class="book-teaser__text">When AI commoditizes every functional advantage, the only remaining battleground is the human heart. This book explores how metamodern brand narratives — authentic yet self-aware — become the last durable moat in business.</p>
             <div class="book-teaser__ctas">
               <a href="https://www.amazon.com/dp/B0DKBYXLH2" target="_blank" rel="noopener" class="book-teaser__btn book-teaser__btn--primary">Buy on Amazon</a>
-              <button class="book-teaser__btn book-teaser__btn--secondary js-open-book-modal" data-book="The Digital Singularity Shift" data-download="/downloads/digital-singularity-shift.pdf" type="button">Get Free Copy</button>
+              <a class="book-teaser__btn book-teaser__btn--secondary" href="/books/the-digital-singularity-shift/#get-the-book">Buy PDF — 99 SEK</a>
             </div>
           </div>
         </div>
@@ -100,98 +100,6 @@
       </div>
     </div>
   </section>
-
-  {# Shared Book Modal #}
-  <div class="book-modal" id="bookModal" aria-hidden="true" role="dialog" aria-labelledby="bookModalTitle">
-    <div class="book-modal__backdrop" id="bookModalBackdrop"></div>
-    <div class="book-modal__dialog">
-      <button class="book-modal__close" id="closeBookModal" type="button" aria-label="Close">&times;</button>
-      <h3 class="book-modal__title" id="bookModalTitle">Get your free copy</h3>
-      <form class="book-modal__form" id="bookModalForm">
-        <input type="hidden" name="book" id="bookModalBook" value="" />
-        <input class="book-modal__input" type="text" name="name" placeholder="Your name" required />
-        <input class="book-modal__input" type="email" name="email" placeholder="Your email" required />
-        <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
-          <input type="text" name="website" tabindex="-1" autocomplete="off" />
-        </div>
-        <button class="book-modal__submit" type="submit">Send me the book</button>
-      </form>
-      <p class="book-modal__success" id="bookModalSuccess">Thank you! <a href="#" id="bookModalDownloadLink" style="color:var(--acid);text-decoration:underline;" target="_blank">Download your free copy here →</a></p>
-    </div>
-  </div>
-
-  <script>
-  (function() {
-    var modal = document.getElementById('bookModal');
-    var closeBtn = document.getElementById('closeBookModal');
-    var backdrop = document.getElementById('bookModalBackdrop');
-    var form = document.getElementById('bookModalForm');
-    var success = document.getElementById('bookModalSuccess');
-    var bookInput = document.getElementById('bookModalBook');
-    var downloadLink = document.getElementById('bookModalDownloadLink');
-    var currentDownload = '';
-
-    function openModal(bookName, downloadUrl) {
-      bookInput.value = bookName;
-      currentDownload = downloadUrl;
-      downloadLink.href = downloadUrl;
-      modal.setAttribute('aria-hidden', 'false');
-      modal.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modal.setAttribute('aria-hidden', 'true');
-      modal.classList.remove('is-open');
-      document.body.style.overflow = '';
-      setTimeout(function() {
-        form.style.display = '';
-        success.style.display = '';
-        form.reset();
-        var submitBtn = form.querySelector('button[type=submit]');
-        submitBtn.textContent = 'Send me the book';
-        submitBtn.disabled = false;
-      }, 300);
-    }
-
-    document.querySelectorAll('.js-open-book-modal').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        openModal(btn.getAttribute('data-book'), btn.getAttribute('data-download'));
-      });
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', closeModal);
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
-    });
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var honeypot = form.querySelector('input[name=website]').value;
-      if (honeypot) { form.style.display = 'none'; success.style.display = 'block'; return; }
-      var name = form.querySelector('input[name=name]').value;
-      var email = form.querySelector('input[name=email]').value;
-      var book = bookInput.value;
-      var submitBtn = form.querySelector('button[type=submit]');
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
-      fetch('https://script.google.com/macros/s/AKfycbxzOUrR_mkzegywYY379t0sh9sRu-I0KU-aGZLrq-CqAeerJM2E5KRy_uDrxsQfYLm-/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({name: name, email: email, book: book})
-      }).then(function() {
-        form.style.display = 'none';
-        success.style.display = 'block';
-      }).catch(function() {
-        form.style.display = 'none';
-        success.style.display = 'block';
-      });
-    });
-  })();
-  </script>
 
   <footer class="site-footer">
     <div class="container">
