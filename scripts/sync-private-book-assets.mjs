@@ -11,14 +11,15 @@ const source = join(
 const manifestPath = "paid-books/aion-manifest.json";
 
 function isBlobConfigured() {
-  return Boolean(
-    process.env.BLOB_READ_WRITE_TOKEN ||
-      (process.env.BLOB_STORE_ID && process.env.VERCEL_OIDC_TOKEN),
-  );
+  return Boolean(process.env.AION_BLOB_STORE_ID && process.env.VERCEL_OIDC_TOKEN);
 }
 
 async function previousHash() {
-  const manifest = await get(manifestPath, { access: "private", useCache: false });
+  const manifest = await get(manifestPath, {
+    access: "private",
+    storeId: process.env.AION_BLOB_STORE_ID,
+    useCache: false,
+  });
   if (!manifest?.stream) return null;
   try {
     const data = await new Response(manifest.stream).json();
@@ -43,6 +44,7 @@ async function main() {
 
   await put(process.env.AION_BLOB_PATH || AION_BLOB_PATH, body, {
     access: "private",
+    storeId: process.env.AION_BLOB_STORE_ID,
     addRandomSuffix: false,
     allowOverwrite: true,
     contentType: "application/pdf",
@@ -50,6 +52,7 @@ async function main() {
   });
   await put(manifestPath, JSON.stringify({ hash, updatedAt: new Date().toISOString() }), {
     access: "private",
+    storeId: process.env.AION_BLOB_STORE_ID,
     addRandomSuffix: false,
     allowOverwrite: true,
     contentType: "application/json",
