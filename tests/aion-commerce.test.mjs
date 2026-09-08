@@ -7,6 +7,7 @@ import {
   isPaidAionSession,
   priceInOre,
   priceInOreForBook,
+  siteOrigin,
 } from "../lib/aion-commerce.mjs";
 
 test("the three books use the configured server-side prices", () => {
@@ -66,4 +67,18 @@ test("each paid book session is bound to its purchased title", () => {
   };
   assert.equal(isPaidBookSession(session, "three-crucibles", now), true);
   assert.equal(isPaidBookSession(session, "digital-singularity-shift", now), false);
+});
+
+test("Checkout returns to the customer-facing request host", () => {
+  const previousVercelUrl = process.env.VERCEL_URL;
+  process.env.VERCEL_URL = "protected-deployment.vercel.app";
+  try {
+    assert.equal(
+      siteOrigin({ headers: { host: "www.cubagarcia.com", "x-forwarded-proto": "https" } }),
+      "https://www.cubagarcia.com",
+    );
+  } finally {
+    if (previousVercelUrl === undefined) delete process.env.VERCEL_URL;
+    else process.env.VERCEL_URL = previousVercelUrl;
+  }
 });
