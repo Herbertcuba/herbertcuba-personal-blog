@@ -39,47 +39,46 @@ Naming the accountable capability as the stable unit does something practical. I
 
 Once the capability is the unit of design, a second distinction becomes possible. Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.
 
-<figure class="fig-band article-diagram" data-diagram-id="aion-capability-layers">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 700" width="100%" height="auto" role="img" aria-labelledby="ad-aion-capability-layers-title ad-aion-capability-layers-desc">
-<title id="ad-aion-capability-layers-title">The accountable capability as the stable center</title>
-<desc id="ad-aion-capability-layers-desc">A capability, in this sense, is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries, regardless of which people, agents, pipelines, or vendors currently implement it.</desc>
+<figure class="fig-band article-diagram" data-diagram-id="aion-accountable-capability-layers">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 700" width="100%" height="auto" role="img" aria-labelledby="ad-aion-accountable-capability-layers-title ad-aion-accountable-capability-layers-desc">
+<title id="ad-aion-accountable-capability-layers-title">Pipelines are implementations of a capability.</title>
+<desc id="ad-aion-accountable-capability-layers-desc">A capability, in this sense, is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries, regardless of which people, agents, pipelines, or vendors currently implement it.</desc>
 <g class="article-diagram__decoration">
 <rect x="0" y="0" width="720" height="700" rx="24" fill="#0a1a0f" />
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-capability-contract">
-<rect x="80" y="48" width="560" height="80" rx="16" fill="#00e653" />
-<text x="360" y="98" fill="#0a1a0f" font-size="22" font-weight="700" text-anchor="middle">stakeholder outcome</text>
-<line x1="360" y1="160" x2="360" y2="132" stroke="#00e653" stroke-width="4" />
-<polygon points="350,142 360,128 370,142" fill="#00e653" />
-<rect x="60" y="160" width="600" height="174" rx="20" fill="#0a1a0f" stroke="#00e653" stroke-width="4" />
-<text x="360" y="206" fill="#dce7de" font-size="24" font-weight="700" text-anchor="middle">The accountable capability</text>
-<text x="360" y="238" fill="#9eb8a4" font-size="17" text-anchor="middle">explicit performance, risk, and authority boundaries</text>
+<g class="article-diagram__claim" data-claim-id="claim-accountable-capability">
+<rect x="150" y="44" width="420" height="76" rx="16" fill="#00e653" />
+<text x="360" y="91" text-anchor="middle" font-size="22" fill="#0a1a0f">stakeholder outcome</text>
+<line x1="360" y1="120" x2="360" y2="156" stroke="#00e653" stroke-width="4" />
+<rect x="90" y="156" width="540" height="142" rx="18" fill="#0a1a0f" stroke="#00e653" stroke-width="4" />
+<text x="360" y="202" text-anchor="middle" font-size="24" fill="#dce7de">accountable capability</text>
+<text x="360" y="238" text-anchor="middle" font-size="17" fill="#9eb8a4">a named, durable ability</text>
+<text x="360" y="269" text-anchor="middle" font-size="16" fill="#9eb8a4">within explicit performance, risk, and authority boundaries</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-stable-accountability">
-<rect x="104" y="264" width="512" height="48" rx="12" fill="#00a03a" />
-<text x="360" y="284" fill="#dce7de" font-size="16" text-anchor="middle">The named owner, the outcome, and the evidence requirements</text>
-<text x="360" y="304" fill="#dce7de" font-size="16" text-anchor="middle">do not migrate with the tooling.</text>
+<g class="article-diagram__claim" data-claim-id="claim-pipeline-execution">
+<line x1="360" y1="298" x2="360" y2="334" stroke="#00e653" stroke-width="4" />
+<rect x="110" y="334" width="500" height="82" rx="16" fill="#00a03a" />
+<text x="360" y="368" text-anchor="middle" font-size="22" fill="#dce7de">Pipelines are implementations</text>
+<text x="360" y="396" text-anchor="middle" font-size="18" fill="#dce7de">of a capability.</text>
+<line x1="360" y1="416" x2="360" y2="450" stroke="#00e653" stroke-width="4" />
+<line x1="130" y1="450" x2="590" y2="450" stroke="#00e653" stroke-width="3" />
+<line x1="130" y1="450" x2="130" y2="480" stroke="#00e653" stroke-width="3" />
+<line x1="360" y1="450" x2="360" y2="480" stroke="#00e653" stroke-width="3" />
+<line x1="590" y1="450" x2="590" y2="480" stroke="#00e653" stroke-width="3" />
+<rect x="35" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
+<text x="130" y="526" text-anchor="middle" font-size="17" fill="#dce7de">Deterministic systems</text>
+<rect x="265" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
+<text x="360" y="526" text-anchor="middle" font-size="20" fill="#dce7de">Agents</text>
+<rect x="495" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
+<text x="590" y="526" text-anchor="middle" font-size="20" fill="#dce7de">Humans</text>
+<text x="360" y="592" text-anchor="middle" font-size="18" fill="#00e653">All of them are replaceable.</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-replaceable-execution">
-<line x1="360" y1="334" x2="360" y2="382" stroke="#9eb8a4" stroke-width="4" />
-<polygon points="350,372 360,386 370,372" fill="#9eb8a4" />
-<rect x="80" y="390" width="560" height="86" rx="16" fill="#0a1a0f" stroke="#00a03a" stroke-width="3" />
-<text x="360" y="442" fill="#dce7de" font-size="20" font-weight="700" text-anchor="middle">Pipelines are implementations of a capability.</text>
-<line x1="360" y1="476" x2="360" y2="522" stroke="#9eb8a4" stroke-width="4" />
-<line x1="160" y1="522" x2="560" y2="522" stroke="#9eb8a4" stroke-width="4" />
-<line x1="160" y1="522" x2="160" y2="546" stroke="#9eb8a4" stroke-width="4" />
-<line x1="360" y1="522" x2="360" y2="546" stroke="#9eb8a4" stroke-width="4" />
-<line x1="560" y1="522" x2="560" y2="546" stroke="#9eb8a4" stroke-width="4" />
-<rect x="68" y="546" width="184" height="72" rx="14" fill="#00a03a" />
-<rect x="268" y="546" width="184" height="72" rx="14" fill="#00a03a" />
-<rect x="468" y="546" width="184" height="72" rx="14" fill="#00a03a" />
-<text x="160" y="588" fill="#dce7de" font-size="17" font-weight="700" text-anchor="middle">Deterministic systems</text>
-<text x="360" y="588" fill="#dce7de" font-size="18" font-weight="700" text-anchor="middle">Agents</text>
-<text x="560" y="588" fill="#dce7de" font-size="18" font-weight="700" text-anchor="middle">Humans</text>
-<text x="360" y="662" fill="#9eb8a4" font-size="18" text-anchor="middle">None of them is the capability. All of them are replaceable.</text>
+<g class="article-diagram__claim" data-claim-id="claim-ownership-survives-tooling">
+<rect x="90" y="620" width="540" height="52" rx="14" fill="#0a1a0f" stroke="#00a03a" stroke-width="3" />
+<text x="360" y="652" text-anchor="middle" font-size="16" fill="#dce7de">The named owner, the outcome, and the evidence requirements do not migrate with the tooling.</text>
 </g>
 </svg>
-<figcaption class="fig-cap">None of them is the capability. All of them are replaceable.</figcaption>
+<figcaption class="fig-cap">Pipelines are implementations of a capability.</figcaption>
 </figure>
 
 This makes AION actor-agnostic. It does not require an agent wherever software could act, and it does not romanticize either automation or the human touch. Each actor gets the work that suits its nature.
@@ -111,36 +110,6 @@ The caveat matters. I aim for maximum useful explicitness, not total specificati
 A field manual is only useful if it improves on contact with reality. AION assumes nothing works perfectly the first time, and organizes learning at multiple levels rather than at one.
 
 Run-level correction fixes a particular output when something goes wrong. Pipeline-level learning changes the pipeline that produced the output, so the same class of error stops recurring; this is where APEX — the Strategic, Execution, Reflection cycle — belongs. Reflection at this level updates the specifications, permissions, quality criteria, and configuration that the next Strategic phase inherits, so the next execution starts from a corrected system rather than from the last version's blind spots. Capability-level learning reconsiders the contract itself: is the outcome still the right one, are the boundaries still appropriate, is the constraint still where it was last quarter? Organizational learning looks across capabilities and reallocates responsibility, authority, and investment when the shape of the business changes.
-
-<figure class="fig-band article-diagram" data-diagram-id="aion-learning-layers">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="100%" height="auto" role="img" aria-labelledby="ad-aion-learning-layers-title ad-aion-learning-layers-desc">
-<title id="ad-aion-learning-layers-title">The organization that learns</title>
-<desc id="ad-aion-learning-layers-desc">AION assumes nothing works perfectly the first time, and organizes learning at multiple levels rather than at one.</desc>
-<g class="article-diagram__decoration">
-<rect x="0" y="0" width="720" height="480" rx="24" fill="#0a1a0f" />
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-organizational-learning">
-<rect x="36" y="34" width="648" height="406" rx="22" fill="#0a1a0f" stroke="#00e653" stroke-width="4" />
-<text x="60" y="70" fill="#00e653" font-size="20" font-weight="700">Organizational learning</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-capability-learning">
-<rect x="82" y="92" width="556" height="310" rx="20" fill="#0a1a0f" stroke="#00a03a" stroke-width="4" />
-<text x="106" y="128" fill="#dce7de" font-size="20" font-weight="700">Capability-level learning</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-pipeline-learning">
-<rect x="128" y="150" width="464" height="214" rx="18" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
-<text x="152" y="186" fill="#dce7de" font-size="20" font-weight="700">Pipeline-level learning</text>
-<rect x="174" y="214" width="372" height="60" rx="14" fill="#00a03a" />
-<text x="360" y="240" fill="#dce7de" font-size="17" font-weight="700" text-anchor="middle">APEX — the Strategic, Execution,</text>
-<text x="360" y="262" fill="#dce7de" font-size="17" font-weight="700" text-anchor="middle">Reflection cycle</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-run-correction">
-<rect x="202" y="296" width="316" height="44" rx="12" fill="#00e653" />
-<text x="360" y="325" fill="#0a1a0f" font-size="18" font-weight="700" text-anchor="middle">Run-level correction</text>
-</g>
-</svg>
-<figcaption class="fig-cap">AION assumes nothing works perfectly the first time, and organizes learning at multiple levels rather than at one.</figcaption>
-</figure>
 
 Which brings me to the practical adoption rule I keep returning to: optimize the constraint, not the node. The right question is not "where can we add an agent," it is "which stakeholder outcome is currently constrained, and what actor configuration will relieve that constraint safely?" Sometimes the answer is an agent. Sometimes it is a deterministic check, a better context package, a change to authority, a data fix, or a redesigned handoff. Constraint-led adoption is what turns AI investment into throughput rather than a portfolio of local speedups that leave end-to-end performance unchanged.
 
