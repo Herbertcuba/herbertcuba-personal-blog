@@ -40,35 +40,35 @@ Naming the accountable capability as the stable unit does something practical. I
 Once the capability is the unit of design, a second distinction becomes possible. Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.
 
 <figure class="fig-band article-diagram" data-diagram-id="accountable-capability-layers">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 650" width="100%" height="auto" role="img" aria-labelledby="ad-accountable-capability-layers-title ad-accountable-capability-layers-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="100%" height="auto" role="img" aria-labelledby="ad-accountable-capability-layers-title ad-accountable-capability-layers-desc">
 <title id="ad-accountable-capability-layers-title">The accountable capability as the stable center</title>
-<desc id="ad-accountable-capability-layers-desc">A capability is a named, durable ability to deliver a stakeholder outcome. Pipelines are implementations of a capability. Agents, deterministic systems, and humans are execution mechanisms, and all of them are replaceable.</desc>
+<desc id="ad-accountable-capability-layers-desc">A capability is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries. Pipelines implement the capability, while deterministic systems, agents, and humans are replaceable execution mechanisms.</desc>
 <g class="article-diagram__decoration">
-<rect x="20" y="20" width="720" height="610" rx="24" fill="#0a1a0f"/>
-<line x1="380" y1="140" x2="380" y2="170" stroke="#9eb8a4" stroke-width="4"/>
-<polygon points="370,160 390,160 380,174" fill="#9eb8a4"/>
-<line x1="380" y1="300" x2="380" y2="330" stroke="#9eb8a4" stroke-width="4"/>
-<polygon points="370,320 390,320 380,334" fill="#9eb8a4"/>
+<rect x="20" y="20" width="720" height="640" rx="24" fill="#0a1a0f"/>
+<line x1="380" y1="166" x2="380" y2="202" stroke="#9eb8a4" stroke-width="4"/>
+<line x1="380" y1="360" x2="380" y2="396" stroke="#9eb8a4" stroke-width="4"/>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-capability-delivers-stakeholder-outcome">
-<rect x="120" y="55" width="520" height="85" rx="16" fill="#00e653"/>
-<text x="380" y="108" text-anchor="middle" font-size="24" font-weight="700" fill="#0a1a0f">stakeholder outcome</text>
-<rect x="80" y="175" width="600" height="125" rx="18" fill="#0a1a0f" stroke="#00e653" stroke-width="4"/>
-<text x="380" y="225" text-anchor="middle" font-size="18" fill="#9eb8a4">named, durable ability</text>
-<text x="380" y="263" text-anchor="middle" font-size="28" font-weight="700" fill="#dce7de">accountable capability</text>
+<g class="article-diagram__claim" data-claim-id="claim-capability-contract">
+<rect x="90" y="62" width="580" height="104" rx="16" fill="#00e653"/>
+<text x="380" y="106" text-anchor="middle" font-size="21" font-weight="700" fill="#0a1a0f">stakeholder outcome</text>
+<text x="380" y="139" text-anchor="middle" font-size="19" fill="#0a1a0f">explicit performance, risk, and authority boundaries</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-pipelines-implement-capability">
-<rect x="80" y="335" width="600" height="95" rx="18" fill="#00a03a"/>
-<text x="380" y="392" text-anchor="middle" font-size="22" font-weight="700" fill="#dce7de">Pipelines are implementations of a capability.</text>
+<g class="article-diagram__claim" data-claim-id="claim-accountability-survives-change">
+<rect x="70" y="202" width="620" height="158" rx="18" fill="#0a1a0f" stroke="#00e653" stroke-width="4"/>
+<text x="380" y="250" text-anchor="middle" font-size="25" font-weight="700" fill="#dce7de">accountable capability</text>
+<text x="380" y="291" text-anchor="middle" font-size="18" fill="#9eb8a4">The named owner, the outcome, and the evidence requirements</text>
+<text x="380" y="323" text-anchor="middle" font-size="18" fill="#9eb8a4">do not migrate with the tooling.</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-execution-mechanisms-are-replaceable">
-<rect x="55" y="475" width="200" height="75" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3"/>
-<text x="155" y="520" text-anchor="middle" font-size="19" font-weight="700" fill="#dce7de">deterministic systems</text>
-<rect x="280" y="475" width="200" height="75" rx="14" fill="#0a1a0f" stroke="#00e653" stroke-width="3"/>
-<text x="380" y="520" text-anchor="middle" font-size="22" font-weight="700" fill="#dce7de">agents</text>
-<rect x="505" y="475" width="200" height="75" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3"/>
-<text x="605" y="520" text-anchor="middle" font-size="22" font-weight="700" fill="#dce7de">humans</text>
-<text x="380" y="595" text-anchor="middle" font-size="22" fill="#9eb8a4">All of them are replaceable.</text>
+<g class="article-diagram__claim" data-claim-id="claim-replaceable-execution">
+<rect x="70" y="396" width="620" height="210" rx="18" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3"/>
+<text x="380" y="438" text-anchor="middle" font-size="22" font-weight="700" fill="#dce7de">Pipelines are implementations of a capability.</text>
+<rect x="102" y="478" width="164" height="76" rx="12" fill="#00a03a"/>
+<rect x="298" y="478" width="164" height="76" rx="12" fill="#00a03a"/>
+<rect x="494" y="478" width="164" height="76" rx="12" fill="#00a03a"/>
+<text x="184" y="523" text-anchor="middle" font-size="17" font-weight="700" fill="#dce7de">deterministic systems</text>
+<text x="380" y="523" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">Agents</text>
+<text x="576" y="523" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">Humans</text>
+<text x="380" y="585" text-anchor="middle" font-size="18" fill="#9eb8a4">All of them are replaceable.</text>
 </g>
 </svg>
 <figcaption class="fig-cap">Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.</figcaption>
