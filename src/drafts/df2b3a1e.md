@@ -33,49 +33,47 @@ The important word is *stable*. Not permanent — capabilities are versioned and
 
 Naming the accountable capability as the stable unit does something practical. It makes ownership survive implementation change. When a procurement team switches document-review agents, or the compliance office swaps deterministic rule engines, or a vendor is replaced entirely, the capability contract remains. The named owner, the outcome, and the evidence requirements do not migrate with the tooling. That is what most enterprise AI programs currently cannot say, and it is a specific claim AION makes and asks to be tested.
 
-<figure class="fig-band article-diagram" data-diagram-id="accountable-capability-layers">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 590" width="100%" height="auto" role="img" aria-labelledby="ad-accountable-capability-layers-title ad-accountable-capability-layers-desc">
-<title id="ad-accountable-capability-layers-title">The accountable capability as the stable unit</title>
-<desc id="ad-accountable-capability-layers-desc">A capability is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries, regardless of which people, agents, pipelines, or vendors currently implement it. The named owner, the outcome, and the evidence requirements do not migrate with the tooling.</desc>
-<g class="article-diagram__decoration">
-<rect x="20" y="20" width="720" height="550" rx="24" fill="#0a1a0f" />
-<line x1="380" y1="202" x2="380" y2="248" stroke="#9eb8a4" stroke-width="4" />
-<polygon points="370,238 390,238 380,252" fill="#9eb8a4" />
-<line x1="380" y1="390" x2="380" y2="432" stroke="#9eb8a4" stroke-width="4" />
-<polygon points="370,422 390,422 380,436" fill="#9eb8a4" />
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-accountable-capability">
-<rect x="70" y="62" width="620" height="140" rx="18" fill="#00e653" />
-<text x="380" y="112" text-anchor="middle" fill="#0a1a0f" font-size="26" font-weight="700">accountable capability</text>
-<text x="380" y="150" text-anchor="middle" fill="#0a1a0f" font-size="18">a named, durable ability to deliver</text>
-<text x="380" y="178" text-anchor="middle" fill="#0a1a0f" font-size="18">a stakeholder outcome</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-replaceable-implementation">
-<rect x="70" y="252" width="620" height="138" rx="18" fill="#000000" stroke="#00e653" stroke-width="3" />
-<text x="380" y="290" text-anchor="middle" fill="#dce7de" font-size="18">currently implement it</text>
-<rect x="94" y="316" width="128" height="48" rx="12" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="2" />
-<text x="158" y="347" text-anchor="middle" fill="#dce7de" font-size="17">people</text>
-<rect x="242" y="316" width="128" height="48" rx="12" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="2" />
-<text x="306" y="347" text-anchor="middle" fill="#dce7de" font-size="17">agents</text>
-<rect x="390" y="316" width="128" height="48" rx="12" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="2" />
-<text x="454" y="347" text-anchor="middle" fill="#dce7de" font-size="17">pipelines</text>
-<rect x="538" y="316" width="128" height="48" rx="12" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="2" />
-<text x="602" y="347" text-anchor="middle" fill="#dce7de" font-size="17">vendors</text>
-</g>
-<g class="article-diagram__claim" data-claim-id="claim-stable-requirements">
-<rect x="70" y="436" width="620" height="94" rx="18" fill="#0a1a0f" stroke="#00e653" stroke-width="3" />
-<text x="380" y="474" text-anchor="middle" fill="#dce7de" font-size="18">The named owner, the outcome, and the evidence requirements</text>
-<text x="380" y="506" text-anchor="middle" fill="#00e653" font-size="21" font-weight="700">do not migrate with the tooling.</text>
-</g>
-</svg>
-<figcaption class="fig-cap">The named owner, the outcome, and the evidence requirements do not migrate with the tooling.</figcaption>
-</figure>
-
 <div class="chapter-tldr"><span class="chapter-tldr__label">In short</span><p>The accountable capability is a durable contract for a stakeholder outcome, so pipelines, agents, and vendors underneath can change without transferring responsibility.</p></div>
 
 ## Separate the architecture from the execution
 
 Once the capability is the unit of design, a second distinction becomes possible. Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.
+
+<figure class="fig-band article-diagram" data-diagram-id="accountable-capability-layers">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" width="100%" height="auto" role="img" aria-labelledby="ad-accountable-capability-layers-title ad-accountable-capability-layers-desc">
+<title id="ad-accountable-capability-layers-title">The accountable capability as the stable unit of design</title>
+<desc id="ad-accountable-capability-layers-desc">A capability is a named, durable ability to deliver a stakeholder outcome. Pipelines implement the capability, while deterministic systems, agents, and humans are replaceable execution mechanisms inside a pipeline.</desc>
+<g class="article-diagram__decoration">
+<rect x="0" y="0" width="720" height="620" rx="24" fill="#0a1a0f"/>
+<line x1="360" y1="150" x2="360" y2="190" stroke="#9eb8a4" stroke-width="4"/>
+<line x1="360" y1="330" x2="360" y2="370" stroke="#9eb8a4" stroke-width="4"/>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-accountable-capability">
+<rect x="100" y="40" width="520" height="110" rx="16" fill="#00e653"/>
+<text x="360" y="86" text-anchor="middle" font-size="18" font-weight="700" fill="#0a1a0f">accountable capability</text>
+<text x="360" y="119" text-anchor="middle" font-size="16" fill="#0a1a0f">stakeholder outcome</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-capability-contract-remains">
+<rect x="80" y="190" width="560" height="140" rx="16" fill="#0a1a0f" stroke="#00e653" stroke-width="4"/>
+<text x="360" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">The capability contract remains.</text>
+<text x="360" y="274" text-anchor="middle" font-size="16" fill="#9eb8a4">The named owner, the outcome,</text>
+<text x="360" y="301" text-anchor="middle" font-size="16" fill="#9eb8a4">and the evidence requirements</text>
+</g>
+<g class="article-diagram__claim" data-claim-id="claim-pipelines-and-execution">
+<rect x="60" y="370" width="600" height="200" rx="16" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3"/>
+<text x="360" y="410" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">Pipelines are implementations of a capability.</text>
+<rect x="85" y="445" width="170" height="78" rx="12" fill="#00a03a"/>
+<rect x="275" y="445" width="170" height="78" rx="12" fill="#00a03a"/>
+<rect x="465" y="445" width="170" height="78" rx="12" fill="#00a03a"/>
+<text x="170" y="480" text-anchor="middle" font-size="16" fill="#dce7de">deterministic</text>
+<text x="170" y="503" text-anchor="middle" font-size="16" fill="#dce7de">systems</text>
+<text x="360" y="490" text-anchor="middle" font-size="16" fill="#dce7de">Agents</text>
+<text x="550" y="490" text-anchor="middle" font-size="16" fill="#dce7de">humans</text>
+<text x="360" y="552" text-anchor="middle" font-size="16" fill="#9eb8a4">All of them are replaceable.</text>
+</g>
+</svg>
+<figcaption class="fig-cap">Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.</figcaption>
+</figure>
 
 This makes AION actor-agnostic. It does not require an agent wherever software could act, and it does not romanticize either automation or the human touch. Each actor gets the work that suits its nature.
 
