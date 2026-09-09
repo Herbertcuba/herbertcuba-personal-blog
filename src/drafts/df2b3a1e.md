@@ -4,6 +4,7 @@ title: "AION: A Field Manual for the Organization That Runs on Agents"
 excerpt: "The first enterprise AI problem was access. The next is accountability. AION is the field manual for the architecture in between — the one that turns cheap AI activity into dependable stakeholder outcomes."
 anthem: true
 permalink: /drafts/df2b3a1e/
+featuredImage: "/images/posts/aion-a-field-manual-for-the-organization-that-runs-on-agents.webp"
 date: 2026-09-10
 ---
 
