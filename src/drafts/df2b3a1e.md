@@ -39,46 +39,46 @@ Naming the accountable capability as the stable unit does something practical. I
 
 Once the capability is the unit of design, a second distinction becomes possible. Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.
 
-<figure class="fig-band article-diagram" data-diagram-id="aion-accountable-capability-layers">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 700" width="100%" height="auto" role="img" aria-labelledby="ad-aion-accountable-capability-layers-title ad-aion-accountable-capability-layers-desc">
-<title id="ad-aion-accountable-capability-layers-title">Pipelines are implementations of a capability.</title>
-<desc id="ad-aion-accountable-capability-layers-desc">A capability, in this sense, is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries, regardless of which people, agents, pipelines, or vendors currently implement it.</desc>
+<figure class="fig-band article-diagram" data-diagram-id="accountable-capability-layers">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 690" width="100%" height="auto" role="img" aria-labelledby="ad-accountable-capability-layers-title ad-accountable-capability-layers-desc">
+<title id="ad-accountable-capability-layers-title">The accountable capability as the stable center</title>
+<desc id="ad-accountable-capability-layers-desc">A capability, in this sense, is a named, durable ability to deliver a stakeholder outcome within explicit performance, risk, and authority boundaries, regardless of which people, agents, pipelines, or vendors currently implement it. Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable. The named owner, the outcome, and the evidence requirements do not migrate with the tooling.</desc>
 <g class="article-diagram__decoration">
-<rect x="0" y="0" width="720" height="700" rx="24" fill="#0a1a0f" />
+<rect x="20" y="20" width="720" height="650" rx="24" fill="#0a1a0f" />
+<line x1="380" y1="135" x2="380" y2="175" stroke="#9eb8a4" stroke-width="4" />
+<line x1="380" y1="315" x2="380" y2="355" stroke="#9eb8a4" stroke-width="4" />
+<line x1="380" y1="465" x2="380" y2="505" stroke="#9eb8a4" stroke-width="4" />
 </g>
 <g class="article-diagram__claim" data-claim-id="claim-accountable-capability">
-<rect x="150" y="44" width="420" height="76" rx="16" fill="#00e653" />
-<text x="360" y="91" text-anchor="middle" font-size="22" fill="#0a1a0f">stakeholder outcome</text>
-<line x1="360" y1="120" x2="360" y2="156" stroke="#00e653" stroke-width="4" />
-<rect x="90" y="156" width="540" height="142" rx="18" fill="#0a1a0f" stroke="#00e653" stroke-width="4" />
-<text x="360" y="202" text-anchor="middle" font-size="24" fill="#dce7de">accountable capability</text>
-<text x="360" y="238" text-anchor="middle" font-size="17" fill="#9eb8a4">a named, durable ability</text>
-<text x="360" y="269" text-anchor="middle" font-size="16" fill="#9eb8a4">within explicit performance, risk, and authority boundaries</text>
+<rect x="90" y="55" width="580" height="80" rx="16" fill="#00e653" />
+<text x="380" y="88" text-anchor="middle" font-size="20" font-weight="700" fill="#0a1a0f">Stakeholder outcome</text>
+<text x="380" y="116" text-anchor="middle" font-size="18" fill="#0a1a0f">performance · risk · authority boundaries</text>
+<rect x="70" y="175" width="620" height="140" rx="20" fill="#0a1a0f" stroke="#00e653" stroke-width="4" />
+<text x="380" y="220" text-anchor="middle" font-size="24" font-weight="700" fill="#00e653">Accountable capability</text>
+<text x="380" y="254" text-anchor="middle" font-size="18" fill="#dce7de">named · durable</text>
+<text x="380" y="285" text-anchor="middle" font-size="18" fill="#9eb8a4">people · agents · pipelines · vendors</text>
 </g>
 <g class="article-diagram__claim" data-claim-id="claim-pipeline-execution">
-<line x1="360" y1="298" x2="360" y2="334" stroke="#00e653" stroke-width="4" />
-<rect x="110" y="334" width="500" height="82" rx="16" fill="#00a03a" />
-<text x="360" y="368" text-anchor="middle" font-size="22" fill="#dce7de">Pipelines are implementations</text>
-<text x="360" y="396" text-anchor="middle" font-size="18" fill="#dce7de">of a capability.</text>
-<line x1="360" y1="416" x2="360" y2="450" stroke="#00e653" stroke-width="4" />
-<line x1="130" y1="450" x2="590" y2="450" stroke="#00e653" stroke-width="3" />
-<line x1="130" y1="450" x2="130" y2="480" stroke="#00e653" stroke-width="3" />
-<line x1="360" y1="450" x2="360" y2="480" stroke="#00e653" stroke-width="3" />
-<line x1="590" y1="450" x2="590" y2="480" stroke="#00e653" stroke-width="3" />
-<rect x="35" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
-<text x="130" y="526" text-anchor="middle" font-size="17" fill="#dce7de">Deterministic systems</text>
-<rect x="265" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
-<text x="360" y="526" text-anchor="middle" font-size="20" fill="#dce7de">Agents</text>
-<rect x="495" y="480" width="190" height="76" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="3" />
-<text x="590" y="526" text-anchor="middle" font-size="20" fill="#dce7de">Humans</text>
-<text x="360" y="592" text-anchor="middle" font-size="18" fill="#00e653">All of them are replaceable.</text>
+<rect x="115" y="355" width="530" height="110" rx="18" fill="#00a03a" />
+<text x="380" y="399" text-anchor="middle" font-size="22" font-weight="700" fill="#dce7de">Pipeline</text>
+<text x="380" y="433" text-anchor="middle" font-size="18" fill="#dce7de">implementation of a capability</text>
+<rect x="55" y="505" width="200" height="105" rx="16" fill="#0a1a0f" stroke="#00e653" stroke-width="3" />
+<text x="155" y="549" text-anchor="middle" font-size="18" font-weight="700" fill="#dce7de">Deterministic</text>
+<text x="155" y="577" text-anchor="middle" font-size="18" fill="#9eb8a4">systems</text>
+<rect x="280" y="505" width="200" height="105" rx="16" fill="#0a1a0f" stroke="#00e653" stroke-width="3" />
+<text x="380" y="564" text-anchor="middle" font-size="20" font-weight="700" fill="#dce7de">Agents</text>
+<rect x="505" y="505" width="200" height="105" rx="16" fill="#0a1a0f" stroke="#00e653" stroke-width="3" />
+<text x="605" y="564" text-anchor="middle" font-size="20" font-weight="700" fill="#dce7de">Humans</text>
+<text x="380" y="642" text-anchor="middle" font-size="18" fill="#9eb8a4">All of them are replaceable.</text>
 </g>
-<g class="article-diagram__claim" data-claim-id="claim-ownership-survives-tooling">
-<rect x="90" y="620" width="540" height="52" rx="14" fill="#0a1a0f" stroke="#00a03a" stroke-width="3" />
-<text x="360" y="652" text-anchor="middle" font-size="16" fill="#dce7de">The named owner, the outcome, and the evidence requirements do not migrate with the tooling.</text>
+<g class="article-diagram__claim" data-claim-id="claim-stable-ownership">
+<rect x="520" y="190" width="150" height="105" rx="14" fill="#0a1a0f" stroke="#9eb8a4" stroke-width="2" opacity="0.95" />
+<text x="595" y="222" text-anchor="middle" font-size="16" fill="#dce7de">named owner</text>
+<text x="595" y="250" text-anchor="middle" font-size="16" fill="#dce7de">outcome</text>
+<text x="595" y="278" text-anchor="middle" font-size="16" fill="#dce7de">evidence</text>
 </g>
 </svg>
-<figcaption class="fig-cap">Pipelines are implementations of a capability.</figcaption>
+<figcaption class="fig-cap">Pipelines are implementations of a capability. Agents are one kind of execution mechanism inside a pipeline. So are deterministic systems. So are humans. None of them is the capability. All of them are replaceable.</figcaption>
 </figure>
 
 This makes AION actor-agnostic. It does not require an agent wherever software could act, and it does not romanticize either automation or the human touch. Each actor gets the work that suits its nature.
