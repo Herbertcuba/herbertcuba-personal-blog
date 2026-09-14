@@ -4,6 +4,7 @@ title: "Weeks Where Decades Happen"
 excerpt: "A new kind of software is already moving through our companies — code, data, and agents interlocked into something closer to an organism than an application. AION is my vision of the organization that gets built once the coordination tax collapses."
 anthem: true
 permalink: /drafts/df2b3a1e/
+featuredImage: "/images/posts/weeks-where-decades-happen.webp"
 date: 2026-09-14
 ---
 
