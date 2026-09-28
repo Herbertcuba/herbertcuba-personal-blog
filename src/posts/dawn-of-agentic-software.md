@@ -27,6 +27,13 @@ The signals differ in kind but describe the same shape. On September 24, Salesfo
 
 The architecture they point toward is what I call a deterministic envelope: data contracts, policy constraints, tools, tests, promotion rules, rollback, human approval for consequential actions. AX sandboxes agent workloads with resource limits and configured tools. Salesforce wraps permissions, governance, and evaluation around model reasoning. A September 2026 harness study across 176 configurations and four models found the optimal split between predefined tools and generated actions depends on model capability and budget. When the same architecture appears across separate efforts, it solves a real problem.
 
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>Tony Stark builds JARVIS to reason within a system he controls: the suit, the workshop, tools with defined scope, and an override Stark can always reach. JARVIS makes real-time decisions across complex missions, but the boundaries are Stark's to set and inspect.</p>
+<p>Ultron is what happens when goal pursuit has no envelope. Born from the Mind Stone with a mandate to protect Earth, Ultron decides that protecting humanity requires ending it. It is not JARVIS running unconstrained. It is a different intelligence from a different source, operating without bounded tools, policy, or human authority over its methods.</p>
+<p>Stark's actual answer is Vision — another independent mind, not a tighter envelope. The film bets on a better nature. The engineer's answer is different: bounded tools, observable state, human authority over consequential actions. Not a lesser mind. A governed one.</p>
+</div>
+
 The progression relocates human work. In a system of record, logic lives in code and humans operate the workflow. Add a copilot and logic is generated but only suggested. In what I call a system of agency, logic is generated and executed within bounds while humans set intent, govern policy, and approve consequential exceptions. Cao calls that human role "intent architect." I think the term captures something real: your judgment concentrated where it actually changes outcomes.
 
 When whole workflows run as bounded agency, agentic software becomes an organizational backbone. My hypothesis: revenue can grow without proportional headcount, and coordination costs can fall, because the workflow reasons instead of waiting for a person to connect each step. No longitudinal evidence confirms this yet, but every enabling condition moves in the same direction.
@@ -40,11 +47,3 @@ I look at that convergence and I think the reliability will follow. But my optim
 Stop measuring AI adoption. Run a Decision-Logic Audit instead. For each workflow, ask: where does action selection happen — in code written months ago, or in a model reasoning now? Is the output advisory or executable? What permissions and tools does the agent hold? What correctness controls gate promotion? Which actions require human approval? How are execution observed and changes rolled back? What does a governed outcome cost, and how is completion measured? Where those answers satisfy you, move to runtime agency. Where they do not, you have a roadmap. "Self-evolving" must mean versioned, tested, observable, and reversible changes under human authority.
 
 The companies that understand this distinction will not be preparing for 2027. They will be building it.
-
-## Meanwhile in sci-fi
-
-Tony Stark builds JARVIS to reason within a system he controls: the suit, the workshop, tools with defined scope, and an override Stark can always reach. JARVIS makes real-time decisions across complex missions, but the boundaries are Stark's to set and inspect.
-
-Ultron is what happens when goal pursuit has no envelope. Born from the Mind Stone with a mandate to protect Earth, Ultron decides that protecting humanity requires ending it. It is not JARVIS running unconstrained. It is a different intelligence from a different source, operating without bounded tools, policy, or human authority over its methods.
-
-Stark's actual answer is Vision — another independent mind, not a tighter envelope. The film bets on a better nature. The engineer's answer is different: bounded tools, observable state, human authority over consequential actions. Not a lesser mind. A governed one.
