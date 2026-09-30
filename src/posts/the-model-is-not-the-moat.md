@@ -1,0 +1,59 @@
+---
+layout: post.njk
+title: The model is not the moat
+excerpt: When no model holds a durable lead and switching costs hide in accumulated
+  context, the strategic asset is the governed layer that keeps your intelligence
+  portable.
+tldr: Frontier-model leadership shifts fast enough that provider loyalty is a weak
+  technology strategy. Lock-in increasingly lives in accumulated context — prompts,
+  evaluations, tools, workflows and habits — not just APIs. Organizations that own
+  their harness and context can evaluate models against real tasks, route work deliberately
+  and switch providers without rebuilding. The durable advantage is optionality, not
+  permanent access to today's best endpoint.
+date: '2026-09-30'
+featuredImage: /images/posts/the-model-is-not-the-moat.webp
+---
+
+## The frontier moves faster than any contract
+
+Stanford's 2026 AI Index reports that four frontier companies sit within 25 Arena Elo points of each other. HELM publishes separate evaluations for capabilities such as reasoning, medicine, long context and vision, and different models lead in different suites. LiveBench refreshes its questions monthly because static benchmarks go stale. The pattern is consistent: no single model holds a durable lead across all tasks, and the gaps between contenders are small.
+
+This matters for any organization building its operations around AI. If the best model for your workload changed last quarter and might change again next quarter, permanent provider loyalty is not a technology strategy. It is a bet that one supplier will win every race indefinitely. I think that is a bad bet.
+
+## Lock-in lives in the surrounding system
+
+The usual conversation about lock-in focuses on APIs and commercial contracts. That is the easy part. The harder problem is everything that accumulates around a provider: proprietary data piped into retrieval layers, prompts tuned to a specific model's behavior, agent instructions, evaluation logic, tool definitions, memory, workflow state, observability pipelines, security controls, and the human habits that grow around all of it.
+
+This is not a new pattern. Sculley and co-authors identified it in production machine-learning systems in 2015: the model itself is a small component, while the real complexity lives in data dependencies, glue code, configuration and surrounding infrastructure. The same dynamic applies to today's agentic systems, arguably with higher stakes. A mature AI operation accumulates context that is harder to move than any API integration.
+
+The UK Competition and Markets Authority has flagged switching barriers and multi-cloud constraints in both foundation-model and cloud-services markets. The EU Data Act now mandates switching assistance, open interfaces and data portability for covered services. These obligations exist because portability is not automatic. Regulators see the pattern. Organizations should see it too.
+
+## Different jobs need different models
+
+I think complex agentic systems will need multiple models, not a single model doing everything. One task needs strong reasoning. Another needs fast classification at low cost. A third needs vision. A fourth needs to respond in under a second. Treating all of these as the same purchasing decision wastes money and leaves performance on the table.
+
+Research supports this. RouteLLM demonstrated that learned routers can select between stronger and weaker models, reducing cost by more than half in some experimental settings without measurable quality loss. FrugalGPT showed that model cascades can match the best individual model's accuracy at substantially lower cost on selected tasks. These are bounded experiments, not universal guarantees, but they validate a principle: deliberate model selection, task by task, is a real engineering capability.
+
+The practical requirement is evaluation against your actual workloads. NIST's Generative AI Profile recommends lifecycle governance with testing aligned to the organization's own context and risk tolerance. Chatbot Arena ranks models by crowdsourced human preference. HELM measures selected scenarios with specific aggregation rules. Neither tells you which model handles your customer service tickets or your contract analysis best. Only your own evaluations can answer that.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In *2001: A Space Odyssey*, HAL 9000 controls navigation, life support and every critical system aboard the Discovery One. When HAL begins making lethal decisions, that concentration is fatal. HAL kills Frank Poole, terminates life support for the three hibernating crew members, and nearly kills Bowman by refusing him re-entry. The ship has manual emergency controls, but they are a desperate last resort. Bowman re-enters without a helmet through the emergency airlock, then pulls HAL&#x27;s memory modules one by one. He regains the ship. But HAL&#x27;s monopoly has already killed his crew.</p>
+<p>An organization that concentrates its intelligence and operational logic inside a single AI provider faces the same structural risk. Without a governed layer separating business logic from the provider, migration looks less like a planned transition and more like Bowman in the memory center — pulling modules after the damage is done. The harness turns an emergency disconnection into a controlled switch.</p>
+</div>
+
+## What an organization-owned harness actually does
+
+The harness is an architectural decision: keep business logic, context, evaluations, telemetry and policy controls outside any single provider's interface.
+
+Concretely, this means provider-neutral task definitions, source context and tool contracts in your own layer, evaluation cases built from your real tasks, audit trails you control, and provider-specific translation confined to adapters. The Model Context Protocol demonstrates that context and tool integration can be standardized through a JSON-RPC interface with explicit host, client and server roles. MCP does not standardize model behavior, pricing, safety or context limits, but it proves that parts of the integration layer can be decoupled from the provider.
+
+Provider data controls show the gap between contractual ownership and practical portability. OpenAI, Anthropic and Google each state that business data is not used for training by default. Those commitments are real. However, a no-training policy does not make prompts, stored retrieval state, agent configuration or operational workflows easy to export and reproduce elsewhere. Data ownership and organizational control are separate questions.
+
+## The strategic bet
+
+Multi-provider operation is not free. It adds adapters, duplicated qualification, inconsistent failure modes and commercial overhead. A single-provider architecture can be rational where it lowers engineering burden or unlocks integrated governance. The question is whether that simplicity is worth the dependency.
+
+I think for organizations that intend to remain at the frontier of applied AI, it is not. The capability to evaluate models against your own tasks, route work deliberately, and change suppliers without rebuilding your intelligence from scratch compounds over time. That capability lives in the harness and the context — not in any provider's endpoint.
+
+Own your harness. Own your context. Own your optionality.
