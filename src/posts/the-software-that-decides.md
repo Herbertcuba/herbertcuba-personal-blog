@@ -1,0 +1,57 @@
+---
+layout: post.njk
+title: The Software That Decides
+excerpt: Conventional software can only make the decisions a developer anticipated.
+  What changes when software chooses its next step at runtime, inside rules we design?
+  Here is how agentic software works, and why I think it will help run organizations.
+tldr: 'Agentic software lets part of a program''s decision logic be generated at runtime.
+  Developers build the data, tools, policies and guardrails, and the agent works in
+  a loop: read the goal and the situation, pick a tool, check the result, decide again.
+  ReAct and Toolformer show that loop working. I think the strongest products will
+  pair it with deterministic code, and my book AION covers how organizations redesign
+  authority around it.'
+date: '2026-10-01'
+featuredImage: /images/posts/the-software-that-decides.webp
+---
+
+We are in the middle of the biggest architectural shift in software in a generation. I do not think most people have grasped how far it goes.
+
+Conventional software follows decision logic a developer wrote and tested before deployment. That model built the digital world we live in, and it is not going away. But organizations face far more decisions than anyone can enumerate in advance, and deterministic code can only carry the ones somebody thought of beforehand.
+
+Agentic software handles that gap with a different architecture. So what is it, exactly?
+
+## What makes software agentic
+
+In traditional software, the developer writes the path: if this happens, do that. In agentic software, the developer builds the environment in which the path gets chosen. That means the data the system can see, the tools it can call, the policies it must follow and the guardrails that stop it. The agent, usually a language model, generates part of the decision logic at runtime, responding to a goal and the situation in front of it.
+
+The mechanism is a loop. The agent receives a goal, looks at the current state, reasons about what to do next and calls a tool, such as a database query, an API or a calculator. It reads the result, decides the next step and repeats until the goal is met or a stopping condition kicks in. Nobody wrote that sequence down in advance. It is assembled while the work happens.
+
+Picture a customer who wants to change a booking that fits none of the standard rules. A conventional system sends it to a human queue. An agentic system can look up the booking, check the fare rules through an API, compare the options and propose a change. Everything it touches is still ordinary code. What is new is who decides the order.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In *Terminator 2: Judgment Day* (1991), the T-800 sent to protect John Connor has the same hardware and lethality as the machine sent to kill him in the first film. What changes is how its behavior is constrained. When John forbids it from killing anyone, the machine does not abandon the mission. It changes its methods, finds non-lethal options and keeps working toward the goal inside the limit a human set.</p>
+<p>The goal is fixed and the tools are exact, but which tool to use and when is decided in the moment, shaped by guardrails someone defined. Skynet is the version with no such limits. Much of the film turns on the difference between a system that decides within boundaries and one that decides without them.</p>
+</div>
+
+## The loop already works in research
+
+ReAct, a paper by Princeton and Google researchers first released in 2022 and published at ICLR 2023, had a language model interleave reasoning with actions and observations. The model updated its plan as conditions changed and handled exceptions along the way. Toolformer, a 2023 paper from Meta AI researchers, trained a model to decide which API to call, when to call it, which arguments to pass and how to use the result.
+
+Toolformer's motivation tells you a lot. Language models are weak at exact arithmetic and factual lookup, so the model learned to hand those jobs to a calculator or a search tool. The model judges and the tool computes - that is the shape of agentic software in a single example.
+
+## Two kinds of logic in one product
+
+This is why I think the strongest products of the next era will combine both. Deterministic code will provide reliability where the answer must be exact. Agents will provide judgment where the path cannot be written in advance.
+
+Anthropic's engineering guidance from December 2024 draws the same line: predefined workflows for predictable, well-defined tasks, and agents for open-ended work where the steps cannot be hardcoded, surrounded by programmatic gates, stopping conditions, testing and human review. NIST's 2024 profile for generative AI likewise recommends business rules, empirical evaluation and clearly defined human oversight around these systems. Today's agents still make mistakes, and benchmarks show their results vary from run to run. In a well-built product, the deterministic layer is there for exactly that reason. It validates what the agent proposes and halts execution when a policy is broken, so the agent supplies judgment while the code around it defines what correct means.
+
+Organizations are already moving. In McKinsey's 2026 survey of 1,719 respondents across 97 countries, about two in ten said their organizations were scaling agents enterprise-wide. And 32 percent said their organizations had declined to buy at least one software product or feature because they could build it internally with agentic coding tools.
+
+## From supporting organizations to helping run them
+
+I think this combination will become the foundation of software that does not just support organizations, but helps run them. That is my forecast, and I hold it with conviction.
+
+Getting there takes more than better models. Organizations have to decide where authority sits, which decisions agents may take on their own and which ones humans keep. I wrote a book about exactly that. [*AION: Engineering the Organization for the Age of Agents*](https://www.cubagarcia.com/aion/) is a field manual for redesigning the organization around agents, built on explicit contracts, bounded authority, evidence-based autonomy and humans who keep consequential judgment.
+
+For decades, software has been a record of decisions someone made months before the situation arrived. The next generation will make some of those decisions as the situation unfolds, inside limits we design on purpose.
