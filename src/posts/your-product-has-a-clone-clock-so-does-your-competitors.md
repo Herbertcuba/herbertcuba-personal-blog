@@ -4,10 +4,10 @@ title: Your Product Has a Clone Clock. So Does Your Competitor's.
 excerpt: Anything your customers can see, a competitor can now copy faster than before.
   This article shows how to measure how fast, in both directions, and what to keep
   out of sight.
-tldr: Herbert argues that AI has made it much cheaper to copy a product from the outside,
+tldr: I argue that AI has made it much cheaper to copy a product from the outside,
   so anything customers can see is a head start rather than a wall. A Visual FoxPro
   rebuild, tested by matching old and new outputs, shows a shipped product specifying
-  its own copy. He proposes a two-way Clone Clock and, drawing on his book AION, argues
+  its own copy. I propose a two-way Clone Clock and, drawing on my book AION, argue
   that lasting advantage sits in the evidence and learning a company keeps inside.
 date: '2026-10-07'
 featuredImage: /images/posts/your-product-has-a-clone-clock-so-does-your-competitors.webp
