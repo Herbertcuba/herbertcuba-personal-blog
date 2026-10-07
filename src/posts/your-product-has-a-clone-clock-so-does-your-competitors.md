@@ -1,0 +1,50 @@
+---
+layout: post.njk
+title: Your Product Has a Clone Clock. So Does Your Competitor's.
+excerpt: Anything your customers can see, a competitor can now copy faster than before.
+  This article shows how to measure how fast, in both directions, and what to keep
+  out of sight.
+tldr: Herbert argues that AI has made it much cheaper to copy a product from the outside,
+  so anything customers can see is a head start rather than a wall. A Visual FoxPro
+  rebuild, tested by matching old and new outputs, shows a shipped product specifying
+  its own copy. He proposes a two-way Clone Clock and, drawing on his book AION, argues
+  that lasting advantage sits in the evidence and learning a company keeps inside.
+date: '2026-10-07'
+featuredImage: /images/posts/your-product-has-a-clone-clock-so-does-your-competitors.webp
+---
+
+My argument is simple. AI has made it much cheaper to copy a product from the outside. Anything customers can see is now a head start rather than a wall, so you need to know how long yours lasts, and how long your competitors' lasts against you.
+
+## The product writes the spec for its copy
+
+On September 22, a developer shared a rebuilt Visual FoxPro, an old Microsoft database tool, on Hacker News. They made it with an LLM's help for one customer's shop. Tests run the same input through old and new versions, and the outputs must match. The project reports 1,534 of 1,722 language elements covered.
+
+It is unfinished, but the old product wrote the specification. Its behavior became the test for its replacement.
+
+## Copies fall short, for a while
+
+Reverse engineering is old, but an LLM can now help compare outputs and fix the differences.
+
+A 2024 study at ICLR, a major AI conference, found that imitation models picked up a stronger model's style far more easily than its ability. A visible advantage still has a shelf life you can measure.
+
+## Run the clock both ways
+
+I call that measurement a Clone Clock: the time and cost for a small team with a frontier model to match your product using only what you show the world. Agree beforehand what the copy must do, not just look like, to count as a match.
+
+Then point it at a competitor, after a legal check. Time how long your team needs to match the feature that keeps costing you deals. If the answer is weeks, a strategy debate becomes a planning decision.
+
+If competitors can copy you faster than you can improve, your roadmap is quietly writing their backlog.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In John Carpenter&#x27;s *The Thing* (1982), an organism at an Antarctic research station imitates whatever it absorbs, down to the voice and habits. Watching each other stops helping, because everything visible can be copied. MacReady&#x27;s answer is a blood test. He reasons that every piece of the creature is a separate living thing that will try to protect itself, so he touches a heated wire to each man&#x27;s blood sample. Human blood stays put, while the creature&#x27;s blood leaps away from the heat. The imitation is good enough to pass at the table, but it cannot stop its own cells from reacting to danger.</p>
+<p>Your interface and outputs are the face and the voice. A clone can match them well enough to fool a quick look, much as imitation models in a 2024 ICLR study impressed human raters while lagging on capability. Whether the clone can actually do the work only shows under a test of what it does, not how it looks.</p>
+</div>
+
+## Keep what compounds inside
+
+In my book AION, I argue that lasting advantage comes from the evidence and learning an organization accumulates. That holds only while it stays inside, because a clear internal rule becomes a spec the day you ship it.
+
+Sell outcomes rather than logic customers can inspect, and keep production data, test sets and proof your system works in-house. Checking who gets bulk access slows copying without stopping it.
+
+The line that matters runs between what customers can observe and what you withhold. Know both clocks, and improve faster than you can be copied.
