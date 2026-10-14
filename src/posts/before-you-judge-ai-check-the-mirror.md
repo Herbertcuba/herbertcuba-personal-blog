@@ -1,0 +1,50 @@
+---
+layout: post.njk
+title: Before You Judge AI, Check the Mirror
+excerpt: The same AI demo can look like liberation or threat. I think that reaction
+  says something about how we read evidence, and the test applies to optimists like
+  me as much as to critics.
+tldr: AI sentiment can reveal how people handle evidence, though not who they are.
+  U.S. surveys show rising concern and falling enthusiasm, not two growing camps,
+  and international results differ. Selective evaluation can affect both critics and
+  enthusiasts, while job exposure, use cases and experience give attitudes legitimate
+  reasons. Realism means naming the observation that would change a judgment and applying
+  equal standards to welcome and unwelcome findings.
+date: '2026-10-14'
+featuredImage: /images/posts/before-you-judge-ai-check-the-mirror.webp
+---
+
+Picture two people watching the same demo. An AI agent drafts a contract and summarizes a week of email. One of them sees an afternoon given back. The other sees a job being taken apart.
+
+I think that gap says as much about the viewers as the technology. My provocative version: your AI sentiment reveals your true colors.
+
+## The divide is louder than the data
+
+It feels as if the anti-AI and pro-AI camps are both growing. The best comparable data doesn't show that. Pew has asked American adults the same question yearly since 2021. The share more concerned than excited rose from 37% to 52% by 2026, while the share more excited than concerned fell from 18% to 9%.
+
+Internationally, Gallup's 2026 survey with Microsoft found AI-aware adults expecting more benefit than harm in 29 of its first 37 countries. My guess is that the loudest voices make the divide feel wider than surveys show.
+
+## How the mirror works
+
+The psychology is older than AI. In a 1979 experiment, Lord, Ross and Lepper showed 48 students with opposing views on capital punishment the same mixed invented studies. Each side rated the confirming research as stronger, and both reported moving further apart. Political experiments by Taber and Lodge in 2006 found people seeking agreeable arguments and scrutinizing opposing ones harder.
+
+None of those studies tested AI, but I see no reason the mechanism stops there. A cynic can file every hallucination as proof and every useful result as hype. An enthusiast can do the reverse, and I'm an optimist. Researchers still argue over whether people update more on good news than bad, so I watch my own filter too.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In *Solaris* (Andrei Tarkovsky, 1972), scientists orbit an ocean planet that may be a mind. The ocean answers their probes by materialising people from each crew member&#x27;s memory, so every scientist ends up studying a version of themselves. I think AI debates often work the same way. We point instruments at a new kind of intelligence and get back our hopes and fears in physical form. The crew who make progress are the ones who notice that the visitor came from their own heads, and ask what the planet is doing apart from them.</p>
+</div>
+
+## A critic can be right
+
+The mirror has limits. In one 2024 study of 298 US online respondents, personality and demographics explained 14% of the variation in AI attitudes. Real stakes matter too. The ILO estimates a quarter of global employment is in jobs with some generative-AI exposure. That means potential exposure, not job losses, but it is still a reason for caution.
+
+Pew also found Americans comfortable with AI forecasting weather and opposed to it judging romantic compatibility. Holding both views draws a line around delegation. Criticism can be careful judgment, and enthusiasm can rest on results someone has seen.
+
+## Realism means you can be moved
+
+Realism, as I mean it, is judgment that changes when the evidence does. A middle position earns no credit by itself. Jin Woo Kim's 2025 experiments found people accepting unwelcome information, though less so once the setting turned hostile.
+
+Before your next AI decision, write down the observation that would change your mind. Then check whether good news and bad news meet the same standard.
+
+If you can't name that observation, you are looking at your reflection rather than the technology. Your AI sentiment reveals your true colors, and that applies to me as much as anyone.
