@@ -20,3 +20,8 @@ New AION purchases download version 4.3 from the existing private purchase path,
 - A malformed PDF could break delivery; validation and build checks run before upload.
 - An interrupted blob overwrite could leave uncertain state; compare the remote manifest and downloaded blob digest before claiming completion.
 - Recovery is to restore the previous tracked PDF (`be1165b86a5dda7770fa51627cd6ee3da87f286cb441d5b59a04dddb70a5cea4`) and run the same synchronizer, without changing checkout code or payment records.
+
+
+# Draft wording correction — 1792367013
+
+COCO task article-edit-scope-1792367013. Herbert requested the exact change “It looked like software” to “It looked like a software company” in the existing review-only draft. Change only that sentence, preserve draft exclusion/permalink, hero and all other content. Verify diff/whitespace, site tests and Eleventy build, then branch/PR/merge and exact live phrase. No blog post or LinkedIn publication, schedule, pricing or protected content change. Recovery: restore previous draft version in a follow-up commit; do not alter release receipts. Existing repository has no root AGENTS.md; README/package scripts define site validation.
