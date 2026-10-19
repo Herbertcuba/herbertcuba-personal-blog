@@ -30,3 +30,8 @@ COCO task article-edit-scope-1792367013. Herbert requested the exact change “I
 ## 2026-10-19 — Playable centerpiece video (1792367918)
 
 Add the exact source talk GLvFTMtw4Jk at the originally supplied two-minute start after the article opening. Use a responsive privacy-enhanced iframe, user-initiated playback, accessible title, fullscreen support and direct-watch fallback. Preserve all article wording, draft exclusion, hero and permalink. Verify site tests/build and rendered player at mobile/desktop; branch/PR/merge and live readback. No publication or scheduling. Preserve prior immutable preview and register a new digest-bound assembly before later Release approval. Recovery restores the prior draft while retaining author request and prior receipts.
+
+
+## 2026-10-19 — Dark source-video panel (1792370639)
+
+Apply the existing dark-panel and foreground/accent tokens to the source-video figure, with responsive inset spacing and a readable caption link. CSS presentation only: preserve the now-scheduled release result, video source/start, content, timing and approval. Validate existing site tests, build, diff/whitespace, and actual mobile/desktop computed styles/overflow after deployment. Deliver through isolated branch/PR/merge. Recovery is a focused stylesheet revert, never rescheduling or rewriting approved content. Reuse task article-edit-scope-1792367013; its failed-checkpoint closure gap remains independently retained.
