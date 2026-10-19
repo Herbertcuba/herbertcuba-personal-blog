@@ -1,0 +1,54 @@
+---
+layout: post.njk
+title: 'Beware the Zombie Interface: Why Brand Wins When Everyone Can Build'
+excerpt: 'AI can give almost anyone a product that works. I think that makes a harder
+  question more valuable: what does your product stand for, and can people feel it
+  in the details?'
+tldr: AI is increasing the supply of working products. Features stay necessary, but
+  they offer less durable differentiation when competitors can reproduce them. Katie
+  Dill's talk on generic "zombie UI", premature polish and Stripe's design-system
+  tooling shows how a brand point of view can be built into the systems that make
+  products. The book Digital Singularity Shift points the same way. Leaders should
+  define what their product stands for and spend any effort AI saves on distinctive
+  quality.
+date: '2026-10-19'
+featuredImage: /images/posts/beware-the-zombie-interface-why-brand-wins-when-everyone-can-build.webp
+---
+
+Can you guess what a website sells from its design alone? In a talk for Lenny's Podcast, Katie Dill of Stripe showed a polished site with clean, familiar patterns. It looked like a software company. It sold Korean barbecue.
+
+<figure class="source-video">
+<iframe style="display:block;width:100%;aspect-ratio:16/9;min-height:200px;border:0" src="https://www.youtube-nocookie.com/embed/GLvFTMtw4Jk?start=120" title="Katie Dill: How to scale intent, quality, and artistry with AI" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<figcaption><a href="https://www.youtube.com/watch?v=GLvFTMtw4Jk&amp;t=120s" target="_blank" rel="noopener noreferrer">Watch: Katie Dill: How to scale intent, quality, and artistry with AI</a></figcaption>
+</figure>
+
+That joke carries my argument. AI is multiplying products that work, so a working feature list gets easier to reproduce. Features still matter; nobody chooses a broken product. But when competitors can ship similar capabilities quickly, features alone offer fewer lasting reasons to choose you. I think the durable advantage moves to brand: a recognizable point of view, built into how the product behaves.
+
+## The boom has a sameness problem
+
+Dill compares the AI building boom with the post-war construction boom, when styles copied without intent filled cities with what she calls zombie buildings. Her worry is zombie UI. Language models are good at the most probable answer, she argues, and weaker at what is specific to your brand and users.
+
+An experiment by Anil Doshi and Oliver Hauser hints at the mechanism: writers given AI ideas wrote stories rated more creative, yet more alike.
+
+## The trap of looking finished
+
+Dill also warns that AI makes work feel finished too early. Type a sentence, get an interface with rounded corners and drop shadows, and it looks done. Like her microwave burrito lunch, it arrives fast enough to forgive serious flaws. Her questions are whether it solves the problem and whether it differentiates.
+
+One example is tiny: a calendar that shows the date on its tab. You barely notice it, but it shows the builder thought about you. Here, brand is a promise of care kept in a visible detail.
+
+## Put the point of view into the machine
+
+If brand lives in interactions, it has to live in the system that produces them. Dill says Stripe first let AI tools read its design documentation, but three people with one prompt could get three different results. Stripe then built a command-line tool on its design system, with templates and flows that encode how the product should behave. She admits it is still evolving.
+
+My book Digital Singularity Shift points this way: quality, price, convenience and speed form the baseline, while brand vision, tone and rules become inputs to generated experiences. Dill isn't endorsing my book, but her account shows the idea turning into engineering practice.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In *Invasion of the Body Snatchers* (1978), the pod people are flawless copies. They walk, talk and do their jobs, and their friends struggle to say what is wrong. What&#x27;s missing is everything that made each person particular, from their quirks to their warmth. I think zombie UI works the same way. A generated interface can pass every functional test and still feel like a pod copy of a thousand others. I suspect customers feel that emptiness before they can name it, and they drift toward the product that clearly has someone home.</p>
+</div>
+
+## Spend saved effort on taste
+
+Studies disagree on how much time AI saves developers. Whatever you save, spend it where copying is hard. Dill describes an event animation pushed through 56 iterations, with AI used to explore further, not to finish sooner.
+
+For leaders, the work is deciding what the product believes and encoding it in templates, defaults and review standards. AI will give almost everyone a product that works. It cannot decide what yours stands for, and I think that decision is becoming the reason customers choose.
