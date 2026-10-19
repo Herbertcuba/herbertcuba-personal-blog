@@ -25,3 +25,8 @@ New AION purchases download version 4.3 from the existing private purchase path,
 # Draft wording correction — 1792367013
 
 COCO task article-edit-scope-1792367013. Herbert requested the exact change “It looked like software” to “It looked like a software company” in the existing review-only draft. Change only that sentence, preserve draft exclusion/permalink, hero and all other content. Verify diff/whitespace, site tests and Eleventy build, then branch/PR/merge and exact live phrase. No blog post or LinkedIn publication, schedule, pricing or protected content change. Recovery: restore previous draft version in a follow-up commit; do not alter release receipts. Existing repository has no root AGENTS.md; README/package scripts define site validation.
+
+
+## 2026-10-19 — Playable centerpiece video (1792367918)
+
+Add the exact source talk GLvFTMtw4Jk at the originally supplied two-minute start after the article opening. Use a responsive privacy-enhanced iframe, user-initiated playback, accessible title, fullscreen support and direct-watch fallback. Preserve all article wording, draft exclusion, hero and permalink. Verify site tests/build and rendered player at mobile/desktop; branch/PR/merge and live readback. No publication or scheduling. Preserve prior immutable preview and register a new digest-bound assembly before later Release approval. Recovery restores the prior draft while retaining author request and prior receipts.
