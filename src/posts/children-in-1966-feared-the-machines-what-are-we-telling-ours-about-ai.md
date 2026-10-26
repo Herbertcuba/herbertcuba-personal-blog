@@ -16,6 +16,11 @@ featuredImage: /images/posts/children-in-1966-feared-the-machines-what-are-we-te
 
 I recently watched a reel of British schoolchildren imagining life in 2000. It comes from [Tomorrow's World, broadcast by the BBC on 28 December 1966](https://www.youtube.com/watch?v=xS8xX3usi4c). Many answers were dark: nuclear catastrophe, overpopulation, automation and unemployment.
 
+<figure class="source-video">
+<iframe style="display:block;width:100%;aspect-ratio:16/9;min-height:200px;border:0" src="https://www.youtube-nocookie.com/embed/xS8xX3usi4c?start=0" title="BBC Archive: Children imagine life in the year 2000 (1966)" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<figcaption><a href="https://www.youtube.com/watch?v=xS8xX3usi4c&amp;t=0s" target="_blank" rel="noopener noreferrer">Watch: BBC Archive: Children imagine life in the year 2000 (1966)</a></figcaption>
+</figure>
+
 Those children didn't invent their fears; I think they absorbed the anxiety of the Cold War adults around them. I hear the same pattern in today's AI talk, where more and more people describe it as the end of humanity. That is not a productive way to talk about our common future. We should stop projecting inevitable doom onto the young and give them honest risks alongside grounded hope.
 
 ## Every generation gets an existential story
