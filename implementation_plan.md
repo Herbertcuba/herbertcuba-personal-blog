@@ -35,3 +35,24 @@ Add the exact source talk GLvFTMtw4Jk at the originally supplied two-minute star
 ## 2026-10-19 — Dark source-video panel (1792370639)
 
 Apply the existing dark-panel and foreground/accent tokens to the source-video figure, with responsive inset spacing and a readable caption link. CSS presentation only: preserve the now-scheduled release result, video source/start, content, timing and approval. Validate existing site tests, build, diff/whitespace, and actual mobile/desktop computed styles/overflow after deployment. Deliver through isolated branch/PR/merge. Recovery is a focused stylesheet revert, never rescheduling or rewriting approved content. Reuse task article-edit-scope-1792367013; its failed-checkpoint closure gap remains independently retained.
+
+## Correct foundation: current-site mirror and search branches — 1793811009
+
+- Scope: actual production source at b969f1d2; no old prototype or copied design
+  shell. First verify a faithful noindex private mirror. Then fork two separate
+  homepage/menu search branches from that exact verified mirror commit.
+- Source delivery: preview/current-site-mirror-1793811009, then independent A/B
+  featurebranches. User explicitly requires branch-only testing, no main merge.
+  Guard Vercel auto deployment in branch config before pushing any commits.
+- Checks: npm ci, npm test, safe uncredentialed preview build, real homepage and
+  representative deep-page desktop/mobile comparison against current live site,
+  asset/navigation coverage; noindex meta/header + robotsDisallow; no drafts,
+  private files, analytics or external mutation. Independent browser testing of
+  actual branch URLs, keyboard and search quality; preserve existing site.
+- Risks/recovery: asset rewrite/build upload hooks, commerce links, outdated
+  source, private drafts, accidental deployment, branch differences outside
+  search. Use explicit preview config and public assets; never modify primary
+  checkouts/main. Preserve old preview rollback, source pin and served hashes.
+- Task: website-current-mirror-1793811009, linked correction of the rejected
+  prototype foundation in website-search-comparison-1793807569. Evidence in
+  default-work session worktree under this task. No publication/spend authority.
