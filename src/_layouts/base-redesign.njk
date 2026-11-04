@@ -10,6 +10,8 @@
   <link rel="preload" href="/fonts/chakra-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/inter-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/redesign.css" />
+  <link rel="stylesheet" href="/site-search.css" />
+  <link rel="stylesheet" href="/menu-search.css" />
 
   {# Canonical — single canonical URL #}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
@@ -101,6 +103,9 @@
   </main>
 
   {% include "footer.njk" %}
+  {% include "menu-search.njk" %}
+  <script type="module" src="/site-search.js"></script>
+  <script type="module" src="/menu-search.js"></script>
 
   <script>
     // Mobile nav toggle

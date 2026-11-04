@@ -59,7 +59,7 @@ async function main() {
   if (!replacements.length) throw new Error("Blob asset mapping is empty.");
 
   const files = (await walk(OUTPUT_DIR)).filter((file) =>
-    TEXT_EXTENSIONS.has(extname(file).toLowerCase()),
+    file !== join(OUTPUT_DIR, "search-index.json") && TEXT_EXTENSIONS.has(extname(file).toLowerCase()),
   );
 
   for (const file of files) {
