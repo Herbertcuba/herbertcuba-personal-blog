@@ -1,6 +1,6 @@
 .menu-search-trigger{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;white-space:nowrap}
 .menu-search-trigger:hover{color:var(--green)}
-.menu-search-trigger:focus-visible,.menu-search :focus-visible{outline:2px solid #60d692;outline-offset:3px}
+.menu-search-trigger:focus-visible,.menu-search :focus-visible{outline:2px solid var(--green);outline-offset:3px}
 .menu-search-open{overflow:hidden}
 .menu-search{box-sizing:border-box;width:min(680px,calc(100% - 24px));max-width:calc(100% - 24px);max-height:min(740px,calc(100dvh - 48px));padding:0;background:#191b1d;color:#f1f2f3;border:1px solid #36393b;border-radius:16px;font-family:var(--font-body,sans-serif);box-shadow:0 24px 100px #0009;overflow:hidden}
 .menu-search[open]{display:flex;flex-direction:column}
@@ -14,7 +14,7 @@
 .menu-search__form{flex:none;margin:0 24px}
 .menu-search__label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .menu-search__controls{display:flex;align-items:center;gap:8px;padding:4px 6px 4px 14px;background:#242729;border:1px solid #414648;border-radius:10px}
-.menu-search__controls:has(input:focus-visible){outline:2px solid #60d692;outline-offset:3px}
+.menu-search__controls:has(input:focus-visible){outline:2px solid var(--green);outline-offset:3px}
 .menu-search__icon{flex:none;color:#9ba7a0}
 .menu-search input{box-sizing:border-box;min-width:0;flex:1;width:100%;height:44px;border:0;border-radius:0;padding:0;font:inherit;font-size:16px;background:transparent;color:#fff;outline:none}
 .menu-search input::placeholder{color:#a6afab;opacity:1}

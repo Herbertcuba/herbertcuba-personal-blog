@@ -86,3 +86,7 @@ Recovery removes only B UI; no production or mirror baseline mutation.
 ## Two menu-search design versions —1793813310
 
 Build this isolated minimal variant from B28a3ce05 under docs/search-design-comparison.md. Modify only search-scoped UI, preserve corpus/safe image policy and surrounding actual site. Run npm ci, npm test, npm run build:preview and focused browser checks, then independent acceptance/source review. Risks: touch focus, mobile keyboard height, image fallback and layout overflow; verify320/390/1440 and390x500. Recovery: retain priorB unchanged. Push branch only with Vercel deployment guard; no production merge. Evidence goes to designated design evidence worktree.
+
+## Minimal Finder brand green —1793814418
+
+Herbert selected Minimal Finder and requested the vibrant brand green for the field outline. Replace muted focus-outline color with existing --green (#00E653), including consistent keyboard focus. No layout/behavior/content changes. Run npm ci/test/build:preview, inspect two-token CSS diff and verify actual8467 computed outline at mobile/desktop. Fast-forward retained Minimal featurebranch, push/readback, atomically replace only served CSS. Production stays unchanged; recovery is priorCSS/decaf480.
