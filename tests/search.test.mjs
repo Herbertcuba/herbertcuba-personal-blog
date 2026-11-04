@@ -29,3 +29,9 @@ test('index has deterministic public-only source-built corpus digest', () => {
   assert.match(index.digest,/^[a-f0-9]{64}$/);
   assert.equal(createSearchIndex([post]),createSearchIndex([post]));
 });
+
+test('homepage search hidden retry is not overridden by production button display', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const css = await readFile('src/static/site-search.css', 'utf8');
+  assert.match(css, /\.home-search\s+\[hidden\]\s*\{\s*display:\s*none\s*!important/);
+});

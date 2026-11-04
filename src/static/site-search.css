@@ -17,3 +17,5 @@
 
 .home-search .section-h2__slash { color: #237a46; }
 .home-search button[type="reset"] { background: transparent; color: var(--ink, #1a1a1a); border: 1px solid currentColor; }
+/* Production .btn sets display explicitly, so honor hidden in this component. */
+.home-search [hidden] { display: none !important; }
