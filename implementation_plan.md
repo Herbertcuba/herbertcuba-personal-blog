@@ -35,3 +35,9 @@ Add the exact source talk GLvFTMtw4Jk at the originally supplied two-minute star
 ## 2026-10-19 — Dark source-video panel (1792370639)
 
 Apply the existing dark-panel and foreground/accent tokens to the source-video figure, with responsive inset spacing and a readable caption link. CSS presentation only: preserve the now-scheduled release result, video source/start, content, timing and approval. Validate existing site tests, build, diff/whitespace, and actual mobile/desktop computed styles/overflow after deployment. Deliver through isolated branch/PR/merge. Recovery is a focused stylesheet revert, never rescheduling or rewriting approved content. Reuse task article-edit-scope-1792367013; its failed-checkpoint closure gap remains independently retained.
+
+## Approved Minimal Finder production release —1793814789
+
+Herbert explicitly approved the selected Minimal Finder with vibrant brand green for production. Port only search runtime/index/templates/tests from9f7b06ba onto current mainb969f1d2. Preserve vercel.json, package scripts, robots/indexing, analytics, checkout, drafts routes and content. Do not merge preview-only noindex/config/server/disabled integrations.
+Production blob rewriting must leave search-index.json root-relative and digest-stable: existing /images rewrite resolves these public images while client safety policy remains strict. Add isolated rewriter integration coverage.
+Checks: npm ci/test, production Eleventy build and actual rewrite integration; independent Standards/Spec source review and mobile/desktop search acceptance; review PR/checks then merge. Verify actual live production indexing, search, images, navigation and exact deployed source. Existing Vercel pipeline owns deployment; no new service or spend. Recovery: revert only this release or restore prior verified deployment if a live blocker appears; preserve previews.

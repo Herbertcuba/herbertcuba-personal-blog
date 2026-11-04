@@ -1,0 +1,22 @@
+<dialog id="article-search" class="menu-search" aria-labelledby="article-search-title" data-site-search data-search-empty-message="Search ideas, topics or a title.">
+  <header class="menu-search__header">
+    <div>
+      <span class="menu-search__eyebrow">THE ARCHIVE</span>
+      <h2 id="article-search-title">Find an insight</h2>
+    </div>
+    <button type="button" class="menu-search__close" data-search-close aria-label="Close search">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+  <form role="search" class="menu-search__form">
+    <label class="menu-search__label" for="article-search-query">Search insights</label>
+    <div class="menu-search__controls">
+      <svg class="menu-search__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input id="article-search-query" type="search" name="q" data-search-query autocomplete="off" placeholder="Search insights…" autofocus>
+      <button class="menu-search__clear" type="reset" aria-label="Clear search">Clear</button>
+    </div>
+  </form>
+  <p data-search-status role="status" aria-live="polite">Search ideas, topics or a title.</p>
+  <button class="menu-search__retry" type="button" data-search-retry hidden>Try again</button>
+  <ul data-search-results></ul>
+</dialog>

@@ -1,4 +1,5 @@
 import markdownIt from "markdown-it";
+import { createSearchIndex } from "./scripts/search-index.mjs";
 import markdownItAnchor from "markdown-it-anchor";
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -8,6 +9,7 @@ const THEMES = JSON.parse(readFileSync(join(process.cwd(), "src", "_data", "them
 
 /** @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig */
 export default function(eleventyConfig) {
+  eleventyConfig.addFilter("publicSearchIndex", createSearchIndex);
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
   eleventyConfig.addPassthroughCopy({ "src/images": "/images" });
 
