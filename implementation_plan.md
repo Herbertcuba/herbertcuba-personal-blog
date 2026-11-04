@@ -56,3 +56,13 @@ Apply the existing dark-panel and foreground/accent tokens to the source-video f
 - Task: website-current-mirror-1793811009, linked correction of the rejected
   prototype foundation in website-search-comparison-1793807569. Evidence in
   default-work session worktree under this task. No publication/spend authority.
+
+## Menu search experiment B — search-menu-v1
+
+Preserve verified mirror 8e08825 and all original homepage sections. Add a Search
+control in the actual desktop/mobile navigation, opening one scoped native dialog.
+Use the separately supplied shared public corpus/engine; never inherit inline A UI.
+Validate first Escape with populated input, focus containment/restoration, mobile
+menu, empty/reset/error/retry/no-results/injection and 390/1440 layouts plus axe.
+Run npm ci/test/build:preview, review whitespace/diff and commit branch-only.
+Recovery removes only B UI; no production or mirror baseline mutation.

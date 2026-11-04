@@ -1,0 +1,16 @@
+<dialog id="article-search" class="menu-search" aria-labelledby="article-search-title" data-site-search>
+  <header class="menu-search__header">
+    <h2 id="article-search-title">Search insights</h2>
+    <button type="button" data-search-close aria-label="Close search">Close <span aria-hidden="true">×</span></button>
+  </header>
+  <form role="search" class="menu-search__form">
+    <label for="article-search-query">What are you looking for?</label>
+    <div class="menu-search__controls">
+      <input id="article-search-query" type="search" name="q" data-search-query autocomplete="off" placeholder="Try agentic software" autofocus>
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+  <p data-search-status role="status" aria-live="polite">Search article titles, summaries and full text.</p>
+  <button type="button" data-search-retry hidden>Retry loading articles</button>
+  <ul data-search-results></ul>
+</dialog>
