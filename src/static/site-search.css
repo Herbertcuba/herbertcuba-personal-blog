@@ -1,0 +1,13 @@
+/* Search-only styles; the original site stylesheet remains unchanged. */
+.site-search { color: var(--ink, #101010); }
+.site-search__form { display: flex; gap: .75rem; flex-wrap: wrap; }
+.site-search__label { display: block; width: 100%; font-weight: 600; }
+.site-search__input { min-width: 0; flex: 1 1 16rem; padding: .85rem 1rem; border: 1px solid currentColor; border-radius: 0; background: #fff; color: #101010; font: inherit; }
+.site-search button { cursor: pointer; }
+.site-search :focus-visible { outline: 3px solid #237a46; outline-offset: 4px; }
+.site-search__status { margin: 1rem 0 .5rem; font-size: .875rem; }
+.site-search__results { list-style: none; padding: 0; margin: 0; }
+.site-search__results li { padding: 1rem 0; border-top: 1px solid #bbb; }
+.site-search__results h3 { margin: 0 0 .4rem; font-size: 1.2rem; }
+.site-search__results a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.site-search__results p { margin: 0; line-height: 1.6; overflow-wrap: anywhere; }
