@@ -82,3 +82,7 @@ Recovery removes only B UI; no production or mirror baseline mutation.
 - Recovery: restore B commit/build6d18fc50; preserve noindex and other branches.
 - Evidence: default-work dedicated polish worktree under task
   website-current-mirror-1793811009/menu-polish-1793812592/; no new task/queue.
+
+## Two menu-search design versions —1793813310
+
+Build this isolated editorial variant from B28a3ce05 under docs/search-design-comparison.md. Modify only search-scoped UI, preserve corpus/safe image policy and surrounding actual site. Run npm ci, npm test, npm run build:preview and focused browser checks, then independent acceptance/source review. Risks: touch focus, mobile keyboard height, image fallback and layout overflow; verify320/390/1440 and390x500. Recovery: retain priorB unchanged. Push branch only with Vercel deployment guard; no production merge. Evidence goes to designated design evidence worktree.
