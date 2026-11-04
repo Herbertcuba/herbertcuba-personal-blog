@@ -10,3 +10,6 @@ ga-service-account.json
 *-service-account.json
 .env.local
 .cache/
+
+# Private, generated website mirror
+dist-preview/
