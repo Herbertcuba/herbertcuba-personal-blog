@@ -31,8 +31,8 @@ Never expose this server through public Funnel. Generated output is ignored.
 - HTML includes noindex/nofollow/noarchive metadata. `robots.txt` disallows all
   crawling; every response also has X-Robots-Tag. These are not access control.
 - The loopback server permits GET/HEAD only, rejects API/private/draft/dotfile
-  routes and traversal, prevents symlink escape, disables browser connections
-  and form submission by CSP, and never forwards requests to production APIs.
+  routes and traversal, prevents symlink escape, allows only same-origin browser connections
+  and disables form submission by CSP, and never forwards requests to production APIs.
 - Canonical and social metadata remain production URLs. Original outbound links
   and read-only embedded media remain; navigating outward leaves the test site.
 

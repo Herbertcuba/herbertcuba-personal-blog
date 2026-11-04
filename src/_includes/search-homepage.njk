@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/site-search.css">
+<section class="home-search site-search" data-site-search aria-labelledby="homepage-search-title">
+  <h2 id="homepage-search-title" class="section-h2 section-h2--light"><span class="slash section-h2__slash" aria-hidden="true">//</span>Find an insight</h2>
+  <form class="site-search__form" role="search" aria-label="Published insights">
+    <label class="site-search__label" for="homepage-search-query">Search the insights</label>
+    <input class="site-search__input" id="homepage-search-query" data-search-query type="search" name="q" placeholder="Try agentic software…" autocomplete="off" aria-describedby="homepage-search-status">
+    <button class="btn btn--primary" type="submit">Search →</button>
+    <button class="btn" type="reset">Clear</button>
+  </form>
+  <p class="site-search__status mono" id="homepage-search-status" data-search-status role="status" aria-live="polite">Search titles, summaries and the full text of all published insights.</p>
+  <button class="btn" data-search-retry type="button" hidden>Try again</button>
+  <ul class="site-search__results" data-search-results aria-label="Search results"></ul>
+  <noscript><p>Enable JavaScript to search, or <a href="/insights/">browse all insights</a>.</p></noscript>
+</section>
+<script type="module" src="/site-search.js"></script>

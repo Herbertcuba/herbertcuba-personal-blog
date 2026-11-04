@@ -11,3 +11,9 @@
 .site-search__results h3 { margin: 0 0 .4rem; font-size: 1.2rem; }
 .site-search__results a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
 .site-search__results p { margin: 0; line-height: 1.6; overflow-wrap: anywhere; }
+
+.home-search { padding: 2rem var(--gutter, 5vw); border-bottom: 1px solid #bbb; background: var(--light, #F2F5F2); }
+.home-search .section-h2 { margin-top: 0; }
+
+.home-search .section-h2__slash { color: #237a46; }
+.home-search button[type="reset"] { background: transparent; color: var(--ink, #1a1a1a); border: 1px solid currentColor; }
