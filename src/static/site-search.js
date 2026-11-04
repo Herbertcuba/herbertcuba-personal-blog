@@ -22,7 +22,7 @@ export function initializeSearch(root) {
     const current = ++sequence, query = input.value.trim();
     results.replaceChildren();
     retry.hidden = true;
-    if (!query) { status.textContent = 'Search titles, summaries and the full text of all published insights.'; return; }
+    if (!query) { status.textContent = root.dataset.searchEmptyMessage || 'Search titles, summaries and the full text of all published insights.'; return; }
     status.textContent = 'Searching…';
     try {
       const articles = await loadCorpus();
