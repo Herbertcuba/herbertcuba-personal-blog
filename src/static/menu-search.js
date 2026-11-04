@@ -12,6 +12,18 @@ if (dialog && trigger) {
   dialog.querySelector('[data-search-close]').addEventListener('click', close);
   // Capture before type=search's native Escape-to-clear behavior.
   dialog.addEventListener('keydown', (event) => {
+    if (event.key === 'Tab') {
+      const stops = [...dialog.querySelectorAll('button, input, a[href]')]
+        .filter(element => !element.disabled && element.getClientRects().length);
+      const first = stops[0], last = stops[stops.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
     if (event.key === 'Escape') {
       event.preventDefault();
       event.stopPropagation();
