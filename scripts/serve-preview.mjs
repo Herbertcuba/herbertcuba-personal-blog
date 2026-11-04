@@ -7,7 +7,7 @@ const port = Number(process.env.PREVIEW_PORT || 4193);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.txt': 'text/plain', '.xml': 'application/xml', '.pdf': 'application/pdf' };
 createServer(async (request, response) => {
   response.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
-  response.setHeader('Content-Security-Policy', "connect-src 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'self'");
+  response.setHeader('Content-Security-Policy', "connect-src 'self'; form-action 'none'; object-src 'none'; frame-ancestors 'self'");
   response.setHeader('X-Content-Type-Options', 'nosniff');
   response.setHeader('Cache-Control', 'no-store');
   if (!['GET', 'HEAD'].includes(request.method)) {
