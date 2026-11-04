@@ -3,7 +3,7 @@ import { readFile, realpath, stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 
 const root = await realpath(resolve('dist-preview'));
-const port = Number(process.env.PREVIEW_PORT || 4190);
+const port = Number(process.env.PREVIEW_PORT || 4193);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.txt': 'text/plain', '.xml': 'application/xml', '.pdf': 'application/pdf' };
 createServer(async (request, response) => {
   response.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');

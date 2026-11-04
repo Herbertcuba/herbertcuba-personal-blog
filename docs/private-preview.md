@@ -10,7 +10,7 @@ The preview reuses `.eleventy.js`, all public templates, homepage, navigation,
 article content and original CSS. It adds no alternate landing page or banner.
 
 Run `npm ci`, `npm run build:preview`, `npm test`, then `npm run serve:preview`.
-The server binds only to `127.0.0.1:4190`; `PREVIEW_PORT` selects another loopback
+The server binds only to `127.0.0.1:4193`; `PREVIEW_PORT` selects another loopback
 port for separate experiment branches. The owner manages private Tailscale Serve.
 Never expose this server through public Funnel. Generated output is ignored.
 
