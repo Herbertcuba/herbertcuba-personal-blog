@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { publicImageURL } from '../src/static/site-search-engine.js';
 
 export function plainText(html) {
   const named = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', mdash: '—', ndash: '–', hellip: '…' };
@@ -14,7 +15,7 @@ export function plainText(html) {
 export function createSearchIndex(posts) {
   const articles = posts.filter(post => /^\/posts\/[^?#]+\/$/.test(post.url) && !post.data.draft)
     .map(post => ({ url: post.url, title: plainText(post.data.title), summary: plainText(post.data.excerpt),
-      text: plainText(post.templateContent), date: new Date(post.date).toISOString().slice(0, 10) }))
+      image: publicImageURL(post.data.featuredImage), text: plainText(post.templateContent), date: new Date(post.date).toISOString().slice(0, 10) }))
     .sort((a, b) => a.url.localeCompare(b.url));
   const digest = createHash('sha256').update(JSON.stringify(articles)).digest('hex');
   return JSON.stringify({ version: 1, count: articles.length, digest, articles });

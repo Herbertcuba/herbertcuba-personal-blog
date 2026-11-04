@@ -1,4 +1,4 @@
-import { searchArticles, snippet } from './site-search-engine.js';
+import { searchArticles, snippet, publicImageURL } from './site-search-engine.js';
 
 let corpus;
 function loadCorpus() {
@@ -31,10 +31,22 @@ export function initializeSearch(root) {
       status.textContent = matches.length ? `${matches.length} ${matches.length === 1 ? 'insight' : 'insights'} found${matches.length > 12 ? ' · showing the first 12' : ''}.` : 'No insights found. Try another word or a broader phrase.';
       for (const article of matches.slice(0, 12)) {
         const item = document.createElement('li'), link = document.createElement('a');
-        link.href = article.url; link.textContent = article.title;
-        const title = document.createElement('h3'); title.append(link);
+        link.href = article.url; link.className = 'search-result';
+        const imageURL = publicImageURL(article.image);
+        if (imageURL) {
+          const image = document.createElement('img');
+          image.className = 'search-result__image';
+          image.alt = ''; image.width = 96; image.height = 72;
+          image.loading = 'lazy'; image.decoding = 'async'; image.referrerPolicy = 'no-referrer';
+          image.addEventListener('error', () => image.remove(), { once: true });
+          image.src = imageURL;
+          link.append(image);
+        }
+        const copy = document.createElement('div'); copy.className = 'search-result__copy';
+        const title = document.createElement('h3'); title.textContent = article.title;
         const text = document.createElement('p'); text.textContent = snippet(article, query);
-        item.append(title, text); results.append(item);
+        copy.append(title, text); link.append(copy);
+        item.append(link); results.append(item);
       }
     } catch {
       if (current !== sequence) return;

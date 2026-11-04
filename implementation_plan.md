@@ -66,3 +66,19 @@ Validate first Escape with populated input, focus containment/restoration, mobil
 menu, empty/reset/error/retry/no-results/injection and 390/1440 layouts plus axe.
 Run npm ci/test/build:preview, review whitespace/diff and commit branch-only.
 Recovery removes only B UI; no production or mirror baseline mutation.
+
+## B mobile width and article thumbnails — 1793812592
+
+- Scope: P1-P5 in docs/menu-search-polish.md; B only from6d18fc50. Wider mobile
+  modal/input, compact public article thumbnails, safe text-only fallback.
+- Implement in isolated refinement worktree. Existing baseline/A/B review stays
+  unchanged while checks run; integrate only into B branch after independent
+  local checks, then verify actual HTTPS8466. Never merge to productionmain.
+- Checks: npm ci, npm test, build:preview; focused320/390/1440 browser/axe,
+  image load/fallback/security, width comparisons and keyboard/search regression.
+- Risks: native dialog max-width, stale source image paths, bad network images,
+  reduced result text width and index-schema compatibility. Scope styles;
+  optional validated image field and graceful failure; keep desktop stable.
+- Recovery: restore B commit/build6d18fc50; preserve noindex and other branches.
+- Evidence: default-work dedicated polish worktree under task
+  website-current-mirror-1793811009/menu-polish-1793812592/; no new task/queue.

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createSearchIndex, plainText } from '../scripts/search-index.mjs';
-import { searchArticles, normalize, snippet } from '../src/static/site-search-engine.js';
+import { searchArticles, normalize, snippet, publicImageURL } from '../src/static/site-search-engine.js';
 
 const articles = [
   {url:'/posts/agentic-software/', title:'Agentic Software', summary:'New software', text:'Runtime judgment with bounded authority and zebras.', date:'2026-01-01'},
@@ -28,4 +28,12 @@ test('index has deterministic public-only source-built corpus digest', () => {
   assert.equal(index.articles[0].text,'Complete article body & evidence');
   assert.match(index.digest,/^[a-f0-9]{64}$/);
   assert.equal(createSearchIndex([post]),createSearchIndex([post]));
+});
+
+test('thumbnail metadata admits only existing public image locations and omits unsafe paths', () => {
+  for (const image of ['/images/posts/example.webp', '/images/cover.png', 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=630&fit=crop']) assert.equal(publicImageURL(image),image);
+  for (const image of [null, 5, '/private/book.png', '/images/private/book.png', '/images/drafts/a.webp', '/images/../private/book.png', '/images/%2e%2e/a.png', '//evil.test/images/a.png', 'data:image/png,abc', 'javascript:alert(1)', 'https://images.unsplash.com.evil.test/photo-a', 'https://evil.test/a.png', 'https://user:pass@images.unsplash.com/photo-a', 'https://images.unsplash.com/private/a.png']) assert.equal(publicImageURL(image),'');
+  const post = {url:'/posts/test/',data:{title:'Title',featuredImage:'/images/posts/test.webp'},templateContent:'body',date:new Date('2026-01-01')};
+  assert.equal(JSON.parse(createSearchIndex([post])).articles[0].image, '/images/posts/test.webp');
+  assert.equal(JSON.parse(createSearchIndex([{...post,data:{...post.data,featuredImage:'data:image/png,abc'}}])).articles[0].image, '');
 });

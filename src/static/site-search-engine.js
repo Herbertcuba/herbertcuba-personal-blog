@@ -22,3 +22,16 @@ export function snippet(article, query) {
   const start = Math.max(0, at - 65);
   return `${start ? '…' : ''}${source.slice(start, start + 240).trim()}${source.length > start + 240 ? '…' : ''}`;
 }
+
+// Only existing public article-image locations are eligible for thumbnails.
+export function publicImageURL(value) {
+  if (typeof value !== 'string') return '';
+  const local = /^\/images\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(?:webp|png|jpe?g|gif|svg)$/i;
+  if (local.test(value) && !/\/(?:private|drafts)(?:\/|$)/i.test(value)) return value;
+  try {
+    const url = new URL(value);
+    if (url.origin === 'https://images.unsplash.com' && !url.username && !url.password &&
+      /^\/photo-[a-zA-Z0-9-]+$/.test(url.pathname) && !url.hash) return url.href;
+  } catch { /* Missing or non-public metadata remains text-only. */ }
+  return '';
+}

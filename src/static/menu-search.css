@@ -16,6 +16,15 @@
 .menu-search [data-search-results] p{color:#c4c4c4;font-size:15px;line-height:1.6}
 .menu-search [data-search-results] li{padding:18px 0;border-top:1px solid #333}
 @media(max-width:900px){.site-nav__links .menu-search-trigger{padding:12px 0;width:100%;text-align:left}}
-@media(max-width:480px){.menu-search{padding:20px}.menu-search__header h2{font-size:22px}.menu-search__controls{gap:8px}}
+@media(max-width:480px){.menu-search{width:calc(100% - 16px);max-width:calc(100% - 16px);padding:16px}.menu-search__header h2{font-size:22px}.menu-search__controls{gap:8px}}
 
 .menu-search [data-search-results]{list-style:none;padding:0;margin:0}
+
+.menu-search [data-search-results] .search-result{display:flex;align-items:flex-start;gap:16px}
+.menu-search .search-result__image{flex:none;width:96px;height:72px;object-fit:cover;border:1px solid #333}
+.menu-search .search-result__copy{min-width:0;overflow-wrap:anywhere}
+.menu-search .search-result__copy h3{font-size:18px;margin:0 0 8px}
+.menu-search .search-result__copy p{margin:0}
+.menu-search [data-search-results] .search-result:hover{text-decoration:none}
+.menu-search .search-result:hover h3{text-decoration:underline}
+@media(max-width:480px){.menu-search [data-search-results] .search-result{gap:12px}.menu-search .search-result__image{width:64px;height:64px}.menu-search .search-result__copy h3{font-size:16px}.menu-search .search-result__copy p{font-size:14px}}
