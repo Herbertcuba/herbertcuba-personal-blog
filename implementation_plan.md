@@ -59,3 +59,14 @@ merge PR, verify remote main and live deployed CSS/geometry. Narrow risk: a shor
 mobile hero and letterboxing in the desktop homepage panel; expected tradeoff
 for preserving all wording. Recovery: revert only these CSS changes, without
 regenerating assets, changing content or replaying publication.
+
+## 2026-11-06 — Restore requested hover zoom (1793954075)
+
+Herbert explicitly wants the image hover zoom retained. Remove only the homepage
+hero's zoom-disabling override, restoring the existing 1.03 scale and 0.5-second
+transition. Preserve the full-image sizing fix, all other image interactions,
+reduced-motion behavior, approved image/content and deployment configuration.
+Reuse task `article-internet-rails-1793778785`. Validate npm ci/test/build without
+upload credentials, rendered rest/hover geometry and reduced-motion behavior,
+diff/whitespace, PR/remote merge and actual deployed CSS/hover. Recovery is a
+focused revert of this override removal. No asset regeneration or release replay.
