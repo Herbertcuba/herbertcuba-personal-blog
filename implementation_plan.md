@@ -41,3 +41,21 @@ Apply the existing dark-panel and foreground/accent tokens to the source-video f
 Herbert explicitly approved the selected Minimal Finder with vibrant brand green for production. Port only search runtime/index/templates/tests from9f7b06ba onto current mainb969f1d2. Preserve vercel.json, package scripts, robots/indexing, analytics, checkout, drafts routes and content. Do not merge preview-only noindex/config/server/disabled integrations.
 Production blob rewriting must leave search-index.json root-relative and digest-stable: existing /images rewrite resolves these public images while client safety policy remains strict. Add isolated rewriter integration coverage.
 Checks: npm ci/test, production Eleventy build and actual rewrite integration; independent Standards/Spec source review and mobile/desktop search acceptance; review PR/checks then merge. Verify actual live production indexing, search, images, navigation and exact deployed source. Existing Vercel pipeline owns deployment; no new service or spend. Recovery: revert only this release or restore prior verified deployment if a live blocker appears; preserve previews.
+
+
+## 2026-11-06 — Preserve complete text-bearing hero images (1793950655)
+
+Herbert reported cropped lettering in the published Internet Rails hero. Reuse
+COCO task `article-internet-rails-1793778785`; change presentation only. Preserve
+the approved image bytes, article, release receipts, indexing, commerce and social
+post. Homepage: center the full image within the existing desktop split panel,
+use its natural aspect ratio on mobile, and disable its cropping hover zoom.
+Article: replace fixed desktop/mobile hero heights with the natural image ratio.
+
+Validate with npm ci, npm test, a production-template build without upload
+credentials, and rendered mobile/desktop image geometry and screenshots before
+and after deployment. Review diff/whitespace, push focused branch, review and
+merge PR, verify remote main and live deployed CSS/geometry. Narrow risk: a shorter
+mobile hero and letterboxing in the desktop homepage panel; expected tradeoff
+for preserving all wording. Recovery: revert only these CSS changes, without
+regenerating assets, changing content or replaying publication.
