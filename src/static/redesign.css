@@ -277,7 +277,10 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .latest__title{font-size:58px;line-height:1.05;letter-spacing:-0.01em;margin:0 0 24px;}
 .latest__dek{margin:0 0 36px;font-weight:350;font-size:19px;line-height:1.5;color:var(--text-2);max-width:560px;}
 .latest .btn{align-self:flex-start;}
-.latest__media{border-left:1px solid var(--border-inner);min-height:480px;}
+.latest__media{border-left:1px solid var(--border-inner);min-height:480px;display:flex;align-items:center;}
+/* Keep text-bearing hero artwork intact in both the split and stacked layouts. */
+.latest__media > img{height:auto;object-fit:contain;}
+.latest__media:hover > img{transform:none;}
 .latest__caption{position:absolute;left:0;bottom:0;padding:16px 20px;font-size:12px;color:var(--green);background:rgba(3,5,3,0.8);z-index:2;}
 
 /* ---- This month rail ---- */
@@ -344,7 +347,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .thismonth{padding:24px;}
   .latest{grid-template-columns:1fr;}
   .latest__body{padding:40px 24px;}
-  .latest__media{min-height:280px;border-left:none;border-top:1px solid var(--border-inner);order:-1;}
+  .latest__media{min-height:0;border-left:none;border-top:1px solid var(--border-inner);order:-1;}
   .latest__title{font-size:36px;}
   .thismonth__grid{grid-template-columns:1fr;gap:28px;}
   .themes__grid{grid-template-columns:1fr;gap:48px;}
@@ -594,8 +597,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
 .art-dek{font-weight:350;font-size:22px;line-height:1.5;color:var(--text-2);max-width:760px;margin:0;}
 
 /* ---- Hero image ---- */
-.art-hero{position:relative;height:560px;border-top:2px solid var(--green);}
-.art-hero img{width:100%;height:100%;object-fit:cover;}
+.art-hero{position:relative;height:auto;border-top:2px solid var(--green);}
+.art-hero img{width:100%;height:auto;object-fit:contain;}
 .art-hero__caption{position:absolute;left:var(--gutter);bottom:0;padding:12px 16px;font-size:12px;color:var(--green);background:rgba(3,5,3,0.85);}
 
 /* Source video: keep the player and attribution together on a dark panel. */
@@ -961,7 +964,6 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-0.01
   .art-title{font-size:48px;}
   .art-body__grid{grid-template-columns:minmax(0,1fr);gap:40px;}
   .art-rail{position:static;flex-direction:row;flex-wrap:wrap;gap:20px 32px;}
-  .art-hero{height:340px;}
   .art-readnext__grid{grid-template-columns:1fr;gap:28px;}
 }
 @media (max-width:600px){
