@@ -1,0 +1,47 @@
+---
+layout: post.njk
+title: What If AI Breaks the Internet It Runs On?
+excerpt: 'I want AI to move faster. However, it is starting to strain the two things
+  it depends on most: software we can safely connect to and information we can trust.
+  I think reinforcing them has to happen alongside adoption, starting now.'
+tldr: 'AI could degrade the Internet through two separate mechanisms: attackers turning
+  disclosed flaws into exploits faster than organisations can test and deploy safe
+  fixes, and synthetic content raising the cost of verifying what is authentic. Defensive
+  AI delivers real but task-specific gains, and no study settles who is winning. Serious
+  degradation by next year is a risk scenario rather than a measured deadline, so
+  patch deployment speed and content provenance belong in AI adoption plans.'
+date: '2026-11-06'
+featuredImage: /images/posts/what-if-ai-breaks-the-internet-it-runs-on.webp
+---
+
+In September, [Google's threat intelligence team](https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era) reported that monthly vulnerability disclosures doubled this year, from 5,045 in January to 10,740 in August. Its analysts caution that CVE assignment practices can inflate those counts, but conclude that AI is measurably changing the pace of discovery and exploitation.
+
+I think there is a real risk that by next year we will not have the Internet we know today. The servers would probably keep running; what we could lose is confidence that connected systems are safe and that what we find is real. We are accelerating the train while overheating and cracking the tracks, and AI's promised productivity runs on those tracks.
+
+## Every published fix starts a race
+
+Google's analysts suggest the main source of growth in exploitation is known flaws being weaponised quickly, possibly with AI comparing patches and versions. If so, every published fix also shows attackers where to look.
+
+Defenders still have to test that fix, ship it and install it everywhere. AI writes patches too, but a [study of 112 historical bugs](https://arxiv.org/abs/2610.10150) found high pass rates on proof-of-concept exploit tests and low pass rates on the developers' own tests. Finding a flaw faster does not make a safe repair faster.
+
+## Defenders have AI too
+
+In a [controlled trial with 167 professional analysts](https://arxiv.org/html/2511.13860v1), an AI triage agent helped them correctly flag up to 6.5 times as many phishing emails per minute. However, sorting email differs from repairing legacy systems across thousands of organisations, and I have not seen anyone measure who is winning overall.
+
+Britain's National Cyber Security Centre [judges it almost certain](https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion) that by 2028 many systems will remain vulnerable to AI tools that find and exploit weaknesses.
+
+## Doubt becomes expensive at Internet scale
+
+The second crack is trust. In a [2020 experiment](https://journals.sagepub.com/doi/10.1177/2056305120903408), Cristian Vaccari and Andrew Chadwick found that deceptive synthetic political video more often left viewers uncertain than deceived, and that uncertainty lowered trust in news on social media.
+
+At Internet scale, a flood of plausible synthetic content could do damage without anyone believing a particular lie, by making every source costlier to verify. Synthetic does not mean false. However, when people and AI agents cannot cheaply tell what is authentic, search results and automated decisions both get worse.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In <em>WarGames</em> (1983), a teenager reaches a military supercomputer through a backdoor password its creator left behind and starts what he believes is a game. The computer keeps running the simulation and feeds NORAD a Soviet first strike that is not happening. Nothing in the network has physically failed, but the officials in charge can no longer trust their own screens. They have to ride out the supposed attack until the targeted bases report back unharmed.</p>
+<p>I find that scene useful because it holds both cracks I worry about: an unguarded way in, and information that stops being trustworthy at the worst possible moment. When the screens cannot be believed, the only verification left is slow and expensive. I would rather we invest in better verification now, while there is still time to build it calmly.</p>
+</div>
+
+## Make the track part of the plan
+
+No research I have read puts a date on this; next year is my own warning. I want the acceleration. That is why patch deployment speed and content provenance belong in the same plans and budgets as AI adoption. Otherwise, the infrastructure underpinning AI could fail us when we need it most. If we want the train to go faster, someone has to own the track.
