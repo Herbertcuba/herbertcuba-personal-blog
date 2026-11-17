@@ -1,0 +1,48 @@
+---
+layout: post.njk
+title: When Work Is Optional, Why Would Anyone Choose Your Company?
+excerpt: Machines made physical effort something many of us choose. I think AI will
+  do the same for thinking, and eventually for work itself. When the paycheck no longer
+  holds people, companies will need better reasons for anyone to stay.
+tldr: 'The forecast: as agents and AI take over most work, work becomes largely optional.
+  Machines already removed much compulsory physical exertion, making exercise a deliberate
+  choice for many; thinking could follow, kept active through hard problems, scrutiny
+  of AI output and continued learning. Companies would need culture, care and earned
+  trust to attract people, and those built on pointless work would struggle. Shared
+  security is not automatic, but a brighter future may lie beyond the disruption.'
+date: '2026-11-17'
+featuredImage: /images/posts/when-work-is-optional-why-would-anyone-choose-your-company.webp
+---
+
+In my book The Three Crucibles, I foresee a world where agents and AI do most of the work. In the version I hope for, "Work exists, but it is voluntary." My forecast is that work becomes largely optional, and every company still standing must answer a question the paycheck once answered for it: why would anyone choose to be here?
+
+That forecast runs ahead of today's evidence. The International Labour Organization's 2025 update estimates that a quarter of global employment is in occupations with some exposure to generative AI, and judges transformation more likely than complete replacement.
+
+## We already learned to choose physical effort
+
+In my ebook The Digital Singularity, I described two machine ages: the Industrial Revolution scaled our muscle power, and AI is scaling our brain power. The gym is a useful analogy.
+
+Timothy Church and colleagues estimated that the share of US private-industry jobs requiring at least moderate physical activity fell from almost half in the early 1960s to below one fifth by 2008. Physical work never disappeared, but for many it stopped supplying exercise. Staying fit became a deliberate choice, and the gym is where many of us make it.
+
+## Our minds will need a gym too
+
+When cognitive labour is no longer an economic necessity, I expect keeping our minds sharp to become a choice too.
+
+Working with AI can be part of that workout if we stay engaged. In a 2025 survey of 319 knowledge workers, greater confidence in generative AI was associated with less reported critical thinking. The exercise comes from choosing hard problems, checking what the machine produces and continuing to learn. In the randomized ACTIVE trial, older adults who trained in reasoning or processing speed still benefited in that ability a decade later.
+
+## Bullshit companies lose their captive workforce
+
+David Graeber called paid work that even the people doing it consider pointless "bullshit jobs". As those jobs disappear, I think bullshit companies will struggle to survive too. When livelihoods no longer force people to stay, companies must operate differently: culture, care for people and earned trust become the reasons to participate.
+
+Soffia, Wood and Burchell's 2021 analysis of European survey data challenged key premises of Graeber's theory, but linked people's sense of doing useful work to respectful management, participation and support. That companies will live or die on those qualities remains my forecast.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In Pixar's WALL-E (2008), the humans aboard the starliner Axiom have handed every task to robots. They glide through life in hover chairs, fed and entertained, their bodies weakened by generations of convenience. The scene that matters comes when Captain McCrea, having decided he wants to live rather than merely survive, struggles to his feet and walks to take the ship back from its autopilot. I see the post-work question in that moment: machines can remove the need for effort, but staying strong and in charge is still something we have to choose.</p>
+</div>
+
+## Abundance still has to be shared
+
+Technological capacity alone does not deliver shared income or security; a 2024 IMF staff note calls for fiscal policy to broaden generative AI's gains and cushion its losses. In The Three Crucibles, this is the fork between abundance for all and techno-feudalism, where the gains flow to whoever owns the machines.
+
+The disruption ahead will be destabilising. However, I believe a brighter future lies beyond it, where work, like exercise, is something we choose, and where the companies that remain have earned the people who stay.
