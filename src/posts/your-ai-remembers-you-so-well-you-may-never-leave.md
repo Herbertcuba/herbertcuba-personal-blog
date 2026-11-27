@@ -1,0 +1,47 @@
+---
+layout: post.njk
+title: Your AI Remembers You So Well You May Never Leave
+excerpt: Memory, connected apps and free-year offers make staying with one AI provider
+  the easy choice. Here is why I expect the walls to be higher in a year, and how
+  I would keep my options open.
+tldr: Frontier AI providers are building Apple-style walled gardens, and accumulated
+  memory, connected apps and free-year offers make staying the easy choice. Documented
+  export and import routes exist but are manual, partial and restricted, while open
+  standards so far cover tools and skills rather than memory. The takeaway is to avoid
+  embedding everything in one provider, keep context portable and optimize for optionality
+  before the walls rise.
+date: '2026-11-27'
+featuredImage: /images/posts/your-ai-remembers-you-so-well-you-may-never-leave.webp
+---
+
+We have spent decades discussing Apple's walled garden. I hear far less about the one frontier AI companies are building now, and I think it is the same idea with more at stake: people are being groomed and bribed into staying. That is my reading of the offers, not a motive any provider has stated.
+
+Working with AI is not like working with mobile apps. Context, data, artifacts and optionality all matter, and we are giving them away for easy near-term wins.
+
+## Memory is the new wall
+
+An app holds your account. An assistant holds what you told it and what you built with it. ChatGPT's memory can draw on past chats, saved memories, custom instructions and, depending on plan and region, connected apps such as Gmail. Gemini's Personal Intelligence connects Gmail, Photos, YouTube and Search, and Google itself calls it "a key differentiator" that this data already lives with them.
+
+When Google launched memory import, it said starting over with an assistant that doesn't know you "can feel daunting". I agree, and that is the mechanism: the better the assistant knows you, the more leaving costs.
+
+## The sweeteners
+
+OpenAI offered a free year of ChatGPT Go in India, which continues as a paid ₹399 monthly plan if renewal stays on. Google offers eligible US college students a free year of its AI Pro plan, with 5 TB of storage and connected apps. These offers are temporary, regional and eligibility-bound, and no provider describes them as a way to keep you, so "bribed" is my word. Whatever the intent, more of your working context ends up in one place.
+
+## The doors exist, and they are narrow
+
+Leaving is possible, and you lose depth. ChatGPT and Claude let you export your chats, though Claude's export leaves out the files you uploaded. Claude and Gemini import memory by copy and paste, and Anthropic warns that personal details unrelated to work may not be retained. Gemini's import is unavailable for work and school accounts and in the EEA, Switzerland and the UK.
+
+Tools are in better shape. MCP, AGENTS.md and Agent Skills now sit under the Linux Foundation's Agentic AI Foundation, so procedures written as files can travel between providers. Memory and history move through manual, lossy routes, and that tells me where the lock-in will concentrate.
+
+<div class="scifi">
+<span class="scifi__label">Meanwhile in sci-fi</span>
+<p>In The Truman Show (1998), Truman Burbank lives in Seahaven, a seaside town that feels like home, with friends, routine and comfort. Nothing visible locks him in. He learns the truth only when his boat reaches the painted sky at the edge of the set and he finds a dome built around him by the creator of the show his life has become.</p>
+<p>The easier the garden is to live in, the later you meet its edge. I would rather check where the walls are while the door is still open.</p>
+</div>
+
+## Keep your optionality
+
+I usually recommend that most people not embed everything into one AI provider. Once you get comfortable, you stop thinking about how to port your context and the real value you provide. Keep your instructions and knowledge in files you own.
+
+In six months to a year, I expect many people to regret their bets. They may find themselves stuck in a walled garden again, only this time it is harder to leave, there is more to lose and the walls are higher. Make sure you are on the right side of who owns who, and optimize for optionality today.
